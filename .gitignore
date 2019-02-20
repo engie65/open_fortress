@@ -4,3 +4,8 @@ sound.cache
 downloads/
 downloadlist/
 custom/
+gamestate.txt
+downloadcache.db
+demoheader.bmp
+stats.txt
+tf2_playerstats.dmx
