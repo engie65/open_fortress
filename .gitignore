@@ -6,7 +6,10 @@ downloadlist/
 custom/
 gamestate.txt
 downloadcache.db
-demoheader.bmp
+demoheader.tmp
 stats.txt
 tf2_playerstats.dmx
 settings.scr
+viewed.res
+modelsounds.cache
+serverconfig.vdf
