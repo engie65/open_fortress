@@ -7153,6 +7153,7 @@
 		0 : "Any"
 		2 : "Red"
 		3 : "Blue"
+		4 : "Mercenary"
 	]
 	SpawnMode(choices) : "Spawn Mode" : 0 : "How the game decides when a player can spawn here.  Triggered mode will only allow players sent via a trigger_player_respawn_override (in which case this spawn must be named, and match the trigger)." =
 	[
@@ -7173,6 +7174,7 @@
 		64 :   "Pyro" : 1
 		128 :  "Spy" : 1
 		256 :  "Engineer" : 1
+		512 :  "Mercenary" : 1
 	]
 ]
 
