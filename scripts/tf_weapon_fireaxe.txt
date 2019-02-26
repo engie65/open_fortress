@@ -13,6 +13,7 @@
 	"TimeFireDelay"			"0.8"
 	"TimeIdle"				"5.0"
 	"HasTeamSkins_Viewmodel"			"1"
+	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip
 	"primary_ammo"			"None"
@@ -20,7 +21,7 @@
 
 	// Buckets.	
 	"bucket"				"2"
-	"bucket_position"		"0"
+	"bucket_position"		"2"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_fireaxe_pyro.mdl"

@@ -20,7 +20,7 @@
 
 	// Buckets.	
 	"bucket"			"2"
-	"bucket_position"		"0"
+	"bucket_position"		"7"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_machete_sniper.mdl"

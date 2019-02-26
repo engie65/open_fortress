@@ -5,7 +5,7 @@ actor "Mercenary"
   {
     event speak "Mercenary.NegativeVocalization01"
     {
-      time 0.000000 0.937506
+      time 0.000000 0.510839
       param "Mercenary.NegativeVocalization01"
       fixedlength
       cctype "cc_master"
@@ -30,7 +30,7 @@ actor "Mercenary"
 
 scalesettings
 {
-  "CChoreoView" "64"
+  "CChoreoView" "216"
   "ExpressionTool" "100"
   "RampTool" "66"
   "GestureTool" "100"

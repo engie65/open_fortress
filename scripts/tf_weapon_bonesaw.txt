@@ -12,7 +12,8 @@ WeaponData
 	"Damage"				"65"
 	"TimeFireDelay"			"0.8"
 	"TimeIdle"				"5.0"
-	"HasTeamSkins_Viewmodel"		"1"
+	"HasTeamSkins_Viewmodel"			"1"
+	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip
 	"primary_ammo"			"None"
@@ -20,7 +21,7 @@ WeaponData
 
 	// Buckets.	
 	"bucket"				"2"
-	"bucket_position"		"0"
+	"bucket_position"		"6"
 
 	// Model & Animation
 	"viewmodel"				"models/weapons/v_models/v_bonesaw_medic.mdl"

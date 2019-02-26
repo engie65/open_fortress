@@ -24,10 +24,12 @@ WeaponData
 	"secondary_ammo"	"None"
 	clip_size			6
 	default_clip		6
+	"HasTeamSkins_Viewmodel"			"1"
+	"HasTeamSkins_Worldmodel"			"1"
 
 	// Buckets.
-	"bucket"		"0"
-	"bucket_position"	"0"
+	"bucket"		"1"
+	"bucket_position"	"5"
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_revolver_spy.mdl"

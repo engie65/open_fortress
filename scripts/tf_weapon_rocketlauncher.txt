@@ -22,14 +22,15 @@ WeaponData
 	clip_size		4
 	default_clip		4
 	"ProjectileType"	"projectile_rocket"
-	"HasTeamSkins_Viewmodel"	"1"
+	"HasTeamSkins_Viewmodel"			"1"
+	"HasTeamSkins_Worldmodel"			"1"
 
 	// Secondary Attributes.
 	"secondary_ammo"	"None"
 
 	// Buckets.
 	"bucket"		"0"
-	"bucket_position"	"0"	
+	"bucket_position"	"1"	
 
 	"ExplosionEffect"		"ExplosionCore_wall"
 	"ExplosionPlayerEffect"		"ExplosionCore_MidAir"

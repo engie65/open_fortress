@@ -5,7 +5,7 @@ WeaponData
 	"BuiltRightHanded"	"0"
 	"weight"		"3"
 	"WeaponType"		"primary"
-	"ITEM_FLAG_NOITEMPICKUP" 	"1"
+	"ITEM_FLAG_NOITEMPICKUP" 	"0"
 	
 	// Attributes TF.
 	"Damage"		"170"	// per second
@@ -15,6 +15,7 @@ WeaponData
 	"TimeFireDelay"	"0.04"
 	"UseRapidFireCrits"	"1"
 	"HasTeamSkins_Viewmodel"			"1"
+	"HasTeamSkins_Worldmodel"			"1"
 
 
 	// Ammo & Clip.
@@ -24,7 +25,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"		"0"
-	"bucket_position"	"0"
+	"bucket_position"	"2"
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_flamethrower_pyro.mdl"

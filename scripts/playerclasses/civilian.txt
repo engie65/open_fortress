@@ -6,6 +6,7 @@ PlayerClass
 	// Attributes.
 	"name"			"civilian"
 	"model"			"models/player/scout.mdl"
+	"localize_name"	"Civilian"
 	"speed_max"		"240"
 	"health_max"		"50"
 	"armor_max"		"0"

@@ -4,10 +4,10 @@
 PlayerClass
 {
 	// Attributes.
-	"name"			"mercenary"
+	"name"			"Mercenary"
 	"model"			"models/player/mercenary.mdl"
 	"model_hwm"		"models/player/hwm/soldier.mdl"
-	"localize_name"	"mercenary"
+	"localize_name"	"Mercenary"
 	"speed_max"		"320"
 //	"health_max"		"100"
 //	"armor_max"		"200"
@@ -21,17 +21,22 @@ PlayerClass
 	// Weapons.
 	"weapon1"		"TF_WEAPON_KNIFE"
 	"weapon2"		"TF_WEAPON_PISTOL"
-	"weapon3"		"TF_WEAPON_GRENADELAUNCHER"
+	"weapon3"		"TF_WEAPON_PISTOL"
 	
 	//"DontDoNewJump"	"1"
-
+/*
+	"buildable1"	"OBJ_SENTRYGUN"
+	"buildable2"	"OBJ_DISPENSER"
+	"buildable3"	"OBJ_TELEPORTER_ENTRANCE"
+	"buildable4"	"OBJ_TELEPORTER_EXIT"	
+*/
 	AmmoMax
 	{
-		"tf_ammo_primary"	"36"
+		"tf_ammo_primary"	"200"
 		"tf_ammo_secondary"	"200"
-		"tf_ammo_metal"		"100"
-		"tf_ammo_grenades1"	"0"
-		"tf_ammo_grenades2"	"0"
+		"tf_ammo_metal"		"200"
+		"tf_ammo_grenades1"	""
+		"tf_ammo_grenades2"	""
 	}	
 	
 	// Death Sounds
