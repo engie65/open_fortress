@@ -7,7 +7,7 @@ PlayerClass
 	"name"			"Mercenary"
 	"model"			"models/player/mercenary.mdl"
 	"model_hwm"		"models/player/hwm/soldier.mdl"
-	"localize_name"	"Mercenary"
+	"localize_name"	"#TF_CLASS_MERCENARY"
 	"speed_max"		"320"
 //	"health_max"		"100"
 //	"armor_max"		"200"

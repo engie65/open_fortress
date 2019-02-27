@@ -27,8 +27,8 @@ actor "Mercenary"
     }
     event sequence "taunt01_v2"
     {
-      time 0.000000 2.800000
-      param "taunt01"
+      time 0.000000 3.86
+      param "primary_death_burning"
       fixedlength
     }
   }

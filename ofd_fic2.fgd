@@ -1,8 +1,9 @@
 //=============================================================================
 //
-// Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch, LITE version (practically 'useless' entities, or keyvalues/inputs/outputs removed for better readibility)
+// Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
-// V4.8, 19th of February, 2019
+// Many thanks to KaidemonLP for datamap dumps used to update this FGD
+// V5.0, 27th of February, 2019
 //
 //=============================================================================
 
@@ -826,7 +827,7 @@
 		9: "World Space Glow"
 		10: "Don't Render"
 	]	
-	rendercolor(color255) : "Color (R G B)" : : "Controls a color tint for the entity. Use white (255 255 255) for no modification to color."
+	rendercolor(color255) : "Color (R G B)" : "255 255 255" : "Controls a color tint for the entity. Use white (255 255 255) for no modification to color."
 	renderamt(integer) : "Transparency (0 - 255)" : : "Transparency amount, requires a Render Mode other than Normal. 0 is invisible, 255 is fully visible."
 	renderfx(choices) :"Render FX" : 0 : "Preset pattern of appearance effects." =
 	[
@@ -3913,14 +3914,6 @@
 //REMOVED 	input Impact(void) : "Trigger the impact."
 //REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_physwire") = env_physwire : 
-	"Disabled in code. Creates a physically-simulated wire between 2 automatically-generated points when spawned."
-[
-	density(integer) : "Density" : 10 : "The density of the wire."
-	frequency(integer): "Frequency" : 10 : "The frequency of the wire."
-]
-
-
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_player_surface_trigger") = env_player_surface_trigger : 
 	"An entity that monitors the material of the surface the player is standing on, and fires outputs whenever it changes to/from a specific material."
 [
@@ -4099,7 +4092,7 @@
 [
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/axis_helper.mdl") = env_smokestack : 
+@PointClass base(BaseEntity, Render) studioprop("models/editor/axis_helper.mdl") = env_smokestack : 
 	"An entity that spits out a constant stream of particles. You can place up to two env_particlelight entities near the smoke stack to add ambient light to its particles."
 [
 	InitialState(choices) : "Initial State" : 0 = 
@@ -4609,7 +4602,7 @@
 	input SetScale(float) : "Set the sprite's scale."	
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/spot_cone.mdl") = env_steam : 
+@PointClass base(BaseEntity, Render) studioprop("models/editor/spot_cone.mdl") = env_steam : 
 	"An entity used to create a jet of steam, or heat wave distortion."
 [
 	spawnflags(flags) =
@@ -4768,12 +4761,6 @@
 //REMOVED 	"An entity that handles save & load queueing. No functionality when spawned manually." 
 //REMOVED [
 //REMOVED ]
-
-@PointClass base(BaseAnimating, TeamNum) studioprop("models/props_halloween/halloween_demoeye.mdl") = eyeball_boss :
-    "The MONOCULUS! boss NextBot. Capable of moving without a navigation file. The following info_targets can be placed to perform functions: "+
-    "spawn_boss_alt - places where MONOCULUS! can teleport, spawn_purgatory - where a player will teleport after leaping into his portal, spawn_loot - where a player will teleport after MONOCULUS! dies."
-[
-]
 
 @FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_class") = filter_activator_class :
 	"A filter that filters by the class name of the activator. Entities can have their classnames changed using AddOutput. "+
@@ -6334,17 +6321,6 @@
 [
 	master(string) : "Master" : : "Half-Life legacy support: The name of a multisource entity. If the master hasn't been activated, this entity will not activate."
 	input EndGame(void) : "End the multiplayer game."
-]
-
-
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/game_forcerespawn")  = game_forcerespawn :
-	"Removes buildings, grenades, etc., from the world and forces all players to respawn, without being killed."
-[
-	input ForceRespawn(void) : "Force players to respawn and remove buildings, grenades, etc., from the world."
-	input ForceRespawnSwitchTeams(void) : "Switch all players to the opposite team, and then respawn all players (and remove buildings, grenades, etc., from the world)."
-	input ForceTeamRespawn(integer) : "Force players on a specific team to respawn. 2 for Red, 3 for Blue. This does NOT remove buildings, grenades, etc., from the world..."
-	
-	output OnForceRespawn(void) : "Sent when the entity respawns the players."	
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/game_gib_manager") = game_gib_manager : 
@@ -10505,92 +10481,160 @@
 [
 ]
 
-// tf_weapon_* and weapoon_* entities are not being documentated, as they all do not spawn. Instead, they will be listed here.
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_bat.mdl") = tf_weapon_bat :
+    "Weapon that can be picked up by players."
+[
+]
 
-// tf_weapon_base
-// tf_weapon_bat
-// tf_weapon_bat_fish
-// tf_weapon_bat_giftwrap
-// tf_weapon_bat_wood
-// tf_weapon_bonesaw
-// tf_weapon_bottle
-// tf_weapon_breakable_sign
-// tf_weapon_buff_item
-// tf_weapon_builder
-// tf_weapon_cannon
-// tf_weapon_charged_smg
-// tf_weapon_cleaver
-// tf_weapon_club
-// tf_weapon_compound_bow
-// tf_weapon_crossbow
-// tf_weapon_drg_pomson
-// tf_weapon_fireaxe
-// tf_weapon_fists
-// tf_weapon_flamethrower
-// tf_weapon_flaregun
-// tf_weapon_flaregun_revenge
-// tf_weapon_grapplinghook
-// tf_weapon_grenadelauncher
-// tf_weapon_handgun_scout_primary
-// tf_weapon_handgun_scout_secondary
-// tf_weapon_invis
-// tf_weapon_jar
-// tf_weapon_jar_gas
-// tf_weapon_jar_milk
-// tf_weapon_katana
-// tf_weapon_knife
-// tf_weapon_laser_pointer
-// tf_weapon_lunchbox
-// tf_weapon_lunchbox_drink
-// tf_weapon_mechanical_arm
-// tf_weapon_medigun
-// tf_weapon_minigun
-// tf_weapon_parachute
-// tf_weapon_parachute_primary
-// tf_weapon_parachute_secondary
-// tf_weapon_particle_cannon
-// tf_weapon_passtime_gun
-// tf_weapon_pda_engineer_build
-// tf_weapon_pda_engineer_destroy
-// tf_weapon_pda_spy
-// tf_weapon_pep_brawler_blaster
-// tf_weapon_pipebomblauncher
-// tf_weapon_pistol
-// tf_weapon_pistol_scout
-// tf_weapon_raygun
-// tf_weapon_revolver
-// tf_weapon_robot_arm
-// tf_weapon_rocketlauncher
-// tf_weapon_rocketlauncher_airstrike
-// tf_weapon_rocketlauncher_directhit
-// tf_weapon_rocketlauncher_fireball
-// tf_weapon_rocketpack
-// tf_weapon_sapper
-// tf_weapon_scattergun
-// tf_weapon_sentry_revenge
-// tf_weapon_shotgun_building_rescue
-// tf_weapon_shotgun_hwg
-// tf_weapon_shotgun_primary
-// tf_weapon_shotgun_pyro
-// tf_weapon_shotgun_soldier
-// tf_weapon_shovel
-// tf_weapon_slap
-// tf_weapon_smg
-// tf_weapon_sniperrifle
-// tf_weapon_sniperrifle_classic
-// tf_weapon_sniperrifle_decap
-// tf_weapon_soda_popper
-// tf_weapon_spellbook
-// tf_weapon_stickbomb
-// tf_weapon_sword
-// tf_weapon_syringegun_medic
-// tf_weapon_wrench
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_bonesaw.mdl") = tf_weapon_bonesaw :
+    "Weapon that can be picked up by players."
+[
+]
 
-// These also have not been documentated, as they do nothing
-// weapon_ifm_base
-// weapon_ifm_base_camera
-// weapon_ifm_steadycam
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_bottle.mdl") = tf_weapon_bottle :
+    "Weapon that can be picked up by players."
+[
+]
 
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_toolbox.mdl") = tf_weapon_builder :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_machete.mdl") = tf_weapon_club :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_fireaze.mdl") = tf_weapon_fireaxe :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/v_models/v_fist_heavy.mdl") = tf_weapon_fists :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_flamethrower.mdl") = tf_weapon_flamethrower :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_grenadelauncher.mdl") = tf_weapon_grenadelauncher :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/v_models/v_watch_spy.mdl") = tf_weapon_invis :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_knife.mdl") = tf_weapon_knife :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_medigun.mdl") = tf_weapon_medigun :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_minigun.mdl") = tf_weapon_minigun :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_builder.mdl") = tf_weapon_pda_engineer_build :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_pda_engineer.mdl") = tf_weapon_pda_engineer_destroy :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_cigarette_case.mdl") = tf_weapon_pda_spy :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_stickybomb_launcher.mdl") = tf_weapon_pipebomblauncher :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_pistol.mdl") = tf_weapon_pistol :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_pistol.mdl") = tf_weapon_pistol_scout :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_revolver.mdl") = tf_weapon_revolver :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_rocketlauncher.mdl") = tf_weapon_rocketlauncher :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_scattergun.mdl") = tf_weapon_scattergun :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_hwg :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_primary :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_pyro :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_soldier :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shovel.mdl") = tf_weapon_shovel :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_smg.mdl") = tf_weapon_smg :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_sniperrifle.mdl") = tf_weapon_sniperrifle :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_syringegun.mdl") = tf_weapon_syringegun_medic :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_wrench.mdl") = tf_weapon_wrench :
+    "Weapon that can be picked up by players."
+[
+]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_weaponbase_grenade_proj") = tf_weaponbase_grenade_proj :
     "Manager entity for TF2 grenade projectiles. Creates an explosion upon spawning, no other functionality."

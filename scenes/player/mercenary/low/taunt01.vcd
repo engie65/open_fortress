@@ -3,10 +3,10 @@ actor "Mercenary"
 {
   channel "body"
   {
-    event sequence "taunt01"
+    event sequence "primary_death_burning"
     {
-      time 0 2.83
-      param "taunt01"
+      time 0 3.86
+      param "primary_death_burning"
     }
   }
 }
