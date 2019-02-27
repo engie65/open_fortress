@@ -1,6 +1,6 @@
 #base "default.res"
 
-"classes/Mercenary_red.res"
+"classes/Mercenary_mercenary.res"
 {
 	"classNameLabel"
 	{
@@ -18,17 +18,19 @@
 		{
 			"modelname"	"models/player/mercenary.mdl"
 			"modelname_hwm"	"models/player/hwm/soldier.mdl"
+			"skin" "0"
 			"origin_z" "-51"
-			"vcd"		"scenes/Player/Soldier/low/class_select.vcd"		
+			"vcd"		"scenes/Player/Mercenary/low/class_select.vcd"		
 
 			"animation"
 			{
-				"sequence"		"SelectionMenu_all"
+				"sequence"		"crouch_LOSER"
 			}
 			
 			"attached_model"
 			{
-				"modelname" "models/weapons/w_models/w_rocketlauncher.mdl"
+				"modelname" "models/empty.mdl"
+				"skin"		"0"
 			}
 		}
 	}
