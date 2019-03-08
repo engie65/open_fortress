@@ -33,6 +33,7 @@ precache
 	"model"			"sprites/physbeam.vmt"
 
 	"model"			"models/vgui/UI_team01.mdl"
+	"model"			"models/vgui/UI_arena01.mdl"
 	"model"			"models/vgui/UI_class01.mdl"
 	"model"			"models/vgui/UI_welcome01_screen.mdl"
 	"model"			"models/vgui/UI_team01_blue.mdl"
