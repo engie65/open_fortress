@@ -1,10 +1,8 @@
 "LightmappedGeneric"
 {
-	"$basetexture" "signs/mercangery"
-	"$baseTexture" "signs/cockandballtorturesign"
+	"$basetexture" "signs/purplemercangery"
 	 "$decal" 1
 	"$decalscale" 1
-	"$translucent" 1
 	"$vertexcolor" "1"
 	"$vertexalpha" "1"
  	"%keywords" "tf"
