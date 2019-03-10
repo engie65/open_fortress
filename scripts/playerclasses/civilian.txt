@@ -1,11 +1,11 @@
 //
-// Team Fortress - Civilian Non-Player Class
+// Team Fortress - Civilian Player Class
 //
 PlayerClass
 {
 	// Attributes.
-	"name"			"civilian"
-	"model"			"models/player/scout.mdl"
+	"name"			"Civilian"
+	"model"			"models/player/civilian.mdl"
 	"localize_name"	"TF_Class_Name_Civilian"
 	"speed_max"		"240"
 	"health_max"		"50"
