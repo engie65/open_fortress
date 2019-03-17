@@ -10506,6 +10506,11 @@
 [
 ]
 
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_crowbar.mdl") = tf_weapon_crowbar :
+    "Weapon that can be picked up by players."
+[
+]
+
 @PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_fireaze.mdl") = tf_weapon_fireaxe :
     "Weapon that can be picked up by players."
 [
