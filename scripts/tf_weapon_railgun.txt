@@ -29,7 +29,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"		"0"
-	"bucket_position"	"7"
+	"bucket_position"	"9"
 
 
 	// Muzzleflash
