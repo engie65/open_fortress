@@ -1,7 +1,7 @@
 	WeaponData
 {
 	// Attributes Base.
-	"printname"			"#TF_Weapon_Crowbar"
+	"printname"			"#TF_Weapon_Bat"
 	"BuiltRightHanded"		"0"
 	"MeleeWeapon"			"1"
 	"weight"			"1"
