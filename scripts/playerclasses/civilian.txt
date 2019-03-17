@@ -14,7 +14,7 @@ PlayerClass
 	// Grenades.
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_BAT"
+	"weapon1"		"TF_WEAPON_CROWBAR"
 
 	// Ammo.
 	
