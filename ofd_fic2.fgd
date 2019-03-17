@@ -10576,6 +10576,11 @@
 [
 ]
 
+@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_sniperrifle.mdl") = tf_weapon_railgun :
+    "Weapon that can be picked up by players."
+[
+]
+
 @PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_revolver.mdl") = tf_weapon_revolver :
     "Weapon that can be picked up by players."
 [
