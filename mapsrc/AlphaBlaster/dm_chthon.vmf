@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "377"
+	"mapversion" "380"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "377"
+	"mapversion" "380"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -14822,7 +14822,7 @@ entity
 	"id" "767"
 	"classname" "trigger_teleport"
 	"angles" "0 0 0"
-	"origin" "0 24 -608"
+	"origin" "-0 24 -608"
 	"solid" "1"
 	"spawnflags" "1"
 	"target" "Slip_Exit_Quadspawn"
@@ -14833,7 +14833,7 @@ entity
 		side
 		{
 			"id" "929"
-			"plane" "(-128 64 -512) (128 64 -512) (128 -16 -512)"
+			"plane" "(-96 -16 -512) (-96 64 -512) (96 64 -512)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -14844,7 +14844,7 @@ entity
 		side
 		{
 			"id" "928"
-			"plane" "(-128 -16 -704) (128 -16 -704) (128 64 -704)"
+			"plane" "(-96 64 -704) (-96 -16 -704) (96 -16 -704)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -14855,7 +14855,7 @@ entity
 		side
 		{
 			"id" "927"
-			"plane" "(-128 64 -512) (-128 -16 -512) (-128 -16 -704)"
+			"plane" "(-96 -16 -704) (-96 64 -704) (-96 64 -512)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -14866,7 +14866,7 @@ entity
 		side
 		{
 			"id" "926"
-			"plane" "(128 64 -704) (128 -16 -704) (128 -16 -512)"
+			"plane" "(96 64 -704) (96 -16 -704) (96 -16 -512)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -14877,7 +14877,7 @@ entity
 		side
 		{
 			"id" "925"
-			"plane" "(128 64 -512) (-128 64 -512) (-128 64 -704)"
+			"plane" "(-96 64 -704) (96 64 -704) (96 64 -512)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -14888,7 +14888,7 @@ entity
 		side
 		{
 			"id" "924"
-			"plane" "(128 -16 -704) (-128 -16 -704) (-128 -16 -512)"
+			"plane" "(96 -16 -704) (-96 -16 -704) (-96 -16 -512)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -19386,6 +19386,36 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 1000]"
+	}
+}
+entity
+{
+	"id" "4519"
+	"classname" "tf_weapon_railgun"
+	"angles" "0 0 0"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"fadescale" "1"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"renderamt" "0"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"solid" "6"
+	"targetname" "weapons"
+	"texframeindex" "0"
+	"origin" "0 207.712 -656"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
