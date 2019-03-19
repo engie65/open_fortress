@@ -1,7 +1,0 @@
-"Sky"
-{
-	"$nofog" "1"
-	"$ignorez" "1"	
-	"$basetexture" "skybox/ofd_nebula3dn"
-	"$hdrbasetexture" "skybox/ofd_nebula3dn"
-}
