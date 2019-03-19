@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V5.0, 27th of February, 2019
+// V5.2, 19th of March, 2019
 //
 //=============================================================================
 
@@ -732,10 +732,36 @@
 @BaseClass = BaseEntity
 [ 
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
-//REMOVED	globalname(string) : "Global Entity Name" : : "Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state."
+
+	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
+
+	input Kill(void) : "Removes this entity and all its children from the world."
+	input KillHierarchy(void) : "Removes this entity and all its children from the world. Faster than sending the Kill input on entities with children."
+	
+	input AddOutput(string) : "Adds an entity I/O connection to this entity. Format: <output name> <targetname>:<inputname>:<parameter>:<delay>:<max times to fire (-1 = infinite, 1 = only once)>. "
+	input FireUser1(void) : "Causes this entity's OnUser1 output to be fired."
+	input FireUser2(void) : "Causes this entity's OnUser2 output to be fired."
+	input FireUser3(void) : "Causes this entity's OnUser3 output to be fired."
+	input FireUser4(void) : "Causes this entity's OnUser4 output to be fired."	
+	input Use(void) : "Same as a player invoking +use; may not do anything. Can also be invoked by creating an output that does not specify an input."
+
+	output OnUser1(void) : "Fired in response to FireUser1 input."
+	output OnUser2(void) : "Fired in response to FireUser2 input."
+	output OnUser3(void) : "Fired in response to FireUser3 input."
+	output OnUser4(void) : "Fired in response to FireUser4 input."
+]
+
+@BaseClass = Angles
+[ 
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
+]
+
+// This adds additional stuff to point entities that are networked
+@BaseClass = BaseEntityPoint
+[ 
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
 	parentname(target_destination) : "Parent" : : "Specifies a movement parent. An entity will maintain its initial offset from its parent. An attachment point can be added to the end of the name, separated by a comma. Every entity can be parented, even point entities. Entities which are parented will be forced to transition to the next map, such as from a trigger_transition. Some entities which aren't intended to be parented may not function correctly. phys_constraint can be used as a workaround to parenting."
     angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
-//REMOVED	hammerid(integer) : "Hammer ID" : : "The entity's Hammer ID, generated automatically. Mainly used by plugins and debugging commands, such as ent_keyvalue. Entities spawned at run-time are not assigned any Hammer ID."
 
 	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
@@ -765,11 +791,9 @@
 @BaseClass wirebox("mins,maxs") = BaseEntityBrush
 [ 
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
-//REMOVED	globalname(string) : "Global Entity Name" : : "Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state."
 	parentname(target_destination) : "Parent" : : "Specifies a movement parent. An entity will maintain its initial offset from its parent. An attachment point can be added to the end of the name, separated by a comma. Every entity can be parented, even point entities. Entities which are parented will be forced to transition to the next map, such as from a trigger_transition. Some entities which aren't intended to be parented may not function correctly. phys_constraint can be used as a workaround to parenting."
  	origin(origin) : "Origin (X Y Z)" : : "The position of this entity's center in the world. Rotating entities typically rotate around their origin." 
-    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
-//REMOVED	hammerid(integer) : "Hammer ID" : : "The entity's Hammer ID, generated automatically. Mainly used by plugins and debugging commands, such as ent_keyvalue. Entities spawned at run-time are not assigned any Hammer ID."
+// this causes too many issues, its better to leave it up to the user
 
 	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
@@ -828,8 +852,8 @@
 		10: "Don't Render"
 	]	
 	rendercolor(color255) : "Color (R G B)" : "255 255 255" : "Controls a color tint for the entity. Use white (255 255 255) for no modification to color."
-	renderamt(integer) : "Transparency (0 - 255)" : : "Transparency amount, requires a Render Mode other than Normal. 0 is invisible, 255 is fully visible."
-	renderfx(choices) :"Render FX" : 0 : "Preset pattern of appearance effects." =
+	renderamt(integer) : "Transparency (0 - 255)" : 255 : "Transparency amount, requires a Render Mode other than Normal. 0 is invisible, 255 is fully visible."
+	renderfx(choices) : "Render FX" : 0 : "Preset pattern of appearance effects." =
 	[
 		0: "Normal"
 		1: "Slow Pulse"
@@ -886,7 +910,7 @@
 ]
 
 // All entities with a model have this class
-@BaseClass base(BaseEntity, Render) sphere(fademindist) sphere(fademaxdist) sphere(fademaxdist) = BaseAnimating
+@BaseClass base(BaseEntityPoint, Render) sphere(fademindist) sphere(fademaxdist) sphere(fademaxdist) = BaseAnimating
 [ 
 	effects(choices) : "Effect Flags" : 0 : "For configuring visual effects. If you want to combine effects, turn SmartEdit off and add the effect numbers together, i.e. 64 + 8 = 72." =
 	[
@@ -907,7 +931,7 @@
 //      4096 : "No projected textures"
 	]
 	model(studio) : "Model" :  : "The model this entity should appear as. 128-character limit. May not be available for all entities."
-	skin(integer) : "Skin" : 0 : "Some models have multiple skins. This value selects from the index, starting with 0."
+	skin(integer) : "Skin" : : "Some models have multiple skins. This value selects from the index, starting with 0."
 	solid(choices) : "Collisions" : 6 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
@@ -927,7 +951,7 @@
 	damagefilter(target_destination) : "Damage Filter" :  : "When this entity receives damage, it will filter by this entity."
 	fademindist(float) : "Start Fade Distance/Pixels" : : "Distance at which the entity starts fading. If <0, the entity will disappear instantly when end fade is hit. The value will scale appropriately if the entity is in a 3D Skybox."
 	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
-	fadescale(float) : "Fade Scale" : 1 : "If specified in the worldspawn, or if the engine is running below DirectX 8, entities will fade out even if the fade distances above aren't specified. This value gives more control over when this happens: numbers smaller than 1 cause the entity to fade out at further distances, and greater than 1 cause it to fade out at closer distances. Using 0 turns off the forced fade altogether."	
+	fadescale(float) : "Fade Scale" : : "If specified in the worldspawn, or if the engine is running below DirectX 8, entities will fade out even if the fade distances above aren't specified. This value gives more control over when this happens: numbers smaller than 1 cause the entity to fade out at further distances, and greater than 1 cause it to fade out at closer distances. Using 0 turns off the forced fade altogether."	
 	shadowcastdist(integer) : "Shadow Cast Distance" : : "Sets how far the entity casts dynamic shadows, in units. 0 means default distance from the shadow_control entity."
 	disableshadows(choices) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows." =
 	[
@@ -988,7 +1012,7 @@
 	damagefilter(target_destination) : "Damage Filter" :  : "When this entity receives damage, it will filter by this entity."
 	vrad_brush_cast_shadows(choices) : "VRAD Shadows" : 0 : "Determines if this entity will cast lightmap shadows." =
 	[
-		0 : "No shadows"
+		0 : "Do not cast shadows"
 		1 : "Cast shadows"
 	]
 	_minlight(string) : "Minimum Light Level" : : "The minimum level of ambient light that hits this brush."
@@ -1017,7 +1041,7 @@
 ]
 
 // Stripped down version of BaseAnimating for physically-simulated objects, which do not have some keyvalues
-@BaseClass base(BaseEntity, Render) sphere(fademindist) sphere(fademaxdist) sphere(fademaxdist)  = BaseAnimatingPhysics
+@BaseClass base(BaseEntityPoint, Render) sphere(fademindist) sphere(fademaxdist) sphere(fademaxdist)  = BaseAnimatingPhysics
 [ 
 	model(studio) : "Model" :  : "The model this entity should appear as. 128-character limit. May not be available for all entities."
 	skin(integer) : "Skin" : 0 : "Some models have multiple skins. This value selects from the index, starting with 0."
@@ -1282,7 +1306,7 @@
 	]
 	pressuredelay(float) : "Pressure Delay" : 0 : "Delay, in seconds, after 'broken' by pressure before breaking apart (allows for sound to play before breaking apart)."
 	minhealthdmg(integer) : "Minimum Damage to Hurt" : 0 : "The entity will ignore any damage events if the damage is less than this amount."	
-	health(integer) : "Health" : 100 : "Number of points of damage to take before breaking. 0 means don't break."
+	health(integer) : "Health" : 0 : "Number of points of damage to take before breaking. 0 means don't break."
 	physdamagescale(float) : "Physics Impact Damage Scale" : "1.0" : "Scales damage energy when this object is hit by a physics object. Set to 1.0 for materials as strong as flesh, smaller numbers indicate stronger materials."
 	linedivider8(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1386,7 +1410,6 @@
         26: "item_dynamic_resupply"		
 	]
 	
-//REMOVED	team_number(integer) : "Team Number" : : "Unknown function."
 	
 	linedivider9(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1455,7 +1478,7 @@
 ]
 
 // shooter base, have to define it here because some entities (such as env_rotorshooter) precede env_shooter alphabetically and therefore cannot inherit from it
-@BaseClass base(BaseEntity, Render) = env_shooter_base
+@BaseClass base(BaseEntityPoint, Render) = env_shooter_base
 [
 	angles(angle) : "Gib Direction (Pitch Yaw Roll)" : "0 0 0" : "The direction the gibs will fly."
 	m_iGibs(integer) : "Number of Gibs" : 3 : "Total number of gibs to shoot each time it's activated."
@@ -1564,7 +1587,6 @@
 @BaseClass base(BaseAnimatingBrush) = Door
 [
 	chainstodoor(string) : "Linked Door" : : "Passes the door's +use inputs and touch events onto a different door, so it also is activated."
-//REMOVED	movedir(angle) : "Move Direction (Pitch Yaw Roll)" : "0 0 0" : "The direction the door will move, when it opens."
 	speed(integer) : "Speed" : 100 : "The speed at which the door moves."
 	wait(integer) : "Delay Before Reset (-1 stay)" : -1 : "Amount of time, in seconds, after the door has opened before it closes. Once it has closed, it can be used again. If the value is set to -1, the door never closes itself."
 	lip(integer) : "Lip" : 0 : "The amount, in units, of the door to leave sticking out of the wall it recedes into when pressed. Negative values make the door recede even further into the wall."
@@ -1599,7 +1621,6 @@
 		1 : "Yes"
 	]
 	
-//REMOVED	WaveHeight(integer) : "Wave Height" : : "Obsolete keyvalue from Half-Life. The height of waves if the brush was textured with a water texture. Does not function."
 	
 	linedivider13(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1657,7 +1678,7 @@
 	]
 	
 	wheels(integer) : "Distance Between the Wheels" : 50 : "Used for turning and stopping. Higher values will result in smoother turns."
-	height(integer) : "Height above track" : 4 : "The height above the track that this train moves."
+	height(integer) : "Height above track" : 0 : "The height above the track that this train moves."
 	bank(string) : "Bank Angle on Turns" : "0" : "The angle at which the train will 'bank' or tilt when approaching a turn. Use positive or negative angle numbers close to 0 (ie. between -5 and +5, depending on left or right) to achieve realistic tilt angles."
 	dmg(integer) : "Damage on Crush" : 0 : "The amount of damage this train does to entities that block it."
 
@@ -1710,7 +1731,7 @@
 ]
 
 // used by phys_ entities
-@BaseClass base(BaseEntity) = TwoObjectPhysics
+@BaseClass base(BaseEntityPoint) = TwoObjectPhysics
 [
     attach1(target_destination) : "Entity 1" : ""
     attach2(target_destination) : "Entity 2" : ""
@@ -2091,28 +2112,12 @@
 //             Entities A - Z
 // ---------------------------------------
 
-//REMOVED @SolidClass base(BaseEntityBrush) = _ballplayertoucher : 
-//REMOVED 	"A trigger that is always parented to the ball and provides the small radius/box within which players will automatically pick up the ball. Should not be created manually."
-//REMOVED [
-//REMOVED ]
-
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/_firesmoke") = _firesmoke : 
-//REMOVED 	"Creates a group of particle effects usually created by an env_fire, including the flames. It does no damage."
-//REMOVED [
-//REMOVED ]
-
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/_plasma") = _plasma : 
-//REMOVED 	"Creates a group of particle effects usually created by an env_fire when using the Plasma type. It does no damage. The effect appears to have never been created."
-//REMOVED [
-//REMOVED ]
 
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/ai_ally_speech_manager") = ai_ally_speech_manager : 
-//REMOVED 	"Manages the speech of ally NPCs. No functionality when spawned manually, although killing this entity can lead to bizarre results."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/ai_battle_line") = ai_battle_line : 
+
+
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/ai_battle_line") = ai_battle_line : 
 	"Instructs NPCs to try and stay behind it to a configurable degree during a standoff with other NPCs."
 [
 
@@ -2420,7 +2425,7 @@
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/ai_goal_standoff") = ai_goal_standoff : 
-	"Specifies what NPCs are a part of the standoff and what special rules they should follow - - they will attack more tactically, take cover frequently, and possibly wait for the player to lead forward. "
+	"Specifies what NPCs are a part of the standoff and what special rules they should follow - they will attack more tactically, take cover frequently, and possibly wait for the player to lead forward."
 [
 	actor(target_name_or_class) : "Actor(s) to affect" :  : "The targetname or classname of any NPCs that will be included in this assault. Wildcards are supported."
 
@@ -2488,15 +2493,7 @@
 	input UpdateActors( void) : "Tell the entity to re-check Actor(s) to affect in case any disappeared, or any new NPCs spawned."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/ai_hint") = ai_hint : 
-//REMOVED 	"Initializes, links and passes Hint node utilities and functions. No functionality when spawned."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/ai_network") = ai_network : 
-//REMOVED 	"Entity used for all NPC and AI functions that is created every map load. If killed, NPCs would freeze up entirely - no speech, no animations, no movement. Killing would also render all ai_ console commands unusable."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/ai_relationship") sphere(radius) = ai_relationship : 
 	"Sets a relationship type between two parties. These parties can be an NPC, an NPC class, or the player(s)."
@@ -2662,7 +2659,7 @@
 	output NoValidActor(void) : "Fires if/when there are no matching actors in the map."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/ai_sound") sphere(volume) = ai_sound : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/ai_sound") sphere(volume) = ai_sound : 
 	"This entity makes sounds or smells that can be sensed by NPCs, but not by the player. This can be used to cause reactions in nearby NPCs."
 [
 	volume(integer) : "Hearing Radius" : 120 : "How far away this sound can be heard."
@@ -2776,12 +2773,9 @@
 	input StopSchedule(void) : "Tells NPC targets to stop running this schedule."
 ]
 
-//REMOVED @PointClass base(BaseNPC) studioprop() = aitesthull : 
-//REMOVED 	"An 'NPC' that verifies AI nodes are accessible by walking between node connections. No functionality when spawned manually."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) sphere(radius) iconsprite("editor-ficool2/ambient_generic") = ambient_generic : "It plays a sound, either once or on loop, and either from a location in the world or globally."
+@PointClass base(BaseEntityPoint) sphere(radius) iconsprite("editor-ficool2/ambient_generic") = ambient_generic :
+    "It plays a sound, either once or on loop, and either from a location in the world or globally."
 [
 	message(sound) : "Sound Name" :  : "The soundscript name of, or direct path to, the sound to play. For scripted sentences, type '!' followed by the sentence name. If the sound needs to be recognised as 'music' by the engine, precede the path with a '#'."
 	health(integer) : "Volume" : 10 : "Sound volume, expressed as a range from 0 to 10, where 10 is the loudest."
@@ -2853,7 +2847,7 @@
 	input FadeOut(integer) : "Brings up the Volume to 10 and fades the sound to silence over a specified number of seconds, with a range from 0 to 100 seconds."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/assault_assaultpoint") line(255 255 255, targetname, nextassaultpoint) sphere (allowdiversionradius) = assault_assaultpoint : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/assault_assaultpoint") line(255 255 255, targetname, nextassaultpoint) sphere (allowdiversionradius) = assault_assaultpoint : 
 	"These entities form the body of an assault chain, specifying where the assault should go once it has begun. There can be any number of them in each chain. Naming assault points the same name will cause NPCs to randomly select one. Specifying an assault_rallypoint as the next assault point will crash the game!"
 [
 	assaultgroup(string)  : "Assault Hint Group" :  : "NPC's movements are constrained to this hint group once assault has begun."
@@ -2916,7 +2910,7 @@
 	output OnAssaultClear(void) : "Fires when this assault point is cleared of enemies."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/assault_rallypoint") line(255 255 255, targetname, assaultpoint) = assault_rallypoint : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/assault_rallypoint") line(255 255 255, targetname, assaultpoint) = assault_rallypoint : 
 	"It specifies a point used to rally NPCs for assault behaviour."
 [
 	assaultpoint(target_destination)  : "Assault Point" :  : "The first assault_assaultpoint in the chain to move to as the assault begins."
@@ -2939,30 +2933,32 @@
 	output OnArrival(void) : "Fires when the NPC reaches this rally point."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/beam") = beam : 
-//REMOVED 	"The entity used by other entities to make beams or other effects, such as bubbles. No functionality when spawned manually."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) sphere(desired_distance) iconsprite("editor-ficool2/bot_action_point") line(255 255 255, targetname, next_action_point) = bot_action_point : "A potential destination for a bot"
-[
-	next_action_point(target_destination) : "Next Action Point" : : "The next Action Point to approach after performing this one."
-	desired_distance(float) : "Desired Distance" : 5 : "The distance to get within when approaching this Action Point before the bot says it has reached it."
-	stay_time(float) : "Stay Time" : 0 : "How long the bot should stay at this action point (while perform any commands if applicable)."
-	command(choices) : "Command" :  : "Command to give to the bot when it gets within range of this Action Point." = 
-	[
-		"taunt" : "Taunt"
-		"despawn" : "Leave the game"
-		"cloak" : "If Spy, Cloak"
-		"uncloak" : "If Spy, Uncloak"
-		"attack sentry at next action point" : "Attack sentry gun at next action point"
-		"disguise" : "If Spy, Disguise"
-		"build sentry at nearest sentry hint" : "If Engineer, build a sentry gun at the nearest sentry hint"
-	]
 
-	output OnBotReached(void) : "Fires when the bot reaches this point."
-]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
 @PointClass base(BaseEntity, EnableDisable) sphere(minfalloff) sphere(maxfalloff) iconsprite("editor-ficool2/color_correction") = color_correction : 
 	"An entity to control the color correction in the map.  It loads a color correction lookup table (.raw) and controls its strength. Correction is applied in a sphere surrounding the entity, with a configurable amount of falloff."
 [
@@ -3015,27 +3011,6 @@
 	"An entity used to display a model for testing purposes, specifically flexes. Shooting it will cycle through the model's animations."
 [
 ]
-
-@SolidClass base(Trigger, EnableDisable) = dispenser_touch_trigger :
-    "Trigger for a dispenser healing bounds."
-[
-	StartDisabled(choices) : "Start Disabled?" : 0 : "NOTE: This entity only controls healing zone. Disabling it will still allow ammo resupply." =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-]
-
-@PointClass base(prop_dynamic_base) studioprop() = dynamic_prop : 
-	"Deprecated entity. Used in Half-Life 2 beta maps, before Valve swapped to prop_ prefixes for consistent naming. If attempted to be spawned, its classname will automatically be changed to prop_dynamic."
-[
-]
-
-//REMOVED @SolidClass base(BaseEntityBrush) = entity_blocker : 
-//REMOVED 	"Entity called by code mainly used to signify that a volume is occupied (such as from a door, AI or a vehicle). No functionality when spawned manually."
-//REMOVED [
-//REMOVED ]
-
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
 	"Identical to env_entity_igniter.  It catches a target entity on fire. Brush entities are accepted."
 [
@@ -3113,7 +3088,7 @@
 	output OnTouchedByEntity(void) : "Fired when an entity touches the beam. Only fired if the entity passes the 'Touch Type' choice."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_beverage") = env_beverage : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_beverage") = env_beverage : 
 	"An entity that dispenses soda cans upon activation. Uses models/can.mdl by default, you will need to provide your own with the map/mod as the model is not present."
 [
 	health(integer) : "Capacity" : 10 : "Number of cans in the dispenser."
@@ -3131,7 +3106,7 @@
 	input Activate(void) : "Enable this dispenser."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_blood") = env_blood : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_blood") = env_blood : 
 	"An entity used to spawn blood effects." 
 [
 	spraydir(angle) : "Spray Direction (Pitch Yaw Roll)" : "0 0 0" : "The general direction that the blood should spray and the direction to trace to apply the decal."
@@ -3155,10 +3130,31 @@
 
 	input EmitBlood(void) : "Triggers the blood effect."
 ]
-
+// Inherting BaseEntityBrush WITHOUT origin, as for some reason that breaks the entire entity
 @SolidClass base(BaseEntityBrush) = env_bubbles : 
 	"An entity used to create a volume in which to spawn bubbles." 
 [
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) : "Parent" : : "Specifies a movement parent. An entity will maintain its initial offset from its parent. An attachment point can be added to the end of the name, separated by a comma. Every entity can be parented, even point entities. Entities which are parented will be forced to transition to the next map, such as from a trigger_transition. Some entities which aren't intended to be parented may not function correctly. phys_constraint can be used as a workaround to parenting."
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
+
+	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
+
+	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
+	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
+	solid(choices) : "Collisions" : 1 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	[
+		0: "None"
+		1: "BSP (QPhysics)"
+		2: "Bounding Box"
+		3: "Oriented Bounding Box"
+		4: "Oriented Bounding Box, constrained to Yaw only"
+		5: "Custom (defined per-entity, if not defined the entity will have bizarre collision behavior)"
+		6: "VPhysics"
+	]
+	
+	linedivider2(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
+	
 	density(integer) : "Bubble density" : 2 : "Bubble count in volume."
 	frequency(integer) : "Bubble frequency" : 2 : "Bubble emission frequency, in bubbles per second."
 	current(integer) : "Speed of Current" : 0 : "The speed of the water current in the volume, used to move the bubbles."
@@ -3167,6 +3163,20 @@
 	[
 		1 : "Start Off"  : 0
 	]
+	
+	input Kill(void) : "Removes this entity and all its children from the world."
+	input KillHierarchy(void) : "Removes this entity and all its children from the world. Faster than sending the Kill input on entities with children."
+	input SetParent(string) : "Changes the entity's parent in the movement hierarchy."
+	input SetParentAttachment(string) : "Change this entity to attach to a specific attachment point on its parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment."
+	input SetParentAttachmentMaintainOffset(string) : "Change this entity to attach to a specific attachment point on it's parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment. The entity will maintain it's position relative to the parent at the time it is attached."
+	input ClearParent(void) : "Removes this entity from the the movement hierarchy, leaving it free to move independently."	
+	input AddOutput(string) : "Adds an entity I/O connection to this entity. Format: <output name> <targetname>:<inputname>:<parameter>:<delay>:<max times to fire (-1 = infinite, 1 = only once)>. "
+	input FireUser1(void) : "Causes this entity's OnUser1 output to be fired."
+	input FireUser2(void) : "Causes this entity's OnUser2 output to be fired."
+	input FireUser3(void) : "Causes this entity's OnUser3 output to be fired."
+	input FireUser4(void) : "Causes this entity's OnUser4 output to be fired."	
+	input Use(void) : "Same as a player invoking +use; may not do anything. Can also be invoked by creating an output that does not specify an input."
+	input DispatchEffect(string) : "Dispatch an effect from the entity's origin. See https://developer.valvesoftware.com/wiki/List_of_Client_Effects"
 
 	input Activate(void) : "Activates the bubbles."
 	input Deactivate(void) :  "Deactivates the bubbles."
@@ -3174,6 +3184,11 @@
 	input SetDensity(integer) : "Sets the bubble density."
 	input SetFrequency(integer) : "Sets bubble emission rate in bubbles per second."
 	input SetCurrent(integer) : "Sets current speed in units per second."
+	
+	output OnUser1(void) : "Fired in response to FireUser1 input."
+	output OnUser2(void) : "Fired in response to FireUser2 input."
+	output OnUser3(void) : "Fired in response to FireUser3 input."
+	output OnUser4(void) : "Fired in response to FireUser4 input."
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_credits") = env_credits : 
@@ -3209,10 +3224,6 @@
 	sides(sidelist) : "Brush faces": : "(Optional) Brushes faces to directly attach to the env_cubemap. Press Pick then click on faces in the 3D View to select them. Use CTRL while clicking to add or remove from the selection."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_debughistory") = env_debughistory : 
-//REMOVED 	"Used to debug various game events, such as entity IO, AI decisions, currently rendered scene and player damage. Does not function in multiplayer."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_detail_controller") sphere(fademindist) sphere(fademaxdist) = env_detail_controller : 
     "An entity that overrides the fade distances for all details sprites in the map."
@@ -3259,6 +3270,29 @@
 @SolidClass base(BaseEntityBrush) = env_embers : 
 	"An entity used to create a volume in which to spawn fire embers. For some reason its state can only be changed with the Use input." 
 [
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+//REMOVED	globalname(string) : "Global Entity Name" : : "Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state."
+	parentname(target_destination) : "Parent" : : "Specifies a movement parent. An entity will maintain its initial offset from its parent. An attachment point can be added to the end of the name, separated by a comma. Every entity can be parented, even point entities. Entities which are parented will be forced to transition to the next map, such as from a trigger_transition. Some entities which aren't intended to be parented may not function correctly. phys_constraint can be used as a workaround to parenting."
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
+//REMOVED	hammerid(integer) : "Hammer ID" : : "The entity's Hammer ID, generated automatically. Mainly used by plugins and debugging commands, such as ent_keyvalue. Entities spawned at run-time are not assigned any Hammer ID."
+
+	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
+
+	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
+	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
+	solid(choices) : "Collisions" : 1 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	[
+		0: "None"
+		1: "BSP (QPhysics)"
+		2: "Bounding Box"
+		3: "Oriented Bounding Box"
+		4: "Oriented Bounding Box, constrained to Yaw only"
+		5: "Custom (defined per-entity, if not defined the entity will have bizarre collision behavior)"
+		6: "VPhysics"
+	]
+	
+	linedivider2(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
+
 	density(integer) : "Density (particles per second)" : 50 : "Number of particles spawned each second."
 	lifetime(integer) : "Particle Lifetime (seconds)" : 4 : "Number of seconds each particle lasts for. A certain amount of randomness is added proportional to the time specified here."
 	speed(integer) : "Particle Speed (units per second)" : 32 : "Number of units moved by particles each second."
@@ -3269,11 +3303,32 @@
 		1 : "Start On"  : 0
 		2 : "Toggle" : 0
 	]
+	
+	input Kill(void) : "Removes this entity and all its children from the world."
+	input KillHierarchy(void) : "Removes this entity and all its children from the world. Faster than sending the Kill input on entities with children."
+	input SetParent(string) : "Changes the entity's parent in the movement hierarchy."
+	input SetParentAttachment(string) : "Change this entity to attach to a specific attachment point on its parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment."
+	input SetParentAttachmentMaintainOffset(string) : "Change this entity to attach to a specific attachment point on it's parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment. The entity will maintain it's position relative to the parent at the time it is attached."
+	input ClearParent(void) : "Removes this entity from the the movement hierarchy, leaving it free to move independently."	
+	input AddOutput(string) : "Adds an entity I/O connection to this entity. Format: <output name> <targetname>:<inputname>:<parameter>:<delay>:<max times to fire (-1 = infinite, 1 = only once)>. "
+	input FireUser1(void) : "Causes this entity's OnUser1 output to be fired."
+	input FireUser2(void) : "Causes this entity's OnUser2 output to be fired."
+	input FireUser3(void) : "Causes this entity's OnUser3 output to be fired."
+	input FireUser4(void) : "Causes this entity's OnUser4 output to be fired."	
+	input Use(void) : "Same as a player invoking +use; may not do anything. Can also be invoked by creating an output that does not specify an input."
+	input DispatchEffect(string) : "Dispatch an effect from the entity's origin. See https://developer.valvesoftware.com/wiki/List_of_Client_Effects"
 
 	input Color(color255) : "Changes the color that new sprites will spawn with."
+	
+	output OnUser1(void) : "Fired in response to FireUser1 input."
+	output OnUser2(void) : "Fired in response to FireUser2 input."
+	output OnUser3(void) : "Fired in response to FireUser3 input."
+	output OnUser4(void) : "Fired in response to FireUser4 input."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_entity_dissolver") = env_entity_dissolver:
+
+
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_entity_dissolver") = env_entity_dissolver:
     "An entity dissolver that removes a point entity from the map after a few built-in effects. Does not work on brush entities."
 [
 	target(target_destination) : "Target to Dissolve" :  : "The entity to dissolve."
@@ -3298,7 +3353,7 @@
 	input Ignite(void) : "Ignite the target entity."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_entity_maker") = env_entity_maker : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_entity_maker") = env_entity_maker : 
 	"Spawns the specified point_template at its origin. If set to auto-spawn, it will spawn the template whenever there is room and the player is looking elsewhere." 
 [
 	EntityTemplate(target_destination) : "point_template to Spawn" :  : "Name of the point_template to spawn here."
@@ -3328,8 +3383,8 @@
 	output OnEntityFailedSpawn(void) : "Fired when a ForceSpawn input failed to spawn the template, either due to lack of space or being in player's view, depending on the spawnflags."
 ]
 
-@PointClass base(BaseEntity) sphere(iRadiusOverride) iconsprite("editor-ficool2/env_explosion") = env_explosion : 
-	"An entity that creates an explosion at its origin. Will not do damage when parented." 
+@PointClass base(BaseEntityPoint) sphere(iRadiusOverride) iconsprite("editor-ficool2/env_explosion") = env_explosion : 
+	"An entity that creates an explosion at its origin. Will not do damage when parented, use logic_measure_movement as a workaround for parenting." 
 [
 	iMagnitude(Integer) : "Magnitude" : 100 : "The amount of damage done by the explosion."
 	iRadiusOverride(Integer) : "Radius Override" : : "If specified, the radius in which the explosion damages entities. If unspecified, the radius will be based on the magnitude."
@@ -3373,7 +3428,7 @@
 	input Explode(void) : "Triggers the explosion."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_fade") = env_fade : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_fade") = env_fade : 
 	"An entity that controls screen fades to or from a solid color. Add Duration and Hold Time together for the total time this entity will be in effect."
 [
 	duration(string) : "Duration (seconds)" : "2" : "The time that it will take to fade the screen in or out."
@@ -3396,7 +3451,7 @@
 	output OnBeginFade(void) : "Fired when the fade has begun."
 ]
 
-@PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/env_fire") = env_fire : 
+@PointClass base(BaseEntityPoint, EnableDisable) iconsprite("editor-ficool2/env_fire") = env_fire : 
 	"An entity that handles a single flame at its origin. The flame causes heat 'damage' to other env_fire entities around it, and will eventually ignite non-flaming env_fire entities nearby, causing the fire to spread. Does not create any light."+
 	"Note: Plasma fire is invisible."
 [
@@ -3431,12 +3486,12 @@
 	output OnExtinguished(void) : "Fires when the fire is fully extinguished."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_fire_trail") = env_fire_trail : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_fire_trail") = env_fire_trail : 
 	"An entity that creates a small fire trail. Recommended to be parented."
 [
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_firesensor") sphere(fireradius) = env_firesensor : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_firesensor") sphere(fireradius) = env_firesensor : 
 	"An entity that detects changes in heat nearby."
 [
 	fireradius(float) : "Radius" : 128 : "The radius around this entity in which to detect heat changes."
@@ -3455,7 +3510,7 @@
 	output OnHeatLevelEnd(void) : "Fires when the heat level drops below the target level."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_firesource") sphere(fireradius) = env_firesource : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_firesource") sphere(fireradius) = env_firesource : 
 	"An entity that provides heat to all nearby env_fire entities. Cannot be extinguished."
 [
 	spawnflags(flags) =
@@ -3470,7 +3525,7 @@
 	input Disable(void) : "Disable fire source."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_fog_controller") = env_fog_controller : 
+@PointClass base(BaseEntity, Angles) iconsprite("editor-ficool2/env_fog_controller") = env_fog_controller : 
 	"An entity that controls the fog and view distance in the map. Fog may be changed per-player using the SetFogController input on them (requires an !activator)."
 [
 	fogenable(choices) : "Fog enabled on start?" : 1 : "Make fog start active." =
@@ -3519,7 +3574,7 @@
 	
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_funnel") = env_funnel : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_funnel") = env_funnel : 
 	"Half-Life legacy entity: Creates many sprites which move toward a point (or from a point). The sprite is hardcoded to be sprites/flare6.vmt, but this texture is missing by default. This entity must be activated with the Use input. After it has been Used, it is deleted from the map." 
 [
 	spawnflags(flags) =
@@ -3572,7 +3627,7 @@
 	output Counter(integer) : "Outputs the integer value of this entity. May depend on global state."
 ]
 
-@PointClass base(BaseEntity, Render) size(-2 -2 -2, 2 2 2) sprite() color(20 140 20) = env_glow : 
+@PointClass base(BaseEntityPoint, Render) size(-2 -2 -2, 2 2 2) sprite() color(20 140 20) = env_glow : 
 	"Identical to env_sprite. An entity that controls the drawing of a sprite in the world." 
 [
 	model(sprite) : "Sprite Name" : "sprites/glow01.spr" : "Material of the sprite to be drawn."
@@ -3597,7 +3652,7 @@
 	input SetScale(float) : "Set the sprite's scale."
 ]
 
-@PointClass base(BaseEntity, EnableDisable) line(255 255 255, targetname, target)  iconsprite("editor-ficool2/env_gunfire") = env_gunfire : 
+@PointClass base(BaseEntityPoint, EnableDisable) line(255 255 255, targetname, target)  iconsprite("editor-ficool2/env_gunfire") = env_gunfire : 
     "This entity creates a gunfire effect which can be dynamically controlled and pointed at a target, to give the illusion of a weapon firing without an actual weapon entity being used. The visual effect will be identical to an actual weapon firing, but causes no damage."
 [
 	target(target_destination) : "Target" :  : "The target to shoot at."
@@ -3637,20 +3692,18 @@
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_hudhint") = env_hudhint : 
 	"An entity to control the display of HUD hints. HUD hints are used to show the player what key is bound to a particular command."
-[
+[																																												
+	message(string) : "Hint Text" :  : "This should be set to match the desired HUD hint entry in the resource\<game>_english.txt. Unlocalized (raw) text can still be used if needed."
 	spawnflags(flags) =
 	[
 		1: "All Players - otherwise only activating player" : 0
 	]
-
-	message(string) : "Hint Text" :  : "This should be set to match the desired HUD hint entry in the resource\<game>_english.txt. Unlocalized (raw) text can still be used if needed."
-
 	input ShowHudHint(void) : "Shows the hint message."
 	input HideHudHint(void) : "Hides the hint message."
 ]
 
 @PointClass base(env_beam) iconsprite("editor-ficool2/env_laser") line(255 255 255, targetname, LaserTarget) = env_laser : 
-	"Note: this entity inherits from env_beam. Not all keyvalues/inputs may work. "+
+	"Note: this entity inherits from env_beam. Not all keyvalues/inputs/flags may work. "+
 	"An entity that creates a laser beam between itself and a given target. The main difference between this entity and env_beam is that a laser will not travel through anything solid."
 [
 	LaserTarget(target_destination) : "Target of Laser" : : "Name of entity, or entities, to strike at. The target is randomly chosen if there are multiple entities matching the given name."
@@ -3670,12 +3723,18 @@
 
 	spawnflags(flags) = 
 	[
-		1 : "Start On - Start the map with the laser turned on." : 0
-		2 : "Toggle - Obsolete, replaced by the Toggle input. Used to toggle the laser on and off." : 0
-		16: "StartSparks - Every time the laser strikes or is turned on, the laser emits a small shower of sparks at its position." : 0
-		32: "EndSparks - Every time the laser strikes or is turned on, the laser emits a small shower of sparks at its target" : 0
+		1 : "Start On" : 0
+		2 : "Toggle - Obsolete, replaced by the Toggle input." : 0
+		4 : "Random Strike - When the beam has died, it will strike again randomly within the time set by Strike again time (secs)." : 0
+		8 : "Ring - Uses the starting and ending points as a diameter, drawing a beam ring between them instead of a straight line." : 0
+		16: "StartSparks - Every time the beam strikes or is turned on, the beam emits a small shower of sparks at its Start Entity." : 0
+		32: "EndSparks - Every time the beam strikes or is turned on, the beam emits a small shower of sparks at its Ending Entity." : 0
+		64: "Decal End - Places a decal scorch mark where a damaging beam hits the first solid object (world brush or entity)." : 0
+		128: "Shade Start - Fades out toward its Start Entity. Overrides Shade End. Does not work on striking beams or beam rings." : 0
+		256: "Shade End - Fades out toward its Ending Entity. Is overridden by Shade Start. Does not work on striking beams or beam rings." : 0
+		512: "Taper Out - Taper out into a point towards its Ending Entity. Does not work on striking beams or beam rings." : 0
 	]
-
+	
 	input TurnOn(void) : "Turns the laser on."
 	input TurnOff(void) : "Turns the laser off."
 	input Toggle(void) : "Toggles the laser between on and off."
@@ -3688,12 +3747,11 @@
 	input Width(float) : "Set the width of the laser, in pixels. (1 - 25.5) "
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_laserdot") = env_laserdot : 
-//REMOVED 	"A laser dot, defined by code. No functionality when spawned manually."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) size(-2 -2 -2, 2 2 2) sprite("sprites/light_glow01") = env_lightglow : 
+
+
+
+@PointClass base(BaseEntityPoint) size(-2 -2 -2, 2 2 2) sprite("sprites/light_glow01") = env_lightglow : 
 	"An entity that puts an additive glow in the world, mostly used over light sources."
 [
 	rendercolor(color255) : "Color (R G B)" : "255 255 255" : "Glow color."
@@ -3714,7 +3772,7 @@
 
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_message") = env_message : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_message") = env_message : 
 	"An entity that draws a text message on player's HUDs."
 [
 	message(choices) : "Message Text" : : "Message to be shown." =
@@ -3765,7 +3823,7 @@
 	output OnShowMessage(void) : "Fired when the message is activated."
 ]
 
-@PointClass base(BaseEntity, EnableDisable) sphere(MaxRange) iconsprite("editor/env_microphone") = env_microphone :
+@PointClass base(BaseEntityPoint, EnableDisable) sphere(MaxRange) iconsprite("editor/env_microphone") = env_microphone :
 	"An entity that acts as a microphone. It works in one of two modes. If it has a 'Speaker' set, it picks up all sounds within the specified sound range, " +
 	"and rebroadcasts them through the Speaker entity. In this Speaker mode, it ignores the Hears X spawnflags and does not fire the SoundLevel output. " +
 	"If it has no Speaker set, it measures the sound level at a point, and outputs the sound level as a value between 0 and 1. In Measuring mode, it only hears sounds that match the Hear X spawnflags."
@@ -3808,12 +3866,12 @@
 	output OnHeardSound(void) : "Fired whenever this microphone hears any sound it cares about."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_movieexplosion") = env_movieexplosion : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_movieexplosion") = env_movieexplosion : 
 	"An entity that creates a small cartoonic bubbles explosion lasting for 5 seconds."
 [
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_muzzleflash") = env_muzzleflash : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_muzzleflash") = env_muzzleflash : 
     "An entity that creates the effect of flames leaving a guns barrel when firing." 
 [
 	parentattachment(string) : "Parent Attachment" :  : "The name of an attachment on the parent to hierarchically attach to."
@@ -3831,7 +3889,7 @@
 	input StopMeasuring(void) : "Stop measuring particle simulation speed."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_particle_trail") = env_particle_trail : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_particle_trail") = env_particle_trail : 
 	"An entity which emits a particle trail. Becomes visible when parented to an object, and then emits particle trails from the entity's bounding box."
 [
 	ParticleTrailMaterial(material) : "Particle Trail Material" : : "Name of a material to use for the particle trail."
@@ -3840,12 +3898,8 @@
 	ParticleTrailEndSize(float) : "Particle Trail Ending Sprite Size" : 3 : "Ending size of the particles to emit."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_particlefire") = env_particlefire : 
-//REMOVED 	"A debug entity for fire particles."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_particlelight") = env_particlelight : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_particlelight") = env_particlelight : 
 	"An entity that can be used to light the particles emitted by env_smokestack entities. Does not light any other particle types."
 [
 	Color(color255) : "Color" : "255 0 0" : "Color emitted by this light." 
@@ -3868,12 +3922,12 @@
 	input SetSequence(string) : "Sets the script model's sequence."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_particlesmokegrenade") = env_particlesmokegrenade : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_particlesmokegrenade") = env_particlesmokegrenade : 
 	"An entity that emits a tiny puff of smoke when spawned."
 [
 ]
 
-@PointClass base(BaseEntity) sphere(radius) sphere(inner_radius) iconsprite("editor-ficool2/env_physexplosion") = env_physexplosion : 
+@PointClass base(BaseEntityPoint) sphere(radius) sphere(inner_radius) iconsprite("editor-ficool2/env_physexplosion") = env_physexplosion : 
 	"An entity that creates an explosion at its origin. If the no-damage spawnflag is set, the explosion won't be visible, but will apply force to any physics objects within its radius."
 [
 	magnitude(string) : "Magnitude (0 - 100)" : "100" : "Amount of physics force applied by the explosion."
@@ -3895,24 +3949,6 @@
 	output OnPushedPlayer(void) : "Fires when the player is pushed by the explosion."
 ]
 
-//REMOVED @PointClass base(BaseEntity) sphere(distance) line(255 255 255, targetname, directionentityname) iconsprite("editor-ficool2/env_physimpact") = env_physimpact : 
-//REMOVED 	"An entity that will cause a physics impact on another entity. Does not function in Team Fortress 2."
-//REMOVED [
-//REMOVED 	angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "Direction to project the impact."
-//REMOVED 	magnitude(integer) : "Magnitude" : 100 : "Strength of the impact."
-//REMOVED 	distance(integer) : "Distance" : 0 : "How far to project the impact (if 0 uses a default value)."
-//REMOVED 	directionentityname(target_destination) : "Point to Entity" :  : "If set, 'Distance' and Angle settings are ignored and the direction and distance to the target entity will be used."
-//REMOVED 
-//REMOVED 	spawnflags(flags) =
-//REMOVED 	[
-//REMOVED 		1: "No fall-off" : 0
-//REMOVED 		2: "Infinite Length" : 0
-//REMOVED 		4: "Ignore Mass" : 0
-//REMOVED 		8: "Ignore Surface Normal When Applying Force" : 1
-//REMOVED 	]
-//REMOVED 
-//REMOVED 	input Impact(void) : "Trigger the impact."
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_player_surface_trigger") = env_player_surface_trigger : 
 	"An entity that monitors the material of the surface the player is standing on, and fires outputs whenever it changes to/from a specific material."
@@ -3944,7 +3980,7 @@
 ]
 
 
-@PointClass base(BaseEntity) lightprop("models/editor/spot.mdl") frustum(lightfov,nearz,farz,lightcolor,-1) = env_projectedtexture : 
+@PointClass base(BaseEntityPoint) lightprop("models/editor/spot.mdl") frustum(lightfov,nearz,farz,lightcolor,-1) = env_projectedtexture : 
 	"It projects a texture as a dynamic light that affects all objects in the world, optionally with shadow mapping. Only 1 instance of this entity can be enabled. Disabled in Team Fortress 2 by default, requires mp_flashlight 1 to be enabled to function."
 [
 	target(target_destination)	: "target" : : "The entity will rotate to point at its target, no matter where it is in the world."	
@@ -3992,17 +4028,9 @@
 	input Ambient(bool) : "Allows for an ambiance light, much like the shadow color for it."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_quadraticbeam") = env_quadraticbeam : 
-//REMOVED 	"Non-functional without plugins. Creates a quadratic spline beam effect."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_ragdoll_boogie") = env_ragdoll_boogie : 
-//REMOVED 	"Temporary entity created when a ragdoll is given a StartRagdollBoogie input. No functionality when spawned manually."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_rockettrail") = env_rockettrail : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_rockettrail") = env_rockettrail : 
 	"An entity that emits a rocket trail."
 [
 ]
@@ -4014,19 +4042,6 @@
 	rotortimevariance(float) : "Time variance" : "0.3" : "The random amount to vary the time it has to be under the rotor before it shoots a gib."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_screeneffect") = env_screeneffect:
-//REMOVED 	"Allows screenspace effects to be played on the player's view. Does not function in Team Fortress 2."
-//REMOVED [
-//REMOVED 	type(choices) : "Effect Type" : 0 : "Which effect to use." =
-//REMOVED 	[
-//REMOVED 		0 : "Advisor Stun"
-//REMOVED 		1 : "Intro Blur"
-//REMOVED 		2 : "Groggy Vision"
-//REMOVED 	]
-//REMOVED 
-//REMOVED 	input	StartEffect(float) : "Start the effect with the duration in seconds as the passed parameter."
-//REMOVED 	input   StopEffect(float) : "Stop the effect over the duration in seconds as the passed parameter,"
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_screenoverlay") = env_screenoverlay: 
 	"An entity that can display and control a set of screen overlays, to be displayed over the player's view. Useful for view effects like drunkenness, or teleporter afterimages, etc."
@@ -4062,7 +4077,7 @@
 	input	SwitchOverlay(float) : "Switch to displaying a specific overlay. Pass in the desired overlay number in the parameter. Entering -1 as the value will cause the overlay to display indefinitely."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_shake") = env_shake : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_shake") = env_shake : 
 	"An entity which can be used to control screen shake on players or shake certain objects." 
 [
 	spawnflags(flags) =
@@ -4092,7 +4107,7 @@
 [
 ]
 
-@PointClass base(BaseEntity, Render) studioprop("models/editor/axis_helper.mdl") = env_smokestack : 
+@PointClass base(BaseEntityPoint, Render) studioprop("models/editor/axis_helper.mdl") = env_smokestack : 
 	"An entity that spits out a constant stream of particles. You can place up to two env_particlelight entities near the smoke stack to add ambient light to its particles."
 [
 	InitialState(choices) : "Initial State" : 0 = 
@@ -4128,7 +4143,7 @@
 	input Alpha(integer) : "Changes the smoke particle translucency."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_smoketrail") sphere(spawnradius) = env_smoketrail : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_smoketrail") sphere(spawnradius) = env_smoketrail : 
 	"An entity that creates a smoke trail. Must be parented to take effect." 
 [
 	opacity(float) : "Sprite Opacity" : "0.75" : "Opacity of the sprites (range from 0 - 1)."
@@ -4146,12 +4161,8 @@
 	spawnradius(float) : "Spawn radius" : "15" : "Distance from env_smoketrail at which particles are emitted."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_sniperdot") = env_sniperdot : 
-//REMOVED 	"The sniper dot created by a Sniper's primary. Not functional if spawned manually." 
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_soundscape") sphere(radius) line(255 255 255, targetname, position0) line(255 255 255, targetname, position1) line(255 255 255, targetname, position2) line(255 255 255, targetname, position3) line(255 255 255, targetname, position4) line(255 255 255, targetname, position5) line(255 255 255, targetname, position6) line(255 255 255, targetname, position7) = env_soundscape : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_soundscape") sphere(radius) line(255 255 255, targetname, position0) line(255 255 255, targetname, position1) line(255 255 255, targetname, position2) line(255 255 255, targetname, position3) line(255 255 255, targetname, position4) line(255 255 255, targetname, position5) line(255 255 255, targetname, position6) line(255 255 255, targetname, position7) = env_soundscape : 
 	"An entity to control sound in an area. The active soundscape at any time is the last one that had line-of-sight to the player, and was within the radius."
 [
     // up to date as of 04/01/2019
@@ -4315,7 +4326,7 @@
 	output OnPlay(void) : "Fired when this soundscape becomes the active one."
 ]
 
-@PointClass base(BaseEntity)  iconsprite("editor-ficool2/env_soundscape_proxy") sphere(radius) = env_soundscape_proxy : 
+@PointClass base(BaseEntityPoint)  iconsprite("editor-ficool2/env_soundscape_proxy") sphere(radius) = env_soundscape_proxy : 
 	"An entity that acts like a soundscape but gets all of its sound parameters from another env_soundscape entity."
 [
 	MainSoundscapeName(target_destination) : "Soundscape Entity" :  : "The soundscape to get all sound parameters from."
@@ -4323,7 +4334,7 @@
 ]
 
 // does not have radius keyvalue therefore we copy over instead and not inherit
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_soundscape_triggerable") = env_soundscape_triggerable : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_soundscape_triggerable") = env_soundscape_triggerable : 
 	"An entity that works like env_soundscape except that it works in conjunction with trigger_soundscape to determine when a player hears it."
 [
     // up to date as of 04/01/2019
@@ -4486,7 +4497,7 @@
 	output OnPlay(void) : "Fired when this soundscape becomes the active one."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor/env_spark") = env_spark : 
+@PointClass base(BaseEntityPoint) iconsprite("editor/env_spark") = env_spark : 
 	"An entity used to create sparks at its origin." 
 [
 	MaxDelay(string) : "Max Delay" : "0" : "The longest delay between sparks (in seconds)."
@@ -4519,7 +4530,7 @@
 	input SparkOnce(void) : "Spark once."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_splash") = env_splash : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_splash") = env_splash : 
     "An entity that creates a splash effect at its origin, not necessarily in water."
 [
 	scale(float) : "Scale" : "8.0" : "Scale of the splash."
@@ -4533,18 +4544,18 @@
 	input Splash(void) : "Create a splash effect."
 ]
 
-@PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/env_sporeexplosion") = env_sporeexplosion : 
+@PointClass base(BaseEntityPoint, EnableDisable) iconsprite("editor-ficool2/env_sporeexplosion") = env_sporeexplosion : 
     "An entity that emits flying, yellow spores/particles like from Half Life 2's Bugbait."
 [
 	spawnrate(float) : "Spawn Rate (as percentage)" : "25" : "How dense the spore effect is. This percentage is not bound to 100; even values in the thousands are acceptable."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_sporetrail") = env_sporetrail : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_sporetrail") = env_sporetrail : 
     "An entity that emits flying, yellow spores/particles like from Half Life 2's Bugbait, but in the form of a trail. Must be parented to take effect."
 [
 ]
 
-@PointClass base(BaseEntity, Render) size(-2 -2 -2, 2 2 2) sprite() color(20 140 20) = env_sprite : 
+@PointClass base(BaseEntityPoint, Render) size(-2 -2 -2, 2 2 2) sprite() color(20 140 20) = env_sprite : 
 	"An entity that controls the drawing of a sprite in the world."
 [
 	model(sprite) : "Sprite Name" : "sprites/glow01.spr" : "Material of the sprite to be drawn."
@@ -4574,13 +4585,13 @@
 [
 ]
 
-@PointClass base(BaseEntity, Render) size(-2 -2 -2, 2 2 2) sprite() color(30 210 65) = env_spritetrail : 
+@PointClass base(BaseEntityPoint, Render) size(-2 -2 -2, 2 2 2) sprite() color(30 210 65) = env_spritetrail : 
 	"Emits a sprite, intended to create a trail effect when moving. Must be parented to something."
 [
 	lifetime(float) : "Lifetime" : "0.5" : "How long the beam is shown."
 	startwidth(float) : "Start Width" : "8.0" : "The width of the beam to the beginning."
 	endwidth(float) : "End Width" : "1.0" : "The width of the beam when it has full expanded."
-	spritename(string) : "Sprite Name" : "sprites/bluelaser1.vmt" : "The material to draw."
+	spritename(sprite) : "Sprite Name" : "sprites/bluelaser1.vmt" : "The material to draw."
 	animate(choices) : "Animated?" : "0" : "Tells the sprite to animate if it can." =
 	[
 		0 : "No"
@@ -4602,14 +4613,9 @@
 	input SetScale(float) : "Set the sprite's scale."	
 ]
 
-@PointClass base(BaseEntity, Render) studioprop("models/editor/spot_cone.mdl") = env_steam : 
+@PointClass base(BaseEntityPoint, Render) studioprop("models/editor/spot_cone.mdl") = env_steam : 
 	"An entity used to create a jet of steam, or heat wave distortion."
 [
-	spawnflags(flags) =
-	[
-		1 : "Emissive - Uses the value specified in Color. If not checked, color is automatically determined by environmental lighting." : 0
-	]
-
 	InitialState(choices) : "Initial State" : 0 = 
 	[
 		0 : "Off"
@@ -4632,6 +4638,10 @@
 	renderamt(integer) : "Translucency" : 255 : "Opacity of the steam."
 	rollspeed(float) : "Roll speed" : 8 : "The speed at which particles spin."
 	
+	spawnflags(flags) =
+	[
+		1 : "Emissive - Uses the value specified in Color. If not checked, color is automatically determined by environmental lighting." : 0
+	]
 	input TurnOn(void) : "Turns the steam jet on."
 	input TurnOff(void) : "Turns the steam jet off."
 	input Toggle(void) : "Toggles the steam jet between on and off."
@@ -4648,7 +4658,10 @@
 [
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_sun") = env_sun : 
+
+
+
+@PointClass base(BaseEntity, Angles) iconsprite("editor-ficool2/env_sun") = env_sun : 
 	"An entity used to control and draw a sun effect in the sky."
 [
 	target(target_destination) : "Viewer entity" : : "Name of an entity used to determine where the sun is in the skybox. The resulting sun sprite will be positioned based on a line starting from the Viewer entity towards the env_sun."
@@ -4679,10 +4692,10 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_texturetoggle") = env_texturetoggle : 
      "An entity that allows you to change the animated texture frame on an entity that uses animated textures. Alternatively, you can change the 'texframeindex' keyvalue on an entity with AddOutput, although it will be slower to update."
 [
-	target(target_destination) : "Name of the entity. All ToggleTexture materials on all entities (including sprites) matching the targetname will be affected." 
+	target(target_destination) : "Target" : : "Name of the entity. All ToggleTexture materials on all entities (including sprites) matching the targetname will be affected." 
 
-	input	IncrementTextureIndex(void) : "Increments target's current texture frame by one."
-	input	SetTextureIndex(integer) : "Sets target's texture frame to the specified index."
+	input IncrementTextureIndex(void) : "Increments target's current texture frame by one."
+	input SetTextureIndex(integer) : "Sets target's texture frame to the specified index."
 ]
 
 
@@ -4700,14 +4713,14 @@
 	input UseDefaultBloomScale(void) : "Use the default BloomScale."
 ]
 
-@PointClass base(BaseEntity) line(255 255 255, targetname, target) iconsprite("editor-ficool2/env_tracer") = env_tracer : 
+@PointClass base(BaseEntityPoint) line(255 255 255, targetname, target) iconsprite("editor-ficool2/env_tracer") = env_tracer : 
 	"An entity that fires a thin tracer between itself and a target, with a specified delay. The tracer does not follow or update the target. The tracer always fires at its original position, even if the target is killed."
 [
 	target(target_destination) : "Target" : : "The target to fire the tracer at. Must be 256 or more units away from the env_tracer."
 	delay(float) : "Delay" : 1 : "How long to wait before firing the tracer again, in seconds."
 ]
 
-@PointClass base(BaseEntity) sphere(radius) iconsprite("editor-ficool2/env_viewpunch") = env_viewpunch :
+@PointClass base(BaseEntityPoint) sphere(radius) iconsprite("editor-ficool2/env_viewpunch") = env_viewpunch :
 	"An entity that applies a view punch on players according to the origin, radius, and angle." 
 [
 	punchangle(angle) : "Punch angles" : "0 0 90" : "The punch angles to apply."
@@ -4722,7 +4735,7 @@
 	input ViewPunch(void) : "Performs the view punch."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_wind") = env_wind : 
+@PointClass base(BaseEntity, Angles) iconsprite("editor-ficool2/env_wind") = env_wind : 
 	"An entity to control wind in the map. Can be used to control $treesway on models."
 [
 	gustsound(sound) : "Gust Sound Filename" :  : "Sound to be played to simulate the gusting wind."
@@ -4742,25 +4755,7 @@
 	output OnGustEnd(void) : "Fired when a wind gust ends."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_zoom") = env_zoom : 
-//REMOVED 	"An entity that can be used to control the player's FOV. Useful for scenes where the player's view is being controlled, or player-usable binoculars/telescopes, etc. Does not function in Team Fortress 2."
-//REMOVED [
-//REMOVED 	Rate(float) : "Seconds to reach target" : "1.0" : "Amount of time it should take to reach the specified FOV."
-//REMOVED 	FOV(integer) : "Target FOV" : 75 : "FOV that this entity should set the player's FOV to when active."
-//REMOVED 
-//REMOVED 	spawnflags(flags) =
-//REMOVED 	[
-//REMOVED 		1: "Allow Suit Zoom" : 0
-//REMOVED 	]
-//REMOVED 
-//REMOVED 	input Zoom(void) : "Start controlling the player's FOV."
-//REMOVED 	input UnZoom(void) : "Stop controlling the player's FOV."
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/event_queue_saveload_proxy") = event_queue_saveload_proxy : 
-//REMOVED 	"An entity that handles save & load queueing. No functionality when spawned manually." 
-//REMOVED [
-//REMOVED ]
 
 @FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_class") = filter_activator_class :
 	"A filter that filters by the class name of the activator. Entities can have their classnames changed using AddOutput. "+
@@ -4870,15 +4865,32 @@
 	Filter05(filterclass) : "Filter 5" : : "Activator filter to test."
 ]
 
+@FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_tf_class") = filter_tf_class :
+	"A filter that filters by the class of the activator.  The team number to filter by. " +
+	"If the filter mode is Allow, only entities whose class matches the given class will " +
+	"pass the filter. If the filter mode is Disallow, all entities EXCEPT those whose class " +
+	"matches the given class will pass the filter." 
+[
+	tfclass(choices) : "Class" : 0 : "Class" =
+	[
+		1 : "Scout"
+		2 : "Sniper"
+		3 : "Soldier"
+		4 : "Demoman"
+		5 : "Medic"
+		6 : "Heavy"
+		7 : "Pyro"
+		8 : "Spy"
+		9 : "Engineer"
+		10 : "Civilian"
+		11 : "Mercenary"
+	]
+]
+
 @PointClass base(BaseAnimating) studioprop() = fish :
 	"Fish created from the func_fish_pool entity. No special functionality if spawned manually."
 [
 ]
-
-//REMOVED @PointClass base(BaseAnimating) studioprop() = funCBaseFlex :
-//REMOVED 	"Useless entity. Valve's remark in code: 'meaningless independant class!!'"
-//REMOVED [
-//REMOVED ]
 
 // Special exception: the areaportal becomes a point entity at runtime, making its brush variant Hammer internal only
 @SolidClass base(BaseEntity) color(0 255 255) = func_areaportal :
@@ -4893,9 +4905,6 @@
 		0 : "Closed"
 		1 : "Open"
 	]
-
-	portalnumber(integer): "Portal Number"      :  : "Unknown function."
-	PortalVersion(integer): "Portal Version"      : 1  : "No functionality."
 	
 	input Open(void) : "Open the portal. When the portal is open is can be seen through."
 	input Close(void) : "Close the portal. When the portal is closed it cannot be seen through."
@@ -4911,9 +4920,6 @@
 	FadeDist(integer) : "Fade End Distance"   : 512 : "Distance at which the Rendered Window is fully visible, and the portal closes."
 	TranslucencyLimit(string) : "Translucency limit"  : "0.2" : "Prevents the Rendered Window brush from ever going completely transparent. Useful if your rendered window uses an opaque glass material."
 	BackgroundBModel(string) : "Background Brush"  :  : "Optional brush entity that is drawn after the fading brush model. This model should have alpha in its textures so you can see through it."
-
-	portalnumber(integer): "Portal Number"      :  : "Unknown function."
-	PortalVersion(integer): "Portal Version"      : 1  : "No functionality."
 	
 	input SetFadeStartDistance(integer) : "Sets fade start distance."
 	input SetFadeEndDistance(integer) : "Sets fade end distance."
@@ -5211,7 +5217,7 @@
 ]
 
 @SolidClass = func_detail_blocker : 
-	"This entity only works with the upgraded VBSP compiler. A brush entity that prevents detail sprites from being placed inside its volume."
+	"This entity only works with Slartibarty's compile tools. A brush entity that prevents detail sprites from being placed inside its volume."
 [
 ]
 
@@ -5441,7 +5447,7 @@
 
 ]
 
-@PointClass base(BaseEntity) sphere(max_range) iconsprite("editor-ficool2/func_fish_pool") = func_fish_pool :
+@PointClass base(BaseEntity, Angles) sphere(max_range) iconsprite("editor-ficool2/func_fish_pool") = func_fish_pool :
     "Creates a school of interactive fish that swim near this entity on the Y axis only. Killing the func_fish_pool does not delete the fish, the fish entity can be killed as a workaround."+
  	"However, killing the fish entity before killing the func_fish_pool entity crashes the game, the func_fish_pool entity must be killed first."
 [
@@ -5518,6 +5524,13 @@
 	parm10(instance_parm) : "Parm" : : "This is a parameter.  It goes in the form of $variable type."
 ]
 
+@SolidClass = func_ladder : 
+	"Internal entity. A ladder. Players will be able to freely move along this brush, as if it was a ladder. "+
+	"If you are using a model prop for the visual representation of the ladder in the map, apply the toolsinvisibleladder material to the func_ladder brush. "+
+	"Does not function in Team Fortress 2."
+[
+]
+
 @PointClass base(BaseEntity) size( -16 -16 0, 16 16 72 ) color(127 127 127) = func_ladderendpoint : 
 	"An entity used to specify the endpoints of a ladder. This entity is functional, but has been replaced by the " + 
 	"easier-to-use func_useableladder entity. Left in only for backwards-compatibility!\n\n" +
@@ -5528,12 +5541,6 @@
 	target(target_destination) : "Other Endpoint" : : "A ladder goes between any two func_ladderendpoints pointing at each other."
 ]
 
-//REMOVED @SolidClass = func_ladder : 
-//REMOVED 	"Internal entity. A ladder. Players will be able to freely move along this brush, as if it was a ladder. "+
-//REMOVED 	"If you are using a model prop for the visual representation of the ladder in the map, apply the toolsinvisibleladder material to the func_ladder brush. "+
-//REMOVED 	"Does not function in Team Fortress 2."
-//REMOVED [
-//REMOVED ]
 
 @SolidClass base(BaseAnimatingBrush) sphere(DisappearDist) = func_lod : 
 	"Brush-built model that fades out over a specified distance. Useful for creating world detail that doesn't need to be drawn far away, for performance reasons."
@@ -5541,16 +5548,6 @@
 	DisappearDist(integer)    : "Disappear Distance" : 2000 : "Distance at which these brushes should fade out."
 ]
 
-//REMOVED @SolidClass base(func_brush) = func_monitor :
-//REMOVED 	"A monitor that renders the view from a given point_camera entity. Does not work in Team Fortress 2."
-//REMOVED [
-//REMOVED 	target(target_destination) : "Camera Name" : : "Name of the camera to render."
-//REMOVED 	
-//REMOVED 	input Toggle(void) : "Toggle the monitor."
-//REMOVED 	input Enable(void) : "Enable the monitor."
-//REMOVED 	input Disable(void) : "Disable the monitor."
-//REMOVED 	input SetCamera(string) : "Sets the camera to use for this monitor. Takes the name of a point_camera entity in the map."
-//REMOVED ]
 
 @SolidClass base(BaseAnimatingBrush) = func_movelinear :
 	"A brush entity that moves linearly along a given distance, in a given direction."
@@ -5597,7 +5594,6 @@
 		0 : "Inactive"
 		1 : "Active"
 	]
-	occludernumber(integer) : "Occluder Number" : : "Unknown function."
 	
 	input Deactivate(void) : "Deactivate the occluder, When inactive, it can be seen through."
 	input Activate(void) : "Activate the occluder. When active, it cannot be seen through."
@@ -6061,10 +6057,8 @@
 	"A brush entity that spawns smoke particles within its volume. Can also be used as a trigger. Should not be placed in a func_precipitation, as it will cause crashes."
 [
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
-//REMOVED	globalname(string) : "Global Entity Name" : : "Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state."
 	parentname(target_destination) : "Parent" : : "Specifies a movement parent. An entity will maintain its initial offset from its parent. An attachment point can be added to the end of the name, separated by a comma. Every entity can be parented, even point entities. Entities which are parented will be forced to transition to the next map, such as from a trigger_transition. Some entities which aren't intended to be parented may not function correctly. phys_constraint can be used as a workaround to parenting."
     angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
-//REMOVED	hammerid(integer) : "Hammer ID" : : "The entity's Hammer ID, generated automatically. Mainly used by plugins and debugging commands, such as ent_keyvalue. Entities spawned at run-time are not assigned any Hammer ID."
 
 	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
@@ -6338,16 +6332,9 @@
 	input SetMaxPiecesDX8(integer)	: "Set the max gib count under DirectX 8."
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/camera.mdl") = game_intro_viewpoint :
+@PointClass base(BaseEntity, TeamNum) studioprop("models/editor/camera.mdl") = game_intro_viewpoint :
 	"Creates a camera from whose perspective you get images displayed as long as you have no team joined. With several game_intro_viewpoints, all appear for a certain time in turn. "
 [	
-	TeamNum(choices) : "Team" : 0 : "Team" =
-	[
-		0 : "None (Shared)"
-		2 : "RED"
-		3 : "BLU"
-	]
-
 	step_number(integer) : "Step Number. Intro starts at 1." : 1 : "The number of viewpoints in the series of all game_intro_viewpoints. These are displayed in sequence."
 	time_delay(float) : "Time to spend here." : 12 : "The time that the image should be displayed before the next one comes."
 	hint_message(string) : "Hint Message here." : "A message appears with the image."
@@ -6410,8 +6397,9 @@
 	TeamNum(choices) : "Team" : 0 : "Team" =
 	[
 		0 : "None (Sudden Death)"
-		2 : "RED"
-		3 : "BLU"
+		2 : "2 - RED"
+		3 : "3 - BLU"
+		4 : "4 - Mercenary"
 	]
 	win_reason(string) : "Win Reason" : : "Displays the custom reason for a win on the HUD."	
 	force_map_reset(choices) : "Force Map Reset?" : 1 : "Force the map to reset during the force respawn after the round is over." =
@@ -6504,7 +6492,7 @@
 	input Display(void) : "Display the message text."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/game_ui") = game_ui : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/game_ui") = game_ui : 
 	"An entity used to override player input when the player is looking at it."
 [
 	spawnflags(flags) =
@@ -6591,20 +6579,12 @@
 	]
 ]
 
-//REMOVED @PointClass base(BaseAnimating) studioprop() = gib : 
-//REMOVED 	"The gib entity generated by the 'gibshooter' entity."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(env_shooter_base) iconsprite("editor-ficool2/gibshooter") = gibshooter : 
 	"An entity that shoots out gibs. May not work correctly, use env_shooter instead. Style of body part depends on the language type."
 [	
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/grenade") = grenade : 
-//REMOVED 	"Used as a base for Half-Life 2 grenades. No functionality at all."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/hammer_updateignorelist") = hammer_updateignorelist :
 	"Specifies entities that are to be ignored by the hammer_update_safe_entities console command." + 
@@ -6629,30 +6609,10 @@
 	IgnoredName16(target_destination) : "Ignored Name 16" :  : "Do not send this entity's information back to Hammer during hammer_update_safe_entities."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/handle_dummy") = handle_dummy :
-//REMOVED 	"A dummy entity created from the 'test_ehandle' console command. No functionality when spawned."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/handle_test") = handle_test :
-//REMOVED 	"A entity used by the 'test_ehandle' console command. No functionality when spawned."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/info_camera_link") = info_camera_link :
-//REMOVED 	"An entity that can use point_cameras to render images for materials used by entities. "+
-//REMOVED 	"To author the material, use the special identifier _rt_Camera " +
-//REMOVED 	"for the $baseTexture (or whatever texture you want, like envmap, etc.) in the .vmt " +
-//REMOVED 	"then connect the 'target' field to the entity which uses that material, and the 'PointCamera' " +
-//REMOVED 	"field to the point_camera you want to have appear on that entity's material. Does not function in Team Fortress 2."
-//REMOVED [
-//REMOVED 	target(target_destination) : "Target" : : "Entity whose material uses _rt_camera,"
-//REMOVED 	PointCamera(target_destination) : "Camera Name" : : "The name of a point_camera entity in the map that the material should be rendered from."
-//REMOVED 	
-//REMOVED 	input SetCamera(string) : "Set the camera to use. The parameter should be the name of a point_camera entity in the map."
-//REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/info_constraint_anchor") = info_constraint_anchor : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/info_constraint_anchor") = info_constraint_anchor : 
 	"An entity used to attach constraints to a local position on an entity. Usually constraints will attach to the center of mass of an object. "+
 	"Attach the desired constraint to this entity, and then parent this entity to the entity you want the constraint to apply to."
 [
@@ -6765,11 +6725,6 @@
 	input DisableHint(void) : "Disable hint."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/info_intermission") line(255 255 255, targetname, target) = info_intermission : 
-//REMOVED     "Leftover entity from Half-Life Deathmatch, does not function. An entity that defines an intermission spot where dead players will float until they respawn."
-//REMOVED [
-//REMOVED 	target(target_destination) : "Entity to look at" : : "Name of entity that dead players will face while in intermission at this spot."
-//REMOVED ]
 
 @PointClass base(BaseEntity) size( -16 -16 0, 16 16 4 ) color(255 128 255)= info_ladder_dismount : 
 	"An entity to handle endpoints for multiple ladders that are too close to each other."
@@ -6777,10 +6732,6 @@
 	target(target_destination) : "LadderName" : : "If multiple ladders are near multiple endpoints, use this to stop them from interfering with each other."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/info_landmark") = info_landmark : 
-//REMOVED 	"An entity that acts as a landmark for transitions to another level. There should be a corresponding info_landmark entity in the next map. Entities will be transitioned to the next level relative to the info_landmark entities."
-//REMOVED [
-//REMOVED ]
 
 @PointClass iconsprite("editor-ficool2/info_lighting") = info_lighting : 
 	"An interal entity that can be used to change the lighting origin of a prop_static, and no other purpose. Set the prop_static's Lighting Origin to point at this entity to "+
@@ -6789,7 +6740,7 @@
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/info_lighting_relative") = info_lighting_relative : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/info_lighting_relative") = info_lighting_relative : 
 	"Deprecated by 'LightingOrigin' keyvalue and 'SetLightingOrigin' input for point entities, use those instead. An entity that allows a model to be lit from a different light origin without affecting the environment around the model. Great for lighting up trees with many lights or doing manual light correction."
 [
 	LightingLandmark(target_destination) : "Lighting Landmark" : : "Entity at which the reference origin is contained. If empty, the info_lighting_relative's origin will be used."
@@ -6937,7 +6888,7 @@
 	input SetInvert(integer) : "Change the invert exclusion rule"
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/info_npc_spawn_destination") = info_npc_spawn_destination : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/info_npc_spawn_destination") = info_npc_spawn_destination : 
 	"NPC spawn destination. An npc_template_maker can optionally have these set as the destination where the NPC will spawn."
 [
 	ReuseDelay(float) : "Reuse Delay" : 1 : "After an NPC is spawned at this destination, the delay before this destination is eligible for selection again."
@@ -6946,12 +6897,12 @@
 	output OnSpawnNPC(void) : "Fired when an NPC spawns at this destination."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/info_null") = info_null : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/info_null") = info_null : 
 	"An entity that's immediately removed on spawning. Useful as a spotlight target."
 [
 ]
 
-@PointClass base(BaseEntity, TeamNum, EnableDisable) studioprop("models/editor/camera.mdl") = info_observer_point :
+@PointClass base(BaseEntityPoint, TeamNum, EnableDisable) studioprop("models/editor/camera.mdl") = info_observer_point :
 	"Marks a camera location for Team Fortress 2 players. Any spectating players (due to selecting the Spectator team or being unable to respawn at the time) have the ability to select this camera location to observe."
 [
 	associated_team_entity(target_destination) : "Associated Team Entity" :  : "An entity associated with this point that can be owned by a team (such as a flag or control point). Players will only be able to use this observer point if their team owns the associated team entity."
@@ -6969,6 +6920,7 @@
 	"An entity that places an overlay on the world." 
 [
 	targetname(target_source) : "Name" : : "Name of the overlay. Used to access the overlay with an env_texturetoggle."
+   angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."																																																						 
 	material(material) : "Material" : : "The material to overlay."
 	sides(sidelist) : "Brush faces" : : "Faces on which the overlay will be applied."
 	RenderOrder(integer) : "Render Order" : 0 : "Higher values render after lower values (on top). This value can be 0-3."
@@ -6988,16 +6940,12 @@
 	fademaxdist(float) : "End Fade Dist" : 0 : "Maximum distance at which the overlay is visible (0 = don't fade out)."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/info_overlay_accessor") = info_overlay_accessor : 
-//REMOVED 	"Automatically created by VBSP on compile. Maps the targetnames of info_overlays to IDs, and used to access overlays (and change their texture)."
-//REMOVED [
-//REMOVED     OverlayID(integer) : "Overlay ID" : : "Overlay ID to change."
-//REMOVED ]
 
 @PointClass size(-1 -1 0, 1 1 1) color(80 150 225) studioprop("models/editor/overlay_helper.mdl") sidelist(sides) sidelist(sides2) overlay_transition() = info_overlay_transition : 
     "Overlay Transition. Creates a scrolling texture between a brush or displacement and a water brush, commonly used for a 'Wave' effect." 
 [
 	targetname(target_source) : "Name" : : "Name of the overlay. Used to access the overlay with an env_texturetoggle."
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."																																																						 
 	material(material) : "Material" : : "The material to overlay."
 	sides(sidelist) : "Brush faces" : : "Brush faces on which the overlay will be applied."
 	sides2(sidelist) : "Water faces" : : "Water Faces on which the overlay will be applied."
@@ -7014,7 +6962,7 @@
 	]
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor-ficool2/cone_helper_blue.mdl") line(255 255 255, targetname, cpoint1) line(255 255 255, targetname, cpoint2) line(255 255 255, targetname, cpoint3) line(255 255 255, targetname, cpoint4) line(255 255 255, targetname, cpoint5) line(255 255 255, targetname, cpoint6) line(255 255 255, targetname, cpoint7) line(255 255 255, targetname, cpoint8) line(255 255 255, targetname, cpoint9) line(255 255 255, targetname, cpoint10) line(255 255 255, targetname, cpoint11) line(255 255 255, targetname, cpoint12) line(255 255 255, targetname, cpoint13) line(255 255 255, targetname, cpoint14) line(255 255 255, targetname, cpoint15) line(255 255 255, targetname, cpoint16) line(255 255 255, targetname, cpoint17) line(255 255 255, targetname, cpoint18) line(255 255 255, targetname, cpoint19) line(255 255 255, targetname, cpoint20) line(255 255 255, targetname, cpoint21) line(255 255 255, targetname, cpoint22) line(255 255 255, targetname, cpoint23) line(255 255 255, targetname, cpoint24) line(255 255 255, targetname, cpoint25) line(255 255 255, targetname, cpoint26) line(255 255 255, targetname, cpoint27) line(255 255 255, targetname, cpoint28) line(255 255 255, targetname, cpoint29) line(255 255 255, targetname, cpoint30) line(255 255 255, targetname, cpoint31) line(255 255 255, targetname, cpoint32) line(255 255 255, targetname, cpoint33) line(255 255 255, targetname, cpoint34) line(255 255 255, targetname, cpoint35) line(255 255 255, targetname, cpoint36) line(255 255 255, targetname, cpoint37) line(255 255 255, targetname, cpoint38) line(255 255 255, targetname, cpoint39) line(255 255 255, targetname, cpoint40) line(255 255 255, targetname, cpoint41) line(255 255 255, targetname, cpoint42) line(255 255 255, targetname, cpoint43) line(255 255 255, targetname, cpoint44) line(255 255 255, targetname, cpoint45) line(255 255 255, targetname, cpoint46) line(255 255 255, targetname, cpoint47) line(255 255 255, targetname, cpoint48) line(255 255 255, targetname, cpoint49) line(255 255 255, targetname, cpoint50) line(255 255 255, targetname, cpoint51) line(255 255 255, targetname, cpoint52) line(255 255 255, targetname, cpoint53) line(255 255 255, targetname, cpoint54) line(255 255 255, targetname, cpoint55) line(255 255 255, targetname, cpoint56) line(255 255 255, targetname, cpoint57) line(255 255 255, targetname, cpoint58) line(255 255 255, targetname, cpoint59) line(255 255 255, targetname, cpoint60) line(255 255 255, targetname, cpoint61) line(255 255 255, targetname, cpoint62) line(255 255 255, targetname, cpoint63) = info_particle_system : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_blue.mdl") line(255 255 255, targetname, cpoint1) line(255 255 255, targetname, cpoint2) line(255 255 255, targetname, cpoint3) line(255 255 255, targetname, cpoint4) line(255 255 255, targetname, cpoint5) line(255 255 255, targetname, cpoint6) line(255 255 255, targetname, cpoint7) line(255 255 255, targetname, cpoint8) line(255 255 255, targetname, cpoint9) line(255 255 255, targetname, cpoint10) line(255 255 255, targetname, cpoint11) line(255 255 255, targetname, cpoint12) line(255 255 255, targetname, cpoint13) line(255 255 255, targetname, cpoint14) line(255 255 255, targetname, cpoint15) line(255 255 255, targetname, cpoint16) line(255 255 255, targetname, cpoint17) line(255 255 255, targetname, cpoint18) line(255 255 255, targetname, cpoint19) line(255 255 255, targetname, cpoint20) line(255 255 255, targetname, cpoint21) line(255 255 255, targetname, cpoint22) line(255 255 255, targetname, cpoint23) line(255 255 255, targetname, cpoint24) line(255 255 255, targetname, cpoint25) line(255 255 255, targetname, cpoint26) line(255 255 255, targetname, cpoint27) line(255 255 255, targetname, cpoint28) line(255 255 255, targetname, cpoint29) line(255 255 255, targetname, cpoint30) line(255 255 255, targetname, cpoint31) line(255 255 255, targetname, cpoint32) line(255 255 255, targetname, cpoint33) line(255 255 255, targetname, cpoint34) line(255 255 255, targetname, cpoint35) line(255 255 255, targetname, cpoint36) line(255 255 255, targetname, cpoint37) line(255 255 255, targetname, cpoint38) line(255 255 255, targetname, cpoint39) line(255 255 255, targetname, cpoint40) line(255 255 255, targetname, cpoint41) line(255 255 255, targetname, cpoint42) line(255 255 255, targetname, cpoint43) line(255 255 255, targetname, cpoint44) line(255 255 255, targetname, cpoint45) line(255 255 255, targetname, cpoint46) line(255 255 255, targetname, cpoint47) line(255 255 255, targetname, cpoint48) line(255 255 255, targetname, cpoint49) line(255 255 255, targetname, cpoint50) line(255 255 255, targetname, cpoint51) line(255 255 255, targetname, cpoint52) line(255 255 255, targetname, cpoint53) line(255 255 255, targetname, cpoint54) line(255 255 255, targetname, cpoint55) line(255 255 255, targetname, cpoint56) line(255 255 255, targetname, cpoint57) line(255 255 255, targetname, cpoint58) line(255 255 255, targetname, cpoint59) line(255 255 255, targetname, cpoint60) line(255 255 255, targetname, cpoint61) line(255 255 255, targetname, cpoint62) line(255 255 255, targetname, cpoint63) = info_particle_system : 
 	"An entity that spawns a particle system built using the particle editor."
 [
 	effect_name(string) : "Particle System Name" : : "The name of the particle system to spawn. NOT the name of a PCF file!"
@@ -7105,12 +7053,8 @@
 	input Stop(void) : "Tell the particle system to stop emitting."
 ]
 
-//REMOVED @PointClass base(BaseEntity) studioprop("models/player.mdl") = info_player_deathmatch :
-//REMOVED 	"This entity indicates the position and facing direction at which the player will spawn during a deathmatch map. Not used in TF2."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/playerstart.mdl") = info_player_start :
+@PointClass base(BaseEntityPoint) studioprop("models/editor/playerstart.mdl") = info_player_start :
 	"This entity indicates the position and facing direction at which the player will spawn."
 [
 	spawnflags(flags) =
@@ -7119,7 +7063,7 @@
 	]
 ]
 
-@PointClass base(BaseEntity,TeamNum,EnableDisable) studioprop("models/editor-abs/dev_engy.mdl") = info_player_teamspawn :
+@PointClass base(BaseEntityPoint,TeamNum,EnableDisable) studioprop("models/editor-abs/dev_engy.mdl") = info_player_teamspawn :
 	"This entity marks the spawn point for Team Fortress 2 players."
 [
     controlpoint(target_destination) : "Associated Control Point" : : "The team_control_point associated with this spawn. Ownership of control points will control this spawn point's enabled state."
@@ -7154,7 +7098,7 @@
 	]
 ]
 
-@PointClass base(BaseEntity) decal() studioprop("models/editor/axis_helper_thick.mdl") = info_projecteddecal : 
+@PointClass base(BaseEntityPoint) decal() studioprop("models/editor/axis_helper_thick.mdl") = info_projecteddecal : 
 	"An entity that projects a decal onto the world (or props). If the decal has no target name, it will immediately apply itself when "+
 	"the level is loaded. If it has a name specified, it won't apply until it receives the 'Activate' input and will count towards the edict limit."
 [
@@ -7164,13 +7108,13 @@
 	input Activate(void) : "Force the decal to apply itself to the world."
 ]
 
-@PointClass sphere(radius) base(BaseEntity) iconsprite("editor-ficool2/info_radial_link_controller") = info_radial_link_controller :
+@PointClass sphere(radius) base(BaseEntityPoint) iconsprite("editor-ficool2/info_radial_link_controller") = info_radial_link_controller :
 	"This entity automatically severs node connections that pass through its radius. If it moves, it will restore those connections."
 [
-	radius(float) : "Radius (Use Helper!)" : 120 : "Range at which node connections will be affected."
+	radius(float) : "Radius" : 120 : "Range at which node connections will be affected."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/info_target")  = info_target : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/info_target")  = info_target : 
 	"An entity that does nothing and simply exists. Very useful as a positioning entity for other entities to refer to (i.e. the endpoint of an env_beam)"
 [
 	spawnflags( Flags ) =
@@ -7179,12 +7123,12 @@
 	]
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/playerstart.mdl") = info_teleport_destination : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor/playerstart.mdl") = info_teleport_destination : 
 	"Same function as info_target, although easier to position for entities requiring a human-sized target, such as teleporters."
 [
 ]
 
-@PointClass base(BaseEntity) decal() studioprop("models/editor/axis_helper_thick.mdl") = infodecal : 
+@PointClass base(BaseEntityPoint) decal() studioprop("models/editor/axis_helper_thick.mdl") = infodecal : 
 	"An entity that places a decal on the world. If the decal has no target name, it will immediately apply itself when the level is loaded. "+
 	"If it has a name specified, it won't apply until it receives the 'Activate' input and will count towards the edict limit."
 [
@@ -7197,13 +7141,7 @@
 	]
 
 	input Activate(void) : "Force the decal to apply itself to the world."
-]
-
-@PointClass base(logic_choreographed_scene_base) iconsprite("editor-ficool2/instanced_scripted_scene") = instanced_scripted_scene :
-    "An entity created on demand by scripted_sequence. Functionally identical to logic_choreographed_scene."
-[
-]
-
+]																																	
 
 @PointClass base(Item) studioprop("models/items/ammopack_large.mdl") = item_ammopack_full :	
      "Full ammo pack for players." 
@@ -7221,19 +7159,6 @@
 ]
 
 
-//REMOVED @PointClass base(Item) studioprop("models/player.mdl") = item_armor : 
-//REMOVED      "Leftover from Half-Life. No functionality."
-//REMOVED [
-//REMOVED ]
-
-@PointClass base(Item) studioprop("models/items/currencypack_small.mdl") = item_currencypack_custom :
-   "Custom Credits Pickup from MvM."
-[
-	spawnflags(flags) = 
-	[
-		1073741824: "Never Respawn" : 1
-	]
-]
 
 @PointClass base(Item) studioprop("models/items/medkit_large.mdl") = item_healthkit_full : 
     "Full health kit for players." 
@@ -7276,12 +7201,7 @@
 	output OnCapture(void) : "Sent when the flag is captured."
 ]
 
-@PointClass base(BaseAnimating) iconsprite("editor-ficool2/item_teamflag_return_icon") = item_teamflag_return_icon :
-    "The marker displayed above an item_teamflag when dropped after carrying."
-[
-]
-
-@KeyFrameClass base(BaseEntity, Render) studio("models/editor/axis_helper_thick.mdl") keyframe() = keyframe_rope : 
+@KeyFrameClass base(BaseEntityPoint, Render) studio("models/editor/axis_helper_thick.mdl") keyframe() = keyframe_rope : 
 	"A node entity that marks a point in a rope. The first node in the rope should be a move_rope, followed by 1 or more keyframe_ropes."
 [
 	NextKey(target_destination) : "Next keyframe_rope" : : "Name of the next keyframe along this keyframe path."
@@ -7333,22 +7253,6 @@
 	input Break(void) : "Break the rope, if it's marked to do so."
 ]
 
-//REMOVED @KeyFrameClass base(BaseEntity) studioprop("models/editor/axis_helper_thick.mdl") color(255 200 0) keyframe() = keyframe_track : 
-//REMOVED 	"Deprecated entity from the Half-Life 2 beta. Would have allowed an entity to follow this path, although this functionality has been completely removed."
-//REMOVED [
-//REMOVED 	NextKey(target_destination) : "Next keyframe_track" : : "Name of the next keyframe along this keyframe path."
-//REMOVED 
-//REMOVED 	TimeModifier(choices) : "Time Modifier" : 0 =
-//REMOVED 	[
-//REMOVED 		0 : "Linear"
-//REMOVED 		1 : "Accel"
-//REMOVED 		2 : "Deaccel"
-//REMOVED 		2 : "Accel/Deaccel (sine)"
-//REMOVED 	]
-//REMOVED 	
-//REMOVED 	MoveSpeed(integer) : "Speed (units per second)" : 64 : "Keyframe moving speed."
-//REMOVED 	NextTime(string) : "Next Time" : : "Time to get to next keyframe."
-//REMOVED ]
 
 @PointClass light() iconsprite("editor-ficool2/light") base(BaseEntity) sphere(_fifty_percent_distance) sphere(_zero_percent_distance) sphere(_distance) = light :
 	"An invisible omnidirectional lightsource."
@@ -7410,7 +7314,7 @@
 ]
 
 @PointClass iconsprite("editor-ficool2/light_directional") = light_directional : 
-	"This entity only works with the upgraded VRAD compiler. A directional light with no falloff. Similar to sunlight in light_environment."
+	"This entity only works with Slartibarty's compile tools. A directional light with no falloff. Similar to sunlight in light_environment."
 [
     angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
 	pitch(integer) : "Pitch" : 0 : "The downward pitch of the direct light from the entity. 0 is horizontal, -90 is straight down."
@@ -7420,10 +7324,11 @@
 	SunSpreadAngle(float) : "SpreadAngle" : 0 : "The angular extent of the light for casting soft shadows. Higher numbers are more diffuse. 1 is a good starting value."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/light_dynamic") sphere(distance) lightcone() = light_dynamic : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/light_dynamic") sphere(distance) lightcone() = light_dynamic : 
 	"An invisible lightsource that changes in some way over time." 
 [
 	target(target_destination) : "Entity to point at" : : "The name of an entity in the map that the dynamic light will point at."
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."																																																						 
 	_light(color255) : "Light color" : "255 255 255 200" : "The RGB render color of the spotlight. Colors must be between 0 and 255."
 	brightness(integer) : "Light brightness" : 0 : "The intensity of the spotlight."
 	_inner_cone(integer) : "Inner (bright) angle" : 30 : "The angles of the inner spotlight beam. 0 makes it omnidirectional."
@@ -7473,6 +7378,7 @@
 	"Sets the color and angle of the light from the sun and sky. The light_environment can be named.toggled, although the quality will be noticeably worse as bounced lighting will not be simulated on a named light."
 [
 	pitch(integer) : "Pitch" : 0 : "The downward pitch of the light from the sun. 0 is horizontal, -90 is straight down."
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."																																																						 
 	_light(color255) : "Brightness" : "255 255 255 200" : "Color and brightness of direct Sunlight."
 	_ambient(color255) : "Ambient" : "255 255 255 20" : "Color and brightness of diffuse Skylight."
 	_lightHDR(color255) : "BrightnessHDR" : "-1 -1 -1 1" : "Override for Brightness when compiling HDR lighting. Defaults to -1 -1 -1 1, which means the same as LDR."
@@ -7527,75 +7433,12 @@
 ]
 
 // copyed from light_spot, not worth to use an independant base
-//REMOVED @PointClass base(BaseEntity) lightprop("models/editor/spot.mdl") lightcone() sphere(_fifty_percent_distance) sphere(_zero_percent_distance) sphere(_distance) = light_glspot :
-//REMOVED 	"Deprecated entity from Half Life 2 beta. Only works with 2003 builds of VRAD."
-//REMOVED [
-//REMOVED 	target(target_destination) : "Entity to point at" : : "The name of an entity in the map that the spotlight will point at. This will override the spotlight's angles."
-//REMOVED 	_light(color255) : "Brightness" : "255 255 255 200" : "The RGB color and brightness of the light. Colors must be between 0 and 255; brightness can be anything."
-//REMOVED 	_lightHDR(color255) : "BrightnessHDR" : "-1 -1 -1 1" : "Brightness override used in HDR mode. Default is -1 -1 -1 1, which means no change."
-//REMOVED 	_lightscaleHDR(float) : "BrightnessScaleHDR" : "1" : "Amount to scale the light by when compiling for HDR."
-//REMOVED 	defaultstyle(Choices) : "Default Appearance" : 0 : "Default Custom Appearance to use, may not function." =
-//REMOVED 	[
-//REMOVED 		0 : "Normal"
-//REMOVED 		1 : "Flicker A"
-//REMOVED 		2 : "Slow, strong pulse"
-//REMOVED 		3 : "Candle A"
-//REMOVED 		4 : "Fast strobe"
-//REMOVED 		5 : "Gentle pulse"
-//REMOVED 		6 : "Flicker B"
-//REMOVED 		7 : "Candle B"
-//REMOVED 		8 : "Candle C"
-//REMOVED 		9 : "Slow strobe"
-//REMOVED 		10: "Fluorescent flicker"
-//REMOVED 		11: "Slow pulse, noblack"
-//REMOVED 		12: "Underwater light mutation"
-//REMOVED 	]
-//REMOVED 	style(Choices) : "Appearance" : 0 : "Various Custom Appearance presets." =
-//REMOVED 	[
-//REMOVED 		0 : "Normal"
-//REMOVED 		1 : "Flicker A"
-//REMOVED 		2 : "Slow, strong pulse"
-//REMOVED 		3 : "Candle A"
-//REMOVED 		4 : "Fast strobe"
-//REMOVED 		5 : "Gentle pulse"
-//REMOVED 		6 : "Flicker B"
-//REMOVED 		7 : "Candle B"
-//REMOVED 		8 : "Candle C"
-//REMOVED 		9 : "Slow strobe"
-//REMOVED 		10: "Fluorescent flicker"
-//REMOVED 		11: "Slow pulse, noblack"
-//REMOVED 		12: "Underwater light mutation"
-//REMOVED 	]
-//REMOVED 	pattern(string) : "Custom Appearance" :  : "A string of characters, like a sequence of piano keys, that define a pattern of brightness. a is dark and z is full intensity. Applies only to lights with a targetname."
-//REMOVED 	_constant_attn(string)	: "Constant" : "0" : "Determines brightness of the light at a certain distance.  Higher Constants dim the light near the entity."
-//REMOVED 	_linear_attn(string)	: "Linear" : "0" : "Determines brightness of the light at a certain distance.  Higher Linears dim the light at all distances."
-//REMOVED 	_quadratic_attn(string)	: "Quadratic" : "1" : "Determines brightness of the light at a certain distance.  Higher Quadratics dim the light far from the entity."
-//REMOVED 	_fifty_percent_distance(float) : "Half (50%) Falloff" : : "Distance from this light at which it is reduced to 50% brightness.  Ignores Quadratic, Linear, and Constant if used."
-//REMOVED 	_zero_percent_distance(float) : "Complete (0%) Falloff" : : "Distance from this light at which it cannot light objects anymore ((1/256)% brightness).  Requires Half Falloff."
-//REMOVED 	_hardfalloff(integer) : "Hard falloff" : 0 : "If set, causes lights to fall to exactly zero beyond the zero percent distance. May cause unrealistic lighting if not used carefully."
-//REMOVED 	
-//REMOVED 	_inner_cone(integer) : "Inner (bright) angle" : 30 : "The angles of the inner spotlight beam."
-//REMOVED 	_cone(integer) : "Outer (fading) angle" : 45 : "The angles of the outer spotlight beam."
-//REMOVED 	_exponent(integer) : "Focus" : 1 : "Changes the distance between the umbra and penumbra cone - higher values make the edge of the light more blurred,"
-//REMOVED 	_distance(integer) : "Maximum distance" : 0 : "This is the distance that light is allowed to cast, in units."
-//REMOVED 	pitch(angle_negative_pitch) : "Pitch" : -90 : "Used instead of Pitch Yaw Roll's value for reasons unknown."
-//REMOVED 	
-//REMOVED 	spawnflags(Flags) =
-//REMOVED 	[ 
-//REMOVED 	     1 : "Initially dark - only works when light has a targetname." : 0
-//REMOVED 	]
-//REMOVED 	
-//REMOVED 	input TurnOn(void) : "Turn the light on."
-//REMOVED 	input TurnOff(void) : "The the light off."
-//REMOVED 	input Toggle(void) : "Toggle the light's current state."
-//REMOVED 	input SetPattern(string) : "Set a custom pattern of light brightness for this light. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light."
-//REMOVED 	input FadeToPattern(string) : "Fades from first value in old pattern, to first value in the new given pattern. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light."
-//REMOVED ]
 
 @PointClass base(BaseEntity) lightprop("models/editor/spot.mdl") lightcone() sphere(_fifty_percent_distance) sphere(_zero_percent_distance) sphere(_distance) = light_spot :
 	"An invisible and directional spotlight."
 [
 	target(target_destination) : "Entity to point at" : : "The name of an entity in the map that the spotlight will point at. This will override the spotlight's angles."
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."																																																						 
 	_light(color255) : "Brightness" : "255 255 255 200" : "The RGB color and brightness of the light. Colors must be between 0 and 255; brightness can be anything."
 	_lightHDR(color255) : "BrightnessHDR" : "-1 -1 -1 1" : "Brightness override used in HDR mode. Default is -1 -1 -1 1, which means no change."
 	_lightscaleHDR(float) : "BrightnessScaleHDR" : "1" : "Amount to scale the light by when compiling for HDR."
@@ -7657,27 +7500,6 @@
 	input FadeToPattern(string) : "Fades from first value in old pattern, to first value in the new given pattern. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/logic_active_autosave") = logic_active_autosave :
-//REMOVED 	"An entity that is used to look for opportunities to autosave."
-//REMOVED [
-//REMOVED 	NewLevelUnit(choices) : "Force New Level Unit" : 0 : "If set, the save will discard any savedata from previous levels, for the purpose of keeping savegame filesizes down. Can only be safely used if there is no way for the player to return to previous levels." =
-//REMOVED 	[
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]
-//REMOVED 	
-//REMOVED 	MinimumHitPoints(integer): "Initiation Hit Points" : 30 : "Start looking for an opportunity to save if player drops below this hitpoint level."
-//REMOVED 	MinHitPointsToCommit(integer) : "Minimum Hit Points to Commit" : 0 : "Minimum hitpoints required to commit to save. The save will be made if you have at least Minimum Hit Points, but when the autosave timer expires, the autosave is only kept if you have at least Min Hitpoints to Commit."
-//REMOVED 	TriggerHitPoints(integer): "Trigger Hit Points" : 75 : "If started looking for an opportunity, save when hitpoints reach this level."
-//REMOVED 	TimeToTrigget(float): "Time to trigger" : 0 : "If > 0, how long to try and get a save off before giving up"
-//REMOVED 	DangerousTime(float): "Dangerous time" : 10 : "If 0, just autosave. Otherwise, do an autosavedangerous with this time threshold"
-//REMOVED 
-//REMOVED 	input Enable(void) : "Enable the entity."
-//REMOVED 	input Disable(void) : "Enable the entity."
-//REMOVED 	input Save(void) : "Force an autosave."
-//REMOVED 	input SaveDangerous(float) : "Force an autosave as autosavedangerous.sav. If the player is alive after the passed number of seconds it replaces the standard auto save."
-//REMOVED 	input SetMinHitpointsThreshold(integer) : "Set MinimumHitPoints to this."
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor/logic_auto") = logic_auto : 
 	"Fires outputs when a map spawns. " +
@@ -7715,25 +7537,6 @@
 	output OnMultiNewRound(void) : "Fired only in multiplayer, when a new round is started. Only fired in multiplayer games that use round-based gameplay."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/logic_autosave") = logic_autosave :
-//REMOVED 	"An entity that is used to force an autosave."
-//REMOVED [
-//REMOVED 	NewLevelUnit(choices) : "Force New Level Unit" : 0 : "If set, the save will discard any savedata from previous levels, for the purpose of keeping savegame filesizes down. Can only be safely used if there is no way for the player to return to previous levels." =
-//REMOVED 	[
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]
-//REMOVED 	
-//REMOVED 	MinimumHitPoints(integer): "Minimum Hit Points" : 0 : "Don't save dangerous when player has less than this many hitpoints."
-//REMOVED 	MinHitPointsToCommit(integer) : "Minimum Hit Points to Commit" : 0 : "Minimum hitpoints required to commit to save. The save will be made if you have at least Minimum Hit Points, but when the autosave timer expires, the autosave is only kept if you have at least Min Hitpoints to Commit."
-//REMOVED 	TriggerHitPoints(integer): "Trigger Hit Points" : 75 : "If started looking for an opportunity, save when hitpoints reach this level."
-//REMOVED 	TimeToTrigget(float): "Time to trigger" : 0 : "If > 0, how long to try and get a save off before giving up"
-//REMOVED 	DangerousTime(float): "Dangerous time" : 10 : "If 0, just autosave. Otherwise, do an autosavedangerous with this time threshold"
-//REMOVED 
-//REMOVED 	input Save(void) : "Force an autosave."
-//REMOVED 	input SaveDangerous(float) : "Force an autosave as autosavedangerous.sav. If the player is alive after the passed number of seconds it replaces the standard auto save."
-//REMOVED 	input SetMinHitpointsThreshold(integer) : "Set MinimumHitPoints to this."
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor/logic_branch") = logic_branch :
 	"Tests a boolean value and fires an output based on whether the value is true or false. " +
@@ -7941,10 +7744,6 @@
 	input Toggle(void) : "Toggle on/off."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/logic_proximity") = logic_proximity : 
-//REMOVED 	"The attempted point entity equivalent of trigger_proximity, unfortunately it has never been finished and has no function."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity, EnableDisable) iconsprite("editor/logic_relay") = logic_relay :
 	"A message forwarder. Fires an OnTrigger output when triggered, and " +
@@ -8028,7 +7827,7 @@
 	output OnTimerLow(void) : "Fired every other time for an oscillating timer."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/material_modify_control") = material_modify_control : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/material_modify_control") = material_modify_control : 
 	"An entity that can be used to directly control material vars. To use it, you need to read the .vmt of the material you "+
 	"intend to change. Parent this entity to a brush model entity who's material you want to control."
 [
@@ -8220,34 +8019,8 @@
 [
 ]
 
-//REMOVED @KeyFrameClass base(BaseEntity) studioprop("models/editor/axis_helper_thick.mdl") color(255 200 0) = move_keyframed : 
-//REMOVED 	"Deprecated entity from the Half-Life 2 beta. Would have allowed an entity to follow this path, although this functionality has been completely removed."
-//REMOVED [
-//REMOVED 	NextKey(target_destination) : "Next keyframe_track" : : "Name of the next keyframe along this keyframe path."
-//REMOVED 	PositionInterpolator(choices) : "Position Interpolator" : 2 =
-//REMOVED 	[
-//REMOVED 		0 : "Linear"
-//REMOVED 		1 : "Catmull-Rom Spline"
-//REMOVED 		2 : "Rope"
-//REMOVED 	]
-//REMOVED 	RotationInterpolator(choices) : "Rotation Interpolator" : 2 =
-//REMOVED 	[
-//REMOVED 		0 : "Linear"
-//REMOVED 		1 : "Catmull-Rom Spline"
-//REMOVED 		2 : "Rope"
-//REMOVED 	]
-//REMOVED 	TimeModifier(choices) : "Time Modifier" : 0 : "Time modifier. Appears to be non-functional." =
-//REMOVED 	[
-//REMOVED 		0 : "Linear"
-//REMOVED 		1 : "Accel"
-//REMOVED 		2 : "Deaccel"
-//REMOVED 		2 : "Accel/Deaccel (sine)"
-//REMOVED 	]
-//REMOVED 	MoveSpeed(integer) : "Speed (units per second)" : 64 : "Keyframe moving speed."
-//REMOVED 	NextTime(string) : "Next Time" : : "Time to get to next keyframe."
-//REMOVED ]
 
-@MoveClass base(BaseEntity, Render) studio("models/editor/axis_helper.mdl") animator() = move_rope : 
+@MoveClass base(BaseEntityPoint, Render) studio("models/editor/axis_helper.mdl") animator() = move_rope : 
 	"The first node in set of nodes that are used to place ropes in the world. It should connect to 1 or more keyframe_rope entities."
 [
 	NextKey(target_destination) : "Next keyframe_rope" : : "Name of the next keyframe along this keyframe path."
@@ -8330,7 +8103,7 @@
 [	
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/npc_maker") = npc_maker :
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/npc_maker") = npc_maker :
     "Spawns a class of NPC at its position when told to. Typically used to provide a continuous wave of attackers during an ambush, or to replace killed enemies in a standoff-type situation."
 [
 	MaxNPCCount(integer) : "Num. of NPCs" : 1 : "Number of NPCs that will spawn before this spawner is exhausted."
@@ -8372,7 +8145,7 @@
 	output OnAllLiveChildrenDead(void) : "Fired when all spawned children have died. This does not mean the spawned is exhausted, so a new child may be spawned any time after this (unless the maker is disabled)."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/npc_template_maker") sphere(radius) = npc_template_maker : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/npc_template_maker") sphere(radius) = npc_template_maker : 
 	"An entity that creates NPCs. The NPCs it creates are clones of a template NPC. NPCs are spawned around this maker's origin, or at specified destination points. The NPC must have the 'Template NPC' spawnflag ticked."
 [
 	StartDisabled(choices) : "Start Disabled?" : 1 : "Start this spawner disabled?" =
@@ -8452,10 +8225,6 @@
 	input SetDriversMinSpeed(float) : "Set the Minimum speed (percentage of vehicle's maximum speed)."
 ]
 
-//REMOVED @PointClass base(BaseObject) studioprop("models/buildables/sapper_placed.mdl") = obj_attachment_sapper : 
-//REMOVED 	"The sapper placed on a building by a Spy. Does not function when spawned manually."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseObject) studioprop("models/buildables/dispenser_lvl3.mdl") = obj_dispenser : 
 	"The Dispenser. Gives health and ammunition to nearby players. The entity also spawns a vgui_screen entity, used for the metal counter screen."
@@ -8478,7 +8247,7 @@
 [
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor-ficool2/cone_helper_brown.mdl") line(255 255 255, targetname, target) = path_corner : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_brown.mdl") line(255 255 255, targetname, target) = path_corner : 
     "Generic path point for moving entities such as NPCs."
 [
 	target(target_destination) : "Next path_corner" : : "Next stop target after this one."
@@ -8497,7 +8266,7 @@
 	output OnPass(void) : "Fires when a path follower passes this point"
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor-ficool2/cone_helper_brown.mdl") line(255 255 255, targetname, target) = path_corner_crash :
+@PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_brown.mdl") line(255 255 255, targetname, target) = path_corner_crash :
     "Identical to a path_corner, but when an NPC is searching for a crash point, it will search for this point instead."
 [
 	target(target_destination) : "Next path_corner" : : "Next stop target after this one."
@@ -8516,7 +8285,7 @@
 	output OnPass(void) : "Fires when a path follower passes this point"
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor-ficool2/cone_helper_brown.mdl") sphere(radius) line(255 255 255, targetname, target) = path_track : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_brown.mdl") sphere(radius) line(255 255 255, targetname, target) = path_track : 
 	"An entity used to build paths for other entities to follow. Each path_track is a node on the path, each holding the name of the next path_track in the path."
 [
 	target(target_destination) : "Next Stop Target" : : "The next path_track in the path."
@@ -8559,12 +8328,6 @@
 [
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/phys_bone_follower") = phys_bone_follower : 
-//REMOVED 	"prop_dynamic and prop_ragdoll generate phys_bone_followers if they have a collision model. These bone followers are created for every convex piece of its collision model. "+
-//REMOVED 	"These can quickly eat up the edict count! However, if the 'Disable Bone Followers' keyvalue on the prop entity is set to Yes, the prop will disable bone followers, "+
-//REMOVED 	"although the prop will no longer have a functioning collision model, and the model will not be able to ragdoll. The .phy of a model can also be deleted to remove the collision model and save file space as an alternative."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(TwoObjectPhysics) studioprop("models/editor/axis_helper.mdl") = phys_constraint : 
 	"A constraint that keeps the relative position and orientation of two objects fixed. Recommended to be used with phys_constraintsystem."
@@ -8612,7 +8375,7 @@
 	input SetHingeFriction(float) : "Set the resistance/friction in the hinge."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/phys_keepupright")  = phys_keepupright : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/phys_keepupright")  = phys_keepupright : 
     "A controller that tries to keep an entity facing a particular direction. This works on parented entities, allowing their angles to be constrained."
 [
 	attach1(target_destination) : "Target Entity" :  : "The entity to align to the desired angles."
@@ -8667,7 +8430,7 @@
 	output OnDetach(void) : "Fired when an entity is released by the magnet."
 ]
 
-@PointClass base(BaseEntity) halfgridsnap iconsprite("editor-ficool2/phys_motor") = phys_motor : 
+@PointClass base(BaseEntityPoint) halfgridsnap iconsprite("editor-ficool2/phys_motor") = phys_motor : 
 	"An entity that tries to spin a target entity at a particular speed."
 [
 	attach1(target_destination) : "Attached Object" :  : "Object to apply the force to."
@@ -8724,7 +8487,7 @@
 	]
 ]
 
-@PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/phys_ragdollmagnet") sphere(radius) = phys_ragdollmagnet : 
+@PointClass base(BaseEntityPoint, EnableDisable) iconsprite("editor-ficool2/phys_ragdollmagnet") sphere(radius) = phys_ragdollmagnet : 
 	"An entity that acts like a magnet for ragdolls. Useful for crafting exaggerated ragdoll behavior (i.e. guys falling over rails on death). If the "+
 	"Bar Magnet spawnflag is set, the magnet works like it was a cylindrical magnet i.e. it attracts ragdolls to the nearest point on a line."
 [
@@ -8755,7 +8518,7 @@
 	input SetVelocity(float) : "Set linear velocity along the constraint."
 ]
 
-@PointClass halfgridsnap base(BaseEntity) iconsprite("editor-ficool2/phys_spring") = phys_spring : 
+@PointClass halfgridsnap base(BaseEntityPoint) iconsprite("editor-ficool2/phys_spring") = phys_spring : 
 	"A physically simulated spring. "+
 	"'Length' is what's known as the 'natural spring length'. This is how long the spring would "+
 	"be if it was at rest (nothing hanging on it or attached). When you attach something to the "+
@@ -8782,7 +8545,7 @@
 	input SetSpringDamping(float) : "Set the Spring Damping."
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor-ficool2/cone_helper_gray.mdl") = phys_thruster : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_gray.mdl") = phys_thruster : 
 	"An entity used to apply constant acceleration to a physics object. "+
 	"The force and torque is calculated using the position and direction of the thruster as an impulse. So moving those off the object's center "+
 	"will cause torque as well. Torque can be removed by unchecking the 'apply torque' flag. The position of the thruster can be forced to be "+
@@ -8807,7 +8570,7 @@
 	input Scale(string) : "Set Force Scale, negative values are accepted."
 ]
 
-@PointClass halfgridsnap base(BaseEntity) studioprop("models/editor-ficool2/cone_helper_gray.mdl") = phys_torque : 
+@PointClass halfgridsnap base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_gray.mdl") = phys_torque : 
 	"An angular thruster. Use it to apply angular force to an entity."
 [
 	attach1(target_destination) : "Attached Object" :  : "Object to apply the force to."
@@ -8860,15 +8623,7 @@
 	output OnAwakened(void) : "Fired when this entity becomes awake (collision/force is applied)."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/physics_entity_solver") = physics_entity_solver : 
-//REMOVED 	"Solves physics for simulated objects, as the name implies. Spawned on demand by code, no functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/physics_npc_solver") = physics_npc_solver : 
-//REMOVED 	"Solves physics for NPCs, as the name implies. Spawned on demand by code, no functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
 
 // not worth an independant base class
 @PointClass base(BaseAnimatingPhysics, BreakableProp) sphere(exploderadius) studioprop() = physics_prop : 
@@ -8984,22 +8739,7 @@
 	input RoundSpawn(void) : "Spawns the player, fired automatically."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/player_loadsaved") = player_loadsaved : 
-//REMOVED     "Load an Auto-Saved game." 
-//REMOVED [
-//REMOVED 	duration(float) : "Fade Duration (seconds)" : 2 : "The amount of time to keep the fade at full intensity."
-//REMOVED 	holdtime(float) : "Hold Fade (seconds)" : 0 : "The time it takes to fade in/out completely."
-//REMOVED 	renderamt(integer) : "Fade Alpha" : 255 : "The maximum intensity of the fade."
-//REMOVED 	rendercolor(color255) : "Fade Color (R G B)" : "0 0 0" : "Color to fade into when reloading."
-//REMOVED 	loadtime(float) : "Reload delay" : 0 : "Delay before reloading."
-//REMOVED 
-//REMOVED 	input Reload(void) : "Ends this game and reloads."
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/player_manager") = player_manager : 
-//REMOVED     "Manages the creation of players. No functionality if spawned manually, and not used in TF2. tf_player_manager is used instead."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/player_speedmod") = player_speedmod:
      "Speeds up or slows down player velocity. The speed aspect does not work in Team Fortress 2, the flags do however."
@@ -9026,7 +8766,7 @@
 	input StripWeaponsAndSuit(void) : "Strip the !activator's weapons and suit."
 ]
 
-@PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/point_anglesensor") = point_anglesensor :
+@PointClass base(BaseEntityPoint, EnableDisable) iconsprite("editor-ficool2/point_anglesensor") = point_anglesensor :
 	"An entity that detects if another entity points in a given direction for a period of time."
 [
 	target(target_destination) : "Target Entity Name" : : "Name of the entity whose angles will be sensed."
@@ -9049,7 +8789,7 @@
 	output FacingPercentage(float) : "Normalized value (0..1) where 1 is facing directly at target and 0 is at or beyond the angle of tolerance."
 ]
 
-@PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/point_angularvelocitysensor") = point_angularvelocitysensor :
+@PointClass base(BaseEntityPoint, EnableDisable) iconsprite("editor-ficool2/point_angularvelocitysensor") = point_angularvelocitysensor :
 	"An entity that detects if another entity's angular velocity meets or exceeds a threshold value. The AngularVelocity is fired every frame, so use with caution!"
 [
 	target(target_destination) : "Target Entity Name" : : "Name of the entity whose angular velocity will be sensed."
@@ -9087,37 +8827,6 @@
 	input Save(void) : "Saves bonus map data."
 ]
 
-//REMOVED @PointClass base(BaseEntity) studioprop("models/editor/camera.mdl") = point_camera : 
-//REMOVED     "The view of this camera entity can be output in realtime to a func_monitor's monitor surface, or alternatively (using info_camera_link) to any named brush entity using the correct monitor texture. Active cameras require one render texture each. Does not render anything in Team Fortress 2."
-//REMOVED [
-//REMOVED 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
-//REMOVED 	FOV(float) : "FOV" : 90 : "Field of view, in degrees."
-//REMOVED 	resolution(float) : "Resolution" : 256 : "Width/height of the render target for the camera."
-//REMOVED 	UseScreenAspectRatio(choices) : "Screen Aspect Ratio" : 0 =
-//REMOVED 	[
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]	
-//REMOVED 	fogEnable(choices) : "Fog Enable?" : 0 : "Enable fog rendering in the camera." =
-//REMOVED 	[
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]	
-//REMOVED 	fogColor(color255) : "Fog Color" : "0 0 0" : "Set the fog color."
-//REMOVED 	fogStart(float) : "Fog Start" : 2048 : "The near fog plane."
-//REMOVED 	fogEnd(float) : "Fog End" : 4096 : "The far fog/clipping plane."
-//REMOVED 	fogMaxDensity(float) : "Fog Max Density [0..1]" : 1 : "The maximum fog density. 0 = no fog, 1 = full fog."
-//REMOVED 
-//REMOVED 	spawnflags(Flags) =
-//REMOVED 	[
-//REMOVED 		1 : "Start Off" : 0 
-//REMOVED 	]
-//REMOVED 	
-//REMOVED 	input ChangeFOV(string) : "Changes camera's FOV over time"
-//REMOVED 	input SetOnAndTurnOthersOff(void) : "Turn the camera on, and turn all other cameras off."
-//REMOVED 	input SetOn(void) : "Turn the camera on."
-//REMOVED 	input SetOff(void) : "Turn the camera off."
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/point_clientcommand") = point_clientcommand : 
 	"An entity that issues commands to the client console, as if it was typed in by the player (if activator is a player, or the local player in single player). "+
@@ -9126,8 +8835,8 @@
 	input Command(string) : "Command to execute."
 ]
 
-@PointClass base(BaseAnimating, EnableDisable) studioprop("models/extras/info_speech.mdl") = point_commentary_node : 
-    " core entity used in the Commentary System. It appears as a floating speech bubble for the player to +USE, which then starts the commentary playing. This entity is typically placed with the Commentary Editor."
+@PointClass base(BaseEntityPoint, EnableDisable) studioprop("models/extras/info_speech.mdl") = point_commentary_node : 
+    "Core entity used in the Commentary System. It appears as a floating speech bubble for the player to +USE, which then starts the commentary playing. This entity is typically placed with the Commentary Editor."
 [
 	commentaryfile(sound) : "Commentary sound file" :  : "The commentary sound file that should be played when this node is used by the player."
 	commentaryfile_nohdr(sound) : "Commentary sound NoHDR" :  : "The commentary sound file that should be played when this node is used by the player. If the player has HDR turned off, this file will be used instead of the commentaryfile. If this entry is not specified, the base commentaryfile entry will still be used."
@@ -9152,33 +8861,15 @@
 	
 ]
 
-//REMOVED @PointClass base(BaseEntity, Render) size(-2 -2 -2, 2 2 2) sprite() color(20 140 20) = point_commentary_viewpoint : 
-//REMOVED 	"The camera entity created when a point_commentary_node forces the player into a custom camera. Registered as a sprite entity for unknown reasons."
-//REMOVED [
-//REMOVED 	model(sprite) : "Sprite Name" : "sprites/redglow1.vmt" : "Material of the sprite to be drawn."
-//REMOVED 	frame(integer) : "Starting Frame" : 0 : "If the sprite is animated, the frame it should start animating on."
-//REMOVED 	framerate(float) : "Framerate" : "10.0" : "Rate at which the sprite should animate, if at all."
-//REMOVED 	scale(float) : "Scale" : "0.25" : "Scale multiplier of the sprite."
-//REMOVED 	GlowProxySize(float) : "Size of Glow Proxy Geometry." : "2.0" : "Size of the glow to be rendered for visibility testing. Must be larger than the distance from the sprite center to empty space.  So if this glow is inside geometry (like a light bulb), set this value to be bigger than the bulb's radius. Any time a sphere of this radius would be visible (poking through any nearby geometry), the glow will be rendered."
-//REMOVED 	HDRColorScale(float) : "HDR color scale." : "1.0" : "Color multiplier for players using HDR."
-//REMOVED 	
-//REMOVED 	input HideSprite(void) : "Hide the sprite. Won't be drawn until the 'ShowSprite' input is received."
-//REMOVED 	input ShowSprite(void) : "Show the sprite."
-//REMOVED 	input ToggleSprite(void) : "Toggle the sprite between hidden and shown."
-//REMOVED 	input ColorRedValue(float) : "Sets the red color channel's value (0 - 255)."
-//REMOVED 	input ColorGreenValue(float) : "Sets the green color channel's value (0 - 255)."
-//REMOVED 	input ColorBlueValue(float) : "Sets the blue color channel's value (0 - 255)."
-//REMOVED 	input SetScale(float) : "Set the sprite's scale."
-//REMOVED ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/camera.mdl") = point_devshot_camera : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor/camera.mdl") = point_devshot_camera : 
 	"An entity used by the -makedevshots system, which automatically takes screenshots at the position of every point_devshot_camera in the level."
 [
 	cameraname(string) : "Camera Name" :  : "Used as the name of the directory to store screenshots from this camera. Must be set or screenshot-taking will fail. Must be unique within the level."
 	FOV(integer) : "Camera FOV" : 75 : "FOV of this camera."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/point_enable_motion_fixup") = point_enable_motion_fixup : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_enable_motion_fixup") = point_enable_motion_fixup : 
 	"An entity used to move a motion-disabled prop when it enables motion. Parent this entity to the prop, and when the prop has its motion enabled, it will immediately teleport to the origin of this entity."
 [
 ]
@@ -9194,7 +8885,7 @@
 	input Disable(void) : "Disable the statistic counter."
 ]
 
-@PointClass base(BaseEntity, DamageType) iconsprite("editor-ficool2/point_hurt") sphere(DamageRadius) = point_hurt :
+@PointClass base(BaseEntityPoint, DamageType) iconsprite("editor-ficool2/point_hurt") sphere(DamageRadius) = point_hurt :
 	"An entity that does damage to all entities in a radius around itself, with a specified delay." +
 	"If 'Target Entity' is specified, the damage is only done to that entity."
 [
@@ -9215,27 +8906,8 @@
 	input Activate(void) : "Causes the game to end and the intermission to begin."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/point_message") sphere(radius) = point_message : 
-//REMOVED 	"An entity that displays a text message in the world, at its origin. Does not function in Team Fortress 2."
-//REMOVED [
-//REMOVED 	message(string) : "Entity Message" : : "The message to display."
-//REMOVED 	radius(integer) : "Show message radius" : 128 : "Distance the player must be within to see this message."
-//REMOVED 	developeronly(choices) : "Developer Only?" : 0 : "If set, this message will only be visible when developer mode is on." =
-//REMOVED 	[
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]
-//REMOVED 	
-//REMOVED 	spawnflags(flags) =
-//REMOVED 	[
-//REMOVED 		1: "Start Disabled" : 0
-//REMOVED 	]
-//REMOVED 
-//REMOVED 	input Enable(void) : "Start displaying the message text, if the player is within the message radius."
-//REMOVED 	input Disable(void) : "Stop displaying the message text."
-//REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/point_playermoveconstraint") sphere(radius) = point_playermoveconstraint : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_playermoveconstraint") sphere(radius) = point_playermoveconstraint : 
 	"An entity that constrains players to a radius around itself, slowing them down the closer they get to the edge of the radius."
 [
 	radius(float) : "Radius" : 256 : "Radius to constrain players to."
@@ -9286,7 +8958,7 @@
 	input GetFMod(void) : "Outputs the current modulation settings in console to the activating player."
 ]
 
-@PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/point_proximity_sensor") = point_proximity_sensor :
+@PointClass base(BaseEntityPoint, EnableDisable) iconsprite("editor-ficool2/point_proximity_sensor") = point_proximity_sensor :
 	"An entity that detects another entity's proximity to this entity."
 [
 	target(target_destination) : "Target Entity Name" : : "Name of the entity whose proximity will be sensed."
@@ -9302,7 +8974,7 @@
 	output Distance(float) : "Distance of the target entity away from this entity."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/point_push") sphere(radius) sphere(inner_radius) = point_push: 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_push") sphere(radius) sphere(inner_radius) = point_push: 
     "Push sphere that will push any physics props or entity that has a movement type set (e.g. NPCs) away from its origin. Does not push parented objects."
 [
 	enabled(choices) : "Start Enabled?"	: 1 =
@@ -9334,7 +9006,7 @@
 	input Command(string) : "Command to execute."
 ]
 
-@PointClass base(BaseEntity, Render) studioprop("models/editor-ficool2/cone_helper_blue.mdl") = point_spotlight : 
+@PointClass base(BaseEntityPoint, Render) studioprop("models/editor-ficool2/cone_helper_blue.mdl") = point_spotlight : 
 	"An entity to draw a spotlight. Will draw a beam when the player views it side on, and a halo when it's facing towards the player. "+
 	"Unless the 'No Dynamic Light' spawnflag is checked, it will also create a dynamic light wherever the end of the spotlight rests."
 [
@@ -9362,7 +9034,7 @@
 	output OnLightOff(void) : "Fires when light turns off."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/point_teleport") = point_teleport : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_teleport") = point_teleport : 
 	"An entity that teleports a target entity to this position and angles. "+
 	"If 'Teleport Home' spawn flag is set, teleports the target entity to its spawn position instead." +
 	"If object is physically simulated, simulation is turned off when teleported. "+
@@ -9416,7 +9088,7 @@
 	output OnEntitySpawned(void) : "Fired after spawning an instance of this template."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/point_tesla") sphere(m_flRadius) = point_tesla : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_tesla") sphere(m_flRadius) = point_tesla : 
 	"An entity that creates tesla lightning arcs around its origin."
 [
 	m_SourceEntityName(string) : "Source Entity" :  : "If specified, tesla lightning will originate from the specified entity. Otherwise, they originate from this entity."
@@ -9450,7 +9122,7 @@
 	input DoSpark(void) : "Force a single arc."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/point_velocitysensor")  = point_velocitysensor :
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_velocitysensor")  = point_velocitysensor :
 	"An entity that detects and outputs an entity's velocity. The Velocity output is fired every frame, so use with caution!"
 [
 	target(target_destination) : "Target Entity Name" : : "Name of the entity whose velocity will be sensed."
@@ -9467,7 +9139,7 @@
 	input Disable(void) : "Disable the sensor."
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/camera.mdl") = point_viewcontrol : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor/camera.mdl") = point_viewcontrol : 
 	"A camera entity that controls the player's view. While it's active, the player will see out of the camera. "+
 	"The camera doesn't follow its path correctly. It will not follow paths at all if it doesn't have an Entity to Look At set. "+
 	"The camera ignores the New Train Speed keyvalue and Teleport to THIS path_corner spawnflag on path_tracks. "+
@@ -9558,7 +9230,7 @@
 	soundunlockedoverride(sound) : "Unlocked Sound" : : "Sound played when the door is unlocked."
 	returndelay(integer) : "Delay Before close (-1 stay open)" : -1 : "Amount of time, in seconds, after the door has opened before it closes. If the value is set to -1, the door never closes itself."
 	dmg(integer) : "Damage Inflicted When Blocked" : 0 : "Amount of damage done to entities that block the movement of this door, per frame."
-	health(integer) : "Door health" : 0 : "The health of the door (allows someone to shoot it open). 0 means invincible."
+	health(integer) : "Door Health" : 0 : "The health of the door (allows someone to shoot it open). 0 means invincible."
 	forceclosed(choices) : "Force Closed?" : 0 : "If set, this door will close no matter what. Useful for doors that have to close even if the player tries to block them with objects." =
 	[
 		0 : "No"
@@ -9899,25 +9571,8 @@
 	output Attack2Axis(string) : "State of attack2 button [0,1]."
 ]
 
-//REMOVED @PointClass base(BaseAnimating) studioprop() = raggib : 
-//REMOVED 	"Half-Life leftover entity. Gibs created from gibbed ragdolls."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/rope_anchor") = rope_anchor : 
-//REMOVED 	"Unused entity made for the NPC grappling behaviour in Half Life 2."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/scene_manager") = scene_manager : 
-//REMOVED 	"Handles scene behaviour in a map. Automatically created, no functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
-
-@PointClass base(logic_choreographed_scene_base) iconsprite("editor-ficool2/scripted_scene") = scripted_scene : 
-	"Identical to instanced_scripted_scene."
-[
-]
 
 @PointClass base(BaseEntity) studioprop("models/editor/scriptedsequence.mdl") sphere(m_flRadius) = scripted_sequence :
 	"Grabs an NPC and makes them play a specified set of animations. The NPC can be told to move to the scripted sequence position or can "+
@@ -10009,7 +9664,7 @@
 	output OnScriptEvent08(void) : "Fires when a 'trigger' anim event occurs while playing the script. Use { event 1003 framenum 8 } in the QC."
 ]
 
-@PointClass sphereradius() iconsprite("editor-ficool2/scripted_sentence") base(BaseEntity) = scripted_sentence : 
+@PointClass sphereradius() iconsprite("editor-ficool2/scripted_sentence") base(BaseEntityPoint) = scripted_sentence : 
     "Creates a scripted sentence, usually spoken by an NPC."
 [
 	sentence(string) : "Sentence Name" :  : "The sentence group name, as found in sentences.txt."
@@ -10042,7 +9697,7 @@
 	output OnEndSentence(void) : "Fires when the sentence ends"
 ]
 
-@PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/scripted_target")  = scripted_target : 
+@PointClass base(BaseEntityPoint, EnableDisable) iconsprite("editor-ficool2/scripted_target")  = scripted_target : 
     "A point entity that targets an NPC for use in scripted sequences."
 [
 	m_iszEntity(npcclass) : "Target NPC" : : "The NPC to target."
@@ -10056,7 +9711,7 @@
 	output LeaveTarget(void) : "Fires when NPC leaves this target."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/shadow_control") = shadow_control : 
+@PointClass base(BaseEntity, Angles) iconsprite("editor-ficool2/shadow_control") = shadow_control : 
 	"An entity to control the shadows in the map."
 [
 	direction(vector) : "Shadow Direction" : : "Set the shadow direction. Duplicated with Angles for whatever reason, so change both."
@@ -10076,18 +9731,10 @@
 	input SetShadowsDisabled(integer) : "Set shadows disabled state."
 ]
 
-//REMOVED @SolidClass base(BaseAnimatingBrush) = simple_physics_brush : 
-//REMOVED 	"A simple physics brush with no unique properties. Brush entities converted by phys_convert are turned into this entity. Doesn't have any physics when spawned by other means. Use phys_convert instead to spawn this."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @SolidClass base(BaseAnimating) = simple_physics_prop : 
-//REMOVED 	"A simple physics prop with no unique properties. Point entities converted by phys_convert are turned into this entity. Doesn't have any physics when spawned by other means. Use phys_convert instead to spawn this."
-//REMOVED [
-//REMOVED ]
 
 // removed iconsprite due to scale keyvalue affecting the sprite and making it massive
-@PointClass base(BaseEntity) studioprop("models/editor-ficool2/camera_ballon.mdl") = sky_camera : 
+@PointClass base(BaseEntity, Angles) studioprop("models/editor-ficool2/camera_ballon.mdl") = sky_camera : 
 	"An entity used to control the 3D Skybox. Its origin is used to determine the 3D Skybox's position relative to the map. Place this entity, in the 3D Skybox, at the point where the origin of the map should be. "+
 	"Multiple or moving 3D skyboxes can be done with this hacky workaround: https://tf2maps.net/threads/multiple-3d-skyboxes.35829/"
 [
@@ -10115,25 +9762,13 @@
 	fogmaxdensity(float) : "Fog Max Density" : "1" : "Maximum density of the fog. [0..1] "
 ]
 
-//REMOVED @SolidClass base(BaseEntity) = soundent : 
-//REMOVED 	"Sound manager for various entities, created on demand by code. No functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/spark_shower") = spark_shower : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/spark_shower") = spark_shower : 
 	"Creates a trail of sparks in a random 60 degree spread from its angles. This entity will delete itself after creating the effect upon spawning."
 [
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/spotlight_end") = spotlight_end : 
-//REMOVED 	"The spotlight effect created by a point_spotlight entity."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/spraycan") = spraycan : 
-//REMOVED 	"Temporary entity created each time a player attempts to spray their own decal. No functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/tanktrain_ai") = tanktrain_ai : 
 	"This is AI to make an associated func_tanktrain automatically move along its path towards the node closest to a target. "+
@@ -10153,62 +9788,9 @@
 	newtarget(target_destination) : "New Target Entity" : : "The entity to tell the tanktrain_ai to target."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/target_cdaudio") = target_cdaudio : 
-//REMOVED     "Legacy entity from Half-Life. Plays a specified track either on the CD or in the media folder when this entity is triggered.  The .mp3 files loaded, and what number they are used as in this entity are hard-coded into the game. Does not function in multiplayer."
-//REMOVED [
-//REMOVED 	health(choices) : "Track #" : -1 =
-//REMOVED 	[
-//REMOVED 		-1 : "Stop"
-//REMOVED 		1 : "Track 1"
-//REMOVED 		2 : "Track 2"
-//REMOVED 		3 : "Track 3"
-//REMOVED 		4 : "Track 4"
-//REMOVED 		5 : "Track 5"
-//REMOVED 		6 : "Track 6"
-//REMOVED 		7 : "Track 7"
-//REMOVED 		8 : "Track 8"
-//REMOVED 		9 : "Track 9"
-//REMOVED 		10 : "Track 10"
-//REMOVED 		11 : "Track 11"
-//REMOVED 		12 : "Track 12"
-//REMOVED 		13 : "Track 13"
-//REMOVED 		14 : "Track 14"
-//REMOVED 		15 : "Track 15"
-//REMOVED 		16 : "Track 16"
-//REMOVED 		17 : "Track 17"
-//REMOVED 		18 : "Track 18"
-//REMOVED 		19 : "Track 19"
-//REMOVED 		20 : "Track 20"
-//REMOVED 		21 : "Track 21"
-//REMOVED 		22 : "Track 22"
-//REMOVED 		23 : "Track 23"
-//REMOVED 		24 : "Track 24"
-//REMOVED 		25 : "Track 25"
-//REMOVED 		26 : "Track 26"
-//REMOVED 		27 : "Track 27"
-//REMOVED 		28 : "Track 28"
-//REMOVED 		29 : "Track 29"
-//REMOVED 		30 : "Track 30"
-//REMOVED 	]
-//REMOVED 	
-//REMOVED 	input ChangeCDTrack(integer) : "Change the Track to the specified number."
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity)  iconsprite("editor-ficool2/target_changegravity") = target_changegravity : 
-//REMOVED     "Legacy entity from Half-Life. Changes the player's gravity. Does not function in multiplayer, use AddOutput 'gravity <number>' on the player entity instead."
-//REMOVED [
-//REMOVED 	gravity(float) : "Gravity" : "0.5" : "The gravity to change to."
-//REMOVED 	
-//REMOVED 	input ChangeGrav(void) : "Change the gravity."
-//REMOVED 	input ResetGrav(void) : "Reset the gravity to default."
-//REMOVED ]
-//REMOVED 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/te_tester") = te_tester : 
-//REMOVED 	"Entity which tests temporary entities, on demand by code. No functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) studioprop("models/effects/cappoint_hologram.mdl") = team_control_point :
+@PointClass base(BaseEntityPoint) studioprop("models/effects/cappoint_hologram.mdl") = team_control_point :
 	"Designates the location of a capture point; use in conjunction with trigger_capture_area. There is a maximum of 8 control points per map."
 [
 	point_printname(string) : "Print Name" :  : "LOCALIZED name to print on the HUD." 
@@ -10266,7 +9848,7 @@
 	output OnCapTeam2(void) : "Sent when BLUE capture this point."
 ]
 
-@PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/team_control_point_master") = team_control_point_master :
+@PointClass base(BaseEntityPoint, EnableDisable) iconsprite("editor-ficool2/team_control_point_master") = team_control_point_master :
     "his entity controls all the control points in a map. It is responsible for the layout of the hud icons as well as some round specific settings. team_control_point_round entities will override settings if they are used. "
 [
 	caplayout(string) : "Cap Layout" :  : "A string that tells the HUD how to lay out the cap points. It should be a string with indexes of cap points seperated by commas to denote a new line. So <2,0 1> would create a pyramid, with cap point 2 on the top and cap points 0 & 1 on the bottom."
@@ -10308,7 +9890,7 @@
 	output OnWonByTeam2(void) : "Sent when BLUE wins the game."
 ]
 
-@PointClass base(BaseEntity,EnableDisable) iconsprite("editor-ficool2/team_control_point_round") = team_control_point_round :
+@PointClass base(BaseEntityPoint,EnableDisable) iconsprite("editor-ficool2/team_control_point_round") = team_control_point_round :
 	"Control Point Round (you may have as many of these in the map as you would like)."
 [
 	cpr_printname(string) : "Print Name" :  : "LOCALIZED name to print on the RoundInfo panel" 
@@ -10334,10 +9916,6 @@
 	output OnWonByTeam2(void) : "Sent when BLUE wins this round."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/team_manager") = team_manager : 
-//REMOVED 	"Entity which manages teams. No functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity, EnableDisable) iconsprite("editor-ficool2/team_round_timer") = team_round_timer :
 	"Round Timer. Timer starts paused by default. The timer does not end the round on its own. You need a separate win condition such as the game_round_win entity."
@@ -10402,41 +9980,18 @@
 	output OnSetupFinished(void) : "Sent when the setup time is finished."
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/test_effect") = test_effect : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/test_effect") = test_effect : 
 	"Creates rays inside a small sphere shape for 5 seconds. Requires an 'Use' input. Repeatable."
 [
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/test_proxytoggle") = test_proxytoggle : 
-//REMOVED 	"Tests proxy toggling on an entity. Dose not function if spawned manually, use these console commands instead: Test_ProxyToggle_EnableProxy and Test_ProxyToggle_SetValue."
-//REMOVED [
-//REMOVED ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/test_traceline") = test_traceline : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/test_traceline") = test_traceline : 
 	"An entity used for debugging tracelines. Fires a white line upwards, which rotates 90 degrees down gradually, stops, and then rotates 90 degrees up gradually and so on. Creates a tiny green box at its origin, which becomes red if the entity is unable to fire the trace its line."
 [
 ]
+																   
 
-@PointClass base(BaseAnimating) studioprop() = tf_ammo_pack : 
-	"The ammo pack created by dead players. If spawned manually, it will disapper almost immediately, although if a player stands inside it as it spawns they can catch its ammo. Any model is accepted."
-[
-	model(studio) : "Model" : "models/items/ammopack_medium.mdl" : "The model this entity should appear as. 128-character limit."
-]
-
-@PointClass base(BaseAnimatingPhysics) studioprop() = tf_dropped_weapon : 
-	"The dropped weapon from dead players. If spawned manually, it will function like a basic physically-simulated prop."
-[
-]
-
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_flame") = tf_flame : 
-//REMOVED 	"The flames from a Pyro flamethrower. No functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
-
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_flame_manager") = tf_flame_manager : 
-//REMOVED 	"The global manager for any flames from any Pyro flamethrower. No functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_gamerules") = tf_gamerules : 
     "Proxy entity for Team Fortress 2 game rules."
@@ -10646,7 +10201,7 @@
 [
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_weaponbase_grenade_proj") = tf_weaponbase_grenade_proj :
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/tf_weaponbase_grenade_proj") = tf_weaponbase_grenade_proj :
     "Manager entity for TF2 grenade projectiles. Creates an explosion upon spawning, no other functionality."
 [
 ]
@@ -10665,18 +10220,6 @@
     input ApplyImpulse(void)  : "Apply impulse to touching entities"
 ]
 
-//REMOVED @SolidClass base(Trigger) = trigger_autosave : 
-//REMOVED 	"A trigger volume that autosaves when the player touches it."
-//REMOVED [
-//REMOVED 	master(string) : "Master" : : "Half-Life legacy support: The name of a master entity. If the master hasn't been activated, this entity will not activate."
-//REMOVED 	NewLevelUnit(choices) : "Force New Level Unit" : 0 : "If set, the save will discard any savedata from previous levels, for the purpose of keeping savegame filesizes down. Can only be safely used if there is no way for the player to return to previous levels." =
-//REMOVED 	[
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]
-//REMOVED 	DangerousTimer(float) : "Dangerous Timer" : 0 : "The number of seconds the player must survive before this autosave takes effect."
-//REMOVED 	MinimumHitPoints(integer): "Minumum Hit Points" : 0 : "Don't save dangerous when player has less than this many hitpoints."
-//REMOVED ]
 
 @SolidClass base(BaseAnimatingBrush) = trigger_brush :
 	"Obsolete from Half Life 2 beta. A generic, solid brush which has unique coding for the Use function compared to other brush entities."+
@@ -10781,28 +10324,6 @@
 	output ImpactForce(string) : "Fired after an impact. The parameter passed along is the force of the impact that was generated."
 ]
 
-//REMOVED @SolidClass base(Trigger) = trigger_look :
-//REMOVED 	"An entity used to trigger something when the player looks at something. It fires 'OnTrigger' when the player "+
-//REMOVED 	"looks at a target entity for the given amount of time, while within the trigger volume. If the player leaves "+
-//REMOVED 	"the trigger or looks away from the target entity the clock resets. If the 'Use Velocity instead of facing' spawnflag " +
-//REMOVED 	"is checked, the trigger uses the player's velocity instead of the player's view, so it determines whenever the player "+
-//REMOVED 	"is moving toward the target entity. Useful for triggering when players are driving a vehicle at something. "+
-//REMOVED 	"Does not function in multiplayer."
-//REMOVED [
-//REMOVED 	target(target_destination) : "Look Target" : : "The name of the entity to be looked at."
-//REMOVED 	LookTime(string) : "LookTime" : "0.5" : "The time, in seconds, that the player must look the target before firing the output. Resets if player leaves trigger, or looks outside the Field of View threshold."
-//REMOVED 	FieldOfView(string) : "FieldOfView" : "0.9" : "How close the player has to be looking at the target. 1.0 = straight ahead\n 0.0 = +/- 90 degrees\n -1.0 = all directions)."
-//REMOVED 	Timeout(float) : "Timeout" : "0" : "The time, in seconds, to wait after player enters the trigger before firing the OnTimeout output, 0 = never."
-//REMOVED 
-//REMOVED 	spawnflags(flags) = 
-//REMOVED 	[ 
-//REMOVED 		128: "Fire Once" : 1 
-//REMOVED 		256: "Use Velocity instead of facing" : 0
-//REMOVED 	]
-//REMOVED 	
-//REMOVED 	output OnTrigger(void) : "Fired when the trigger is activated."
-//REMOVED 	output OnTimeout(void) : "Fired after the timeout interval expires if the player never looked at the target."
-//REMOVED ]
 
 @SolidClass base(Trigger) = trigger_multiple :
 	"A trigger volume that can be triggered multiple times."
@@ -10846,10 +10367,22 @@
 	speed(integer) : "Speed of Push" : 40 : "The speed at which to push entities away, in units / second."
 	alternateticksfix(float) : "Scale force for alternate ticks" : "0" : "If nonzero, scale the force by this amount when running with alternate ticks. This fixes problems with an overly large force due to the longer frametime on when running with sv_alternateticks 1."
 
+    // need to include spawnflags here again because of a Hammer bug
 	spawnflags(flags) = 
 	[ 
 		128: "Once Only (possibly means set velocity rather than apply acceleration)" : 0
 		256: "Affects Ladders" : 0 
+		1: "Clients/Players/Bots" : 1
+		2: "NPCs" : 0
+		4: "Pushables": 0
+		8: "Physics Objects" : 0
+		16: "Only player ally NPCs" : 0
+		32: "Only clients in vehicles" : 0
+		64: "Everything (not including physics debris)" : 0
+		512: "Only clients *not* in vehicles" : 0
+		1024: "Physics debris" : 0
+		2048: "Only NPCs in vehicles (respects player ally flag)" : 0
+		4096: "Disallow Bots" : 0				   
 	]
 ]
 
@@ -10897,16 +10430,7 @@
 	teleportoffset(vector) : "Offset (X Y Z)" : "0 0 0" : "The offset to teleport the entity when the trigger is touched."
 ]
 
-//REMOVED @SolidClass base(Trigger) = trigger_autosave : 
-//REMOVED 	"Saves the game when the player touches the trigger. Does not function in multiplayer."
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @SolidClass base(BaseEntityBrush) = trigger_transition : 
-//REMOVED 	"A volume that's used to control which entities go through the level transition. Create one or more trigger_transitions and "+
-//REMOVED 	"give them the same name as the trigger_changelevel landmark. Any entities within the trigger_transition(s) will go to the next map."
-//REMOVED [
-//REMOVED ]
 
 @SolidClass base(BaseEntityBrush, EnableDisable) = trigger_vphysics_motion :
 	"A volumetric trigger that affects the motion of physical objects that touch it. Optionally, it can also create a particle trail. A particle trail, when parented, takes the shape of a model or brush. Players cannot jump when in contact with this brush."
@@ -10967,13 +10491,13 @@
 	input SetSpeed(integer) : "Set the baseline for how hard the wind blows."
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/axis_helper_thick.mdl") = vgui_screen : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor/axis_helper_thick.mdl") = vgui_screen : 
 	"A VGUI screen. Useful for in-world monitors. This is used by the Engineer's Dispenser for the metal counter." 
 [
 	panelname(string) : "Panel Name" : : "Name of the panel to use. This is not a filename."
 	overlaymaterial(string) : "Overlay Material" :  : "Name of a material to overlay over the top of the VGUI screen. This material must write Z for the VGUI screen to work."
-	width(integer) : "Panel Width in World" : 32 : "Width of the panel in units."
-	height(integer) : "Panel Height in World" : 32 : "Height of the panel in units."
+	width(integer) : "Panel Width" : 32 : "Width of the panel in units."
+	height(integer) : "Panel Height" : 32 : "Height of the panel in units."
 
 	input SetActive(void) : "Make the screen visible."
 	input SetInactive(void) : "Make the screen invisible."
@@ -10984,7 +10508,7 @@
 [
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/axis_helper_thick.mdl") = vgui_slideshow_display : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor/axis_helper_thick.mdl") = vgui_slideshow_display : 
     "A VGUI screen the displays images in a slideshow. See https://developer.valvesoftware.com/wiki/Vgui_slideshow_display for a full explanation on the usage of this."
 [
 	displaytext(string) : "Display Text" : : "Text to display on top of the image."
@@ -11025,15 +10549,7 @@
 	input SetNoListRepeat(bool) : "Sets if lists can be randomly picked twice in a row."
 ]
 
-//REMOVED @PointClass base(BaseAnimating) iconsprite("editor-ficool2/viewmodel") = viewmodel : 
-//REMOVED 	"The entity used as a base for player viewmodels. This is not used in TF2, tf_viewmodel is used instead." 
-//REMOVED [
-//REMOVED ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/vote_controller") = vote_controller : 
-//REMOVED 	"An entity that stores votes from the voting system in-game. No functionality if spawned manually." 
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseEntity) iconsprite("editor/waterlodcontrol") = water_lod_control : 
 	"An entity used to control the LOD behavior of any water in the map. If your map has water, this entity is required. Otherwise, it is automatically created."
@@ -11045,10 +10561,6 @@
 	input SetCheapWaterEndDistance(float) : "Set the distance that water finishes transitioning to cheap water."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/waterbullet") = waterbullet : 
-//REMOVED 	"Entity that simulates bullets that are underwater. No functionality if spawned manually."
-//REMOVED [
-//REMOVED ]
 
 @PointClass base(BaseAnimating) studioprop() = window_pane : 
     "A shard of glass created by a func_breakable_surf. No special function when created."
@@ -11056,49 +10568,21 @@
 	model(studio) : "Model" : "models/gibs/glass_shard.mdl" : "The model this entity should appear as. 128-character limit."
 ]
 
-//REMOVED @PointClass base(BaseEntity) iconsprite("editor-ficool2/world_items") = world_items : 
-//REMOVED     "Deprecated entity from Half-Life. Used to spawn weapons/equipment." 
-//REMOVED [
-//REMOVED ]
 
 @SolidClass base(BaseEntity) = worldspawn : 
 	"This is the world entity. Each map can only contain one, and it's automatically created for you."
 [
-//REMOVED 	message(string) : "Map Description / Title" : : "Doesn't seem to be used anywhere anymore."
 	skyname(string) : "Skybox Texture Name" : "sky_tf2_04" : "Skybox material. See https://developer.valvesoftware.com/wiki/Team_Fortress_2_Sky_List for a default list. This can be changed at runtime with AddOutput, although the player must re-connect to see the change."
-//REMOVED 	chaptertitle(string) : "Chapter Title Message" :  : "Chapter Title that appears onscreen when this level starts."
 	maxoccludeearea(float) : "Max occludee area" : "0" : "Prevents occlusion testing for entities that take up more than X% of the screen." 
 	minoccluderarea(float) : "Min occluder area" : "0" : "Prevents occluders from being used if they take up less than X% of the screen." 
-//REMOVED 	maxoccludeearea_x360(float) : "Max occludee area (Xbox)" : "0" : "[Used on 360] Prevents occlusion testing for entities that take up more than X% of the screen." 
-//REMOVED 	minoccluderarea_x360(float) : "Min occluder area (Xbox)" : "0" : "[Used on 360] Prevents occluders from being used if they take up less than X% of the screen." 
 	maxpropscreenwidth(float) : "Start Fade Pixels" : -1 : "Number of pixels wide at which all props in the level start to fade (<0 = use fademaxdist). This number is ignored if the prop has a specific fade distance specified."
 	minpropscreenwidth(float) : "End Fade Pixels" : 0 : "Minimum number of pixels wide at which the prop is visible (0 = don't fade out). This number is ignored if the prop has a specific fade distance specified."
 	detailvbsp(string) : "Detail.vbsp file" : "detail.vbsp" : "Detail.vbsp file to use for emitting detail props (found in directory <root>/modname)."
 	detailmaterial(string) : "Detail material file" : "detail/detailsprites" : "Material for detail sprites to use for drawing detail props."
-//REMOVED 	startdark(choices) : "Obsolete, use env_fade instead. Level Fade In effect." : 0 =
-//REMOVED 	[	
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]
-//REMOVED 	gametitle(choices) : "Display Game Title" : 0 : "Game Title that appears onscreen when this level starts." = 
-//REMOVED 	[	
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]
-//REMOVED 	newunit(choices) : "New Level Unit" : 0 : "Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels." = 
-//REMOVED 	[
-//REMOVED 		0 : "No, keep current"
-//REMOVED 		1 : "Yes, clear previous levels"
-//REMOVED 	]
-	no_decomp(choices) : "Disallow Decompiling?" : : "If Yes, then VMEX will refuse to decompile your map. Newer third-party decompilers and tools bypass this, so this is effectively obsolete." =
+	no_decomp(choices) : "Disallow Decompiling?" : : "If Yes, then VMEX will refuse to decompile the map. Newer third-party decompilers and tools bypass this, so this is effectively obsolete." =
 	[
 		0 : "No"
 		1 : "Yes"
 	]
 	_minlight(float) : "Map Geometry Minimum Light Level" : 0 : "Forces the minimum intensity of light part of the map geometry to be at least this. Expressed as a float from 0.0 to 2.0, with 0.0 being pitch black (default) and 2.0 being fullbright. Does not affect props."
-//REMOVED 	coldworld(choices) : "World is Cold?" : "0" : "If set, Day of Defeat: Source player models will emit breath particles from their mouth attachments. No effect elsewhere." =
-//REMOVED 	[	
-//REMOVED 		0 : "No"
-//REMOVED 		1 : "Yes"
-//REMOVED 	]
 ]
