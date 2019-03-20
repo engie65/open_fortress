@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V5.2, 19th of March, 2019
+// V6, 20th of March, 2019
 //
 //=============================================================================
 
@@ -909,6 +909,13 @@
 	input Alpha(integer) : "Sets the entity's transparency to a number from 0 (invisible) to 255 (fully visible). Requires the entity to have its Render Mode set to a number other than 0."
 ]
 
+// Some entities do not allow the model keyvalue to be changed, therefore this is being defined per-entity instead of merging into BaseAnimating below
+@BaseClass = Model
+[ 
+	model(studio) : "Model" :  : "The model this entity should appear as. 128-character limit."
+	linedivider621(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
+]
+
 // All entities with a model have this class
 @BaseClass base(BaseEntityPoint, Render) sphere(fademindist) sphere(fademaxdist) sphere(fademaxdist) = BaseAnimating
 [ 
@@ -1043,7 +1050,66 @@
 // Stripped down version of BaseAnimating for physically-simulated objects, which do not have some keyvalues
 @BaseClass base(BaseEntityPoint, Render) sphere(fademindist) sphere(fademaxdist) sphere(fademaxdist)  = BaseAnimatingPhysics
 [ 
-	model(studio) : "Model" :  : "The model this entity should appear as. 128-character limit. May not be available for all entities."
+    // physics entities must have a model keyvalue
+	model(studio) : "Model" :  : "The model this entity should appear as. 128-character limit."
+	skin(integer) : "Skin" : 0 : "Some models have multiple skins. This value selects from the index, starting with 0."
+	solid(choices) : "Collisions" : 6 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	[
+		0: "None"
+		1: "BSP (QPhysics)"
+		2: "Bounding Box"
+		3: "Oriented Bounding Box"
+		4: "Oriented Bounding Box, constrained to Yaw only"
+		5: "Custom (defined per-entity, if not defined the entity will have bizarre collision behavior)"
+		6: "VPhysics"
+	]
+	body(integer) : "Body Group" : : "Sets the body group index for the model, starting with 0, if available."
+	SetBodyGroup(integer) : "(Set) Body Group" : : "Identical to Body Group (body), ask Valve why this is duplicated. Sets the body group index for the model, starting with 0, if available."
+	texframeindex(integer) : "Texture Frame" : : "The frame number for any animated textures on this entity."		
+	LightingOrigin(target_destination) : "Lighting Origin" :  : "Select an entity (not info_lighting!) from which to sample lighting instead of the entity's origin."
+	LightingOriginHack(target_destination) : "Lighting Origin Offset" :  : "The info_lighting_relative from which to sample lighting instead of the entity's origin."
+	damagefilter(target_destination) : "Damage Filter" :  : "When this entity receives damage, it will filter by this entity."
+	fademindist(float) : "Start Fade Distance/Pixels" : : "Distance at which the entity starts fading. If <0, the entity will disappear instantly when end fade is hit. The value will scale appropriately if the entity is in a 3D Skybox."
+	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
+	fadescale(float) : "Fade Scale" : 1 : "If specified in the worldspawn, or if the engine is running below DirectX 8, entities will fade out even if the fade distances above aren't specified. This value gives more control over when this happens: numbers smaller than 1 cause the entity to fade out at further distances, and greater than 1 cause it to fade out at closer distances. Using 0 turns off the forced fade altogether."	
+	shadowcastdist(integer) : "Shadow Cast Distance" : : "Sets how far the entity casts dynamic shadows, in units. 0 means default distance from the shadow_control entity."
+	disableshadows(choices) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	disablereceiveshadows(choices) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	modelscale(float) : "Model Scale" : : "A multiplier for the size of the model. Negative values are accepted. Does not alter the physics collisions in most cases, however. Negative values can crash the game!"
+	linedivider6(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
+	
+	input skin(integer) : "Changes the model's skin to the specified index number."
+	input SetBodyGroup(integer) : "Change the model's bodygroup to the specified index number."
+	input Ignite(void) : "Makes the entity catch on fire indefinitely."
+	input IgniteLifetime(float) : "Makes the entity catch on fire for a given amount of time."
+	input IgniteNumHitboxFires(integer) : "Makes the entity catch on fire with a given number of hitbox fire particles."
+	input IgniteHitboxFireScale(float) : "Makes the entity catch on fire with a given scale for hitbox fire particles."
+	input SetLightingOrigin(string) : "Sets the entity to use as the entity's lighting origin. Any entity can be used."
+	input SetLightingOriginHack(string) : "Offsets the entity's lighting origin by their distance from an info_lighting_relative."
+	input fademindist(float) : "Sets distance at which the entity starts fading. If <0, the entity will disappear instantly when end fade is hit. The value will scale appropriately if the entity is in a 3D Skybox."
+	input fademaxdist(float) : "Sets distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."	
+	input SetModelScale(vector) : "Multiplies the size of the model. Does not alter the physics collisions in most cases, however. Negative values are accepted, although can cause crashes. Takes two values separated by a space. The first is the target model scale. The second value is the number of seconds the change in scale will be spread over."
+	input Color(color255) : "Sets an RGB color for the entity."
+	input Alpha(integer) : "Sets the entity's transparency to a number from 0 (invisible) to 255 (fully visible). Requires the entity to have its Render Mode set to a number other than 0."	
+	input AlternativeSorting(bool) : "Swaps the rendering order of the entity. Used to attempt to fix sorting problems when rendering, for example an object rendering in front of translucent materials."
+	input SetDamageFilter(string) : "Sets a filter for this entity for when it receives damage. Pass in an empty string to clear the damage filter."	
+	input DisableShadow(void) : "Allows the entity to draw a render target (dynamic) shadow."
+	input EnableShadow(void) : "Prevents the entity from drawing a render target (dynamic) shadow."
+	
+	output OnIgnite(void) : "Fired when the entity catches fire, such as from an env_entity_igniter or the Ignite inputs."
+]
+
+// BaseAnimatingPhysics but without the Model keyvalue, for tf_weapon_* entities
+@BaseClass base(BaseEntityPoint, Render) sphere(fademindist) sphere(fademaxdist) sphere(fademaxdist)  = BaseAnimatingPhysicsWeapon
+[ 
 	skin(integer) : "Skin" : 0 : "Some models have multiple skins. This value selects from the index, starting with 0."
 	solid(choices) : "Collisions" : 6 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
@@ -1440,7 +1506,7 @@
 ]
 
 // prop_dynamic base, have to define it here because some entities (such as dynamic_prop) precede prop_dynamic alphabetically and therefore cannot inherit from prop_dynamic
-@BaseClass base(BaseAnimating, BreakableProp, EnableDisable) = prop_dynamic_base
+@BaseClass base(Model, BaseAnimating, BreakableProp, EnableDisable) = prop_dynamic_base
 [
 	DefaultAnim(string) : "Default Animation" :  : "The name of the idle animation that this prop will revert to whenever it finishes a random or forced animation."
 	RandomAnimation(choices) : "Randomly Animate?" : 0 : "If set, this prop will randomly choose and play animations, based upon the times specified in 'Min/Max Random Anim Time'. Inbetween the random animations, it will revert to playing the 'Default Animation'." =
@@ -1451,7 +1517,7 @@
 	MinAnimTime(float) : "Min Random Anim Time" : "5" : "Minimum time between random animations."
 	MaxAnimTime(float) : "Max Random Anim Time" : "10" : "Maximum time between random animations."
 	
-	DisableBoneFollowers(choices) : "Disable Bone Followers?" : 1 : "If set, this prop won't generate phys_bone_followers. See that entity for more information." =
+	DisableBoneFollowers(choices) : "Disable Bone Followers?" : 0 : "If set, this prop won't generate phys_bone_followers. See that entity for more information." =
 	[
 		0: "No"
 		1: "Yes"
@@ -1929,7 +1995,7 @@
 // item_* entities use these
 @BaseClass color(0 0 200) base(BaseAnimating, EnableDisable) = Item
 [
-	powerup_model(string) : "Model" :  : "Change the model to something other than the default model." 
+	powerup_model(studio) : "Model" :  : "Change the model to something other than the default model." 
 	AutoMaterialize(choices) : "Auto-Materialize?" : 1 : "The pickup should automatically materialize after being picked up." =
 	[
 		0 : "No"
@@ -3007,7 +3073,7 @@
 	]	
 ]
 
-@PointClass base(BaseAnimating) studioprop() = cycler_flex : 
+@PointClass base(Model, BaseAnimating) studioprop() = cycler_flex : 
 	"An entity used to display a model for testing purposes, specifically flexes. Shooting it will cycle through the model's animations."
 [
 ]
@@ -3271,10 +3337,8 @@
 	"An entity used to create a volume in which to spawn fire embers. For some reason its state can only be changed with the Use input." 
 [
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
-//REMOVED	globalname(string) : "Global Entity Name" : : "Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state."
 	parentname(target_destination) : "Parent" : : "Specifies a movement parent. An entity will maintain its initial offset from its parent. An attachment point can be added to the end of the name, separated by a comma. Every entity can be parented, even point entities. Entities which are parented will be forced to transition to the next map, such as from a trigger_transition. Some entities which aren't intended to be parented may not function correctly. phys_constraint can be used as a workaround to parenting."
     angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
-//REMOVED	hammerid(integer) : "Hammer ID" : : "The entity's Hammer ID, generated automatically. Mainly used by plugins and debugging commands, such as ent_keyvalue. Entities spawned at run-time are not assigned any Hammer ID."
 
 	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
@@ -5262,10 +5326,8 @@
 	"This entity is hardcoded to use the material particle/sparkles.vmt, which is extremely low-resolution. You may consider overriding this .vmt for improved appearance."
 [
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
-    globalname(string) : "Global Entity Name" : : "Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state."
 	parentname(target_destination) : "Parent" : : "Specifies a movement parent. An entity will maintain its initial offset from its parent. An attachment point can be added to the end of the name, separated by a comma. Every entity can be parented, even point entities. Entities which are parented will be forced to transition to the next map, such as from a trigger_transition. Some entities which aren't intended to be parented may not function correctly. phys_constraint can be used as a workaround to parenting."
     angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
-    hammerid(integer) : "Hammer ID" : : "The entity's Hammer ID, generated automatically. Mainly used by plugins and debugging commands, such as ent_keyvalue. Entities spawned at run-time are not assigned any Hammer ID."
 
 	effects(choices) : "Effect flags" : 0 : "For configuring visual effects. If you want to combine effects, turn SmartEdit off and add the effect numbers together, i.e. 64 + 8 = 72." =
 	[
@@ -5299,7 +5361,6 @@
 		5: "Custom (defined per-entity, if not defined the entity will have bizarre collision behavior)"
 		6: "VPhysics"
 	]
-	modelindex(integer) : "Model Index" : : "Changes the brush's model to a precached model on the map. Must be used with AddOutput. Invalid values will crash the game."	
 
 	linedivider2(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -5357,10 +5418,8 @@
 	"A brush entity that spawns sparkling dust motes within its volume. Affected by env_wind."
 [
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
-    globalname(string) : "Global Entity Name" : : "Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state."
 	parentname(target_destination) : "Parent" : : "Specifies a movement parent. An entity will maintain its initial offset from its parent. An attachment point can be added to the end of the name, separated by a comma. Every entity can be parented, even point entities. Entities which are parented will be forced to transition to the next map, such as from a trigger_transition. Some entities which aren't intended to be parented may not function correctly. phys_constraint can be used as a workaround to parenting."
     angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
-    hammerid(integer) : "Hammer ID" : : "The entity's Hammer ID, generated automatically. Mainly used by plugins and debugging commands, such as ent_keyvalue. Entities spawned at run-time are not assigned any Hammer ID."
 
 	effects(choices) : "Effect flags" : 0 : "For configuring visual effects. If you want to combine effects, turn SmartEdit off and add the effect numbers together, i.e. 64 + 8 = 72." =
 	[
@@ -5394,7 +5453,6 @@
 		5: "Custom (defined per-entity, if not defined the entity will have bizarre collision behavior)"
 		6: "VPhysics"
 	]
-	modelindex(integer) : "Model Index" : : "Changes the brush's model to a precached model on the map. Must be used with AddOutput. Invalid values will crash the game."	
 	
 	linedivider2(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
@@ -7201,58 +7259,148 @@
 	output OnCapture(void) : "Sent when the flag is captured."
 ]
 
-@KeyFrameClass base(BaseEntityPoint, Render) studio("models/editor/axis_helper_thick.mdl") keyframe() = keyframe_rope : 
-	"A node entity that marks a point in a rope. The first node in the rope should be a move_rope, followed by 1 or more keyframe_ropes."
+// ------------------------------------------------------------------------------------------------------------------
+// Hardcoded rope base classes, thanks Valve!!
+// These are directly copied from base.fgd, for some reason *any* changes cause rope rendering to break
+// ------------------------------------------------------------------------------------------------------------------
+
+@BaseClass = Targetname 
+[ 
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	
+	input Kill(void) : "Removes this entity from the world."
+	input KillHierarchy(void) : "Removes this entity and all its children from the world."
+	input AddOutput(string) : "Adds an entity I/O connection to this entity. Format: <output name> <targetname>:<inputname>:<parameter>:<delay>:<max times to fire (-1 == infinite)>. Very dangerous, use with care."
+	input FireUser1(void) : "Causes this entity's OnUser1 output to be fired."
+	input FireUser2(void) : "Causes this entity's OnUser2 output to be fired."
+	input FireUser3(void) : "Causes this entity's OnUser3 output to be fired."
+	input FireUser4(void) : "Causes this entity's OnUser4 output to be fired."
+	
+	output OnUser1(void) : "Fired in response to FireUser1 input."
+	output OnUser2(void) : "Fired in response to FireUser2 input."
+	output OnUser3(void) : "Fired in response to FireUser3 input."
+	output OnUser4(void) : "Fired in response to FireUser4 input."
+]
+
+@BaseClass = Parentname
+[ 
+	parentname(target_destination) : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+
+	input SetParent(string) : "Changes the entity's parent in the movement hierarchy."
+	input SetParentAttachment(string) : "Change this entity to attach to a specific attachment point on its parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment."
+	input SetParentAttachmentMaintainOffset(string) : "Change this entity to attach to a specific attachment point on it's parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment. The entity will maintain it's position relative to the parent at the time it is attached."
+	input ClearParent(void) : "Removes this entity from the the movement hierarchy, leaving it free to move independently."
+]
+
+@BaseClass = DXLevelChoice
+[ 
+	mindxlevel(choices) : "Minimum DX Level" : 0 = 
+	[
+		0 : "default (lowest)"
+		70 : "dx7"
+		80 : "dx8.0 (4600Ti)"
+		81 : "dx8.1 (FX5200)"
+		90 : "dx9 SM2.0"
+		95 : "dx9 SM3.0"
+	]
+	maxdxlevel(choices) : "Maximum DX Level" : 0 = 
+	[
+		0 : "default (highest)"
+		60 : "dx6"
+		70 : "dx7"
+		80 : "dx8.0 (4600Ti)"
+		81 : "dx8.1 (FX5200)"
+		90 : "dx9 SM2.0"
+		95 : "dx9 SM3.0"
+	]
+]
+
+@BaseClass = KeyFrame
 [
-	NextKey(target_destination) : "Next keyframe_rope" : : "Name of the next keyframe along this keyframe path."
-	RopeMaterial(material) : "Rope Material" : "cable/cable.vmt" : "The material to use when rendering the rope."
+	NextKey(target_destination) : "Next KeyFrame" : : "Name of the next keyframe along this keyframe path."
+	
+	MoveSpeed(integer) : "Speed (units per second)" : 64
+]
+
+@BaseClass base(DXLevelChoice) = RopeKeyFrame
+[
+	spawnflags(Flags) = 
+	[
+		1 :  "Auto Resize" : 0
+	]
+
 	Slack(integer) : "Slack" : 25 : "How much extra length the rope has (by default it has the length between its two endpoints in the editor)."
+
 	Type(choices) : "Type" : 0 =
 	[
 		0  : "Rope"
 		1  : "Semi-rigid"
 		2  : "Rigid"
 	]
-	Barbed(choices) : "Barbed?" : 0 : "Test effect that makes the rope look sharper and more barbed." =
-	[
-		0 : "No"
-		1 : "Yes"
-	] 
-	Collide(choices) : "Collide with World?" : 0 =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	Dangling(choices) : "Start Dangling?" : 0 : "When set to Yes, the rope starts out detached from its target endpoint." =
-	[
-		0 : "No"
-		1 : "Yes"
-	] 
-	Breakable(choices) : "Breakable?" : 0 : "When set to Yes, the rope can be detached from either endpoint when shot." =
-	[
-		0 : "No"
-		1 : "Yes"
-	] 
-	NoWind(choices) : "Disable Wind?" : 0 : "When set to Yes, the rope will no longer act as though it's being affected by wind." =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	Width(string) : "Width (1-64)" : "2" : "Width of the rope."
-	TextureScale(string) : "Texture Scale" : "1" : "This changes the texture resolution. The default resolution is 4 pixels per inch. Larger values stretch the texture and smaller values scrunch it up."
+
 	Subdiv(integer) : "Subdivision" : 2 : "Number of subdivisions between each rope segment. Maximum value is 8. Higher values make smoother ropes, but are slower to render."
-	ScrollSpeed(float) : "Scroll Speed" : : "Speed at which the texture scrolls."
-	
-	spawnflags(Flags) = 
+
+	Barbed(choices) : "Barbed" : 0 : "Test effect that makes the rope look sharper and more barbed." =
 	[
-		1 :  "Auto Resize - Allows the rope to stretch as the entity moves." : 0
-	]
+		0 : "No"
+		1 : "Yes"
+	] 
 	
+	Width(string) : "Width (1-64)" : "2" : "Width of the rope."
+
+	TextureScale(string) : "Texture Scale" : "1" : "This changes the texture resolution. The default resolution is 4 pixels per inch. Larger values stretch the texture and smaller values scrunch it up."
+	
+	Collide(choices) : "Collide with world" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	Dangling(choices) : "Start Dangling" : 0 : "When set to Yes, the rope starts out detached from its target endpoint." =
+	[
+		0 : "No"
+		1 : "Yes"
+	] 
+
+	Breakable(choices) : "Breakable" : 0 : "When set to yes, the rope can be detached from either endpoint when shot." =
+	[
+		0 : "No"
+		1 : "Yes"
+	] 
+
+	RopeMaterial(material) : "Rope Material" : "cable/cable.vmt" : "The material to use when rendering the rope."
+
 	input SetScrollSpeed(float) : "Set the speed at which the texture scrolls."
 	input SetForce(string) : "Apply a force instantaneously to the rope. The parameter should be a vector containing the force to be applied (X Y Z)."
 	input Break(void) : "Break the rope, if it's marked to do so."
+
+	NoWind(choices) : "Disable Wind" : 0 : "When set to Yes, the rope will no longer act as though it's being affected by wind." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
 ]
 
+@KeyFrameClass base(Targetname, Parentname, KeyFrame, RopeKeyFrame) studio("models/editor/axis_helper_thick.mdl") keyframe() = keyframe_rope : 
+	"A node entity that marks a point in a rope. The first node in the rope should be a move_rope, followed by 1 or more keyframe_ropes."
+[
+]
+
+@MoveClass base(Targetname, Parentname, KeyFrame, RopeKeyFrame) studio("models/editor/axis_helper.mdl") animator() = move_rope : 
+	"The first node in set of nodes that are used to place ropes in the world. It should connect to 1 or more keyframe_rope entities."
+[
+	PositionInterpolator(choices) : "Position Interpolator" : 2 : "Curve Type. Currently only type 2 (Rope) is fully supported." =
+	[
+		0 : "Linear"
+		1 : "Catmull-Rom Spline"
+		2 : "Rope"
+	]
+]
+
+// ------------------------------------------------------------------------------------------------------------------
+// End of hardcoded base classes
+// ------------------------------------------------------------------------------------------------------------------
 
 @PointClass light() iconsprite("editor-ficool2/light") base(BaseEntity) sphere(_fifty_percent_distance) sphere(_zero_percent_distance) sphere(_distance) = light :
 	"An invisible omnidirectional lightsource."
@@ -8009,69 +8157,6 @@
 	input EnablePlayerCollision(void) : "Disable the player from colliding with this entity."
 ]
 
-@PointClass base(BaseNPC) studioprop() = monster_generic :
-    "Obsolete entity from Half-Life, used as a generic NPC. Identical to monster_furniture although lacks PlayerCollision inputs."
-[
-]
-
-@PointClass base(BaseAnimating) studioprop() = monster_resource :
-    "Obsolete entity from Half-Life, generated on demand by code. No special functionality, other than existance."
-[
-]
-
-
-@MoveClass base(BaseEntityPoint, Render) studio("models/editor/axis_helper.mdl") animator() = move_rope : 
-	"The first node in set of nodes that are used to place ropes in the world. It should connect to 1 or more keyframe_rope entities."
-[
-	NextKey(target_destination) : "Next keyframe_rope" : : "Name of the next keyframe along this keyframe path."
-	RopeMaterial(material) : "Rope Material" : "cable/cable.vmt" : "The material to use when rendering the rope."
-	Slack(integer) : "Slack" : 25 : "How much extra length the rope has (by default it has the length between its two endpoints in the editor)."
-	Type(choices) : "Type" : 0 =
-	[
-		0  : "Rope"
-		1  : "Semi-rigid"
-		2  : "Rigid"
-	]
-	Barbed(choices) : "Barbed?" : 0 : "Test effect that makes the rope look sharper and more barbed." =
-	[
-		0 : "No"
-		1 : "Yes"
-	] 
-	Collide(choices) : "Collide with World?" : 0 =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	Dangling(choices) : "Start Dangling?" : 0 : "When set to Yes, the rope starts out detached from its target endpoint." =
-	[
-		0 : "No"
-		1 : "Yes"
-	] 
-	Breakable(choices) : "Breakable?" : 0 : "When set to Yes, the rope can be detached from either endpoint when shot." =
-	[
-		0 : "No"
-		1 : "Yes"
-	] 
-	NoWind(choices) : "Disable Wind?" : 0 : "When set to Yes, the rope will no longer act as though it's being affected by wind." =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	Width(string) : "Width (1-64)" : "2" : "Width of the rope."
-	TextureScale(string) : "Texture Scale" : "1" : "This changes the texture resolution. The default resolution is 4 pixels per inch. Larger values stretch the texture and smaller values scrunch it up."
-	Subdiv(integer) : "Subdivision" : 2 : "Number of subdivisions between each rope segment. Maximum value is 8. Higher values make smoother ropes, but are slower to render."
-	ScrollSpeed(float) : "Scroll Speed" : : "Speed at which the texture scrolls."
-	
-	spawnflags(Flags) = 
-	[
-		1 :  "Auto Resize - Allows the rope to stretch as the entity moves." : 0
-	]
-	
-	input SetScrollSpeed(float) : "Set the speed at which the texture scrolls."
-	input SetForce(string) : "Apply a force instantaneously to the rope. The parameter should be a vector containing the force to be applied (X Y Z)."
-	input Break(void) : "Break the rope, if it's marked to do so."
-]
-
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/multisource") = multisource : 
 	"Half-Life legacy entity. Obsoleted by I/O in Source. Entity which lets mechanisms be created. It is the only entity that can be used as a 'master'."
 [	
@@ -8079,16 +8164,6 @@
 	globalstate(integer) : "Globalstate" : : "Unknown function."
 	
 	output OnTrigger(void) : "Fired when the entity is triggered."
-]
-
-@PointClass base(BaseAnimating) studioprop("models/weapons/w_grenade.mdl") = npc_concussiongrenade : 
-	"(Unused) Half-Life 2 grenade entity. Spawns a Half-Life 2 grenade model and then explodes shortly after."
-[	
-]
-
-@PointClass base(BaseAnimating) studioprop("models/weapons/w_grenade.mdl") = npc_contactgrenade : 
-	"(Unused) Half-Life 2 grenade entity. Spawns a Half-Life 2 grenade model and then explodes shortly after."
-[	
 ]
 
 @PointClass base(BaseNPC) studioprop() = npc_furniture : 
@@ -8247,7 +8322,7 @@
 [
 ]
 
-@PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_brown.mdl") line(255 255 255, targetname, target) = path_corner : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/path_corner") line(255 255 255, targetname, target) = path_corner : 
     "Generic path point for moving entities such as NPCs."
 [
 	target(target_destination) : "Next path_corner" : : "Next stop target after this one."
@@ -8266,7 +8341,7 @@
 	output OnPass(void) : "Fires when a path follower passes this point"
 ]
 
-@PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_brown.mdl") line(255 255 255, targetname, target) = path_corner_crash :
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/path_corner_crash") line(255 255 255, targetname, target) = path_corner_crash :
     "Identical to a path_corner, but when an NPC is searching for a crash point, it will search for this point instead."
 [
 	target(target_destination) : "Next path_corner" : : "Next stop target after this one."
@@ -8285,7 +8360,7 @@
 	output OnPass(void) : "Fires when a path follower passes this point"
 ]
 
-@PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_brown.mdl") sphere(radius) line(255 255 255, targetname, target) = path_track : 
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/path_track") sphere(radius) line(255 255 255, targetname, target) = path_track : 
 	"An entity used to build paths for other entities to follow. Each path_track is a node on the path, each holding the name of the next path_track in the path."
 [
 	target(target_destination) : "Next Stop Target" : : "The next path_track in the path."
@@ -8403,7 +8478,7 @@
 	]
 ]
 
-@PointClass base(BaseAnimating) studioprop() = phys_magnet : 
+@PointClass base(Model, BaseAnimating) studioprop() = phys_magnet : 
 	"An entity that acts like a magnet, attaching metallic physics objects to itself when they touch it. The game will crash if no model is specified! "+
 	"Coast jeep pickup hack flag: In HL2, prevent objects from interfering with the crane as it picks up the buggy. It is hardcoded for use with prop_vehicle_jeep only. Another entity can be used by changing the entity's classname to prop_vehicle_jeep using AddOutput. "+
 	"However, if the game round restarts in multiplayer, the entity will no longer function and will cause crashes (this can be fixed by clearing the classname again with AddOutput to the original)."
@@ -8623,96 +8698,7 @@
 	output OnAwakened(void) : "Fired when this entity becomes awake (collision/force is applied)."
 ]
 
-
-
-// not worth an independant base class
-@PointClass base(BaseAnimatingPhysics, BreakableProp) sphere(exploderadius) studioprop() = physics_prop : 
-	"Deprecated entity. Used in Half-Life 2 beta maps, before Valve swapped to prop_ prefixes for consistent naming. If attempted to be spawned, its classname will automatically be changed to prop_physics."
-[
-	minhealthdmg(integer) : "Min Damage to Hurt" : 0 : "The prop will ignore any damage events if the damage is less than this amount."
-	shadowcastdist(integer) : "Shadow Cast Distance" : 0 : "Use this to override how far this object casts shadows. 0 = default distance."
-	physdamagescale(float) : "Physics Impact Damage Scale" : "0.1" : "Scales damage energy when this object is hit by a physics object. NOTE: 0 means this feature is disabled for backwards compatibility.\nSet to 1.0 for materials as strong as flesh, smaller numbers indicate stronger materials."
-	Damagetype(choices) : "Impact damage type" : 0 : "If set to Sharp, damage is more 'sharper' and the object can slice others." =
-	[
-		0: "Blunt"
-		1: "Sharp"
-	]
-
-	nodamageforces(choices) : "Damaging it Doesn't Push It?" : 0 : "Used to determine whether or not damage should cause the brush to move." =
-	[
-		0: "No"
-		1: "Yes"
-	]
-
-	inertiaScale(float) : "Scale Factor For Inertia" : "1.0" : "Scales the angular mass of an object. Used to hack angular damage and collision response."
-	massScale(float) : "Mass Scale" : "0" : "A scale multiplier for the object's mass."
-	overridescript(string) : "Override Parameters" :  : "A list of physics key/value pairs that are usually in a physics prop .qc file. Format is 'key,value,key,value,etc'."
-	damagetoenablemotion(integer) : "Health Level to Override Motion" : 0 : "If specified, this object will start motion disabled. Once its health has dropped below this specified amount, it will enable motion."
-	forcetoenablemotion(float) : "Physics Impact Force to Override Motion" : 0 : "If specified, this object will start motion disabled. Any impact that imparts a force greater than this value on the physbox will enable motion."
-	puntsound(sound) : "Sound to make when punted."
-	
-	spawnflags(flags) = 
-	[
-		1 : "Start Asleep" : 1
-		2 : "Don't take physics damage" : 0
-		4 : "Debris - Don't collide with the player or other debris" : 0
-		8 : "Motion Disabled" : 0
-		64 : "Enable motion on Physcannon grab" : 0
-		128 : "Not affected by rotor wash" : 0
-		256 : "Generate output on +USE " : 1
-		512 : "Prevent pickup" : 0
-		1024: "Prevent motion enable on player bump" : 0
-		4096: "Debris with trigger interaction" : 0
-		8192: "Force server-side (Multiplayer only)" : 0
-		1048576: "Physgun can always pick up. No matter what." : 0
-	]
-	
-	input Wake(void) : "Wake up this physics object, if it is sleeping."
-	input Sleep(void) : "Put this physics object to sleep. It will wake if given the Wake input, or if force is applied to it. Note that physics objects go to sleep automatically after coming to rest for a while, so you don't really need to use this."
-	input EnableMotion(void) : "Enable physics motion/collision response."
-	input DisableMotion(void) : "Disable physics motion/collision response."
-	input DisableFloating(void) : "Disable fluid/floating simulation to reduce cost."
-	input SetBodyGroup(integer) : "Set this prop's body group (from 0 - n)."
-	input physdamagescale(float) : "Set the Physics Impact Damage Scale for this character. NOTE: 0 means this feature is disabled for backwards compatibility."
-	input EnableDamageForces(void) : "Damaging the entity applies physics forces to it."
-	input DisableDamageForces(void) : "Damaging the entity does *not* apply physics forces to it."
-	input EnablePuntSound(void) : "Allow this prop to play its own sound when punted."
-	input DisablePuntSound(void) : "Prevent this prop from playing its own sound when punted."
-
-	output OnMotionEnabled(void) : "Fired when motion is enabled on this prop, either via 'Health Level to Override Motion' or from the EnableMotion input."
-	output OnAwakened(void) : "Fired when this entity becomes awake (collision/force is applied to it while it's asleep)."
-	output OnPhysGunPickup(void) : "Fired when the player picks up the prop with the physcannon or +USE."
-	output OnPhysGunPunt(void) : "Fired when a player punts this object with the physcannon."
-	output OnPhysGunOnlyPickup(void) : "Fired when a player picks this object up with the physcannon. +USE pickups do not fire this output."
-	output OnPhysGunDrop(void) : "Fired when the player drops the prop with the physcannon or USE."
-	output OnPlayerUse(void) : "Fired when the player tries to +USE the prop. This output will fire only if the Generate output on +USE spawnflag is set."
-	output OnPlayerPickup(void) : "Fired whenever the player picks up this prop (with the physcannon or with +USE)."
-	output OnOutOfWorld(void) : "Fired whenever the prop is out of the allowed world bounds."
-]
-
-// not worth an independant base class
-@PointClass base(BaseAnimatingPhysics, EnableDisable) studioprop() = physics_prop_ragdoll : 
-	"Deprecated entity. Used in Half-Life 2 beta maps, before Valve swapped to prop_ prefixes for consistent naming. If attempted to be spawned, its classname will automatically be changed to prop_ragdoll."
-[
-	angleOverride(string) : "Override Animation" :  : "Filled in by the engine via hammer_update_entity, do not edit by hand except to clear."
-	sequence(integer) : "Sequence" : : "Animation sequence to spawn the ragdoll in, by index NOT name!"
-
-	spawnflags(flags) = 
-	[
-		4 : "Debris - Don't collide with the player or other debris (better performance)" : 1
-		8192 : "Allow Dissolve" : 1
-		16384 : "Motion Disabled" : 0
-		32768 : "Allow stretch" : 0
-		65536 : "Start asleep" : 0
-	]
-	
-	input StartRagdollBoogie(void) : "Begins ragdoll boogie effect. Parameter override = number of seconds to boogie."
-	input EnableMotion(void) : "Enable physics motion/collision response."
-	input DisableMotion(void) : "Disable physics motion/collision response."
-	input FadeAndRemove(float) : "Fade out then remove self. Parameter override = duration of fade"
-]
-
-@PointClass base(BaseAnimating, TeamNum) studioprop("models/player.mdl") = player : 
+@PointClass base(TeamNum) studioprop("models/player.mdl") = player : 
 	"The player itself. Do not place this entity in a map, it will result in an instant crash! The keyvalues should be changed at runtime with AddOutput."
 [
 	health(float) : "Health" : 125 : "Current health of the player. Cannot exceed Maximum Health. Decimals are accepted, although not shown in the HUD."
@@ -9431,9 +9417,8 @@
 @PointClass color(255 255 0) sphere(fademindist) sphere(fademaxdist) studioprop() = prop_static :
 	"A prop that doesn't move and doesn't animate, essentially being part of the map geometry."
 [
-    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
-	hammerid(integer) : "Hammer ID" : : "The entity's Hammer ID, generated automatically. Mainly used by plugins and debugging commands, such as ent_keyvalue. Entities spawned at run-time are not assigned any Hammer ID."
 	model(studio) :"Model" : : "The model to appear as. Models with $bumpmapped materials are never lit per-vertex."
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
 	skin(integer) : "Skin" : 0 : "Some models have multiple versions of their textures, called skins. Set this to a number other than 0 to use that skin instead of the default."
 	solid(choices) : "Collisions" : 6 : "The method of collision to use for the prop." =
 	[
@@ -10036,167 +10021,167 @@
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_bat.mdl") = tf_weapon_bat :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_bat.mdl") = tf_weapon_bat :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_bonesaw.mdl") = tf_weapon_bonesaw :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_bonesaw.mdl") = tf_weapon_bonesaw :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_bottle.mdl") = tf_weapon_bottle :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_bottle.mdl") = tf_weapon_bottle :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_toolbox.mdl") = tf_weapon_builder :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_toolbox.mdl") = tf_weapon_builder :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_machete.mdl") = tf_weapon_club :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_machete.mdl") = tf_weapon_club :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_crowbar.mdl") = tf_weapon_crowbar :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_crowbar.mdl") = tf_weapon_crowbar :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_fireaze.mdl") = tf_weapon_fireaxe :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_fireaze.mdl") = tf_weapon_fireaxe :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/v_models/v_fist_heavy.mdl") = tf_weapon_fists :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/v_models/v_fist_heavy.mdl") = tf_weapon_fists :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_flamethrower.mdl") = tf_weapon_flamethrower :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_flamethrower.mdl") = tf_weapon_flamethrower :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_grenadelauncher.mdl") = tf_weapon_grenadelauncher :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_grenadelauncher.mdl") = tf_weapon_grenadelauncher :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/v_models/v_watch_spy.mdl") = tf_weapon_invis :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/v_models/v_watch_spy.mdl") = tf_weapon_invis :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_knife.mdl") = tf_weapon_knife :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_knife.mdl") = tf_weapon_knife :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_medigun.mdl") = tf_weapon_medigun :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_medigun.mdl") = tf_weapon_medigun :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_minigun.mdl") = tf_weapon_minigun :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_minigun.mdl") = tf_weapon_minigun :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_builder.mdl") = tf_weapon_pda_engineer_build :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_builder.mdl") = tf_weapon_pda_engineer_build :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_pda_engineer.mdl") = tf_weapon_pda_engineer_destroy :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pda_engineer.mdl") = tf_weapon_pda_engineer_destroy :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_cigarette_case.mdl") = tf_weapon_pda_spy :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_cigarette_case.mdl") = tf_weapon_pda_spy :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_stickybomb_launcher.mdl") = tf_weapon_pipebomblauncher :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_stickybomb_launcher.mdl") = tf_weapon_pipebomblauncher :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_pistol.mdl") = tf_weapon_pistol :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pistol.mdl") = tf_weapon_pistol :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_pistol.mdl") = tf_weapon_pistol_scout :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pistol.mdl") = tf_weapon_pistol_scout :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_sniperrifle.mdl") = tf_weapon_railgun :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_sniperrifle.mdl") = tf_weapon_railgun :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_revolver.mdl") = tf_weapon_revolver :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_revolver.mdl") = tf_weapon_revolver :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_rocketlauncher.mdl") = tf_weapon_rocketlauncher :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_rocketlauncher.mdl") = tf_weapon_rocketlauncher :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_scattergun.mdl") = tf_weapon_scattergun :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_scattergun.mdl") = tf_weapon_scattergun :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_hwg :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_hwg :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_primary :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_primary :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_pyro :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_pyro :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_soldier :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_soldier :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_shovel.mdl") = tf_weapon_shovel :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shovel.mdl") = tf_weapon_shovel :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_smg.mdl") = tf_weapon_smg :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_smg.mdl") = tf_weapon_smg :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_sniperrifle.mdl") = tf_weapon_sniperrifle :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_sniperrifle.mdl") = tf_weapon_sniperrifle :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_syringegun.mdl") = tf_weapon_syringegun_medic :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_syringegun.mdl") = tf_weapon_syringegun_medic :
     "Weapon that can be picked up by players."
 [
 ]
 
-@PointClass base(BaseAnimatingPhysics) studioprop("models/weapons/w_models/w_wrench.mdl") = tf_weapon_wrench :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_wrench.mdl") = tf_weapon_wrench :
     "Weapon that can be picked up by players."
 [
 ]
@@ -10471,7 +10456,7 @@
 	input SetLinearForce(float) : "Set the Linear force (0 disables)."
 	input SetLinearForceAngles(vector) : "Direction of linear force, in X Y Z."
 	
-	input	Toggle(void) : "Toggle enable/disable."
+	input Toggle(void) : "Toggle enable/disable."
 ]
 
 @SolidClass base(Trigger) = trigger_wind : 
@@ -10549,8 +10534,6 @@
 	input SetNoListRepeat(bool) : "Sets if lists can be randomly picked twice in a row."
 ]
 
-
-
 @PointClass base(BaseEntity) iconsprite("editor/waterlodcontrol") = water_lod_control : 
 	"An entity used to control the LOD behavior of any water in the map. If your map has water, this entity is required. Otherwise, it is automatically created."
 [
@@ -10560,14 +10543,6 @@
 	input SetCheapWaterStartDistance(float) : "Set the distance that water starts transitioning to cheap water."
 	input SetCheapWaterEndDistance(float) : "Set the distance that water finishes transitioning to cheap water."
 ]
-
-
-@PointClass base(BaseAnimating) studioprop() = window_pane : 
-    "A shard of glass created by a func_breakable_surf. No special function when created."
-[
-	model(studio) : "Model" : "models/gibs/glass_shard.mdl" : "The model this entity should appear as. 128-character limit."
-]
-
 
 @SolidClass base(BaseEntity) = worldspawn : 
 	"This is the world entity. Each map can only contain one, and it's automatically created for you."
