@@ -18,3 +18,8 @@ stuffcmds
 //startupmenu
 
 sv_unlockedchapters 99
+
+//
+// to fix sprays not saving
+//
+exec config.cfg
