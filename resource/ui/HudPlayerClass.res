@@ -54,7 +54,8 @@
 		"image"			"../hud/class_spyred"
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/class_spyred"
-		"teambg_3"		"../hud/class_spyblue"			
+		"teambg_3"		"../hud/class_spyblue"
+		"teambg_4"		"../hud/class_spymercenary"		
 	}	
 	"PlayerStatusSpyOutlineImage"
 	{
@@ -97,5 +98,7 @@
 		"teambg_2_lodef"	"../hud/character_red_bg_lodef"
 		"teambg_3"		"../hud/character_blue_bg"
 		"teambg_3_lodef"	"../hud/character_blue_bg_lodef"
+		"teambg_4"		"../hud/character_mercenary_bg"
+		"teambg_4_lodef"	"../hud/character_mercenary_bg_lodef"
 	}
 }

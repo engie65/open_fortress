@@ -58,7 +58,7 @@
 		"ControlName"		"CTFLabel"
 		"fieldName"		"MercenaryTeamPlayerCount"
 		"font"			"ScoreboardMedium"
-		"labelText"		"%blueteamplayercount%"
+		"labelText"		"%mercenaryteamplayercount%"
 		"textAlignment"		"west"
 		"xpos"			"0"
 		"xpos_hidef"	"100"
