@@ -1,4 +1,10 @@
-"LightmappedGeneric"
+"UnlitGeneric"
 {
-	"$basetexture" "hud/class_civilianred"
+	"$translucent" 1
+	"$baseTexture" "hud\class_civilianred"
+	"$vertexcolor" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"%keywords" "tf"
 }
+
