@@ -1,7 +1,8 @@
 config.cfg
+cfg/autoexec.cfg
 server_blacklist.txt
 sound.cache
-downloads/
+download/
 downloadlists/
 custom/
 gamestate.txt
@@ -14,3 +15,8 @@ viewed.res
 modelsounds.cache
 serverconfig.vdf
 materials/temp
+maps/graphs
+maps/graphs/dm_aerowalk.ain
+sound/temp
+albedo.tga
+normal.tga
