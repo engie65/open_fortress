@@ -20,7 +20,7 @@ PlayerClass
 
 	// Weapons.
 	"weapon1"		"TF_WEAPON_CROWBAR"
-	"weapon2"		"TF_WEAPON_PISTOL"
+	"weapon2"		"TF_WEAPON_PISTOL_MERCENARY"
 	
 	//"DontDoNewJump"	"1"
 /*
