@@ -1,0 +1,19 @@
+// Choreo version 1
+actor "civilian"
+{
+  channel "audio"
+  {
+    event speak "Civilian.PainSevere02"
+    {
+      time 0.000000 0.719819
+      param "Civilian.PainSevere02"
+      
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+fps 60
+snap off
+ignorePhonemes off
