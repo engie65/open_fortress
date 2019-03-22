@@ -1,3 +1,5 @@
+addons/
+screenshots/
 config.cfg
 cfg/autoexec.cfg
 server_blacklist.txt
