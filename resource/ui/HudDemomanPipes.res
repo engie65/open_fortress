@@ -18,7 +18,9 @@
 		"teambg_2"		"../hud/misc_ammo_area_red"
 		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
 		"teambg_3"		"../hud/misc_ammo_area_blue"
-		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
+		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"	
+		"teambg_4"		"../hud/misc_ammo_area_purple"		
+		"teambg_4_lodef"	"../hud/misc_ammo_area_purple_lodef"	
 	}
 	
 	"PipesPresentPanel"
@@ -49,6 +51,7 @@
 			"scaleImage"	"1"
 			"teambg_2"		"../hud/ico_stickybomb_red"
 			"teambg_3"		"../hud/ico_stickybomb_blue"	
+			"teambg_4"		"../hud/ico_stickybomb_purple"	
 		}	
 		
 		"NumPipesLabel"
@@ -132,6 +135,7 @@
 			"scaleImage"	"1"
 			"teambg_2"		"../hud/ico_stickybomb_red_faded"
 			"teambg_3"		"../hud/ico_stickybomb_blue_faded"	
+			"teambg_4"		"../hud/ico_stickybomb_purple_faded"	
 		}
 
 		"NumPipesLabel"

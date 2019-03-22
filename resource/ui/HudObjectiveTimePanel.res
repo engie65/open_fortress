@@ -48,6 +48,7 @@
 		"scaleImage"		"1"	
 		"teambg_2"		"../hud/objectives_timepanel_red_bg"
 		"teambg_3"		"../hud/objectives_timepanel_blue_bg"		
+		"teambg_4"		"../hud/objectives_timepanel_purple_bg"		
 	}
 	"TimePanelValue"
 	{

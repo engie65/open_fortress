@@ -265,7 +265,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"mercenary"
+		"labelText"		"Mercenary"
 		"textAlignment"	"north"
 		"dulltext"		"0"
 		"brighttext"	"0"

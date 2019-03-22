@@ -20,6 +20,8 @@
 		"teambg_2_lodef"	"../hud/freezecam_red_bg_lodef"
 		"teambg_3"		"../hud/freezecam_blue_bg"
 		"teambg_3_lodef"	"../hud/freezecam_blue_bg_lodef"
+		"teambg_4"		"../hud/freezecam_purple_bg"
+		"teambg_4_lodef"	"../hud/freezecam_purple_bg_lodef"
 	}
 	"TargetNameLabel"
 	{	
