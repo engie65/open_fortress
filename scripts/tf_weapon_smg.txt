@@ -1,6 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
+	// This is just a test please off yourself
 	"printname"		"#TF_Weapon_SMG"
 	"BuiltRightHanded"	"0"
 	"weight"		"2"
