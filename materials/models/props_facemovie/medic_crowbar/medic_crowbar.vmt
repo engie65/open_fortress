@@ -3,7 +3,7 @@
 	"$basetexture"	"models/props_facemovie/medic_crowbar/medic_crowbar"
 	"$surfaceprop"	"default"
 	"$bumpmap"	"models/props_facemovie/medic_crowbar/medic_crowbar_normal"
-	"$envmap"	"env_cubemap"
+	//"$envmap"	"env_cubemap"
 	"$envmaptint" "[.5 .5 .5]"
 
 	//phong properties
