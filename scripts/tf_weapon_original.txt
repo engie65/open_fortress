@@ -59,7 +59,7 @@ WeaponData
 	{
 		"weapon"
 		{
-				"file"		"sprites/bucket_rl"
+				"file"		"sprites/c_bet_rocketlauncher_large"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -67,7 +67,7 @@ WeaponData
 		}
 		"weapon_s"
 		{	
-				"file"		"sprites/bucket_rl"
+				"file"		"sprites/c_bet_rocketlauncher"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
