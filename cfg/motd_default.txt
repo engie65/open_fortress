@@ -1,13 +1,3 @@
-Welcome to Team Fortress 2
+Welcome to Open Fortress: Deathmatch
 
-Our map rotation is:
-- Gravel Pit
-- Dustbowl
-- Granary
-- Well (CP)
-- 2Fort
-- Hydro
-- Well (CTF)
-- Badlands
-- Turbine
-- Steel
+Frag like it's 2015! Oh, wait...
