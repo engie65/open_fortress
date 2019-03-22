@@ -44,10 +44,11 @@ WeaponData
 	// Max of 16 per category (ie. max 16 "single_shot" sounds).
 	SoundData
 	{
-		"single_shot"		"Weapon_SniperRifle.Single"
+		"single_shot"		"Weapon_Railgun.Single"
 		"reload"		"Weapon_SniperRifle.WorldReload"
 		"empty"			"Weapon_SniperRifle.ClipEmpty"	
-		"burst"			"Weapon_SniperRifle.SingleCrit"
+		"burst"			"Weapon_Railgun.SingleCrit"
+		"special1"		"Weapon_Railgun.FireLoop"			// Looping fire sound, ramps up 3.5 seconds after start
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.

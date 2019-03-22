@@ -1842,6 +1842,30 @@
 	"wave"		"weapons/sniper_bolt_forward.wav"
 }
 
+"Weapon_Railgun.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/railgun/railgf1a.wav"
+}
+
+"Weapon_Railgun.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/railgun/rg_crit.wav"
+}
+
+"Weapon_Railgun.PilotLoop"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".25"
+	"wave"		"weapons/railgun/rg_hum.wav"
+}
+
 // ------------------------------------------------------------------------------------ //
 // TRANQUILIZER GUN
 // ------------------------------------------------------------------------------------ //
