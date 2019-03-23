@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7538"
-	"mapversion" "101"
+	"mapversion" "102"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "101"
+	"mapversion" "102"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -27707,7 +27707,7 @@ entity
 entity
 {
 	"id" "22947"
-	"classname" "tf_weapon_scattergun"
+	"classname" "tf_weapon_supershotgun"
 	"angles" "0 140.887 0"
 	"body" "0"
 	"disablereceiveshadows" "0"
@@ -27758,7 +27758,7 @@ entity
 entity
 {
 	"id" "22966"
-	"classname" "tf_weapon_scattergun"
+	"classname" "tf_weapon_supershotgun"
 	"angles" "0 140.887 0"
 	"body" "0"
 	"disablereceiveshadows" "0"
