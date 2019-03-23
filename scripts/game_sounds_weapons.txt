@@ -1408,6 +1408,30 @@
 	"wave"		"weapons/pistol_clipin.wav"
 }
 
+"Weapon_PistolDM.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/pistol_dm_shoot.wav"
+}
+
+"Weapon_PistolDM.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/pistol_dm_shoot_crit.wav"
+}
+
+"Weapon_PistolDM.WorldReload"
+{
+	"channel"		"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"		".5"
+	"wave"		"weapons/pistol_worldreload_merc.wav"
+}
+
 // ------------------------------------------------------------------------------------ //
 // REVOLVER
 // ------------------------------------------------------------------------------------ //
