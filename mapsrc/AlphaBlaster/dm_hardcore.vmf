@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "201"
+	"mapversion" "203"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "201"
+	"mapversion" "203"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -9481,6 +9481,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -9564,6 +9565,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -9658,6 +9660,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -9682,6 +9685,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -9706,6 +9710,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -9730,6 +9735,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -9754,6 +9760,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -9778,6 +9785,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -10555,6 +10563,7 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"solid" "6"
 	"spawnflags" "0"
@@ -10618,7 +10627,7 @@ entity
 	"show_in_hud" "1"
 	"start_paused" "0"
 	"StartDisabled" "0"
-	"timer_length" "300"
+	"timer_length" "1200"
 	connections
 	{
 		"OnFinished" "alphaisafaggot,RoundWin,,0,-1"
@@ -10897,7 +10906,7 @@ entity
 entity
 {
 	"id" "2438"
-	"classname" "tf_weapon_scattergun"
+	"classname" "tf_weapon_supershotgun"
 	"angles" "0 0 0"
 	"body" "0"
 	"disablereceiveshadows" "0"
@@ -10975,7 +10984,7 @@ entity
 	"solid" "6"
 	"targetname" "weapons"
 	"texframeindex" "0"
-	"origin" "-768 -400 112"
+	"origin" "-768 -400 96"
 	editor
 	{
 		"color" "220 30 220"
