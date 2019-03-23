@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "74"
+	"mapversion" "75"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "74"
+	"mapversion" "75"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -4774,7 +4774,7 @@ entity
 	"show_in_hud" "1"
 	"start_paused" "0"
 	"StartDisabled" "0"
-	"timer_length" "300"
+	"timer_length" "1200"
 	connections
 	{
 		"OnFinished" "alphaisafaggot,RoundWin,,0,-1"
