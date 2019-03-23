@@ -1,20 +1,22 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models\player\merc_deathmatch\merc_sport"
-	"$bumpmap" "models\player\merc_deathmatch\merc_bumpmap"
-	"$basemapalphaphongmask" "0"
-//	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
-//	"$detailscale" "5"
-//	"$detailblendfactor" .01
-//	"$detailblendmode" 6
+	"$bumpmap" "models\player\merc_deathmatch\merc_alt_bumpmap"
+
+//	"$basemapalphaphongmask" "0"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" ".0"
+	"$detailblendmode" "6"
 	
 	"$phong" "1"
-	"$phongexponenttexture" "models\player\merc_deathmatch\merc_alt_exp"
+//	"$phongexponenttexture" "models\player\merc_deathmatch\merc_alt_exp"
+	"$phongexponent" "10"
 	"$phongboost" "0.87"	
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 	"$phongfresnelranges"	"[.3 1 8]"
 	"$halflambert" "0"
-
 
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
@@ -39,5 +41,6 @@
 		{
 			"resultVar" "$detailblendfactor"
 		}
+
 	}
 }
