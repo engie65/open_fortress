@@ -17,7 +17,7 @@ WeaponData
 	"TimeIdle"		"0.8"
 	"TimeIdleEmpty"		"0.8"
 	"TimeReloadStart"	"0.1"
-	"TimeReload"		"0.83"
+	"TimeReload"		"0.8"
 	"primary_ammo"		"TF_AMMO_PRIMARY"
 	clip_size		4
 	default_clip		4
