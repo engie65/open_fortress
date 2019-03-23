@@ -3,10 +3,10 @@ actor "Mercenary"
 {
   channel "audio"
   {
-    event speak "Mercenary.LaughLong01"
+    event speak "Mercenary.LaughHappy01"
     {
       time 0.364583 3.835967
-      param "Mercenary.LaughLong01"
+      param "Mercenary.LaughHappy01"
       fixedlength
       cctype "cc_master"
       cctoken ""

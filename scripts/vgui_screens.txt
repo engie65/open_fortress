@@ -81,13 +81,12 @@
 		"acceptsinput"	0
 		"resfile"		"scripts/screens/obj_dispenser_blue.res"
 	}
-	
 	"screen_obj_dispenser_mercenary"
 	{
 		"type"			"screen_obj_dispenser_mercenary"
 		"pixelswide"	480
 		"pixelshigh"	240
 		"acceptsinput"	0
-		"resfile"		"scripts/screens/obj_dispenser_mercenary.res"
+		"resfile"		"scripts/screens/obj_dispenser_purple.res"
 	}
 }
