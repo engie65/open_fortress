@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "7538"
-	"mapversion" "340"
+	"mapversion" "341"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "340"
+	"mapversion" "341"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites_2fort"
@@ -26385,7 +26385,7 @@ entity
 entity
 {
 	"id" "4403"
-	"classname" "tf_weapon_scattergun"
+	"classname" "tf_weapon_supershotgun"
 	"angles" "0 0 0"
 	"body" "0"
 	"disablereceiveshadows" "0"
