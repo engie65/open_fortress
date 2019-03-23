@@ -1565,6 +1565,22 @@
 	"wave"		"weapons/draw_secondary.wav"
 }
 
+"Weapon_SuperShotGun.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/supershotgun_shoot.wav"
+}
+
+"Weapon_SuperShotGun.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/supershotgun_shoot_crit.wav"
+}
+
 // ------------------------------------------------------------------------------------ //
 // SHOTGUN
 // ------------------------------------------------------------------------------------ //
