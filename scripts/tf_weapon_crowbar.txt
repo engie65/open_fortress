@@ -9,8 +9,8 @@
 	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 	
 	// Attributes TF.
-	"Damage"			"35"
-	"TimeFireDelay"			"0.45"
+	"Damage"			"65"
+	"TimeFireDelay"			"0.8"
 	"TimeIdle"			"5.0"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
@@ -42,7 +42,7 @@
 	{
 		"weapon"
 		{
-				"file"		"sprites/bucket_bat_red"
+				"file"		"sprites/crowbar_bucket"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -50,7 +50,7 @@
 		}
 		"weapon_s"
 		{	
-				"file"		"sprites/bucket_bat_blue"
+				"file"		"sprites/crowbar_bucket_blue"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
