@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"effects/red"
+	"$basetexture"	"effects/purple"
 	<dx90
 	{
 		 	"$bumpmap" "water/dx80_tfwater001_normal"
