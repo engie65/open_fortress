@@ -20738,3 +20738,13 @@
 	"wave"			"vo/Mercenary_Yes04.wav"
 }
 
+"Mercenary.Fallscream"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/mercenary_fallscream01.wav"
+}
