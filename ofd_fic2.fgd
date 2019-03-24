@@ -1996,7 +1996,7 @@
 @BaseClass color(0 0 200) base(BaseAnimating, EnableDisable) = Item
 [
 	powerup_model(studio) : "Model" :  : "Change the model to something other than the default model." 
-	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns." 
+	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
 	AutoMaterialize(choices) : "Auto-Materialize?" : 1 : "The pickup should automatically materialize after being picked up." =
 	[
 		0 : "No"
@@ -2068,6 +2068,7 @@
 		6 : "Teleporter dust"
 	]
 ]
+
 	
 // ---------------------------------------
 //             Entities A - Z
@@ -2971,6 +2972,7 @@
 @PointClass base(Item, CondID) studioprop() = dm_powerup_spawner :	
     "Adds a condition to the player upon being touched." 
 [
+	duration(float) : "Duration" : 5 : "Changes the time, in seconds, before the condition fades."
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
