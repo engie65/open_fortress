@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6, 24th of March 2019
+// V6.1, 24th of March 2019
 //
 //=============================================================================
 
@@ -799,7 +799,7 @@
 
 	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
-	solid(choices) : "Collisions" : 1 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -938,7 +938,7 @@
 //      4096 : "No projected textures"
 	]
 	skin(integer) : "Skin" : : "Some models have multiple skins. This value selects from the index, starting with 0."
-	solid(choices) : "Collisions" : 6 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -1052,7 +1052,7 @@
     // physics entities must have a model keyvalue
 	model(studio) : "Model" :  : "The model this entity should appear as. 128-character limit."
 	skin(integer) : "Skin" : 0 : "Some models have multiple skins. This value selects from the index, starting with 0."
-	solid(choices) : "Collisions" : 6 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -1110,7 +1110,7 @@
 @BaseClass base(BaseEntityPoint, Render) sphere(fademindist) sphere(fademaxdist) sphere(fademaxdist)  = BaseAnimatingPhysicsWeapon
 [ 
 	skin(integer) : "Skin" : 0 : "Some models have multiple skins. This value selects from the index, starting with 0."
-	solid(choices) : "Collisions" : 6 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -3111,7 +3111,7 @@
 
 	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
-	solid(choices) : "Collisions" : 1 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -3247,7 +3247,7 @@
 
 	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
-	solid(choices) : "Collisions" : 1 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -5197,6 +5197,7 @@
 @SolidClass base(Door) = func_door_rotating : 
 	"A brush entity for use as a rotating player-useable door."+
 [
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
 	distance(integer) : "Distance" : 90 : "The amount, in degrees, that the button should rotate when it's pressed."
 	solidbsp(choices) : "Solid Type" : 1 : "How to calculate collisions. BSP is more rudimentarty but allows more stable collision with players." =
 	[
@@ -5254,7 +5255,7 @@
 
 	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
-	solid(choices) : "Collisions" : 1 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -5346,7 +5347,7 @@
 
 	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
-	solid(choices) : "Collisions" : 1 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -5977,6 +5978,7 @@
 @SolidClass base(BaseAnimatingBrush) = func_rotating : 
 	"A rotating brush entity. Due to a bug with the Clientside Rotation flag, you need to do a small tweak: https://tf2maps.net/posts/451480/"
 [
+    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
 	maxspeed(integer) : "Max Rotation Speed" : 100 : "The maximum rotation speed of the brushes, in degrees per second."
 	fanfriction(integer) : "Friction (0 - 100%)" : 20 : "The amount of rotational friction. Value must be between 0 and 100 %."
 	message(sound) : "Rotating Sound" : : "Sound to play while rotating."
@@ -6025,7 +6027,7 @@
 
 	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
-	solid(choices) : "Collisions" : 1 : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
+	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -9323,7 +9325,7 @@
 	model(studio) :"Model" : : "The model to appear as. Models with $bumpmapped materials are never lit per-vertex."
     angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
 	skin(integer) : "Skin" : 0 : "Some models have multiple versions of their textures, called skins. Set this to a number other than 0 to use that skin instead of the default."
-	solid(choices) : "Collisions" : 6 : "The method of collision to use for the prop." =
+	solid(choices) : "Collisions" : : "The method of collision to use for the prop." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
