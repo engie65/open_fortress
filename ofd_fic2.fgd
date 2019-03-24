@@ -2968,12 +2968,9 @@
 [
 ]
 
-@PointClass base(BaseEntity, CondID) studioprop() = dm_powerup_spawner :	
+@PointClass base(Item, CondID) studioprop() = dm_powerup_spawner :	
     "Adds a condition to the player upon being touched." 
 [
-	powerup_model(studio) : "Model"     :    : "Change the model of the spawner." 
-	duration(float)		  : "Duration"	: 20 : "The duration of the condition."
-	respawntime(integer)  : "Respawn Time" : 10 : "Changes the time, in seconds, before this respawns." 
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
