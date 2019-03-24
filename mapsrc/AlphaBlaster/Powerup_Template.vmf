@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "1"
+	"mapversion" "6"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,18 +14,18 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "64"
+	"nGridSpacing" "8"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "1"
+	"mapversion" "6"
 	"classname" "worldspawn"
-	"skyname" "sky_tf2_04"
-	"maxpropscreenwidth" "-1"
-	"detailvbsp" "detail.vbsp"
 	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_tf2_04"
 }
 entity
 {
@@ -185,6 +185,172 @@ entity
 	"targetname" "PowerupRespawn"
 	"volstart" "0"
 	"origin" "0 16 79"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "46"
+	"classname" "dm_powerup_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"condID" "11"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"duration" "30"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/pickups/pickup_powerup_crit.mdl"
+	"powerup_model" "models/pickups/pickup_powerup_crit.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "60"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "2"
+	"solid" "6"
+	"texframeindex" "0"
+	connections
+	{
+		"OnPlayerTouch" "PowerSound,PlaySound,,0,-1"
+		"OnPlayerTouch" "MercLaughPower,PlaySound,,0,-1"
+		"OnPlayerTouch" "PowerupLight,TurnOff,,0,-1"
+		"OnPlayerTouch" "PowerupLight,TurnOn,,60,-1"
+		"OnPlayerTouch" "PowerupRespawn,PlaySound,,60,-1"
+	}
+	"origin" "88 0 -40"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "48"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/damage.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "2400"
+	"spawnflags" "33"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "PowerSound"
+	"volstart" "0"
+	"origin" "88 0 31"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "51"
+	"classname" "light"
+	"_constant_attn" "0"
+	"_distance" "0"
+	"_fifty_percent_distance" "0"
+	"_hardfalloff" "0"
+	"_light" "201 163 248 200"
+	"_lightHDR" "-1 -1 -1 1"
+	"_lightscaleHDR" "1"
+	"_linear_attn" "0"
+	"_quadratic_attn" "1"
+	"_zero_percent_distance" "0"
+	"angles" "0 0 0"
+	"spawnflags" "0"
+	"style" "0"
+	"targetname" "PowerupLight"
+	"origin" "88 6.464 40.355"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 1000]"
+	}
+}
+entity
+{
+	"id" "57"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "vo/mercenary_laughevil01.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "2400"
+	"spawnflags" "33"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "MercLaughPower"
+	"volstart" "0"
+	"origin" "88 0 63"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "60"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/q3_respawnpower.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "2400"
+	"spawnflags" "33"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "PowerupRespawn"
+	"volstart" "0"
+	"origin" "88 0 79"
 	editor
 	{
 		"color" "220 30 220"
