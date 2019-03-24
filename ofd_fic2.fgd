@@ -2066,9 +2066,15 @@
 		4 : "Cloak effect"
 		5 : "UberCharge"
 		6 : "Teleporter dust"
+		7 : "Taunt Cond (stop reload)"
+		8 : "UberCharge Wearing Off"
+		9 : "Cloak Blink"
+		10 : "Selected to Teleport"
+		11 : "Crit boost"
+		12 : "Overheal Cond (doesnt give any overheal)"
+		13 : "Burning"
 	]
 ]
-
 	
 // ---------------------------------------
 //             Entities A - Z
