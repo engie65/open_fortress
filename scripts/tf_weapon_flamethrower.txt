@@ -9,6 +9,7 @@ WeaponData
 	
 	// Attributes TF.
 	"Damage"		"170"	// per second
+	"InstagibDamage"	"999"
 	"Range"			"0"
 	"BulletsPerShot"	"1"
 	"Spread"		"0.0"

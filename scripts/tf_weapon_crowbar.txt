@@ -10,6 +10,7 @@
 	
 	// Attributes TF.
 	"Damage"			"40"
+	"InstagibDamage"	"999"
 	"TimeFireDelay"			"0.4"
 	"SmackDelay"		"0.1"
 	"TimeIdle"			"5.0"

@@ -9,6 +9,7 @@ WeaponData
 
 	// Attributes TF.
 	"damage"		"112"
+	"InstagibDamage"	"999"
 	"DamageRadius"		"132"
 	"BulletsPerShot"	"1"
 	"HasTeamSkins_Viewmodel"			"1"
