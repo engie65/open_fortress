@@ -9,6 +9,7 @@ WeaponData
 	
 	// Primary Attributes
 	"Damage"				"6"
+	"InstagibDamage"	"999"
 	"Range"					"8192"
 	"BulletsPerShot"		"20"
 	"Spread"				"0.0985"

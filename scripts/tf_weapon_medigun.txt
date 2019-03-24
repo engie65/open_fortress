@@ -9,6 +9,7 @@ WeaponData
 	
 	// Primary Attributes
 	"Damage"				"-24"
+	"InstagibDamage"	"999"
 	"Range"					"450"
 	"TimeFireDelay"			"0.5"
 	"TimeIdle"				"5.0"

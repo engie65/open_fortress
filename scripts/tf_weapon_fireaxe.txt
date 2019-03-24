@@ -10,6 +10,7 @@
 	
 	// Attributes TF.
 	"Damage"				"65"
+	"InstagibDamage"	"999"
 	"TimeFireDelay"			"0.8"
 	"TimeIdle"				"5.0"
 	"HasTeamSkins_Viewmodel"			"1"
