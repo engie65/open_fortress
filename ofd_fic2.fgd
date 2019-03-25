@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.1, 24th of March 2019
+// V6.2, 25th of March 2019
 //
 //=============================================================================
 
@@ -2074,7 +2074,44 @@
 		13 : "Burning"
 	]
 ]
-	
+
+@BaseClass = weaponname
+[
+	weaponname(choices) : "Weapon" : "tf_weapon_scattergun" : "The condition to use." =
+	[
+		"tf_weapon_scattergun" : "Scattergun"
+		"tf_weapon_supershotgun" : "Supershotgun"
+		"tf_weapon_rocketlauncher" : "Rocket Launcher"
+		"tf_weapon_flamethrower" : "Flamethrower"
+		"tf_weapon_grenadelauncher" : "Grenade Launcher"
+		"tf_weapon_minigun" : "Minigun"
+		"tf_weapon_shotgun_primary" : "Shotgun Primary"
+		"tf_weapon_syringegun_medic" : "Syringegun"
+		"tf_weapon_sniperrifle" : "Sniperrifle"
+		"tf_weapon_railgun" : "Railgun"
+		"tf_weapon_revolver" : "Revolver"
+		"tf_weapon_shotgun_hwg" : "Shotgun (heavy)"
+		"tf_weapon_shotgun_pyro" : "Shotgun (pyro)"
+		"tf_weapon_shotgun_soldier" : "Shotgun (soldier)"
+		"tf_weapon_pipebomblauncher" : "Stickybomb Launcher"
+		"tf_weapon_medigun" : "Medigun"
+		"tf_weapon_smg" : "SMG"
+		"tf_weapon_revolver" : "Revolver"
+		"tf_weapon_bat" : "Bat"
+		"tf_weapon_shovel" : "Shovel"
+		"tf_weapon_fireaxe" : "Fireaxe"
+		"tf_weapon_bottle" : "Bottle"
+		"tf_weapon_fists" : "Fists"
+		"tf_weapon_wrench" : "Wrench"
+		"tf_weapon_bonesaw" : "Bonesaw"
+		"tf_weapon_club" : "Club"
+		"tf_weapon_knife" : "Knife"
+		"tf_weapon_crowbar" : "Crowbar"
+		"tf_weapon_pistol" : "Pistol (engineer)"
+		"tf_weapon_pistol_scout" : "Pistol (scout)"
+		"tf_weapon_pistol_mercenary" : "Pistol (mercenary)"
+	]
+]	
 // ---------------------------------------
 //             Entities A - Z
 // ---------------------------------------
@@ -2978,6 +3015,11 @@
     "Adds a condition to the player upon being touched." 
 [
 	duration(float) : "Duration" : 5 : "Changes the time, in seconds, before the condition fades."
+]
+
+@PointClass base(Item, weaponname) studioprop() = dm_weapon_spawner :	
+    "Spawns a weapon." 
+[
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
