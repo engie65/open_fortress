@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8155"
-	"mapversion" "99"
+	"mapversion" "101"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "0"
-	"mapversion" "99"
+	"mapversion" "101"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"comment" "Decompiled by BSPSource v1.3.24 from devtest"
@@ -76661,7 +76661,34 @@ entity
 	"origin" "0 -704 48"
 	editor
 	{
-		"color" "162 247 0"
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "80116"
+	"classname" "env_glow"
+	"angles" "0 0 0"
+	"frame" "0"
+	"framerate" "10.0"
+	"GlowProxySize" "2.0"
+	"HDRColorScale" "1.0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "sprites/glow01.spr"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"scale" "0.25"
+	"spawnflags" "0"
+	"origin" "3.71505 -41.676 8"
+	editor
+	{
+		"color" "20 140 20"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 0]"
@@ -76672,8 +76699,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[54.0792 -423.492 -237.689]"
-		"look" "[-125.431 -272.883 -364.387]"
+		"position" "[-17.5216 -134.767 131.6]"
+		"look" "[18.9452 80.9111 -20.4281]"
 	}
 	camera
 	{
