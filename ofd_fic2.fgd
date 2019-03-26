@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.2, 25th of March 2019
+// V6.1, 26th of March 2019
 //
 //=============================================================================
 
@@ -1992,7 +1992,7 @@
 ]
 
 // item_* entities use these
-@BaseClass color(0 0 200) base(BaseAnimating, EnableDisable, TeamNum) = Item
+@BaseClass color(0 0 200) base(BaseAnimating, EnableDisable, TeamNum) studioprop() = Item
 [
 	powerup_model(studio) : "Model" :  : "Change the model to something other than the default model." 
 	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
@@ -3014,12 +3014,14 @@
 @PointClass base(Item, CondID) studioprop() = dm_powerup_spawner :	
     "Adds a condition to the player upon being touched." 
 [
+	model(studio) : "Model (Visual only for Hammer)" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
 	duration(float) : "Duration" : 5 : "Changes the time, in seconds, before the condition fades."
 ]
 
 @PointClass base(Item, weaponname) studioprop() = dm_weapon_spawner :	
     "Spawns a weapon." 
 [
+	model(studio) : "Model (Visual only for Hammer)" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
