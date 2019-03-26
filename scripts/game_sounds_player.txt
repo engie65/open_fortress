@@ -1226,8 +1226,21 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"wave"	"player/taunt_foot_stomp.wav"
 }
+"Mercenary.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/mercenary_JUMP_1.wav"
+		"wave"		"vo/mercenary_JUMP_2.wav"
+		"wave"		"vo/mercenary_JUMP_3.wav"
+	}
+}
 //-----------------------------------------------------------------------------
 //End Taunts
 //-----------------------------------------------------------------------------

@@ -6,6 +6,7 @@ PlayerClass
 	// Attributes.
 	"name"			"Civilian"
 	"model"			"models/player/civilian.mdl"
+	
 	"localize_name"	"TF_Class_Name_Civilian"
 	"speed_max"		"240"
 	"health_max"		"50"
