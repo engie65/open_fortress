@@ -1978,13 +1978,13 @@
 // Some entities, but not all, use these in TF2
 @BaseClass = TeamNum
 [ 
-	TeamNum(choices) : "Team" : 0 : "Team of the entity. Does not change the entity's appearance!" =
+	TeamNum(choices) : "Team" : : "Team of the entity. Does not change the entity's appearance!" =
 	[
-		0 : "Any/Unassigned"
-		1 : "Spectator"	
-		2 : "RED"
-		3 : "BLU"
-        4 : "Mercenary"
+		0 : "0 - Any/Unassigned"
+		1 : "1 - Spectator"	
+		2 : "2 - RED"
+		3 : "3 - BLU"
+        4 : "4 - Mercenary"
 	]
 	
 	input SetTeam(integer) : "Changes the entity's team. Does not change the entity's appearance!"
@@ -1992,7 +1992,7 @@
 ]
 
 // item_* entities use these
-@BaseClass color(0 0 200) base(BaseAnimating, EnableDisable) = Item
+@BaseClass color(0 0 200) base(BaseAnimating, EnableDisable, TeamNum) = Item
 [
 	powerup_model(studio) : "Model" :  : "Change the model to something other than the default model." 
 	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
@@ -4802,7 +4802,7 @@
 		1 : "1 - Spectators"
 		2 : "2 - RED"
 		3 : "3 - BLU"
-		5 : "5 - Boss"	
+		4 : "4 - Mercenary"	
 	]
 ]
 
@@ -4891,8 +4891,8 @@
 		7 : "Pyro"
 		8 : "Spy"
 		9 : "Engineer"
-		10 : "Civilian"
-		11 : "Mercenary"
+		10 : "Mercenary"
+		11 : "Civilian"
 	]
 ]
 
