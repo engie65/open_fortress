@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "68"
+	"mapversion" "69"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "68"
+	"mapversion" "69"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -930,7 +930,7 @@ entity
 	"skin" "0"
 	"targetname" "Weapon_Railgun"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_sniperrifle"
+	"weaponname" "tf_weapon_railgun"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Railgun,skin,0,0,-1"
