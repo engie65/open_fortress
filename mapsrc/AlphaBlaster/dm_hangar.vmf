@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "938"
+	"mapversion" "941"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "938"
+	"mapversion" "941"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -23049,30 +23049,6 @@ entity
 }
 entity
 {
-	"id" "14332"
-	"classname" "light"
-	"_constant_attn" "0"
-	"_distance" "0"
-	"_hardfalloff" "0"
-	"_light" "192 133 22 200"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_linear_attn" "0"
-	"_quadratic_attn" "1"
-	"defaultstyle" "10"
-	"spawnflags" "0"
-	"style" "10"
-	"origin" "2771.54 -602.991 265.59"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 14000]"
-	}
-}
-entity
-{
 	"id" "14361"
 	"classname" "prop_dynamic"
 	"angles" "0 330 0"
@@ -24169,30 +24145,6 @@ entity
 	"spawnflags" "0"
 	"style" "0"
 	"origin" "1604 652 114.851"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -6768]"
-	}
-}
-entity
-{
-	"id" "15041"
-	"classname" "light"
-	"_constant_attn" "0"
-	"_distance" "0"
-	"_hardfalloff" "0"
-	"_light" "57 206 65 200"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_linear_attn" "0"
-	"_quadratic_attn" "1"
-	"defaultstyle" "0"
-	"spawnflags" "0"
-	"style" "0"
-	"origin" "1932 272 114.851"
 	editor
 	{
 		"color" "220 30 220"
@@ -26246,20 +26198,6 @@ entity
 }
 entity
 {
-	"id" "17396"
-	"classname" "env_tonemap_controller"
-	"targetname" "tonemap_global"
-	"origin" "1251.34 -95.9638 56"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[1000 3000]"
-	}
-}
-entity
-{
 	"id" "17398"
 	"classname" "env_fog_controller"
 	"angles" "0 356 0"
@@ -27573,30 +27511,6 @@ entity
 }
 entity
 {
-	"id" "18453"
-	"classname" "light"
-	"_constant_attn" "0"
-	"_distance" "0"
-	"_hardfalloff" "0"
-	"_light" "253 245 193 200"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_linear_attn" "0"
-	"_quadratic_attn" "1"
-	"defaultstyle" "0"
-	"spawnflags" "0"
-	"style" "0"
-	"origin" "1904 272 224"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -8268]"
-	}
-}
-entity
-{
 	"id" "18471"
 	"classname" "light"
 	"_constant_attn" "0"
@@ -27611,54 +27525,6 @@ entity
 	"spawnflags" "0"
 	"style" "0"
 	"origin" "1856 1168 224"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -8268]"
-	}
-}
-entity
-{
-	"id" "18489"
-	"classname" "light"
-	"_constant_attn" "0"
-	"_distance" "0"
-	"_hardfalloff" "0"
-	"_light" "253 245 193 200"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_linear_attn" "0"
-	"_quadratic_attn" "1"
-	"defaultstyle" "0"
-	"spawnflags" "0"
-	"style" "0"
-	"origin" "1824 768 224"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -8268]"
-	}
-}
-entity
-{
-	"id" "18501"
-	"classname" "light"
-	"_constant_attn" "0"
-	"_distance" "0"
-	"_hardfalloff" "0"
-	"_light" "253 245 193 200"
-	"_lightHDR" "-1 -1 -1 1"
-	"_lightscaleHDR" "1"
-	"_linear_attn" "0"
-	"_quadratic_attn" "1"
-	"defaultstyle" "0"
-	"spawnflags" "0"
-	"style" "0"
-	"origin" "1888 -224 224"
 	editor
 	{
 		"color" "220 30 220"
