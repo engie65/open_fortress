@@ -87,6 +87,6 @@
 		"pixelswide"	480
 		"pixelshigh"	240
 		"acceptsinput"	0
-		"resfile"		"scripts/screens/obj_dispenser_purple.res"
+		"resfile"		"scripts/screens/obj_dispenser_mercenary.res"
 	}
 }

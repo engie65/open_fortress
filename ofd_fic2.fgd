@@ -1996,6 +1996,7 @@
 [
 	powerup_model(studio) : "Model" :  : "Change the model to something other than the default model." 
 	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
+	spawn_sound(sound): "Spawn Sound" : "Item.Materialize" : "Sound to play when Pickup Spawns."
 	AutoMaterialize(choices) : "Auto-Materialize?" : 1 : "The pickup should automatically materialize after being picked up." =
 	[
 		0 : "No"
@@ -3023,7 +3024,7 @@
     "Spawns a weapon." 
 [
 	model(studio) : "Model (Visual only for Hammer)" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
-	pickup_sound(string): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
+	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
