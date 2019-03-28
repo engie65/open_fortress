@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "604"
+	"mapversion" "626"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "604"
+	"mapversion" "626"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -18600,66 +18600,6 @@ world
 }
 entity
 {
-	"id" "465"
-	"classname" "tf_weapon_supershotgun"
-	"angles" "0 90 0"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"fadescale" "1"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"renderamt" "0"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"solid" "6"
-	"targetname" "weapons"
-	"texframeindex" "0"
-	"origin" "688 -640 144"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8500]"
-	}
-}
-entity
-{
-	"id" "482"
-	"classname" "tf_weapon_rocketlauncher"
-	"angles" "0 90 0"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"fadescale" "1"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"renderamt" "0"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"solid" "6"
-	"targetname" "weapons"
-	"texframeindex" "0"
-	"origin" "896 -912 144"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 8500]"
-	}
-}
-entity
-{
 	"id" "515"
 	"classname" "item_healthkit_full"
 	"angles" "0 0 0"
@@ -18705,36 +18645,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 14500]"
-	}
-}
-entity
-{
-	"id" "732"
-	"classname" "tf_weapon_smg"
-	"angles" "0 0 0"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"fadescale" "1"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"renderamt" "0"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"solid" "6"
-	"targetname" "weapons"
-	"texframeindex" "0"
-	"origin" "-16 -208 96"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -13268]"
 	}
 }
 entity
@@ -19162,36 +19072,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -12268]"
-	}
-}
-entity
-{
-	"id" "1045"
-	"classname" "tf_weapon_grenadelauncher"
-	"angles" "0 0 0"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"fadescale" "1"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"renderamt" "0"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"solid" "6"
-	"targetname" "weapons"
-	"texframeindex" "0"
-	"origin" "-16 -448 440"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -13268]"
 	}
 }
 entity
@@ -19702,36 +19582,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -12268]"
-	}
-}
-entity
-{
-	"id" "2993"
-	"classname" "tf_weapon_syringegun_medic"
-	"angles" "0 0 0"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"fadescale" "1"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"renderamt" "0"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"solid" "6"
-	"targetname" "weapons"
-	"texframeindex" "0"
-	"origin" "-1530.64 704 368"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -6768]"
 	}
 }
 entity
@@ -20716,36 +20566,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 -16268]"
-	}
-}
-entity
-{
-	"id" "3741"
-	"classname" "tf_weapon_rocketlauncher"
-	"angles" "0 0 0"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"fadescale" "1"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"renderamt" "0"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"solid" "6"
-	"targetname" "weapons"
-	"texframeindex" "0"
-	"origin" "8 840 248"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 -15768]"
 	}
 }
 entity
@@ -23413,106 +23233,6 @@ entity
 }
 entity
 {
-	"id" "8511"
-	"classname" "logic_timer"
-	"angles" "0 0 0"
-	"RefireTime" "0.1"
-	"spawnflags" "0"
-	"StartDisabled" "0"
-	"UseRandomTime" "0"
-	connections
-	{
-		"OnTimer" "weapon_spawner,ForceSpawn,,0,-1"
-		"OnTimer" "weapons,Kill,,0,-1"
-	}
-	"origin" "-205.925 -105.389 40"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 15000]"
-	}
-}
-entity
-{
-	"id" "8513"
-	"classname" "point_template"
-	"angles" "0 0 0"
-	"spawnflags" "3"
-	"targetname" "weapon_spawner"
-	"Template01" "weapons"
-	"origin" "-205.925 -105.389 72"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 6500]"
-	}
-}
-entity
-{
-	"id" "8547"
-	"classname" "tf_weapon_shotgun_soldier"
-	"angles" "0 0 0"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"fadescale" "1"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"renderamt" "0"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"solid" "6"
-	"targetname" "weapons"
-	"texframeindex" "0"
-	"origin" "-1056 32 144"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
-	}
-}
-entity
-{
-	"id" "8894"
-	"classname" "tf_weapon_railgun"
-	"angles" "0 90 0"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"fadescale" "1"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"renderamt" "0"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"solid" "6"
-	"targetname" "weapons"
-	"texframeindex" "0"
-	"origin" "-384 704 416"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -13268]"
-	}
-}
-entity
-{
 	"id" "9438"
 	"classname" "item_ammopack_small"
 	"angles" "0 0 0"
@@ -23533,7 +23253,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"texframeindex" "0"
-	"origin" "0 256 -159"
+	"origin" "0 216 -159"
 	editor
 	{
 		"color" "0 0 200"
@@ -23564,7 +23284,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"texframeindex" "0"
-	"origin" "0 328 -159"
+	"origin" "0 240 -159"
 	editor
 	{
 		"color" "0 0 200"
@@ -23696,7 +23416,6 @@ entity
 	connections
 	{
 		"OnPlayerTouch" "PowerSound,PlaySound,,0,-1"
-		"OnPlayerTouch" "MercLaughPower,PlaySound,,0,-1"
 		"OnPlayerTouch" "PowerupLight,TurnOff,,0,-1"
 		"OnPlayerTouch" "PowerupLight,TurnOn,,300,-1"
 		"OnPlayerTouch" "PowerupRespawn,PlaySound,,300,-1"
@@ -23735,38 +23454,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 1000]"
-	}
-}
-entity
-{
-	"id" "9869"
-	"classname" "ambient_generic"
-	"angles" "0 0 0"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "vo/mercenary_laughevil01.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "2400"
-	"spawnflags" "33"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "MercLaughPower"
-	"volstart" "0"
-	"origin" "0 400 -65"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
 	}
 }
 entity
@@ -23831,6 +23518,1044 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10288"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_SMG"
+	"texframeindex" "0"
+	"origin" "0 -200 32.8006"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10290"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_SMG"
+	"volstart" "0"
+	"origin" "0 -200 55.8006"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10293"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_smg.mdl"
+	"powerup_model" "models/weapons/w_models/w_smg.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"targetname" "Weapon_SMG"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_smg"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_SMG,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_SMG,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_SMG,PlaySound,,15,-1"
+	}
+	"origin" "-12 -200 76.8006"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "10323"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_Rocket1"
+	"texframeindex" "0"
+	"origin" "0 832 192.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10325"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_Rocket1"
+	"volstart" "0"
+	"origin" "0 832 215.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10328"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"powerup_model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"targetname" "Weapon_Rocket1"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_rocketlauncher"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_Rocket1,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_Rocket1,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_Rocket1,PlaySound,,15,-1"
+	}
+	"origin" "8 832 231.801"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "10355"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_Rocket"
+	"texframeindex" "0"
+	"origin" "872 -864 96.8006"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10357"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_Rocket"
+	"volstart" "0"
+	"origin" "872 -864 119.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10360"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"powerup_model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"targetname" "Weapon_Rocket"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_rocketlauncher"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_Rocket,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_Rocket,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_Rocket,PlaySound,,15,-1"
+	}
+	"origin" "880 -864 135.801"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "10376"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_SuperShotgun"
+	"texframeindex" "0"
+	"origin" "704 -640 96.8006"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10378"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_SuperShotgun"
+	"volstart" "0"
+	"origin" "704 -640 119.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10381"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_scattergun.mdl"
+	"powerup_model" "models/weapons/w_models/w_scattergun.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"targetname" "Weapon_SuperShotgun"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_supershotgun"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_SuperShotgun,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_SuperShotgun,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_SuperShotgun,PlaySound,,15,-1"
+	}
+	"origin" "696 -640 135.801"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "10390"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_GrenadeLauncher"
+	"texframeindex" "0"
+	"origin" "0 -456 393.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10392"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_GrenadeLauncher"
+	"volstart" "0"
+	"origin" "0 -456 416.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10395"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"powerup_model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"solid" "0"
+	"targetname" "Weapon_GrenadeLauncher"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_grenadelauncher"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_GrenadeLauncher,PlaySound,,15,-1"
+	}
+	"origin" "-8 -456 433.801"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "10425"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_Railgun"
+	"texframeindex" "0"
+	"origin" "-324 704 376.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10427"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_Railgun"
+	"volstart" "0"
+	"origin" "-324 704 399.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10430"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"powerup_model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"targetname" "Weapon_Railgun"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_railgun"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_Railgun,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_Railgun,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_Railgun,PlaySound,,15,-1"
+	}
+	"origin" "-320 704 416.801"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "10439"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_Shotgun"
+	"texframeindex" "0"
+	"origin" "-1064 40 96.8006"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10441"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_Shotgun"
+	"volstart" "0"
+	"origin" "-1064 40 119.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10444"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_shotgun.mdl"
+	"powerup_model" "models/weapons/w_models/w_shotgun.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"targetname" "Weapon_Shotgun"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_shotgun_soldier"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_Shotgun,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_Shotgun,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_Shotgun,PlaySound,,15,-1"
+	}
+	"origin" "-1080 40 136.801"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "10460"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_SyringeGun"
+	"texframeindex" "0"
+	"origin" "-1536 704 320.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10462"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_SyringeGun"
+	"volstart" "0"
+	"origin" "-1536 704 343.801"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10465"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_syringegun.mdl"
+	"powerup_model" "models/weapons/w_models/w_syringegun.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "2"
+	"solid" "0"
+	"targetname" "Weapon_SyringeGun"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_syringegun_medic"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_SyringeGun,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_SyringeGun,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_SyringeGun,PlaySound,,15,-1"
+	}
+	"origin" "-1536 704 360.801"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "10480"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_Minigun"
+	"texframeindex" "0"
+	"origin" "0 320 -167.199"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "10482"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "items/itembk2.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "1250"
+	"spawnflags" "48"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "RespawnSound_Minigun"
+	"volstart" "0"
+	"origin" "0 320 -144.199"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "10485"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_minigun.mdl"
+	"powerup_model" "models/weapons/w_models/w_minigun.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"solid" "0"
+	"targetname" "Weapon_Minigun"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_minigun"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_Minigun,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_Minigun,skin,1,15,-1"
+		"OnPlayerTouch" "RespawnSound_Minigun,PlaySound,,15,-1"
+	}
+	"origin" "-28 320 -107.199"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
 	}
 }
 cameras

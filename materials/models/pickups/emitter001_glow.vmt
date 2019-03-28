@@ -4,7 +4,7 @@
 	"$bumpmap" "models/pickups/emitter_n"
 	
 //	"$envmapmask" "models\pickups/emitter001_env"	
-	"$envmap" "env_cubemap"
+//	"$envmap" "env_cubemap"
 	"$envmaptint" "[.5 .5 .5]"
 	
 	"$phong" "1"
