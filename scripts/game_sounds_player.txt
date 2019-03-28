@@ -1226,6 +1226,158 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"wave"	"player/taunt_foot_stomp.wav"
 }
+
+
+"Scout.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Soldier.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Pyro.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Demoman.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Heavy.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Engineer.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Medic.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Sniper.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Spy.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
+"Civilian.Jumpsound"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+	
+	"rndwave"
+	{
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+		"wave"		"vo/null.wav"
+	}
+}
 "Mercenary.Jumpsound"
 {
 	"channel"		"CHAN_VOICE"
