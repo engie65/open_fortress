@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\player\mercenary\mercenary_head"
+	"$basetexture" "models\player\mercenary\mercenary_head_sport"
 	"$phong" "1"
 //	"$phongexponenttexture" "models\player\merc_deathmatch\merc_alt_exp"
 	"$phongexponent" "10"

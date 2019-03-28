@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
 	"$basetexture" "models\player\mercenary/mercenary_blue"
-	"$bumpmap" "models\player\shared/shared_normal"
+	"$bumpmap" "models\player\mercenary/mercenary_normal"
 
 //	"$basemapalphaphongmask" "0"
 
