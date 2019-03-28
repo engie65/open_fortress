@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.3, 27th of March 2019
+// V6.4, 28th of March 2019
 //
 //=============================================================================
 
@@ -3023,6 +3023,7 @@
     "Spawns a weapon." 
 [
 	model(studio) : "Model (Visual only for Hammer)" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
+	pickup_sound(string): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
