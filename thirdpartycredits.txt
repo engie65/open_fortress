@@ -1,1 +1,0 @@
-Credit to Saul Rennison for proper dynamic shadows using the L4D method.
