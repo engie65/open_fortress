@@ -30,9 +30,9 @@ HDMineFace
 Music:
 Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I
 			Chainsawed the Demons, Team Fortresque)
-MrModez (At Fortress' Gate)
+MrModez (At Fortress' Gate, Winpanel Music)
 Thoopje (DMChase)
-Stachekip (Vegemite Sandwich :lilacstare:)
+Stachekip (Vegemite Sandwich)
 
 Maps:
 KaiDemonLP (dm_2fort_weapontest)
