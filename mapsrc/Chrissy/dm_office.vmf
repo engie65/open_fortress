@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "139"
+	"mapversion" "143"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "139"
+	"mapversion" "143"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites_2fort"
@@ -15938,6 +15938,7 @@ entity
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "-65.005 -528.012 34"
 	editor
 	{
@@ -15958,6 +15959,7 @@ entity
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "-185.005 -528.012 34"
 	editor
 	{
@@ -16520,7 +16522,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-248 -398 166.509"
+	"origin" "-248 -398 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16546,7 +16548,7 @@ entity
 	"angles" "-90 0 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-248 -398 156.509"
+	"origin" "-248 -398 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16568,7 +16570,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-488 -398 166.509"
+	"origin" "-488 -398 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16594,7 +16596,7 @@ entity
 	"angles" "-90 0 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-488 -398 156.509"
+	"origin" "-488 -398 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16616,7 +16618,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-8.00006 -398 166.509"
+	"origin" "-8.00006 -398 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16642,7 +16644,7 @@ entity
 	"angles" "-90 0 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-8.00006 -398 156.509"
+	"origin" "-8.00006 -398 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16668,7 +16670,7 @@ entity
 	"angles" "-90 0 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "192 -98 156.509"
+	"origin" "192 -98 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16690,7 +16692,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "192 -98 166.509"
+	"origin" "192 -98 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16716,7 +16718,7 @@ entity
 	"angles" "-90 0 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-168 192 156.509"
+	"origin" "-168 192 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16738,7 +16740,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-168 192 166.509"
+	"origin" "-168 192 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16764,7 +16766,7 @@ entity
 	"angles" "-90 0 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-248 -108 156.509"
+	"origin" "-248 -108 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16786,7 +16788,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-248 -108 166.509"
+	"origin" "-248 -108 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16812,7 +16814,7 @@ entity
 	"angles" "-90 90 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-598 -68 156.509"
+	"origin" "-598 -68 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16834,7 +16836,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-598 -68 166.509"
+	"origin" "-598 -68 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16860,7 +16862,7 @@ entity
 	"angles" "-90 90 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-598 132 156.509"
+	"origin" "-598 132 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16882,7 +16884,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-598 132 166.509"
+	"origin" "-598 132 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16908,7 +16910,7 @@ entity
 	"angles" "-90 0 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "892 -108 156.509"
+	"origin" "892 -108 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16930,7 +16932,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "892 -108 166.509"
+	"origin" "892 -108 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -16956,7 +16958,7 @@ entity
 	"angles" "-90 90 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "592.135 -68.135 156.509"
+	"origin" "592 -68.135 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -16978,7 +16980,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "592.135 -68.135 166.509"
+	"origin" "592 -68.135 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17004,7 +17006,7 @@ entity
 	"angles" "-90 90 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "1022 422 156.509"
+	"origin" "1022 422 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17026,7 +17028,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "1022 422 166.509"
+	"origin" "1022 422 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17052,7 +17054,7 @@ entity
 	"angles" "-90 180 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "1032.14 702.135 156.509"
+	"origin" "1032 702.135 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17074,7 +17076,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "1032.14 702.135 166.509"
+	"origin" "1032 702.135 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17100,7 +17102,7 @@ entity
 	"angles" "-90 180 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "512 732 156.509"
+	"origin" "512 732 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17122,7 +17124,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "512 732 166.509"
+	"origin" "512 732 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17148,7 +17150,7 @@ entity
 	"angles" "-90 180 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "512 412 156.509"
+	"origin" "512 412 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17170,7 +17172,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "512 412 166.509"
+	"origin" "512 412 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17196,7 +17198,7 @@ entity
 	"angles" "-90 180 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "71.9999 412 156.509"
+	"origin" "72 412 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17218,7 +17220,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "71.9999 412 166.509"
+	"origin" "72 412 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17244,7 +17246,7 @@ entity
 	"angles" "-90 180 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-168 412 156.509"
+	"origin" "-168 412 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17266,7 +17268,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-168 412 166.509"
+	"origin" "-168 412 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17292,7 +17294,7 @@ entity
 	"angles" "-90 180 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-408 412 156.509"
+	"origin" "-408 412 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17314,7 +17316,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-408 412 166.509"
+	"origin" "-408 412 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17340,7 +17342,7 @@ entity
 	"angles" "-90 270 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-248 702 176.509"
+	"origin" "-248 702 176"
 	editor
 	{
 		"color" "220 30 220"
@@ -17362,7 +17364,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-248 702 186.509"
+	"origin" "-248 702 184"
 	editor
 	{
 		"color" "255 255 0"
@@ -17388,7 +17390,7 @@ entity
 	"angles" "-90 270 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-48.0001 702 176.509"
+	"origin" "-48.0001 702 176"
 	editor
 	{
 		"color" "220 30 220"
@@ -17410,7 +17412,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-48.0001 702 186.509"
+	"origin" "-48.0001 702 184"
 	editor
 	{
 		"color" "255 255 0"
@@ -17436,7 +17438,7 @@ entity
 	"angles" "-90 90 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "352 172 156.509"
+	"origin" "352 172 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17458,7 +17460,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "352 172 166.509"
+	"origin" "352 172 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17484,7 +17486,7 @@ entity
 	"angles" "-90 90 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "272 612 156.509"
+	"origin" "272 612 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17506,7 +17508,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "272 612 166.509"
+	"origin" "272 612 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17532,7 +17534,7 @@ entity
 	"angles" "-90 270 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "732 532 156.509"
+	"origin" "732 532 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17554,7 +17556,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "732 532 166.509"
+	"origin" "732 532 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17580,7 +17582,7 @@ entity
 	"angles" "-90 90 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "1022 212 156.509"
+	"origin" "1022 212 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -17602,7 +17604,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "1022 212 166.509"
+	"origin" "1022 212 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -17632,7 +17634,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "0"
-	"origin" "552 812 84"
+	"origin" "540 812 84"
 	editor
 	{
 		"color" "255 255 0"
@@ -18234,7 +18236,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-828 62 166.509"
+	"origin" "-828 62 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -18260,7 +18262,7 @@ entity
 	"angles" "-90 90 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-828 62 156.509"
+	"origin" "-828 62 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -18475,14 +18477,15 @@ entity
 {
 	"id" "21562"
 	"classname" "item_ammopack_small"
-	"angles" "0 0 0"
+	"angles" "0 90 0"
 	"AutoMaterialize" "1"
 	"fadescale" "1"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
-	"origin" "1068 772 4"
+	"spawn_sound" "Item.Materialize"
+	"origin" "1152 296 4"
 	editor
 	{
 		"color" "0 0 200"
@@ -18495,14 +18498,15 @@ entity
 {
 	"id" "21564"
 	"classname" "item_healthkit_small"
-	"angles" "0 180 0"
+	"angles" "0 270 0"
 	"AutoMaterialize" "1"
 	"fadescale" "1"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
-	"origin" "1132 772 4"
+	"spawn_sound" "Item.Materialize"
+	"origin" "1152 360 4"
 	editor
 	{
 		"color" "0 0 200"
@@ -19262,6 +19266,7 @@ entity
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "-30.995 864.012 4"
 	editor
 	{
@@ -19282,6 +19287,7 @@ entity
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "-94.995 864.012 4"
 	editor
 	{
@@ -19322,7 +19328,7 @@ entity
 	"angles" "-90 180 0"
 	"pitch" "-90"
 	"style" "0"
-	"origin" "-588 412 158"
+	"origin" "-588 412 156"
 	editor
 	{
 		"color" "220 30 220"
@@ -19344,7 +19350,7 @@ entity
 	"model" "models/props_lights/light_fluorescent_basement.mdl"
 	"skin" "0"
 	"solid" "0"
-	"origin" "-588 412 168"
+	"origin" "-588 412 164"
 	editor
 	{
 		"color" "255 255 0"
@@ -19505,6 +19511,7 @@ entity
 	"shadowcastdist" "0"
 	"skin" "0"
 	"solid" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Minigun"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_minigun"
@@ -19621,6 +19628,7 @@ entity
 	"SetBodyGroup" "0"
 	"shadowcastdist" "0"
 	"skin" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Shotgun"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_shotgun_soldier"
@@ -19737,6 +19745,7 @@ entity
 	"SetBodyGroup" "0"
 	"shadowcastdist" "0"
 	"skin" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_SMG"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_smg"
@@ -19854,6 +19863,7 @@ entity
 	"shadowcastdist" "0"
 	"skin" "0"
 	"solid" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Revolver"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_revolver"
@@ -20314,6 +20324,7 @@ entity
 	"SetBodyGroup" "0"
 	"shadowcastdist" "0"
 	"skin" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_SuperShotgun"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_supershotgun"
@@ -20660,6 +20671,239 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 12000]"
+	}
+}
+entity
+{
+	"id" "46015"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "1 0 0"
+	"BasisOrigin" "-448 224 96"
+	"BasisU" "0 1 0"
+	"BasisV" "0 0 1"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "pl_hoodoo/signs/sign004"
+	"sides" "1565"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-24 -24 0"
+	"uv1" "-24 24 0"
+	"uv2" "24 24 0"
+	"uv3" "24 -24 0"
+	"origin" "-448 224 96"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "46051"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "-1 0 0"
+	"BasisOrigin" "1192 448 96"
+	"BasisU" "0 1 0"
+	"BasisV" "0 0 -1"
+	"EndU" "0"
+	"EndV" "1"
+	"fademindist" "-1"
+	"material" "pl_hoodoo/signs/sign004"
+	"sides" "1154"
+	"StartU" "1"
+	"StartV" "0"
+	"uv0" "-24 -24 0"
+	"uv1" "-24 24 0"
+	"uv2" "24 24 0"
+	"uv3" "24 -24 0"
+	"origin" "1192 448 96"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "46093"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "0 -1 0"
+	"BasisOrigin" "32 896 96"
+	"BasisU" "1 0 0"
+	"BasisV" "-0 0 1"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "signs/sign110"
+	"sides" "3820"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-24 -24 0"
+	"uv1" "-24 24 0"
+	"uv2" "24 24 0"
+	"uv3" "24 -24 0"
+	"origin" "32 896 96"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
+	}
+}
+entity
+{
+	"id" "46135"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "0 1 -0"
+	"BasisOrigin" "32 336 112"
+	"BasisU" "1 0 0"
+	"BasisV" "0 -0 -1"
+	"EndU" "0"
+	"EndV" "1"
+	"fademindist" "-1"
+	"material" "signs/billboard001"
+	"sides" "286"
+	"StartU" "1"
+	"StartV" "0"
+	"uv0" "-64 -32 0"
+	"uv1" "-64 32 0"
+	"uv2" "64 32 0"
+	"uv3" "64 -32 0"
+	"origin" "32 336 112"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "46159"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "0 -1 0"
+	"BasisOrigin" "468 812 84"
+	"BasisU" "1 0 0"
+	"BasisV" "-0 0 1"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "signs/sign042"
+	"sides" "561"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-24 -24 0"
+	"uv1" "-24 24 0"
+	"uv2" "24 24 0"
+	"uv3" "24 -24 0"
+	"origin" "468 812 84"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "46205"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "-1 0 0"
+	"BasisOrigin" "1192 744 80"
+	"BasisU" "0 1 0"
+	"BasisV" "0 0 -1"
+	"EndU" "0"
+	"EndV" "1"
+	"fademindist" "-1"
+	"material" "signs/deadend"
+	"sides" "1220"
+	"StartU" "1"
+	"StartV" "0"
+	"uv0" "-48 -48 0"
+	"uv1" "-48 48 0"
+	"uv2" "48 48 0"
+	"uv3" "48 -48 0"
+	"origin" "1192 744 80"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4000]"
+	}
+}
+entity
+{
+	"id" "46265"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "1 0 0"
+	"BasisOrigin" "-728 -368 88"
+	"BasisU" "0 1 0"
+	"BasisV" "0 0 1"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "signs/sign038"
+	"sides" "1716"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-32 -32 0"
+	"uv1" "-32 32 0"
+	"uv2" "32 32 0"
+	"uv3" "32 -32 0"
+	"origin" "-728 -368 88"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 4500]"
+	}
+}
+entity
+{
+	"id" "46311"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"generatelightmaps" "0"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_spytech/corkboard01.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "0"
+	"origin" "-468 184 84"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
 	}
 }
 cameras
