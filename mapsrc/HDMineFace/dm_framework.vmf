@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "33"
+	"mapversion" "36"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "16"
+	"nGridSpacing" "2"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "33"
+	"mapversion" "36"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -6983,7 +6983,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-480 480 8"
 	editor
 	{
@@ -7395,7 +7395,7 @@ entity
 	"SpawnMode" "0"
 	"StartDisabled" "0"
 	"TeamNum" "4"
-	"origin" "960 -512 0"
+	"origin" "988 -508 4"
 	editor
 	{
 		"color" "220 30 220"
@@ -7945,8 +7945,8 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
-	"origin" "-224 480 9"
+	"TeamNum" "4"
+	"origin" "-228 476 9"
 	editor
 	{
 		"color" "220 30 220"
@@ -7963,7 +7963,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-672 640 0"
 	editor
 	{
@@ -7981,7 +7981,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-671.953 1251.61 9"
 	editor
 	{
@@ -7999,7 +7999,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-480 -352 8"
 	editor
 	{
@@ -8017,8 +8017,8 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
-	"origin" "472 -88 9"
+	"TeamNum" "4"
+	"origin" "476 -92 9"
 	editor
 	{
 		"color" "220 30 220"
@@ -8290,7 +8290,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "467.375 617.243 9"
 	editor
 	{
