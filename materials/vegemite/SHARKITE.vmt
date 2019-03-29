@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "vegemite/SHARKITE"
+"Proxies"
+        {
+                "TextureScroll"
+                {
+                        "texturescrollvar" "$baseTextureTransform"
+                        "texturescrollrate" 0.1
+                        "texturescrollangle" 90
+                }
+        }
+}
