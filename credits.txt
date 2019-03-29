@@ -55,4 +55,5 @@ SuperBigBoy
 
 Special thanks to:
 Trotim (For helping KaidemonLP with programming)
-
+Nicknine (For the TF_Port SDK 2013 codebase)
+Saul Rennison (for proper dynamic shadows using the L4D method)
