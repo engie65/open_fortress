@@ -288,6 +288,20 @@
 		"player_3_points"	"short"
 	}
 	
+	"player_hurt"
+	{
+		"userid" "short"
+		"health" "short"
+		"attacker" "short"
+		"damageamount" "short"
+		"custom"	"short"
+		"showdisguisedcrit" "bool"	// if our attribute specifically crits disguised enemies we need to show it on the client
+		"crit" "bool"
+		"weaponid" "short"
+		"victim_index"	"short"	// entindex who died
+		"attacker_index"	"short"		// entindex that killed
+    }
+	
 	"teamplay_teambalanced_player"
 	{
 		"player"	"short"		// entindex of the player
