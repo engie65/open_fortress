@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "143"
+	"mapversion" "144"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "143"
+	"mapversion" "144"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites_2fort"
@@ -19519,7 +19519,6 @@ entity
 	{
 		"OnPlayerTouch" "Emitter_Minigun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Minigun,skin,1,10,-1"
-		"OnPlayerTouch" "RespawnSound_Minigun,PlaySound,,10,-1"
 	}
 	"origin" "-376.753 -187.046 64.8006"
 	editor
@@ -19575,38 +19574,6 @@ entity
 }
 entity
 {
-	"id" "43541"
-	"classname" "ambient_generic"
-	"angles" "0 0 0"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "items/itembk2.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "1250"
-	"spawnflags" "48"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "RespawnSound_Minigun"
-	"volstart" "0"
-	"origin" "-384 -160 27.8006"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
-	}
-}
-entity
-{
 	"id" "43708"
 	"classname" "dm_weapon_spawner"
 	"angles" "0 270 0"
@@ -19636,7 +19603,6 @@ entity
 	{
 		"OnPlayerTouch" "Emitter_Shotgun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Shotgun,skin,1,10,-1"
-		"OnPlayerTouch" "RespawnSound_Shotgun,PlaySound,,10,-1"
 	}
 	"origin" "-508 -52 44"
 	editor
@@ -19645,38 +19611,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "43711"
-	"classname" "ambient_generic"
-	"angles" "0 0 0"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "items/itembk2.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "1250"
-	"spawnflags" "48"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "RespawnSound_Shotgun"
-	"volstart" "0"
-	"origin" "-508 -68 27"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
 	}
 }
 entity
@@ -19753,7 +19687,6 @@ entity
 	{
 		"OnPlayerTouch" "Emitter_SMG,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_SMG,skin,1,10,-1"
-		"OnPlayerTouch" "RespawnSound_SMG,PlaySound,,10,-1"
 	}
 	"origin" "924.894 -68.4089 48"
 	editor
@@ -19762,38 +19695,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "43783"
-	"classname" "ambient_generic"
-	"angles" "0 0 0"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "items/itembk2.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "1250"
-	"spawnflags" "48"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "RespawnSound_SMG"
-	"volstart" "0"
-	"origin" "928 -80 27"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
 	}
 }
 entity
@@ -19871,7 +19772,6 @@ entity
 	{
 		"OnPlayerTouch" "Emitter_Revolver,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Revolver,skin,1,10,-1"
-		"OnPlayerTouch" "RespawnSound_Revolver,PlaySound,,10,-1"
 	}
 	"origin" "72 558.828 44"
 	editor
@@ -19880,38 +19780,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "43831"
-	"classname" "ambient_generic"
-	"angles" "0 0 0"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "items/itembk2.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "1250"
-	"spawnflags" "48"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "RespawnSound_Revolver"
-	"volstart" "0"
-	"origin" "69.1716 556 27"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
 	}
 }
 entity
@@ -20332,7 +20200,6 @@ entity
 	{
 		"OnPlayerTouch" "Emitter_SuperShotgun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_SuperShotgun,skin,1,10,-1"
-		"OnPlayerTouch" "RespawnSound_SuperShotgun,PlaySound,,10,-1"
 	}
 	"origin" "1136 658.928 44"
 	editor
@@ -20341,38 +20208,6 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "44665"
-	"classname" "ambient_generic"
-	"angles" "0 0 0"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "items/itembk2.wav"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "1250"
-	"spawnflags" "48"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "RespawnSound_SuperShotgun"
-	"volstart" "0"
-	"origin" "1132 652 28"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1500]"
 	}
 }
 entity
