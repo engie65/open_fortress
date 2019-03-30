@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.4, 28th of March 2019
+// V6.5, 30th of March 2019
 //
 //=============================================================================
 
@@ -7156,16 +7156,19 @@
 @PointClass base(Item) studioprop("models/items/ammopack_large.mdl") = item_ammopack_full :	
      "Full ammo pack for players." 
 [
+	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(Item) studioprop("models/items/ammopack_medium.mdl") = item_ammopack_medium : 
      "Medium ammo pack for players."
 [
+	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(Item) studioprop("models/items/ammopack_small.mdl") = item_ammopack_small : 
      "Small ammo pack for players."
 [
+	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
 
 
@@ -7173,16 +7176,19 @@
 @PointClass base(Item) studioprop("models/items/medkit_large.mdl") = item_healthkit_full : 
     "Full health kit for players." 
 [
+	pickup_sound(sound): "Pickup Sound" : "Healthkit.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(Item) studioprop("models/items/medkit_medium.mdl") = item_healthkit_medium :
     "Medium health kit for players." 
 [
+	pickup_sound(sound): "Pickup Sound" : "Healthkit.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(Item) studioprop("models/items/medkit_small.mdl") = item_healthkit_small :	
     "Small health kit for players." 
 [
+	pickup_sound(sound): "Pickup Sound" : "Healthkit.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(BaseAnimating) studioprop("models/can.mdl") = item_sodacan : 
