@@ -10,6 +10,7 @@
 	nohimodel 		1
 	nocrosshair 	0
 	nodegraph		0
+	advcrosshair	1
 	
 	hidden_maps
 	{
