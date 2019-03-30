@@ -1,0 +1,60 @@
+OFD List of Contributors:
+
+Project Lead and Programmer:
+KaiDemonLP
+
+Programming help:
+Alex Episode
+
+Gameplay Lead:
+AlphaBlaster
+
+Mercenary and Civilian concepts and models:
+DrPyspy
+
+Voice of the Mercenary:
+Stachekip
+
+Weapon and misc. player sound effects:
+Stachekip
+
+Viewmodel rigging:
+Ficool2
+
+Menu and promotional art:
+Gibus Cat
+
+Logo:
+HDMineFace
+
+Music:
+Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I
+			Chainsawed the Demons, Team Fortresque)
+MrModez (At Fortress' Gate, Winpanel Music)
+Thoopje (DMChase)
+Stachekip (Vegemite Sandwich)
+
+Maps:
+KaiDemonLP (dm_2fort_weapontest)
+AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone,
+				TVLand, Court of Death, Vegemite Sandwich)
+Hambooga	(The Bad Place [Artpass], The Longest Yard, Aerowalk)
+DrPyspy (Blood Run, Parley [Original layout])
+Gibus Cat (DM 2Fort)
+Richter (Junkyard, port of DMC:S Jigsaw, Office [Textures], UrinalZone)
+HDMineFace (Framework)
+Chris (Office)
+Suomimes55 (Bricks, DM_Minecraft, Boxy)
+Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_Claustrophobolis)
+Reddking (Cineci, Domator, [Early logic_auto help for primitive weapon respawn system for testing])
+BarkinDarkin (Grosse)
+MacD11 (Wiseau [Original layout])
+
+Deep, intricate lore:
+Eyedol9000
+SuperBigBoy
+
+Special thanks to:
+Trotim (For helping KaidemonLP with programming)
+Nicknine (For the TF_Port SDK 2013 codebase)
+Saul Rennison (for proper dynamic shadows using the L4D method)
