@@ -41,4 +41,5 @@ precache
 	"model"			"models/vgui/UI_team01_random.mdl"
 	"model"			"models/vgui/UI_team01_spectate.mdl"
 	"model"			"models/class_menu/random_class_icon.mdl"
+	"model"			"models/weapons/c_models/c_soldier_arms.mdl"
 }
