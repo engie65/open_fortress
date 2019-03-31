@@ -74,6 +74,27 @@ DESCRIPTION INFO_OPTIONS
 		"#game_takesshots"
 		{ BOOL }
 		{ "0" }
+	}
+	
+	"of_muzzlelight"
+	{
+		"#TFOption_muzzlelight"
+		{ BOOL }
+		{ "0" }
+	}
+	
+    "cl_hl1_rollspeed"
+	{
+		"#TFOption_viewroll_speed"
+		{ SLIDER 0 600 }
+		{ "300" }
+	}
+
+	"cl_hl1_rollangle"
+	{
+		"#TFOption_viewroll_angle"
+		{ SLIDER 0.0 1.0 }
+		{ "0.65" }
 	}	
 }
 

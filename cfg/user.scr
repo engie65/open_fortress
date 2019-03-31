@@ -32,7 +32,7 @@
 
 
 // Half-Life User Info Configuration Layout Script (stores last settings chosen, too)
-// File generated:  Tue Feb 12 23:15:12 AM
+// File generated:  Sun Mar 31 14:23:52 AM
 //
 //
 // Cvar	-	Setting
@@ -59,7 +59,7 @@ DESCRIPTION INFO_OPTIONS
 	{
 		"#TF_medigun_autoheal"
 		{ BOOL }
-		{ "1" }
+		{ "0" }
 	}
 
 	"cl_autorezoom"
@@ -74,6 +74,27 @@ DESCRIPTION INFO_OPTIONS
 		"#game_takesshots"
 		{ BOOL }
 		{ "0" }
+	}
+
+	"of_muzzlelight"
+	{
+		"#TFOption_muzzlelight"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"cl_hl1_rollspeed"
+	{
+		"#TFOption_viewroll_speed"
+		{ SLIDER 0 600 }
+		{ "300" }
+	}
+
+	"cl_hl1_rollangle"
+	{
+		"#TFOption_viewroll_angle"
+		{ SLIDER 0 1 }
+		{ "0.65" }
 	}
 
 }
