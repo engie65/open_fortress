@@ -23,7 +23,16 @@
 			"sineperiod" ".81"
 			"resultvar" "$refractamount"
 		}
+		"ItemTintColor"
+		{
+			"resultVar"		"$refracttint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$refracttint_tmp"
+			"srcVar2"		"$refracttint_base"
+			"resultVar"		"$refracttint"
+		}
 	}
-
 }
 

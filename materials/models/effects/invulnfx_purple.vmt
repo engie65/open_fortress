@@ -1,12 +1,12 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"effects/purple"
+	"$basetexture"	"effects/custom_invun"
 	<dx90
 	{
 		 	"$bumpmap" "water/dx80_tfwater001_normal"
 	}
 	"$bumpmap" "water/tfwater001_normal"
-	"$envmap" "effects/invun_purple"
+	"$envmap" "effects/invun_mercenary"
 //	"$envmaptint" "[.2 .2 .2]"
 	"$surfaceprop" "metal"
 	"$halflambert" "1"
@@ -45,6 +45,12 @@
 	"$rimlight" "1"		
 	"$rimlightexponent" "11"
 	"$rimlightboost" "5"	
+
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"1"
+	"$colortint_base"		"{180 180 180}"
+	"$color2"		"{180 180 180}"
+	"$colortint_tmp"		"[0 0 0]"	
 	
 	"Proxies"
 	{
@@ -119,8 +125,15 @@
 			"srcVar1" "$invulnphong"
 			"resultVar" "$phongboost" 
 		}
-
-
-
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
 	}
 }

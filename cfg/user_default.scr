@@ -89,18 +89,51 @@ DESCRIPTION INFO_OPTIONS
 		{ "1" }
 	}	
 	
+    "ofd_color_r"
+	{
+		"#TFOption_Red"
+		{ SLIDER 0 255 }
+		{ "0" }
+	}
+	"ofd_color_g"
+	{
+		"#TFOption_Green"
+		{ SLIDER 0 255 }
+		{ "0" }
+	}	
+	"ofd_color_b"
+	{
+		"#TFOption_Blue"
+		{ SLIDER 0 255 }
+		{ "0" }
+	}	
+
+	"of_idleview"
+	{
+		"#TFOption_idleview"
+		{ BOOL }
+		{ "0" }
+	}	
+	
+    "of_viewbobcycle"
+	{
+		"#TFOption_viewbobcycle"
+		{ SLIDER 0 2 }
+		{ "0" }
+	}
+	
     "cl_hl1_rollspeed"
 	{
 		"#TFOption_viewroll_speed"
 		{ SLIDER 0 600 }
-		{ "300" }
+		{ "600" }
 	}
-
+	
 	"cl_hl1_rollangle"
 	{
 		"#TFOption_viewroll_angle"
 		{ SLIDER 0.0 1.0 }
-		{ "0.65" }
-	}	
+		{ "0.1" }
+	}
 }
 

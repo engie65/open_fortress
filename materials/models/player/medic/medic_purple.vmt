@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models\player\medic\medic_purple"
+	"$basetexture"	"models\player\medic\medic_custom"
 	"$bumpmap" "models\player\medic\medic_normal" 
 		"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
 	"$detailscale" "5"
@@ -29,11 +29,17 @@
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
 	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 
+	
 	// Cloaking
 	"$cloakPassEnabled" "1"
-
-	"360?$color2" "[ 0.7 0.7 0.7 ]"
-
+	
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"1"
+	"$colortint_base"		"{180 180 180}"
+	"$color2"		"{180 180 180}"
+	"$colortint_tmp"		"[0 0 0]"
+	
+	
 	"Proxies"
 	{
 		"spy_invis"
@@ -48,6 +54,16 @@
 		"BurnLevel"
 		{
 			"resultVar" "$detailblendfactor"
+		}
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
 		}
 	}
 }
