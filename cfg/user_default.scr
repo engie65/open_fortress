@@ -82,6 +82,12 @@ DESCRIPTION INFO_OPTIONS
 		{ BOOL }
 		{ "0" }
 	}
+	"of_showtargetid"
+	{
+		"#TFOption_showtargetid"
+		{ BOOL }
+		{ "1" }
+	}	
 	
     "cl_hl1_rollspeed"
 	{
