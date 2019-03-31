@@ -93,7 +93,7 @@ DESCRIPTION INFO_OPTIONS
 	{
 		"#TFOption_Red"
 		{ SLIDER 0 255 }
-		{ "0" }
+		{ "128" }
 	}
 	"ofd_color_g"
 	{
@@ -105,7 +105,7 @@ DESCRIPTION INFO_OPTIONS
 	{
 		"#TFOption_Blue"
 		{ SLIDER 0 255 }
-		{ "0" }
+		{ "128" }
 	}	
 
 	"of_idleview"
