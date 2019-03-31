@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\player\mercenary/mercenary_purple"
+	"$basetexture" "models\player\mercenary/mercenary_custom"
 	"$bumpmap" "models\player\mercenary/mercenary_normal"
 
 //	"$basemapalphaphongmask" "0"
@@ -23,6 +23,11 @@
 	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 	"$rimmask" "1"  
 
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"1"
+	"$colortint_base"		"{180 180 180}"
+	"$color2"		"{180 180 180}"
+	"$colortint_tmp"		"[0 0 0]"
 	
 	"$cloakPassEnabled" "1"
 
@@ -41,6 +46,18 @@
 		{
 			"resultVar" "$detailblendfactor"
 		}
-
+		"DistortFX"
+		{
+		}
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
 	}
 }
