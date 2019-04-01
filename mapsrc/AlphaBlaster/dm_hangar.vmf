@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "1143"
+	"mapversion" "1144"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1143"
+	"mapversion" "1144"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -20368,7 +20368,7 @@ entity
 			"id" "702"
 			"plane" "(-193.353 -515.071 120) (-159.113 -515.071 120) (-159.113 -515.071 176)"
 			"material" "HALFLIFE/+0METSWITCH1"
-			"uaxis" "[1 0 0 -2] 1.375"
+			"uaxis" "[1 0 0 16] 1.1"
 			"vaxis" "[0 0 -1 -31] 1.83"
 			"rotation" "0"
 			"lightmapscale" "16"
