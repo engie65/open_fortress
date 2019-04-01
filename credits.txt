@@ -40,10 +40,11 @@ Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stal
 			Chainsawed the Demons, Team Fortresque)
 MrModez (At Fortress' Gate, Winpanel Music)
 Thoopje (DMChase)
+Stachekip (Vegemite Sandwich)
 
 Maps:
 AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone,
-				TVLand, Court of Death, DM_Johnny [Wiseau])
+				TVLand, Court of Death, DM_Johnny [Wiseau], Vegemite Sandwich)
 Hambooga	(The Bad Place [Artpass], The Longest Yard, Aerowalk, Campgrounds)
 DrPyspy (Blood Run, Parley [Original layout])
 Gibus Cat (DM 2Fort)
