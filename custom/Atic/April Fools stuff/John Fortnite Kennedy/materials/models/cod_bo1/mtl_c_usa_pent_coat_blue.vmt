@@ -1,0 +1,28 @@
+"vertexlitgeneric"
+{
+"$baseTexture" "models\cod_bo1\c_usa_pent_coat_blue_c"
+"$bumpmap" "models\cod_bo1\c_usa_pent_coat_n"
+"$detail" "models\cod_bo1\char_base_fabric_cotton_n"
+"$detailscale" "5"
+"$detailblendfactor" "3"
+"$detailblendmode" "0"
+"$halflambert" "1"
+
+	"$yellow" "0"
+	"$one" "1"
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"spy_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+
+	}
+}
