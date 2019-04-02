@@ -1230,7 +1230,7 @@
 
 "Scout.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1245,7 +1245,7 @@
 }
 "Soldier.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1260,7 +1260,7 @@
 }
 "Pyro.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1275,7 +1275,7 @@
 }
 "Demoman.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1290,7 +1290,7 @@
 }
 "Heavy.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1305,7 +1305,7 @@
 }
 "Engineer.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1320,7 +1320,7 @@
 }
 "Medic.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1335,7 +1335,7 @@
 }
 "Sniper.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1350,7 +1350,7 @@
 }
 "Spy.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1365,7 +1365,7 @@
 }
 "Civilian.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
@@ -1380,7 +1380,7 @@
 }
 "Mercenary.Jumpsound"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
