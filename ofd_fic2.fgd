@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.5, 30th of March 2019
+// V6.2, 2nd of April 2019
 //
 //=============================================================================
 
@@ -3024,6 +3024,16 @@
     "Spawns a weapon." 
 [
 	model(studio) : "Model (Visual only for Hammer)" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
+	disable_spin(choices) : "Disable Spinning?" : 0 : "If set to Yes, the spawned weapon will not spin." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	disable_glow(choices) : "Disable Glowing?" : 0 : "If set to Yes, the spawned weapon will not glow." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
 
@@ -6735,13 +6745,16 @@
 	input DisableHint(void) : "Disable hint."
 ]
 
-
 @PointClass base(BaseEntity) size( -16 -16 0, 16 16 4 ) color(255 128 255)= info_ladder_dismount : 
 	"An entity to handle endpoints for multiple ladders that are too close to each other."
 [
 	target(target_destination) : "LadderName" : : "If multiple ladders are near multiple endpoints, use this to stop them from interfering with each other."
 ]
 
+@PointClass base(BaseEntity, Angles) iconsprite("editor-ficool2/info_landmark") = info_landmark : 
+	"An entity that acts as a landmark for transitions to another level. There should be a corresponding info_landmark entity in the next map. Entities will be transitioned to the next level relative to the info_landmark entities."
+[
+]
 
 @PointClass iconsprite("editor-ficool2/info_lighting") = info_lighting : 
 	"An interal entity that can be used to change the lighting origin of a prop_static, and no other purpose. Set the prop_static's Lighting Origin to point at this entity to "+
@@ -9677,7 +9690,7 @@
 
 
 // removed iconsprite due to scale keyvalue affecting the sprite and making it massive
-@PointClass base(BaseEntity, Angles) studioprop("models/editor-ficool2/camera_ballon.mdl") = sky_camera : 
+@PointClass base(BaseEntity, Angles) size(-16 -16 -16, 16 16 16) color(0 0 255) = sky_camera : 
 	"An entity used to control the 3D Skybox. Its origin is used to determine the 3D Skybox's position relative to the map. Place this entity, in the 3D Skybox, at the point where the origin of the map should be. "+
 	"Multiple or moving 3D skyboxes can be done with this hacky workaround: https://tf2maps.net/threads/multiple-3d-skyboxes.35829/"
 [
