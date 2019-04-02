@@ -1366,16 +1366,14 @@
 "Civilian.Jumpsound"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.820"
+	"volume"		"0.200"
 	"pitch"			"PITCH_NORM"
 
 	"soundlevel"	"SNDLVL_95dB"
 	
 	"rndwave"
 	{
-		"wave"		"vo/null.wav"
-		"wave"		"vo/null.wav"
-		"wave"		"vo/null.wav"
+		"wave"		"vo/civilian_jump01.wav"
 	}
 }
 "Mercenary.Jumpsound"
