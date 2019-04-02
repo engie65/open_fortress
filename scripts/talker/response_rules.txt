@@ -227,6 +227,7 @@ criterion "IsOnPyro" "crosshair_on" "Pyro" "required"
 criterion "IsOnSpy" "crosshair_on" "Spy" "required"
 criterion "IsOnEngineer" "crosshair_on" "Engineer" "required"
 criterion "IsOnMercenary" "crosshair_on" "Mercenary" "required"
+criterion "IsOnCivilian" "crosshair_on" "Civilian" "required"
 
 criterion "IsDominated" "domination" "dominated" "required" 
 criterion "IsRevenge" "domination" "revenge" "required" 
@@ -246,6 +247,7 @@ criterion "IsPyro" "playerclass" "Pyro" "required"
 criterion "IsSpy" "playerclass" "Spy" "required"
 criterion "IsEngineer" "playerclass" "Engineer" "required"
 criterion "IsMercenary" "playerclass" "Mercenary" "required"
+criterion "IsCivilian" "playerclass" "Civilian" "required"
 
 criterion "IsNotScout" "playerclass" "!=Scout" "required" 
 criterion "IsNotSniper" "playerclass" "!=Sniper" "required"
@@ -257,6 +259,7 @@ criterion "IsNotPyro" "playerclass" "!=Pyro" "required"
 criterion "IsNotSpy" "playerclass" "!=Spy" "required"
 criterion "IsNotEngineer" "playerclass" "!=Engineer" "required"
 criterion "IsNotMercenary" "playerclass" "!=Mercenary" "required"
+criterion "IsNotCivilian" "playerclass" "!=Civilian" "required"
 
 
 criterion "IsVictimScout" "victimclass" "Scout" "required" weight 0
@@ -269,6 +272,7 @@ criterion "IsVictimPyro" "victimclass" "Pyro" "required" weight 0
 criterion "IsVictimSpy" "victimclass" "Spy" "required" weight 0
 criterion "IsVictimEngineer" "victimclass" "Engineer" "required"  weight 0
 criterion "IsVictimMercenary" "victimclass" "Mercenary" "required" weight 0
+criterion "IsVictimCivilian" "victimclass" "Civilian" "required" weight 0
 
 criterion "IsNotVictimScout" "victimclass" "!=Scout" "required" weight 0
 criterion "IsNotVictimSniper" "victimclass" "!=Sniper" "required" weight 0
@@ -279,7 +283,8 @@ criterion "IsNotVictimHeavy" "victimclass" "!=Heavy" "required" weight 0
 criterion "IsNotVictimPyro" "victimclass" "!=Pyro" "required" weight 0
 criterion "IsNotVictimSpy" "victimclass" "!=Spy" "required" weight 0
 criterion "IsNotVictimEngineer" "victimclass" "!=Engineer" "required" weight 0
-criterion "IsNotVictimMercenary" "victimclass" "!=Mercenary" "required" weight 0    
+criterion "IsNotVictimMercenary" "victimclass" "!=Mercenary" "required" weight 0  
+criterion "IsNotVictimCivilian" "victimclass" "!=Civilian" "required" weight 0    
 
 
 criterion "10PercentChance"  "randomnum"               ">90"   required
@@ -361,3 +366,4 @@ criterion "ConceptFireMinigunTalk" "Concept" "TLK_MINIGUN_FIREWEAPON" "required"
 #include "talker/Pyro.txt"
 #include "talker/Spy.txt"
 #include "talker/Mercenary.txt"
+#include "talker/Civilian.txt"

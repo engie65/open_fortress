@@ -1,0 +1,29 @@
+"vertexlitgeneric"
+{
+"$baseTexture" "models\cod_bo1\c_gen_insidemouth_c"
+
+"$bumpmap" "models\cod_bo1\c_gen_insidemouth_n"
+"$halflambert" "1"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+	"$yellow" "0"
+	"$one" "1"
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"spy_invis"
+		{
+		}
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+
+	}
+}
