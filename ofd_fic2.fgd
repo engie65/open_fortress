@@ -1997,6 +1997,12 @@
 	powerup_model(studio) : "Model" :  : "Change the model to something other than the default model." 
 	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
 	spawn_sound(sound): "Spawn Sound" : "Item.Materialize" : "Sound to play when Pickup Spawns."
+	HiddenWhenRespawning(choices) : "Hidden wile Respawning" : 1 : "Weather or not the pickup becomes hidden on pickup." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]	
+	
 	AutoMaterialize(choices) : "Auto-Materialize?" : 1 : "The pickup should automatically materialize after being picked up." =
 	[
 		0 : "No"
@@ -3035,6 +3041,12 @@
 		1 : "Yes"
 	]
 	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
+	
+	HiddenWhenRespawning(choices) : "Hidden wile Respawning" : 0 : "Weather or not the pickup becomes hidden on pickup." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]		
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
