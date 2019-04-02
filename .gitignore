@@ -6,6 +6,7 @@ server_blacklist.txt
 sound.cache
 download/
 downloadlists/
+custom/
 gamestate.txt
 downloadcache.db
 demoheader.tmp
