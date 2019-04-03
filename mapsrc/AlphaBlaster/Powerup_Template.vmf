@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "8163"
-	"mapversion" "73"
+	"editorbuild" "8155"
+	"mapversion" "74"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "73"
+	"mapversion" "74"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -115,6 +115,7 @@ entity
 	"disableshadows" "0"
 	"duration" "30"
 	"effects" "0"
+	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/pickups/pickup_powerup_defense.mdl"
@@ -250,6 +251,7 @@ entity
 	"disableshadows" "0"
 	"duration" "30"
 	"effects" "0"
+	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/pickups/pickup_powerup_crit.mdl"
@@ -420,6 +422,7 @@ entity
 {
 	"id" "97"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -504,6 +507,7 @@ entity
 {
 	"id" "351"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -588,6 +592,7 @@ entity
 {
 	"id" "486"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -672,6 +677,7 @@ entity
 {
 	"id" "551"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -756,6 +762,7 @@ entity
 {
 	"id" "611"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -840,6 +847,7 @@ entity
 {
 	"id" "669"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -882,6 +890,7 @@ entity
 {
 	"id" "743"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -1010,6 +1019,7 @@ entity
 {
 	"id" "813"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -1052,6 +1062,7 @@ entity
 {
 	"id" "870"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -1180,6 +1191,7 @@ entity
 {
 	"id" "941"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -1265,6 +1277,7 @@ entity
 {
 	"id" "1092"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"

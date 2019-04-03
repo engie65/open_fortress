@@ -32,6 +32,9 @@
 		"score_width_hidef"	"50"
 		"ping_width"		"23"	[$WIN32]
 		"ping_width"		"50"	[$X360]		// Larger to push the value off the edge
+		"kills_width"		"25"
+		"kills_width_lodef"	"35"
+		"kills_width_hidef"	"50"		
 	}
 	"MainBG"
 	{
@@ -69,26 +72,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-	}							
-	"MercenaryTeamLabel"
-	{
-		"ControlName"		"CTFLabel"
-		"fieldName"		"MercenaryTeamLabel"
-		"font"			"ScoreboardTeamNameLarge"
-		"labelText"		"#TF_ScoreBoard_Mercenary"
-		"textAlignment"		"east"
-		"xpos"			"200"
-		"xpos_lodef"	"446"
-		"xpos_hidef"	"488"
-		"ypos"			"23"	[$WIN32]
-		"ypos"			"29"	[$X360]
-		"wide"			"165"
-		"tall"			"34"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-	}							
+	}
 	"ServerLabel"
 	{
 		"ControlName"		"CTFLabel"
@@ -117,7 +101,7 @@
 		"xpos_hidef"	"30"
 		"ypos"			"72"
 		"zpos"			"20"
-		"wide"			"500"
+		"wide"			"570"
 		"wide_lodef"	"267"
 		"wide_hidef"	"277"
 		"tall"			"250"	[$WIN32]
@@ -232,7 +216,27 @@
 		"ControlName"		"CTFLabel"
 		"fieldName"		"PlayerScoreLabel"
 		"font"		"ScoreboardMedium"
-		"labelText"		"%playerscore%"
+		"labelText"		"#TF_ScoreBoard_KillsLabel"
+		"textAlignment"	"east"
+		"xpos"			"420"
+		"xpos_lodef"	"399"
+		"xpos_hidef"	"439"
+		"ypos"			"347"	[$WIN32]
+		"ypos"			"302"	[$X360]
+		"zpos"			"3"
+		"wide"			"140"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+	}
+	"KillsCount"
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"KillsCount"
+		"font"			"ScoreboardMedium"
+		"labelText"		"%kills%"
 		"textAlignment"	"east"
 		"xpos"			"440"
 		"xpos_lodef"	"399"
@@ -252,7 +256,7 @@
 		"ControlName"		"CTFLabel"
 		"fieldName"		"KillsLabel"
 		"font"			"ScoreboardVerySmall"
-		"labelText"		"#TF_ScoreBoard_KillsLabel"
+		"labelText"		"Score:"
 		"textAlignment"		"east"
 		"xpos"			"80"
 		"ypos"			"365"	[$WIN32]
@@ -264,7 +268,25 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-	}						
+	}
+	"Kills"
+	{
+		"ControlName"		"CTFLabel"
+		"fieldName"		"Kills"
+		"font"			"ScoreboardVerySmall"
+		"labelText"		"%playerscore%"
+		"textAlignment"		"east"
+		"xpos"			"80"
+		"ypos"			"365"	[$WIN32]
+		"ypos"			"320"	[$X360]
+		"zpos"			"3"
+		"wide"			"95"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+	}		
 	"DeathsLabel"
 	{
 		"ControlName"		"CTFLabel"
@@ -324,7 +346,7 @@
 		"ControlName"		"CTFLabel"
 		"fieldName"		"Kills"
 		"font"			"ScoreboardVerySmall"
-		"labelText"		"%kills%"
+		"labelText"		"%playerscore%"
 		"textAlignment"		"west"
 		"xpos"			"180"
 		"ypos"			"365"	[$WIN32]
