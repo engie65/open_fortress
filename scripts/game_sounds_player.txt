@@ -1365,7 +1365,7 @@
 }
 "Civilian.Jumpsound"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_BODY"
 	"volume"		"0.200"
 	"pitch"			"PITCH_NORM"
 
@@ -1378,7 +1378,7 @@
 }
 "Mercenary.Jumpsound"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_BODY"
 	"volume"		"0.820"
 	"pitch"			"PITCH_NORM"
 
