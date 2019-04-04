@@ -1741,7 +1741,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		")weapons/nail_gun_shoot.wav"
+	"wave"		")tfc/weapons/airgun_1.wav"
 }
 
 "Weapon_NailGun.SingleCrit"
@@ -1749,7 +1749,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		")weapons/nail_gun_shoot_crit.wav"
+	"wave"		")tfc/weapons/airgun_1.wav"
 }
 
 "Weapon_NailGun.Reload"
