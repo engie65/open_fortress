@@ -11,7 +11,7 @@
 	"$phongfresnelranges"	"[1 2 5]"
 	"$halflambert" "1"
 
-	"$color2" "{232 197 59}"
+	"$color2" "{200 75 45}"
 	
 	"$rimlight" "1"												
 	"$rimlightexponent" "4"										
