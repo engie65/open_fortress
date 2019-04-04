@@ -8561,6 +8561,8 @@ entity
 {
 	"id" "2212"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -8645,6 +8647,8 @@ entity
 {
 	"id" "2222"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -8729,6 +8733,8 @@ entity
 {
 	"id" "2232"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -8813,6 +8819,8 @@ entity
 {
 	"id" "2242"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -8897,6 +8905,8 @@ entity
 {
 	"id" "2252"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -8981,6 +8991,8 @@ entity
 {
 	"id" "2262"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -9066,6 +9078,8 @@ entity
 {
 	"id" "2272"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -9151,6 +9165,8 @@ entity
 {
 	"id" "2282"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -9236,6 +9252,8 @@ entity
 {
 	"id" "2297"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -9321,6 +9339,8 @@ entity
 {
 	"id" "2307"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -9406,6 +9426,8 @@ entity
 {
 	"id" "2317"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"

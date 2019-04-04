@@ -43040,6 +43040,7 @@ entity
 {
 	"id" "38320"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -43156,6 +43157,7 @@ entity
 {
 	"id" "38329"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -43271,6 +43273,7 @@ entity
 {
 	"id" "38345"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -43386,6 +43389,7 @@ entity
 {
 	"id" "38411"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -43501,6 +43505,7 @@ entity
 {
 	"id" "38427"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -43617,6 +43622,7 @@ entity
 {
 	"id" "38479"
 	"classname" "dm_weapon_spawner"
+ "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"

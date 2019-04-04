@@ -2102,6 +2102,7 @@
 		"tf_weapon_shotgun_soldier" : "Shotgun (soldier)"
 		"tf_weapon_pipebomblauncher" : "Stickybomb Launcher"
 		"tf_weapon_medigun" : "Medigun"
+		"tf_weapon_nailgun" : "Nailgun"
 		"tf_weapon_smg" : "SMG"
 		"tf_weapon_revolver" : "Revolver"
 		"tf_weapon_bat" : "Bat"
@@ -10070,6 +10071,11 @@
 ]
 
 @PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_minigun.mdl") = tf_weapon_minigun :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_nailgun.mdl") = tf_weapon_nailgun :
     "Weapon that can be picked up by players."
 [
 ]
