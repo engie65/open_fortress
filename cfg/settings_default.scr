@@ -81,4 +81,34 @@ DESCRIPTION SERVER_OPTIONS
 		{ NUMBER 0 -1 }
 		{ "0" }
 	}
+
+	"mp_teamplay"
+	{
+		"#TF_TeamPlay"
+		{ BOOL }
+		{ "0" }
+	}	
+	
+	"ofd_instagib"
+	{
+		"#TF_Instagib"
+		{ BOOL }
+		{ "0" }
+	}
+	
+	"ofd_forceclass"
+	{
+		"#TF_ForceClass"
+		{ BOOL }
+		{ "1" }
+	}
+
+	"ofd_forceteam"
+	{
+		"#TF_ForceTeam"
+		{ BOOL }
+		{ "1" }
+	}	
+
+	
 }
