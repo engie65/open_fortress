@@ -1565,12 +1565,16 @@
 	"wave"		"weapons/draw_secondary.wav"
 }
 
+// ------------------------------------------------------------------------------------ //
+// SUPERSHOTGUN
+// ------------------------------------------------------------------------------------ //
+
 "Weapon_SuperShotGun.Single"
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		")weapons/supershotgun_shoot.wav"
+	"wave"		")doom/weapons/DSDSHTGN.wav"
 }
 
 "Weapon_SuperShotGun.SingleCrit"
@@ -1578,7 +1582,43 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		")weapons/supershotgun_shoot_crit.wav"
+	"wave"		")doom/weapons/DSDSHTGN.wav"
+}
+
+"Weapon_SuperShotGun.TubeOpen"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"doom/weapons/DSDBOPN.wav"
+}
+
+"Weapon_SuperShotGun.ShellsIn"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"doom/weapons/DSDBLOAD.wav"
+}
+
+"Weapon_SuperShotGun.TubeClose"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"doom/weapons/DSDBCLS.wav"
+}
+
+"Weapon_SuperShotGun.WorldReload"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"doom/weapons/DSDBWR.wav"
 }
 
 // ------------------------------------------------------------------------------------ //
