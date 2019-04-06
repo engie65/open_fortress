@@ -1,45 +1,36 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models\player\medic\medic_custom"
-	"$bumpmap" "models\player\medic\medic_normal" 
-		"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$basetexture" "models\player\mercenary/mercenary_custom"
+	"$bumpmap" "models\player\mercenary/mercenary_normal"
+
+//	"$basemapalphaphongmask" "0"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
 	"$detailscale" "5"
-	"$detailblendfactor" .01
-	"$detailblendmode" 6
-
-
-// 	"$bbqamount" "1"	
-// 	"$two" "2.35"
-// 	"$one" "1"
-// 	"$absburnminusone" "1"
-// 	"$burnminusone" "1"
-// 	"$finalburnlevel" "1"
-// 	"$burnlevel" "0"
-
-
+	"$detailblendfactor" ".0"
+	"$detailblendmode" "6"
+	
 	"$phong" "1"
-	"$phongexponent" "20"
-	"$phongboost" ".3"	
+//	"$phongexponenttexture" "models\player\merc_deathmatch\merc_alt_exp"
+	"$phongexponent" "10"
+	"$phongboost" "0"	
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 	"$phongfresnelranges"	"[.3 1 8]"
 	"$halflambert" "0"
 
-	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
 	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
+	"$rimmask" "1"  
 
-	
-	// Cloaking
-	"$cloakPassEnabled" "1"
-	
 	"$blendtintbybasealpha"		"1"
 	"$blendtintcoloroverbase"		"1"
-	"$colortint_base"		"{180 180 180}"
+	"$colortint_base"		"{0 0 0}"
 	"$color2"		"{180 180 180}"
 	"$colortint_tmp"		"[0 0 0]"
 	
-	
+	"$cloakPassEnabled" "1"
+
 	"Proxies"
 	{
 		"spy_invis"
@@ -54,6 +45,9 @@
 		"BurnLevel"
 		{
 			"resultVar" "$detailblendfactor"
+		}
+		"DistortFX"
+		{
 		}
 		"ItemTintColor"
 		{

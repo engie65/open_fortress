@@ -1,12 +1,13 @@
 "VertexLitGeneric"
+
 {
-	"$basetexture" "models\player\hvyweapon\hvyweapon_purple"
-	"$bumpmap" "models\player\hvyweapon\hvyweapon_normal"
-	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
-	"$detailscale" "5"
+	"$basetexture" "models/player/spy/spy_head_custom"
+	// $bumpmap is a shared 16x16 flat normal map, and is needed or lightwarp won't shade correctly.
+	"$bumpmap"     "models/player/shared/shared_normal"
+			"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
+	"$detailscale" "1"
 	"$detailblendfactor" .01
 	"$detailblendmode" 6
-
 
 // "$bbqamount" "1"	
 // 	"$two" "2.35"
@@ -30,25 +31,37 @@
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
-
-	"360?$color2" "[ 0.8 0.8 0.8 ]"
+	
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"1"
+	"$colortint_base"		"{0 0 0}"
+	"$color2"		"{180 180 180}"
+	"$colortint_tmp"		"[0 0 0]"	
 
 	"Proxies"
 	{
 		"spy_invis"
 		{
 		}
-		
 		"AnimatedTexture"
 		{
 			"animatedtexturevar" "$detail"
 			"animatedtextureframenumvar" "$detailframe"
 			"animatedtextureframerate" 30
 		}
-		
 		"BurnLevel"
 		{
 			"resultVar" "$detailblendfactor"
 		}
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}		
 	}
 }
