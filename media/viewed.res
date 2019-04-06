@@ -30,7 +30,7 @@
 	}
 	"dm_cs16_mansion"
 	{
-		"viewed"		"2"
+		"viewed"		"3"
 	}
 	"dm_framework"
 	{
