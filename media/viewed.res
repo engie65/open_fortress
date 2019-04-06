@@ -34,7 +34,7 @@
 	}
 	"dm_framework"
 	{
-		"viewed"		"2"
+		"viewed"		"3"
 	}
 	"dm_boxy"
 	{
