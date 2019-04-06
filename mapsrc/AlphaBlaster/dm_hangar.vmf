@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "1150"
+	"mapversion" "1152"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1150"
+	"mapversion" "1152"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -21552,9 +21552,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_scattergun.mdl"
+	"model" "models/weapons/w_models/w_supershotgun.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_scattergun.mdl"
+	"powerup_model" "models/weapons/w_models/w_supershotgun.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -25894,7 +25894,7 @@ entity
 entity
 {
 	"id" "16982"
-	"classname" "item_healthkit_full"
+	"classname" "item_healthkit_medium"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
@@ -29582,7 +29582,7 @@ entity
 	"defaultstyle" "0"
 	"spawnflags" "0"
 	"style" "0"
-	"origin" "-192 -448 240"
+	"origin" "-176 -560 240"
 	editor
 	{
 		"color" "220 30 220"
@@ -29606,7 +29606,7 @@ entity
 	"defaultstyle" "0"
 	"spawnflags" "0"
 	"style" "0"
-	"origin" "-192 -1088 240"
+	"origin" "-176 -992 240"
 	editor
 	{
 		"color" "220 30 220"

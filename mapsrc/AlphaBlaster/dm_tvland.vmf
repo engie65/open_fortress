@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "167"
+	"mapversion" "168"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "167"
+	"mapversion" "168"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -9654,38 +9654,6 @@ entity
 }
 entity
 {
-	"id" "2712"
-	"classname" "ambient_generic"
-	"angles" "0 0 0"
-	"cspinup" "0"
-	"fadeinsecs" "0"
-	"fadeoutsecs" "0"
-	"health" "10"
-	"lfomodpitch" "0"
-	"lfomodvol" "0"
-	"lforate" "0"
-	"lfotype" "0"
-	"message" "music/hl1_song10.mp3"
-	"pitch" "100"
-	"pitchstart" "100"
-	"preset" "0"
-	"radius" "1250"
-	"spawnflags" "1"
-	"spindown" "0"
-	"spinup" "0"
-	"targetname" "Music"
-	"volstart" "10"
-	"origin" "960 538.874 1088"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[500 5500]"
-	}
-}
-entity
-{
 	"id" "2997"
 	"classname" "item_ammopack_medium"
 	"angles" "0 0 0"
@@ -10444,9 +10412,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_scattergun.mdl"
+	"model" "models/weapons/w_models/w_supershotgun.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_scattergun.mdl"
+	"powerup_model" "models/weapons/w_models/w_supershotgun.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
