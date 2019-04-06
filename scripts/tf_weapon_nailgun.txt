@@ -25,7 +25,7 @@ WeaponData
 	"MaxAmmo"	      "150"
 
 	// Buckets.
-	"bucket"		"0"
+	"bucket"		"3"
 	"bucket_position"	"0"
 
 	// Animation.

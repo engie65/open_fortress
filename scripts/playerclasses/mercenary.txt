@@ -44,4 +44,6 @@ PlayerClass
 	"sound_crit_death"				"Mercenary.CritDeath"
 	"sound_melee_death"			"Mercenary.MeleeDeath"
 	"sound_explosion_death"			"Mercenary.ExplosionDeath"	
+	
+	"c_arm"	"models/weapons/c_models/c_soldier_arms.mdl"
 }

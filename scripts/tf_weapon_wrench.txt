@@ -23,8 +23,8 @@
 	"clip_size"			"-1"
 
 	// Buckets.	
-	"bucket"			"2"
-	"bucket_position"		"5"
+	"bucket"			"0"
+	"bucket_position"		"9"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_wrench_engineer.mdl"

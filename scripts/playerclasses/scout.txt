@@ -38,4 +38,6 @@ PlayerClass
 	"sound_crit_death"				"Scout.CritDeath"
 	"sound_melee_death"			"Scout.MeleeDeath"
 	"sound_explosion_death"			"Scout.ExplosionDeath"	
+	
+	"c_arm"	"models/weapons/c_models/c_scout_arms.mdl"
 }

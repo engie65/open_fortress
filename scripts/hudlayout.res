@@ -88,44 +88,68 @@
 		"MeterBG"		"Gray"
 	}	
 
+
 	HudWeaponSelection
 	{
 		"fieldName" "HudWeaponSelection"
-		"xpos"	"0"
-		"wide"	"f0"
-		"ypos" 	"0"
-		"tall"	"480"
-		"RightMargin" "0"
-		"RightMargin_hidef" "32"
-		"RightMargin_lodef" "38"
+		"ypos" 	"16"	[$WIN32]
+		"ypos" 	"32"	[$X360]
 		"visible" "1"
 		"enabled" "1"
-		"SmallBoxWide" "60"
-		"SmallBoxTall" "45"
-		"PlusStyleBoxWide" "90"
-		"PlusStyleBoxTall" "63"
-		"PlusStyleExpandSelected"	"0.3"
-		"LargeBoxWide" "100"
-		"LargeBoxTall" "70"
-		"BoxGap" "10"	[$WIN32]
-		"BoxGap" "4"	[$X360]
-		"SelectionNumberXPos" "12"
+		"SmallBoxSize" "32"
+		"MediumBoxWide"	"95"
+		"MediumBoxWide_hidef"	"78"
+		"MediumBoxTall"	"50"
+		"MediumBoxTall_hidef"	"50"
+		"MediumBoxWide_lodef"	"74"
+		"MediumBoxTall_lodef"	"50"
+		"LargeBoxWide" "112"
+		"LargeBoxTall" "80"
+		"BoxGap" "8"
+		"SelectionNumberXPos" "4"
 		"SelectionNumberYPos" "4"
-		"IconXPos" "8"
-		"IconYPos" "0"
-		"TextYPos" "70"		[$WIN32]
-		"TextYPos" "65"		[$X360]
-		"ErrorYPos" "48"
-		"TextColor" "SelectionTextFg"
-		"MaxSlots"	"6"
-		"PlaySelectSounds"	"1"
-		"Alpha" "220"
-		"SelectionAlpha" "220"
-		"BoxColor" "0 0 0 220"
-		"SelectedBoxClor" "0 0 0 220"
-		"SelectionNumberFg"	"200 187 161 255"
-		"NumberFont" "HudSelectionText"
-	}	
+		"SelectionGrowTime"	"0.4"
+		"TextYPos" "64"
+	}
+
+//	HudWeaponSelection
+//	{
+//		"fieldName" "HudWeaponSelection"
+//		"xpos"	"0"
+//		"wide"	"f0"
+//		"ypos" 	"0"
+//		"tall"	"480"
+//		"RightMargin" "0"
+//		"RightMargin_hidef" "32"
+//		"RightMargin_lodef" "38"
+//		"visible" "1"
+//		"enabled" "1"
+//		"SmallBoxWide" "60"
+//		"SmallBoxTall" "45"
+//		"PlusStyleBoxWide" "90"
+//		"PlusStyleBoxTall" "63"
+//		"PlusStyleExpandSelected"	"0.3"
+//		"LargeBoxWide" "100"
+//		"LargeBoxTall" "70"
+//		"BoxGap" "10"	[$WIN32]
+//		"BoxGap" "4"	[$X360]
+//		"SelectionNumberXPos" "12"
+//		"SelectionNumberYPos" "4"
+//		"IconXPos" "8"
+//		"IconYPos" "0"
+//		"TextYPos" "70"		[$WIN32]
+//		"TextYPos" "65"		[$X360]
+//		"ErrorYPos" "48"
+//		"TextColor" "SelectionTextFg"
+//		"MaxSlots"	"6"
+//		"PlaySelectSounds"	"1"
+//		"Alpha" "220"
+//		"SelectionAlpha" "220"
+//		"BoxColor" "0 0 0 220"
+//		"SelectedBoxClor" "0 0 0 220"
+//		"SelectionNumberFg"	"200 187 161 255"
+//		"NumberFont" "HudSelectionText"
+//	}
 	
 	HudAccount
 	{

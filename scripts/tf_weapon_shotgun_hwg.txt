@@ -32,8 +32,8 @@ fWeaponData
 	"TracerEffect"		"bullet_shotgun_tracer01"
 
 	// Buckets.
-	"bucket"			"1"
-	"bucket_position"		"1"
+	"bucket"			"2"
+	"bucket_position"		"4"
 
 	// Animation.
 	"viewmodel"    	"models/weapons/v_models/v_shotgun_heavy.mdl"

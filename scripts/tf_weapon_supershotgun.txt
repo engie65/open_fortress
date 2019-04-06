@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"				"#TF_Weapon_Scattergun"
+	"printname"				"#TF_Weapon_SuperShotgun"
 	"BuiltRightHanded"		"0"
 	"weight"				"3"
 	"WeaponType"			"primary"
@@ -31,8 +31,8 @@ WeaponData
 	"TracerEffect"		"bullet_scattergun_tracer01"
 
 	// Buckets.
-	"bucket"				"0"
-	"bucket_position"		"10"
+	"bucket"				"2"
+	"bucket_position"		"0"
 
 	// Animation.
 	"viewmodel"     	"models/weapons/v_models/v_scattergun_scout.mdl"

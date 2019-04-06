@@ -27,4 +27,6 @@ PlayerClass
 		"tf_ammo_grenades1"	""
 		"tf_ammo_grenades2"	""
 	}		
+	
+	"c_arm"	"models/weapons/c_models/c_soldier_arms.mdl"
 }

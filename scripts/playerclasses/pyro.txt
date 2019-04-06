@@ -37,4 +37,6 @@ PlayerClass
 	"sound_crit_death"				"Pyro.CritDeath"
 	"sound_melee_death"			"Pyro.MeleeDeath"
 	"sound_explosion_death"			"Pyro.ExplosionDeath"		
+	
+	"c_arm"	"models/weapons/c_models/c_pyro_arms.mdl"
 }

@@ -20,8 +20,8 @@
 	"secondary_ammo"		"None"
 
 	// Buckets.	
-	"bucket"			"2"
-	"bucket_position"		"7"
+	"bucket"			"0"
+	"bucket_position"		"6"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_machete_sniper.mdl"

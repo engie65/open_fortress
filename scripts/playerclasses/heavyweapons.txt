@@ -38,4 +38,6 @@ PlayerClass
 	"sound_crit_death"				"Heavy.CritDeath"
 	"sound_melee_death"			"Heavy.MeleeDeath"
 	"sound_explosion_death"			"Heavy.ExplosionDeath"	
+	
+	"c_arm"	"models/weapons/c_models/c_heavy_arms.mdl"
 }

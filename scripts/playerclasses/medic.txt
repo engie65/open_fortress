@@ -40,4 +40,6 @@ PlayerClass
 	"sound_crit_death"				"Medic.CritDeath"
 	"sound_melee_death"			"Medic.MeleeDeath"
 	"sound_explosion_death"			"Medic.ExplosionDeath"	
+	
+	"c_arm"	"models/weapons/c_models/c_medic_arms.mdl"
 }

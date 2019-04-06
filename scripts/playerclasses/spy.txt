@@ -43,4 +43,6 @@ PlayerClass
 	"sound_crit_death"				"Spy.CritDeath"
 	"sound_melee_death"			"Spy.MeleeDeath"
 	"sound_explosion_death"			"Spy.ExplosionDeath"		
+	
+	"c_arm"	"models/weapons/c_models/c_spy_arms.mdl"
 }

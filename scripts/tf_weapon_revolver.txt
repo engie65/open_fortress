@@ -30,8 +30,8 @@ WeaponData
 	"HasTeamSkins_Worldmodel"			"1"
 
 	// Buckets.
-	"bucket"		"1"
-	"bucket_position"	"5"
+	"bucket"		"5"
+	"bucket_position"	"2"
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_revolver_spy.mdl"

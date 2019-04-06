@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"		"#TF_Weapon_SuperSMG"
+	"printname"		"#TF_Weapon_SyringeGun"
 	"BuiltRightHanded"	"0"
 	"weight"		"4"
 	"WeaponType"		"primary"
@@ -28,8 +28,8 @@ WeaponData
 	default_clip		40
 
 	// Buckets.
-	"bucket"		"0"
-	"bucket_position"	"6"
+	"bucket"		"3"
+	"bucket_position"	"1"
 
 
 	// Muzzleflash

@@ -40,4 +40,6 @@ PlayerClass
 	"sound_crit_death"				"Soldier.CritDeath"
 	"sound_melee_death"			"Soldier.MeleeDeath"
 	"sound_explosion_death"			"Soldier.ExplosionDeath"	
+	
+	"c_arm"	"models/weapons/c_models/c_soldier_arms.mdl"
 }

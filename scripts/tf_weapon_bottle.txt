@@ -21,8 +21,8 @@
 	"secondary_ammo"		"None"
 
 	// Buckets.	
-	"bucket"			"2"
-	"bucket_position"		"3"
+	"bucket"			"0"
+	"bucket_position"		"5"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_bottle_demoman.mdl"

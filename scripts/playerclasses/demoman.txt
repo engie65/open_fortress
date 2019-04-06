@@ -37,4 +37,6 @@ PlayerClass
 	"sound_crit_death"				"Demoman.CritDeath"
 	"sound_melee_death"			"Demoman.MeleeDeath"
 	"sound_explosion_death"			"Demoman.ExplosionDeath"		
+	
+	"c_arm"	"models/weapons/c_models/c_demo_arms.mdl"
 }

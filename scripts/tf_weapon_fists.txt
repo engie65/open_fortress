@@ -22,8 +22,8 @@ WeaponData
 	"secondary_ammo"		"None"
 
 	// Buckets.	
-	"bucket"			"2"
-	"bucket_position"		"4"
+	"bucket"			"0"
+	"bucket_position"		"7"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_fist_heavy.mdl"

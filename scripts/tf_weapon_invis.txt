@@ -17,8 +17,8 @@
 	"MeleeWeapon"			"1"	// so we can always attack
 
 	// Buckets.	
-	"bucket"			"4"
-	"bucket_position"		"0"
+	"bucket"			"9"
+	"bucket_position"		"6"
 
 	// Model & Animation
 	"viewmodel"				"models/weapons/v_models/v_watch_spy.mdl"
