@@ -2,12 +2,13 @@
 cache/*
 luacache/*
 maps/soundcache/*
+maps/graphs/*
 materials/temp/*
 sound.cache
 *.sound.cache
 
 # debug symbols
-#bin/*.pdb
+bin/*.pdb
 bin/*.dbg
 
 # crash dumps
