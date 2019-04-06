@@ -80,7 +80,7 @@ DESCRIPTION INFO_OPTIONS
 	{
 		"#TFOption_muzzlelight"
 		{ BOOL }
-		{ "0" }
+		{ "1" }
 	}
 	"of_showtargetid"
 	{

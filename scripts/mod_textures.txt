@@ -337,10 +337,10 @@
 		}
 		"d_nailgun"
 		{
-				"file"	"HUD/d_images"
+				"file"	"HUD/d_images"		
 				"x"		"0"
-				"y"		"64"
-				"width"		"64"
+				"y"		"352"
+				"width"		"96"
 				"height"	"32"
 		}
 		"d_sniperrifle"
@@ -652,8 +652,8 @@
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
-				"y"		"64"
-				"width"		"64"
+				"y"		"352"
+				"width"		"96"
 				"height"	"32"
 		}
 		"dneg_sniperrifle"

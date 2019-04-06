@@ -1,27 +1,76 @@
-addons/
-screenshots/
-config.cfg
-cfg/autoexec.cfg
-server_blacklist.txt
+# cache
+cache/*
+luacache/*
+maps/soundcache/*
+materials/temp/*
 sound.cache
-download/
-downloadlists/
-custom/
-gamestate.txt
-downloadcache.db
+*.sound.cache
+
+# debug symbols
+#bin/*.pdb
+bin/*.dbg
+
+# crash dumps
+*.dmp
+
+# config files
+cfg/sourcemod/*
+cfg/autoexec.cfg
+cfg/autoexec_user.cfg
+cfg/banned_ip.cfg
+cfg/banned_user.cfg
+cfg/config.cfg
+cfg/server_blacklist.txt
+cfg/server.cfg
+cfg/user.scr
+cfg/settings.scr
+settings/admins.txt
+ServerConfig.vdf
+
+# logs
+logs/*
+console.log
+
+# demo records
+*.dem
+
+# custom content
+custom/*
+
+# user stuff
+cfg/pet.txt
+download/*
+downloadlists/*
+SAVE/*
+screenshots/*
 demoheader.tmp
 stats.txt
+gamestate.txt
+voice_ban.dt
 tf2_playerstats.dmx
-settings.scr
-viewed.res
-modelsounds.cache
-serverconfig.vdf
-materials/temp
-maps/graphs/
-maps/graphs/dm_aerowalk.ain
-sound/temp
-albedo.tga
-normal.tga
-cfg\user.scr
-cfg/user.scr
-*.pdb
+ep1_playerstats.dmx
+ep2_playerstats.dmx
+cstrike_playerstats.dmx
+jbep3_playerstats.dmx
+
+# content source
+materialsrc/*
+mapsrc/*
+soundsrc/*
+
+# source plugins
+addons/*
+
+# wtf
+_mdldecompile.lnk
+push.bat
+run.bat
+desktop.ini
+.svn
+
+# apparently this is for stewsta's server only
+# since path for demos is specified with tv_record 
+demos/*
+
+# faceposer stuff
+expressions/*
