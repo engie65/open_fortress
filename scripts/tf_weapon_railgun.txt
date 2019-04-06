@@ -10,7 +10,7 @@ WeaponData
 	// Attributes TF.
 	"Damage"		"80"
 	"InstagibDamage"	"999"
-	"Range"			"8192"
+	"Range"			"16384"
 	"BulletsPerShot"	"1"
 	"Spread"		"0.0"
 	"TimeFireDelay"		"1.5"
@@ -37,8 +37,8 @@ WeaponData
 	"MuzzleFlashParticleEffect" "muzzle_sniperrifle"
 
 	// Animation.
-	"viewmodel"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
-	"playermodel"		"models/weapons/w_models/w_sniperrifle.mdl"
+	"viewmodel"		"models/weapons/v_models/v_railgun_mercenary.mdl"
+	"playermodel"		"models/weapons/w_models/w_railgun.mdl"
 	"anim_prefix"		"shotgun"
 
 	// Sounds.
