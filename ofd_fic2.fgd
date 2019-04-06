@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.2, 2nd of April 2019
+// V6.2, 6nd of April 2019
 //
 //=============================================================================
 
@@ -8301,8 +8301,19 @@
 	"The Teleporter. A teleporter deploys players from one end into the other." 
 [
 ]
+
 @PointClass base(BaseObject) studioprop("models/buildables/teleporter.mdl") = obj_teleporter_exit : 
 	"The Teleporter. A teleporter deploys players from one end into the other." 
+[
+]
+
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_dm") = of_gamemode_dm : 
+	"Sets the map to Deathmatch gamemode." 
+[
+]
+
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_tdm") = of_gamemode_tdm : 
+	"Sets the map to Team Deathmatch gamemode. A of_gamemode_dm must also be placed." 
 [
 ]
 
