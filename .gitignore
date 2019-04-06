@@ -6,6 +6,7 @@ maps/graphs/*
 materials/temp/*
 sound.cache
 *.sound.cache
+modelsounds.cache
 
 # debug symbols
 bin/*.pdb
@@ -53,6 +54,7 @@ ep1_playerstats.dmx
 ep2_playerstats.dmx
 cstrike_playerstats.dmx
 jbep3_playerstats.dmx
+media/view.res
 
 # content source
 materialsrc/*
