@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "425"
+	"mapversion" "426"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "425"
+	"mapversion" "426"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -20188,7 +20188,7 @@ entity
 	"disableshadows" "0"
 	"duration" "30"
 	"effects" "0"
-	"HiddenWhenRespawning" "1"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/pickups/pickup_powerup_crit.mdl"

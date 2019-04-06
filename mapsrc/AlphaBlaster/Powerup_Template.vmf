@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "83"
+	"mapversion" "87"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1146"
+	"mapversion" "87"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -115,7 +115,7 @@ entity
 	"disableshadows" "0"
 	"duration" "30"
 	"effects" "0"
-	"HiddenWhenRespawning" "1"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/pickups/pickup_powerup_defense.mdl"
@@ -251,7 +251,7 @@ entity
 	"disableshadows" "0"
 	"duration" "30"
 	"effects" "0"
-	"HiddenWhenRespawning" "1"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/pickups/pickup_powerup_crit.mdl"
@@ -409,7 +409,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Rocket"
 	"texframeindex" "0"
-	"origin" "228 -56 -23"
+	"origin" "228 -56 -30"
 	editor
 	{
 		"color" "220 30 220"
@@ -451,7 +451,7 @@ entity
 		"OnPlayerTouch" "Emitter_Rocket,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Rocket,skin,1,15,-1"
 	}
-	"origin" "236 -56 16"
+	"origin" "236 -56 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -494,7 +494,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_SuperShotgun"
 	"texframeindex" "0"
-	"origin" "316 -56 -23"
+	"origin" "316 -56 -30"
 	editor
 	{
 		"color" "220 30 220"
@@ -536,7 +536,7 @@ entity
 		"OnPlayerTouch" "Emitter_SuperShotgun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_SuperShotgun,skin,1,15,-1"
 	}
-	"origin" "308 -56 16"
+	"origin" "308 -56 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -579,7 +579,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Shotgun"
 	"texframeindex" "0"
-	"origin" "384 -56 -24"
+	"origin" "384 -56 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -621,7 +621,7 @@ entity
 		"OnPlayerTouch" "Emitter_Shotgun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Shotgun,skin,1,15,-1"
 	}
-	"origin" "368 -56 16"
+	"origin" "368 -56 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -664,7 +664,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_SMG"
 	"texframeindex" "0"
-	"origin" "388 -116 -24"
+	"origin" "388 -116 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -706,7 +706,7 @@ entity
 		"OnPlayerTouch" "Emitter_SMG,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_SMG,skin,1,15,-1"
 	}
-	"origin" "376 -116 20"
+	"origin" "376 -116 13"
 	editor
 	{
 		"color" "0 0 200"
@@ -749,7 +749,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Railgun"
 	"texframeindex" "0"
-	"origin" "316 -116 -24"
+	"origin" "316 -116 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -791,7 +791,7 @@ entity
 		"OnPlayerTouch" "Emitter_Railgun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Railgun,skin,1,15,-1"
 	}
-	"origin" "320 -116 16"
+	"origin" "320 -116 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -834,7 +834,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_SyringeGun"
 	"texframeindex" "0"
-	"origin" "228 -116 -24"
+	"origin" "228 -116 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -877,7 +877,7 @@ entity
 		"OnPlayerTouch" "Emitter_SyringeGun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_SyringeGun,skin,1,15,-1"
 	}
-	"origin" "228 -116 16"
+	"origin" "228 -116 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -920,7 +920,7 @@ entity
 		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,1,15,-1"
 	}
-	"origin" "220 -172 16"
+	"origin" "220 -172 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -963,7 +963,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_GrenadeLauncher"
 	"texframeindex" "0"
-	"origin" "228 -172 -24"
+	"origin" "228 -172 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -1006,7 +1006,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Revolver"
 	"texframeindex" "0"
-	"origin" "316 -172 -24"
+	"origin" "316 -172 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -1049,7 +1049,7 @@ entity
 		"OnPlayerTouch" "Emitter_Revolver,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Revolver,skin,1,15,-1"
 	}
-	"origin" "312 -172 16"
+	"origin" "312 -172 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -1092,7 +1092,7 @@ entity
 		"OnPlayerTouch" "Emitter_Knife,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Knife,skin,1,15,-1"
 	}
-	"origin" "388 -172 16"
+	"origin" "388 -172 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -1135,7 +1135,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Knife"
 	"texframeindex" "0"
-	"origin" "388 -172 -24"
+	"origin" "388 -172 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -1178,7 +1178,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Minigun"
 	"texframeindex" "0"
-	"origin" "388 -224 -24"
+	"origin" "388 -224 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -1221,7 +1221,7 @@ entity
 		"OnPlayerTouch" "Emitter_Minigun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Minigun,skin,1,15,-1"
 	}
-	"origin" "360 -224 36"
+	"origin" "360 -224 29"
 	editor
 	{
 		"color" "0 0 200"
@@ -1264,7 +1264,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Bottle"
 	"texframeindex" "0"
-	"origin" "316 -224 -24"
+	"origin" "316 -224 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -1307,7 +1307,7 @@ entity
 		"OnPlayerTouch" "Emitter_Bottle,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Bottle,skin,1,15,-1"
 	}
-	"origin" "324 -224 12"
+	"origin" "324 -224 5"
 	editor
 	{
 		"color" "0 0 200"
@@ -1350,7 +1350,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Flamethrower"
 	"texframeindex" "0"
-	"origin" "228 -224 -24"
+	"origin" "228 -224 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -1393,7 +1393,7 @@ entity
 		"OnPlayerTouch" "Emitter_Flamethrower,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Flamethrower,skin,1,15,-1"
 	}
-	"origin" "200 -224 16"
+	"origin" "200 -224 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -1436,7 +1436,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Nailgun"
 	"texframeindex" "0"
-	"origin" "316 -288 -24"
+	"origin" "316 -288 -31"
 	editor
 	{
 		"color" "220 30 220"
@@ -1479,7 +1479,92 @@ entity
 		"OnPlayerTouch" "Emitter_Nailgun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Nailgun,skin,1,15,-1"
 	}
-	"origin" "312 -288 16"
+	"origin" "312 -288 9"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1458"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_StickyBomb"
+	"texframeindex" "0"
+	"origin" "228 -288 -30"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1460"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"HiddenWhenRespawning" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_stickybomb_launcher.mdl"
+	"pickup_sound" "AmmoPack.Touch"
+	"powerup_model" "models/weapons/w_models/w_stickybomb_launcher.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"spawn_sound" "items/itembk2.wav"
+	"targetname" "Weapon_StickyBomb"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_pipebomblauncher"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_StickyBomb,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_StickyBomb,skin,1,15,-1"
+	}
+	"origin" "220 -288 9"
 	editor
 	{
 		"color" "0 0 200"
