@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.2, 6nd of April 2019
+// V6.2, 7nd of April 2019
 //
 //=============================================================================
 
@@ -8317,6 +8317,21 @@
 [
 ]
 
+@SolidClass base(Trigger) = ofd_trigger_jump : 
+    "Bounces players to the target."
+[
+	target(target_destination) : "Target" : "" : "Name of entity we'll bounce players to."
+	apex_height_boost(float) : "Apex Height Increase" : "0" : "Used to increase the height of our apex. Higher apex = bigger arc." 
+	
+	soft_landing(choices) : "Soft Landing?" : "0" : "Should launched players take no fall/impact damage?" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	
+	output OnJump(void) : "Fired when a player (or object) are bounced."
+]
+
 @PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/path_corner") line(255 255 255, targetname, target) = path_corner : 
     "Generic path point for moving entities such as NPCs."
 [
@@ -10571,20 +10586,4 @@
 		1 : "Yes"
 	]
 	_minlight(float) : "Map Geometry Minimum Light Level" : 0 : "Forces the minimum intensity of light part of the map geometry to be at least this. Expressed as a float from 0.0 to 2.0, with 0.0 being pitch black (default) and 2.0 being fullbright. Does not affect props."
-]
-
-
-@SolidClass base(Trigger) = ofd_trigger_jump : "Bounces players to the target."
-[
-	target(target_destination) : "Target" : "" : "Name of entity we'll bounce players to."
-	apex_height_boost(float) : "Apex Height Increase" : "0" : "Used to increase the height of our apex. Higher apex = bigger arc." 
-	
-	soft_landing(choices) : "Soft Landing" : "0" : "Should launched players take no fall/impact damage" =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	
-	// Outputs
-	output OnJump(void) : "Fired when a player (or object) are bounced."
 ]
