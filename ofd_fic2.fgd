@@ -10572,3 +10572,19 @@
 	]
 	_minlight(float) : "Map Geometry Minimum Light Level" : 0 : "Forces the minimum intensity of light part of the map geometry to be at least this. Expressed as a float from 0.0 to 2.0, with 0.0 being pitch black (default) and 2.0 being fullbright. Does not affect props."
 ]
+
+
+@SolidClass base(Trigger) = ofd_trigger_jump : "Bounces players to the target."
+[
+	target(target_destination) : "Target" : "" : "Name of entity we'll bounce players to."
+	apex_height_boost(float) : "Apex Height Increase" : "0" : "Used to increase the height of our apex. Higher apex = bigger arc." 
+	
+	soft_landing(choices) : "Soft Landing" : "0" : "Should launched players take no fall/impact damage" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	
+	// Outputs
+	output OnJump(void) : "Fired when a player (or object) are bounced."
+]

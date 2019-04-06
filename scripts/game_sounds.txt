@@ -741,3 +741,13 @@
 	"soundlevel"  	"SNDLVL_94dB"
 	"wave"			")misc/achievement_earned.wav"
 }
+
+"JumpPadSound"
+{
+	channel		        CHAN_STATIC
+	volume		        1.0
+	soundlevel			SNDLVL_85db
+	pitch				98,100
+
+	"wave"	"misc/triggerjump.wav"
+}
