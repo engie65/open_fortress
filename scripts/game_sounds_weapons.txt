@@ -968,6 +968,34 @@
 	"wave"		"weapons/stickybomblauncher_charge_up.wav"
 }
 
+"Weapon_GrenadeLauncherDM.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/grenade_launcher_dm_shoot.wav"
+}
+
+"Weapon_GrenadeLauncherDM.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit.wav"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit1.wav"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit2.wav"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit3.wav"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit4.wav"
+}
+
+"Weapon_GrenadeLauncherDM.DrumLoad"
+{
+	"channel"		"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		".4"
+	"wave"		"weapons/grenade_launcher_dm_drum_load.wav"
+}
+
 // ------------------------------------------------------------------------------------ //
 // KNIFE
 // ------------------------------------------------------------------------------------ //
@@ -1292,6 +1320,21 @@
 	"wave"		"weapons/draw_minigun_heavy.wav"
 }
 
+"Weapon_Chaingun.Fire"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/chaingun_fire.wav"
+}
+
+"Weapon_Chaingun.FireCrit"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/chaingun_fire_crit.wav"
+}
 
 // ------------------------------------------------------------------------------------ //
 // PIPE
