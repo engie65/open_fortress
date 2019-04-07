@@ -32,8 +32,8 @@ WeaponData
 	"bucket_position"	"3"
 
 	// Animation.
-	"viewmodel"		"models/weapons/v_models/v_minigun_heavy.mdl"
-	"playermodel"		"models/weapons/w_models/w_minigun.mdl"
+	"viewmodel"		"models/weapons/v_models/v_minigun_dm.mdl"
+	"playermodel"		"models/weapons/w_models/w_minigun_dm.mdl"
 	"anim_prefix"		"ac"
 
 	// Muzzleflash
