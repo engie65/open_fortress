@@ -78,3 +78,4 @@ demos/*
 # faceposer stuff
 expressions/*
 media/viewed.res
+media\viewed.res
