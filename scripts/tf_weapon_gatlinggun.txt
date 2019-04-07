@@ -46,11 +46,11 @@ WeaponData
 	{
 		"reload"		"Weapon_Minigun.Reload"
 		"empty"			"Weapon_Minigun.ClipEmpty"	
-		"double_shot"	"Weapon_Minigun.Fire"
+		"double_shot"	"Weapon_Chaingun.Fire"
 		"special1"		"Weapon_Minigun.WindUp"
 		"special2"		"Weapon_Minigun.WindDown"
 		"special3"		"Weapon_Minigun.Spin"
-		"burst"			"Weapon_Minigun.FireCrit"
+		"burst"			"Weapon_Chaingun.FireCrit"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
