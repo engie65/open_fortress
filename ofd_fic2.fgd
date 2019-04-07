@@ -2092,6 +2092,7 @@
 		"tf_weapon_flamethrower" : "Flamethrower"
 		"tf_weapon_grenadelauncher" : "Grenade Launcher"
 		"tf_weapon_minigun" : "Minigun"
+		"tf_weapon_gatlinggun" : "Gatling Gun"
 		"tf_weapon_shotgun_primary" : "Shotgun Primary"
 		"tf_weapon_syringegun_medic" : "Syringegun"
 		"tf_weapon_sniperrifle" : "Sniperrifle"
@@ -2104,6 +2105,7 @@
 		"tf_weapon_medigun" : "Medigun"
 		"tf_weapon_nailgun" : "Nailgun"
 		"tf_weapon_smg" : "SMG"
+		"tf_weapon_revolver_mercenary" : "Deathmatch Revolver"
 		"tf_weapon_revolver" : "Revolver"
 		"tf_weapon_bat" : "Bat"
 		"tf_weapon_shovel" : "Shovel"
@@ -2118,6 +2120,7 @@
 		"tf_weapon_pistol" : "Pistol (engineer)"
 		"tf_weapon_pistol_scout" : "Pistol (scout)"
 		"tf_weapon_pistol_mercenary" : "Pistol (mercenary)"
+		"tf_weapon_pistol_akimbo" : "Akimbo Pistols"
 	]
 ]	
 // ---------------------------------------
