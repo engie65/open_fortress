@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "630"
+	"mapversion" "632"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "630"
+	"mapversion" "632"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -24784,7 +24784,7 @@ entity
 	"skin" "1"
 	"solid" "0"
 	"spawnflags" "0"
-	"targetname" "Emitter_Akimbo"
+	"targetname" "Emitter_Akimbo2"
 	"texframeindex" "0"
 	"origin" "960 -32 96"
 	editor
@@ -24820,13 +24820,13 @@ entity
 	"shadowcastdist" "0"
 	"skin" "0"
 	"spawn_sound" "items/itembk2.wav"
-	"targetname" "Weapon_Akimbo"
+	"targetname" "Weapon_Akimbo2"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_pistol_akimbo"
 	connections
 	{
-		"OnPlayerTouch" "Emitter_Akimbo,skin,0,0,-1"
-		"OnPlayerTouch" "Emitter_Akimbo,skin,1,15,-1"
+		"OnPlayerTouch" "Emitter_Akimbo2,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_Akimbo2,skin,1,15,-1"
 	}
 	"origin" "948 -32 140"
 	editor
