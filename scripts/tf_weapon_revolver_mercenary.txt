@@ -48,8 +48,8 @@ WeaponData
 	{
 		"reload"		"Weapon_Revolver.WorldReload"
 		"empty"			"Weapon_Revolver.ClipEmpty"	
-		"single_shot"		"Weapon_Revolver.Single"
-		"burst"			"Weapon_Revolver.SingleCrit"
+		"single_shot"		"Weapon_RevolverDM.Single"
+		"burst"			"Weapon_RevolverDM.SingleCrit"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
