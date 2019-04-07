@@ -19,6 +19,25 @@ stuffcmds
 
 sv_unlockedchapters 99
 
+alias use_shotgun "use tf_weapon_shotgun_primary;use tf_weapon_shotgun_hwg;use tf_weapon_shotgun_pyro; use tf_weapon_shotgun_soldier"
+alias use_melee1 "use tf_weapon_fists;use tf_weapon_fireaxe;use tf_weapon_club; use tf_weapon_bottle; use tf_weapon_bonesaw"
+alias use_melee2 "use tf_weapon_bat;use tf_weapon_wrench;use tf_weapon_shovel; use tf_weapon_crowbar; use tf_weapon_knife"
+alias use_melee "use_melee1;use_melee2"
+alias use_rocket "use tf_weapon_rocketlauncher"
+alias use_pistol "use tf_weapon_pistol;use tf_weapon_pistol_scout;use tf_weapon_pistol_mercenary"
+alias use_smg "use tf_weapon_smg"
+alias use_fire "use tf_weapon_flamethrower"
+alias use_gl "use tf_weapon_grenadelauncher"
+alias use_revolver "use tf_weapon_revolver"
+alias use_scatter "use tf_weapon_scattergun"
+alias use_supersg "use tf_weapon_supershotgun"
+alias use_nail "use tf_weapon_nailgun"
+alias use_syringe "use tf_weapon_syringegun_medic"
+alias use_sticky "use tf_weapon_pipebomblauncher"
+alias use_mini "use tf_weapon_minigun"
+alias use_snip "use tf_weapon_sniperrifle"
+alias use_rail "use tf_weapon_railgun"
+
 //
 // to fix sprays not saving
 //
