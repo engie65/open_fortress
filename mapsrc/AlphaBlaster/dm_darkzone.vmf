@@ -23152,7 +23152,7 @@ entity
 	"timer_length" "1200"
 	connections
 	{
-		"OnFinished" "alphaisafaggot,RoundWin,,0,-1"
+		"OnFinished" "dmroundend,RoundWin,,0,-1"
 		"OnSetupFinished" "Music,PlaySound,,0,-1"
 		"OnSetupStart" "Music_Wait,PlaySound,,0,-1"
 		"OnFinished" "Music_Finish,PlaySound,,0,-1"
@@ -23177,9 +23177,9 @@ entity
 	"force_map_reset" "1"
 	"spawnflags" "0"
 	"switch_teams" "0"
-	"targetname" "alphaisafaggot"
+	"targetname" "dmroundend"
 	"TeamNum" "4"
-	"win_reason" "You spell like penis"
+	"win_reason" "Round end"
 	"origin" "265.107 -117.454 40"
 	editor
 	{

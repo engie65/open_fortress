@@ -42,6 +42,9 @@ Gibus Cat
 Ingame menu logo:
 HDMineFace
 
+Ambient sounds (Wiseau):
+Omniary
+
 Music:
 Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I
 			Chainsawed the Demons, Team Fortresque)

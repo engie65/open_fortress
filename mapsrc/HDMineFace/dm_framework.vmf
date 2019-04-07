@@ -24497,7 +24497,7 @@ entity
 	"classname" "game_round_win"
 	"force_map_reset" "1"
 	"switch_teams" "0"
-	"targetname" "alphaisafaggot"
+	"targetname" "roundend"
 	"TeamNum" "4"
 	"win_reason" "HD Loves Callie More Then Stachekip"
 	"origin" "989.323 -96.2853 16.848"

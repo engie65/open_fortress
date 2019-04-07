@@ -41505,9 +41505,9 @@ entity
 	"angles" "0 0 0"
 	"force_map_reset" "1"
 	"switch_teams" "0"
-	"targetname" "alphaisafaggot"
+	"targetname" "Roundend"
 	"TeamNum" "4"
-	"win_reason" "You spell like penis"
+	"win_reason" "Round over"
 	"origin" "750.064 -1186.87 -487.152"
 	editor
 	{
