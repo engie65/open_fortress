@@ -32,7 +32,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"		"1"
-	"bucket_position"	"4"
+	"bucket_position"	"3"
 
 	// Animation.
 	"viewmodel"	"models/weapons/v_models/v_akimbo_pistols_mercenary.mdl"
