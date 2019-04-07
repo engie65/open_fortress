@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"		"#TF_Weapon_Pistol"
+	"printname"		"#TF_Weapon_Akimbo_Pistols"
 	"BuiltRightHanded"	"0"
 	"weight"		"4"
 	"WeaponType"		"secondary"
@@ -12,11 +12,11 @@ WeaponData
 	"InstagibDamage"	"999"
 	"Range"			"4096"
 	"BulletsPerShot"	"1"
-	"Spread"		"0.08"
-	"TimeFireDelay"		"0.075"
+	"Spread"		"0.06"
+	"TimeFireDelay"		"0.1"
 	"TimeIdle"		"5.0"
 	"TimeIdleEmpty"		"0.25"
-	"TimeReload"		"2.1"
+	"TimeReload"		"2.35"
 	"ProjectileType"	"projectile_bullet"
 	"BrassModel"		"models/weapons/shells/shell_pistol.mdl"
 	"UseRapidFireCrits"	"1"
@@ -35,7 +35,7 @@ WeaponData
 	"bucket_position"	"4"
 
 	// Animation.
-	"viewmodel"	"models/weapons/v_models/v_pistol_engineer.mdl"
+	"viewmodel"	"models/weapons/v_models/v_akimbo_pistols_mercenary.mdl"
 	"playermodel"		"models/weapons/w_models/w_pistol.mdl"
 	"anim_prefix"		"ac"
 
@@ -46,10 +46,10 @@ WeaponData
 	// Max of 16 per category (ie. max 16 "single_shot" sounds).
 	SoundData
 	{
-		"reload"			"Weapon_Pistol.WorldReload"
-		"empty"			"Weapon_Pistol.ClipEmpty"	
-		"single_shot"		"Weapon_Pistol.Single"
-		"burst"			"Weapon_Pistol.SingleCrit"
+		"reload"			"Weapon_Akimbo_Pistols.ClipOut"
+		"empty"			"Weapon_Akimbo_Pistols.ClipEmpty"	
+		"single_shot"		"Weapon_Akimbo_Pistols.Single"
+		"burst"			"Weapon_Akimbo_Pistols.SingleCrit"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
