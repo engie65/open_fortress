@@ -4,6 +4,7 @@ luacache/*
 maps/soundcache/*
 maps/graphs/*
 materials/temp/*
+sound/temp/*
 sound.cache
 *.sound.cache
 modelsounds.cache
