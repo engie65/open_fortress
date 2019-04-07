@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "168"
+	"mapversion" "169"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "168"
+	"mapversion" "169"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -10071,9 +10071,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"model" "models/weapons/w_models/w_railgun.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"powerup_model" "models/weapons/w_models/w_railgun.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -10156,9 +10156,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"model" "models/weapons/w_models/w_railgun.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"powerup_model" "models/weapons/w_models/w_railgun.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -10326,9 +10326,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_revolver.mdl"
+	"model" "models/weapons/w_models/w_revolver_dm.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_revolver.mdl"
+	"powerup_model" "models/weapons/w_models/w_revolver_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -10341,7 +10341,7 @@ entity
 	"spawn_sound" "items/itembk2.wav"
 	"targetname" "Weapon_Revolver"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_revolver"
+	"weaponname" "tf_weapon_revolver_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Revolver,skin,0,0,-1"
@@ -10497,9 +10497,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"model" "models/weapons/w_models/w_grenadelauncher_dm.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"powerup_model" "models/weapons/w_models/w_grenadelauncher_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -10615,7 +10615,7 @@ entity
 }
 entity
 {
-	"id" "3573"
+	"id" "3714"
 	"classname" "prop_dynamic"
 	"angles" "0 0 0"
 	"body" "0"
@@ -10645,9 +10645,9 @@ entity
 	"skin" "1"
 	"solid" "0"
 	"spawnflags" "0"
-	"targetname" "Emitter_Minigun"
+	"targetname" "Emitter_MinigunDM"
 	"texframeindex" "0"
-	"origin" "-976 528 1024.8"
+	"origin" "0 288 320.801"
 	editor
 	{
 		"color" "220 30 220"
@@ -10658,7 +10658,7 @@ entity
 }
 entity
 {
-	"id" "3575"
+	"id" "3716"
 	"classname" "dm_weapon_spawner"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
@@ -10669,9 +10669,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_minigun.mdl"
+	"model" "models/weapons/w_models/w_minigun_dm.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_minigun.mdl"
+	"powerup_model" "models/weapons/w_models/w_minigun_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -10682,15 +10682,15 @@ entity
 	"skin" "0"
 	"solid" "0"
 	"spawn_sound" "items/itembk2.wav"
-	"targetname" "Weapon_Minigun"
+	"targetname" "Weapon_MinigunDM"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_minigun"
+	"weaponname" "tf_weapon_gatlinggun"
 	connections
 	{
-		"OnPlayerTouch" "Emitter_Minigun,skin,0,0,-1"
-		"OnPlayerTouch" "Emitter_Minigun,skin,1,15,-1"
+		"OnPlayerTouch" "Emitter_MinigunDM,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_MinigunDM,skin,1,15,-1"
 	}
-	"origin" "-1004 528 1084.8"
+	"origin" "-28 288 380.801"
 	editor
 	{
 		"color" "0 0 200"

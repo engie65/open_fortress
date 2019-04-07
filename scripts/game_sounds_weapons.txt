@@ -968,6 +968,34 @@
 	"wave"		"weapons/stickybomblauncher_charge_up.wav"
 }
 
+"Weapon_GrenadeLauncherDM.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/grenade_launcher_dm_shoot.wav"
+}
+
+"Weapon_GrenadeLauncherDM.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit.wav"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit1.wav"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit2.wav"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit3.wav"
+	"wave"		")weapons/grenade_launcher_dm_shoot_crit4.wav"
+}
+
+"Weapon_GrenadeLauncherDM.DrumLoad"
+{
+	"channel"		"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		".4"
+	"wave"		"weapons/grenade_launcher_dm_drum_load.wav"
+}
+
 // ------------------------------------------------------------------------------------ //
 // KNIFE
 // ------------------------------------------------------------------------------------ //
@@ -1292,6 +1320,21 @@
 	"wave"		"weapons/draw_minigun_heavy.wav"
 }
 
+"Weapon_Chaingun.Fire"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/chaingun_fire.wav"
+}
+
+"Weapon_Chaingun.FireCrit"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/chaingun_fire_crit.wav"
+}
 
 // ------------------------------------------------------------------------------------ //
 // PIPE
@@ -1433,6 +1476,79 @@
 }
 
 // ------------------------------------------------------------------------------------ //
+// Akimbo Pistols
+// ------------------------------------------------------------------------------------ //
+"Weapon_Akimbo_Pistols.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/pistol_dm_shoot.wav"
+}
+
+"Weapon_Akimbo_Pistols.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/pistol_dm_shoot_crit.wav"
+}
+
+"Weapon_Akimbo_Pistols.ClipEmpty"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.7"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol/pistol_empty.wav"
+}
+
+"Weapon_Akimbo_Pistols.ClipIn"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol_clipin.wav"
+}
+
+"Weapon_Akimbo_Pistols.ClipOut"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol_clipout.wav"
+}
+
+"Weapon_Akimbo_Pistols.SlideBack"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol_slideback.wav"
+}
+
+"Weapon_Akimbo_Pistols.SlideForward"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol_slideforward.wav"
+}
+
+
+"Weapon_Pistol.WorldReload"
+{
+	"channel"		"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"		".5"
+	"wave"		"weapons/pistol_worldreload.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
 // REVOLVER
 // ------------------------------------------------------------------------------------ //
 
@@ -1503,6 +1619,22 @@
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	".5"
 	"wave"		"weapons/draw_secondary.wav"
+}
+
+"Weapon_RevolverDM.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/six_shooter_shoot.wav"
+}
+
+"Weapon_RevolverDM.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/six_shooter_shoot_crit.wav"
 }
 
 // ------------------------------------------------------------------------------------ //
@@ -1816,6 +1948,24 @@
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	".5"
 	"wave"		"weapons/nail_gun_draw.wav"
+}
+
+"Weapon_Nailgun.ClipOut"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.55"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/smg_clip_out.wav"
+}
+
+"Weapon_Nailgun.ClipIn"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.55"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/smg_clip_in.wav"
 }
 
 // ------------------------------------------------------------------------------------ //

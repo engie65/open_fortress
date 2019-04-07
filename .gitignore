@@ -4,6 +4,7 @@ luacache/*
 maps/soundcache/*
 maps/graphs/*
 materials/temp/*
+sound/temp/*
 sound.cache
 *.sound.cache
 modelsounds.cache
@@ -11,6 +12,8 @@ modelsounds.cache
 # debug symbols
 bin/*.pdb
 bin/*.dbg
+*.dbg
+*.pdb
 
 # crash dumps
 *.dmp
@@ -58,7 +61,6 @@ media/viewed.res
 
 # content source
 materialsrc/*
-mapsrc/*
 soundsrc/*
 
 # source plugins
@@ -78,3 +80,4 @@ demos/*
 # faceposer stuff
 expressions/*
 media/viewed.res
+media\viewed.res

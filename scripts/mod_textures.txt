@@ -335,6 +335,14 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"d_pistol_akimbo"
+		{
+				"file"	"HUD/d_images"
+				"x"		"0"
+				"y"		"32"
+				"width"		"96"
+				"height"	"32"
+		}
 		"d_nailgun"
 		{
 				"file"	"HUD/d_images"		
@@ -455,7 +463,23 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"d_gatlinggun"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"0"
+				"y"		"384"
+				"width"		"96"
+				"height"	"32"
+		}
 		"d_pipe"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"0"
+				"y"		"448"
+				"width"		"96"
+				"height"	"32"
+		}
+		"d_pipe_mercenary"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"0"
@@ -504,6 +528,14 @@
 				"height"	"32"
 		}
 		"d_revolver"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"96"
+				"y"		"32"
+				"width"		"96"
+				"height"	"32"
+		}
+		"d_revolver_mercenary"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"96"
@@ -648,6 +680,14 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"dneg_pistol_akimbo"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"32"
+				"width"		"96"
+				"height"	"32"
+		}
 		"dneg_nailgun"
 		{
 				"file"	"HUD/dneg_images"
@@ -768,7 +808,23 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"dneg_gatlinggun"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"384"
+				"width"		"96"
+				"height"	"32"
+		}
 		"dneg_pipe"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"448"
+				"width"		"96"
+				"height"	"32"
+		}
+		"dneg_pipe_mercenary"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
@@ -817,6 +873,14 @@
 				"height"	"32"
 		}
 		"dneg_revolver"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"96"
+				"y"		"32"
+				"width"		"96"
+				"height"	"32"
+		}
+		"dneg_revolver_mercenary"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"96"
@@ -1528,6 +1592,22 @@
 				"height"	"32"
 		}
 		"dneg_crowbar"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"32"
+				"width"		"84"
+				"height"	"32"
+		}
+		"d_umbrella"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"32"
+				"width"		"84"
+				"height"	"32"
+		}
+		"dneg_umbrella"
 		{
 				"file"	"HUD/dneg_images_ofdm"
 				"x"		"0"
