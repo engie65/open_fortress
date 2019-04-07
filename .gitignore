@@ -59,7 +59,6 @@ media/viewed.res
 
 # content source
 materialsrc/*
-mapsrc/*
 soundsrc/*
 
 # source plugins
