@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "139"
+	"mapversion" "145"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "2"
+	"nGridSpacing" "8"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "139"
+	"mapversion" "145"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -28299,7 +28299,7 @@ entity
 {
 	"id" "28010"
 	"classname" "ofd_trigger_jump"
-	"apex_height_boost" "0"
+	"apex_height_boost" "850"
 	"origin" "38 -176 -264.49"
 	"soft_landing" "0"
 	"spawnflags" "1"
@@ -28396,7 +28396,7 @@ entity
 	"angles" "0 0 0"
 	"spawnflags" "0"
 	"targetname" "Target_Megahealth"
-	"origin" "40 -165 144"
+	"origin" "32 -165 1088"
 	editor
 	{
 		"color" "220 30 220"
