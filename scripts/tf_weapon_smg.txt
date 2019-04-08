@@ -26,7 +26,7 @@ WeaponData
 	"DontDrop"	"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_SECONDARY"
+	"primary_ammo"		"TF_AMMO_SMG"
 	"secondary_ammo"	"None"
 	clip_size		25
 	default_clip		25

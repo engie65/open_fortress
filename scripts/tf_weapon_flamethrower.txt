@@ -20,7 +20,7 @@ WeaponData
 
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"TF_AMMO_FLAMETHROWER"
 	"secondary_ammo"	"None"
 	clip_size		-1
 
