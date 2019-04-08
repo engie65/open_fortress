@@ -6,8 +6,8 @@ PlayerClass
 	// Attributes.
 	"name"			"Mercenary"
 	"model"			"models/player/mercenary.mdl"
-	"model_hwm"		"models/player/hwm/soldier.mdl"
-	"arm_model"		"models/weapons/c_models/c_soldier_arms.mdl"
+	"model_hwm"		"models/player/mercenary.mdl"
+	"arm_model"		"models/weapons/c_models/c_merc_arms.mdl"
 	"localize_name"	"TF_Class_Name_Mercenary"
 	"speed_max"		"320"
 //	"health_max"		"100"

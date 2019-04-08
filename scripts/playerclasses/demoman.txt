@@ -7,6 +7,7 @@ PlayerClass
 	"name"			"demoman"
 	"model"			"models/player/demo.mdl"
 	"model_hwm"		"models/player/hwm/demo.mdl"
+	"arm_model"		"models/weapons/c_models/c_demo_arms.mdl"
 	"localize_name"	"TF_Class_Name_Demoman"
 	"speed_max"		"280"
 	"health_max"		"175"
@@ -53,6 +54,4 @@ PlayerClass
 	"sound_crit_death"				"Demoman.CritDeath"
 	"sound_melee_death"			"Demoman.MeleeDeath"
 	"sound_explosion_death"			"Demoman.ExplosionDeath"		
-	
-	"c_arm"	"models/weapons/c_models/c_demo_arms.mdl"
 }

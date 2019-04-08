@@ -6,6 +6,7 @@ PlayerClass
 	// Attributes.
 	"name"			"Civilian"
 	"model"			"models/player/civilian.mdl"
+	"arm_model"		"models/weapons/c_models/c_civilian_arms.mdl"
 	
 	"localize_name"	"TF_Class_Name_Civilian"
 	"speed_max"		"280"
@@ -43,6 +44,5 @@ PlayerClass
 		"TF_AMMO_SUPERSHOTGUN"		"32"
 		"TF_AMMO_RAILGUN"			"25"
 	}		
-	
-	"c_arm"	"models/weapons/c_models/c_soldier_arms.mdl"
+
 }

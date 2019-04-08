@@ -7,6 +7,7 @@ PlayerClass
 	"name"			"pyro"
 	"model"			"models/player/pyro.mdl"
 	"model_hwm"		"models/player/hwm/pyro.mdl"
+	"arm_model"		"models/weapons/c_models/c_pyro_arms.mdl"
 	"localize_name"	"TF_Class_Name_Pyro"
 	"speed_max"		"300"
 //	"health_max"		"100"
@@ -53,6 +54,4 @@ PlayerClass
 	"sound_crit_death"				"Pyro.CritDeath"
 	"sound_melee_death"			"Pyro.MeleeDeath"
 	"sound_explosion_death"			"Pyro.ExplosionDeath"		
-	
-	"c_arm"	"models/weapons/c_models/c_pyro_arms.mdl"
 }

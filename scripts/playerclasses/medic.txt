@@ -7,6 +7,7 @@ PlayerClass
 	"name"			"medic"
 	"model"			"models/player/medic.mdl"
 	"model_hwm"		"models/player/hwm/medic.mdl"
+	"arm_model"		"models/weapons/c_models/c_medic_arms.mdl"
 	"localize_name"	"TF_Class_Name_Medic"
 	"speed_max"		"320"
 //	"health_max"		"90"
@@ -56,6 +57,4 @@ PlayerClass
 	"sound_crit_death"				"Medic.CritDeath"
 	"sound_melee_death"			"Medic.MeleeDeath"
 	"sound_explosion_death"			"Medic.ExplosionDeath"	
-	
-	"c_arm"	"models/weapons/c_models/c_medic_arms.mdl"
 }
