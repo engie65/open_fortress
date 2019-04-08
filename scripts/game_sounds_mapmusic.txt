@@ -1,0 +1,64 @@
+//Template:
+//"Music.StartRound.MapName"
+//{
+//	"channel"			"CHAN_VOICE"
+//	"volume"			"VOL_NORM"
+//	"pitch"				"PITCH_NORM"
+//	"soundlevel"		"SNDLVL_NONE"
+//	
+//	"wave"			"#path/to/track.mp3"
+//}
+
+"Music.StartRound.Test"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/test/19 - Get Better Right Now.mp3"
+}
+
+"Music.PreRound.Test"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/test/17 - Dream Away.mp3"
+}
+
+"Music.StartRound.dm_2fort"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/dm_loop.wav"
+}
+
+"Music.PreRound.dm_2fort"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/dm_waiting.wav"
+}
+
+"Music.StartRound.devmap_setcustommodel"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/dm_loop.wav"
+}
+
+"Music.PreRound.devmap_setcustommodel"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/dm_waiting.wav"
+}
