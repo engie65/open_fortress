@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"		"#TF_Weapon_Revolver"
+	"printname"		"#TF_Weapon_SixShooter"
 	"BuiltRightHanded"	"0"
 	"weight"		"3"
 	"WeaponType"		"secondary"
