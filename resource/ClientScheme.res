@@ -31,6 +31,7 @@ Scheme
 		"TransparentYellow"	"251 235 202 140"
 		//"Black"				"0 0 0 255"
 		//Changed black to a NTSC safe color
+
 		
 		"Black"				"46 43 42 255"
 		"TransparentBlack"	"0 0 0 196"
@@ -93,6 +94,17 @@ Scheme
 		"MatchmakingMenuItemDescriptionColor"	"200 184 151 255"
 		
 		"HTMLBackground"						"95 92 101 255"
+		
+
+		// weapon selection colors
+		"SelectionNumberFg_hl2"		"255 220 0 255"
+		"SelectionTextFg_hl2"			"255 220 0 255"
+		"SelectionEmptyBoxBg_hl2" 		"0 0 0 80"
+		"SelectionBoxBg_hl2" 			"0 0 0 80"
+		"SelectionSelectedBoxBg_hl2"	"0 0 0 80"
+		
+		"FgColor_hl2"					"255 255 255 100"
+		"BgColor_hl2"					"0 0 0 76"
 	}
 
 	///////////////////// BASE SETTINGS ////////////////////////

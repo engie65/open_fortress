@@ -67,6 +67,7 @@ BarkinDarkin (Grosse)
 MacD11 (Wiseau, DM_Johnny [Original Layout])
 Iiboharz (Wiseau)
 KaiDemonLP (dm_2fort_weapontest)
+Androsynth (DM_Facility)
 
 Deep, intricate lore:
 Eyedol9000

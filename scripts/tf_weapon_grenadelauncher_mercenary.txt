@@ -8,9 +8,9 @@ WeaponData
 	"ITEM_FLAG_NOITEMPICKUP" 	"1"	
 
 	// Attributes TF.
-	"damage"		"112"
+	"damage"		"90"
 	"InstagibDamage"	"999"
-	"DamageRadius"		"132"
+	"DamageRadius"		"100"
 	"BulletsPerShot"	"1"
 	"HasTeamSkins_Viewmodel"			"1"
 	"Spread"		"0.0"	
@@ -18,13 +18,13 @@ WeaponData
 	"TimeFireDelay"		"0.6"
 	"TimeIdle"		"0.6"
 	"TimeIdleEmpty"		"0.6"
-	"TimeReloadStart"	"0.1"
-	"TimeReload"		"0.6"
+	"TimeReloadStart"	"0.6"
+	"TimeReload"		"0.7"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"TF_AMMO_GRENADELAUNCHER"
 	"secondary_ammo"	"None"
 	"clip_size"		"4"
 	"default_clip"		"4"
