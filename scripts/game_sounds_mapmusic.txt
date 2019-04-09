@@ -15,7 +15,7 @@
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/test/19 - Get Better Right Now.mp3"
+	"wave"			"#music/deathmatch/dm_loop.wav"
 }
 
 "Music.PreRound.Test"
@@ -24,7 +24,7 @@
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/test/17 - Dream Away.mp3"
+	"wave"			"#music/deathmatch/dm_waiting.wav"
 }
 
 "Music.StartRound.dm_2fort"
