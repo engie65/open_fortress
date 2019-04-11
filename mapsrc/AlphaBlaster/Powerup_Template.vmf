@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "89"
+	"mapversion" "98"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "89"
+	"mapversion" "98"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -771,9 +771,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"model" "models/weapons/w_models/w_railgun.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"powerup_model" "models/weapons/w_models/w_railgun.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -791,7 +791,7 @@ entity
 		"OnPlayerTouch" "Emitter_Railgun,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Railgun,skin,1,15,-1"
 	}
-	"origin" "320 -116 9"
+	"origin" "300 -116 9"
 	editor
 	{
 		"color" "0 0 200"
@@ -899,9 +899,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"model" "models/weapons/w_models/w_grenadelauncher_dm.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"powerup_model" "models/weapons/w_models/w_grenadelauncher_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -912,13 +912,13 @@ entity
 	"skin" "0"
 	"solid" "0"
 	"spawn_sound" "items/itembk2.wav"
-	"targetname" "Weapon_GrenadeLauncher"
+	"targetname" "Weapon_GrenadeLauncherDM"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_grenadelauncher"
 	connections
 	{
-		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,0,0,-1"
-		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,1,15,-1"
+		"OnPlayerTouch" "Emitter_GrenadeLauncherDM,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_GrenadeLauncherDM,skin,1,15,-1"
 	}
 	"origin" "220 -172 9"
 	editor
@@ -961,7 +961,7 @@ entity
 	"skin" "1"
 	"solid" "0"
 	"spawnflags" "0"
-	"targetname" "Emitter_GrenadeLauncher"
+	"targetname" "Emitter_GrenadeLauncherDM"
 	"texframeindex" "0"
 	"origin" "228 -172 -31"
 	editor
@@ -1004,7 +1004,7 @@ entity
 	"skin" "1"
 	"solid" "0"
 	"spawnflags" "0"
-	"targetname" "Emitter_Revolver"
+	"targetname" "Emitter_RevolverDM"
 	"texframeindex" "0"
 	"origin" "316 -172 -31"
 	editor
@@ -1028,9 +1028,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_revolver.mdl"
+	"model" "models/weapons/w_models/w_revolver_dm.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_revolver.mdl"
+	"powerup_model" "models/weapons/w_models/w_revolver_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -1041,13 +1041,13 @@ entity
 	"skin" "0"
 	"solid" "0"
 	"spawn_sound" "items/itembk2.wav"
-	"targetname" "Weapon_Revolver"
+	"targetname" "Weapon_RevolverDM"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_revolver"
 	connections
 	{
-		"OnPlayerTouch" "Emitter_Revolver,skin,0,0,-1"
-		"OnPlayerTouch" "Emitter_Revolver,skin,1,15,-1"
+		"OnPlayerTouch" "Emitter_RevolverDM,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_RevolverDM,skin,1,15,-1"
 	}
 	"origin" "312 -172 9"
 	editor
@@ -1575,49 +1575,7 @@ entity
 }
 entity
 {
-	"id" "1536"
-	"classname" "dm_weapon_spawner"
-	"angles" "90 0 0"
-	"AutoMaterialize" "1"
-	"body" "0"
-	"disablereceiveshadows" "0"
-	"disableshadows" "0"
-	"effects" "0"
-	"HiddenWhenRespawning" "0"
-	"maxdxlevel" "0"
-	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_supershotgun.mdl"
-	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_supershotgun.mdl"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"renderfx" "0"
-	"rendermode" "0"
-	"respawntime" "15"
-	"SetBodyGroup" "0"
-	"shadowcastdist" "0"
-	"skin" "0"
-	"spawn_sound" "items/itembk2.wav"
-	"targetname" "Weapon_SuperShotgun"
-	"texframeindex" "0"
-	"weaponname" "tf_weapon_supershotgun"
-	connections
-	{
-		"OnPlayerTouch" "Emitter_SuperShotgun,skin,0,0,-1"
-		"OnPlayerTouch" "Emitter_SuperShotgun,skin,1,15,-1"
-	}
-	"origin" "-70 -320 8"
-	editor
-	{
-		"color" "0 0 200"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
-	"id" "1539"
+	"id" "1615"
 	"classname" "prop_dynamic"
 	"angles" "0 0 0"
 	"body" "0"
@@ -1647,15 +1605,315 @@ entity
 	"skin" "1"
 	"solid" "0"
 	"spawnflags" "0"
-	"targetname" "Emitter_SuperShotgun"
+	"targetname" "Emitter_MinigunDM"
 	"texframeindex" "0"
-	"origin" "-64 -320 -30"
+	"origin" "388 -288 -31"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1617"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"HiddenWhenRespawning" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_minigun_dm.mdl"
+	"pickup_sound" "AmmoPack.Touch"
+	"powerup_model" "models/weapons/w_models/w_minigun_dm.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"solid" "0"
+	"spawn_sound" "items/itembk2.wav"
+	"targetname" "Weapon_MinigunDM"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_gatlinggun"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_MinigunDM,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_MinigunDM,skin,1,15,-1"
+	}
+	"origin" "360 -288 29"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1678"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"HiddenWhenRespawning" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_revolver.mdl"
+	"pickup_sound" "AmmoPack.Touch"
+	"powerup_model" "models/weapons/w_models/w_revolver.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"solid" "0"
+	"spawn_sound" "items/itembk2.wav"
+	"targetname" "Weapon_Revolver"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_revolver"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_Revolver,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_Revolver,skin,1,15,-1"
+	}
+	"origin" "348 -144 9"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1681"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_Revolver"
+	"texframeindex" "0"
+	"origin" "352 -144 -31"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1722"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_GrenadeLauncher"
+	"texframeindex" "0"
+	"origin" "272 -146 -31"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1724"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"HiddenWhenRespawning" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"pickup_sound" "AmmoPack.Touch"
+	"powerup_model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"solid" "0"
+	"spawn_sound" "items/itembk2.wav"
+	"targetname" "Weapon_GrenadeLauncher"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_grenadelauncher"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,1,15,-1"
+	}
+	"origin" "264 -146 9"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1757"
+	"classname" "prop_dynamic"
+	"angles" "0 0 0"
+	"body" "0"
+	"DisableBoneFollowers" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"ExplodeDamage" "0"
+	"ExplodeRadius" "0"
+	"health" "0"
+	"MaxAnimTime" "10"
+	"maxdxlevel" "0"
+	"MinAnimTime" "5"
+	"mindxlevel" "0"
+	"minhealthdmg" "0"
+	"model" "models/pickups/emitter.mdl"
+	"PerformanceMode" "0"
+	"physdamagescale" "1.0"
+	"pressuredelay" "0"
+	"RandomAnimation" "0"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "1"
+	"solid" "0"
+	"spawnflags" "0"
+	"targetname" "Emitter_Akimbo"
+	"texframeindex" "0"
+	"origin" "438 -116 -31"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "1759"
+	"classname" "dm_weapon_spawner"
+	"angles" "0 0 0"
+	"AutoMaterialize" "1"
+	"body" "0"
+	"disablereceiveshadows" "0"
+	"disableshadows" "0"
+	"effects" "0"
+	"HiddenWhenRespawning" "0"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/weapons/v_models/v_akimbo_pistols_mercenary.mdl"
+	"pickup_sound" "AmmoPack.Touch"
+	"powerup_model" "models/weapons/v_models/v_akimbo_pistols_mercenary.mdl"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"renderfx" "0"
+	"rendermode" "0"
+	"respawntime" "15"
+	"SetBodyGroup" "0"
+	"shadowcastdist" "0"
+	"skin" "0"
+	"spawn_sound" "items/itembk2.wav"
+	"targetname" "Weapon_Akimbo"
+	"texframeindex" "0"
+	"weaponname" "tf_weapon_smg"
+	connections
+	{
+		"OnPlayerTouch" "Emitter_Akimbo,skin,0,0,-1"
+		"OnPlayerTouch" "Emitter_Akimbo,skin,1,15,-1"
+	}
+	"origin" "426 -116 13"
+	editor
+	{
+		"color" "0 0 200"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
 	}
 }
 cameras
