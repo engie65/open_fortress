@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.2, 7nd of April 2019
+// V6.3, 11th of April 2019
 //
 //=============================================================================
 
@@ -1997,7 +1997,7 @@
 	powerup_model(studio) : "Model" :  : "Change the model to something other than the default model." 
 	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
 	spawn_sound(sound): "Spawn Sound" : "Item.Materialize" : "Sound to play when Pickup Spawns."
-	HiddenWhenRespawning(choices) : "Hidden wile Respawning" : 1 : "Weather or not the pickup becomes hidden on pickup." =
+	HiddenWhenRespawning(choices) : "Hidden while Respawning?" : 1 : "Weather or not the pickup becomes hidden on pickup." =
 	[
 		0 : "No"
 		1 : "Yes"
@@ -2084,45 +2084,51 @@
 
 @BaseClass = weaponname
 [
-	weaponname(choices) : "Weapon" : "tf_weapon_scattergun" : "The condition to use." =
+	weaponname(choices) : "Weapon" : "tf_weapon_supershotgun" : "The weapon to use." =
 	[
-		"tf_weapon_scattergun" : "Scattergun"
-		"tf_weapon_supershotgun" : "Supershotgun"
-		"tf_weapon_rocketlauncher" : "Rocket Launcher"
-		"tf_weapon_flamethrower" : "Flamethrower"
-		"tf_weapon_grenadelauncher" : "Grenade Launcher"
-		"tf_weapon_minigun" : "Minigun"
-		"tf_weapon_gatlinggun" : "Gatling Gun"
-		"tf_weapon_shotgun_primary" : "Shotgun Primary"
-		"tf_weapon_syringegun_medic" : "Syringegun"
-		"tf_weapon_sniperrifle" : "Sniperrifle"
-		"tf_weapon_railgun" : "Railgun"
-		"tf_weapon_revolver" : "Revolver"
-		"tf_weapon_shotgun_hwg" : "Shotgun (heavy)"
-		"tf_weapon_shotgun_pyro" : "Shotgun (pyro)"
-		"tf_weapon_shotgun_soldier" : "Shotgun (soldier)"
-		"tf_weapon_pipebomblauncher" : "Stickybomb Launcher"
-		"tf_weapon_medigun" : "Medigun"
-		"tf_weapon_nailgun" : "Nailgun"
-		"tf_weapon_smg" : "SMG"
-		"tf_weapon_revolver_mercenary" : "Deathmatch Revolver"
-		"tf_weapon_revolver" : "Revolver"
-		"tf_weapon_bat" : "Bat"
-		"tf_weapon_shovel" : "Shovel"
-		"tf_weapon_fireaxe" : "Fireaxe"
-		"tf_weapon_bottle" : "Bottle"
-		"tf_weapon_fists" : "Fists"
-		"tf_weapon_wrench" : "Wrench"
-		"tf_weapon_bonesaw" : "Bonesaw"
-		"tf_weapon_club" : "Club"
-		"tf_weapon_knife" : "Knife"
-		"tf_weapon_crowbar" : "Crowbar"
-		"tf_weapon_pistol" : "Pistol (engineer)"
-		"tf_weapon_pistol_scout" : "Pistol (scout)"
-		"tf_weapon_pistol_mercenary" : "Pistol (mercenary)"
-		"tf_weapon_pistol_akimbo" : "Akimbo Pistols"
+		"tf_weapon_flamethrower"              : "Flamethrower"
+		"tf_weapon_gatlinggun"                : "Gatling Gun"
+		"tf_weapon_grenadelauncher"           : "Grenade Launcher"
+		"tf_weapon_grenadelauncher_mercenary" : "Deathmatch Grenade Launcher"
+		"tf_weapon_medigun"                   : "Medigun"
+		"tf_weapon_minigun"                   : "Minigun"
+		"tf_weapon_nailgun"                   : "Nailgun"
+		"tf_weapon_original"                  : "Original Rocket Launcher"
+		"tf_weapon_pipebomblauncher"          : "Stickybomb Launcher"
+		"tf_weapon_pistol_akimbo"             : "Akimbo Pistols"
+		"tf_weapon_pistol"                    : "Pistol (engineer)"
+		"tf_weapon_pistol_scout"              : "Pistol (scout)"
+		"tf_weapon_pistol_mercenary"          : "Pistol (mercenary)"
+		"tf_weapon_railgun"                   : "Railgun"
+		"tf_weapon_revolver"                  : "Revolver"
+		"tf_weapon_revolver_mercenary"        : "Deathmatch Revolver"	
+		"tf_weapon_grenadelauncher_mercenary" : "Deathmatch Grenade Launcher"
+		"tf_weapon_rocketlauncher"            : "Rocket Launcher"
+		"tf_weapon_scattergun"                : "Scattergun"
+		"tf_weapon_shotgun_hwg"               : "Shotgun (heavy)"
+		"tf_weapon_shotgun_pyro"              : "Shotgun (pyro)"
+		"tf_weapon_shotgun_primary"           : "Shotgun (engineer)"
+		"tf_weapon_shotgun_soldier"           : "Shotgun (mercenary or soldier)"
+		"tf_weapon_smg"                       : "SMG"
+		"tf_weapon_sniperrifle"               : "Sniperrifle"
+		"tf_weapon_supershotgun"              : "Supershotgun"	
+	    "tf_weapon_syringegun_medic"          : "Syringegun"
+	    "tf_weapon_tommygun"                  : "Tommygun"
+		// melee
+		"tf_weapon_bat"                       : "Bat"
+		"tf_weapon_bonesaw"                   : "Bonesaw"
+		"tf_weapon_bottle"                    : "Bottle"
+		"tf_weapon_club"                      : "Cukri"
+		"tf_weapon_crowbar"                   : "Crowbar"
+		"tf_weapon_fireaxe"                   : "Fireaxe"
+		"tf_weapon_fists"                     : "Fists"
+		"tf_weapon_knife"                     : "Knife"
+		"tf_weapon_shovel"                    : "Shovel"
+		"tf_weapon_umbrella"                  : "Umbrella"
+		"tf_weapon_wrench"                    : "Wrench"
 	]
 ]	
+
 // ---------------------------------------
 //             Entities A - Z
 // ---------------------------------------
@@ -3030,10 +3036,102 @@
 ]
 
 
-@PointClass base(Item, weaponname) size(-1 -1 -48, 1 1 -8) studioprop() = dm_weapon_spawner :	
+@PointClass base(BaseAnimating, EnableDisable, TeamNum, weaponname) size(-1 -1 -48, 1 1 -8) studioprop() = dm_weapon_spawner :	
     "Spawns a weapon." 
 [
-	model(studio) : "Model (Visual only for Hammer)" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
+	powerup_model(choices) : "Model" : "models/weapons/w_models/w_supershotgun.mdl" : "Change the model." =
+	[
+		"models/weapons/w_models/w_flamethrower.mdl"        : "Flamethrower"
+		"models/weapons/w_models/w_grenadelauncher.mdl"     : "Grenade Launcher"
+		"models/weapons/w_models/w_grenadelauncher_dm.mdl"  : "Deathmatch Grenade Launcher"
+		"models/weapons/w_models/w_medigun.mdl"             : "Medigun"
+		"models/weapons/w_models/w_minigun.mdl"             : "Minigun"
+		"models/weapons/w_models/w_minigun_dm.mdl"          : "Gatling Gun"
+		"models/weapons/w_models/w_nailgun.mdl"             : "Nailgun"
+		"models/weapons/w_models/w_pistol_akimbo.mdl"       : "Akimbo Pistols"
+		"models/weapons/w_models/w_pistol.mdl"              : "Pistol"
+		"models/weapons/w_models/w_pistol_mercenary.mdl"    : "Pistol (mercenary)"
+		"models/weapons/w_models/w_railgun.mdl"             : "Railgun"
+		"models/weapons/w_models/w_revolver.mdl"            : "Revolver"
+		"models/weapons/w_models/w_revolver_dm.mdl"         : "Deathmatch Revolver"
+		"models/weapons/w_models/w_rocketlauncher.mdl"      : "Rocket Launcher"
+		"models/weapons/w_models/w_scattergun.mdl"          : "Scattergun"
+		"models/weapons/w_models/w_shotgun.mdl"             : "Shotgun"
+		"models/weapons/w_models/w_smg.mdl"                 : "SMG"
+		"models/weapons/w_models/w_sniperrifle.mdl"         : "Sniper Rifle"
+		"models/weapons/w_models/w_stickybomb_launcher.mdl" : "Stickybomb Launcher"
+		"models/weapons/w_models/w_supershotgun.mdl"        : "Supershotgun"
+		"models/weapons/w_models/w_syringegun.mdl"          : "Syringegun"
+		"models/weapons/w_models/w_tommygun.mdl"            : "Tommygun"
+	    //melee                                            
+		"models/weapons/w_models/w_bat.mdl"                 : "Bat"
+		"models/weapons/w_models/w_bonesaw.mdl"             : "Bonesaw"
+		"models/weapons/w_models/w_bottle.mdl"              : "Bottle"
+		"models/weapons/w_models/w_bottle_broken.mdl"       : "Bottle (broken)"
+		"models/weapons/w_models/w_club.mdl"                : "Cukri"
+		"models/weapons/w_models/w_crowbar.mdl"             : "Crowbar"
+		"models/weapons/w_models/w_fireaxe.mdl"             : "Fireaxe"
+		"models/weapons/w_models/w_knife.mdl"               : "Knife"
+		"models/weapons/w_models/w_machete.mdl"             : "Machete"
+		"models/weapons/w_models/w_shovel.mdl"              : "Shovel"
+		"models/weapons/w_models/w_umbrella.mdl"            : "Umbrella"
+		"models/weapons/w_models/w_wrench.mdl"              : "Wrench"
+	]
+	model(choices) : "Model (Visual only for Hammer)" : "models/weapons/w_models/w_supershotgun.mdl" : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." =
+	[
+		"models/weapons/w_models/w_flamethrower.mdl"        : "Flamethrower"
+		"models/weapons/w_models/w_grenadelauncher.mdl"     : "Grenade Launcher"
+		"models/weapons/w_models/w_grenadelauncher_dm.mdl"  : "Deathmatch Grenade Launcher"
+		"models/weapons/w_models/w_medigun.mdl"             : "Medigun"
+		"models/weapons/w_models/w_minigun.mdl"             : "Minigun"
+		"models/weapons/w_models/w_minigun_dm.mdl"          : "Gatling Gun"
+		"models/weapons/w_models/w_nailgun.mdl"             : "Nailgun"
+		"models/weapons/w_models/w_pistol_akimbo.mdl"       : "Akimbo Pistols"
+		"models/weapons/w_models/w_pistol.mdl"              : "Pistol"
+		"models/weapons/w_models/w_pistol_mercenary.mdl"    : "Pistol (mercenary)"
+		"models/weapons/w_models/w_railgun.mdl"             : "Railgun"
+		"models/weapons/w_models/w_revolver.mdl"            : "Revolver"
+		"models/weapons/w_models/w_revolver_dm.mdl"         : "Deathmatch Revolver"
+		"models/weapons/w_models/w_rocketlauncher.mdl"      : "Rocket Launcher"
+		"models/weapons/w_models/w_scattergun.mdl"          : "Scattergun"
+		"models/weapons/w_models/w_shotgun.mdl"             : "Shotgun"
+		"models/weapons/w_models/w_smg.mdl"                 : "SMG"
+		"models/weapons/w_models/w_sniperrifle.mdl"         : "Sniper Rifle"
+		"models/weapons/w_models/w_stickybomb_launcher.mdl" : "Stickybomb Launcher"
+		"models/weapons/w_models/w_supershotgun.mdl"        : "Supershotgun"
+		"models/weapons/w_models/w_syringegun.mdl"          : "Syringegun"
+		"models/weapons/w_models/w_tommygun.mdl"            : "Tommygun"
+	    //melee                                            
+		"models/weapons/w_models/w_bat.mdl"                 : "Bat"
+		"models/weapons/w_models/w_bonesaw.mdl"             : "Bonesaw"
+		"models/weapons/w_models/w_bottle.mdl"              : "Bottle"
+		"models/weapons/w_models/w_bottle_broken.mdl"       : "Bottle (broken)"
+		"models/weapons/w_models/w_club.mdl"                : "Cukri"
+		"models/weapons/w_models/w_crowbar.mdl"             : "Crowbar"
+		"models/weapons/w_models/w_fireaxe.mdl"             : "Fireaxe"
+		"models/weapons/w_models/w_knife.mdl"               : "Knife"
+		"models/weapons/w_models/w_machete.mdl"             : "Machete"
+		"models/weapons/w_models/w_shovel.mdl"              : "Shovel"
+		"models/weapons/w_models/w_umbrella.mdl"            : "Umbrella"
+		"models/weapons/w_models/w_wrench.mdl"              : "Wrench"
+	]
+	
+	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
+	spawn_sound(sound): "Spawn Sound" : "Item.Materialize" : "Sound to play when Pickup Spawns."
+	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."	
+	
+	HiddenWhenRespawning(choices) : "Hidden while Respawning?" : 1 : "Weather or not the pickup becomes hidden on pickup." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]	
+	
+	AutoMaterialize(choices) : "Auto-Materialize?" : 1 : "The pickup should automatically materialize after being picked up." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	
 	disable_spin(choices) : "Disable Spinning?" : 0 : "If set to Yes, the spawned weapon will not spin." =
 	[
 		0 : "No"
@@ -3044,13 +3142,9 @@
 		0 : "No"
 		1 : "Yes"
 	]
-	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 	
-	HiddenWhenRespawning(choices) : "Hidden wile Respawning" : 0 : "Weather or not the pickup becomes hidden on pickup." =
-	[
-		0 : "No"
-		1 : "Yes"
-	]		
+	output OnPlayerTouch(void) : "Fires when the player touches this item."
+	output OnCacheInteraction(void) : "This output fires when the player proves they have 'found' this item. Fires on: Player Touch (whether or not player actually acquires the item) or picked up by +USE."
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/entityflame") = entityflame : 
@@ -9433,7 +9527,7 @@
 	model(studio) :"Model" : : "The model to appear as. Models with $bumpmapped materials are never lit per-vertex."
     angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
 	skin(integer) : "Skin" : 0 : "Some models have multiple versions of their textures, called skins. Set this to a number other than 0 to use that skin instead of the default."
-	solid(choices) : "Collisions" : : "The method of collision to use for the prop." =
+	solid(choices) : "Collisions" : 6 : "The method of collision to use for the prop." =
 	[
 		0: "None"
 		1: "BSP (QPhysics)"
@@ -10064,6 +10158,11 @@
 [
 ]
 
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_deagle.mdl") = tf_weapon_deagle :
+    "Weapon that can be picked up by players."
+[
+]
+
 @PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_fireaze.mdl") = tf_weapon_fireaxe :
     "Weapon that can be picked up by players."
 [
@@ -10079,7 +10178,17 @@
 [
 ]
 
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_minigun_dm.mdl") = tf_weapon_gatlinggun :
+    "Weapon that can be picked up by players."
+[
+]
+
 @PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_grenadelauncher.mdl") = tf_weapon_grenadelauncher :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_grenadelauncher_dm.mdl") = tf_weapon_grenadelauncher_mercenary :
     "Weapon that can be picked up by players."
 [
 ]
@@ -10109,6 +10218,11 @@
 [
 ]
 
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl") = tf_weapon_original :
+    "Weapon that can be picked up by players."
+[
+]
+
 @PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_builder.mdl") = tf_weapon_pda_engineer_build :
     "Weapon that can be picked up by players."
 [
@@ -10134,6 +10248,11 @@
 [
 ]
 
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pistol_akimbo.mdl") = tf_weapon_pistol_akimbo :
+    "Weapon that can be picked up by players."
+[
+]
+
 @PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pistol_mercenary.mdl") = tf_weapon_pistol_mercenary :
     "Weapon that can be picked up by players."
 [
@@ -10150,6 +10269,11 @@
 ]
 
 @PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_revolver.mdl") = tf_weapon_revolver :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_revolver_dm.mdl") = tf_weapon_revolver_mercenary :
     "Weapon that can be picked up by players."
 [
 ]
@@ -10206,6 +10330,16 @@
 ]
 
 @PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_syringegun.mdl") = tf_weapon_syringegun_medic :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_tommygun.mdl") = tf_weapon_tommygun :
+    "Weapon that can be picked up by players."
+[
+]
+
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_umbrella.mdl") = tf_weapon_umbrella :
     "Weapon that can be picked up by players."
 [
 ]
