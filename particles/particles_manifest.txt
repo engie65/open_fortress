@@ -30,5 +30,17 @@ particles_manifest
 		"file"		"!particles/buildingdamage.pcf"
 		"file"		"!particles/shellejection.pcf"
 		"file"		"!particles/impact_fx.pcf"
+		"file"		"!particles/scout_nailtrails_alt.pcf"
+		"file"		"!particles/taunt_fx.pcf"
+		"file"		"!particles/firstperson_weapon_fx.pcf"
+		"file"		"!particles/respawn.pcf"
+		"file"		"!particles/deathmatch_fx.pcf"
+		"file"		"!particles/bigboom.pcf"
+		"file"		"!particles/cine_fx.pcf"
+		"file"		"!particles/level_fx.pcf"
+		"file"		"!particles/mvm.pcf"
+		"file"		"!particles/scary_ghost.pcf"
+		"file"		"!particles/weather_fx.pcf"
+		"file"		"!particles/env_sakura01.pcf"
+//		"file"		"!particles/.pcf"
 }
-
