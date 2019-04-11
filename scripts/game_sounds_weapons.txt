@@ -1426,6 +1426,33 @@
 	"wave"		"weapons/pistol_clipin.wav"
 }
 
+"Weapon_Pistol.ClipOut"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.35"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol_clipout.wav"
+}
+
+"Weapon_Pistol.SlideBack"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol_slideback.wav"
+}
+
+"Weapon_Pistol.SlideForward"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol_slideforward.wav"
+}
+
 "Weapon_Pistol.ReloadScout"
 {
 	"channel"	"CHAN_ITEM"

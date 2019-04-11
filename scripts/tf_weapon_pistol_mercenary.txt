@@ -16,7 +16,7 @@ WeaponData
 	"TimeFireDelay"		"0.15"
 	"TimeIdle"		"5.0"
 	"TimeIdleEmpty"		"0.25"
-	"TimeReload"		"1.17"
+	"TimeReload"		"1.75"
 	"ProjectileType"	"projectile_bullet"
 	"BrassModel"		"models/weapons/shells/shell_pistol.mdl"
 	"UseRapidFireCrits"	"1"
@@ -25,8 +25,8 @@ WeaponData
 	// Ammo & Clip.
 	"primary_ammo"		"TF_AMMO_PISTOL"
 	"secondary_ammo"	"None"
-	clip_size		12
-	default_clip		12
+	"clip_size"		15
+	"default_clip"		15
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
 

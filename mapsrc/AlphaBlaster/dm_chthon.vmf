@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "439"
+	"mapversion" "440"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "439"
+	"mapversion" "440"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -12946,71 +12946,6 @@ world
 	}
 	solid
 	{
-		"id" "4046"
-		side
-		{
-			"id" "2623"
-			"plane" "(-96 704 384) (-96 736 384) (96 736 384)"
-			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "2622"
-			"plane" "(-96 736 384) (-96 704 384) (-96 704 368)"
-			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "2621"
-			"plane" "(96 704 368) (96 704 384) (96 736 384)"
-			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "2620"
-			"plane" "(-96 704 368) (-96 704 384) (96 704 384)"
-			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "2619"
-			"plane" "(96 736 384) (-96 736 384) (-96 704 368)"
-			"material" "TOOLS/TOOLSPLAYERCLIP"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "0 203 180"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	solid
-	{
 		"id" "4087"
 		side
 		{
@@ -20992,7 +20927,7 @@ entity
 {
 	"id" "7353"
 	"classname" "ofd_trigger_jump"
-	"apex_height_boost" "450"
+	"apex_height_boost" "250"
 	"origin" "0 844 276"
 	"soft_landing" "0"
 	"spawnflags" "1"
@@ -21104,7 +21039,7 @@ entity
 	"_constant_attn" "0"
 	"_distance" "0"
 	"_hardfalloff" "0"
-	"_light" "140 140 140 200"
+	"_light" "70 70 70 200"
 	"_lightHDR" "-1 -1 -1 1"
 	"_lightscaleHDR" "1"
 	"_linear_attn" "0"
@@ -21129,7 +21064,7 @@ entity
 	"_constant_attn" "0"
 	"_distance" "0"
 	"_hardfalloff" "0"
-	"_light" "140 140 140 200"
+	"_light" "70 70 70 200"
 	"_lightHDR" "-1 -1 -1 1"
 	"_lightscaleHDR" "1"
 	"_linear_attn" "0"
@@ -21154,7 +21089,7 @@ entity
 	"_constant_attn" "0"
 	"_distance" "0"
 	"_hardfalloff" "0"
-	"_light" "140 140 140 200"
+	"_light" "70 70 70 200"
 	"_lightHDR" "-1 -1 -1 1"
 	"_lightscaleHDR" "1"
 	"_linear_attn" "0"

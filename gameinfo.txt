@@ -1,66 +1,124 @@
 "GameInfo"
 {
-	game			"Open Fortress: Deathmatch"
-	gamelogo 		1
-	type 			multiplayer_only
+	game 			"Open Fortress: Deathmatch"
+	title 			""
+	title2			""	
+	gamelogo		"1"
+	developer		"Random People Inc."
+	developer_url	"https://github.com/KaidemonLP/Open-Fortress-Source"
+	manual			""
+	
+	type			"multiplayer_only"
+	hasportals		"0" // gameui.dll
+	hashdcontent	"0" // gameui.dll
+	nomodels		"1" // gameui.dll
+	nohimodel		"1" // gameui.dll
+	nocrosshair		"0" // gameui.dll
+	nodifficulty	"1" // gameui.dll
+	advcrosshair	"1" // gameui.dll
+	l4dcrosshair	"0" // unused
+	supportsvr		"0" // engine.dll + gameui.dll
+	bots			"0" // gameui.dll
+	nodegraph		"0" // engine.dll
+	perfwizard		"0" // unused
+	SupportsDX8		"0" // unused
+	SupportsDX9		"1" // unused
+	SupportsDX10	"0" // unused
+	SupportsDX11	"0" // unused
+	SupportsXbox	"0" // unused
+	SupportsXbox360	"0" // unused
+	SupportsXboxOne	"0" // unused
+	SupportsPS3		"0" // unused
+	SupportsPS4		"0" // unused
 	icon			"resource/game"
-	developer 		"Random People Inc."
-	developer_url 	"https://github.com/KaidemonLP/Open-Fortress-Source"	
-	nomodels		1
-	nohimodel 		1
-	nocrosshair 	0
-	nodegraph		0
-	advcrosshair	1
+	GameData		"../../sourcemods/open_fortress/ofd_fic2.fgd"
+	InstancePath	"maps/instances/"
 	
 	hidden_maps
 	{
 		"test_speakers"		1
 		"test_hardware"		1
+        "background01"		1
+        "background02"		1
+        "background03"		1
+        "background04"		1
+        "background05"		1
+        "background06"		1
+        "background07"		1
+        "background08"		1
+        "background09"		1
+        "background12"		1
+        "background15"		1
+		"ep1_c17_00"		1
+		"ep1_c17_00a"		1
+		"ep1_c17_01"		1
+		"ep1_c17_01a"		1
+		"ep1_c17_02"		1
+		"ep1_c17_02a"		1
+		"ep1_c17_02b"		1
+		"ep1_c17_05"		1
+		"ep1_c17_06"		1
+		"ep1_citadel_00"	1
+		"ep1_citadel_00_demo" 1
+		"ep1_citadel_01"	1
+		"ep1_citadel_02"	1
+		"ep1_citadel_02b"	1
+		"ep1_citadel_03"	1
+		"ep1_citadel_04"	1
+		"ep1_background01"	1
+		"ep1_background01a"	1
+		"ep1_background02"	1
+		"ep2_outland_01"	1
+		"ep2_outland_01a"	1
+		"ep2_outland_02"	1
+		"ep2_outland_03"	1
+		"ep2_outland_04"	1
+		"ep2_outland_05"	1
+		"ep2_outland_06"	1
+		"ep2_outland_06a"	1
+		"ep2_outland_07"	1
+		"ep2_outland_08"	1
+		"ep2_outland_09"	1
+		"ep2_outland_10"	1
+		"ep2_outland_10a"	1
+		"ep2_outland_11"	1
+		"ep2_outland_11a"	1
+		"ep2_outland_11b"	1
+		"ep2_outland_12"	1
+		"ep2_outland_12a"	1
+		"ep2_background01"	1
+		"ep2_background02"	1
+		"ep2_background02a"	1
+		"ep2_background03"	1
+		"credits"			1
+		"vst_lostcoast"		1
+        "test"				1
+		"sdk_vehicles"		1
 	}
-	supportsvr	0
+	
 	FileSystem
 	{
-		SteamAppId		243750	// Source SDK Base 2013 Multiplayer
-
+		SteamAppId				243750
+		
 		SearchPaths
 		{
-			// Firstly, mount all user customizations.  This will search for VPKs and subfolders
-			// and mount them in alphabetical order.  The easiest way to distribute a mod is to
-			// pack up the custom content into a VPK.  To "install" a mod, just drop it in this
-			// folder.
-			// Note that this folder is scanned only when the game is booted.
 			game+mod			|gameinfo_path|custom/*
-
-			// Search game's files after any user customizations. This is also where any writes should go.
-			game+game_write+mod+mod_write+default_write_path		|gameinfo_path|.
-
-			// Where the game's binaries are.
+			game+game_write+mod+mod_write+default_write_path |gameinfo_path|.
 			gamebin				|gameinfo_path|bin
-
-			// Search shared VPK files.
-			game_lv				hl2/hl2_lv.vpk
+			
 			game				|all_source_engine_paths|hl2/hl2_textures.vpk
 			game				|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
 			game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
 			game				|all_source_engine_paths|hl2/hl2_misc.vpk
-			platform			|all_source_engine_paths|platform/platform_misc.vpk
-
-			// Mount in shared loose files.
 			game				|all_source_engine_paths|hl2
+			
+			platform			|all_source_engine_paths|platform/platform_misc.vpk
 			platform			|all_source_engine_paths|platform
-
-			// Random files downloaded from gameservers go into a seperate directory, so
-			// that it's easy to keep those files segregated from the official game files
-			// or customizations intentially installed by the user.
-			//
-			// This directory is searched LAST.  If you visit a server and download
-			// a custom model, etc, we don't want that file to override the default
-			// game file indefinitely (after you have left the server).  Servers CAN have
-			// custom content that overrides the default game files, it just needs to be
-			// packed up in the .bsp file so that it will be mounted as a map search pack.
-			// The map search pack is mounted at the top of the search path list,
-			// but only while you are connected that server and on that map.
-			game+download			|gameinfo_path|download
+			
+			game				|all_source_engine_paths|sourcetest/sourcetest_pak.vpk
+			game				|all_source_engine_paths|sourcetest
+			
+			game+download		|gameinfo_path|download
 		}
 	}
 }
