@@ -40,7 +40,7 @@ WeaponData
 	"MuzzleFlashParticleEffect" "muzzle_smg"
 
 	// Animation.
-	"viewmodel"		"models/weapons/v_models/v_smg_sniper.mdl"
+	"viewmodel"		"models/weapons/v_models/v_smg_dm.mdl"
 	"playermodel"	"models/weapons/w_models/w_smg_dm.mdl"
 	"anim_prefix"	"ac"
 
