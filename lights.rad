@@ -11,7 +11,11 @@ lights/white003 		150 150 150 200
 
 lights/white_fill		150 150 150 5
 
-
+moon/moon_ceiling_light01		255 250 245 150
+moon/moon_ceiling_light01b		255 250 245 200
+moon/moon_ceiling_light01c 		255 250 245 25
+moon/moon_ceiling_light01d 		255 250 245 400
+moon/moon_light_panel_floor01	255 250 245 200
 
 lights/fluorescentcool001a	189 231 232 350
 lights/fluorescentcool001b	236 255 182 350
@@ -99,3 +103,34 @@ forcetextureshadow models/props_foliage/tree_pine01_8cluster.mdl
 forcetextureshadow models/props_forest/shrub_03_cluster.mdl
 forcetextureshadow models/props_forest/shrub_03b.mdl
 forcetextureshadow models/props_forest/shrub_03c.mdl
+forcetextureshadow models/props_foliage/tree_sb_pencil_01.mdl
+forcetextureshadow models/props_foliage/tree_sb_pencil_02.mdl
+forcetextureshadow models/props_foliage/tree_sb_pencil_03.mdl
+forcetextureshadow models/props_halloween/oak_01a.mdl
+forcetextureshadow models/props_halloween/oak_02a.mdl
+forcetextureshadow models/props_halloween/oak_03a.mdl
+forcetextureshadow models/props_coalmines/wood_fence_short_256.mdl
+forcetextureshadow models/props_coalmines/wood_fence_short_128.mdl
+
+
+//passtime lights
+
+passtime/neons/neon_blue_point		40 120 255 50
+passtime/neons/neon_green_point		47 253 85 50
+passtime/neons/neon_orange_point		255 178 69 50
+passtime/neons/neon_red_point		255 4 4 50
+passtime/neons/neon_yellow_point		241 255 84 50
+
+passtime/neons/neon_blue_solid		40 120 255 50
+passtime/neons/neon_green_solid		47 253 85 50
+passtime/neons/neon_orange_solid		255 178 69 50
+passtime/neons/neon_red_solid		255 4 4 50
+passtime/neons/neon_yellow_solid		241 255 84 50
+
+passtime/neons/neon_blue_stripe		40 120 255 50
+passtime/neons/neon_green_stripe		47 253 85 50
+passtime/neons/neon_orange_stripe	255 178 69 50
+passtime/neons/neon_red_stripe		255 4 4 50
+passtime/neons/neon_yellow_stripe	241 255 84 50
+
+lights/white008			255 255 255 20
