@@ -15,7 +15,7 @@ WeaponData
 	"Spread"		"0.1"
 	"PunchAngle"	"0.1"
 	"TimeFireDelay"		"0.1"
-	"TimeReload"	"1.5"
+	"TimeReload"	"3.2"
 	"ProjectileType"	"projectile_bullet"
 	"BrassModel"		"models/weapons/shells/shell_pistol.mdl"
 	"UseRapidFireCrits"	"1"
