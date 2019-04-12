@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "109"
+	"mapversion" "111"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "2"
+	"nGridSpacing" "8"
 	"bShow3DGrid" "1"
 }
 world
 {
 	"id" "1"
-	"mapversion" "109"
+	"mapversion" "111"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -39873,6 +39873,71 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	solid
+	{
+		"id" "38881"
+		side
+		{
+			"id" "9827"
+			"plane" "(624 -856 -112) (624 -664 -112) (624 -664 -9)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[0 0 1 -62] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "9826"
+			"plane" "(624 -856 -9) (624 -664 -9) (790.385 -664 -9)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[1 0 0 -47.007] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "9825"
+			"plane" "(624 -664 -9) (624 -664 -112) (790.385 -664 -9)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[0 0 1 -62] 0.25"
+			"vaxis" "[1 0 0 -47.007] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "9824"
+			"plane" "(624 -856 -112) (624 -856 -9) (790.385 -856 -9)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[0 0 1 -62] 0.25"
+			"vaxis" "[1 0 0 -47.007] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "9823"
+			"plane" "(624 -664 -112) (624 -856 -112) (790.385 -856 -9)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 200 213"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
@@ -39910,15 +39975,14 @@ entity
 entity
 {
 	"id" "6692"
-	"classname" "trigger_push"
-	"alternateticksfix" "0"
-	"angles" "0 0 0"
+	"classname" "ofd_trigger_jump"
+	"apex_height_boost" "450"
 	"filtername" "player_filter"
 	"origin" "875.15 -1074.26 -408.28"
-	"pushdir" "-90 0 0"
+	"soft_landing" "0"
 	"solid" "2"
 	"spawnflags" "1037"
-	"speed" "20000"
+	"target" "TopofJumpPad"
 	"targetname" "fan_push"
 	solid
 	{
@@ -39985,101 +40049,6 @@ entity
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[1 0 0 -40.1553] 0.25"
 			"vaxis" "[0 0 -1 -8] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		editor
-		{
-			"color" "220 30 220"
-			"visgroupshown" "1"
-			"visgroupautoshown" "1"
-		}
-	}
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -14768]"
-	}
-}
-entity
-{
-	"id" "6719"
-	"classname" "trigger_push"
-	"alternateticksfix" "0"
-	"angles" "0 0 0"
-	"origin" "850.87 -1015.93 -395.02"
-	"pushdir" "-90 0 0"
-	"solid" "2"
-	"spawnflags" "1100"
-	"speed" "600"
-	solid
-	{
-		"id" "6720"
-		side
-		{
-			"id" "3714"
-			"plane" "(709.269 -821.696 -217.119) (709.269 -710.696 -217.119) (801.737 -710.696 -217.119)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 31.8939] 0.25"
-			"vaxis" "[0 -1 0 32.1104] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "3713"
-			"plane" "(709.269 -710.696 -387.483) (709.269 -821.696 -387.483) (801.737 -821.696 -387.483)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 31.8939] 0.25"
-			"vaxis" "[0 -1 0 32.1104] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "3712"
-			"plane" "(709.269 -821.696 -387.483) (709.269 -710.696 -387.483) (709.269 -710.696 -217.119)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 1 0 -32.1104] 0.25"
-			"vaxis" "[0 0 -1 -34.2222] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "3711"
-			"plane" "(801.737 -710.696 -387.483) (801.737 -821.696 -387.483) (801.737 -821.696 -217.119)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[0 1 0 -32.1104] 0.25"
-			"vaxis" "[0 0 -1 -34.2222] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "3710"
-			"plane" "(709.269 -710.696 -387.483) (801.737 -710.696 -387.483) (801.737 -710.696 -217.119)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 31.8939] 0.25"
-			"vaxis" "[0 0 -1 -34.2222] 0.25"
-			"rotation" "0"
-			"lightmapscale" "16"
-			"smoothing_groups" "0"
-		}
-		side
-		{
-			"id" "3709"
-			"plane" "(801.737 -821.696 -387.483) (709.269 -821.696 -387.483) (709.269 -821.696 -217.119)"
-			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 31.8939] 0.25"
-			"vaxis" "[0 0 -1 -34.2222] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -40480,10 +40449,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1133.53 -1283.39 -169.603"
 	editor
 	{
@@ -40502,10 +40474,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1190.65 -1283.39 -169.603"
 	editor
 	{
@@ -40524,10 +40499,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "788.139 -1659.83 -424.569"
 	editor
 	{
@@ -40546,10 +40524,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1614.91 -1595.48 -368.94"
 	editor
 	{
@@ -40568,10 +40549,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1614.91 -1698.43 -368.94"
 	editor
 	{
@@ -40590,10 +40574,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1434.03 -1383.13 -368.94"
 	editor
 	{
@@ -40612,10 +40599,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "592.324 -1207.33 -521.92"
 	editor
 	{
@@ -40634,10 +40624,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1081.86 -1222.26 -368.94"
 	editor
 	{
@@ -40656,10 +40649,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "722.867 -1486.09 -521.92"
 	editor
 	{
@@ -40678,10 +40674,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "140.861 -1479.65 -373.576"
 	editor
 	{
@@ -40700,10 +40699,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "304.04 -1209.39 -195.099"
 	editor
 	{
@@ -40722,10 +40724,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "880.607 -1653.39 -160.331"
 	editor
 	{
@@ -40744,10 +40749,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "597.763 -733.217 -373.576"
 	editor
 	{
@@ -40766,10 +40774,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1419.1 -1717.74 -164.967"
 	editor
 	{
@@ -40788,10 +40799,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1304.87 -1709.12 -415.298"
 	editor
 	{
@@ -40810,10 +40824,13 @@ entity
 	"fademaxdist" "0"
 	"fademindist" "-1"
 	"fadescale" "1"
+	"HiddenWhenRespawning" "1"
+	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"respawntime" "10"
 	"solid" "6"
+	"spawn_sound" "Item.Materialize"
 	"origin" "1239.6 -1709.12 -415.298"
 	editor
 	{
@@ -43040,16 +43057,17 @@ entity
 {
 	"id" "38320"
 	"classname" "dm_weapon_spawner"
- "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
 	"disablereceiveshadows" "0"
 	"disableshadows" "0"
 	"effects" "0"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/weapons/w_models/w_minigun_dm.mdl"
+	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_minigun_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -43060,6 +43078,7 @@ entity
 	"shadowcastdist" "0"
 	"skin" "0"
 	"solid" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Minigun"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_gatlinggun"
@@ -43072,7 +43091,7 @@ entity
 	"origin" "421.857 -815.531 -173.702"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -43157,16 +43176,17 @@ entity
 {
 	"id" "38329"
 	"classname" "dm_weapon_spawner"
- "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
 	"disablereceiveshadows" "0"
 	"disableshadows" "0"
 	"effects" "0"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
+	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -43176,6 +43196,7 @@ entity
 	"SetBodyGroup" "0"
 	"shadowcastdist" "0"
 	"skin" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Rocket"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_original"
@@ -43188,7 +43209,7 @@ entity
 	"origin" "1112 -1056 -137"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -43273,16 +43294,17 @@ entity
 {
 	"id" "38345"
 	"classname" "dm_weapon_spawner"
- "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
 	"disablereceiveshadows" "0"
 	"disableshadows" "0"
 	"effects" "0"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
+	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -43292,6 +43314,7 @@ entity
 	"SetBodyGroup" "0"
 	"shadowcastdist" "0"
 	"skin" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Rocket1"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_original"
@@ -43304,7 +43327,7 @@ entity
 	"origin" "312 -1664 -349"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -43389,16 +43412,17 @@ entity
 {
 	"id" "38411"
 	"classname" "dm_weapon_spawner"
- "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
 	"disablereceiveshadows" "0"
 	"disableshadows" "0"
 	"effects" "0"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/weapons/w_models/w_shotgun.mdl"
+	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_shotgun.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -43408,6 +43432,7 @@ entity
 	"SetBodyGroup" "0"
 	"shadowcastdist" "0"
 	"skin" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Shotgun"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_shotgun_soldier"
@@ -43420,7 +43445,7 @@ entity
 	"origin" "736 -1088 -494"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -43505,16 +43530,17 @@ entity
 {
 	"id" "38427"
 	"classname" "dm_weapon_spawner"
- "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
 	"disablereceiveshadows" "0"
 	"disableshadows" "0"
 	"effects" "0"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/weapons/w_models/w_grenadelauncher_dm.mdl"
+	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_grenadelauncher_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -43525,6 +43551,7 @@ entity
 	"shadowcastdist" "0"
 	"skin" "0"
 	"solid" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_GrenadeLauncher"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_grenadelauncher_mercenary"
@@ -43537,7 +43564,7 @@ entity
 	"origin" "1640 -1474 -338"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -43622,16 +43649,17 @@ entity
 {
 	"id" "38479"
 	"classname" "dm_weapon_spawner"
- "HiddenWhenRespawning" "0"
 	"angles" "0 0 0"
 	"AutoMaterialize" "1"
 	"body" "0"
 	"disablereceiveshadows" "0"
 	"disableshadows" "0"
 	"effects" "0"
+	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
 	"model" "models/weapons/w_models/w_railgun.mdl"
+	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_railgun.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -43641,6 +43669,7 @@ entity
 	"SetBodyGroup" "0"
 	"shadowcastdist" "0"
 	"skin" "0"
+	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Railgun"
 	"texframeindex" "0"
 	"weaponname" "tf_weapon_railgun"
@@ -43653,10 +43682,26 @@ entity
 	"origin" "820 -1664 -136"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "38748"
+	"classname" "info_target"
+	"angles" "0 0 0"
+	"spawnflags" "0"
+	"targetname" "TopofJumpPad"
+	"origin" "928 -764 6.94483"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
