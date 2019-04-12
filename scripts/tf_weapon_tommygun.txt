@@ -13,7 +13,7 @@ WeaponData
 	"Range"			"8192"
 	"BulletsPerShot"	"1"
 	"Spread"		"0.1"
-	"PunchAngle"	"0.1"
+	"PunchAngle"	"5.0"
 	"TimeFireDelay"		"0.1"
 	"TimeReload"	"3.2"
 	"ProjectileType"	"projectile_bullet"
@@ -32,8 +32,8 @@ WeaponData
 	"SpawnAmmo"		"50"
 
 	// Buckets.
-	"bucket"		"1"
-	"bucket_position"	"0"
+	"bucket"		"7"
+	"bucket_position"	"5"
 	"TracerEffect"		"bullet_pistol_tracer01"
 
 
