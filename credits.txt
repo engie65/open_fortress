@@ -32,6 +32,7 @@ Rara
 Weapon and cosmetic models:
 Ficool2
 DrPyspy
+Batandy (Tommy Gun)
 
 Particles and Berserk Model:
 FissionMetroid
