@@ -36,7 +36,7 @@ fWeaponData
 	"bucket_position"		"5"
 
 	// Animation.
-	"viewmodel"     		"models/weapons/v_models/v_shotgun_soldier.mdl"
+	"viewmodel"     		"models/weapons/v_models/v_shotgun_merc.mdl"
 	"playermodel"   "models/weapons/w_models/w_shotgun.mdl"
 	"anim_prefix"   "shotgun"
 

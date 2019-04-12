@@ -375,6 +375,14 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"d_smg_mercenary"
+		{
+				"file"	"HUD/d_images"
+				"x"		"0"
+				"y"		"128"
+				"width"		"96"
+				"height"	"32"
+		}
 		"d_club"
 		{
 				"file"	"HUD/d_images"
@@ -392,6 +400,14 @@
 				"height"	"32"
 		}
 		"d_tf_projectile_rocket"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"0"
+				"y"		"224"
+				"width"		"96"
+				"height"	"32"
+		}
+		"d_original"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"0"
@@ -456,6 +472,14 @@
 				"height"	"32"
 		}
 		"d_minigun"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"0"
+				"y"		"384"
+				"width"		"96"
+				"height"	"32"
+		}
+		"d_tommygun"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"0"
@@ -720,6 +744,14 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"dneg_smg_mercenary"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"128"
+				"width"		"96"
+				"height"	"32"
+		}
 		"dneg_club"
 		{
 				"file"	"HUD/dneg_images"
@@ -737,6 +769,14 @@
 				"height"	"32"
 		}
 		"dneg_tf_projectile_rocket"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"224"
+				"width"		"96"
+				"height"	"32"
+		}
+		"dneg_original"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
@@ -801,6 +841,14 @@
 				"height"	"32"
 		}
 		"dneg_minigun"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"384"
+				"width"		"96"
+				"height"	"32"
+		}
+		"dneg_tommygun"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
