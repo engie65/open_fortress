@@ -55,7 +55,7 @@ Thoopje (DMChase)
 Maps:
 AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone,
 				TVLand, Court of Death, DM_Johnny, MAP07 Dead Simple)
-Hambooga	(The Bad Place [Artpass], The Longest Yard, Aerowalk, Campgrounds)
+Hambooga	(The Bad Place [Artpass], The Longest Yard, Aerowalk)
 DrPyspy (Blood Run, Parley [Original layout])
 Richter (Junkyard, Office [Textures])
 HDMineFace (Framework)
@@ -70,7 +70,7 @@ KaiDemonLP (dm_2fort_weapontest)
 Androsynth (DM_Facility)
 Gibus Cat (Indev DM_2Fort)
 Rara (Crossfire)
-
+Cha0s/Holey (Dunker)
 
 Deep, intricate lore:
 Eyedol9000
