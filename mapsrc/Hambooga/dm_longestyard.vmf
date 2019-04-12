@@ -26991,7 +26991,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Rocket"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_rocketlauncher"
+	"weaponname" "tf_weapon_original"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket,skin,0,0,-1"
@@ -27034,7 +27034,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Rocket1"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_rocketlauncher"
+	"weaponname" "tf_weapon_original"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket1,skin,0,0,-1"

@@ -43178,7 +43178,7 @@ entity
 	"skin" "0"
 	"targetname" "Weapon_Rocket"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_rocketlauncher"
+	"weaponname" "tf_weapon_original"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket,skin,0,0,-1"
@@ -43294,7 +43294,7 @@ entity
 	"skin" "0"
 	"targetname" "Weapon_Rocket1"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_rocketlauncher"
+	"weaponname" "tf_weapon_original"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket1,skin,0,0,-1"
@@ -43527,7 +43527,7 @@ entity
 	"solid" "0"
 	"targetname" "Weapon_GrenadeLauncher"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_grenadelauncher"
+	"weaponname" "tf_weapon_grenadelauncher_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,0,0,-1"

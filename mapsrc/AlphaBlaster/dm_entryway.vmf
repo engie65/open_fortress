@@ -16026,7 +16026,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_GrenadeLauncher"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_grenadelauncher"
+	"weaponname" "tf_weapon_grenadelauncher_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_GrenadeLauncher,skin,0,0,-1"
@@ -16144,7 +16144,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Rocket"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_rocketlauncher"
+	"weaponname" "tf_weapon_original"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket,skin,0,0,-1"
@@ -16517,7 +16517,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Rocket1"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_rocketlauncher"
+	"weaponname" "tf_weapon_original"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket1,skin,0,0,-1"
@@ -16635,7 +16635,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_SMG"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_smg"
+	"weaponname" "tf_weapon_smg_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_SMG,skin,0,0,-1"
@@ -17115,9 +17115,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/v_models/v_akimbo_pistols_mercenary.mdl"
+	"model" "models/weapons/v_models/w_pistol.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/v_models/v_akimbo_pistols_mercenary.mdl"
+	"powerup_model" "models/weapons/w_models/w_pistol_akimbo.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
