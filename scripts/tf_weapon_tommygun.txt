@@ -13,7 +13,7 @@ WeaponData
 	"Range"			"8192"
 	"BulletsPerShot"	"1"
 	"Spread"		"0.1"
-	"PunchAngle"	"5.0"
+	"PunchAngle"	"0.1"
 	"TimeFireDelay"		"0.1"
 	"TimeReload"	"3.2"
 	"ProjectileType"	"projectile_bullet"
