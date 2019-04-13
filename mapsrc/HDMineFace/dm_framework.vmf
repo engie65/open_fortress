@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "93"
+	"mapversion" "95"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "8"
-	"bShow3DGrid" "1"
+	"nGridSpacing" "4"
+	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "93"
+	"mapversion" "95"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -4235,7 +4235,7 @@ world
 		{
 			"id" "1025"
 			"plane" "(864 1280 0) (864 1264 0) (864 1264 384)"
-			"material" "METAL/FLOORPLATE01"
+			"material" "METAL/IBEAM002"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -12453,7 +12453,7 @@ world
 		{
 			"id" "2965"
 			"plane" "(-704 1248 -128) (-704 -1664 -128) (1088 -1664 -128)"
-			"material" "TOOLS/TOOLSSKYBOX"
+			"material" "NATURE/ROCKGROUND001"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -22998,6 +22998,82 @@ world
 			"visgroupautoshown" "1"
 		}
 	}
+	solid
+	{
+		"id" "28554"
+		side
+		{
+			"id" "6105"
+			"plane" "(560 -140 126.705) (560 60 126.705) (668 60 126.705)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6106"
+			"plane" "(560 60 0) (560 -140 0) (668 -140 0)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6107"
+			"plane" "(560 -140 0) (560 60 0) (560 60 126.705)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6108"
+			"plane" "(668 60 0) (668 -140 0) (668 -140 126.705)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[0 1 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6109"
+			"plane" "(560 60 0) (668 60 0) (668 60 126.705)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6110"
+			"plane" "(668 -140 0) (560 -140 0) (560 -140 126.705)"
+			"material" "TOOLS/TOOLSPLAYERCLIP"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 0 -1 0] 0.25"
+			"rotation" "0"
+			"lightmapscale" "16"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 202 243"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
 }
 entity
 {
@@ -23470,7 +23546,7 @@ entity
 	"screenspacefade" "0"
 	"skin" "0"
 	"solid" "6"
-	"origin" "928 -208 0"
+	"origin" "928 -268 0"
 	editor
 	{
 		"color" "255 255 0"
@@ -23732,7 +23808,7 @@ entity
 	"origin" "944 1200 80"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 10000]"
@@ -23991,9 +24067,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"model" "models/weapons/w_models/w_railgun.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_sniperrifle.mdl"
+	"powerup_model" "models/weapons/w_models/w_railgun.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -24015,7 +24091,7 @@ entity
 	"origin" "336 624 176"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 7000]"
@@ -24049,7 +24125,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "Weapon_RocketLunchBox"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_rocketlauncher"
+	"weaponname" "tf_weapon_original"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_RocketLunchBox,skin,1,20,-1"
@@ -24058,7 +24134,7 @@ entity
 	"origin" "928 -384 32"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 8500]"
@@ -24237,7 +24313,7 @@ entity
 	"origin" "128 -208 160"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 11500]"
@@ -24367,7 +24443,7 @@ entity
 	"origin" "-1064 1080 -128"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 14500]"
@@ -24393,6 +24469,7 @@ entity
 	"model" "models/props_farm/box_cluster02.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-144 784 24"
 	editor
 	{
@@ -24482,6 +24559,7 @@ entity
 	"model" "models/props_farm/box_cluster02.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-80 792 24"
 	editor
 	{
@@ -24788,9 +24866,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"model" "models/weapons/w_models/w_grenadelauncher_dm.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_grenadelauncher.mdl"
+	"powerup_model" "models/weapons/w_models/w_grenadelauncher_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -24802,7 +24880,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"StartDisabled" "0"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_grenadelauncher"
+	"weaponname" "tf_weapon_grenadelauncher_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_GrenadeLunchbox,skin,1,20,-1"
@@ -24811,7 +24889,7 @@ entity
 	"origin" "-256 -944 32"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 5500]"
@@ -25099,6 +25177,7 @@ entity
 	"model" "models/props_vehicles/pickup03.mdl"
 	"screenspacefade" "0"
 	"skin" "1"
+	"solid" "6"
 	"origin" "-328 -1248 -32"
 	editor
 	{
@@ -25158,6 +25237,7 @@ entity
 	"model" "models/props_mining/fence001_reference.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-512 -1248 -32"
 	editor
 	{
@@ -25187,6 +25267,7 @@ entity
 	"model" "models/props_mining/fence002_reference.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-516 -1408 -32"
 	editor
 	{
@@ -25216,6 +25297,7 @@ entity
 	"model" "models/props_mining/fence003_reference.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-512 -1120 -32"
 	editor
 	{
@@ -25275,6 +25357,7 @@ entity
 	"model" "models/props_urban/urban_crate002.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-456 -1112 -32"
 	editor
 	{
@@ -25703,6 +25786,7 @@ entity
 	"model" "models/props_spytech/exit_sign01.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "72 -1406 96"
 	editor
 	{
@@ -25732,6 +25816,7 @@ entity
 	"model" "models/props_mining/fence003_reference.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-512 -1472 -32"
 	editor
 	{
@@ -26130,7 +26215,7 @@ entity
 	"mindxlevel" "0"
 	"model" "models/weapons/w_models/w_smg.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_smg.mdl"
+	"powerup_model" "models/weapons/w_models/w_smg_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -26142,7 +26227,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_SMG"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_smg"
+	"weaponname" "tf_weapon_smg_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_SMG,skin,0,0,-1"
@@ -26151,7 +26236,7 @@ entity
 	"origin" "948 -1536 168"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -27013,6 +27098,7 @@ entity
 	"model" "models/props_hydro/construction_light.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-248 -688 248"
 	editor
 	{
@@ -28024,7 +28110,7 @@ entity
 	"origin" "704 -1785 11"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 -5768]"
@@ -28595,6 +28681,7 @@ entity
 	"model" "models/props_farm/drain_pipe001.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-698 1888 -512"
 	editor
 	{
@@ -28624,6 +28711,7 @@ entity
 	"model" "models/props_farm/drain_pipe001.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-698 2048 -512"
 	editor
 	{
@@ -28677,6 +28765,7 @@ entity
 	"model" "models/props_lights/light_cone_farm.mdl"
 	"screenspacefade" "0"
 	"skin" "0"
+	"solid" "6"
 	"origin" "-1024 1280 208"
 	editor
 	{
@@ -28805,6 +28894,96 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "28484"
+	"classname" "prop_static"
+	"angles" "0 180 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"generatelightmaps" "0"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_forest/wood_pile.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "616 -40 64"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "28514"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"generatelightmaps" "0"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_forest/wood_pile.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "616 -40 0"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "28922"
+	"classname" "prop_static"
+	"angles" "0 0 0"
+	"disableselfshadowing" "0"
+	"disableshadows" "0"
+	"disablevertexlighting" "0"
+	"fademaxdist" "0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"generatelightmaps" "0"
+	"ignorenormals" "0"
+	"lightmapresolutionx" "32"
+	"lightmapresolutiony" "32"
+	"maxdxlevel" "0"
+	"mindxlevel" "0"
+	"model" "models/props_mvm/barrel_crate.mdl"
+	"screenspacefade" "0"
+	"skin" "0"
+	"solid" "6"
+	"origin" "696 20 -4"
+	editor
+	{
+		"color" "255 255 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
