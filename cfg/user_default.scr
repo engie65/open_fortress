@@ -69,6 +69,13 @@ DESCRIPTION INFO_OPTIONS
 		{ "1" }
 	}
 	
+	"of_autoreload"
+	{
+		"#TFOption_autoreload"
+		{ BOOL }
+		{ "1" }
+	}	
+	
 	"hud_takesshots"
 	{
 		"#game_takesshots"
