@@ -28,7 +28,7 @@
 	}	
 	"TimePanelBG"
 	{
-		"ControlName"		"CTFImagePanel"
+		"ControlName"		"CTFImageColoredHudPanel"
 		"fieldName"		"TimePanelBG"
 		"xpos"			"16"
 		"xpos_minmode"	"35"
@@ -44,12 +44,12 @@
 		"tall_lodef"	"38"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/objectives_timepanel_blue_bg"	
-		"scaleImage"		"1"	
+        "image"			"../hud/objectives_timepanel_custom_bg"	
+		"scaleImage"		"1"		
 		"teambg_2"		"../hud/objectives_timepanel_red_bg"
 		"teambg_3"		"../hud/objectives_timepanel_blue_bg"		
 		"teambg_4"		"../hud/objectives_timepanel_purple_bg"		
-	}
+	}	
 	"TimePanelValue"
 	{
 		"ControlName"		"CTFLabel"
@@ -287,6 +287,6 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/objectives_timepanel_suddendeath"	
-		"scaleImage"		"1"	
+		"scaleImage"		"1"				
 	}	
 }

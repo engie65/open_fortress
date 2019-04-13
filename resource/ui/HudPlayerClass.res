@@ -79,7 +79,7 @@
 	}		
 	"PlayerStatusClassImageBG"
 	{
-		"ControlName"	"CTFImagePanel"
+		"ControlName"	"CTFImageColoredHudPanel"
 		"fieldName"		"PlayerStatusClassImageBG"
 		"xpos"			"9"		[$WIN32]
 		"xpos_minmode"	"-10"		[$WIN32]
@@ -92,13 +92,15 @@
 		"tall"			"50"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/character_red_bg"
-		"scaleImage"	"1"	
+        "image"			"../hud/character_custom_bg"
+		"scaleImage"	"1"
+		"teambg_0"		"../hud/character_null_bg"
+		"teambg_1"		"../hud/character_black_bg"		
 		"teambg_2"		"../hud/character_red_bg"
 		"teambg_2_lodef"	"../hud/character_red_bg_lodef"
 		"teambg_3"		"../hud/character_blue_bg"
 		"teambg_3_lodef"	"../hud/character_blue_bg_lodef"
 		"teambg_4"		"../hud/character_mercenary_bg"
-		"teambg_4_lodef"	"../hud/character_mercenary_bg_lodef"
+		"teambg_4_lodef"	"../hud/character_mercenary_bg_lodef"					
 	}
 }
