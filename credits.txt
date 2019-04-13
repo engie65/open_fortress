@@ -40,7 +40,7 @@ FissionMetroid
 Menu and promotional art:
 Gibus Cat
 
-Ingame menu logo:
+Ingame menu Logo Concept:
 HDMineFace
 
 Ambient sounds (Wiseau):
@@ -63,7 +63,7 @@ HDMineFace (Framework)
 Chris (Office)
 Suomimes55 (Bricks, DM_Minecraft, Boxy)
 Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_Claustrophobolis)
-Reddking (Cineci, Domator, [Early logic_auto help for primitive weapon respawn system for testing])
+Reddking (Cineci, Domator, [Early logic_auto help for primitive weapon respawn system for testing]), Forever missed
 BarkinDarkin (Grosse)
 MacD11 (Wiseau, DM_Johnny [Original Layout])
 Iiboharz (Wiseau, DM 2Fort)
@@ -71,7 +71,7 @@ KaiDemonLP (dm_2fort_weapontest)
 Androsynth (DM_Facility)
 Gibus Cat (Indev DM_2Fort)
 Rara (Crossfire)
-Cha0s/Holey (Dunker)
+###Cha0s/Holey (Dunker), since been removed
 
 Deep, intricate lore:
 Eyedol9000
