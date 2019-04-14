@@ -40,7 +40,7 @@ console.log
 *.dem
 
 # custom content
-
+custom/*
 
 # user stuff
 cfg/pet.txt
