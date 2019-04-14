@@ -1647,6 +1647,22 @@
 				"width"		"84"
 				"height"	"32"
 		}
+		"d_tommygun"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"0"
+				"width"		"116"
+				"height"	"32"
+		}
+		"dneg_tommygun"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"0"
+				"width"		"116"
+				"height"	"32"
+		}
 		"d_umbrella"
 		{
 				"file"	"HUD/d_images_ofdm"
@@ -1663,4 +1679,5 @@
 				"width"		"84"
 				"height"	"32"
 		}
+	}
 }
