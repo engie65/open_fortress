@@ -1635,17 +1635,97 @@
 		{
 				"file"	"HUD/d_images_ofdm"
 				"x"		"0"
-				"y"		"32"
+				"y"		"30"
 				"width"		"84"
-				"height"	"32"
+				"height"	"33"
 		}
 		"dneg_crowbar"
 		{
 				"file"	"HUD/dneg_images_ofdm"
 				"x"		"0"
-				"y"		"32"
+				"y"		"30"
 				"width"		"84"
+				"height"	"33"
+		}
+		"d_tommygun"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"0"
+				"width"		"116"
 				"height"	"32"
+		}
+		"dneg_tommygun"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"0"
+				"width"		"116"
+				"height"	"32"
+		}
+		"d_nailgun"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"66"
+				"width"		"76"
+				"height"	"34"
+		}
+		"dneg_nailgun"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"66"
+				"width"		"76"
+				"height"	"34"
+		}
+		"d_supershotgun"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"98"
+				"width"		"122"
+				"height"	"30"
+		}
+		"dneg_supershotgun"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"98"
+				"width"		"122"
+				"height"	"30"
+		}
+		"d_supershotgun"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"98"
+				"width"		"122"
+				"height"	"30"
+		}
+		"dneg_supershotgun"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"98"
+				"width"		"122"
+				"height"	"30"
+		}
+		"d_pistol_akimbo"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"127"
+				"width"		"80"
+				"height"	"34"
+		}
+		"dneg_pistol_akimbo"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"127"
+				"width"		"80"
+				"height"	"34"
 		}
 		"d_umbrella"
 		{
@@ -1663,4 +1743,5 @@
 				"width"		"84"
 				"height"	"32"
 		}
+	}
 }

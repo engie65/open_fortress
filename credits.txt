@@ -63,21 +63,17 @@ HDMineFace (Framework)
 Chris (Office)
 Suomimes55 (Bricks, DM_Minecraft, Boxy)
 Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_Claustrophobolis)
-Reddking (Cineci, Domator, [Early logic_auto help for primitive weapon respawn system for testing]), Forever missed
+Reddking (Cineci, Domator, [Early logic_auto help for primitive weapon respawn system for testing])
 BarkinDarkin (Grosse)
 MacD11 (Wiseau, DM_Johnny [Original Layout])
-Iiboharz (Wiseau, DM 2Fort)
 KaiDemonLP (dm_2fort_weapontest)
 Androsynth (DM_Facility)
 Gibus Cat (Indev DM_2Fort)
 Rara (Crossfire)
-###Cha0s/Holey (Dunker), since been removed
 
-Deep, intricate lore:
-Eyedol9000
-SuperBigBoy
 
 Special thanks to:
 Trotim (For helping KaidemonLP with programming)
 Nicknine (For the TF_Port SDK 2013 codebase)
 Saul Rennison (for proper dynamic shadows using the L4D method)
+SuperBigBoy (Food)
