@@ -71,7 +71,6 @@ KaiDemonLP (dm_2fort_weapontest)
 Androsynth (DM_Facility)
 Gibus Cat (Indev DM_2Fort)
 Rara (Crossfire)
-###Cha0s/Holey (Dunker), since been removed
 
 Deep, intricate lore:
 Eyedol9000
