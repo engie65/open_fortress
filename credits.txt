@@ -63,7 +63,7 @@ HDMineFace (Framework)
 Chris (Office)
 Suomimes55 (Bricks, DM_Minecraft, Boxy)
 Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_Claustrophobolis)
-Reddking (Cineci, Domator, [Early logic_auto help for primitive weapon respawn system for testing]), Forever missed
+Reddking (Cineci, Domator, [Early logic_auto help for primitive weapon respawn system for testing])
 BarkinDarkin (Grosse)
 MacD11 (Wiseau, DM_Johnny [Original Layout])
 Iiboharz (Wiseau, DM 2Fort)
