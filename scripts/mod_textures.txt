@@ -1667,7 +1667,7 @@
 		{
 				"file"	"HUD/d_images_ofdm"
 				"x"		"0"
-				"y"		"67"
+				"y"		"66"
 				"width"		"76"
 				"height"	"34"
 		}
@@ -1675,7 +1675,7 @@
 		{
 				"file"	"HUD/dneg_images_ofdm"
 				"x"		"0"
-				"y"		"67"
+				"y"		"66"
 				"width"		"76"
 				"height"	"34"
 		}
@@ -1694,6 +1694,38 @@
 				"y"		"98"
 				"width"		"122"
 				"height"	"30"
+		}
+		"d_supershotgun"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"98"
+				"width"		"122"
+				"height"	"30"
+		}
+		"dneg_supershotgun"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"98"
+				"width"		"122"
+				"height"	"30"
+		}
+		"d_pistol_akimbo"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"127"
+				"width"		"80"
+				"height"	"34"
+		}
+		"dneg_pistol_akimbo"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"127"
+				"width"		"80"
+				"height"	"34"
 		}
 		"d_umbrella"
 		{
