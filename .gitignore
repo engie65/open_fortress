@@ -58,6 +58,7 @@ ep2_playerstats.dmx
 cstrike_playerstats.dmx
 jbep3_playerstats.dmx
 media/viewed.res
+custom/*
 
 # content source
 materialsrc/*
