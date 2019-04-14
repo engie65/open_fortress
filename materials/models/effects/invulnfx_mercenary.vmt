@@ -6,10 +6,16 @@
 		 	"$bumpmap" "water/dx80_tfwater001_normal"
 	}
 	"$bumpmap" "water/tfwater001_normal"
+	"$color2" "{255 0 150}"
 	"$envmap" "effects/invun_mercenary"
 //	"$envmaptint" "[.2 .2 .2]"
 	"$surfaceprop" "metal"
 	"$halflambert" "1"
+
+	"$multiplytint1" "[.35 .35 .35]"
+	"$multiplytint2" "[1.25 1.25 1.25]"
+	"$colortint_base"		"{ 255 0 150 }"
+	"$colortint_tmp"		"[0 0 0]"
 
 	"$selfillum" "1"
 	"$selfIllumFresnel" "1"
@@ -45,12 +51,6 @@
 	"$rimlight" "1"		
 	"$rimlightexponent" "11"
 	"$rimlightboost" "5"	
-
-	"$blendtintbybasealpha"		"1"
-	"$blendtintcoloroverbase"		"1"
-	"$colortint_base"		"{180 180 180}"
-	"$color2"		"{180 180 180}"
-	"$colortint_tmp"		"[0 0 0]"	
 	
 	"Proxies"
 	{
@@ -125,7 +125,7 @@
 			"srcVar1" "$invulnphong"
 			"resultVar" "$phongboost" 
 		}
-		"ItemTintColor"
+		"PlayerTintColor"
 		{
 			"resultVar"		"$colortint_tmp"
 		}
@@ -135,5 +135,25 @@
 			"srcVar2"		"$colortint_base"
 			"resultVar"		"$color2"
 		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$envmaptint"
+		}
+		"Multiply"
+		{
+			"srcVar1"		"$color2"
+			"srcVar2"		"$multiplytint1"
+			"resultVar"		"$color2"
+		}
+		"Multiply"
+		{
+			"srcVar1"		"$envmaptint"
+			"srcVar2"		"$multiplytint2"
+			"resultVar"		"$envmaptint"
+		}
+
+
 	}
 }
