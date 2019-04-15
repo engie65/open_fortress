@@ -659,6 +659,15 @@
 	"wave"		")weapons/hl1/cbar_miss1.wav"
 }
 
+
+"Weapon_Crowbar_TFC.MissCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_64dB"
+	"volume"	".6"
+	"wave"		")weapons/hl1/cbar_miss1_crit.wav"
+}
+
 "Weapon_Crowbar_TFC.HitFlesh"
 {
 	"channel"	"CHAN_ITEM"
