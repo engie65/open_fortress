@@ -36,7 +36,7 @@
 		"melee_miss"	"Weapon_Crowbar_TFC.Miss"
 		"melee_hit"		"Weapon_Crowbar_TFC.HitFlesh"
 		"melee_hit_world"	"Weapon_Crowbar_TFC.Melee_HitWorld"
-		"burst"			"Weapon_Bat.MissCrit"
+		"burst"			"Weapon_Crowbar_TFC.MissCrit"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
