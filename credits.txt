@@ -18,7 +18,7 @@ Voice of the Mercenary:
 Stachekip
 
 The Announcer:
-Benjamoose
+John Byers
 
 Weapon and misc. player sound effects:
 Stachekip
