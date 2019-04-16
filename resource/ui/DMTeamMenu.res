@@ -364,10 +364,10 @@
 			"animation"
 			{
 				"name"			"exit_enabled"
-				"sequence"		"idle"
+				"sequence"		"hoveroff"
 			}
 		}
-	}			
+	}
 	
 	"Footer" [$X360]
 	{

@@ -337,6 +337,17 @@ criterion "WeaponIsSpyPDA" "playerweapon" "tf_weapon_pda_spy" "required"
 criterion "WeaponIsRocket" "playerweapon" "tf_weapon_rocketlauncher" "required"
 criterion "WeaponIsShovel" "playerweapon" "tf_weapon_shovel" "required"
 
+criterion "WeaponIsDMSMG" "playerweapon" "tf_weapon_smg_mercenary" "required"
+criterion "WeaponIsTommyGun" "playerweapon" "tf_weapon_tommygun" "required"
+criterion "WeaponIsDMRevolver" "playerweapon" "tf_weapon_revolver_mercenary" "required"
+criterion "WeaponIsPistolAkimbo" "playerweapon" "tf_weapon_pistol_akimbo" "required"
+criterion "WeaponIsOriginal" "playerweapon" "tf_weapon_original" "required"
+criterion "WeaponIsNailgun" "playerweapon" "tf_weapon_nailgun" "required"
+criterion "WeaponIsDMGrenade" "playerweapon" "tf_weapon_grenadelauncher_mercenary" "required"
+criterion "WeaponIsGatlingGun" "playerweapon" "tf_weapon_gatlinggun" "required"
+
+criterion "WeaponIsUmbrella" "playerweapon" "tf_weapon_umbrella" "required"
+
 criterion "WeaponIsSentrygun" "customdeath" "sentrygun" "required"
 criterion "WeaponIsNotSentrygun" "customdeath" "" "required"
 

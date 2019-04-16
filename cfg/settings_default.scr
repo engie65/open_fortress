@@ -103,11 +103,11 @@ DESCRIPTION SERVER_OPTIONS
 		{ "1" }
 	}
 
-	"ofd_forceteam"
+	"ofd_allowteams"
 	{
-		"#TF_ForceTeam"
+		"#TF_AllowTeams"
 		{ BOOL }
-		{ "1" }
+		{ "0" }
 	}	
 
 	
