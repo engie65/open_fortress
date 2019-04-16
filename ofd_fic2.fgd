@@ -3124,6 +3124,7 @@
 		"models/weapons/w_models/w_umbrella.mdl"                                 : "Umbrella"
 		"models/weapons/w_models/w_wrench.mdl"                                   : "Wrench"
 	]
+	skin(integer) : "Skin" : 2 : "Some models have multiple skins. This value selects from the index, starting with 0."
 	
 	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
 	spawn_sound(sound): "Spawn Sound" : "Item.Materialize" : "Sound to play when Pickup Spawns."
