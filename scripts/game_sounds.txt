@@ -424,7 +424,14 @@
 	"wave"		"ambient/train_engine_idle.wav"
 }
 
-
+"Ambient.Hum"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".50"
+	"pitch"		"100"
+	"soundlevel"	"SNDLVL_65dB"
+	"wave"		")ambient/hum1.wav"
+}
 
 "Ambient.ComputerWorking"
 {
