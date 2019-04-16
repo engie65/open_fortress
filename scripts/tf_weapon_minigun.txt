@@ -32,7 +32,7 @@ WeaponData
 	"bucket_position"	"2"
 
 	// Animation.
-	"viewmodel"		"models/weapons/v_models/v_minigun_dm.mdl"
+	"viewmodel"		"models/weapons/v_models/v_minigun_heavy.mdl"
 	"playermodel"		"models/weapons/w_models/w_minigun.mdl"
 	"anim_prefix"		"ac"
 
