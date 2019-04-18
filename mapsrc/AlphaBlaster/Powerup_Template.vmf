@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "108"
+	"mapversion" "113"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "108"
+	"mapversion" "113"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -1043,7 +1043,7 @@ entity
 	"spawn_sound" "items/itembk2.wav"
 	"targetname" "Weapon_RevolverDM"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_revolver"
+	"weaponname" "tf_weapon_revolver_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_RevolverDM,skin,0,0,-1"
@@ -1901,7 +1901,7 @@ entity
 	"spawn_sound" "items/itembk2.wav"
 	"targetname" "Weapon_Akimbo"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_smg"
+	"weaponname" "tf_weapon_pistol_akimbo"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Akimbo,skin,0,0,-1"
@@ -2108,7 +2108,7 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_rocketlauncher.mdl"
 	"renderamt" "255"
@@ -2128,7 +2128,7 @@ entity
 		"OnPlayerTouch" "Emitter_Original,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Original,skin,1,15,-1"
 	}
-	"origin" "238 -2 9"
+	"origin" "228 -2 9"
 	editor
 	{
 		"color" "220 30 220"
@@ -2278,7 +2278,7 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_smg.mdl"
+	"model" "models/weapons/w_models/w_smg_dm.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_smg.mdl"
 	"renderamt" "255"
@@ -2305,6 +2305,22 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "2275"
+	"classname" "info_player_teamspawn"
+	"angles" "0 0 0"
+	"spawnflags" "1023"
+	"TeamNum" "4"
+	"origin" "-32.8598 -313.244 -30.9954"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
