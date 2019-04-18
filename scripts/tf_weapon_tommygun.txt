@@ -29,7 +29,7 @@ WeaponData
 	"primary_ammo"		"TF_AMMO_SMG"
 	"secondary_ammo"	"None"
 	clip_size		50
-	default_clip		32
+	default_clip		50
 
 	// Buckets.
 	"bucket"		"7"
