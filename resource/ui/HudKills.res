@@ -17,7 +17,7 @@
 	
 	"HudKillsBG"
 	{
-		"ControlName"	"CTFImagePanel"
+		"ControlName"	"CTFImageColoredHudPanel"
 		"fieldName"		"HudKillsBG"
 		"xpos"			"12"
 		"ypos"			"0"
@@ -30,8 +30,11 @@
 		"image"			"../hud/misc_ammo_area_mercenary"
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/misc_ammo_area_mercenary"
+		"teambg_2_lodef"		"../hud/misc_ammo_area_mercenary"
 		"teambg_3"		"../hud/misc_ammo_area_mercenary"
-		"teambg_4"		"../hud/misc_ammo_area_mercenary"	
+		"teambg_3_lodef"		"../hud/misc_ammo_area_mercenary"
+		"teambg_4"		"../hud/misc_ammo_area_mercenary"
+		"teambg_3_lodef"		"../hud/misc_ammo_area_mercenary"		
 	}
 
 	"HudKillsLabel"
