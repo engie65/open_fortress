@@ -32,7 +32,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"		"1"
-	"bucket_position"	"0"
+	"bucket_position"	"6"
 	"TracerEffect"		"bullet_pistol_tracer01"
 
 

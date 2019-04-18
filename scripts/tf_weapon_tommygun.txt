@@ -32,8 +32,8 @@ WeaponData
 	default_clip		50
 
 	// Buckets.
-	"bucket"		"7"
-	"bucket_position"	"5"
+	"bucket"		"0"
+	"bucket_position"	"7"
 	"TracerEffect"		"bullet_pistol_tracer01"
 
 
