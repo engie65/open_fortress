@@ -7,7 +7,8 @@
 	}
 	"$bumpmap" "water/tfwater001_normal"
 	"$envmap" "effects/invun_mercenary"
-//	"$envmaptint" "[.2 .2 .2]"
+	"$envmaptintbase" "[.2 .2 .2]"
+	"$envmaptint" "[.2 .2 .2]"
 	"$surfaceprop" "metal"
 	"$halflambert" "1"
 
@@ -135,5 +136,11 @@
 			"srcVar2"		"$colortint_base"
 			"resultVar"		"$color2"
 		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$envmaptintbase"
+			"resultVar"		"$envmaptint"
+		}		
 	}
 }
