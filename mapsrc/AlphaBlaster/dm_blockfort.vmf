@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "100"
+	"mapversion" "103"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "100"
+	"mapversion" "103"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -4981,7 +4981,7 @@ entity
 	"origin" "1220 0 360"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5066,7 +5066,7 @@ entity
 	"origin" "-1212 0 360"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5151,7 +5151,7 @@ entity
 	"origin" "-652 -512 365"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5236,7 +5236,7 @@ entity
 	"origin" "628 512 365"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5278,7 +5278,7 @@ entity
 	"origin" "-8 512 232"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5363,7 +5363,7 @@ entity
 	"origin" "-8 -512 232"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5448,7 +5448,7 @@ entity
 	"origin" "-504 640 360"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5533,7 +5533,7 @@ entity
 	"origin" "520 -640 360"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5662,7 +5662,7 @@ entity
 	"origin" "-516 0 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5748,7 +5748,7 @@ entity
 	"origin" "508 0 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5833,7 +5833,7 @@ entity
 	"origin" "-1360 1344 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -5918,7 +5918,7 @@ entity
 	"origin" "1328 -1344 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6004,7 +6004,7 @@ entity
 	"origin" "1340 1344 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6090,7 +6090,7 @@ entity
 	"origin" "-1348 -1344 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6175,7 +6175,7 @@ entity
 	"origin" "-392 -1216 232"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6260,7 +6260,7 @@ entity
 	"origin" "376 1216 232"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6346,7 +6346,7 @@ entity
 	"origin" "-1224 376 232"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6432,7 +6432,7 @@ entity
 	"origin" "1208 -384 232"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6518,7 +6518,7 @@ entity
 	"origin" "-8 -1216 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6604,7 +6604,7 @@ entity
 	"origin" "-8 1216 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6666,7 +6666,7 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/v_models/w_pistol.mdl"
+	"model" "models/weapons/w_models/w_pistol_akimbo.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_pistol_akimbo.mdl"
 	"renderamt" "255"
@@ -6686,10 +6686,10 @@ entity
 		"OnPlayerTouch" "Emitter_Akimbo,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Akimbo,skin,1,15,-1"
 	}
-	"origin" "-12 512 108"
+	"origin" "0 512 108"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6751,7 +6751,7 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/v_models/w_pistol.mdl"
+	"model" "models/weapons/w_models/w_pistol_akimbo.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_pistol_akimbo.mdl"
 	"renderamt" "255"
@@ -6771,10 +6771,10 @@ entity
 		"OnPlayerTouch" "Emitter_Akimbo2,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Akimbo2,skin,1,15,-1"
 	}
-	"origin" "-12 -512 108"
+	"origin" "0 -512 108"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6860,7 +6860,7 @@ entity
 	"origin" "-1500 0 124.801"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -6946,7 +6946,7 @@ entity
 	"origin" "1444 0 124.801"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"

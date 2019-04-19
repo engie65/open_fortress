@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "638"
+	"mapversion" "642"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "638"
+	"mapversion" "642"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -23535,9 +23535,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_smg.mdl"
+	"model" "models/weapons/w_models/w_smg_dm.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_smg.mdl"
+	"powerup_model" "models/weapons/w_models/w_smg_dm.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -23653,9 +23653,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"powerup_model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -23771,9 +23771,9 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
 	"pickup_sound" "AmmoPack.Touch"
-	"powerup_model" "models/weapons/w_models/w_rocketlauncher.mdl"
+	"powerup_model" "models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"renderfx" "0"
@@ -24072,7 +24072,7 @@ entity
 	"spawnflags" "0"
 	"targetname" "Emitter_Railgun"
 	"texframeindex" "0"
-	"origin" "-324 704 376.801"
+	"origin" "0 632 376.801"
 	editor
 	{
 		"color" "220 30 220"
@@ -24104,7 +24104,7 @@ entity
 	"spinup" "0"
 	"targetname" "RespawnSound_Railgun"
 	"volstart" "0"
-	"origin" "-324 704 399.801"
+	"origin" "0 632 399.801"
 	editor
 	{
 		"color" "220 30 220"
@@ -24147,7 +24147,7 @@ entity
 		"OnPlayerTouch" "Emitter_Railgun,skin,1,15,-1"
 		"OnPlayerTouch" "RespawnSound_Railgun,PlaySound,,15,-1"
 	}
-	"origin" "-320 704 416.801"
+	"origin" "-16 632 416.801"
 	editor
 	{
 		"color" "220 30 220"
@@ -24580,6 +24580,134 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "11679"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/hum1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "524"
+	"spawnflags" "16"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "Portal Ambience"
+	"volstart" "0"
+	"origin" "112 833.399 286.126"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 9000]"
+	}
+}
+entity
+{
+	"id" "11682"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/hum1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "524"
+	"spawnflags" "16"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "Portal Ambience"
+	"volstart" "0"
+	"origin" "0.203016 -0.342155 104"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 9000]"
+	}
+}
+entity
+{
+	"id" "11685"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/hum1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "524"
+	"spawnflags" "16"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "Portal Ambience"
+	"volstart" "0"
+	"origin" "-1247.92 943.729 168"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 9000]"
+	}
+}
+entity
+{
+	"id" "11710"
+	"classname" "ambient_generic"
+	"angles" "0 0 0"
+	"cspinup" "0"
+	"fadeinsecs" "0"
+	"fadeoutsecs" "0"
+	"health" "10"
+	"lfomodpitch" "0"
+	"lfomodvol" "0"
+	"lforate" "0"
+	"lfotype" "0"
+	"message" "ambient/hum1.wav"
+	"pitch" "100"
+	"pitchstart" "100"
+	"preset" "0"
+	"radius" "524"
+	"spawnflags" "16"
+	"spindown" "0"
+	"spinup" "0"
+	"targetname" "Portal Ambience"
+	"volstart" "0"
+	"origin" "0.873669 487.614 -144"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[500 9000]"
 	}
 }
 cameras

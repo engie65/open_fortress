@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "1156"
+	"mapversion" "1158"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "1156"
+	"mapversion" "1158"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -21119,7 +21119,7 @@ entity
 	"origin" "1518.63 -775.191 56"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -21373,7 +21373,7 @@ entity
 	"origin" "-176.233 -1075.54 136"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -21491,7 +21491,7 @@ entity
 	"origin" "497.147 -474.846 136"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -21576,7 +21576,7 @@ entity
 	"origin" "2397.45 -1268.61 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -21854,7 +21854,7 @@ entity
 	"origin" "1662.11 239.236 152"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -22245,7 +22245,7 @@ entity
 	"origin" "1163.94 -811.681 52"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -22434,7 +22434,7 @@ entity
 	"origin" "2240.52 -773.85 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -25876,7 +25876,7 @@ entity
 	"origin" "1478.24 -1547.85 -51.2637"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -26265,7 +26265,7 @@ entity
 	"origin" "2234.81 -45.7827 109"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -26527,7 +26527,7 @@ entity
 	"origin" "1881 -1976.57 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -28863,7 +28863,7 @@ entity
 	"origin" "1793.52 -1199.66 236"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -29238,7 +29238,7 @@ entity
 	"origin" "-516 -768 360"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -29324,7 +29324,7 @@ entity
 	"origin" "2771.94 -624 248"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -29458,7 +29458,7 @@ entity
 	"origin" "2332 -1976 124.801"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -29520,7 +29520,7 @@ entity
 	"HiddenWhenRespawning" "0"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
-	"model" "models/weapons/v_models/w_pistol.mdl"
+	"model" "models/weapons/w_models/w_pistol_akimbo.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"powerup_model" "models/weapons/w_models/w_pistol_akimbo.mdl"
 	"renderamt" "255"
@@ -29540,10 +29540,10 @@ entity
 		"OnPlayerTouch" "Emitter_Akimbo,skin,0,0,-1"
 		"OnPlayerTouch" "Emitter_Akimbo,skin,1,15,-1"
 	}
-	"origin" "820 -1024 140"
+	"origin" "832 -1024 140"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
