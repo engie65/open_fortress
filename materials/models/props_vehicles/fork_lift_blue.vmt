@@ -1,7 +1,7 @@
 // ### This basic VMT was written based on the D:\dev\tools\python\templateStrings.pyc script ###
 "VertexLitGeneric"
 {
-	$baseTexture "models/props_island/fork_lift"
+	$baseTexture "models/props_vehicles/fork_lift_blue"
 	
 //	"$basemapalphaphongmask" "1"
 //	"$phong" "1"
