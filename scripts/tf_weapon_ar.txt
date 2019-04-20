@@ -48,10 +48,10 @@ WeaponData
 	// Max of 16 per category (ie. max 16 "single_shot" sounds).
 	SoundData
 	{
-		"reload"		"Weapon_SMG.WorldReload"
-		"empty"			"Weapon_SMG.ClipEmpty"	
-		"single_shot"		"Weapon_SMG.Single"
-		"burst"			"Weapon_SMG.SingleCrit"
+		"reload"		"Weapon_AR.WorldReload"
+		"empty"			"Weapon_AR.ClipEmpty"	
+		"single_shot"		"Weapon_AR.Single"
+		"burst"			"Weapon_AR.SingleCrit"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
