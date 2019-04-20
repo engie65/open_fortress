@@ -2087,7 +2087,7 @@
 [
 	weaponname(choices) : "Weapon" : "tf_weapon_supershotgun" : "The weapon to use." =
 	[
-		"tf_weapon_assaultrifle"              : "Assault Rifle"	
+		"tf_weapon_ar"              : "Assault Rifle"	
 		"tf_weapon_flamethrower"              : "Flamethrower"
 		"tf_weapon_gatlinggun"                : "Gatling Gun"
 		"tf_weapon_gravitygun"                : "Gravity Gun"
@@ -8793,6 +8793,8 @@
 	waterlevel(float) : "Water Level" :  : "Current water level of the player, can cause strange behavior if changed with AddOutput."
 	ResponseContext(string) : "Response Contexts" :  : "Response system context(s) for this entity. Format should be: 'key:value,key2:value2,etc'. When this entity speaks, the list of keys & values will be passed to the response rules system."
 
+    // BLOCKCIVILIANBASTARD MOMENT
+	input SetCustomModel(string) : "Sets a custom model on the player."
 	input SetHealth(float) : "Sets the player's health. Values clamped between 0 and Maximum Health. In TF2, health above the Maximum Health will be counted as overheal."
 	input HandleMapEvent(string) : "Tells the game to perform a function, such as unlock an achievement. Hardcoded for specific map names."
 	input SetHudVisibility(bool) : "Hides or displays the HUD. The menu can still be accessed, and some HUD elements such as kill-icons may still be visible. 1 = visibile, 0 = invisible."
@@ -10103,7 +10105,7 @@
 [
 ]
 
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_assault_rifle.mdl") = tf_weapon_assaultrifle :
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_assault_rifle.mdl") = tf_weapon_ar :
     "Weapon that can be picked up by players."
 [
 ]
