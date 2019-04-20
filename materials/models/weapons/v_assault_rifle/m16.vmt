@@ -3,14 +3,14 @@
 "$baseTexture" "models\weapons\v_assault_rifle/m16"
 
 	"$phong" "1"
-	"$phongexponent" "25"
-	"$phongboost" "5"	
+	"$phongexponent" "6"
+	"$phongboost" "1"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
-	"$rimlightexponent" "3"	
+	"$rimlightexponent" "2"	
 	"$rimlightboost" ".25"
 	
 //"$BASEMAPLUMINANCEPHONGMASK" "1"
