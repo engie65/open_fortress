@@ -1,0 +1,8 @@
+"Lightmappedgeneric"
+{
+	"$translucent" 1
+	"$basetexture" "Decals/Blood6"
+	"$modelmaterial" "Decals/Blood6_model"
+	"$decal" 1
+	"$decalscale" 0.25
+}
