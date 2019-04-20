@@ -1063,10 +1063,10 @@
 		6: "VPhysics"
 	]
 	body(integer) : "Body Group" : : "Sets the body group index for the model, starting with 0, if available."
-	SetBodyGroup(integer) : "(Set) Body Group" : : "Identical to Body Group (body), ask Valve why this is duplicated. Sets the body group index for the model, starting with 0, if available."
+//	SetBodyGroup(integer) : "(Set) Body Group" : : "Identical to Body Group (body), ask Valve why this is duplicated. Sets the body group index for the model, starting with 0, if available."
 	texframeindex(integer) : "Texture Frame" : : "The frame number for any animated textures on this entity."		
 	LightingOrigin(target_destination) : "Lighting Origin" :  : "Select an entity (not info_lighting!) from which to sample lighting instead of the entity's origin."
-	LightingOriginHack(target_destination) : "Lighting Origin Offset" :  : "The info_lighting_relative from which to sample lighting instead of the entity's origin."
+//	LightingOriginHack(target_destination) : "Lighting Origin Offset" :  : "The info_lighting_relative from which to sample lighting instead of the entity's origin."
 	damagefilter(target_destination) : "Damage Filter" :  : "When this entity receives damage, it will filter by this entity."
 	fademindist(float) : "Start Fade Distance/Pixels" : : "Distance at which the entity starts fading. If <0, the entity will disappear instantly when end fade is hit. The value will scale appropriately if the entity is in a 3D Skybox."
 	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
@@ -1121,10 +1121,10 @@
 		6: "VPhysics"
 	]
 	body(integer) : "Body Group" : : "Sets the body group index for the model, starting with 0, if available."
-	SetBodyGroup(integer) : "(Set) Body Group" : : "Identical to Body Group (body), ask Valve why this is duplicated. Sets the body group index for the model, starting with 0, if available."
+//	SetBodyGroup(integer) : "(Set) Body Group" : : "Identical to Body Group (body), ask Valve why this is duplicated. Sets the body group index for the model, starting with 0, if available."
 	texframeindex(integer) : "Texture Frame" : : "The frame number for any animated textures on this entity."		
 	LightingOrigin(target_destination) : "Lighting Origin" :  : "Select an entity (not info_lighting!) from which to sample lighting instead of the entity's origin."
-	LightingOriginHack(target_destination) : "Lighting Origin Offset" :  : "The info_lighting_relative from which to sample lighting instead of the entity's origin."
+//	LightingOriginHack(target_destination) : "Lighting Origin Offset" :  : "The info_lighting_relative from which to sample lighting instead of the entity's origin."
 	damagefilter(target_destination) : "Damage Filter" :  : "When this entity receives damage, it will filter by this entity."
 	fademindist(float) : "Start Fade Distance/Pixels" : : "Distance at which the entity starts fading. If <0, the entity will disappear instantly when end fade is hit. The value will scale appropriately if the entity is in a 3D Skybox."
 	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
@@ -1238,7 +1238,7 @@
 ]
 
 // TF2 does have functioning NPCs, the issue is they have no speech and no weapons to use, most of this stuff works though! NPCs need some more love :(
-@BaseClass base(BaseAnimating) color(0 200 200) = BaseNPC
+@BaseClass base(Model, BaseAnimating) color(0 200 200) = BaseNPC
 [
 	target(target_destination) : "Target Path Corner" : : "If set, the name of a path_corner entity that this NPC will move to, after spawning. Must be within 576 units from the NPC."
 	health(integer): "Health" : : "Overrides the NPC's default health. Cannot be higher than Max Health."
@@ -2087,6 +2087,7 @@
 [
 	weaponname(choices) : "Weapon" : "tf_weapon_supershotgun" : "The weapon to use." =
 	[
+		"tf_weapon_assaultrifle"              : "Assault Rifle"	
 		"tf_weapon_flamethrower"              : "Flamethrower"
 		"tf_weapon_gatlinggun"                : "Gatling Gun"
 		"tf_weapon_gravitygun"                : "Gravity Gun"
@@ -3044,6 +3045,7 @@
 [
 	model(choices) : "Model" : "models/weapons/w_models/w_supershotgun.mdl" : "Change the model." =
 	[
+		"models/weapons/w_models/w_assault_rifle.mdl"                            : "Assault Rifle"
 		"models/weapons/w_models/w_flamethrower.mdl"                             : "Flamethrower"
 		"models/weapons/w_models/w_physcannon_dm.mdl"                            : "Gravity Gun"
 		"models/weapons/w_models/w_grenadelauncher.mdl"                          : "Grenade Launcher"
@@ -7248,38 +7250,42 @@
 @PointClass base(Item) studioprop() = item_ammopack_full :	
      "Full ammo pack for players." 
 [
+	model(studio) : "Model" : "models/items/ammopack_large.mdl" : "The model this entity should appear as. 128-character limit."
 	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(Item) studioprop() = item_ammopack_medium : 
      "Medium ammo pack for players."
 [
+	model(studio) : "Model" : "models/items/ammopack_medium.mdl" : "The model this entity should appear as. 128-character limit."
 	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(Item) studioprop() = item_ammopack_small : 
      "Small ammo pack for players."
 [
+	model(studio) : "Model" : "models/items/ammopack_small.mdl" : "The model this entity should appear as. 128-character limit."
 	pickup_sound(sound): "Pickup Sound" : "AmmoPack.Touch" : "Sound to play when picking up ammo."
 ]
-
-
 
 @PointClass base(Item) studioprop() = item_healthkit_full : 
     "Full health kit for players." 
 [
+	model(studio) : "Model" : "models/items/medkit_large.mdl" : "The model this entity should appear as. 128-character limit."
 	pickup_sound(sound): "Pickup Sound" : "Healthkit.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(Item) studioprop() = item_healthkit_medium :
     "Medium health kit for players." 
 [
+	model(studio) : "Model" : "models/items/medkit_medium.mdl" : "The model this entity should appear as. 128-character limit."
 	pickup_sound(sound): "Pickup Sound" : "Healthkit.Touch" : "Sound to play when picking up ammo."
 ]
 
 @PointClass base(Item) studioprop() = item_healthkit_small :	
     "Small health kit for players." 
 [
+	model(studio) : "Model" : "models/items/medkit_small.mdl" : "The model this entity should appear as. 128-character limit."
 	pickup_sound(sound): "Pickup Sound" : "Healthkit.Touch" : "Sound to play when picking up ammo."
 ]
 
@@ -8373,13 +8379,13 @@
 [
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_dm") = of_gamemode_dm : 
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_dm") = of_logic_dm : 
 	"Sets the map to Deathmatch gamemode." 
 [
 ]
 
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_tdm") = of_gamemode_tdm : 
-	"Sets the map to Team Deathmatch gamemode. A of_gamemode_dm must also be placed." 
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_tdm") = of_logic_tdm : 
+	"Sets the map to Team Deathmatch gamemode. A of_logic_dm must also be placed." 
 [
 ]
 
@@ -10094,6 +10100,11 @@
 
 @PointClass base(TFProjectile) studioprop("models/weapons/w_models/w_syringe_proj.mdl") = tf_projectile_syringe :
     "SyringeGun projectile."
+[
+]
+
+@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_assault_rifle.mdl") = tf_weapon_assaultrifle :
+    "Weapon that can be picked up by players."
 [
 ]
 
