@@ -1,15 +1,15 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\player\mercenary\mercenary_gib_red"
+	"$basetexture" "models\player\mercenary\mercenary_head"
 	
-       "$detail"            "models\player\mercenary\mercenary_gib"
+       "$detail"            "models\player\mercenary\mercenary_gib_head"
        "$detailscale"       "1"       
        "$detailblendfactor" "1.0"
        "$detailblendmode"   "2"
 
 	"$phong" "1"
 	"$phongexponent" "15"
-	"$phongboost" "0.4"
+	"$phongboost" "0.2"
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 	"$phongfresnelranges"	"[.3 1 3]"
 	"$halflambert" "1"
