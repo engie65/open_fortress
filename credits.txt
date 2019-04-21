@@ -1,7 +1,7 @@
-OFD List of Contributors:
+Open Fortress - List of Contributors:
 
 Project Lead and Programmer:
-KaiDemonLP
+KaidemonLP
 
 Programming:
 Alex Episode
@@ -13,6 +13,9 @@ AlphaBlaster
 
 Mercenary and Civilian concepts and models:
 DrPyspy
+
+Mercenary Gibs and gore effects:
+Ficool2
 
 Voice of the Mercenary:
 Stachekip
@@ -28,11 +31,15 @@ Viewmodel Rigging and Animations:
 Polybagel
 Ficool2
 Rara
+Hex
 
-Weapon and cosmetic models:
+Weapon and cosmetic models/textures:
 Ficool2
 DrPyspy
 Batandy (Tommy Gun)
+Suomimies55
+Gibus Cat
+Stachekip
 
 Particles and Berserk Model:
 FissionMetroid
@@ -47,31 +54,35 @@ Ambient sounds (Wiseau):
 Omniary
 
 Music:
-Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I
-			Chainsawed the Demons, Team Fortresque)
+Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque)
 MrModez (At Fortress' Gate, Winpanel Music)
 Thoopje (DMChase)
 
-
 Maps:
-AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone,
-				TVLand, Court of Death, DM_Johnny, MAP07 Dead Simple)
-Hambooga	(The Bad Place [Artpass], The Longest Yard, Aerowalk)
+AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone, TVLand, Court of Death, DM_Johnny, MAP07 Dead Simple)
+Hambooga (The Bad Place [Artpass], The Longest Yard, Aerowalk)
 DrPyspy (Blood Run, Parley [Original layout])
 Richter (Junkyard, Office [Textures])
 HDMineFace (Framework)
-Chris (Office)
-Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, Backfort)
-Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_Claustrophobolis)
+Chrissy (Office)
+Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, Backfort, Weapon devtest map)
+Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_DM2, DM Lumberyard, Goldeneye Facility, Pool Party)
 BarkinDarkin (Grosse)
-MacD11 (Wiseau, DM_Johnny [Original Layout])
+MacD11 (Wiseau, DM_Johnny [Original Layout], Range)
 KaiDemonLP (dm_2fort_weapontest)
 Gibus Cat (Indev DM_2Fort)
 Rara (Crossfire)
-
+Bakscratch (DM Watergate, Skate)
+Hex (Skate)
+John Fortnite Kennedy (Wiseau, DM 2Fort, Range)
+Fairweather
+Savva (Hollow)
+Polybagel (DE_Cache)
 
 Special thanks to:
 Trotim (For helping KaidemonLP with programming)
 Nicknine (For the TF_Port SDK 2013 codebase)
 Saul Rennison (for proper dynamic shadows using the L4D method)
+The Jabroni Brawl 3 team (for putting our Mercenary into their game <3)
+XutaxKamay (For player origin displacement fixes)
 SuperBigBoy (Food)

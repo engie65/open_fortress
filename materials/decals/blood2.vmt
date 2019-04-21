@@ -1,8 +1,7 @@
-"Lightmappedgeneric"
+"vertexlitgeneric"
 {
 	"$translucent" 1
 	"$basetexture" "Decals/Blood2"
-	"$modelmaterial" "Decals/Blood2_model"
 	"$decal" 1
 	"$decalscale" 0.25
 }
