@@ -8,12 +8,12 @@ WeaponData
 	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 		
 	// Attributes TF.
-	"Damage"		"17"
+	"Damage"		"15"
 	"InstagibDamage"		"999"
 	"Range"			"4096"
 	"BulletsPerShot"	"1"
 	"Spread"		"0.015"
-	"TimeFireDelay"		"0.15"
+	"TimeFireDelay"		"0.21"
 	"TimeIdle"		"5.0"
 	"TimeIdleEmpty"		"0.25"
 	"TimeReload"		"1.35"
