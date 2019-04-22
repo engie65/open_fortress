@@ -36,6 +36,9 @@
 		"spy_invis"
 		{
 		}
+		"vm_invis"
+		{
+		}		
 		"AnimatedTexture"
 		{
 			"animatedtexturevar" "$detail"
@@ -45,9 +48,6 @@
 		"BurnLevel"
 		{
 			"resultVar" "$detailblendfactor"
-		}
-		"DistortFX"
-		{
 		}
 		"ItemTintColor"
 		{

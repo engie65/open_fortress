@@ -29,6 +29,9 @@
 		"spy_invis"
 		{
 		}
+		"vm_invis"
+		{
+		}
 		"AnimatedTexture"
 		{
 			"animatedtexturevar" "$detail"
