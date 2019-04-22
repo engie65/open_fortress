@@ -1,8 +1,0 @@
-"patch"
-{
-	"include"		"materials/GLASS/GLASSWINDOW002A.vmt"
-	"replace"
-	{
-		"$envmap"		"maps/dm_skyscraper_v2/c-496_-299_-592"
-	}
-}
