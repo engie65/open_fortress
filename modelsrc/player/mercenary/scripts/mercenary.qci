@@ -42,7 +42,7 @@ $model mercenary $dmxFile$ {
 	flexcontroller multi_CloseLid range -1 1 "multi_CloseLid"
 	flexcontroller eyes range -45 45 "eyes_updown"
 	flexcontroller eyes range -45 45 "eyes_rightleft"
-	flexcontroller scaredUpper range 0 1 "scaredUpper"
+//	flexcontroller scaredUpper range 0 1 "scaredUpper"
 }
 
 //rocket bodygroup for reloading
