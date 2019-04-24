@@ -4,11 +4,12 @@
 	"$basemapalphaphongmask" "1"
 
 	"$phong" "1"
-	"$phongexponent" "80"
-	"$phongboost" ".2"	
+	"$phongexponent" "15"
+	"$phongboost" ".4"		
 	"$lightwarptexture" "models\player\engineer\engineer_hands_lightwarp"
-	"$phongfresnelranges"	"[1 5 10]"
-	"$halflambert" "1"
+	"$phongfresnelranges"	"[.3 1 8]"
+	"$halflambert" "0"
+	"$phongwarptexture" "models\player\engineer\engineer_hands_lightwarp"
 	
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)

@@ -2,6 +2,7 @@
 {
 	"$basetexture" "models/player/pyro/pyro_red"
 	"$bumpmap" "models/player/pyro/pyro_normal"
+
 	"$detail" "effects/tiledfire/fireLayeredSlowTiled512.vtf"	
 	"$detailscale" "5"
 	"$detailblendfactor" 0.0
@@ -9,10 +10,11 @@
 
 	"$phong" "1"
 	"$phongexponent" "15"
-	"$phongboost" "1"	
+	"$phongboost" "0.4"	
 	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
 	"$phongfresnelranges"	"[2 1 5]"
 	"$halflambert" "1"
+	"$phongwarptexture" "models/player/shared/pyro_phongwarp"
 
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
@@ -22,6 +24,8 @@
 	// Cloaking
 	"$cloakPassEnabled" "1"
 
+	"360?$color2" "[ 0.75 0.75 0.7 ]"
+	
 	"Proxies"
 	{
 		"spy_invis"
@@ -39,4 +43,3 @@
 		}
 	}
 }
-
