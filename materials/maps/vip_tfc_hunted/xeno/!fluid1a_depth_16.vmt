@@ -1,8 +1,0 @@
-"patch"
-{
-	"include"		"materials/xeno/!fluid1a.vmt"
-	"insert"
-	{
-		"$waterdepth"		"16"
-	}
-}

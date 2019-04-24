@@ -1,8 +1,0 @@
-"patch"
-{
-	"include"		"materials/TILE/FLOOR_TILEBLUE01.vmt"
-	"replace"
-	{
-		"$envmap"		"maps/dm_skyscraper_v2/c-314_-166_-592"
-	}
-}
