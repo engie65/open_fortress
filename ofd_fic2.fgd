@@ -2104,10 +2104,10 @@
 		"tf_weapon_smg_mercenary"             : "SMG"
 		"tf_weapon_sniperrifle"               : "Sniper Rifle"
 		"tf_weapon_pipebomblauncher"          : "Stickybomb Launcher"
+	    "tf_weapon_sword"                     : "Sword"
 	    "tf_weapon_syringegun_medic"          : "Syringegun"
 		"tf_weapon_supershotgun"              : "Supershotgun"	
 	    "tf_weapon_tommygun"                  : "Tommygun"
-		
 		
 		"0"									  : "=== Do Not Use In Deathmatch ==="
 		"tf_weapon_grenadelauncher"           : "Grenade Launcher (Demoman)"
@@ -3071,6 +3071,7 @@
 		"models/weapons/w_models/w_smg_dm.mdl"                                   : "SMG (Deathmatch)"
 		"models/weapons/w_models/w_sniperrifle.mdl"                              : "Sniper Rifle"
 		"models/weapons/w_models/w_stickybomb_launcher.mdl"                      : "Stickybomb Launcher"
+		"models/weapons/w_models/w_sword.mdl"                                    : "Sword"
 		"models/weapons/w_models/w_supershotgun.mdl"                             : "Supershotgun"
 		"models/weapons/w_models/w_syringegun.mdl"                               : "Syringegun"
 		"models/weapons/w_models/w_tommygun.mdl"                                 : "Tommygun"
