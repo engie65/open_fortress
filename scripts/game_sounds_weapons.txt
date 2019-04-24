@@ -1128,6 +1128,62 @@
 	"wave"		"weapons/draw_melee.wav"
 }
 
+// 
+// SWORD
+//
+
+"Weapon_Sword.Swing"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	".6"
+	"pitch"		"95, 105"
+	"wave"		")weapons/demo_sword_swing1.wav"
+
+}
+
+"Weapon_Sword.SwingCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	".6"
+	"wave"		")weapons/demo_sword_swing_crit.wav"
+}
+
+"Weapon_Sword.HitFlesh"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		"weapons/blade_slice_2.wav"
+		"wave"		"weapons/blade_slice_3.wav"
+		"wave"		"weapons/blade_slice_4.wav"
+	}
+}
+
+"Weapon_Sword.HitWorld"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons/demo_sword_hit_world1.wav"
+		"wave"		")weapons/demo_sword_hit_world2.wav"
+	}
+}
+
+"Weapon_Sword.Draw"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		"weapons/draw_sword.wav"
+}
+
+
 // ------------------------------------------------------------------------------------ //
 // MEDIGUN
 // ------------------------------------------------------------------------------------ //
