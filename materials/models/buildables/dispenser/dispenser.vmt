@@ -2,7 +2,7 @@
 {
 	
 	"$basetexture"	"models\buildables\dispenser\dispenser"
-	"$bumpmap"	"models\buildables\dispenser\dispenser_phongmask"
+    "$basemapalphaphongmask" "1"
 
 	"$phong" "1"
 	"$phongboost" "10"
