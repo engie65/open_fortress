@@ -14,4 +14,5 @@ soundscapes_manifest
 		"file"		"scripts/soundscapes_granary.txt"
 		"file"		"scripts/soundscapes_wiseau.txt"
 		"file"		"scripts/soundscapes_lumberyard.txt"
+		"file"		"scripts/soundscapes_medieval.txt"		
 }

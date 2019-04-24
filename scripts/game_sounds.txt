@@ -758,3 +758,24 @@
 
 	"wave"	"misc/triggerjump.wav"
 }
+
+
+"Medieval.Flag"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"ambient/medieval_flag.wav"
+}
+
+"Medieval.Brazier"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		")ambient/medieval_brazier.wav"
+}
