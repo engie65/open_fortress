@@ -2092,7 +2092,7 @@
 		"tf_weapon_assaultrifle"			  : "Assault Rifle"
 		"tf_weapon_flamethrower"              : "Flamethrower"
 		"tf_weapon_gatlinggun"                : "Gatling Gun"
-		"tf_weapon_physgauntlet"              : "Gravity Gun"
+		"tf_weapon_physcannon"                : "Gravity Gun"
 		"tf_weapon_grenadelauncher_mercenary" : "Grenade Launcher"
 		"tf_weapon_knife"                     : "Knife"
 		"tf_weapon_nailgun"                   : "Nailgun"
