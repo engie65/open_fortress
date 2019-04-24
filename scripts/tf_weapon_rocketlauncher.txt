@@ -31,7 +31,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"		"6"
-	"bucket_position"	"0"	
+	"bucket_position"	"1"	
 
 	"ExplosionEffect"		"ExplosionCore_wall"
 	"ExplosionPlayerEffect"		"ExplosionCore_MidAir"

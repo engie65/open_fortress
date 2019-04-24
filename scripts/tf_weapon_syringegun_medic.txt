@@ -28,8 +28,8 @@ WeaponData
 	default_clip		40
 
 	// Buckets.
-	"bucket"		"3"
-	"bucket_position"	"1"
+	"bucket"		"5"
+	"bucket_position"	"2"
 
 
 	// Muzzleflash

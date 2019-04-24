@@ -24,7 +24,7 @@
 
 	// Buckets.	
 	"bucket"			"0"
-	"bucket_position"		"9"
+	"bucket_position"		"4"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_wrench_engineer.mdl"

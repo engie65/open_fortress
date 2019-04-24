@@ -22,8 +22,8 @@ WeaponData
 	"HasTeamSkins_Worldmodel"	"1"
 
 	// Buckets.
-	"bucket"			"9"
-	"bucket_position"		"1"
+	"bucket"			"8"
+	"bucket_position"		"0"
 
 	// Animation.
 	"viewmodel"			"models/weapons/v_models/v_medigun_medic.mdl"

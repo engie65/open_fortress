@@ -23,7 +23,7 @@ WeaponData
 
 	// Buckets.	
 	"bucket"			"0"
-	"bucket_position"		"7"
+	"bucket_position"		"5"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_fist_heavy.mdl"

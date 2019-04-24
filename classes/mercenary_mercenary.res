@@ -17,19 +17,19 @@
 		"model"
 		{
 			"modelname"	"models/player/mercenary.mdl"
-			"modelname_hwm"	"models/player/hwm/soldier.mdl"
+			"modelname_hwm"	"models/player/hwm/mercenary.mdl"
 			"skin" "4"
 			"origin_z" "-51"
 			"vcd"		"scenes/Player/Mercenary/low/class_select.vcd"		
 
 			"animation"
 			{
-				"sequence"		"crouch_LOSER"
+				"sequence"		"Stand_MELEE"
 			}
 			
 			"attached_model"
 			{
-				"modelname" "models/empty.mdl"
+				"modelname" "models/weapons/w_models/w_crowbar.mdl"
 				"skin"		"4"
 			}
 		}

@@ -22,7 +22,7 @@
 
 	// Buckets.	
 	"bucket"			"0"
-	"bucket_position"		"5"
+	"bucket_position"		"8"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_bottle_demoman.mdl"

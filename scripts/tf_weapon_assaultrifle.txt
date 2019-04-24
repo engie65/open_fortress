@@ -25,14 +25,14 @@ WeaponData
 	"DontDrop"	"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_SMG"
+	"primary_ammo"		"TF_AMMO_ASSAULTRIFLE"
 	"secondary_ammo"	"None"
 	clip_size		25
 	default_clip		25
 
 	// Buckets.
-	"bucket"		"1"
-	"bucket_position"	"7"
+	"bucket"		"4"
+	"bucket_position"	"2"
 	"TracerEffect"		"bullet_pistol_tracer01"
 
 

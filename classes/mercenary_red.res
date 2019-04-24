@@ -1,6 +1,6 @@
 #base "default.res"
 
-"classes/Mercenary_mercenary.res"
+"classes/Mercenary_red.res"
 {
 	"classNameLabel"
 	{
@@ -17,20 +17,20 @@
 		"model"
 		{
 			"modelname"	"models/player/mercenary.mdl"
-			"modelname_hwm"	"models/player/hwm/soldier.mdl"
+			"modelname_hwm"	"models/player/hwm/mercenary.mdl"
 			"skin" "0"
 			"origin_z" "-51"
 			"vcd"		"scenes/Player/Mercenary/low/class_select.vcd"		
 
 			"animation"
 			{
-				"sequence"		"crouch_LOSER"
+				"sequence"		"Stand_MELEE"
 			}
 			
 			"attached_model"
 			{
-				"modelname" "models/empty.mdl"
-				"skin"		"0"
+				"modelname" "models/weapons/w_models/w_crowbar.mdl"
+				"skin"		"1"
 			}
 		}
 	}

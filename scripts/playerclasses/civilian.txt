@@ -43,6 +43,7 @@ PlayerClass
 		"TF_AMMO_NAILS"				"150"
 		"TF_AMMO_SUPERSHOTGUN"		"32"
 		"TF_AMMO_RAILGUN"			"25"
+		"TF_AMMO_ASSAULTRIFLE"		"75"
 	}		
 
 }

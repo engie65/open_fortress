@@ -30,8 +30,8 @@ WeaponData
 	"ProjectileType"	"projectile_pipe_remote"
 
 	// Buckets.
-	"bucket"		"4"
-	"bucket_position"	"1"
+	"bucket"		"6"
+	"bucket_position"	"5"
 	
 	"ExplosionSound"	"Weapon_Grenade_Pipebomb.Explode"
 	"ExplosionEffect"	"ExplosionCore_wall"

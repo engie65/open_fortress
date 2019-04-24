@@ -33,7 +33,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"				"2"
-	"bucket_position"		"1"
+	"bucket_position"		"7"
 
 	// Animation.
 	"viewmodel"     	"models/weapons/v_models/v_scattergun_scout.mdl"

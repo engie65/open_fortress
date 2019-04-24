@@ -30,7 +30,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"				"2"
-	"bucket_position"		"0"
+	"bucket_position"		"1"
 
 	// Animation.
 	"viewmodel"     	"models/weapons/v_models/v_supershotgun_mercenary.mdl"

@@ -29,7 +29,7 @@ WeaponData
 	"default_clip"		"75"
 
 	// Buckets.
-	"bucket"		"5"
+	"bucket"		"4"
 	"bucket_position"	"0"
 
 

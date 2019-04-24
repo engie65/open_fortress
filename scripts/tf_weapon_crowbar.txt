@@ -23,7 +23,7 @@
 
 	// Buckets.	
 	"bucket"			"0"
-	"bucket_position"		"1"
+	"bucket_position"		"3"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_crowbar_mercenary.mdl"

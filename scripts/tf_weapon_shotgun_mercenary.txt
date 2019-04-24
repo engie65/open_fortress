@@ -33,7 +33,7 @@ fWeaponData
 
 	// Buckets.
 	"bucket"			"2"
-	"bucket_position"		"5"
+	"bucket_position"		"2"
 
 	// Animation.
 	"viewmodel"     		"models/weapons/v_models/v_shotgun_merc.mdl"

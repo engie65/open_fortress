@@ -33,7 +33,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"			"2"
-	"bucket_position"		"3"
+	"bucket_position"		"4"
 
 	// Animation.
 	"viewmodel"     "models/weapons/v_models/v_shotgun_engineer.mdl"

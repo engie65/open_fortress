@@ -22,7 +22,7 @@
 
 	// Buckets.	
 	"bucket"				"0"
-	"bucket_position"		"2"
+	"bucket_position"		"10"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_fireaxe_pyro.mdl"

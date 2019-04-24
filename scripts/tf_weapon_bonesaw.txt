@@ -22,7 +22,7 @@ WeaponData
 
 	// Buckets.	
 	"bucket"				"0"
-	"bucket_position"		"4"
+	"bucket_position"		"7"
 
 	// Model & Animation
 	"viewmodel"				"models/weapons/v_models/v_bonesaw_medic.mdl"

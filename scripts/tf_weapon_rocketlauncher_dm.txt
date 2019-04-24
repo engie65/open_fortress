@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"		"#TF_Weapon_Original"
+	"printname"		"#TF_Weapon_RocketLauncher_DM"
 	"BuiltRightHanded"	"0"
 	"weight"		"3"
 	"WeaponType"		"primary"
@@ -33,7 +33,7 @@ WeaponData
 
 	// Buckets.
 	"bucket"		"6"
-	"bucket_position"	"1"	
+	"bucket_position"	"2"	
 
 	// Explosions.
 	"ExplosionEffect"		"rocket_explosion_classic"
@@ -43,18 +43,22 @@ WeaponData
 	"ExplosionSound"	"Weapon_QuakeRPG.Explode"
 
 	// Animation.
-	"viewmodel"		"models/weapons/v_models/v_original.mdl"
-	"playermodel"		"models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl"
-	"anim_prefix"		"gl"
+	"viewmodel"			"hacked_in_game_this_does_nothing_these.are"
+	"playermodel"		"here_so_the_weapon_script_system_doesnt.bitch" 
+	"anim_prefix"		"about_missing_weapon_models"
 
 	// Sounds.
 	// Max of 16 per category (ie. max 16 "single_shot" sounds).
 	SoundData
 	{
-		"single_shot"		"Weapon_QuakeRPG.Single"
-		"burst"			"Weapon_QuakeRPG.SingleCrit"
-		"deploy"			"Weapon_QuakeRPG.Draw"
-		"reload"			"Weapon_QuakeRPG.Reload"
+		"single_shot"	"Weapon_RPG.Single"
+//		"reload"		"Weapon_RPG.WorldReload"
+		"burst"			"Weapon_RPG.SingleCrit"	
+	
+		"special1"		"Weapon_QuakeRPG.Single"
+		"special2"		"Weapon_QuakeRPG.SingleCrit"
+		"special3"		"Weapon_QuakeRPG.Draw"
+		"reload_npc"	"Weapon_QuakeRPG.Reload"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
