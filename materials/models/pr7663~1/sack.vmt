@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "Models/pr7663~1/sack"
+	"$bumpmap" "Models/pr7663~1/sack_normal"
+	"$nodecal" "1"
+}
