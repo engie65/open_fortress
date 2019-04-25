@@ -50,7 +50,7 @@
 
 "Player.Spawn"
 {
-	"channel"		"CHAN_BODY"
+	"channel"		"CHAN_STATIC"
 	"volume"		"VOL_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
