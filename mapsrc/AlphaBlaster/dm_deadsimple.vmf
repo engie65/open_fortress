@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "150"
+	"mapversion" "151"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "150"
+	"mapversion" "151"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -9593,7 +9593,7 @@ entity
 	"origin" "-284 -256 188.801"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -9679,7 +9679,7 @@ entity
 	"origin" "256 -256 168"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -9755,7 +9755,7 @@ entity
 	"spawn_sound" "items/itembk2.wav"
 	"targetname" "Weapon_Rocket"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_original"
+	"weaponname" "tf_weapon_rocketlauncher_dm"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket,skin,0,0,-1"
@@ -9764,7 +9764,7 @@ entity
 	"origin" "256 256 168"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -9783,6 +9783,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/medkit_large.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -9883,7 +9884,7 @@ entity
 	"origin" "336 -0.152451 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -9969,7 +9970,7 @@ entity
 	"origin" "-1212 -1216 124"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -9988,6 +9989,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/medkit_medium.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10087,7 +10089,7 @@ entity
 	"origin" "-1192 1216 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10172,7 +10174,7 @@ entity
 	"origin" "-8 -768 136"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10258,7 +10260,7 @@ entity
 	"origin" "1180 -1216 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10334,7 +10336,7 @@ entity
 	"spawn_sound" "items/itembk2.wav"
 	"targetname" "Weapon_Rocket2"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_original"
+	"weaponname" "tf_weapon_rocketlauncher_dm"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket2,skin,0,0,-1"
@@ -10343,7 +10345,7 @@ entity
 	"origin" "992 1056 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10362,6 +10364,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_large.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10436,6 +10439,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/medkit_medium.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10469,6 +10473,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/medkit_medium.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10502,6 +10507,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/medkit_medium.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10535,6 +10541,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10568,6 +10575,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10601,6 +10609,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10634,6 +10643,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10667,6 +10677,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10700,6 +10711,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10733,6 +10745,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10766,6 +10779,7 @@ entity
 	"HiddenWhenRespawning" "1"
 	"maxdxlevel" "0"
 	"mindxlevel" "0"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -12567,7 +12581,7 @@ entity
 	"origin" "1000 1440 104"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -12796,6 +12810,60 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[500 -1768]"
+	}
+}
+entity
+{
+	"id" "4209"
+	"classname" "env_tonemap_controller"
+	"targetname" "tonemap_global"
+	"origin" "-7.02733 176.044 72"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4768]"
+	}
+}
+entity
+{
+	"id" "4211"
+	"classname" "color_correction"
+	"fadeInDuration" "0.0"
+	"fadeOutDuration" "0.0"
+	"filename" "scripts/2fort_global.raw"
+	"maxfalloff" "-1"
+	"maxweight" "1.0"
+	"minfalloff" "-1"
+	"targetname" "color_global"
+	"origin" "-7.02733 208.044 72"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4768]"
+	}
+}
+entity
+{
+	"id" "4215"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "tonemap_global,SetAutoExposureMin,.8,0,-1"
+		"OnMapSpawn" "tonemap_global,SetAutoExposureMax,1.1,0,-1"
+		"OnMapSpawn" "tonemap_global,SetBloomScale,.5,0,-1"
+	}
+	"origin" "-7.02733 176.044 97"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4268]"
 	}
 }
 cameras

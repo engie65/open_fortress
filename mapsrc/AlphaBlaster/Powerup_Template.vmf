@@ -615,7 +615,7 @@ entity
 	"spawn_sound" "items/itembk2.wav"
 	"targetname" "Weapon_Shotgun"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_shotgun_soldier"
+	"weaponname" "tf_weapon_shotgun_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Shotgun,skin,0,0,-1"
@@ -2122,7 +2122,7 @@ entity
 	"spawn_sound" "items/itembk2.wav"
 	"targetname" "Weapon_Original"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_original"
+	"weaponname" "tf_weapon_rocketlauncher_dm"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Original,skin,0,0,-1"
