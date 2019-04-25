@@ -841,7 +841,17 @@
 		scene "scenes/player/mercenary/low/taunt03_v1.vcd"
 		scene "scenes/player/mercenary/low/taunt03_v2.vcd"
 	}
+	response "MercenaryTauntUmbrella"
+	{
+		scene "scenes/player/mercenary/low/taunt03_v1.vcd"
+		scene "scenes/player/mercenary/low/taunt03_v2.vcd"
+	}
 	response "MercenaryTauntKnife"
+	{
+		scene "scenes/player/mercenary/low/taunt03_v1.vcd"
+		scene "scenes/player/mercenary/low/taunt03_v2.vcd"
+	}
+	response "MercenaryTauntSword"
 	{
 		scene "scenes/player/mercenary/low/taunt03_v1.vcd"
 		scene "scenes/player/mercenary/low/taunt03_v2.vcd"
@@ -969,10 +979,20 @@
 		criteria ConceptPlayerTaunt IsMercenary WeaponIsCrowbar
 		response MercenaryTauntCrowbar
 	}
+	rule MercenaryTauntUmbrella
+	{
+		criteria ConceptPlayerTaunt IsMercenary WeaponIsUmbrella
+		response MercenaryTauntUmbrella
+	}
 	rule MercenaryTauntKnife
 	{
 		criteria ConceptPlayerTaunt IsMercenary WeaponIsKnife
 		response MercenaryTauntKnife
+	}
+	rule MercenaryTauntSword
+	{
+		criteria ConceptPlayerTaunt IsMercenary WeaponIsSword
+		response MercenaryTauntSword
 	}
 //============================================================================================================
 
@@ -1073,6 +1093,11 @@
 		scene "scenes/player/Civilian/low/taunt03_v1.vcd"
 		scene "scenes/player/Civilian/low/taunt03_v2.vcd"
 	}
+	response "CivilianTauntUmbrella"
+	{
+		scene "scenes/player/Civilian/low/taunt03_v1.vcd"
+		scene "scenes/player/Civilian/low/taunt03_v2.vcd"
+	}
 	response "CivilianTauntKnife"
 	{
 		scene "scenes/player/Civilian/low/taunt03_v1.vcd"
@@ -1153,6 +1178,11 @@
 	{
 		criteria ConceptPlayerTaunt IsCivilian WeaponIsCrowbar
 		response CivilianTauntCrowbar
+	}
+	rule CivilianTauntUmbrella
+	{
+		criteria ConceptPlayerTaunt IsCivilian WeaponIsUmbrella
+		response CivilianTauntUmbrella
 	}
 	rule CivilianTauntKnife
 	{
