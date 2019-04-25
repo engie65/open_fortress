@@ -59,8 +59,8 @@ WeaponData
 //		"reload"		"Weapon_RPG.WorldReload"
 		"burst"			"Weapon_RPG.SingleCrit"	
 	
-		"special1"		"Weapon_QuakeRPG.Single"
-		"special2"		"Weapon_QuakeRPG.SingleCrit"
+		"special1"		"Weapon_QuakeRPG.SingleCrit"
+		"special2"		"Weapon_QuakeRPG.Single"
 		"special3"		"Weapon_QuakeRPG.Draw"
 		"reload_npc"	"Weapon_QuakeRPG.Reload"
 	}

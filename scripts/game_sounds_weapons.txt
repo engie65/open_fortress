@@ -2416,7 +2416,7 @@
 // ------------------------------------------------------------------------------------ //
 
 
-"Weapon_QuakeRPG.SingleCrit"
+"Weapon_QuakeRPG.Single"
 {
 	"channel"	"CHAN_WEAPON"
 	"volume"	"1"
@@ -2424,7 +2424,7 @@
 	"wave"		"weapons\quake_rpg_fire_remastered.wav"
 }
 
-"Weapon_QuakeRPG.Single"
+"Weapon_QuakeRPG.SingleCrit"
 {
 	"channel"	"CHAN_WEAPON"
 	"volume"	"1"
