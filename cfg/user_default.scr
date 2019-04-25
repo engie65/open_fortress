@@ -76,6 +76,13 @@ DESCRIPTION INFO_OPTIONS
 		{ "1" }
 	}	
 	
+	"ofd_use_quake_rl"
+	{
+		"#TFOption_QuakeRL"
+		{ BOOL }
+		{ "1" }
+	}
+	
 	"hud_takesshots"
 	{
 		"#game_takesshots"
