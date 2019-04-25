@@ -17,16 +17,20 @@ WeaponData
 	"UseRapidFireCrits"	"1"
 	"ProjectileType"	"projectile_nail"
 
-        // Ammo & Clip.
-        "primary_ammo"        "TF_AMMO_NAILS"
-        "secondary_ammo"      "None"
-        "clip_size"           "40"
-        "default_clip"        "40"
+     // Ammo & Clip.
+     "primary_ammo"        "TF_AMMO_NAILS"
+     "secondary_ammo"      "None"
+     "clip_size"           "40"
+     "default_clip"        "40"
 	"MaxAmmo"	      "150"
 
-	// Buckets.
-	"bucket"		"5"
-	"bucket_position"	"1"
+	// bucket.	
+	"bucket"			"0"
+	"bucket_position"		"0"
+	
+	// bucket_dms.
+	"bucket_dm"		"5"
+	"bucket_dm_position"	"1"
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_nailgun_mercenary.mdl"

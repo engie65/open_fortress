@@ -7,10 +7,13 @@ WeaponData
 	"viewmodel"			"models/weapons/v_models/v_physcannon_dm.mdl"
 	"playermodel"		"models/weapons/w_models/w_physcannon_dm.mdl"
 	"anim_prefix"		"gauss"
-	"bucket"			"8"
-	"bucket_position"	"7"
-	"bucket_360"			"2"
-	"bucket_position_360"	"1"
+
+	// bucket.	
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"bucket_dm"			"8"
+	"bucket_dm_position"	"7"
 	"clip_size"			"1"
 	"clip2_size"		"0"
 	"primary_ammo"		"None"

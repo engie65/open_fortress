@@ -12,8 +12,12 @@ WeaponData
 	"secondary_ammo"		"None"
 
 	// Buckets.	
-	"bucket"			"8"
-	"bucket_position"		"5"
+	"bucket"			"4"
+	"bucket_position"		"0"
+	
+	// bucket_dms.	
+	"bucket_dm"			"8"
+	"bucket_dm_position"		"5"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_wrench_engineer.mdl"

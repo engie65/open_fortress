@@ -21,9 +21,13 @@
 	"primary_ammo"			"None"
 	"secondary_ammo"		"None"
 
-	// Buckets.	
-	"bucket"			"0"
-	"bucket_position"		"12"
+	// bucket.	
+	"bucket"			"2"
+	"bucket_position"		"0"
+	
+	// bucket_dms.	
+	"bucket_dm"			"0"
+	"bucket_dm_position"		"12"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_umbrella_civilian.mdl"

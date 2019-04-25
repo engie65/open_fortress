@@ -16,8 +16,12 @@ WeaponData
 	"secondary_ammo"		"None"
 
 	// Buckets.	
-	"bucket"			"8"
-	"bucket_position"		"3"
+	"bucket"			"3"
+	"bucket_position"		"0"
+	
+	// bucket_dms.	
+	"bucket_dm"			"8"
+	"bucket_dm_position"		"3"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_pda_spy.mdl"

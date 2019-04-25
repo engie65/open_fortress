@@ -20,9 +20,9 @@
 	"primary_ammo"			"None"
 	"secondary_ammo"		"None"
 
-	// Buckets.	
-	"bucket"			"0"
-	"bucket_position"		"6"
+	// bucket_dms.	
+	"bucket_dm"			"0"
+	"bucket_dm_position"		"6"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_bat_scout.mdl"

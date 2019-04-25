@@ -29,9 +29,13 @@ WeaponData
 	// Secondary Attributes.
 	"secondary_ammo"	"None"
 
-	// Buckets.
-	"bucket"		"6"
-	"bucket_position"	"1"	
+	// bucket.	
+	"bucket"			"0"
+	"bucket_position"		"0"
+	
+	// bucket_dms.
+	"bucket_dm"		"6"
+	"bucket_dm_position"	"1"	
 
 	"ExplosionEffect"		"ExplosionCore_wall"
 	"ExplosionPlayerEffect"		"ExplosionCore_MidAir"

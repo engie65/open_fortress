@@ -21,9 +21,13 @@
 	"primary_ammo"			"None"
 	"secondary_ammo"		"None"
 
-	// Buckets.	
-	"bucket"			"0"
-	"bucket_position"		"3"
+	// bucket.
+	"bucket"		"2"
+	"bucket_position"	"0"
+	
+	// bucket_dms.	
+	"bucket_dm"			"0"
+	"bucket_dm_position"		"3"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_crowbar_mercenary.mdl"
@@ -44,7 +48,7 @@
 	{
 		"weapon"
 		{
-				"file"		"sprites/crowbar_bucket"
+				"file"		"sprites/crowbar_bucket_dm"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -52,7 +56,7 @@
 		}
 		"weapon_s"
 		{	
-				"file"		"sprites/crowbar_bucket_blue"
+				"file"		"sprites/crowbar_bucket_dm_blue"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"

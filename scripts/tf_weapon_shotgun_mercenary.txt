@@ -31,9 +31,13 @@ fWeaponData
 	"BrassModel"			"models/weapons/shells/shell_shotgun.mdl"	
 	"TracerEffect"		"bullet_shotgun_tracer01"
 
-	// Buckets.
-	"bucket"			"2"
-	"bucket_position"		"2"
+	// bucket.	
+	"bucket"			"1"
+	"bucket_position"		"0"
+	
+	// bucket_dms.
+	"bucket_dm"			"2"
+	"bucket_dm_position"		"2"
 
 	// Animation.
 	"viewmodel"     		"models/weapons/v_models/v_shotgun_merc.mdl"
