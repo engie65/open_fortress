@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture"	"sprites/crowbar_bucket"
+	"$basetexture"	"sprites/bucket_sword"
 	"$surfaceprop"	"no_decal"
 	"$vertexcolor" 1
 	"$vertexalpha" 1

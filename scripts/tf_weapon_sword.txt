@@ -48,7 +48,7 @@
 	{
 		"weapon"
 		{
-				"file"		"sprites/sword_bucket_dm"
+				"file"		"sprites/bucket_sword"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -56,7 +56,7 @@
 		}
 		"weapon_s"
 		{	
-				"file"		"sprites/sword_bucket_dm_blue"
+				"file"		"sprites/bucket_sword"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
