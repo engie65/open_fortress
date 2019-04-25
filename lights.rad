@@ -6,9 +6,17 @@ lights/blue004 			151 165 204 50
 lights/white001			150 150 150 50
 lights/white002 		150 150 150 100
 lights/white003 		150 150 150 200
-
-
-
+lights/white004			170 228 247 425
+lights/white005			234 235 220 375
+lights/white006			234 235 220 100
+lights/white007			255 255 255 50
+lights/white008			255 255 255 20
+lights/white001_nochop	250 240 205 100
+lights/white002_nochop	189 233 247 425
+lights/white003_nochop	232 246 190 350
+lights/white004_nochop	170 228 247 425
+lights/white005_nochop	234 235 220 375
+lights/white006_nochop	234 235 220 100
 lights/white_fill		150 150 150 5
 
 moon/moon_ceiling_light01		255 250 245 150
@@ -34,20 +42,14 @@ lights/HIDcool001a		145 222 172 650
 lights/HIDcool001b		205 232 255 650
 lights/HIDwarm001a		255 201 116 650
 
-lights/white004			170 228 247 425
-lights/white005			234 235 220 375
-lights/white006			234 235 220 100
-lights/white007			255 255 255 50
-
-lights/white001_nochop	250 240 205 100
-lights/white002_nochop	189 233 247 425
-lights/white003_nochop	232 246 190 350
-lights/white004_nochop	170 228 247 425
-lights/white005_nochop	234 235 220 375
-lights/white006_nochop	234 235 220 100
-
 lights/incandescentcool001a	235 235 235 300
 lights/incandescentwarm001a	250 226 129 300
+
+props/monitor_world_red 125 70 54 1000
+props/monitor_world_blue 84 100 98 1000
+
+props/monitor_world_red_anim 125 70 54 1000
+props/monitor_world_blue_anim 84 100 98 1000
 
 forcetextureshadow models/props_gameplay/security_fence_big01.mdl
 forcetextureshadow models/props_gameplay/security_fence_big02.mdl
@@ -111,7 +113,16 @@ forcetextureshadow models/props_halloween/oak_02a.mdl
 forcetextureshadow models/props_halloween/oak_03a.mdl
 forcetextureshadow models/props_coalmines/wood_fence_short_256.mdl
 forcetextureshadow models/props_coalmines/wood_fence_short_128.mdl
-
+forcetextureshadow models/props_coalmines/foliage_clump1.mdl
+forcetextureshadow models/props_coalmines/foliage_clump2.mdl
+forcetextureshadow models/props_coalmines/foliage_clump3.mdl
+forcetextureshadow models/props_coalmines/foliage_single1.mdl
+forcetextureshadow models/props_coalmines/wood_fence_128.mdl
+forcetextureshadow models/props_coalmines/wood_fence_256.mdl
+forcetextureshadow models/props_coalmines/wood_fence_64.mdl
+forcetextureshadow models/props_coalmines/wood_fence_short_128.mdl
+forcetextureshadow models/props_coalmines/wood_fence_short_256.mdl
+forcetextureshadow models/props_coalmines/wood_fence_short_64.mdl
 
 //passtime lights
 
@@ -132,5 +143,3 @@ passtime/neons/neon_green_stripe		47 253 85 50
 passtime/neons/neon_orange_stripe	255 178 69 50
 passtime/neons/neon_red_stripe		255 4 4 50
 passtime/neons/neon_yellow_stripe	241 255 84 50
-
-lights/white008			255 255 255 20
