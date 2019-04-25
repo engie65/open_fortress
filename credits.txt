@@ -56,7 +56,7 @@ Omniary
 Music:
 Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque)
 MrModez (At Fortress' Gate, Winpanel Music)
-Thoopje (DMChase)
+Thoopje (DMChase, DM Skate Theme)
 
 Maps:
 AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone, TVLand, Court of Death, DM_Johnny, MAP07 Dead Simple)
