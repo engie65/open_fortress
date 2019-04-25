@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "169"
+	"mapversion" "170"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "169"
+	"mapversion" "170"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites"
@@ -9011,6 +9011,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -9040,6 +9041,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -9069,6 +9071,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -9098,6 +9101,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_small.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -9393,6 +9397,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_large.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -9592,6 +9597,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -9663,6 +9669,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -10094,7 +10101,7 @@ entity
 	"origin" "932.164 128 936"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10179,7 +10186,7 @@ entity
 	"origin" "-923.934 -128 936"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10255,7 +10262,7 @@ entity
 	"spawn_sound" "items/itembk2.wav"
 	"targetname" "Weapon_Rocket"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_original"
+	"weaponname" "tf_weapon_rocketlauncher_dm"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket,skin,0,0,-1"
@@ -10264,7 +10271,7 @@ entity
 	"origin" "10.4243 0 41"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10350,7 +10357,7 @@ entity
 	"origin" "-708 0 232"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10435,7 +10442,7 @@ entity
 	"origin" "-520 -280 936"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10521,7 +10528,7 @@ entity
 	"origin" "695.091 0 232"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10607,7 +10614,7 @@ entity
 	"origin" "444 256 936"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -10693,10 +10700,64 @@ entity
 	"origin" "-28 288 380.801"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "3862"
+	"classname" "env_tonemap_controller"
+	"targetname" "tonemap_global"
+	"origin" "626.893 114.684 200.028"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4768]"
+	}
+}
+entity
+{
+	"id" "3864"
+	"classname" "color_correction"
+	"fadeInDuration" "0.0"
+	"fadeOutDuration" "0.0"
+	"filename" "scripts/2fort_global.raw"
+	"maxfalloff" "-1"
+	"maxweight" "1.0"
+	"minfalloff" "-1"
+	"targetname" "color_global"
+	"origin" "626.893 146.684 200.028"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4768]"
+	}
+}
+entity
+{
+	"id" "3868"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "tonemap_global,SetAutoExposureMin,.8,0,-1"
+		"OnMapSpawn" "tonemap_global,SetAutoExposureMax,1.1,0,-1"
+		"OnMapSpawn" "tonemap_global,SetBloomScale,.5,0,-1"
+	}
+	"origin" "626.893 114.684 225.028"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4268]"
 	}
 }
 cameras

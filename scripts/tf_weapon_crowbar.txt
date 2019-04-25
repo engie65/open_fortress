@@ -48,7 +48,7 @@
 	{
 		"weapon"
 		{
-				"file"		"sprites/crowbar_bucket_dm"
+				"file"		"sprites/crowbar_bucket"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -56,7 +56,7 @@
 		}
 		"weapon_s"
 		{	
-				"file"		"sprites/crowbar_bucket_dm_blue"
+				"file"		"sprites/crowbar_bucket_blue"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"

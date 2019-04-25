@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "358"
+	"mapversion" "359"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "358"
+	"mapversion" "359"
 	"classname" "worldspawn"
 	"angles" "0 0 0"
 	"detailmaterial" "detail/detailsprites_2fort"
@@ -24245,6 +24245,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_large.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24509,6 +24510,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_medium.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24534,6 +24536,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24600,6 +24603,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_medium.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24625,6 +24629,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_large.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24650,6 +24655,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_large.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24675,6 +24681,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_medium.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24735,6 +24742,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24760,6 +24768,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24785,6 +24794,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24810,6 +24820,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24835,6 +24846,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24860,6 +24872,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24885,6 +24898,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24910,6 +24924,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -24935,6 +24950,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -26200,6 +26216,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/medkit_small.mdl"
 	"pickup_sound" "Healthkit.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -26225,6 +26242,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -26250,6 +26268,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -26275,6 +26294,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -26300,6 +26320,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"HiddenWhenRespawning" "1"
+	"model" "models/items/ammopack_medium.mdl"
 	"pickup_sound" "AmmoPack.Touch"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
@@ -36191,7 +36212,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Rocket"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_original"
+	"weaponname" "tf_weapon_rocketlauncher_dm"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket,skin,0,0,-1"
@@ -36201,7 +36222,7 @@ entity
 	"origin" "408 -156 -272.199"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -36309,7 +36330,7 @@ entity
 	"spawn_sound" "Item.Materialize"
 	"targetname" "Weapon_Rocket1"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_original"
+	"weaponname" "tf_weapon_rocketlauncher_dm"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Rocket1,skin,0,0,-1"
@@ -36319,7 +36340,7 @@ entity
 	"origin" "-1318.01 607.603 -48.1994"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -36437,7 +36458,7 @@ entity
 	"origin" "-344 768 -16.1994"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -36556,7 +36577,7 @@ entity
 	"origin" "-24 448 -15.1994"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -36674,7 +36695,7 @@ entity
 	"origin" "-844.197 -0.174393 -15.1994"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -36792,7 +36813,7 @@ entity
 	"origin" "-656 -128 -267.199"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -36878,7 +36899,7 @@ entity
 	"origin" "-308 -288 -16"
 	editor
 	{
-		"color" "0 0 200"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 1000]"
@@ -36980,6 +37001,60 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
+	"id" "27654"
+	"classname" "env_tonemap_controller"
+	"targetname" "tonemap_global"
+	"origin" "-444.297 116.442 -304"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4768]"
+	}
+}
+entity
+{
+	"id" "27656"
+	"classname" "color_correction"
+	"fadeInDuration" "0.0"
+	"fadeOutDuration" "0.0"
+	"filename" "scripts/2fort_global.raw"
+	"maxfalloff" "-1"
+	"maxweight" "1.0"
+	"minfalloff" "-1"
+	"targetname" "color_global"
+	"origin" "-444.297 148.442 -304"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4768]"
+	}
+}
+entity
+{
+	"id" "27660"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	connections
+	{
+		"OnMapSpawn" "tonemap_global,SetAutoExposureMin,.8,0,-1"
+		"OnMapSpawn" "tonemap_global,SetAutoExposureMax,1.1,0,-1"
+		"OnMapSpawn" "tonemap_global,SetBloomScale,.5,0,-1"
+	}
+	"origin" "-444.297 116.442 -279"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[9000 -4268]"
 	}
 }
 cameras
