@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "101"
+	"mapversion" "102"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "101"
+	"mapversion" "102"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -24941,7 +24941,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "Weapon_Shotgun"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_shotgun_soldier"
+	"weaponname" "tf_weapon_shotgun_mercenary"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_Shotgun,skin,1,10,-1"
@@ -25267,7 +25267,7 @@ entity
 	"StartDisabled" "0"
 	"targetname" "Weapon_RocketLunchBox"
 	"texframeindex" "0"
-	"weaponname" "tf_weapon_original"
+	"weaponname" "tf_weapon_rocketlauncher_dm"
 	connections
 	{
 		"OnPlayerTouch" "Emitter_RocketLunchBox,skin,1,20,-1"
