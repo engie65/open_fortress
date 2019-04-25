@@ -17,7 +17,7 @@ WeaponData
 
 	"clip_size"		"-1"
 	"default_clip"		"1"
-	"primary_ammo"		"TF_AMMO_TRIPMINE"
+"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
 
 	"weight"		"-10"

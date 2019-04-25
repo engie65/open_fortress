@@ -20,9 +20,10 @@ WeaponData
 
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_FLAMETHROWER"
+	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
 	clip_size		-1
+	"MaxAmmo"	"200"
 
 	// bucket_dms.
 	"bucket"		"0"

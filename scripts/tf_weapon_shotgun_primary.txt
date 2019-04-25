@@ -19,9 +19,12 @@ WeaponData
 	"TimeIdleEmpty"			"0.25"
 	"TimeReloadStart"		"0.1"
 	"TimeReload"			"0.5"
-	"primary_ammo"			"TF_AMMO_SHOTGUN"
+	
+	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"clip_size"			"6"
 	"default_clip"			"6"
+	"MaxAmmo"	"32"
+	
 	"ProjectileType"		"projectile_bullet"
 	"AmmoPerShot"			"1"
 	"HasTeamSkins_Viewmodel"			"1"

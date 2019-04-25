@@ -24,9 +24,10 @@ WeaponData
 	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_MINIGUN"
+	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
 	clip_size		-1
+	"MaxAmmo"	"200"
 
 	// bucket
 	"bucket"		"0"
