@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\player\mercenary\mercenary_gib_red"
+	"$basetexture" "models\player\mercenary\mercenary_red"
 	
        "$detail"            "models\player\mercenary\mercenary_gib"
        "$detailscale"       "1"       
