@@ -63,7 +63,7 @@ AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad P
 Hambooga (The Bad Place [Artpass], The Longest Yard, Aerowalk)
 DrPyspy (Blood Run, Parley [Original layout])
 Richter (Junkyard, Office [Textures])
-HDMineFace (Framework)
+HDMineFace (Framework, Bruh)
 Chrissy (Office)
 Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, Backfort, Weapon devtest map)
 Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_DM2, DM Lumberyard, Goldeneye Facility, Pool Party)
