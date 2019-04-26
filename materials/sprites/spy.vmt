@@ -1,0 +1,6 @@
+"Sprite"
+{
+	"$basetexture" "sprites/spy"
+	"$spriteorientation" "parallel_upright"
+	"$spriteorigin" "[ 0.50 0.50 ]"
+}
