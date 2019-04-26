@@ -23,7 +23,7 @@ WeaponData
 	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_MINIGUN"
+	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
 	clip_size		-1
 
@@ -34,6 +34,8 @@ WeaponData
 	// bucket_dms.
 	"bucket_dm"		"3"
 	"bucket_dm_position"	"4"
+	
+	"MaxAmmo"	"200"
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_minigun_heavy.mdl"

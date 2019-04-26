@@ -22,10 +22,11 @@ WeaponData
 	"BrassModel"		"models/weapons/shells/shell_sniperrifle.mdl"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_SNIPERRIFLE"
+	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
 	"clip_size"		"-1"
 	"default_clip"		"75"
+	"MaxAmmo"	"25"
 
 	// bucket.	
 	"bucket"			"0"

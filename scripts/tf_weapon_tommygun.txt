@@ -23,13 +23,13 @@ WeaponData
 	"UseRapidFireCrits"	"1"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
-	"DontDrop"	"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_SMG"
+	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
 	clip_size		50
 	default_clip		50
+	"MaxAmmo"	"75"
 
 	// bucket.	
 	"bucket"			"1"

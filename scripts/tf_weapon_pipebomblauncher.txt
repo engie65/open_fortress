@@ -23,11 +23,12 @@ WeaponData
 	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PIPEBOMBLAUNCHER"
+	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
 	"clip_size"		"8"
 	"default_clip"		"8"
 	"ProjectileType"	"projectile_pipe_remote"
+	"MaxAmmo"	"24"
 
 	// bucket.	
 	"bucket"			"1"

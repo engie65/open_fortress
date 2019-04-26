@@ -22,11 +22,12 @@ WeaponData
 
 	
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_SYNRINGES"
+	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
 	clip_size		40
 	default_clip		40
-
+	"MaxAmmo"	"150"
+	
 	// bucket.	
 	"bucket"			"0"
 	"bucket_position"		"0"
