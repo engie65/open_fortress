@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8163"
-	"mapversion" "23"
+	"mapversion" "24"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "23"
+	"mapversion" "24"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -12618,7 +12618,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "384 256 -120"
 	editor
 	{
@@ -12636,7 +12636,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-816 144 -119"
 	editor
 	{
@@ -12768,7 +12768,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-816 -528 -119"
 	editor
 	{
@@ -12786,7 +12786,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-400 -240 -119"
 	editor
 	{
@@ -12804,7 +12804,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-400 -592 -119"
 	editor
 	{
@@ -12822,7 +12822,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "912 -240 -112"
 	editor
 	{
@@ -13043,7 +13043,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "-608 32 80"
 	editor
 	{
@@ -13061,7 +13061,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "192 -128 80"
 	editor
 	{
@@ -13079,7 +13079,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "896 -896 -112"
 	editor
 	{
@@ -13097,7 +13097,7 @@ entity
 	"spawnflags" "1023"
 	"SpawnMode" "0"
 	"StartDisabled" "0"
-	"TeamNum" "0"
+	"TeamNum" "4"
 	"origin" "912 -1232 -112"
 	editor
 	{
