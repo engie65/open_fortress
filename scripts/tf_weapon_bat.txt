@@ -15,7 +15,8 @@
 	"TimeIdle"			"5.0"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
-
+	"UsesCritAnimation"			"1"
+	
 	// Ammo & Clip
 	"primary_ammo"			"None"
 	"secondary_ammo"		"None"

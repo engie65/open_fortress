@@ -17,6 +17,7 @@ WeaponData
 	"Secondary_SmackDelay"		"0.3"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
+	"UsesCritAnimation"			"1"
 
 	// Ammo & Clip
 	"primary_ammo"			"None"
