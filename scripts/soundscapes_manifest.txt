@@ -57,4 +57,12 @@ soundscapes_manifest
 		"file"		"scripts/soundscapes_trainyard.txt"
 		"file"		"scripts/soundscapes_labs.txt"
 		"file"		"scripts/soundscapes_strike.txt"
+
+	        //half life 2 episodes and lost coast
+  	        "file"		"scripts/soundscapes_lostcoast.txt"
+	        "file"		"scripts/soundscapes_citadel_episodic.txt"
+	        "file"		"scripts/soundscapes_city_episodic.txt"
+	        "file"		"scripts/soundscapes_silo.txt"
+       	        "file"		"scripts/soundscapes_outland.txt"	
+	        "file"		"scripts/soundscapes_outland2.txt"
 }
