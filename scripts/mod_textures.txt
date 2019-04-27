@@ -383,6 +383,14 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"d_assaultrifle"
+		{
+				"file"	"HUD/d_images"
+				"x"		"0"
+				"y"		"128"
+				"width"		"96"
+				"height"	"32"
+		}
 		"d_club"
 		{
 				"file"	"HUD/d_images"
@@ -424,6 +432,14 @@
 				"height"	"32"
 		}
 		"d_shotgun_soldier"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"0"
+				"y"		"256"
+				"width"		"96"
+				"height"	"32"
+		}
+		"d_shotgun_mercenary"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"0"
@@ -520,6 +536,14 @@
 				"height"	"32"
 		}
 		"d_fists"
+		{
+				"file"	"HUD/d_images"		
+				"x"		"0"
+				"y"		"448"
+				"width"		"96"
+				"height"	"32"
+		}
+		"d_berserk"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"0"
@@ -752,6 +776,14 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"dneg_assaultrifle"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"128"
+				"width"		"96"
+				"height"	"32"
+		}
 		"dneg_club"
 		{
 				"file"	"HUD/dneg_images"
@@ -793,6 +825,14 @@
 				"height"	"32"
 		}
 		"dneg_shotgun_soldier"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"256"
+				"width"		"96"
+				"height"	"32"
+		}
+		"dneg_shotgun_mercenary"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
@@ -889,6 +929,14 @@
 				"height"	"32"
 		}
 		"dneg_fists"
+		{
+				"file"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"448"
+				"width"		"96"
+				"height"	"32"
+		}
+		"dneg_berserk"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"

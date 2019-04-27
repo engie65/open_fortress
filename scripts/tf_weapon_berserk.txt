@@ -10,9 +10,9 @@ WeaponData
 	"DontDrop"			"1"
 	
 	// Attributes TF.
-	"Damage"			"65"
+	"Damage"			"999"
 	"InstagibDamage"	"999"
-	"TimeFireDelay"			"0.8"
+	"TimeFireDelay"			"0.4"
 	"TimeIdle"			"5.0"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
