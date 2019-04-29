@@ -8,6 +8,9 @@ Alex Episode
 MaartenS11
 Rara
 
+HUD editing:
+Nbc66
+
 Gameplay Lead:
 AlphaBlaster
 
@@ -78,6 +81,7 @@ John Fortnite Kennedy (Wiseau, DM 2Fort, Range)
 Fairweather
 Savva (Hollow)
 Polybagel (DE_Cache)
+
 
 Special thanks to:
 Trotim (For helping KaidemonLP with programming)

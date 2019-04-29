@@ -4,32 +4,33 @@
 	{
 		"ControlName"		"CTFClientScoreBoardDialog"
 		"fieldName"		"scoreinfo"
-		"xpos"			"c-300"
+		"xpos"			"c-200"
 		"xpos_lodef"	"34"
 		"xpos_hidef"	"4"
-		"ypos"			"31"
-		"wide"			"394"
+		"ypos"			"131"
+		"wide"			"396"
 		"wide_lodef"	"560"
 		"wide_hidef"	"620"
 		"tall"			"568"
-		"autoResize"	"0"
+		"autoResize"	"4"
+        "spacer"		"5"		
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"		"0"
+		"tabPosition"		"30"
 		"avatar_width"		"65"	[$WIN32]
 		"avatar_width"		"0"		[$X360]
-		"name_width"		"120"	[$WIN32]
-		"name_width"		"120"	[$X360]
-		"score_width"		"25"
+		"name_width"		"122"	[$WIN32]
+		"name_width"		"122"	[$X360]
+		"score_width"		"29"
 		"score_width_lodef"	"35"
 		"score_width_hidef"	"50"
-		"ping_width"		"30"	[$WIN32]
-		"ping_width"		"50"	[$X360]		// Larger to push the value off the edge
-		"kills_width"		"25"
+		"ping_width"		"26"	[$WIN32]
+		"ping_width"		"30"	[$X360]		// Larger to push the value off the edge
+		"kills_width"		"23"
 		"kills_width_lodef"	"35"
 		"kills_width_hidef"	"50"	
-		"status_width"		"25"	[$WIN32]
+		"status_width"		"30"	[$WIN32]
 		"nemesis_width"		"25"	[$WIN32]	
 	}
 	"MainBG"
@@ -61,12 +62,12 @@
 		"textAlignment"		"west"
 		"xpos"			"310"
 		"xpos_hidef"	"20"
-		"ypos"			"85"
+		"ypos"			"69"
 		"ypos_lodef"	"62"
 		"wide"			"300"
 		"tall"			"20"
 		"autoResize"	"0"
-		"pinCorner"		"0"
+		"pinCorner"		"1"
 		"visible"		"1"	[$WIN32]
 		"enabled"		"1"		
 	}
@@ -82,7 +83,7 @@
 		"ypos"			"80"
 		"ypos_lodef"	"62"
 		"wide"			"300"
-		"tall"			"20"
+		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"	[$WIN32]
@@ -96,7 +97,7 @@
 		"font"			"HudFontMedium"
 		"fgcolor"		"TanLight"
 		"textAlignment"		"west"
-		"xpos"			"280"
+		"xpos"			"270"
 		"xpos_hidef"	"20"
 		"ypos"			"105"
 		"ypos_lodef"	"62"
@@ -114,15 +115,15 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"HorizontalLine"
 		"xpos"			"10"
-		"xpos_lodef"	"105"
-		"ypos"			"133"	[$WIN32]
+		"xpos_lodef"	"10"
+		"ypos"			"135"	[$WIN32]
 		"ypos"			"322"	[$X360]
 		"zpos"			"3"
-		"wide"			"465"
+		"wide"			"380"
 		"wide_lodef"	"434"
 		"wide_hidef"	"464"
-		"tall"			"3"
-		"autoResize"	"0"
+		"tall"			"1"
+		"autoResize"	"3"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -134,22 +135,22 @@
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"MercenaryPlayerList"
-		"xpos"			"5"
+		"xpos"			"6.5"
 		"xpos_lodef"	"10"
 		"xpos_hidef"	"30"
-		"ypos"			"122"
-		"zpos"			"20"
-		"wide"			"570"
+		"ypos"			"120"
+		"zpos"			"2"
+		"wide"			"390"
 		"wide_lodef"	"267"
 		"wide_hidef"	"277"
-		"tall"			"250"	[$WIN32]
+		"tall"			"300"	[$WIN32]
 		"tall"			"255"	[$X360]
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"autoresize"	"3"
-		"linespacing"	"20"
+		"autoresize"	"0"
+		"linespacing"	"26.3"
 		"fgcolor"		"blue"
 	}
 	"Spectators"
@@ -159,12 +160,12 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%spectators%"
 		"textAlignment"		"west"
-		"xpos"			"115"
+		"xpos"			"15"
 		"xpos_hidef"	"135"
-		"ypos"			"327"	[$WIN32]
+		"ypos"			"427"	[$WIN32]
 		"ypos"			"277"	[$X360]
 		"zpos"			"4"
-		"wide"			"424"
+		"wide"			"70"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -175,12 +176,12 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"VerticalLine"
-		"xpos"			"40"
+		"xpos"			"48"
 		"xpos_lodef"	"279"
 		"xpos_hidef"	"309"
 		"ypos"			"120"
-		"zpos"			"10"
-		"wide"			"2"
+		"zpos"			"3"
+		"wide"			"1"
 		"tall"			"300"
 		"tall_lodef"	"206"
 		"tall_hidef"	"212"
@@ -196,12 +197,12 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"VerticalLine"
-		"xpos"			"171"
+		"xpos"			"175"
 		"xpos_lodef"	"279"
 		"xpos_hidef"	"309"
 		"ypos"			"120"
 		"zpos"			"10"
-		"wide"			"2"
+		"wide"			"1"
 		"tall"			"300"
 		"tall_lodef"	"206"
 		"tall_hidef"	"212"
@@ -217,12 +218,12 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"VerticalLine"
-		"xpos"			"193"
+		"xpos"			"202"
 		"xpos_lodef"	"279"
 		"xpos_hidef"	"309"
 		"ypos"			"120"
 		"zpos"			"10"
-		"wide"			"2"
+		"wide"			"1"
 		"tall"			"300"
 		"tall_lodef"	"206"
 		"tall_hidef"	"212"
@@ -238,12 +239,33 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"VerticalLine"
-		"xpos"			"219"
+		"xpos"			"230"
 		"xpos_lodef"	"279"
 		"xpos_hidef"	"309"
 		"ypos"			"120"
 		"zpos"			"10"
-		"wide"			"2"
+		"wide"			"1"
+		"tall"			"300"
+		"tall_lodef"	"206"
+		"tall_hidef"	"212"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"fillcolor"		"249 249 168 255"
+		"PaintBackgroundType"	"0"
+	}
+		"VerticalLine4"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"VerticalLine"
+		"xpos"			"260"
+		"xpos_lodef"	"279"
+		"xpos_hidef"	"309"
+		"ypos"			"120"
+		"zpos"			"10"
+		"wide"			"1"
 		"tall"			"300"
 		"tall_lodef"	"206"
 		"tall_hidef"	"212"
@@ -261,11 +283,11 @@
 		"fieldName"		"ClassImage"
 		"xpos"			"10"
 		"xpos_lodef"	"12"
-		"ypos"			"415"	[$WIN32]
+		"ypos"			"423"	[$WIN32]
 		"ypos"			"275"	[$X360]
 		"zpos"			"3"
 		"wide"			"92"
-		"tall"			"92"
+		"tall"			"82"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/class_scoutred"
@@ -278,14 +300,14 @@
 		"font"			"ScoreboardMedium"
 		"labelText"		"%playername%"
 		"textAlignment"		"west"
-		"xpos"			"95"
+		"xpos"			"96"
 		"xpos_lodef"	"105"
-		"ypos"			"425"	[$WIN32]
+		"ypos"			"410"	[$WIN32]
 		"ypos"			"302"	[$X360]
-		"zpos"			"3"
+		"zpos"			"600"
 		"wide"			"325"	[$WIN32]
 		"wide"			"410"	[$X360]
-		"tall"			"20"
+		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -300,7 +322,7 @@
 		"ypos"			"445"	[$WIN32]
 		"ypos"			"322"	[$X360]
 		"zpos"			"3"
-		"wide"			"465"
+		"wide"			"290"
 		"wide_lodef"	"434"
 		"wide_hidef"	"464"
 		"tall"			"1"
@@ -325,7 +347,7 @@
 		"ypos"			"347"	[$WIN32]
 		"ypos"			"302"	[$X360]
 		"zpos"			"3"
-		"wide"			"140"
+		"wide"			"160"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -347,7 +369,7 @@
 		"zpos"			"3"
 		"wide"			"140"
 		"tall"			"20"
-		"autoResize"	"0"
+		"autoResize"	"1"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
