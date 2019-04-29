@@ -17,21 +17,21 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"		"30"
-		"avatar_width"		"65"	[$WIN32]
+		"tabPosition"		"50"
+		"avatar_width"		"60"	[$WIN32]
 		"avatar_width"		"0"		[$X360]
-		"name_width"		"122"	[$WIN32]
+		"name_width"		"30"	[$WIN32]
 		"name_width"		"122"	[$X360]
 		"score_width"		"29"
 		"score_width_lodef"	"35"
 		"score_width_hidef"	"50"
-		"ping_width"		"26"	[$WIN32]
+		"ping_width"		"50"	[$WIN32]
 		"ping_width"		"30"	[$X360]		// Larger to push the value off the edge
-		"kills_width"		"23"
+		"kills_width"		"140"
 		"kills_width_lodef"	"35"
 		"kills_width_hidef"	"50"	
-		"status_width"		"30"	[$WIN32]
-		"nemesis_width"		"25"	[$WIN32]	
+		"status_width"		"40"	[$WIN32]
+		"nemesis_width"		"20"	[$WIN32]	
 	}
 	"MainBG"
 	{
@@ -60,7 +60,7 @@
 		"font"			"ScoreboardMedium"
 		"labelText"		"%mercenaryteamplayercount%"
 		"textAlignment"		"west"
-		"xpos"			"310"
+		"xpos"			"320"
 		"xpos_hidef"	"20"
 		"ypos"			"69"
 		"ypos_lodef"	"62"
@@ -80,9 +80,9 @@
 		"textAlignment"		"west"
 		"xpos"			"20"
 		"xpos_hidef"	"20"
-		"ypos"			"80"
+		"ypos"			"70"
 		"ypos_lodef"	"62"
-		"wide"			"300"
+		"wide"			"250"
 		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -97,12 +97,32 @@
 		"font"			"HudFontMedium"
 		"fgcolor"		"TanLight"
 		"textAlignment"		"west"
-		"xpos"			"270"
+		"xpos"			"70"
 		"xpos_hidef"	"20"
-		"ypos"			"105"
+		"ypos"			"100"
+		"ypos_lodef"	"62"
+		"wide"			"200"
+		"tall"			"23"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"	[$WIN32]
+		"enabled"		"1"
+		"labelText"		"playing till"
+		
+	}
+		"HudFragLimitLabel"
+	{
+		"ControlName"	"CTFLabel"
+		"fieldName"		"HudKillsLabel"
+		"font"			"HudFontMedium"
+		"fgcolor"		"TanLight"
+		"textAlignment"		"west"
+		"xpos"			"225"
+		"xpos_hidef"	"20"
+		"ypos"			"100"
 		"ypos_lodef"	"62"
 		"wide"			"300"
-		"tall"			"20"
+		"tall"			"23"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"	[$WIN32]
@@ -164,7 +184,23 @@
 		"tall"			"82"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/class_scoutred"
+		"image"			"../hud/class_mercenarymercenary"
+		"scaleImage"		"1"	
+	}
+	"ClassImageColorless"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"ClassImageColorless"
+		"xpos"			"10"
+		"xpos_lodef"	"12"
+		"ypos"			"423"	[$WIN32]
+		"ypos"			"275"	[$X360]
+		"zpos"			"3"
+		"wide"			"92"
+		"tall"			"82"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../hud/colorless/class_mercenarycolorless"
 		"scaleImage"		"1"	
 	}
 	"PlayerNameLabel"
@@ -255,7 +291,7 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"Score:"
 		"textAlignment"		"east"
-		"xpos"			"30"
+		"xpos"			"26"
 		"ypos"			"445"	[$WIN32]
 		"ypos"			"320"	[$X360]
 		"zpos"			"3"
@@ -273,7 +309,7 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%playerscore%"
 		"textAlignment"		"west"
-		"xpos"			"129"	[$WIN32]
+		"xpos"			"123"	[$WIN32]
 		"ypos"			"445"	[$WIN32]
 		"ypos"			"320"	[$X360]
 		"zpos"			"3"
@@ -291,7 +327,7 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"#TF_ScoreBoard_DeathsLabel"
 		"textAlignment"		"east"
-		"xpos"			"30"
+		"xpos"			"31"
 		"ypos"			"455"	[$WIN32]
 		"ypos"			"330"	[$X360]
 		"zpos"			"3"
@@ -309,7 +345,7 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%deaths%"
 		"textAlignment"		"west"
-		"xpos"			"129"	[$WIN32]
+		"xpos"			"127"	[$WIN32]
 		"ypos"			"455"	[$WIN32]
 		"ypos"			"330"	[$X360]
 		"zpos"			"3"
@@ -327,7 +363,7 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"#TF_ScoreBoard_AssistsLabel"
 		"textAlignment"		"east"
-		"xpos"			"30"
+		"xpos"			"33"
 		"ypos"			"465"	[$WIN32]
 		"ypos"			"340"	[$X360]
 		"zpos"			"3"
@@ -345,7 +381,7 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%assists%"
 		"textAlignment"		"west"
-		"xpos"			"129"	[$WIN32]
+		"xpos"			"130"	[$WIN32]
 		"ypos"			"465"	[$WIN32]
 		"ypos"			"330"	[$X360]
 		"zpos"			"3"
@@ -363,7 +399,7 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"#TF_ScoreBoard_DestructionLabel"
 		"textAlignment"		"east"
-		"xpos"			"30"
+		"xpos"			"47"	
 		"ypos"			"475"	[$WIN32]
 		"ypos"			"350"	[$X360]
 		"zpos"			"3"
@@ -381,7 +417,7 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%destruction%"
 		"textAlignment"		"west"
-		"xpos"			"129"	[$WIN32]
+		"xpos"			"142"	[$WIN32]
 		"ypos"			"475"	[$WIN32]
 		"zpos"			"3"
 		"wide"			"35"
