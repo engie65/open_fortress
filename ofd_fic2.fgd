@@ -3,7 +3,7 @@
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V6.4, 26th of April 2019
+// V6.5, 29th of April 2019
 //
 //=============================================================================
 
@@ -2003,6 +2003,7 @@
 [
 	model(studio) : "Model" :  : "Change the model to something other than the default model." 
 	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
+	respawndelay(integer) : "Respawn Delay" : 0 : "Makes the item spawn after a initial delay."
 	spawn_sound(sound): "Spawn Sound" : "Item.Materialize" : "Sound to play when Pickup Spawns."
 	HiddenWhenRespawning(choices) : "Hidden while Respawning?" : 1 : "Weather or not the pickup becomes hidden on pickup." =
 	[
@@ -7264,6 +7265,8 @@
 @PointClass base(prop_dynamic_base, TeamNum, EnableDisable) studioprop("models/flag/briefcase.mdl") = item_teamflag :
     "Team Fortress 2 flag entity."
 [
+	ReturnTime(integer) : "Return time (in seconds)" : 60 : "Length of time (in seconds) before dropped flag/intelligence returns to base."
+
 	GameType(choices) : "Game Type" : 0 : "Type of game this flag will be used for." =
 	[
 		0 : "CTF"
