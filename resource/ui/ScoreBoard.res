@@ -369,6 +369,22 @@
 		"image"			"../hud/class_scoutred"
 		"scaleImage"		"1"	
 	}
+	"ClassImageColorless"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"ClassImageColorless"
+		"xpos"			"10"
+		"xpos_lodef"	"12"
+		"ypos"			"423"	[$WIN32]
+		"ypos"			"275"	[$X360]
+		"zpos"			"3"
+		"wide"			"92"
+		"tall"			"82"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../hud/colorless/class_mercenarycolorless"
+		"scaleImage"		"1"	
+	}
 	"PlayerNameLabel"
 	{
 		"ControlName"		"CTFLabel"
