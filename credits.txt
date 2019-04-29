@@ -7,9 +7,7 @@ Programming:
 Alex Episode
 MaartenS11
 Rara
-
-HUD editing:
-Nbc66
+Chrissy
 
 Gameplay Lead:
 AlphaBlaster
@@ -24,7 +22,7 @@ Voice of the Mercenary:
 Stachekip
 
 The Announcer:
-John Byers
+"John Fitzgerald Byers"
 
 Weapon and misc. player sound effects:
 Stachekip
@@ -49,6 +47,7 @@ FissionMetroid
 
 Menu and promotional art:
 Gibus Cat
+"John Fortnite Kennedy"
 
 Ingame menu Logo Concept:
 HDMineFace
@@ -56,29 +55,31 @@ HDMineFace
 Ambient sounds (Wiseau):
 Omniary
 
+HUD editing:
+Nbc66
+
 Music:
-Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque)
+Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque, Facility, Stalker, Orch, DMStuff, TF2Beat, Mayann)
 MrModez (At Fortress' Gate, Winpanel Music)
 Thoopje (DMChase, DM Skate Theme)
 
 Maps:
 AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone, TVLand, Court of Death, DM_Johnny, MAP07 Dead Simple)
 Hambooga (The Bad Place [Artpass], The Longest Yard, Aerowalk)
-DrPyspy (Blood Run, Parley [Original layout])
+DrPyspy (Blood Run, Parley [Original layout], DM Johnny [Tomb Fetus original map])
 Richter (Junkyard, Office [Textures])
 HDMineFace (Framework, Bruh)
 Chrissy (Office)
-Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, Backfort, Weapon devtest map)
+Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, DM+CTF Backfort, Weapon devtest map)
 Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_DM2, DM Lumberyard, Goldeneye Facility, Pool Party)
 BarkinDarkin (Grosse)
 MacD11 (Wiseau, DM_Johnny [Original Layout], Range)
-KaiDemonLP (dm_2fort_weapontest)
+KaiDemonLP (dm_2fort_weapontest, other devtest maps)
 Gibus Cat (Indev DM_2Fort)
 Rara (Crossfire)
 Bakscratch (DM Watergate, Skate)
 Hex (Skate)
-John Fortnite Kennedy (Wiseau, DM 2Fort, Range)
-Fairweather
+"John Fortnite Kennedy" (Wiseau, DM 2Fort, Range, Dust2)
 Savva (Hollow)
 Polybagel (DE_Cache)
 
