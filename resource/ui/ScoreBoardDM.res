@@ -20,7 +20,7 @@
 		"tabPosition"		"30"
 		"avatar_width"		"65"	[$WIN32]
 		"avatar_width"		"0"		[$X360]
-		"name_width"		"122"	[$WIN32]
+		"name_width"		"250"	[$WIN32]
 		"name_width"		"122"	[$X360]
 		"score_width"		"29"
 		"score_width_lodef"	"35"
@@ -30,7 +30,7 @@
 		"kills_width"		"23"
 		"kills_width_lodef"	"35"
 		"kills_width_hidef"	"50"	
-		"status_width"		"30"	[$WIN32]
+		"status_width"		"20"	[$WIN32]
 		"nemesis_width"		"25"	[$WIN32]	
 	}
 	"MainBG"
@@ -164,7 +164,7 @@
 		"tall"			"82"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/class_scoutred"
+		"image"			"../hud/class_mercenarymercenary"
 		"scaleImage"		"1"	
 	}
 	"PlayerNameLabel"
