@@ -30,6 +30,9 @@
 		"invis"
 		{
 		}
+		"vm_invis"
+		{
+		}
 		"ItemTintColor"
 		{
 			"resultVar"		"$colortint_tmp"

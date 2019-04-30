@@ -15,4 +15,12 @@
 	"$rimlightexponent" "4"			// Exponent for phong component of rim lighting		
 	"$rimlightboost" "1"			// Boost for ambient cube component of rim lighting
 	"$rimmask" "1"					// Mask the rim light with alpha channel of specular exponent map
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+	}
 }

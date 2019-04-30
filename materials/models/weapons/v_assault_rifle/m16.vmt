@@ -12,6 +12,14 @@
 	"$rimlight" "1"
 	"$rimlightexponent" "2"	
 	"$rimlightboost" ".25"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+	}
 	
 //"$BASEMAPLUMINANCEPHONGMASK" "1"
 //"$color2" "[1.5 1.5 1.5]"

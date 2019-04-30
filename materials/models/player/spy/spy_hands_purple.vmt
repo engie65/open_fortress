@@ -1,20 +1,24 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models\player\medic\medic_hands_purple"
-	"$basemapalphaphongmask" "1"
-
+	"$basetexture" "models\player\spy\spy_hands_purple"
+	"$bumpmap" "models/player/spy/spy_hands_normal"
+		
 	"$phong" "1"
-	"$phongexponent" "80"
-	"$phongboost" ".2"	
-	"$lightwarptexture" "models\player\engineer\engineer_hands_lightwarp"
-	"$phongfresnelranges"	"[1 5 10]"
+	//"$phongexponenttexture" "models/player/spy/spy_hands_exponent"
+	"$phongexponent" "5"
+	"$phongboost" ".25"	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	"$phongfresnelranges"	"[.5 .5 10]"
 	"$halflambert" "1"
-	
+
 	// Rim lighting parameters
 	"$rimlight" "1"												// To enable rim lighting (requires phong)
 	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
 	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 
+	"360?$color2" "[ 0.7 0.7 0.7 ]"
+
+	// Cloaking
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
@@ -23,6 +27,3 @@
 		}
 	}
 }
-
-
-

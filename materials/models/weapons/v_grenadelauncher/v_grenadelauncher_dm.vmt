@@ -10,5 +10,13 @@
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
 
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+	}
+
 	"$color2" "[ 0.6 0.6 0.6 ]"
 }

@@ -38,6 +38,9 @@
 
 	"Proxies"
 	{
+		"vm_invis"
+		{
+		}
 		"spy_invis"
 		{
 		}

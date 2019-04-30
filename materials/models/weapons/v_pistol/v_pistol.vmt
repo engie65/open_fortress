@@ -14,4 +14,12 @@
 	"$rimlight" "1"
 	"$rimlightexponent" "4"	
 	"$rimlightboost" "1"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"vm_invis"
+		{
+		}
+	}
 }
