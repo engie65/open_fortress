@@ -15,8 +15,6 @@
 	nohimodel		"1" // gameui.dll
 	nocrosshair		"0" // gameui.dll
 	nodifficulty	"1" // gameui.dll
-	advcrosshair	"1" // gameui.dll
-	l4dcrosshair	"0" // unused
 	supportsvr		"0" // engine.dll + gameui.dll
 	bots			"0" // gameui.dll
 	nodegraph		"1" // engine.dll
@@ -126,6 +124,8 @@
 			
 			game				|all_source_engine_paths|sourcetest/sourcetest_pak.vpk
 			game				|all_source_engine_paths|sourcetest
+			
+
 			
 			game+download		|gameinfo_path|download
 		}
