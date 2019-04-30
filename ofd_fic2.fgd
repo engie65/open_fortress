@@ -183,9 +183,7 @@
 		"env_particle_performance_monitor"
         "env_player_surface_trigger"
         "filter_activator_class"
-        "filter_activator_context"
         "filter_activator_mass_greater"
-        "filter_activator_model"
         "filter_activator_name"
         "filter_activator_team"
         "filter_activator_tfteam"
@@ -805,6 +803,8 @@
 
 	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
+	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
+	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
@@ -965,8 +965,16 @@
 	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
 	fadescale(float) : "Fade Scale" : : "If specified in the worldspawn, or if the engine is running below DirectX 8, entities will fade out even if the fade distances above aren't specified. This value gives more control over when this happens: numbers smaller than 1 cause the entity to fade out at further distances, and greater than 1 cause it to fade out at closer distances. Using 0 turns off the forced fade altogether."	
 	shadowcastdist(integer) : "Shadow Cast Distance" : : "Sets how far the entity casts dynamic shadows, in units. 0 means default distance from the shadow_control entity."
-	disableshadows(boolean) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows."
-	disablereceiveshadows(boolean) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity."
+	disableshadows(choices) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	disablereceiveshadows(choices) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	modelscale(float) : "Model Scale" : : "A multiplier for the size of the model. Negative values are accepted. Does not alter the physics collisions in most cases, however. Negative values can crash the game!"
 	linedivider4(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1021,9 +1029,16 @@
 	]
 	_minlight(string) : "Minimum Light Level" : : "The minimum level of ambient light that hits this brush."
 	shadowcastdist(integer) : "Shadow Cast Distance" : : "Sets how far the entity casts dynamic shadows, in units. 0 means default distance from the shadow_control entity."
-	disableshadows(boolean) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows."
-	disablereceiveshadows(boolean) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity."
-	
+	disableshadows(choices) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	disablereceiveshadows(choices) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	texframeindex(integer) : "Texture Frame" : : "The frame number for any animated textures on this entity."		
 	linedivider5(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1063,8 +1078,16 @@
 	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
 	fadescale(float) : "Fade Scale" : 1 : "If specified in the worldspawn, or if the engine is running below DirectX 8, entities will fade out even if the fade distances above aren't specified. This value gives more control over when this happens: numbers smaller than 1 cause the entity to fade out at further distances, and greater than 1 cause it to fade out at closer distances. Using 0 turns off the forced fade altogether."	
 	shadowcastdist(integer) : "Shadow Cast Distance" : : "Sets how far the entity casts dynamic shadows, in units. 0 means default distance from the shadow_control entity."
-	disableshadows(boolean) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows."
-	disablereceiveshadows(boolean) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity."
+	disableshadows(choices) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	disablereceiveshadows(choices) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	modelscale(float) : "Model Scale" : : "A multiplier for the size of the model. Negative values are accepted. Does not alter the physics collisions in most cases, however. Negative values can crash the game!"
 	linedivider6(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1113,8 +1136,16 @@
 	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
 	fadescale(float) : "Fade Scale" : 1 : "If specified in the worldspawn, or if the engine is running below DirectX 8, entities will fade out even if the fade distances above aren't specified. This value gives more control over when this happens: numbers smaller than 1 cause the entity to fade out at further distances, and greater than 1 cause it to fade out at closer distances. Using 0 turns off the forced fade altogether."	
 	shadowcastdist(integer) : "Shadow Cast Distance" : : "Sets how far the entity casts dynamic shadows, in units. 0 means default distance from the shadow_control entity."
-	disableshadows(boolean) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows."
-	disablereceiveshadows(boolean) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity."
+	disableshadows(choices) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	disablereceiveshadows(choices) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	modelscale(float) : "Model Scale" : : "A multiplier for the size of the model. Negative values are accepted. Does not alter the physics collisions in most cases, however. Negative values can crash the game!"
 	linedivider6(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1141,7 +1172,11 @@
 
 @BaseClass = EnableDisable
 [
-	StartDisabled(boolean) : "Start Disabled?" : 0
+	StartDisabled(choices) : "Start Disabled?" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	input Enable(void) : "Enable this entity."
 	input Disable(void) : "Disable this entity."
@@ -1170,8 +1205,11 @@
 
 @BaseClass base(BaseEntityBrush) = Trigger
 [
-	StartDisabled(boolean) : "Start Disabled?" : 0
-	
+	StartDisabled(choices) : "Start Disabled?" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	spawnflags(flags) = 
 	[
 		1: "Clients/Players/Bots" : 1
@@ -1417,7 +1455,11 @@
 	gibdir(angle) : "Precise Gib Direction" : "0 0 0" : "Specifies the direction to throw gibs when this breakable breaks. Be sure to select Use Precise Gib Dir in the Gibs Direction field!"
 	explodemagnitude(integer) : "Explode Magnitude" : 0 : "If non-zero, when this entity breaks it will create an explosion that causes the specified amount of damage."
 
-	nodamageforces(boolean) : "Damaging it Doesn't Push It" : 0 : "Used to determine whether or not damage should cause the brush to move."
+	nodamageforces(choices) : "Damaging it Doesn't Push It" : 0 : "Used to determine whether or not damage should cause the brush to move." =
+	[
+		0: "No"
+		1: "Yes"
+	]
 	gibmodel(string) : "Gib Model" :  : "Specify a custom gib model to break into, overriding the 'Material Type'."
 	spawnobject(choices) : "Spawn On Break" : 0 : "When broken, an entity of the selected type will be created. Hardcoded values." =
 	[
@@ -1472,11 +1514,19 @@
 @BaseClass base(Model, BaseAnimating, BreakableProp, EnableDisable) = prop_dynamic_base
 [
 	DefaultAnim(string) : "Default Animation" :  : "The name of the idle animation that this prop will revert to whenever it finishes a random or forced animation."
-	RandomAnimation(boolean) : "Randomly Animate?" : 0 : "If set, this prop will randomly choose and play animations, based upon the times specified in 'Min/Max Random Anim Time'. Inbetween the random animations, it will revert to playing the 'Default Animation'."
+	RandomAnimation(choices) : "Randomly Animate?" : 0 : "If set, this prop will randomly choose and play animations, based upon the times specified in 'Min/Max Random Anim Time'. Inbetween the random animations, it will revert to playing the 'Default Animation'." =
+	[
+		0: "No"
+		1: "Yes"
+	]
 	MinAnimTime(float) : "Min Random Anim Time" : "5" : "Minimum time between random animations."
 	MaxAnimTime(float) : "Max Random Anim Time" : "10" : "Maximum time between random animations."
 	
-	DisableBoneFollowers(boolean) : "Disable Bone Followers?" : 0 : "If set, this prop won't generate phys_bone_followers."
+	DisableBoneFollowers(choices) : "Disable Bone Followers?" : 0 : "If set, this prop won't generate phys_bone_followers. See that entity for more information." =
+	[
+		0: "No"
+		1: "Yes"
+	]
 	
 	linedivider10(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1620,7 +1670,11 @@
 	closesound(sound) : "Stop Close Sound" : : "Sound to play when the door stops closing."
 	locked_sound(sound) : "Locked Sound" : : "Sound played when the player tries to use the door, and fails because it's locked."
 	unlocked_sound(sound) : "Unlocked Sound" : : "Sound played when the door is unlocked and used."
-	loopmovesound(boolean) : "Loop Moving Sound?" : 0 : "If set to true, the door's 'Start Sound' will be continually looped until the door finishes moving."
+	loopmovesound(choices) : "Loop Moving Sound?" : 0 : "If set to true, the door's 'Start Sound' will be continually looped until the door finishes moving." =
+	[
+		0: "No"
+		1: "Yes"
+	]
 	
 	spawnpos(choices) : "Spawn Position?" : 0 =
 	[
@@ -2099,7 +2153,11 @@
 
 	actor(target_name_or_class) : "Actor(s) or squad to affect."
 
-	Active(boolean) : "Start Active?" : 0 : "Self-explanatory."
+	Active(choices) : "Start Active?" : 0 : "Self-explanatory." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	Strict(choices) : "Strict?" : 1 : "If true, players will not be able to order their allies to ignore the battle line by commanding them with impulse 50 (bound to C by default)." =
 	[
@@ -2158,7 +2216,11 @@
 		1 : "Classname"
 	] 
 
-	StartActive(boolean) : "Start Active?" : 0 : "Set if goal should be active immediately."
+	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	
 	AssaultCue(choices) : "Assault Cue" : 1 : "Chooses when the goal is going to be set after this entity has been activated. " =
 	[
@@ -2192,7 +2254,11 @@
 		1 : "Classname"
 	] 
 
-	StartActive(boolean) : "Start Active?" : 0 : "Set if goal should be active immediately."
+	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	Formation(choices) : "Formation" : 0 =
 	[
@@ -2219,15 +2285,22 @@
 		1 : "Classname"
 	] 
 
-	StartActive(boolean) : "Start Active?" : 0 : "Set if goal should be active immediately."
-
+	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	goal(string) : "Target Entity" : : "The name of the entity that the NPC will lead the player to (i.e. an info_target)."
 	WaitPointName(target_destination) : "Wait Point" : : "If the NPC loses line-of-sight to the player, it will return to this entity (i.e. an info_target)."
 	WaitDistance(float) : "Wait Distance" : : "The player must be within this distance of the NPC before the NPC initially begins leading them."
 	LeadDistance(float) : "Lead Distance" : "64" : "The player is considered to be too far behind if they're beyond this distance. Past this distance, the leader will nag the player to hurry up."
 	RetrieveDistance(float) : "Retrieve Distance" : "96" : "The distance from the player that the NPC should return to when retrieving a lagging player. Must be between ('Lead Distance' + 24) and ('Lead Distance' * 4) to avoid the leader ping-ponging."
 	SuccessDistance(float) : "Success Distance" : "0" : "The distance from the player (to the NPC) that the player must be within for the Lead to succeed, once the NPC has reached the goal. If set to 0, it will use the lead distance instead."
-	Run(boolean) : "Run instead of Walk?" : "0"
+	Run(choices) : "Run instead of Walk?" : "0" =
+	[
+		"0" : "No"
+		"1" : "Yes"
+	]
 
 	Retrieve(choices) : "Retrieve player?" : 1 =
 	[
@@ -2304,7 +2377,11 @@
 		1 : "Classname"
 	] 
 
-	StartActive(boolean) : "Start Active?" : 0 : "Set if goal should be active immediately."
+	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	
 	goal(string) : "Target Entity" : : "The name of the entity that the NPC will lead the player to (i.e. an info_target)."
 	WaitPointName(target_destination) : "Wait Point" : : "If the NPC loses line-of-sight to the player, it will return to this entity (i.e. an info_target)."
@@ -2312,7 +2389,11 @@
 	LeadDistance(float) : "Lead Distance" : "64" : "The player is considered to be too far behind if they're beyond this distance. Past this distance, the leader will nag the player to hurry up."
 	RetrieveDistance(float) : "Retrieve Distance" : "96" : "The distance from the player that the NPC should return to when retrieving a lagging player. Must be between ('Lead Distance' + 24) and ('Lead Distance' * 4) to avoid the leader ping-ponging."
 	SuccessDistance(float) : "Success Distance" : "0" : "The distance from the player (to the NPC) that the player must be within for the Lead to succeed, once the NPC has reached the goal. If set to 0, it will use the lead distance instead."
-	Run(boolean) : "Run instead of Walk?" : "0"
+	Run(choices) : "Run instead of Walk?" : "0" =
+	[
+		"0" : "No"
+		"1" : "Yes"
+	]
 
 	Retrieve(choices) : "Retrieve player?" : 1 =
 	[
@@ -2384,7 +2465,11 @@
 		1 : "Classname"
 	] 
 
-	StartActive(boolean) : "Start Active?" : 0 : "Set if goal should be active immediately."
+	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	HintGroupChangeReaction(Choices) : "Reaction to tactical change" : 1 : "Defines how biased NPCs should be to finding cover when the status of the standoff changes. The ways the status can change include the battle line/player moving, NPCs dying, hint group changes, and the SetAggressiveness input. " =
 	[
@@ -2457,10 +2542,18 @@
 
 	rank(integer) : "Disposition Priority" : 0 : "How much the Subject(s) should Like/Hate/Fear the Target(s). Higher priority = stronger feeling."
 
-	StartActive(boolean) : "Start Active?" : 0 : "Apply this relationship as soon as the entity spawns?"
+	StartActive(choices) : "Start Active?" : 0 : "Apply this relationship as soon as the entity spawns?" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
-	Reciprocal(boolean) : "Reciprocal" : 0 : "Make the new disposition apply to the targets as well as the subjects." 
-	
+	Reciprocal(choices) : "Reciprocal" : 0 : "Make the new disposition apply to the targets as well as the subjects."  =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
 	spawnflags(flags) =
 	[
 		1 : "Notify subject of target's location" : 0
@@ -2665,7 +2758,11 @@
 	m_iszEntity(target_destination) : "Target NPC" : : "The name or classname of an NPC to use."
 	m_flRadius(integer) : "Search Radius" : 0 : "Radius to search within for an NPC to use. 0 searches everywhere."
 
-	graball(boolean)  : "All in radius?" : 0 : "Whether to grab all matching NPCs in the specified radius, instead of just one." 
+	graball(choices)  : "All in radius?" : 0: "Whether to grab all matching NPCs in the specified radius, instead of just one."  =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	spawnflags(Flags) = 
 	[
@@ -2786,23 +2883,42 @@
 	assaultgroup(string)  : "Assault Hint Group" :  : "NPC's movements are constrained to this hint group once assault has begun."
 	nextassaultpoint(target_destination) : "Next assault point (optional)" : : "The assault_assaultpoint to move to next."
 	assaulttimeout(float) : "Assault time out" : "3.0" : "This point is cleared when no enemies are seen for this long (specified in seconds). The NPC(s) at this assault point will scout for enemies this long before moving on."
-	clearoncontact(boolean) : "Clear on contact with enemies?" : 0 : "If the assaulting NPC meets enemies on its way to this point, it will consider the assault point cleared and target the next assault point in the chain."
-
-	allowdiversion(boolean) : "Allow Diversion?" : 0 : "If the assault comes into contact with hostiles on the way to this assault point, divert to kill them and resume once the area appears clear. "
+	clearoncontact(choices) : "Clear on contact with enemies?" : 0 : "If the assaulting NPC meets enemies on its way to this point, it will consider the assault point cleared and target the next assault point in the chain." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	allowdiversion(choices) : "Allow Diversion?" : 0 : "If the assault comes into contact with hostiles on the way to this assault point, divert to kill them and resume once the area appears clear. " =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	allowdiversionradius(float) : "Diversion Proximity" : 0 : "If Allow Diversion is set to Yes, NPC will only divert from assault to attack an enemy that is within this distance of the assault point. 0 means no limit."
 
-	nevertimeout(boolean) : "Never Timeout?" : 0 : "If set, the assault never ends for NPCs assaulting this point. Useful for forcing NPCs back to a point."
-	
+	nevertimeout(choices) : "Never Timeout?" : 0 : "If set, the assault never ends for NPCs assaulting this point. Useful for forcing NPCs back to a point." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
 	strict(choices) : "Strict?" : 0 : "If set, the assault never ends for NPCs assaulting this point. Useful for forcing NPCs back to a point." =
 	[
 		0 : "No, NPC may move from point to attack"
 		1 : "Yes, NPC may not move to attack"
 	]
 
-	forcecrouch(boolean) : "Force Crouch?" : 0 : "NPCs using this assault point are forced into crouching while holding it. Only works for NPCs that have crouching as part of their natural AI."
+	forcecrouch(choices) : "Force Crouch?" : 0 : "NPCs using this assault point are forced into crouching while holding it. Only works for NPCs that have crouching as part of their natural AI." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
-	urgent(boolean) : "Urgent?" : 0 : "If true, NPCs will consider movement to this assault point as Urgent Navigation."
+	urgent(choices) : "Urgent?" : 0 : "If true, NPCs will consider movement to this assault point as Urgent Navigation." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	assaulttolerance(choices) : "Attack Tolerance" : 36 : "How far this NPC may move from the assault point to try to attack an enemy." =
 	[
@@ -2847,6 +2963,32 @@
 	output OnArrival(void) : "Fires when the NPC reaches this rally point."
 ]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
 @PointClass base(BaseEntity, EnableDisable) sphere(minfalloff) sphere(maxfalloff) iconsprite("editor-ficool2/color_correction") = color_correction : 
 	"An entity to control the color correction in the map.  It loads a color correction lookup table (.raw) and controls its strength. Correction is applied in a sphere surrounding the entity, with a configurable amount of falloff."
 [
@@ -3335,7 +3477,11 @@
 	PostSpawnSpeed(float) : "PostSpawn Movement Speed" : "0" : "If specified, all the entities created in the template will move this fast in the specified PostSpawn Movement Direction."
 	PostSpawnDirection(angle) : "PostSpawn Movement Direction" : "0 0 0" : "If a PostSpawn Movement Speed is specified, all the entities created in the template will move in this direction."
 	PostSpawnDirectionVariance(float) : "PostSpawn Direction Variance" : "0.15" : "This variance is applied to the PostSpawn Movement Direction for each spawned entity in the template. Use it to apply some randomness to the directions."
-	PostSpawnInheritAngles(boolean) : "PostSpawn Inherit Angles?" : 0 : "If Yes, offset the spawn angles by the angles of a Parent."
+	PostSpawnInheritAngles(choices) : "PostSpawn Inherit Angles?" : 0 : "If Yes, offset the spawn angles by the angles of a Parent." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	
 	spawnflags(Flags) =
 	[
@@ -3498,18 +3644,28 @@
 @PointClass base(BaseEntity, Angles) iconsprite("editor-ficool2/env_fog_controller") = env_fog_controller : 
 	"An entity that controls the fog and view distance in the map. Fog may be changed per-player using the SetFogController input on them (requires an !activator)."
 [
-	fogenable(boolean) : "Fog enabled on start?" : 1 : "Make fog start active."
+	fogenable(choices) : "Fog enabled on start?" : 1 : "Make fog start active." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	fogstart(string) : "Fog Start" : "500.0" : "How far away from the viewer the fog should start."
 	fogend(string) : "Fog End" : "2000.0" : "How far away from the viewer the fog reaches Fog Max Density."
 	fogmaxdensity(float) : "Fog Max Density" : "1" : "Maximum density the fog may reach. Expressed as a decimal percent, so for 45% put 0.45."
 	farz(string) : "Far Z Clip Plane (-1 = disable)" : "-1" : "Nothing but sky will be rendered beyond this distance from the camera."
 	fogcolor(color255) : "Primary Fog Color" : "255 255 255" : "Primary Fog Color."
 	fogcolor2(color255) : "Secondary Fog Color" : "255 255 255" : "Secondary Fog Color. If Fog Blend is disabled, this color will never appear."
-	fogblend(boolean) : "Fog Blend?" : 0 : "Enables color blending between Primary Fog Color and Secondary Fog Color. When the viewer looks in the Primary Fog Direction, fog will appear as the Primary color. When looking away from the specified direction, fog appears as the Secondary color. If the camera is not pointed directly at or away from the direction, a blend of the two colors will result. Sunlight with a Yaw of 45 degrees and a Pitch of -45 degrees could be enhanced using a Primary Fog Direction of '-1 -1 1', a Primary Fog Color of '120 110 100' and a Secondary Fog Color of '80 70 60'."
-	
+	fogblend(choices) : "Fog Blend?" : 0 : "Enables color blending between Primary Fog Color and Secondary Fog Color. When the viewer looks in the Primary Fog Direction, fog will appear as the Primary color. When looking away from the specified direction, fog appears as the Secondary color. If the camera is not pointed directly at or away from the direction, a blend of the two colors will result. Sunlight with a Yaw of 45 degrees and a Pitch of -45 degrees could be enhanced using a Primary Fog Direction of '-1 -1 1', a Primary Fog Color of '120 110 100' and a Secondary Fog Color of '80 70 60'." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	fogdir(string) : "Primary Fog Direction" : "1 0 0" : "A vector (given by three space-separated numbers X Y Z) which the viewer camera is checked against to figure out the blend between the primary and secondary fog colors."
-	use_angles(boolean) : "Use Angles for Fog Direction?" : 0 : "Use Pitch Yaw Roll for the Fog Blend direction instead of Primary Fog Direction. There isn't much use for this unless you want the direction to rotate."
-	
+	use_angles(choices) : "Use Angles for Fog Direction?" : 0 : "Use Pitch Yaw Roll for the Fog Blend direction instead of Primary Fog Direction. There isn't much use for this unless you want the direction to rotate." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	foglerptime(float) : "Interpolate Time" : "0" : "Fade time for the StartFogTransition input, in seconds."
 	
 	spawnflags(flags) =
@@ -3865,7 +4021,11 @@
 	Color(color255) : "Color" : "255 0 0" : "Color emitted by this light." 
 	Intensity(integer) : "Intensity" : 5000 : "How strong the light is."
 
-	directional(boolean) : "Directional?" : 0 : "If this is specified, then this light will use the bump map on the particles. Each particle system can have one ambient and one directional light."
+	directional(choices) : "Directional?" : 0 : "If this is specified, then this light will use the bump map on the particles. Each particle system can have one ambient and one directional light." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	PSName(string) : "Particle System Entity" :  : "Set this to the name of the env_smokestack that you want this light to affect."
 ]
@@ -3944,17 +4104,26 @@
 	nearz(float)				: "NearZ" : "4.0" : "Objects closer than this will not receive the projection."
 	farz(float)					: "FarZ" : "750.0" : "Objects beyond this distance will not receive the projection."	
 	
-	enableshadows(boolean) : "Enable Shadows?" : 0 : "Enables/disables shadows from this projected texture."
-	
+	enableshadows(Choices) : "Enable Shadows?" : 0 : "Enables/disables shadows from this projected texture." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	shadowquality(Choices) : "Shadow Quality" : 1 : "Quality of shadows." =
 	[
 		0 : "Low"
 		1 : "High"
 	]
-	lightonlytarget(boolean) : "Light Only Target?" : 0 : "Limit flashlight effect to only effect target entity. The world will still be lit."
-	
-	lightworld(boolean) : "Light World?" : 1 : "Control whether flashlight effects static world geometry."
-	
+	lightonlytarget(Choices) : "Light Only Target?" : 0 : "Limit flashlight effect to only effect target entity. The world will still be lit." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	lightworld(Choices) : "Light World?" : 1 : "Control whether flashlight effects static world geometry." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	lightcolor(color255)		: "Light Color" : "255 255 255 200" : "Light Color RGB-Intensity."
 	cameraspace(integer)		: "Camera Space" : 0 : "Display relative to player's view. Breaks things horribly unless the entity moves with the player."
 
@@ -3974,6 +4143,8 @@
 	input EnableShadows(bool) : "Enables/disables shadows from this projected texture."
 	input Ambient(bool) : "Allows for an ambiance light, much like the shadow color for it."
 ]
+
+
 
 @PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_rockettrail") = env_rockettrail : 
 	"An entity that emits a rocket trail."
@@ -4249,7 +4420,11 @@
 	]
 	
 	radius(integer) : "Radius" : 128 : "Defines the entity's sphere of influence. Players must also be able to see the entity for it to trigger. -1 means infinite range."
-	StartDisabled(boolean) : "Start Disabled?" : 0
+	StartDisabled(choices) : "Start Disabled?" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	position0(target_destination) : "Sound Position 0" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
 	position1(target_destination) : "Sound Position 1" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
@@ -4416,7 +4591,11 @@
 		"Well.Outside" : "Well Outside"
 	]
 	
-	StartDisabled(boolean) : "Start Disabled?" : 0
+	StartDisabled(choices) : "Start Disabled?" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	position0(target_destination) : "Sound Position 0" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
 	position1(target_destination) : "Sound Position 1" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
@@ -4529,7 +4708,11 @@
 	startwidth(float) : "Start Width" : "8.0" : "The width of the beam to the beginning."
 	endwidth(float) : "End Width" : "1.0" : "The width of the beam when it has full expanded."
 	spritename(sprite) : "Sprite Name" : "sprites/bluelaser1.vmt" : "The material to draw."
-	animate(boolean) : "Animated?" : "0" : "Tells the sprite to animate if it can."
+	animate(choices) : "Animated?" : "0" : "Tells the sprite to animate if it can." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	frame(integer) : "Starting Frame" : 0 : "If the sprite is animated, the frame it should start animating on."
 	framerate(float) : "Framerate" : "10.0" : "Rate at which the sprite should animate, if at all."
@@ -4688,6 +4871,8 @@
 	output OnGustEnd(void) : "Fired when a wind gust ends."
 ]
 
+
+
 @FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_class") = filter_activator_class :
 	"A filter that filters by the class name of the activator. Entities can have their classnames changed using AddOutput. "+
 	"Warning: changing classnames can lead to strange behaviour or crashes upon round restart!"
@@ -4697,28 +4882,12 @@
 		"all entities EXCEPT those whose class name matches the given string will pass the filter."
 ]
 
-@FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_name") = filter_activator_context :
-	"A filter that filters by a context on the activator."
-[
-	ResponseContext(string) : "Filter Context" : : "The context to filter by. If the filter mode is Allow, only entities that "+
-		"have a context matching the given string, of any value, will pass the filter. If the filter mode is Disallow, "+
-		"all entities EXCEPT those whose context matches the string will pass the filter."
-]
-
 @FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_mass_greater") = filter_activator_mass_greater :
 	"A filter that filters by the mass of the activator."
 [
 	filtermass(float) : "Filter Mass" : : "The mass to filter by. If the filter mode is Allow, only entities whose "+
 		"mass is greater than the give float will pass the filter. If the filter mode is Disallow, "+
 		"all entities EXCEPT those whose mass is greater than the given float will pass the filter."
-]
-
-@FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_name.vmt") = filter_activator_model :
-	"A filter that filters by the model of the activator."
-[
-	model(studio) : "Filter Model" : : "The model to filter by. If the filter mode is Allow, only entities whose "+
-		"model matches the given string will pass the filter. If the filter mode is Disallow, "+
-		"all entities EXCEPT those whose model matches the string will pass the filter."
 ]
 
 @FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_name") = filter_activator_name :
@@ -5233,6 +5402,8 @@
 	]
 	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
+	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
+	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
@@ -5338,8 +5509,12 @@
 	
 	linedivider2(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
-	StartDisabled(boolean) : "Start Disabled?" : 0 : "Don't create particles when spawned."
-	
+	StartDisabled(choices) : "Start Disabled?" : 0 : "Don't create particles when spawned." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
 	Color(color255) : "Particle Color (R G B)" : "255 255 255" : "Color of the particles."
 	Alpha(integer) : "Particle Translucency (0 - 255)" : 30 : "Transluceny of the particles."
 	SpawnRate(integer) : "Particle Per Second" : 40 : "Number of particles to spawn, per second."
@@ -5506,8 +5681,11 @@
 	forcetoenablemotion(float) : "Physics Impact Force to Override Motion" : 0 : "If specified, this object will start motion disabled. Any impact that imparts a force greater than this value on the physbox will enable motion."
 	health(integer) : "Health/Strength" : 0 : "Number of points of damage to take before breaking.  0 means don't break."
 	preferredcarryangles(vector) : "Preferred Player-carry Angles" : "0 0 0" : "If the 'Use Preferred Carry Angles' spawnflag is set, this angle is the angle which the object should orient to when the player picks it up, with the physgun or +USE."
-	nodamageforces(boolean) : "Damaging it Doesn't Push It?" : 0 : "Used to determine whether or not damage should cause the brush to move."
-	
+	nodamageforces(choices) : "Damaging it Doesn't Push It?" : 0 : "Used to determine whether or not damage should cause the brush to move." =
+	[
+		0: "No"
+		1: "Yes"
+	]
 	notsolid(choices) : "Solidity" : 0 : "If set, the object will pass through world geometry." =
 	[
 		0: "Solid to World"
@@ -5563,8 +5741,11 @@
 	forcetoenablemotion(float) : "Physics Impact Force to Override Motion" : 0 : "If specified, this object will start motion disabled. Any impact that imparts a force greater than this value on the physbox will enable motion."
 	health(integer) : "Health/Strength" : 0 : "Number of points of damage to take before breaking.  0 means don't break."
 	preferredcarryangles(vector) : "Preferred Player-carry Angles" : "0 0 0" : "If the 'Use Preferred Carry Angles' spawnflag is set, this angle is the angle which the object should orient to when the player picks it up, with the physgun or +USE."
-	nodamageforces(boolean) : "Damaging it Doesn't Push It" : 0 : "Used to determine whether or not damage should cause the brush to move."
-	
+	nodamageforces(choices) : "Damaging it Doesn't Push It" : 0 : "Used to determine whether or not damage should cause the brush to move." =
+	[
+		0: "No"
+		1: "Yes"
+	]
 	notsolid(choices) : "Solidity" : 0 : "If set, the object will pass through world geometry." =
 	[
 		0: "Solid to World"
@@ -6117,7 +6298,11 @@
 
 	ladderSurfaceProperties(string) : "Surface properties (optional)"
 
-	StartDisabled(boolean) : "Start Disabled?" : 0
+	StartDisabled(choices) : "Start Disabled?" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	spawnflags(flags) =
 	[
@@ -6205,7 +6390,11 @@
 [
 	maxpieces(integer)	: "Max Gib Count" : -1 : "Sets the max number of gib that can be spawned at a time. (-1=no limit)"
 	maxpiecesdx8(integer)	: "Max Gib Count On DirectX 8" : -1 : "Sets the max number of gib that can be spawned at a time under DirectX 8. (-1 = use Max Gib Count setting)"
-	allownewgibs(boolean)	: "Allow New Gibs To Spawn?" : 0 : "If true, when the max gib count is reached, oldest gibs are removed as new gibs spawn. If false, new gibs will not be spawned once the gib limit is reached."
+	allownewgibs(choices)	: "Allow New Gibs To Spawn?" : 0 : "If true, when the max gib count is reached, oldest gibs are removed as new gibs spawn. If false, new gibs will not be spawned once the gib limit is reached." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	
 	input SetMaxPieces(integer)	: "Set the max gib count."
 	input SetMaxPiecesDX8(integer)	: "Set the max gib count under DirectX 8."
@@ -6260,7 +6449,11 @@
 	MaxRagdollCount(integer) : "Max Ragdoll Count" : -1 : "Sets the max number of ragdolls that can be in the world at a time (if they are flagged to fade). Set to -1 if you want to use the default value (g_ragdoll_maxcount)."
 	MaxRagdollCountDX8(integer) : "Max Ragdoll Count DX8" : -1 : "Sets the max number of ragdolls that can be in the world at a time on DirectX 8 hardware (if they are flagged to fade). Set to -1 if you want to use the 'Max Ragdoll Count' value."
 
-	SaveImportant(boolean) : "Save Important Ragdolls?" : 0 : "Should the ragdoll manager make sure ally ragdolls aren't deleted?"
+	SaveImportant(choices) : "Save Important Ragdolls?" : 0 : "Should the ragdoll manager make sure ally ragdolls aren't deleted?" = 
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	
 	input SetMaxRagdollCount(integer) : "Set the Max Ragdoll Count."
 	input SetMaxRagdollCountDX8(integer) : "Set the Max Ragdoll Count on DirectX 8 hardware."
@@ -6747,10 +6940,18 @@
 		0 : "Off"
 		1 : "On"
 	]
-	useairlinkradius(boolean) : "Use Larger Radius (for air links)?" : 0 : "Set this to 'Yes' if this controller is intended to control air links. Air links connect using a larger search radius so leaving this at 'No' might miss some air links."
+	useairlinkradius(choices) : "Use Larger Radius (for air links)?" : 0 : "Set this to 'Yes' if this controller is intended to control air links. Air links connect using a larger search radius so leaving this at 'No' might miss some air links." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	
 	AllowUse(string) : "Allow Pass When Off" : : "Entity or class to allow passage even when node is off"
-	InvertAllow(boolean) : "Invert exclusion rules?" : 0 : "Allowed entity is the only entity NOT allowed when this is set to 'yes'"
+	InvertAllow(choices) : "Invert exclusion rules?" : 0 : "Allowed entity is the only entity NOT allowed when this is set to 'yes'" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	input TurnOn(void) : "Turn the link on."
 	input TurnOff(void) : "Turn the link off."
@@ -6777,7 +6978,11 @@
 [
 	associated_team_entity(target_destination) : "Associated Team Entity" :  : "An entity associated with this point that can be owned by a team (such as a flag or control point). Players will only be able to use this observer point if their team owns the associated team entity."
 	
-	defaultwelcome(boolean) : "Welcome Point?" : 0 :  "Set whether this camera is among the ones players may see when they first join the server. If no cameras have this set to 'No', the game will pick from all cameras that are not team-bound."
+	defaultwelcome(choices) : "Welcome Point?" : 0 :  "Set whether this camera is among the ones players may see when they first join the server. If no cameras have this set to 'No', the game will pick from all cameras that are not team-bound." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	fov(float) : "FOV" : 0 : "Specifies the field-of-view angle. Larger numbers allow the camera to see more of the playing field. Default is 70."
 ]
@@ -6821,7 +7026,11 @@
 	WidthTexcoordEnd(float) : "Texcoord Width End" : "1.0"
 	Width1(float) : "Width Land" : "25.0"
 	Width2(float) : "Width Water" : "25.0"
-	DebugDraw(boolean) : "Force Draw? (Debug)" : 0 : "Force the overlay to draw for debugging."
+	DebugDraw(choices) : "Force Draw? (Debug)" : 0 : "Force the overlay to draw for debugging." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 ]
 
 @PointClass base(BaseEntityPoint) studioprop("models/editor-ficool2/cone_helper_blue.mdl") line(255 255 255, targetname, cpoint1) line(255 255 255, targetname, cpoint2) line(255 255 255, targetname, cpoint3) line(255 255 255, targetname, cpoint4) line(255 255 255, targetname, cpoint5) line(255 255 255, targetname, cpoint6) line(255 255 255, targetname, cpoint7) line(255 255 255, targetname, cpoint8) line(255 255 255, targetname, cpoint9) line(255 255 255, targetname, cpoint10) line(255 255 255, targetname, cpoint11) line(255 255 255, targetname, cpoint12) line(255 255 255, targetname, cpoint13) line(255 255 255, targetname, cpoint14) line(255 255 255, targetname, cpoint15) line(255 255 255, targetname, cpoint16) line(255 255 255, targetname, cpoint17) line(255 255 255, targetname, cpoint18) line(255 255 255, targetname, cpoint19) line(255 255 255, targetname, cpoint20) line(255 255 255, targetname, cpoint21) line(255 255 255, targetname, cpoint22) line(255 255 255, targetname, cpoint23) line(255 255 255, targetname, cpoint24) line(255 255 255, targetname, cpoint25) line(255 255 255, targetname, cpoint26) line(255 255 255, targetname, cpoint27) line(255 255 255, targetname, cpoint28) line(255 255 255, targetname, cpoint29) line(255 255 255, targetname, cpoint30) line(255 255 255, targetname, cpoint31) line(255 255 255, targetname, cpoint32) line(255 255 255, targetname, cpoint33) line(255 255 255, targetname, cpoint34) line(255 255 255, targetname, cpoint35) line(255 255 255, targetname, cpoint36) line(255 255 255, targetname, cpoint37) line(255 255 255, targetname, cpoint38) line(255 255 255, targetname, cpoint39) line(255 255 255, targetname, cpoint40) line(255 255 255, targetname, cpoint41) line(255 255 255, targetname, cpoint42) line(255 255 255, targetname, cpoint43) line(255 255 255, targetname, cpoint44) line(255 255 255, targetname, cpoint45) line(255 255 255, targetname, cpoint46) line(255 255 255, targetname, cpoint47) line(255 255 255, targetname, cpoint48) line(255 255 255, targetname, cpoint49) line(255 255 255, targetname, cpoint50) line(255 255 255, targetname, cpoint51) line(255 255 255, targetname, cpoint52) line(255 255 255, targetname, cpoint53) line(255 255 255, targetname, cpoint54) line(255 255 255, targetname, cpoint55) line(255 255 255, targetname, cpoint56) line(255 255 255, targetname, cpoint57) line(255 255 255, targetname, cpoint58) line(255 255 255, targetname, cpoint59) line(255 255 255, targetname, cpoint60) line(255 255 255, targetname, cpoint61) line(255 255 255, targetname, cpoint62) line(255 255 255, targetname, cpoint63) = info_particle_system : 
@@ -6829,10 +7038,16 @@
 [
 	effect_name(string) : "Particle System Name" : : "The name of the particle system to spawn. NOT the name of a PCF file!"
 	
-	start_active(boolean) : "Start Active?" : 0 : "Whether the particle system should begin as soon as the entity spawns."
-	
-	flag_as_weather(boolean) : "Flag as Weather?" : 0 : "Is this particle system going to be used as a weather effect? If so the particle system will not be rendered if the user has disabled weather effects."
-	
+	start_active(choices) : "Start Active?" : 0 : "Whether the particle system should begin as soon as the entity spawns." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	flag_as_weather(choices) : "Flag as Weather?" : 0 : "Is this particle system going to be used as a weather effect? If so the particle system will not be rendered if the user has disabled weather effects." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 	cpoint1(target_destination) : "Control Point 1" : : "If set, control point 1 of the effect will be at this entity's location."
 	cpoint2(target_destination) : "Control Point 2" : : "If set, control point 2 of the effect will be at this entity's location. If control point 1 is not set, this will be ignored."
 	cpoint3(target_destination) : "Control Point 3" : : "If set, control point 3 of the effect will be at this entity's location. If control point 2 is not set, this will be ignored."
@@ -6990,7 +7205,11 @@
 [
 	texture(decal) : "Texture" : : "The image to apply as a decal."
 
-	LowPriority(boolean) : "Low Priority (can be replaced)?" : 0
+	LowPriority(choices) : "Low Priority (can be replaced)?" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 
 	input Activate(void) : "Force the decal to apply itself to the world."
 ]																																	
@@ -8106,12 +8325,8 @@
 	input SetDriversMinSpeed(float) : "Set the Minimum speed (percentage of vehicle's maximum speed)."
 ]
 
-@NPCClass base(BaseNPC) studio("models/Zombie/Classic.mdl") = npc_zombie : "Zombie"
-[
-	disableheadcrab(boolean) : "Disable Headcrabs?" : 0 : "Spawn the zombie with no headcrab?"
-]
 
-@PointClass base(BaseObject) studioprop("models/buildables/dispenser.mdl") = obj_dispenser : 
+@PointClass base(BaseObject) studioprop("models/buildables/dispenser_lvl3.mdl") = obj_dispenser : 
 	"The Dispenser. Gives health and ammunition to nearby players. The entity also spawns a vgui_screen entity, used for the metal counter screen."
 [
 	touch_trigger(target_destination) : "Custom Touch Trigger" : : "Touch Trigger to use instead as the healing zone, optionally."
