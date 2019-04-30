@@ -59,8 +59,8 @@ HUD editing:
 Nbc66
 
 Music:
-Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque, Facility, Stalker, Orch, DMStuff, TF2Beat, Mayann)
-MrModez (At Fortress' Gate, Winpanel Music)
+Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque, Facility, Stalker, Orch, DMStuff)
+MrModez (At Fortress' Gate, Winpanel Music, TF2Beat, Mayann)
 Thoopje (DMChase, DM Skate Theme)
 
 Maps:
