@@ -69,6 +69,16 @@
 	"wave"		"items/smallmedkit1.wav"
 }
 
+"HealthKitTiny.Touch"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"wave"		"items/healthkit_overheal.wav"
+}
+
+
 // ------------------------------------------------------------------------------------ //
 // AMMO PACK
 // ------------------------------------------------------------------------------------ //

@@ -7256,6 +7256,13 @@
 	pickup_sound(sound): "Pickup Sound" : "Healthkit.Touch" : "Sound to play when picking up ammo."
 ]
 
+@PointClass base(Item) studioprop() = item_healthkit_tiny :	
+    "Overheal health kit for players." 
+[
+	model(studio) : "Model" : "models/items/medkit_overheal.mdl" : "The model this entity should appear as. 128-character limit."
+	pickup_sound(sound): "Pickup Sound" : "HealthKitTiny.Touch" : "Sound to play when picking up ammo."
+]
+
 @PointClass base(BaseAnimating) studioprop("models/can.mdl") = item_sodacan : 
 	"Half-Life legacy: A beverage created from a Beverage Dispenser (env_beverage). Uses models/can.mdl by default, you will need to provide your own as it is missing."
 [
