@@ -20,14 +20,14 @@
 		"tabPosition"		"50"
 		"avatar_width"		"60"	[$WIN32]
 		"avatar_width"		"0"		[$X360]
-		"name_width"		"30"	[$WIN32]
+		"name_width"		"50"	[$WIN32]
 		"name_width"		"122"	[$X360]
 		"score_width"		"29"
 		"score_width_lodef"	"35"
 		"score_width_hidef"	"50"
-		"ping_width"		"50"	[$WIN32]
+		"ping_width"		"30"	[$WIN32]
 		"ping_width"		"30"	[$X360]		// Larger to push the value off the edge
-		"kills_width"		"140"
+		"kills_width"		"130"
 		"kills_width_lodef"	"35"
 		"kills_width_hidef"	"50"	
 		"status_width"		"40"	[$WIN32]

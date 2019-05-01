@@ -19,19 +19,21 @@
 		"tabPosition"		"0"
 		"avatar_width"		"65"	[$WIN32]
 		"avatar_width"		"0"		[$X360]
-		"name_width"		"119"	[$WIN32]
+		"name_width"		"60"	[$WIN32]
 		"name_width"		"150"	[$X360]
-		"status_width"		"15"	[$WIN32]
+		"status_width"		"13"	[$WIN32]
 		"status_width"		"12"	[$X360]
 		"nemesis_width"		"15"	[$WIN32]
 		"nemesis_width"		"20"	[$X360]
-		"class_width"		"49"	[$WIN32]
+		"class_width"		"50"	[$WIN32]
 		"class_width"		"39"	[$X360]
-		"score_width"		"25"
+		"score_width"		"20"
 		"score_width_lodef"	"35"
 		"score_width_hidef"	"50"
 		"ping_width"		"23"	[$WIN32]
 		"ping_width"		"50"	[$X360]		// Larger to push the value off the edge
+		"kills_width"       "70"
+        "dominated_width"	"20"	
 	}
 	"BlueScoreBG"
 	{
@@ -332,34 +334,13 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}						
-	"ShadedBar"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"ShadedBar"
-		"xpos"			"10"
-		"xpos_hidef"	"30"
-		"ypos"			"342"	[$WIN32]
-		"ypos"			"297"	[$X360]
-		"zpos"			"2"
-		"wide"			"580"
-		"wide_lodef"	"539"
-		"wide_hidef"	"559"
-		"tall"			"70"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 153"
-		"PaintBackgroundType"	"0"
-	}
 	"ClassImage"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ClassImage"
-		"xpos"			"22"
+		"xpos"			"30"
 		"xpos_lodef"	"12"
-		"ypos"			"320"	[$WIN32]
+		"ypos"			"322"	[$WIN32]
 		"ypos"			"275"	[$X360]
 		"zpos"			"3"
 		"wide"			"92"
@@ -405,27 +386,6 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}							
-	"HorizontalLine"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"HorizontalLine"
-		"xpos"			"115"
-		"xpos_lodef"	"105"
-		"ypos"			"367"	[$WIN32]
-		"ypos"			"322"	[$X360]
-		"zpos"			"3"
-		"wide"			"465"
-		"wide_lodef"	"434"
-		"wide_hidef"	"464"
-		"tall"			"1"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"	
-		"fillcolor"		"127 127 127 153"
-		"PaintBackgroundType"	"0"
-	}
 	"PlayerScoreLabel"
 	{
 		"ControlName"		"CTFLabel"
@@ -546,7 +506,7 @@
 		"xpos"			"180"
 		"ypos"			"375"	[$WIN32]
 		"ypos"			"330"	[$X360]
-		"zpos"			"3"
+		"zpos"			"40"
 		"wide"			"35"
 		"tall"			"20"
 		"autoResize"	"0"
@@ -564,7 +524,7 @@
 		"xpos"			"180"
 		"ypos"			"385"	[$WIN32]
 		"ypos"			"340"	[$X360]
-		"zpos"			"3"
+		"zpos"			"30"
 		"wide"			"35"
 		"tall"			"20"
 		"autoResize"	"0"
@@ -582,7 +542,7 @@
 		"xpos"			"180"
 		"ypos"			"395"	[$WIN32]
 		"ypos"			"350"	[$X360]
-		"zpos"			"3"
+		"zpos"			"30"
 		"wide"			"35"
 		"tall"			"20"
 		"autoResize"	"0"
@@ -939,163 +899,3 @@
 		"enabled"		"1"
 	}		
 	
-	"ButtonLegendBG"		[$X360]
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"ButtonLegendBG"
-		"xpos"			"10"
-		"xpos_hidef"	"30"
-		"ypos"			"373"
-		"zpos"			"0"
-		"wide"			"539"
-		"wide_hidef"	"559"
-		"tall"			"38"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 153"
-		"PaintBackgroundType"	"0"
-	}
-	
-	"ButtonLegend"		[$X360]
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"ButtonLegend"
-		"xpos"			"10"
-		"xpos_hidef"	"35"
-		"ypos"			"373"
-		"zpos"			"1"
-		"wide"			"539"
-		"wide_hidef"	"595"
-		"tall"			"150"
-		"visible"		"1"
-										
-		"SelectHintIcon"
-		{
-			"ControlName"	"CTFLabel"
-			"fieldName"		"SelectHintIcon"
-			"font"			"GameUIButtons"
-			"xpos"			"10"
-			"xpos_hidef"	"0"
-			"ypos"			"0"
-			"zpos"			"1"
-			"wide"			"300"
-			"tall"			"38"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"C"
-			"textAlignment"	"Left"
-			"dulltext"		"0"
-			"brighttext"	"0"
-		}
-		
-		"SelectHintLabel"
-		{
-			"ControlName"	"CTFLabel"
-			"fieldName"		"SelectHintLabel"
-			"font"			"ScoreboardMedium"
-			"xpos"			"25"
-			"xpos_lodef"	"37"
-			"ypos"			"2"
-			"zpos"			"1"
-			"wide"			"300"
-			"tall"			"39"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"#GameUI_Select"
-			"textAlignment"	"Left"
-			"dulltext"		"0"
-			"brighttext"	"0"
-		}
-		
-		"GamerCardIcon"
-		{
-			"ControlName"	"CTFLabel"
-			"fieldName"		"GamerCardIcon"
-			"font"			"GameUIButtons"
-			"xpos"			"150"
-			"xpos_hidef"	"145"
-			"ypos"			"0"
-			"zpos"			"1"
-			"wide"			"300"
-			"tall"			"38"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"A"
-			"textAlignment"	"Left"
-			"dulltext"		"0"
-			"brighttext"	"0"
-		}
-		
-		"GamerCardLabel"
-		{
-			"ControlName"	"CTFLabel"
-			"fieldName"		"GamerCardLabel"
-			"font"			"ScoreboardMedium"
-			"xpos"			"170"
-			"xpos_lodef"	"177"
-			"ypos"			"2"
-			"zpos"			"1"
-			"wide"			"300"
-			"tall"			"39"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"#TF_ViewGamercard"
-			"textAlignment"	"Left"
-			"dulltext"		"0"
-			"brighttext"	"0"
-		}
-		
-		"ReputationIcon"
-		{
-			"ControlName"	"CTFLabel"
-			"fieldName"		"ReputationIcon"
-			"font"			"GameUIButtons"
-			"xpos"			"350"
-			"xpos_hidef"	"378"
-			"ypos"			"0"
-			"zpos"			"1"
-			"wide"			"300"
-			"tall"			"38"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"X"
-			"textAlignment"	"Left"
-			"dulltext"		"0"
-			"brighttext"	"0"
-		}
-		
-		"ReputationLabel"
-		{
-			"ControlName"	"CTFLabel"
-			"fieldName"		"ReputationLabel"
-			"font"			"ScoreboardMedium"
-			"xpos"			"403"
-			"xpos_lodef"	"377"
-			"ypos"			"2"
-			"zpos"			"1"
-			"wide"			"300"
-			"tall"			"39"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"#GameUI_PlayerReview"
-			"textAlignment"	"Left"
-			"dulltext"		"0"
-			"brighttext"	"0"
-		}
-	}				
-}
