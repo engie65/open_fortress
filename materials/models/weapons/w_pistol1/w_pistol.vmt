@@ -2,7 +2,7 @@
 {
 	"$basetexture"	"models/weapons/v_pistol/v_pistol"
 
-	"$envmap" "env_cubemap"
+//	"$envmap" "env_cubemap"
 	"$envmaptint" "[.2 .2 .2]"
 
 	"$phong" "1"

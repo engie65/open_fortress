@@ -746,6 +746,12 @@
 		scene "scenes/player/mercenary/low/taunt01_v3.vcd"
 		scene "scenes/player/mercenary/low/dieviolent.vcd"
 	}
+	response "MercenaryTauntAssaultRifle"
+	{
+		scene "scenes/player/mercenary/low/taunt02.vcd"
+		scene "scenes/player/mercenary/low/taunt02_v1.vcd"
+		scene "scenes/player/mercenary/low/taunt02_v2.vcd"
+	}
 	response "MercenaryTauntNailgun"
 	{
 		scene "scenes/player/mercenary/low/taunt01_v1.vcd"
@@ -911,6 +917,11 @@
 	{
 		criteria ConceptPlayerTaunt IsMercenary WeaponIsTommyGun
 		response MercenaryTauntTommygun
+	}
+	rule MercenaryTauntAssaultRifle
+	{
+		criteria ConceptPlayerTaunt IsMercenary WeaponIsAssaultRifle
+		response MercenaryTauntAssaultRifle
 	}	
 	rule MercenaryTauntGatlingGun
 	{
