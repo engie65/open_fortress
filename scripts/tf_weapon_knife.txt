@@ -13,10 +13,11 @@ WeaponData
 	"InstagibDamage"	"999"
 	"TimeFireDelay"			"0.8"
 	"TimeIdle"			"5.0"
-	"SmackDelay"			"0.1"
-	"Secondary_SmackDelay"		"0.3"
+	"SmackDelay"			"0"
+	"Secondary_SmackDelay"		"0"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
+	"UsesCritAnimation"			"1"
 
 	// Ammo & Clip
 	"primary_ammo"			"None"

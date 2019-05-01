@@ -16,7 +16,7 @@ WeaponData
 	"TimeFireDelay"		"0.12"
 	"TimeIdle"		"5.0"
 	"TimeIdleEmpty"		"0.25"
-	"TimeReload"		"2.70"
+	"TimeReload"		"2.1"
 	"ProjectileType"	"projectile_bullet"
 	"BrassModel"		"models/weapons/shells/shell_pistol.mdl"
 	"UseRapidFireCrits"	"1"

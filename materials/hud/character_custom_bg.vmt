@@ -33,7 +33,7 @@
 	$glowx -0.001
 	$glowy -0.001
 
-	"$colortint_base"		"[1 0 1]"
+	"$colortint_base"		"[0 0 0]"
 	"$colortint_tmp"		"[0 0 0]"
 	"$colortint_mul"		"[.7 .7 .7]"
 

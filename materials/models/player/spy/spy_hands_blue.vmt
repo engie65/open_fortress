@@ -23,7 +23,7 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
-		"vm_invis"
+		"spy_invis"
 		{
 		}
 	}

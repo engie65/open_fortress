@@ -36,7 +36,7 @@
 			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
 			"animatedtextureframerate" 		"40"
 		}
-		"vm_invis"
+		"spy_invis"
 		{
 		}
 		"invis"
