@@ -4,7 +4,7 @@
 	title 			""
 	title2			""	
 	gamelogo		"1"
-	developer		"Random People Inc."
+	developer		"https://github.com/KaidemonLP/open_fortress/blob/master/credits.txt"
 	developer_url	"https://github.com/KaidemonLP/Open-Fortress-Source"
 	manual			""
 	
@@ -124,8 +124,6 @@
 			
 			game				|all_source_engine_paths|sourcetest/sourcetest_pak.vpk
 			game				|all_source_engine_paths|sourcetest
-			
-
 			
 			game+download		|gameinfo_path|download
 		}
