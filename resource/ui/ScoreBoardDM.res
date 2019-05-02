@@ -20,14 +20,14 @@
 		"tabPosition"		"50"
 		"avatar_width"		"60"	[$WIN32]
 		"avatar_width"		"0"		[$X360]
-		"name_width"		"122"	[$WIN32]
+		"name_width"		"130"	[$WIN32]
 		"name_width"		"122"	[$X360]
 		"score_width"		"29"
 		"score_width_lodef"	"35"
 		"score_width_hidef"	"50"
 		"ping_width"		"30"	[$WIN32]
 		"ping_width"		"30"	[$X360]		// Larger to push the value off the edge
-		"kills_width"		"130"
+		"kills_width"		"30"
 		"kills_width_lodef"	"35"
 		"kills_width_hidef"	"50"	
 		"status_width"		"40"	[$WIN32]
@@ -60,9 +60,9 @@
 		"font"			"ScoreboardMedium"
 		"labelText"		"%mercenaryteamplayercount%"
 		"textAlignment"		"west"
-		"xpos"			"320"
+		"xpos"			"312"
 		"xpos_hidef"	"20"
-		"ypos"			"69"
+		"ypos"			"68"
 		"ypos_lodef"	"62"
 		"wide"			"300"
 		"tall"			"20"
@@ -110,7 +110,7 @@
 		"labelText"		"playing till"
 		
 	}
-		"HudFragLimitLabel"
+	"HudFragLimitLabel"
 	{
 		"ControlName"	"CTFLabel"
 		"fieldName"		"HudKillsLabel"
@@ -161,8 +161,8 @@
 		"textAlignment"		"west"
 		"xpos"			"15"
 		"xpos_hidef"	"135"
-		"ypos"			"427"	[$WIN32]
-		"ypos"			"277"	[$X360]
+		"ypos"			"410"	[$WIN32]
+		"ypos"			"200"	[$X360]
 		"zpos"			"4"
 		"wide"			"70"
 		"tall"			"20"
