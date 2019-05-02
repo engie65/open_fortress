@@ -41,6 +41,7 @@ Batandy (Tommy Gun)
 Suomimies55
 Gibus Cat
 Stachekip
+Polybagel
 
 Assorted Models and Prop Assets:
 Boomsta
@@ -59,7 +60,8 @@ Ambient sounds (Wiseau):
 Omniary
 
 HUD editing:
-Nbc66
+Nbc66 (Scoreboards)
+Snowy Snowtime (Minmode Frag Counter)
 
 Music:
 Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque, Facility, Stalker, Orch, DMStuff)
