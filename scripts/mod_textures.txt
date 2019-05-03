@@ -383,14 +383,6 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"d_assaultrifle"
-		{
-				"file"	"HUD/d_images"
-				"x"		"0"
-				"y"		"128"
-				"width"		"96"
-				"height"	"32"
-		}
 		"d_club"
 		{
 				"file"	"HUD/d_images"
@@ -769,14 +761,6 @@
 				"height"	"32"
 		}
 		"dneg_smg_mercenary"
-		{
-				"file"	"HUD/dneg_images"
-				"x"		"0"
-				"y"		"128"
-				"width"		"96"
-				"height"	"32"
-		}
-		"dneg_assaultrifle"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
@@ -1774,6 +1758,54 @@
 				"y"		"127"
 				"width"		"80"
 				"height"	"34"
+		}
+		"d_sword"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"222"
+				"width"		"64"
+				"height"	"34"
+		}
+		"dneg_sword"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"222"
+				"width"		"64"
+				"height"	"34"
+		}
+		"d_physcannon"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"189"
+				"width"		"126"
+				"height"	"33"
+		}
+		"dneg_physcannon"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"189"
+				"width"		"126"
+				"height"	"33"
+		}
+		"d_assaultrifle"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"0"
+				"y"		"161"
+				"width"		"122"
+				"height"	"28"
+		}
+		"dneg_assaultrifle"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"0"
+				"y"		"161"
+				"width"		"122"
+				"height"	"28"
 		}
 		"d_umbrella"
 		{

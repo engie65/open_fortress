@@ -3,30 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"medic"
-	"model"			"models/player/medic.mdl"
-	"model_hwm"		"models/player/hwm/medic.mdl"
-	"arm_model"		"models/weapons/c_models/c_medic_arms.mdl"
-	"localize_name"	"TF_Class_Name_Medic"
-	"speed_max"		"320"
-//	"health_max"		"90"
-//	"armor_max"		"100"
+	// Info.
+	"name"				"medic"
+	"localize_name"		"TF_Class_Name_Medic"
+	
+	// Models.
+	"model"				"models/player/medic.mdl"
+	"model_hwm"			"models/player/hwm/medic.mdl"
+	"model_bot"			"models/bots/medic/bot_medic.mdl"
+	"arm_model"			"models/weapons/c_models/c_medic_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"320"
 	"health_max"		"150"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
-	"grenade1"		"TF_WEAPON_GRENADE_NORMAL"
-	"grenade2"		"TF_WEAPON_GRENADE_HEAL"
+	"grenade1"			"TF_GRENADE_NORMAL"
+	"grenade2"			"TF_GRENADE_CONCUSSION"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_BONESAW"
-	"weapon2"		"TF_WEAPON_MEDIGUN"
-	"weapon3"		"TF_WEAPON_SYRINGEGUN_MEDIC"
+	"weapon1"			"TF_WEAPON_BONESAW"
+	"weapon2"			"TF_WEAPON_MEDIGUN"
+	"weapon3"			"TF_WEAPON_SYRINGEGUN_MEDIC"
+	"weapon4"			"NONE"
+	"weapon5"			"NONE"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
 	
-	//"DontDoAirwalk"	"1"
-	//"DontDoNewJump"	"1"
-
+	// Buildables.
+	"buildable1"		"NONE"
+	"buildable2"		"NONE"
+	"buildable3"		"NONE"
+	"buildable4"		"NONE"
+	
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -50,12 +64,12 @@ PlayerClass
 		"TF_AMMO_NAILS"				"150"
 		"TF_AMMO_SUPERSHOTGUN"		"32"
 		"TF_AMMO_RAILGUN"			"25"
-		"TF_AMMO_ASSAULTRIFLE"		"75"
+		"TF_AMMO_ASSAULTRIFLE"		"90"
 	}	
 
-	// Death Sounds
-	"sound_death"				"Medic.Death"
+	// Death Sounds.
+	"sound_death"					"Medic.Death"
 	"sound_crit_death"				"Medic.CritDeath"
-	"sound_melee_death"			"Medic.MeleeDeath"
-	"sound_explosion_death"			"Medic.ExplosionDeath"	
+	"sound_melee_death"				"Medic.MeleeDeath"
+	"sound_explosion_death"			"Medic.ExplosionDeath"
 }

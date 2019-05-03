@@ -3,28 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"heavyweapons"
-	"model"			"models/player/heavy.mdl"
-	"model_hwm"		"models/player/hwm/heavy.mdl"
-	"arm_model"		"models/weapons/c_models/c_heavy_arms.mdl"
-	"localize_name"	"TF_Class_Name_HWGuy"
-	"speed_max"		"230"
-//	"health_max"		"100"
-//	"armor_max"		"400"
+	// Info.
+	"name"				"heavyweapons"
+	"localize_name"		"TF_Class_Name_HWGuy"
+	
+	// Models.
+	"model"				"models/player/heavy.mdl"
+	"model_hwm"			"models/player/hwm/heavy.mdl"
+	"model_bot"			"models/bots/heavy/bot_heavy.mdl"
+	"arm_model"			"models/weapons/c_models/c_heavy_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"230"
 	"health_max"		"300"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
-	"grenade1"		"TF_WEAPON_GRENADE_NORMAL"
-	"grenade2"		"TF_WEAPON_GRENADE_MIRV"
+	"grenade1"			"TF_GRENADE_NORMAL"
+	"grenade2"			"TF_GRENADE_MIRV"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_FISTS"
-	"weapon2"		"TF_WEAPON_SHOTGUN_HWG"
-	"weapon3"		"TF_WEAPON_MINIGUN"
+	"weapon1"			"TF_WEAPON_FISTS"
+	"weapon2"			"TF_WEAPON_SHOTGUN_HWG"
+	"weapon3"			"TF_WEAPON_MINIGUN"
+	"weapon4"			"NONE"
+	"weapon5"			"NONE"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
 	
-
+	// Buildables.
+	"buildable1"		"NONE"
+	"buildable2"		"NONE"
+	"buildable3"		"NONE"
+	"buildable4"		"NONE"
+	
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -48,14 +64,12 @@ PlayerClass
 		"TF_AMMO_NAILS"				"150"
 		"TF_AMMO_SUPERSHOTGUN"		"32"
 		"TF_AMMO_RAILGUN"			"25"
-		"TF_AMMO_ASSAULTRIFLE"		"75"
+		"TF_AMMO_ASSAULTRIFLE"		"90"
 	}	
 
-	// Death Sounds
-	"sound_death"				"Heavy.Death"
+	// Death Sounds.
+	"sound_death"					"Heavy.Death"
 	"sound_crit_death"				"Heavy.CritDeath"
-	"sound_melee_death"			"Heavy.MeleeDeath"
-	"sound_explosion_death"			"Heavy.ExplosionDeath"	
-	
-	"c_arm"	"models/weapons/c_models/c_heavy_arms.mdl"
+	"sound_melee_death"				"Heavy.MeleeDeath"
+	"sound_explosion_death"			"Heavy.ExplosionDeath"
 }

@@ -3,33 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"Mercenary"
-	"model"			"models/player/mercenary.mdl"
-	"model_hwm"		"models/player/mercenary.mdl"
-	"arm_model"		"models/weapons/c_models/c_merc_arms.mdl"
-	"localize_name"	"TF_Class_Name_Mercenary"
-	"speed_max"		"320"
-//	"health_max"		"100"
-//	"armor_max"		"200"
+	// Info.
+	"name"				"mercenary"
+	"localize_name"		"TF_Class_Name_Mercenary"
+	
+	// Models.
+	"model"				"models/player/mercenary.mdl"
+	"model_hwm"			"models/player/mercenary.mdl"
+	"model_bot"			"models/player/mercenary.mdl"
+	"arm_model"			"models/weapons/c_models/c_merc_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"320"
 	"health_max"		"150"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
-	"grenade1"		"TF_WEAPON_GRENADE_NORMAL"
-	"grenade2"		"TF_WEAPON_GRENADE_NAIL"
+	"grenade1"			"TF_GRENADE_NORMAL"
+	"grenade2"			"NONE"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_CROWBAR"
-	"weapon2"		"TF_WEAPON_PISTOL_MERCENARY"
+	"weapon1"			"TF_WEAPON_CROWBAR"
+	"weapon2"			"TF_WEAPON_PISTOL_MERCENARY"
+	"weapon3"			"NONE"
+	"weapon4"			"NONE"
+	"weapon5"			"NONE"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
 	
-	//"DontDoNewJump"	"1"
-/*
-	"buildable1"	"OBJ_SENTRYGUN"
-	"buildable2"	"OBJ_DISPENSER"
-	"buildable3"	"OBJ_TELEPORTER_ENTRANCE"
-	"buildable4"	"OBJ_TELEPORTER_EXIT"	
-*/
+	// Buildables.
+	"buildable1"		"NONE"
+	"buildable2"		"NONE"
+	"buildable3"		"NONE"
+	"buildable4"		"NONE"
+	
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -53,14 +64,12 @@ PlayerClass
 		"TF_AMMO_NAILS"				"150"
 		"TF_AMMO_SUPERSHOTGUN"		"32"
 		"TF_AMMO_RAILGUN"			"25"
-		"TF_AMMO_ASSAULTRIFLE"		"75"
+		"TF_AMMO_ASSAULTRIFLE"		"90"
 	}	
 	
-	// Death Sounds
-	"sound_death"				"Mercenary.Death"
+	// Death Sounds.
+	"sound_death"					"Mercenary.Death"
 	"sound_crit_death"				"Mercenary.CritDeath"
-	"sound_melee_death"			"Mercenary.MeleeDeath"
-	"sound_explosion_death"			"Mercenary.ExplosionDeath"	
-	
-	"c_arm"	"models/weapons/c_models/c_soldier_arms.mdl"
+	"sound_melee_death"				"Mercenary.MeleeDeath"
+	"sound_explosion_death"			"Mercenary.ExplosionDeath"
 }
