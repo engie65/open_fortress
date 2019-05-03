@@ -64,12 +64,12 @@ PlayerClass
 		"TF_AMMO_NAILS"				"150"
 		"TF_AMMO_SUPERSHOTGUN"		"32"
 		"TF_AMMO_RAILGUN"			"25"
-		"TF_AMMO_ASSAULTRIFLE"		"75"
+		"TF_AMMO_ASSAULTRIFLE"		"90"
 	}	
 	
 	// Death Sounds.
-	"sound_death"				"Mercenary.Death"
-	"sound_crit_death"			"Mercenary.CritDeath"
-	"sound_melee_death"			"Mercenary.MeleeDeath"
-	"sound_explosion_death"		"Mercenary.ExplosionDeath"
+	"sound_death"					"Mercenary.Death"
+	"sound_crit_death"				"Mercenary.CritDeath"
+	"sound_melee_death"				"Mercenary.MeleeDeath"
+	"sound_explosion_death"			"Mercenary.ExplosionDeath"
 }

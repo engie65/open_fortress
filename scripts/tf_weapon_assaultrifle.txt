@@ -27,9 +27,9 @@ WeaponData
 	// Ammo & Clip.
 	"primary_ammo"		"TF_AMMO_ASSAULTRIFLE"
 	"secondary_ammo"	"None"
-	clip_size		25
-	default_clip		25
-	"MaxAmmo"	"75"
+	clip_size		"30"
+	default_clip		"30"
+	"MaxAmmo"	"90"
 
 	// bucket.	
 	"bucket"			"0"
