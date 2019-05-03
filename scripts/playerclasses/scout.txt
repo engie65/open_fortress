@@ -3,28 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"scout"
-	"model"			"models/player/scout.mdl"
-	"model_hwm"		"models/player/hwm/scout.mdl"
-	"arm_model"	"models/weapons/c_models/c_scout_arms.mdl"
-	"localize_name"	"TF_Class_Name_Scout"
-//	"speed_max"		"450"
-	"speed_max"		"400"
-//	"health_max"		"75"
-//	"armor_max"		"25"
+	// Info.
+	"name"				"scout"
+	"localize_name"		"TF_Class_Name_Scout"
+	
+	// Models.
+	"model"				"models/player/scout.mdl"
+	"model_hwm"			"models/player/hwm/scout.mdl"
+	"model_bot"			"models/bots/scout/bot_scout.mdl"
+	"arm_model"			"models/weapons/c_models/c_scout_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"400"
 	"health_max"		"125"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
-	"grenade1"		"TF_WEAPON_GRENADE_CALTROP"
-	"grenade2"		"TF_WEAPON_GRENADE_CONCUSSION"
+	"grenade1"			"TF_GRENADE_CALTROP"
+	"grenade2"			"TF_GRENADE_CONCUSSION"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_BAT"
-	"weapon2"		"TF_WEAPON_PISTOL_SCOUT"
-	"weapon3"		"TF_WEAPON_SCATTERGUN"
-
+	"weapon1"			"TF_WEAPON_BAT"
+	"weapon2"			"TF_WEAPON_PISTOL_SCOUT"
+	"weapon3"			"TF_WEAPON_SCATTERGUN"
+	"weapon4"			"NONE"
+	"weapon5"			"NONE"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
+	
+	// Buildables.
+	"buildable1"		"NONE"
+	"buildable2"		"NONE"
+	"buildable3"		"NONE"
+	"buildable4"		"NONE"
+	
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -51,9 +67,9 @@ PlayerClass
 		"TF_AMMO_ASSAULTRIFLE"		"75"
 	}	
 
-	// Death Sounds
-	"sound_death"				"Scout.Death"
+	// Death Sounds.
+	"sound_death"					"Scout.Death"
 	"sound_crit_death"				"Scout.CritDeath"
-	"sound_melee_death"			"Scout.MeleeDeath"
+	"sound_melee_death"				"Scout.MeleeDeath"
 	"sound_explosion_death"			"Scout.ExplosionDeath"	
 }

@@ -3,29 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"soldier"
-	"model"			"models/player/soldier.mdl"
-	"model_hwm"		"models/player/hwm/soldier.mdl"
-	"arm_model"		"models/weapons/c_models/c_soldier_arms.mdl"
-	"localize_name"	"TF_Class_Name_Soldier"
-	"speed_max"		"240"
-//	"health_max"		"100"
-//	"armor_max"		"250"
+	// Info.
+	"name"				"soldier"
+	"localize_name"		"TF_Class_Name_Soldier"
+	
+	// Models.
+	"model"				"models/player/soldier.mdl"
+	"model_hwm"			"models/player/hwm/soldier.mdl"
+	"model_bot"			"models/bots/soldier/bot_soldier.mdl"
+	"arm_model"			"models/weapons/c_models/c_soldier_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"240"
 	"health_max"		"200"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
-	"grenade1"		"TF_WEAPON_GRENADE_NORMAL"
-	"grenade2"		"TF_WEAPON_GRENADE_NAIL"
+	"grenade1"			"TF_GRENADE_NORMAL"
+	"grenade2"			"TF_GRENADE_NAIL"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_SHOVEL"
-	"weapon2"		"TF_WEAPON_SHOTGUN_SOLDIER"
-	"weapon3"		"TF_WEAPON_ROCKETLAUNCHER"
+	"weapon1"			"TF_WEAPON_SHOVEL"
+	"weapon2"			"TF_WEAPON_SHOTGUN_SOLDIER"
+	"weapon3"			"TF_WEAPON_ROCKETLAUNCHER"
+	"weapon4"			"NONE"
+	"weapon5"			"NONE"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
 	
-	//"DontDoNewJump"	"1"
-
+	// Buildables.
+	"buildable1"		"NONE"
+	"buildable2"		"NONE"
+	"buildable3"		"NONE"
+	"buildable4"		"NONE"
+	
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -52,11 +67,9 @@ PlayerClass
 		"TF_AMMO_ASSAULTRIFLE"		"75"
 	}	
 	
-	// Death Sounds
-	"sound_death"				"Soldier.Death"
+	// Death Sounds.
+	"sound_death"					"Soldier.Death"
 	"sound_crit_death"				"Soldier.CritDeath"
-	"sound_melee_death"			"Soldier.MeleeDeath"
-	"sound_explosion_death"			"Soldier.ExplosionDeath"	
-	
-	"c_arm"	"models/weapons/c_models/c_soldier_arms.mdl"
+	"sound_melee_death"				"Soldier.MeleeDeath"
+	"sound_explosion_death"			"Soldier.ExplosionDeath"
 }

@@ -3,23 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"Civilian"
-	"model"			"models/player/civilian.mdl"
-	"arm_model"		"models/weapons/c_models/c_civilian_arms.mdl"
+	// Info.
+	"name"				"civilian"
+	"localize_name"		"TF_Class_Name_Civilian"
 	
-	"localize_name"	"TF_Class_Name_Civilian"
-	"speed_max"		"280"
+	// Models.
+	"model"				"models/player/civilian.mdl"
+	"model_hwm"			"models/player/civilian.mdl"
+	"model_bot"			"models/player/civilian.mdl"
+	"arm_model"			"models/weapons/c_models/c_civilian_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"280"
 	"health_max"		"200"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
+	"grenade1"			"NONE"
+	"grenade2"			"NONE"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_UMBRELLA"
-
-	// Ammo.
+	"weapon1"			"TF_WEAPON_UMBRELLA"
+	"weapon2"			"NONE"
+	"weapon3"			"NONE"
+	"weapon4"			"NONE"
+	"weapon5"			"NONE"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
 	
+	// Buildables.
+	"buildable1"		"NONE"
+	"buildable2"		"NONE"
+	"buildable3"		"NONE"
+	"buildable4"		"NONE"
+	
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -45,5 +66,10 @@ PlayerClass
 		"TF_AMMO_RAILGUN"			"25"
 		"TF_AMMO_ASSAULTRIFLE"		"75"
 	}		
-
+	
+	// Death Sounds.
+	"sound_death"				"Civilian.Death"
+	"sound_crit_death"			"Civilian.CritDeath"
+	"sound_melee_death"			"Civilian.MeleeDeath"
+	"sound_explosion_death"		"Civilian.ExplosionDeath"
 }

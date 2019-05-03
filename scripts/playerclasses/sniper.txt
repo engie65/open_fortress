@@ -3,26 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"sniper"
-	"model"			"models/player/sniper.mdl"
-	"model_hwm"		"models/player/hwm/sniper.mdl"
-	"arm_model"	"models/weapons/c_models/c_sniper_arms.mdl"
-	"localize_name"	"TF_Class_Name_Sniper"
-	"speed_max"		"300"
-//	"health_max"		"95"
-//	"armor_max"		"25"
+	// Info.
+	"name"				"sniper"
+	"localize_name"		"TF_Class_Name_Sniper"
+	
+	// Models.
+	"model"				"models/player/sniper.mdl"
+	"model_hwm"			"models/player/hwm/sniper.mdl"
+	"model_bot"			"models/bots/sniper/bot_sniper.mdl"
+	"arm_model"			"models/weapons/c_models/c_sniper_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"300"
 	"health_max"		"125"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
-	"grenade1"		"TF_WEAPON_GRENADE_NORMAL"
+	"grenade1"			"TF_GRENADE_NORMAL"
+	"grenade2"			"TF_GRENADE_FLARE"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_CLUB"
-	"weapon2"		"TF_WEAPON_SMG"
-	"weapon3"		"TF_WEAPON_SNIPERRIFLE"
-
+	"weapon1"			"TF_WEAPON_CLUB"
+	"weapon2"			"TF_WEAPON_SMG"
+	"weapon3"			"TF_WEAPON_SNIPERRIFLE"
+	"weapon4"			"NONE"
+	"weapon5"			"NONE"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
+	
+	// Buildables.
+	"buildable1"		"NONE"
+	"buildable2"		"NONE"
+	"buildable3"		"NONE"
+	"buildable4"		"NONE"
+	
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -49,9 +67,9 @@ PlayerClass
 		"TF_AMMO_ASSAULTRIFLE"		"75"
 	}	
 
-	// Death Sounds
-	"sound_death"				"Sniper.Death"
+	// Death Sounds.
+	"sound_death"					"Sniper.Death"
 	"sound_crit_death"				"Sniper.CritDeath"
-	"sound_melee_death"			"Sniper.MeleeDeath"
-	"sound_explosion_death"			"Sniper.ExplosionDeath"	
+	"sound_melee_death"				"Sniper.MeleeDeath"
+	"sound_explosion_death"			"Sniper.ExplosionDeath"
 }

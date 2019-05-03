@@ -3,35 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"engineer"
-	"model"			"models/player/engineer.mdl"
-	"model_hwm"		"models/player/hwm/engineer.mdl"
-	"arm_model"		"models/weapons/c_models/c_engineer_arms.mdl"
-	"localize_name"	"TF_Class_Name_Engineer"
-	"speed_max"		"300"
-//	"health_max"		"80"
-//	"armor_max"		"50"
+	// Info.
+	"name"				"engineer"
+	"localize_name"		"TF_Class_Name_Engineer"
+	
+	// Models.
+	"model"				"models/player/engineer.mdl"
+	"model_hwm"			"models/player/hwm/engineer.mdl"
+	"model_bot"			"models/bots/engineer/bot_engineer.mdl"
+	"arm_model"			"models/weapons/c_models/c_engineer_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"300"
 	"health_max"		"125"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
-	"grenade1"		"TF_WEAPON_GRENADE_NORMAL"
-	"grenade2"		"TF_WEAPON_GRENADE_EMP"
+	"grenade1"			"TF_GRENADE_NORMAL"
+	"grenade2"			"TF_GRENADE_EMP"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_WRENCH"
-	"weapon2"		"TF_WEAPON_PISTOL"
-	"weapon3"		"TF_WEAPON_SHOTGUN_PRIMARY"
-	"weapon4"		"TF_WEAPON_PDA_ENGINEER_BUILD"
-	"weapon5"		"TF_WEAPON_PDA_ENGINEER_DESTROY"
+	"weapon1"			"TF_WEAPON_WRENCH"
+	"weapon2"			"TF_WEAPON_PISTOL"
+	"weapon3"			"TF_WEAPON_SHOTGUN_PRIMARY"
+	"weapon4"			"TF_WEAPON_PDA_ENGINEER_BUILD"
+	"weapon5"			"TF_WEAPON_PDA_ENGINEER_DESTROY"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
 	
-	// Buildables
-	"buildable1"	"OBJ_SENTRYGUN"
-	"buildable2"	"OBJ_DISPENSER"
-	"buildable3"	"OBJ_TELEPORTER_ENTRANCE"
-	"buildable4"	"OBJ_TELEPORTER_EXIT"
+	// Buildables.
+	"buildable1"		"OBJ_SENTRYGUN"
+	"buildable2"		"OBJ_DISPENSER"
+	"buildable3"		"OBJ_TELEPORTER_ENTRANCE"
+	"buildable4"		"OBJ_TELEPORTER_EXIT"
 	
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -58,9 +67,9 @@ PlayerClass
 		"TF_AMMO_ASSAULTRIFLE"		"75"
 	}	
 
-	// Death Sounds
-	"sound_death"				"Engineer.Death"
+	// Death Sounds.
+	"sound_death"					"Engineer.Death"
 	"sound_crit_death"				"Engineer.CritDeath"
-	"sound_melee_death"			"Engineer.MeleeDeath"
+	"sound_melee_death"				"Engineer.MeleeDeath"
 	"sound_explosion_death"			"Engineer.ExplosionDeath"	
 }

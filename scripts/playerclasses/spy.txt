@@ -3,32 +3,44 @@
 //
 PlayerClass
 {
-	// Attributes.
-	"name"			"spy"
-	"model"			"models/player/spy.mdl"
-	"model_hwm"		"models/player/hwm/spy.mdl"
-	"arm_model"		"models/weapons/c_models/c_spy_arms.mdl"
-	"localize_name"	"TF_Class_Name_Spy"
-	"speed_max"		"300"
-//	"health_max"		"90"
-//	"armor_max"		"100"
+	// Info.
+	"name"				"spy"
+	"localize_name"		"TF_Class_Name_Spy"
+	
+	// Models.
+	"model"				"models/player/spy.mdl"
+	"model_hwm"			"models/player/hwm/spy.mdl"
+	"model_bot"			"models/bots/spy/bot_spy.mdl"
+	"arm_model"			"models/weapons/c_models/c_spy_arms.mdl"
+	
+	// Stats.
+	"speed_max"			"300"
 	"health_max"		"125"
-	"armor_max"		"0"
+	"armor_max"			"0"
 
 	// Grenades.
-	"grenade1"		"TF_WEAPON_GRENADE_NORMAL"
-//	"grenade2"		"TF_WEAPON_GRENADE_SMOKE_BOMB"
+	"grenade1"			"TF_GRENADE_NORMAL"
+	"grenade2"			"TF_GRENADE_HALLUC"
+	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"		"TF_WEAPON_KNIFE"
-	"weapon2"		"TF_WEAPON_REVOLVER"
-	"weapon3"		"TF_WEAPON_PDA_SPY"
-	"weapon4"		"TF_WEAPON_INVIS"
+	"weapon1"			"TF_WEAPON_KNIFE"
+	"weapon2"			"TF_WEAPON_REVOLVER"
+	"weapon3"			"TF_WEAPON_PDA_SPY"
+	"weapon4"			"TF_WEAPON_INVIS"
+	"weapon5"			"NONE"
+	"weapon6"			"NONE"
+	"weapon7"			"NONE"
+	"weapon8"			"NONE"
+	"weapon9"			"NONE"
 	
-	// Buildables
-	"buildable1"	"OBJ_ATTACHMENT_SAPPER"
+	// Buildables.
+	"buildable1"		"OBJ_ATTACHMENT_SAPPER"
+	"buildable2"		"NONE"
+	"buildable3"		"NONE"
+	"buildable4"		"NONE"
 	
-
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_PRIMARY"			"200"
@@ -55,11 +67,9 @@ PlayerClass
 		"TF_AMMO_ASSAULTRIFLE"		"75"
 	}
 
-	// Death Sounds
-	"sound_death"				"Spy.Death"
+	// Death Sounds.
+	"sound_death"					"Spy.Death"
 	"sound_crit_death"				"Spy.CritDeath"
-	"sound_melee_death"			"Spy.MeleeDeath"
-	"sound_explosion_death"			"Spy.ExplosionDeath"		
-	
-	"c_arm"	"models/weapons/c_models/c_spy_arms.mdl"
+	"sound_melee_death"				"Spy.MeleeDeath"
+	"sound_explosion_death"			"Spy.ExplosionDeath"
 }
