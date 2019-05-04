@@ -1,10 +1,19 @@
+
+// == IMPORTANT == //
+
+// This FGD is deprecated! I am not providing any more updates to this version, use ofd_fic.fgd instead
+// Only use this FGD if you are using stock Hammer, as ofd_fic.fgd is not compatible with stock Hammer (only works with Slartibarty's / Slammin Hammer)
+
+
+
+
+
 //=============================================================================
 //
 // Fully standardised general game definition file (.fgd) for Open Fortress Deathmatch
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// Ported to work in Stock hammer by KaidemonLP
-// V6.5, 29th of April 2019
+// V6.4, 3rd of May 2019
 //
 //=============================================================================
 
@@ -184,9 +193,7 @@
 		"env_particle_performance_monitor"
         "env_player_surface_trigger"
         "filter_activator_class"
-        "filter_activator_context"
         "filter_activator_mass_greater"
-        "filter_activator_model"
         "filter_activator_name"
         "filter_activator_team"
         "filter_activator_tfteam"
@@ -806,6 +813,8 @@
 
 	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
+	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
+	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
@@ -1039,7 +1048,7 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
 	texframeindex(integer) : "Texture Frame" : : "The frame number for any animated textures on this entity."		
 	linedivider5(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
@@ -1211,7 +1220,6 @@
 		0 : "No"
 		1 : "Yes"
 	]
-	
 	spawnflags(flags) = 
 	[
 		1: "Clients/Players/Bots" : 1
@@ -1456,10 +1464,11 @@
 	]
 	gibdir(angle) : "Precise Gib Direction" : "0 0 0" : "Specifies the direction to throw gibs when this breakable breaks. Be sure to select Use Precise Gib Dir in the Gibs Direction field!"
 	explodemagnitude(integer) : "Explode Magnitude" : 0 : "If non-zero, when this entity breaks it will create an explosion that causes the specified amount of damage."
+
 	nodamageforces(choices) : "Damaging it Doesn't Push It" : 0 : "Used to determine whether or not damage should cause the brush to move." =
 	[
-		0 : "No"
-		1 : "Yes"
+		0: "No"
+		1: "Yes"
 	]
 	gibmodel(string) : "Gib Model" :  : "Specify a custom gib model to break into, overriding the 'Material Type'."
 	spawnobject(choices) : "Spawn On Break" : 0 : "When broken, an entity of the selected type will be created. Hardcoded values." =
@@ -1517,16 +1526,18 @@
 	DefaultAnim(string) : "Default Animation" :  : "The name of the idle animation that this prop will revert to whenever it finishes a random or forced animation."
 	RandomAnimation(choices) : "Randomly Animate?" : 0 : "If set, this prop will randomly choose and play animations, based upon the times specified in 'Min/Max Random Anim Time'. Inbetween the random animations, it will revert to playing the 'Default Animation'." =
 	[
-		0 : "No"
-		1 : "Yes"
+		0: "No"
+		1: "Yes"
 	]
 	MinAnimTime(float) : "Min Random Anim Time" : "5" : "Minimum time between random animations."
 	MaxAnimTime(float) : "Max Random Anim Time" : "10" : "Maximum time between random animations."
-	DisableBoneFollowers(choices) : "Disable Bone Followers?" : 0 : "If set, this prop won't generate phys_bone_followers." =
+	
+	DisableBoneFollowers(choices) : "Disable Bone Followers?" : 0 : "If set, this prop won't generate phys_bone_followers. See that entity for more information." =
 	[
-		0 : "No"
-		1 : "Yes"
-	]	
+		0: "No"
+		1: "Yes"
+	]
+	
 	linedivider10(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
 	spawnflags(flags) =
@@ -1671,9 +1682,10 @@
 	unlocked_sound(sound) : "Unlocked Sound" : : "Sound played when the door is unlocked and used."
 	loopmovesound(choices) : "Loop Moving Sound?" : 0 : "If set to true, the door's 'Start Sound' will be continually looped until the door finishes moving." =
 	[
-		0 : "No"
-		1 : "Yes"
-	]		
+		0: "No"
+		1: "Yes"
+	]
+	
 	spawnpos(choices) : "Spawn Position?" : 0 =
 	[
 		0 : "Closed"
@@ -2155,7 +2167,8 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
+
 	Strict(choices) : "Strict?" : 1 : "If true, players will not be able to order their allies to ignore the battle line by commanding them with impulse 50 (bound to C by default)." =
 	[
 		0 : "No"
@@ -2217,7 +2230,8 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
+	
 	AssaultCue(choices) : "Assault Cue" : 1 : "Chooses when the goal is going to be set after this entity has been activated. " =
 	[
 	
@@ -2254,7 +2268,8 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
+
 	Formation(choices) : "Formation" : 0 =
 	[
 	    0: "Close circle"
@@ -2284,19 +2299,19 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
-
+	]
 	goal(string) : "Target Entity" : : "The name of the entity that the NPC will lead the player to (i.e. an info_target)."
 	WaitPointName(target_destination) : "Wait Point" : : "If the NPC loses line-of-sight to the player, it will return to this entity (i.e. an info_target)."
 	WaitDistance(float) : "Wait Distance" : : "The player must be within this distance of the NPC before the NPC initially begins leading them."
 	LeadDistance(float) : "Lead Distance" : "64" : "The player is considered to be too far behind if they're beyond this distance. Past this distance, the leader will nag the player to hurry up."
 	RetrieveDistance(float) : "Retrieve Distance" : "96" : "The distance from the player that the NPC should return to when retrieving a lagging player. Must be between ('Lead Distance' + 24) and ('Lead Distance' * 4) to avoid the leader ping-ponging."
 	SuccessDistance(float) : "Success Distance" : "0" : "The distance from the player (to the NPC) that the player must be within for the Lead to succeed, once the NPC has reached the goal. If set to 0, it will use the lead distance instead."
-	Run(choices) : "Run instead of Walk?" : 0 : "" =
+	Run(choices) : "Run instead of Walk?" : "0" =
 	[
-		0 : "No"
-		1 : "Yes"
-	]	
+		"0" : "No"
+		"1" : "Yes"
+	]
+
 	Retrieve(choices) : "Retrieve player?" : 1 =
 	[
 		0 : "No, just idle and wait"
@@ -2372,23 +2387,24 @@
 		1 : "Classname"
 	] 
 
-	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." = 
+	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." =
 	[
 		0 : "No"
 		1 : "Yes"
-	] 	
+	]
+	
 	goal(string) : "Target Entity" : : "The name of the entity that the NPC will lead the player to (i.e. an info_target)."
 	WaitPointName(target_destination) : "Wait Point" : : "If the NPC loses line-of-sight to the player, it will return to this entity (i.e. an info_target)."
 	WaitDistance(float) : "Wait Distance" : : "The player must be within this distance of the NPC before the NPC initially begins leading them."
 	LeadDistance(float) : "Lead Distance" : "64" : "The player is considered to be too far behind if they're beyond this distance. Past this distance, the leader will nag the player to hurry up."
 	RetrieveDistance(float) : "Retrieve Distance" : "96" : "The distance from the player that the NPC should return to when retrieving a lagging player. Must be between ('Lead Distance' + 24) and ('Lead Distance' * 4) to avoid the leader ping-ponging."
 	SuccessDistance(float) : "Success Distance" : "0" : "The distance from the player (to the NPC) that the player must be within for the Lead to succeed, once the NPC has reached the goal. If set to 0, it will use the lead distance instead."
-
-	Run(choices) : "Run instead of Walk?" : 0 : "" = 
+	Run(choices) : "Run instead of Walk?" : "0" =
 	[
-		0 : "No"
-		1 : "Yes"
-	] 	
+		"0" : "No"
+		"1" : "Yes"
+	]
+
 	Retrieve(choices) : "Retrieve player?" : 1 =
 	[
 		0 : "No, just idle and wait"
@@ -2459,11 +2475,11 @@
 		1 : "Classname"
 	] 
 
-	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." = 
+	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." =
 	[
 		0 : "No"
 		1 : "Yes"
-	] 
+	]
 
 	HintGroupChangeReaction(Choices) : "Reaction to tactical change" : 1 : "Defines how biased NPCs should be to finding cover when the status of the standoff changes. The ways the status can change include the battle line/player moving, NPCs dying, hint group changes, and the SetAggressiveness input. " =
 	[
@@ -2536,17 +2552,18 @@
 
 	rank(integer) : "Disposition Priority" : 0 : "How much the Subject(s) should Like/Hate/Fear the Target(s). Higher priority = stronger feeling."
 
-	StartActive(choices) : "Start Active?" : 0 : "Set if goal should be active immediately." = 
+	StartActive(choices) : "Start Active?" : 0 : "Apply this relationship as soon as the entity spawns?" =
 	[
 		0 : "No"
 		1 : "Yes"
 	]
 
-	Reciprocal(choices) : "Reciprocal" : 0 : "Make the new disposition apply to the targets as well as the subjects." = 
+	Reciprocal(choices) : "Reciprocal" : 0 : "Make the new disposition apply to the targets as well as the subjects."  =
 	[
 		0 : "No"
 		1 : "Yes"
-	] 
+	]
+
 	spawnflags(flags) =
 	[
 		1 : "Notify subject of target's location" : 0
@@ -2751,7 +2768,7 @@
 	m_iszEntity(target_destination) : "Target NPC" : : "The name or classname of an NPC to use."
 	m_flRadius(integer) : "Search Radius" : 0 : "Radius to search within for an NPC to use. 0 searches everywhere."
 
-	graball(choices) : "All in radius?" : 0 : "Whether to grab all matching NPCs in the specified radius, instead of just one." = 
+	graball(choices)  : "All in radius?" : 0: "Whether to grab all matching NPCs in the specified radius, instead of just one."  =
 	[
 		0 : "No"
 		1 : "Yes"
@@ -2876,23 +2893,25 @@
 	assaultgroup(string)  : "Assault Hint Group" :  : "NPC's movements are constrained to this hint group once assault has begun."
 	nextassaultpoint(target_destination) : "Next assault point (optional)" : : "The assault_assaultpoint to move to next."
 	assaulttimeout(float) : "Assault time out" : "3.0" : "This point is cleared when no enemies are seen for this long (specified in seconds). The NPC(s) at this assault point will scout for enemies this long before moving on."
-	clearoncontact(choices) : "Clear on contact with enemies?" : 0 : "If the assaulting NPC meets enemies on its way to this point, it will consider the assault point cleared and target the next assault point in the chain." = 
+	clearoncontact(choices) : "Clear on contact with enemies?" : 0 : "If the assaulting NPC meets enemies on its way to this point, it will consider the assault point cleared and target the next assault point in the chain." =
 	[
 		0 : "No"
 		1 : "Yes"
 	]
-	allowdiversion(choices) : "Allow Diversion?" : 0 : "If the assault comes into contact with hostiles on the way to this assault point, divert to kill them and resume once the area appears clear. "=
+	allowdiversion(choices) : "Allow Diversion?" : 0 : "If the assault comes into contact with hostiles on the way to this assault point, divert to kill them and resume once the area appears clear. " =
 	[
 		0 : "No"
 		1 : "Yes"
 	]
+
 	allowdiversionradius(float) : "Diversion Proximity" : 0 : "If Allow Diversion is set to Yes, NPC will only divert from assault to attack an enemy that is within this distance of the assault point. 0 means no limit."
 
 	nevertimeout(choices) : "Never Timeout?" : 0 : "If set, the assault never ends for NPCs assaulting this point. Useful for forcing NPCs back to a point." =
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
+
 	strict(choices) : "Strict?" : 0 : "If set, the assault never ends for NPCs assaulting this point. Useful for forcing NPCs back to a point." =
 	[
 		0 : "No, NPC may move from point to attack"
@@ -2904,11 +2923,13 @@
 		0 : "No"
 		1 : "Yes"
 	]
+
 	urgent(choices) : "Urgent?" : 0 : "If true, NPCs will consider movement to this assault point as Urgent Navigation." =
 	[
 		0 : "No"
 		1 : "Yes"
 	]
+
 	assaulttolerance(choices) : "Attack Tolerance" : 36 : "How far this NPC may move from the assault point to try to attack an enemy." =
 	[
 		36 : "Tight (3ft)"
@@ -2952,6 +2973,32 @@
 	output OnArrival(void) : "Fires when the NPC reaches this rally point."
 ]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
 @PointClass base(BaseEntity, EnableDisable) sphere(minfalloff) sphere(maxfalloff) iconsprite("editor-ficool2/color_correction") = color_correction : 
 	"An entity to control the color correction in the map.  It loads a color correction lookup table (.raw) and controls its strength. Correction is applied in a sphere surrounding the entity, with a configurable amount of falloff."
 [
@@ -3444,7 +3491,8 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
+	
 	spawnflags(Flags) =
 	[
 		1 : "Enable AutoSpawn (will spawn whenever there's room)" : 0
@@ -3627,7 +3675,7 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
 	foglerptime(float) : "Interpolate Time" : "0" : "Fade time for the StartFogTransition input, in seconds."
 	
 	spawnflags(flags) =
@@ -3988,6 +4036,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
+
 	PSName(string) : "Particle System Entity" :  : "Set this to the name of the env_smokestack that you want this light to affect."
 ]
 
@@ -4065,11 +4114,11 @@
 	nearz(float)				: "NearZ" : "4.0" : "Objects closer than this will not receive the projection."
 	farz(float)					: "FarZ" : "750.0" : "Objects beyond this distance will not receive the projection."	
 	
-	enableshadows(choices) : "Enable Shadows?" : 0 : "Enables/disables shadows from this projected texture." =
+	enableshadows(Choices) : "Enable Shadows?" : 0 : "Enables/disables shadows from this projected texture." =
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
 	shadowquality(Choices) : "Shadow Quality" : 1 : "Quality of shadows." =
 	[
 		0 : "Low"
@@ -4079,12 +4128,12 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
 	lightworld(Choices) : "Light World?" : 1 : "Control whether flashlight effects static world geometry." =
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
 	lightcolor(color255)		: "Light Color" : "255 255 255 200" : "Light Color RGB-Intensity."
 	cameraspace(integer)		: "Camera Space" : 0 : "Display relative to player's view. Breaks things horribly unless the entity moves with the player."
 
@@ -4104,6 +4153,8 @@
 	input EnableShadows(bool) : "Enables/disables shadows from this projected texture."
 	input Ambient(bool) : "Allows for an ambiance light, much like the shadow color for it."
 ]
+
+
 
 @PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/env_rockettrail") = env_rockettrail : 
 	"An entity that emits a rocket trail."
@@ -4384,6 +4435,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
+
 	position0(target_destination) : "Sound Position 0" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
 	position1(target_destination) : "Sound Position 1" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
 	position2(target_destination) : "Sound Position 2" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
@@ -4554,6 +4606,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
+
 	position0(target_destination) : "Sound Position 0" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
 	position1(target_destination) : "Sound Position 1" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
 	position2(target_destination) : "Sound Position 2" :  : "A sound position that will be referenced inside the soundscape text file. Usually used to position a set of sounds within the world."
@@ -4670,6 +4723,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
+
 	frame(integer) : "Starting Frame" : 0 : "If the sprite is animated, the frame it should start animating on."
 	framerate(float) : "Framerate" : "10.0" : "Rate at which the sprite should animate, if at all."
 	scale(float) : "Scale" : "0.25" : "Scale multiplier of the sprite."
@@ -4827,6 +4881,8 @@
 	output OnGustEnd(void) : "Fired when a wind gust ends."
 ]
 
+
+
 @FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_class") = filter_activator_class :
 	"A filter that filters by the class name of the activator. Entities can have their classnames changed using AddOutput. "+
 	"Warning: changing classnames can lead to strange behaviour or crashes upon round restart!"
@@ -4836,28 +4892,12 @@
 		"all entities EXCEPT those whose class name matches the given string will pass the filter."
 ]
 
-@FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_name") = filter_activator_context :
-	"A filter that filters by a context on the activator."
-[
-	ResponseContext(string) : "Filter Context" : : "The context to filter by. If the filter mode is Allow, only entities that "+
-		"have a context matching the given string, of any value, will pass the filter. If the filter mode is Disallow, "+
-		"all entities EXCEPT those whose context matches the string will pass the filter."
-]
-
 @FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_mass_greater") = filter_activator_mass_greater :
 	"A filter that filters by the mass of the activator."
 [
 	filtermass(float) : "Filter Mass" : : "The mass to filter by. If the filter mode is Allow, only entities whose "+
 		"mass is greater than the give float will pass the filter. If the filter mode is Disallow, "+
 		"all entities EXCEPT those whose mass is greater than the given float will pass the filter."
-]
-
-@FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_name.vmt") = filter_activator_model :
-	"A filter that filters by the model of the activator."
-[
-	model(studio) : "Filter Model" : : "The model to filter by. If the filter mode is Allow, only entities whose "+
-		"model matches the given string will pass the filter. If the filter mode is Disallow, "+
-		"all entities EXCEPT those whose model matches the string will pass the filter."
 ]
 
 @FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_activator_name") = filter_activator_name :
@@ -5302,11 +5342,6 @@
 [
 ]
 
-@SolidClass = func_detail_blocker : 
-	"This entity only works with Slartibarty's compile tools. A brush entity that prevents detail sprites from being placed inside its volume."
-[
-]
-
 @SolidClass base(Door) = func_door : 
 	"A brush entity for use as a player-useable door."
 [
@@ -5372,6 +5407,8 @@
 	]
 	linedivider1(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 
+	mins(vector) : "Minimum Bounding Box Size" : : "Co-ordinate of the minimum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
+	maxs(vector) : "Maximum Bounding Box Size" : : "Co-ordinate of the maximum bounding box corner, relative to entity origin. The bounding box is drawn from this corner to the other one. Requires Bounding Box collisions (solid 2) to be used. Can be used to overwrite the collision shape of a brush, although it can only be a cuboid. Can be AddOutputed to change shape at runtime."
 	solid(choices) : "Collisions" : : "Method of collision for this entity. Can be changed at runtime with AddOutput." =
 	[
 		0: "None"
@@ -5481,7 +5518,8 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
+
 	Color(color255) : "Particle Color (R G B)" : "255 255 255" : "Color of the particles."
 	Alpha(integer) : "Particle Translucency (0 - 255)" : 30 : "Transluceny of the particles."
 	SpawnRate(integer) : "Particle Per Second" : 40 : "Number of particles to spawn, per second."
@@ -5650,8 +5688,8 @@
 	preferredcarryangles(vector) : "Preferred Player-carry Angles" : "0 0 0" : "If the 'Use Preferred Carry Angles' spawnflag is set, this angle is the angle which the object should orient to when the player picks it up, with the physgun or +USE."
 	nodamageforces(choices) : "Damaging it Doesn't Push It?" : 0 : "Used to determine whether or not damage should cause the brush to move." =
 	[
-		0 : "No"
-		1 : "Yes"
+		0: "No"
+		1: "Yes"
 	]
 	notsolid(choices) : "Solidity" : 0 : "If set, the object will pass through world geometry." =
 	[
@@ -5710,9 +5748,9 @@
 	preferredcarryangles(vector) : "Preferred Player-carry Angles" : "0 0 0" : "If the 'Use Preferred Carry Angles' spawnflag is set, this angle is the angle which the object should orient to when the player picks it up, with the physgun or +USE."
 	nodamageforces(choices) : "Damaging it Doesn't Push It" : 0 : "Used to determine whether or not damage should cause the brush to move." =
 	[
-		0 : "No"
-		1 : "Yes"
-	]	
+		0: "No"
+		1: "Yes"
+	]
 	notsolid(choices) : "Solidity" : 0 : "If set, the object will pass through world geometry." =
 	[
 		0: "Solid to World"
@@ -6270,6 +6308,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
+
 	spawnflags(flags) =
 	[
 		1: "Fake Ladder" : 0
@@ -6360,7 +6399,8 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
+	
 	input SetMaxPieces(integer)	: "Set the max gib count."
 	input SetMaxPiecesDX8(integer)	: "Set the max gib count under DirectX 8."
 ]
@@ -6414,11 +6454,11 @@
 	MaxRagdollCount(integer) : "Max Ragdoll Count" : -1 : "Sets the max number of ragdolls that can be in the world at a time (if they are flagged to fade). Set to -1 if you want to use the default value (g_ragdoll_maxcount)."
 	MaxRagdollCountDX8(integer) : "Max Ragdoll Count DX8" : -1 : "Sets the max number of ragdolls that can be in the world at a time on DirectX 8 hardware (if they are flagged to fade). Set to -1 if you want to use the 'Max Ragdoll Count' value."
 
-	SaveImportant(choices) : "Save Important Ragdolls?" : 0 : "Should the ragdoll manager make sure ally ragdolls aren't deleted?" =
+	SaveImportant(choices) : "Save Important Ragdolls?" : 0 : "Should the ragdoll manager make sure ally ragdolls aren't deleted?" = 
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
 	
 	input SetMaxRagdollCount(integer) : "Set the Max Ragdoll Count."
 	input SetMaxRagdollCountDX8(integer) : "Set the Max Ragdoll Count on DirectX 8 hardware."
@@ -6909,13 +6949,15 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
+	
 	AllowUse(string) : "Allow Pass When Off" : : "Entity or class to allow passage even when node is off"
 	InvertAllow(choices) : "Invert exclusion rules?" : 0 : "Allowed entity is the only entity NOT allowed when this is set to 'yes'" =
 	[
 		0 : "No"
 		1 : "Yes"
 	]
+
 	input TurnOn(void) : "Turn the link on."
 	input TurnOff(void) : "Turn the link off."
 	input SetAllowed(string) : "Change the allowed pass when off"
@@ -6946,6 +6988,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
+
 	fov(float) : "FOV" : 0 : "Specifies the field-of-view angle. Larger numbers allow the camera to see more of the playing field. Default is 70."
 ]
 
@@ -7004,12 +7047,12 @@
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
 	flag_as_weather(choices) : "Flag as Weather?" : 0 : "Is this particle system going to be used as a weather effect? If so the particle system will not be rendered if the user has disabled weather effects." =
 	[
 		0 : "No"
 		1 : "Yes"
-	]	
+	]
 	cpoint1(target_destination) : "Control Point 1" : : "If set, control point 1 of the effect will be at this entity's location."
 	cpoint2(target_destination) : "Control Point 2" : : "If set, control point 2 of the effect will be at this entity's location. If control point 1 is not set, this will be ignored."
 	cpoint3(target_destination) : "Control Point 3" : : "If set, control point 3 of the effect will be at this entity's location. If control point 2 is not set, this will be ignored."
@@ -7172,6 +7215,7 @@
 		0 : "No"
 		1 : "Yes"
 	]
+
 	input Activate(void) : "Force the decal to apply itself to the world."
 ]																																	
 
@@ -7445,17 +7489,6 @@
 	input Toggle(void) : "Toggle the light's current state."
 	input SetPattern(string) : "Set a custom pattern of light brightness for this light. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light."
 	input FadeToPattern(string) : "Fades from first value in old pattern, to first value in the new given pattern. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light."
-]
-
-@PointClass iconsprite("editor-ficool2/light_directional") = light_directional : 
-	"This entity only works with Slartibarty's compile tools. A directional light with no falloff. Similar to sunlight in light_environment."
-[
-    angles(angle) : "Pitch Yaw Roll (X Y Z)" : "0 0 0" : "This entity's orientation in the world. Roll is the rotation around the X axis, pitch is rotation around the Y axis and yaw is the rotation around the Z axis."
-	pitch(integer) : "Pitch" : 0 : "The downward pitch of the direct light from the entity. 0 is horizontal, -90 is straight down."
-	_light(color255) : "Brightness" : "255 255 255 200" : "Color and brightness of direct light under LDR lighting."
-	_lightHDR(color255) : "BrightnessHDR" : "-1 -1 -1 1" : "Color and brightness of direct light under HDR lighting."
-	_lightscaleHDR(float) : "BrightnessScaleHDR" : "0.7" : "Amount to scale the light by when compiling for HDR lighting."
-	SunSpreadAngle(float) : "SpreadAngle" : 0 : "The angular extent of the light for casting soft shadows. Higher numbers are more diffuse. 1 is a good starting value."
 ]
 
 @PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/light_dynamic") sphere(distance) lightcone() = light_dynamic : 
@@ -8286,16 +8319,8 @@
 	input SetDriversMinSpeed(float) : "Set the Minimum speed (percentage of vehicle's maximum speed)."
 ]
 
-@NPCClass base(BaseNPC) studio("models/Zombie/Classic.mdl") = npc_zombie : "Zombie"
-[
-	disableheadcrab(choices) : "Disable Headcrabs?" : 0 : "Spawn the zombie with no headcrab?" =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-]
 
-@PointClass base(BaseObject) studioprop("models/buildables/dispenser.mdl") = obj_dispenser : 
+@PointClass base(BaseObject) studioprop("models/buildables/dispenser_lvl3.mdl") = obj_dispenser : 
 	"The Dispenser. Gives health and ammunition to nearby players. The entity also spawns a vgui_screen entity, used for the metal counter screen."
 [
 	touch_trigger(target_destination) : "Custom Touch Trigger" : : "Touch Trigger to use instead as the healing zone, optionally."
@@ -8320,16 +8345,11 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_dm") = of_logic_dm : 
 	"Sets the map to Deathmatch gamemode." 
 [
-	dontcountkills(choices) : "Dont Count Kills" : 0 : "Should kills get counted?" =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	IsTeamplay(choices) : "Is Teamplay" : 0 : "Should the gamemode be TDM?" =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
+]
+
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_tdm") = of_logic_tdm : 
+	"Sets the map to Team Deathmatch gamemode. A of_logic_dm must also be placed." 
+[
 ]
 
 @SolidClass base(Trigger) = ofd_trigger_jump : 
@@ -10008,13 +10028,6 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_gamerules") = tf_gamerules : 
     "Proxy entity for Team Fortress 2 game rules."
 [	
-
-	UsesHL2Hull(choices) : "Uses HL2s Collision Hull" : 0 : "Weather or not the map uses HL2s collision hull." =
-	[
-		0 : "No"
-		1 : "Yes"
-	]
-	
 	input SetRedTeamRespawnWaveTime(float) : "Set the RED team's respawn wave time."
 	input SetBlueTeamRespawnWaveTime(float) : "Set the BLU team's respawn wave time."
 	input SetMercenaryTeamRespawnWaveTime(float) : "Set the Mercenary team's respawn wave time."
@@ -10701,9 +10714,4 @@
 	parm8(instance_parm) : "Parm" : : "This is a parameter.  It goes in the form of $variable type."
 	parm9(instance_parm) : "Parm" : : "This is a parameter.  It goes in the form of $variable type."
 	parm10(instance_parm) : "Parm" : : "This is a parameter.  It goes in the form of $variable type."
-]
-
-@PointClass = func_instance_origin : 
-	"Slartibarty compile tools only. This is the center of the instance for rotation."
-[
 ]
