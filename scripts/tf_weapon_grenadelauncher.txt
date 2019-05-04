@@ -18,7 +18,7 @@ WeaponData
 	"TimeFireDelay"		"0.6"
 	"TimeIdle"		"0.6"
 	"TimeIdleEmpty"		"0.6"
-	"TimeReloadStart"	"0.1"
+	"TimeReloadStart"	"0.6"
 	"TimeReload"		"0.6"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"

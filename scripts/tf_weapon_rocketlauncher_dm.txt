@@ -17,7 +17,6 @@ WeaponData
 	"TimeFireDelay"		"0.8"
 	"TimeIdle"		"0.8"
 	"TimeIdleEmpty"		"0.8"
-	"TimeReloadStart"	"0.1"
 	"TimeReload"		"0.83"
 	"primary_ammo"		"TF_AMMO_ROCKETLAUNCHER"
 	clip_size		4

@@ -17,7 +17,6 @@ WeaponData
 	"TimeFireDelay"			"0.625"
 	"TimeIdle"			"5.0"
 	"TimeIdleEmpty"			"0.25"
-	"TimeReloadStart"		"0.1"
 	"TimeReload"			"0.5"
 	
 	"primary_ammo"		"TF_AMMO_PRIMARY"
