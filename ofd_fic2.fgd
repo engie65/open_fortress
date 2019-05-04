@@ -8358,11 +8358,8 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_dm") = of_logic_dm : 
 	"Sets the map to Deathmatch gamemode." 
 [
-]
-
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_tdm") = of_logic_tdm : 
-	"Sets the map to Team Deathmatch gamemode. A of_logic_dm must also be placed." 
-[
+	dontcountkills(boolean) : "Dont Count Kills" : 0 : "Should kills get counted?"
+	IsTeamplay(boolean) : "Is Teamplay" : 0 : "Should the gamemode be TDM?"
 ]
 
 @SolidClass base(Trigger) = ofd_trigger_jump : 
@@ -10041,6 +10038,8 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_gamerules") = tf_gamerules : 
     "Proxy entity for Team Fortress 2 game rules."
 [	
+	UsesHL2Hull(boolean) : "Uses HL2s Collision Hull" : 0 : "Weather or not the map uses HL2s collision hull."
+
 	input SetRedTeamRespawnWaveTime(float) : "Set the RED team's respawn wave time."
 	input SetBlueTeamRespawnWaveTime(float) : "Set the BLU team's respawn wave time."
 	input SetMercenaryTeamRespawnWaveTime(float) : "Set the Mercenary team's respawn wave time."

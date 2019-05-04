@@ -1137,12 +1137,12 @@
 	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
 	fadescale(float) : "Fade Scale" : 1 : "If specified in the worldspawn, or if the engine is running below DirectX 8, entities will fade out even if the fade distances above aren't specified. This value gives more control over when this happens: numbers smaller than 1 cause the entity to fade out at further distances, and greater than 1 cause it to fade out at closer distances. Using 0 turns off the forced fade altogether."	
 	shadowcastdist(integer) : "Shadow Cast Distance" : : "Sets how far the entity casts dynamic shadows, in units. 0 means default distance from the shadow_control entity."
-	disableshadows(choices) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows."
+	disableshadows(choices) : "Disable Shadows?" : 0 : "Prevent the entity from creating cheap render-to-texture/dynamic shadows." =
 	[
 		0 : "No"
 		1 : "Yes"
 	]
-	disablereceiveshadows(choices) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity."
+	disablereceiveshadows(choices) : "Disable Receiving Shadows?" : 0 : "Prevents dynamic shadows (e.g. player and prop shadows) from appearing on this entity." =
 	[
 		0 : "No"
 		1 : "Yes"
@@ -3617,7 +3617,7 @@
 	farz(string) : "Far Z Clip Plane (-1 = disable)" : "-1" : "Nothing but sky will be rendered beyond this distance from the camera."
 	fogcolor(color255) : "Primary Fog Color" : "255 255 255" : "Primary Fog Color."
 	fogcolor2(color255) : "Secondary Fog Color" : "255 255 255" : "Secondary Fog Color. If Fog Blend is disabled, this color will never appear."
-	fogblend(choices) : "Fog Blend?" : 0 : "Enables color blending between Primary Fog Color and Secondary Fog Color. When the viewer looks in the Primary Fog Direction, fog will appear as the Primary color. When looking away from the specified direction, fog appears as the Secondary color. If the camera is not pointed directly at or away from the direction, a blend of the two colors will result. Sunlight with a Yaw of 45 degrees and a Pitch of -45 degrees could be enhanced using a Primary Fog Direction of '-1 -1 1', a Primary Fog Color of '120 110 100' and a Secondary Fog Color of '80 70 60'." ==
+	fogblend(choices) : "Fog Blend?" : 0 : "Enables color blending between Primary Fog Color and Secondary Fog Color. When the viewer looks in the Primary Fog Direction, fog will appear as the Primary color. When looking away from the specified direction, fog appears as the Secondary color. If the camera is not pointed directly at or away from the direction, a blend of the two colors will result. Sunlight with a Yaw of 45 degrees and a Pitch of -45 degrees could be enhanced using a Primary Fog Direction of '-1 -1 1', a Primary Fog Color of '120 110 100' and a Secondary Fog Color of '80 70 60'." =
 	[
 		0 : "No"
 		1 : "Yes"
@@ -4549,7 +4549,7 @@
 		"Well.Outside" : "Well Outside"
 	]
 	
-	StartDisabled(choices) : "Start Disabled?" : 0
+	StartDisabled(choices) : "Start Disabled?" : 0 =
 	[
 		0 : "No"
 		1 : "Yes"
@@ -8320,11 +8320,16 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_dm") = of_logic_dm : 
 	"Sets the map to Deathmatch gamemode." 
 [
-]
-
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_tdm") = of_logic_tdm : 
-	"Sets the map to Team Deathmatch gamemode. A of_logic_dm must also be placed." 
-[
+	dontcountkills(choices) : "Dont Count Kills" : 0 : "Should kills get counted?" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	IsTeamplay(choices) : "Is Teamplay" : 0 : "Should the gamemode be TDM?" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
 ]
 
 @SolidClass base(Trigger) = ofd_trigger_jump : 
@@ -10003,6 +10008,13 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_gamerules") = tf_gamerules : 
     "Proxy entity for Team Fortress 2 game rules."
 [	
+
+	UsesHL2Hull(choices) : "Uses HL2s Collision Hull" : 0 : "Weather or not the map uses HL2s collision hull." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	
 	input SetRedTeamRespawnWaveTime(float) : "Set the RED team's respawn wave time."
 	input SetBlueTeamRespawnWaveTime(float) : "Set the BLU team's respawn wave time."
 	input SetMercenaryTeamRespawnWaveTime(float) : "Set the Mercenary team's respawn wave time."
