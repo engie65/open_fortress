@@ -221,7 +221,6 @@ tf_forest_grass_lowdensity
 			"alpha" "0.0"
 		}
 	}
-
 tf_forest_grass_temp
 	{
 		"density" "3000.0"
