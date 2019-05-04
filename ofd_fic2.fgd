@@ -10038,6 +10038,8 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/tf_gamerules") = tf_gamerules : 
     "Proxy entity for Team Fortress 2 game rules."
 [	
+	UsesHL2Hull(boolean) : "Uses HL2s Collision Hull" : 0 : "Weather or not the map uses HL2s collision hull."
+
 	input SetRedTeamRespawnWaveTime(float) : "Set the RED team's respawn wave time."
 	input SetBlueTeamRespawnWaveTime(float) : "Set the BLU team's respawn wave time."
 	input SetMercenaryTeamRespawnWaveTime(float) : "Set the Mercenary team's respawn wave time."
