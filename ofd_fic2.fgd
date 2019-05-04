@@ -8358,11 +8358,8 @@
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_dm") = of_logic_dm : 
 	"Sets the map to Deathmatch gamemode." 
 [
-]
-
-@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_tdm") = of_logic_tdm : 
-	"Sets the map to Team Deathmatch gamemode. A of_logic_dm must also be placed." 
-[
+	dontcountkills(boolean) : "Dont Count Kills" : 0 : "Should kills get counted?"
+	IsTeamplay(boolean) : "Is Teamplay" : 0 : "Should the gamemode be TDM?"
 ]
 
 @SolidClass base(Trigger) = ofd_trigger_jump : 
