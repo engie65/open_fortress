@@ -29,7 +29,7 @@
 "DeathmatchMusic.ScaryMonsters"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/scarymonsters.wav"
@@ -39,7 +39,7 @@
 "DeathmatchMusic.AtFortressGate"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/afg_loop.wav"
@@ -49,7 +49,7 @@
 "DeathmatchMusic.Skate"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/dm_skateb3loop.wav"
@@ -59,7 +59,7 @@
 "DeathmatchMusic.Generic"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/dm_loop.wav"
@@ -69,7 +69,7 @@
 "DeathmatchMusic.Facility"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/facility_loop.wav"
@@ -79,7 +79,7 @@
 "DeathmatchMusic.Chase"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/dmchase_loop.wav"
@@ -89,7 +89,7 @@
 "DeathmatchMusic.E1M1alt"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/e1m1alt_loop.wav"
@@ -99,7 +99,7 @@
 "DeathmatchMusic.E2M1"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/e2m1_loop.wav"
@@ -109,7 +109,7 @@
 "DeathmatchMusic.Map01"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/map01_loop.wav"
@@ -119,7 +119,7 @@
 "DeathmatchMusic.Orchestral"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/orch_loop.wav"
