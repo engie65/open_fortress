@@ -898,28 +898,28 @@
 		23: "Ragdoll (ragdolls the entity but does NOT kill it)"
 		24: "Fade Wider Pulse"
 	]
-	mindxlevel(choices) : "Minimum DirectX Level" : 0 = 
-	[
-		0 : "Default (lowest)"
-		60 : "DirectX 6.0"	
-		70 : "DirectX 7.0"
-		80 : "DirectX 8.0 (4600Ti)"
-		81 : "DirectX 8.1 (FX5200)"
-		90 : "DirectX 9.0 SM2.0"
-		95 : "DirectX 9.5 SM3.0"
-		100 : "DirectX 10.0"
-	]
-	maxdxlevel(choices) : "Maximum DirectX Level" : 0 = 
-	[
-		0 : "Default (lowest)"
-		60 : "DirectX 6.0"	
-		70 : "DirectX 7.0"
-		80 : "DirectX 8.0 (4600Ti)"
-		81 : "DirectX 8.1 (FX5200)"
-		90 : "DirectX 9.0 SM2.0"
-		95 : "DirectX 9.5 SM3.0"
-		100 : "DirectX 10.0"
-	]
+	//mindxlevel(choices) : "Minimum DirectX Level" : 0 = 
+	//[
+	//	0 : "Default (lowest)"
+	//	60 : "DirectX 6.0"	
+	//	70 : "DirectX 7.0"
+	//	80 : "DirectX 8.0 (4600Ti)"
+	//	81 : "DirectX 8.1 (FX5200)"
+	//	90 : "DirectX 9.0 SM2.0"
+	//	95 : "DirectX 9.5 SM3.0"
+	//	100 : "DirectX 10.0"
+	//]
+	//maxdxlevel(choices) : "Maximum DirectX Level" : 0 = 
+	//[
+	//	0 : "Default (lowest)"
+	//	60 : "DirectX 6.0"	
+	//	70 : "DirectX 7.0"
+	//	80 : "DirectX 8.0 (4600Ti)"
+	//	81 : "DirectX 8.1 (FX5200)"
+	//	90 : "DirectX 9.0 SM2.0"
+	//	95 : "DirectX 9.5 SM3.0"
+	//	100 : "DirectX 10.0"
+	//]
 	linedivider3(string) readonly : "----------------------------------------------------------------------------------------------------------" : ""
 	
 	input Color(color255) : "Sets an RGB color for the entity."
@@ -967,11 +967,11 @@
 		6: "VPhysics"
 	]
 	body(integer) : "Body Group" : : "Sets the body group index for the model, starting with 0, if available."
-	SetBodyGroup(integer) : "(Set) Body Group" : : "Identical to Body Group (body), ask Valve why this is duplicated. Sets the body group index for the model, starting with 0, if available."
+//	SetBodyGroup(integer) : "(Set) Body Group" : : "Identical to Body Group (body), ask Valve why this is duplicated. Sets the body group index for the model, starting with 0, if available."
 	texframeindex(integer) : "Texture Frame" : : "The frame number for any animated textures on this entity."		
-	hitboxset(string) : "Hitbox Set" : : "Sets the $hboxset to use for collision testing."
+//	hitboxset(string) : "Hitbox Set" : : "Sets the $hboxset to use for collision testing."
 	LightingOrigin(target_destination) : "Lighting Origin" :  : "Select any entity (not info_lighting!) from which to sample lighting instead of the entity's origin."
-	LightingOriginHack(target_destination) : "Lighting Origin Offset" :  : "The info_lighting_relative from which to sample lighting instead of the entity's origin."
+//	LightingOriginHack(target_destination) : "Lighting Origin Offset" :  : "The info_lighting_relative from which to sample lighting instead of the entity's origin."
 	damagefilter(target_destination) : "Damage Filter" :  : "When this entity receives damage, it will filter by this entity."
 	fademindist(float) : "Start Fade Distance/Pixels" : : "Distance at which the entity starts fading. If <0, the entity will disappear instantly when end fade is hit. The value will scale appropriately if the entity is in a 3D Skybox."
 	fademaxdist(float) : "End Fade Distance/Pixels" : : "Distance at which the entity ends fading. If <0, the entity won't disappear at all. The value will scale appropriately if the entity is in a 3D Skybox."
@@ -1775,18 +1775,22 @@
 		-1 : "None"
 		0 : "Slowed, as in when revving Minigun or zooming in with Sniper Rifles"
 		1 : "Sniper Rifle zoom/scope"
-		2 : "Disguise smoke"
-		3 : "Disguise donning"
-		4 : "Cloak effect"
+		2 : "Disguise Smoke"
+		3 : "Disguise Donning"
+		4 : "Cloak Effect"
 		5 : "UberCharge"
-		6 : "Teleporter dust"
+		6 : "Teleporter Dust"
 		7 : "Taunt Cond (stop reload)"
 		8 : "UberCharge Wearing Off"
 		9 : "Cloak Blink"
 		10 : "Selected to Teleport"
-		11 : "Crit boost"
-		12 : "Overheal Cond (doesnt give any overheal)"
-		13 : "Burning"
+		11 : "Crit Boost"
+		12 : "Spawn Protection"
+		13 : "Shield Charge"
+		14 : "Berserk"			
+		15 : "Shield"					
+		16 : "Health Buff"
+		17 : "Burning"
 	]
 ]
 
@@ -1911,6 +1915,7 @@
 		32 : "Is NOT Looped" : 1
 	]
 
+	input AddVolume(float) : "Add more volume to the sound."
 	input Pitch(integer) : "Starts the sound and sets the sound pitch, expressed as a range from 1 to 255, where 100 is the sound's default pitch."
 	input PlaySound(void) : "Starts the sound."
 	input StopSound(void) : "Stops the sound if it is playing. Does not stop a non-looping sound, in which case the Volume input can be used with a value of 0."
@@ -1961,7 +1966,7 @@
 @PointClass base(Item, CondID) studioprop() = dm_powerup_spawner :	
     "Adds a condition to the player upon being touched." 
 [
-	model(studio) : "Model (Visual only for Hammer)" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
+	model(studio) : "Model" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
 	duration(float) : "Duration" : 5 : "Changes the time, in seconds, before the condition fades."
 ]
 
@@ -7722,7 +7727,7 @@
 	"used as a prop_physics. If you really need to use it as prop_physics, use a prop_physics_override."
 [
 	minhealthdmg(integer) : "Min Damage to Hurt" : 0 : "The prop will ignore any damage events if the damage is less than this amount."
-	shadowcastdist(integer) : "Shadow Cast Distance" : 0 : "Use this to override how far this object casts shadows. 0 = default distance."
+	shadowcastdist(integer) : "Shadow Cast Distance" : : "Use this to override how far this object casts shadows. 0 = default distance."
 	physdamagescale(float) : "Physics Impact Damage Scale" : "0.1" : "Scales damage energy when this object is hit by a physics object. NOTE: 0 means this feature is disabled for backwards compatibility.\nSet to 1.0 for materials as strong as flesh, smaller numbers indicate stronger materials."
 	Damagetype(choices) : "Impact damage type" : 0 : "If set to Sharp, damage is more 'sharper' and the object can slice others." =
 	[
