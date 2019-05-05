@@ -1821,7 +1821,7 @@
 				"x"		"65"
 				"y"		"226"
 				"width"		"46"
-				"height"	"28"
+				"height"	"28"	
 		}
 		"d_prop_physics"
 		{
@@ -1832,6 +1832,22 @@
 				"height"	"32"
 		}
 		"dneg_prop_physics"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"76"
+				"y"		"63"
+				"width"		"45"
+				"height"	"32"
+		}
+		"d_prop_physics_multiplayer"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"76"
+				"y"		"63"
+				"width"		"45"
+				"height"	"32"
+		}
+		"dneg_prop_physics_multiplayer"
 		{
 				"file"	"HUD/dneg_images_ofdm"
 				"x"		"76"
