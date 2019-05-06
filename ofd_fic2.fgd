@@ -7602,13 +7602,14 @@
 	
 	spawnflags(flags) =
 	[
-		1:  "Start At Player - Start the camera at the player's position. Breaks if the player was moving when activating." : 0
-		2:  "Follow Player - This is the same as if you set the lookat target to !player. Causes issues in multiplayer." : 0
-		4:  "Freeze Player - Stop recognizing input from the player." : 1
-		8:  "Infinite Hold Time - Ignore the hold time, and stay activated until explicitly disabled." : 0
-		16: "Snap to goal angles" : 0
-		32: "Make Player non-solid" : 0
-		64: "Interruptable by Player - If the player presses +Use, disable." : 0
+		1:   "Start At Player - Start the camera at the player's position. Breaks if the player was moving when activating." : 0
+		2:   "Follow Player - This is the same as if you set the lookat target to !player. Causes issues in multiplayer." : 0
+		4:   "Freeze Player - Stop recognizing input from the player." : 1
+		8:   "Infinite Hold Time - Ignore the hold time, and stay activated until explicitly disabled." : 0
+		16:  "Snap to goal angles" : 0
+		32:  "Make Player non-solid" : 0
+		64:  "Interruptable by Player - If the player presses +Use, disable." : 0
+		128: "Set FOV" : 0
 	]
 
 	input Enable(void) : "Enable the point_viewcontrol, and start controlling the player's view."
