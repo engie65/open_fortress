@@ -1,6 +1,6 @@
 "LightmappedGeneric"
 {
-	"$baseTexture" "signs/sign_no_trespassing"
+	"$baseTexture" "signs/sign_automatic_lift"
 	"$decal" 1
 	"$decalscale" 1
 	"$translucent" 1
