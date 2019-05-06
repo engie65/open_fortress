@@ -29,22 +29,6 @@
 		"spy_invis"
 		{
 		}
-		"spy_invis"
-		{
-		}
-		"AnimatedTexture"
-		{
-			"animatedtexturevar" "$detail"
-			"animatedtextureframenumvar" "$detailframe"
-			"animatedtextureframerate" 30
-		}
-		"BurnLevel"
-		{
-			"resultVar" "$detailblendfactor"
-		}
-		"DistortFX"
-		{
-		}
 		"ItemTintColor"
 		{
 			"resultVar"		"$colortint_tmp"
