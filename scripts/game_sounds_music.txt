@@ -33,7 +33,7 @@
 //DeathmatchMusic.Map01_Waiting
 //DeathmatchMusic.Orchestral
 //DeathmatchMusic.Stalker
-//DeathmatchMusic.Teamfortresque
+//DeathmatchMusic.TeamFortresque
 //DeathmatchMusic.TF2Beat
 //DeathmatchMusic.TurbineTurmoil
 //DeathmatchMusic.Overpowered
@@ -73,7 +73,7 @@
 }
 
 //At Fortress Gate Setup Music, by MrModez
-"DeathmatchMusic.AtFortressGate_Waiting
+"DeathmatchMusic.AtFortressGate_Waiting"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
@@ -83,7 +83,7 @@
 }
 
 //At Fortress Gate Round End Music, by MrModez
-"DeathmatchMusic.AtFortressGate_Ending
+"DeathmatchMusic.AtFortressGate_Ending"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
@@ -190,6 +190,16 @@
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/e1m1alt_loop.wav"
+}
+
+//Cover of E2M3 from Doom by Thoopje
+"DeathmatchMusic.Intermission"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/intermission_ending.wav"
 }
 
 //Cover of E2M1 from DOOM, by Magnus
