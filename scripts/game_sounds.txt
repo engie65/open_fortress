@@ -789,3 +789,12 @@
 
 	"wave"		")ambient/medieval_brazier.wav"
 }
+"Wiseau.Radio_Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_70dB"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"ambient/dm_wiseau/radio_loop.wav"
+}
