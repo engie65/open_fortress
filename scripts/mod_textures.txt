@@ -327,14 +327,6 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"d_pistol_mercenary"
-		{
-				"file"	"HUD/d_images"
-				"x"		"0"
-				"y"		"32"
-				"width"		"96"
-				"height"	"32"
-		}
 		"d_pistol_akimbo"
 		{
 				"file"	"HUD/d_images"
@@ -705,14 +697,6 @@
 				"height"	"32"
 		}
 		"dneg_pistol_scout"
-		{
-				"file"	"HUD/dneg_images"
-				"x"		"0"
-				"y"		"32"
-				"width"		"96"
-				"height"	"32"
-		}
-		"dneg_pistol_mercenary"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
@@ -1854,6 +1838,22 @@
 				"y"		"63"
 				"width"		"45"
 				"height"	"32"
+		}
+		"d_pistol_mercenary"
+		{
+				"file"	"HUD/d_images_ofdm"
+				"x"		"128"
+				"y"		"1"
+				"width"		"75"
+				"height"	"28"
+		}
+		"dneg_pistol_mercenary"
+		{
+				"file"	"HUD/dneg_images_ofdm"
+				"x"		"128"
+				"y"		"1"
+				"width"		"75"
+				"height"	"28"
 		}
 		"d_umbrella"
 		{
