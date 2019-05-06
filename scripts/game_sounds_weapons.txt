@@ -1877,7 +1877,12 @@
 	"channel"	"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"	"1.0"
-	"wave"		"weapons/shotgun_reload.wav"
+	"rndwave"
+	{
+		"wave"		"weapons/shotgun/shotgun_reload1.wav"
+		"wave"		"weapons/shotgun/shotgun_reload2.wav"
+		"wave"		"weapons/shotgun_reload.wav"
+	}
 }
 
 "Weapon_Shotgun.WorldReload"
@@ -1885,7 +1890,12 @@
 	"channel"	"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"	"1.0"
-	"wave"		"weapons/shotgun_worldreload.wav"
+	"rndwave"
+	{
+		"wave"		"weapons/shotgun/shotgun_reload1.wav"
+		"wave"		"weapons/shotgun/shotgun_reload2.wav"
+		"wave"		"weapons/shotgun_reload.wav"
+	}
 }
 
 "Weapon_Shotgun.Pump"
