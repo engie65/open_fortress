@@ -1693,7 +1693,7 @@
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_NORM"
 
-	"wave"		"weapons/smg1/smg1_reload.wav"
+	"wave"		"weapons/revolver_worldreload.wav"
 }
 
 "Weapon_Revolver.ClipEmpty"
