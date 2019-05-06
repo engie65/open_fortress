@@ -1966,7 +1966,7 @@
 @PointClass base(Item, CondID) studioprop() = dm_powerup_spawner :	
     "Adds a condition to the player upon being touched." 
 [
-	model(studio) : "Model" :  : "Use this to make the entity display a model in Hammer, as a workaround to a Hammer limitation." 
+	model(studio) : "Model" :  : "Show a model." 
 	duration(float) : "Duration" : 5 : "Changes the time, in seconds, before the condition fades."
 ]
 
@@ -5428,6 +5428,7 @@
 	]
 
 	input Display(void) : "Display the message text."
+	input SetText(string) : "Set the text to display."
 ]
 
 @PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/game_ui") = game_ui : 
@@ -7236,6 +7237,12 @@
 	output OnEqualTo(void) : "Fired when the Target Entity reaches the threshold angular velocity from a different velocity."
 ]
 
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/point_clientcommand") = point_broadcastclientcommand : 
+	"An entity that issues commands to each valid client's console, as if it was typed in by that player locally."
+[
+	input Command(string) : "Command to execute."
+]
+
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/point_bonusmaps_accessor") = point_bonusmaps_accessor : 
 	"An entity that relays bonus maps changes. "
 [
@@ -7311,6 +7318,24 @@
 @PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_enable_motion_fixup") = point_enable_motion_fixup : 
 	"An entity used to move a motion-disabled prop when it enables motion. Parent this entity to the prop, and when the prop has its motion enabled, it will immediately teleport to the origin of this entity."
 [
+]
+
+@PointClass base(BaseEntityPoint) = point_entity_finder :
+	"An entity that will find an entity and pass it along as the !Caller with the OutEntity output.  Requires using !Caller as the parameter on the input."
+[
+	filtername(filterclass) : "Filter Name" : : "Filter to use to narrow set of findable entities. See filter_activator_name for more explanation."
+	referencename(target_destination) : "Reference Entity" : "" : "Name of the entity to use when evaluating criteria.  For example, when using 'Nearest', this is the entity that distance will be measured from.  If left blank will use the point_entity_finder."
+
+	Method(choices) : "Search Method" : "0" =
+	[
+		0 : "Nearest"
+		1 : "Farthest"
+		2 : "Random"
+	]
+
+	input FindEntity(void) : "Find an entity that meets the specified criteria.  Will fire OutEntity if found and pass the entity as !Caller."
+
+	output OnFoundEntity(void) : "Fired when FindEntity is input and an entity was found. Passes the found entity as !Caller."
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/point_gamestats_counter") = point_gamestats_counter :
@@ -7572,6 +7597,8 @@
 	speed(string) : "Initial Speed" : "0" : "The starting speed that the camera moves at, if it's on a path track."
 	acceleration(string) : "Acceleration units/sec^2" : "500" : "The speed at which the camera accelerates to path corner's desired speeds."
 	deceleration(string) : "Stop Deceleration units/sec^2" : "500" : "The speed at which the camera decelerates to path corner's desired speeds."
+	fov(float) : "FOV" : "90" : "The FOV when using this camera."
+	fov_rate(float) : "FOV rate" : "1" : "How fast we change to the new fov."
 	
 	spawnflags(flags) =
 	[
@@ -7940,6 +7967,13 @@
 	fogmaxdensity(float) : "Fog Max Density" : "1" : "Maximum density of the fog. [0..1] "
 ]
 
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/env_texturetoggle") = skybox_swapper :
+	"An entity to control the skybox texture in a map."
+[
+	SkyboxName(string) : "Skybox Material" : "sky_tf2_04" : "Skybox material name you want to change to. Full directory and extension not needed."
+	
+	input Trigger(void) : "Change skybox texture."
+]
 
 @PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/spark_shower") = spark_shower : 
 	"Creates a trail of sparks in a random 60 degree spread from its angles. This entity will delete itself after creating the effect upon spawning."
