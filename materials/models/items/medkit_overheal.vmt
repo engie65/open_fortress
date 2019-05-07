@@ -2,7 +2,7 @@
 {
 	"$baseTexture" "models\items/medkit_overheal"
 	"$selfillum" "1"
-	"$selfillummask" 	"models\items/item_selfillum"
+	"$selfillummask" 	"models\items/item_selfillum_dark"
 
 	"$phong" "1"
 	"$phongexponent" "25"
@@ -14,6 +14,6 @@
 	"$basephongboost" "5"
 
 	"$rimlight" "1"
-	"$rimlightexponent" "4"	
-	"$rimlightboost" "2"
+	"$rimlightexponent" "2"
+	"$rimlightboost" "1"
 }
