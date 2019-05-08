@@ -82,6 +82,13 @@ DESCRIPTION INFO_OPTIONS
 		{ BOOL }
 		{ "1" }
 	}
+
+	"ofd_tennisball"
+	{
+		"#TFOption_Tennisball"
+		{ BOOL }
+		{ "0" }
+	}
 	
 	"hud_takesshots"
 	{

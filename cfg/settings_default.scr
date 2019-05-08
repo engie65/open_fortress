@@ -82,18 +82,27 @@ DESCRIPTION SERVER_OPTIONS
 		{ "0" }
 	}
 
-	"mp_teamplay"
-	{
-		"#TF_TeamPlay"
-		{ Number -1 1 }
-		{ "-1" }
-	}
-	
+    "mp_teamplay"
+    {
+        "#TF_TeamPlay"
+        {
+            LIST        
+            "#TF_Option_MAP" "-1"
+            "#TF_Option_OFF" "0"
+            "#TF_Option_ON" "1"
+        }
+        { "-1" }
+    }	
 	"ofd_instagib"
 	{
 		"#TF_Instagib"
-		{ BOOL }
-		{ "0" }
+        {
+            LIST        
+            "#TF_Option_OFF" "0"
+            "#TF_Instagib_CROWBAR"0"
+            "#TF_Instagib_RAILGUN" "1"
+        }
+        { "-1" }
 	}
 	
 	"ofd_forceclass"
