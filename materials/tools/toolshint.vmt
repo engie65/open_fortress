@@ -5,4 +5,5 @@
 	"$basetexture" "Tools/toolshint"
 	"%compilehint" 1
 	"%keywords" "airexchange,borealis,c17downtown,c17industrial,c17sewers,c17skyscraper,c17trainstation,combine,kraken,wasteland"
+	"$nocull" "1"
 }
