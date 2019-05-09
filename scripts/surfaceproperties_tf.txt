@@ -36,6 +36,18 @@
 	"rolling"	"Grenade.Roll"
 }
 
+"dm_grenade"
+{
+	"base"		"metal"
+
+	"bulletimpact"	"DMGrenade.ImpactHard"
+	"scraperough"	"DMGrenade.ScrapeRough"
+	"scrapesmooth"	"DMGrenade.ScrapeSmooth"
+	"impacthard"	"DMGrenade.ImpactHard"
+	"impactsoft"	"DMGrenade.ImpactSoft"
+	"rolling"	"DMGrenade.Roll"
+}
+
 "scout_baseball"
 {
 	"base"		"rubber"

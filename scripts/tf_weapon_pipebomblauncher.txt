@@ -37,6 +37,8 @@ WeaponData
 	"bucket_dm"		"6"
 	"bucket_dm_position"	"5"
 	
+	"ProjectileModel"	"models/weapons/w_models/w_stickybomb.mdl"
+	
 	"ExplosionSound"	"Weapon_Grenade_Pipebomb.Explode"
 	"ExplosionEffect"	"ExplosionCore_wall"
 	"ExplosionPlayerEffect"	"ExplosionCore_MidAir"

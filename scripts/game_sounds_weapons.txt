@@ -1021,19 +1021,6 @@
 	"wave"		"weapons/grenade_launcher_dm_cock_forward.wav"
 }
 
-"Weapon_GrenadeLauncherDM.GrenadeBounceSound"
-{
-	"channel"	"CHAN_ITEM"
-	"volume"	"1"
-	"soundlevel"	"SNDLVL_74dB"
-	"rndwave"
-	{
-		"wave"		"weapons/grenade_dm_impact.wav"
-		"wave"		"weapons/grenade_dm_impact2.wav"
-		"wave"		"weapons/grenade_dm_impact3.wav"
-	}
-}
-
 // ------------------------------------------------------------------------------------ //
 // KNIFE
 // ------------------------------------------------------------------------------------ //

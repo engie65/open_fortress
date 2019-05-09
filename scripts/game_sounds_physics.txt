@@ -2861,6 +2861,80 @@
 	"wave"			"physics/metal/metal_grenade_roll_loop1.wav"
 }
 
+// dm grenade
+
+"DMGrenade.StepLeft"
+{
+	"soundlevel"		"SNDLVL_74dB"
+	"volume"		"1"
+	"rndwave"
+	{
+		"wave"		"weapons/grenade_dm_impact.wav"
+		"wave"		"weapons/grenade_dm_impact2.wav"
+		"wave"		"weapons/grenade_dm_impact3.wav"
+	}
+}
+
+"DMGrenade.StepRight"
+{
+	"soundlevel"		"SNDLVL_74dB"
+	"volume"		"1"
+	"rndwave"
+	{
+		"wave"		"weapons/grenade_dm_impact.wav"
+		"wave"		"weapons/grenade_dm_impact2.wav"
+		"wave"		"weapons/grenade_dm_impact3.wav"
+	}
+}
+
+"DMGrenade.ImpactHard"
+{
+	"soundlevel"		"SNDLVL_74dB"
+	"volume"		"1"
+	"rndwave"
+	{
+		"wave"		"weapons/grenade_dm_impact.wav"
+		"wave"		"weapons/grenade_dm_impact2.wav"
+		"wave"		"weapons/grenade_dm_impact3.wav"
+	}
+}
+
+"DMGrenade.ImpactSoft"
+{
+	"soundlevel"		"SNDLVL_74dB"
+	"volume"		"1"
+	"rndwave"
+	{
+		"wave"		"weapons/grenade_dm_impact.wav"
+		"wave"		"weapons/grenade_dm_impact2.wav"
+		"wave"		"weapons/grenade_dm_impact3.wav"
+	}
+}
+
+"DMGrenade.ScrapeRough"
+{
+	"soundlevel"	"SNDLVL_70dB"
+	"volume"		"0.4"
+	"pitch"			"96,104"
+	"wave"			"physics/metal/metal_grenade_scrape_rough_loop1.wav"
+}
+
+"DMGrenade.ScrapeSmooth"
+{
+	"soundlevel"	"SNDLVL_70dB"
+	"volume"		"0.3"
+	"pitch"			"96,104"
+	"wave"			"physics/metal/metal_grenade_scrape_smooth_loop1.wav"
+}
+
+"DMGrenade.Roll"
+{
+	"soundlevel"	"SNDLVL_75dB"
+	"volume"		"0.4"
+	"pitch"			"PITCH_NORM"
+	"wave"			"physics/metal/metal_grenade_roll_loop1.wav"
+}
+
 // generic wood
 
 "Wood.StepLeft"
