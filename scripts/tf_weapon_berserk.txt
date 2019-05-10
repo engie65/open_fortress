@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"			"#TF_Weapon_Fists"
+	"printname"			"#TF_Weapon_Berserk"
 	"BuiltRightHanded"		"0"
 	"MeleeWeapon"			"1"
 	"weight"			"1"
