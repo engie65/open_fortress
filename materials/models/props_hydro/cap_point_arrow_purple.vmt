@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models/props_hydro/cap_point_arrow_blue"
+	"$basetexture"	"models/props_hydro/cap_point_arrow_purple"
 	"$bumpmap"	"models/props_hydro/cap_point_arrow_normal"
 	"$selfillum" "1"	
 

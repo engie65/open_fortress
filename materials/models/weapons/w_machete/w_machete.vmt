@@ -2,7 +2,7 @@
 {
 	"$baseTexture" "models\weapons\v_machete/v_machete"
 
-	"$envmap" "env_cubemap"
+//	"$envmap" "env_cubemap"
 	"$envmaptint" "[.35 .35 .35]"
 
 	"$phong" "1"
