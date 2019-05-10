@@ -133,7 +133,7 @@
 }
 
 //Deathmatch main theme (Round End), by Magnus
-"DeathmatchMusic.Generic_Waiting"
+"DeathmatchMusic.Generic_Ending"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
