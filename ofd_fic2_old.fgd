@@ -8375,6 +8375,73 @@
 		1 : "Yes"
 	]
 ]
+
+
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/of_gamemode_dm") = of_logic_gg : 
+	"Sets the map to the Gun Game gamemode." 
+[
+	ListOnly(choices) : "List Only?" : 0 : "Don't initiate the Gamemode, used to make your own weapon pool without making the map default to Gun Game."	=
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	WeaponName01(string) : "Weapon on Level 1" : "tf_weapon_pistol_mercenary" : "Weapon given on this level."
+	WeaponName02(string) : "Weapon on Level 2" : "tf_weapon_pistol_akimbo" : "Weapon given on this level."
+	WeaponName03(string) : "Weapon on Level 3" : "tf_weapon_revolver_mercenary" : "Weapon given on this level."
+	WeaponName04(string) : "Weapon on Level 4" : "tf_weapon_tommygun" : "Weapon given on this level."
+	WeaponName05(string) : "Weapon on Level 5" : "tf_weapon_nailgun" : "Weapon given on this level."
+	WeaponName06(string) : "Weapon on Level 6" : "tf_weapon_flamethrower" : "Weapon given on this level."
+	WeaponName07(string) : "Weapon on Level 7" : "tf_weapon_shotgun_mercenary" : "Weapon given on this level."
+	WeaponName08(string) : "Weapon on Level 8" : "tf_weapon_supershotgun" : "Weapon given on this level."
+	WeaponName09(string) : "Weapon on Level 9" : "tf_weapon_railgun" : "Weapon given on this level."
+	WeaponName10(string) : "Weapon on Level 10" : "tf_weapon_gatlinggun" : "Weapon given on this level."
+	
+	WeaponName11(string) : "Weapon on Level 11" : "tf_weapon_pipebomblauncher" : "Weapon given on this level."
+	WeaponName12(string) : "Weapon on Level 12" : "tf_weapon_grenadelauncher_mercenary" : "Weapon given on this level."
+	WeaponName13(string) : "Weapon on Level 13" : "tf_weapon_rocketlauncher_dm" : "Weapon given on this level."
+	WeaponName14(string) : "Weapon on Level 14" : "tf_weapon_knife" : "Weapon given on this level."
+	WeaponName15(string) : "Weapon on Level 15" :  : "Weapon given on this level."
+	WeaponName16(string) : "Weapon on Level 16" :  : "Weapon given on this level."
+	WeaponName17(string) : "Weapon on Level 17" :  : "Weapon given on this level."
+	WeaponName18(string) : "Weapon on Level 18" :  : "Weapon given on this level."
+	WeaponName19(string) : "Weapon on Level 19" :  : "Weapon given on this level."
+	WeaponName20(string) : "Weapon on Level 20" :  : "Weapon given on this level."	
+	
+	WeaponName21(string) : "Weapon on Level 21" :  : "Weapon given on this level."
+	WeaponName22(string) : "Weapon on Level 22" :  : "Weapon given on this level."
+	WeaponName23(string) : "Weapon on Level 23" :  : "Weapon given on this level."
+	WeaponName24(string) : "Weapon on Level 24" :  : "Weapon given on this level."
+	WeaponName25(string) : "Weapon on Level 25" :  : "Weapon given on this level."
+	WeaponName26(string) : "Weapon on Level 26" :  : "Weapon given on this level."
+	WeaponName27(string) : "Weapon on Level 27" :  : "Weapon given on this level."
+	WeaponName28(string) : "Weapon on Level 28" :  : "Weapon given on this level."
+	WeaponName29(string) : "Weapon on Level 29" :  : "Weapon given on this level."
+	WeaponName30(string) : "Weapon on Level 30" :  : "Weapon given on this level."
+
+	WeaponName31(string) : "Weapon on Level 31" :  : "Weapon given on this level."
+	WeaponName32(string) : "Weapon on Level 32" :  : "Weapon given on this level."
+	WeaponName33(string) : "Weapon on Level 33" :  : "Weapon given on this level."
+	WeaponName34(string) : "Weapon on Level 34" :  : "Weapon given on this level."
+	WeaponName35(string) : "Weapon on Level 35" :  : "Weapon given on this level."
+	WeaponName36(string) : "Weapon on Level 36" :  : "Weapon given on this level."
+	WeaponName37(string) : "Weapon on Level 37" :  : "Weapon given on this level."
+	WeaponName38(string) : "Weapon on Level 38" :  : "Weapon given on this level."
+	WeaponName39(string) : "Weapon on Level 39" :  : "Weapon given on this level."
+	WeaponName40(string) : "Weapon on Level 40" :  : "Weapon given on this level."	
+	
+	WeaponName41(string) : "Weapon on Level 41" :  : "Weapon given on this level."
+	WeaponName42(string) : "Weapon on Level 42" :  : "Weapon given on this level."
+	WeaponName43(string) : "Weapon on Level 43" :  : "Weapon given on this level."
+	WeaponName44(string) : "Weapon on Level 44" :  : "Weapon given on this level."
+	WeaponName45(string) : "Weapon on Level 45" :  : "Weapon given on this level."
+	WeaponName46(string) : "Weapon on Level 46" :  : "Weapon given on this level."
+	WeaponName47(string) : "Weapon on Level 47" :  : "Weapon given on this level."
+	WeaponName48(string) : "Weapon on Level 48" :  : "Weapon given on this level."
+	WeaponName49(string) : "Weapon on Level 49" :  : "Weapon given on this level."
+	WeaponName50(string) : "Weapon on Level 50" :  : "Weapon given on this level."
+
+]
+
 @SolidClass base(Trigger) = ofd_trigger_jump : 
     "Bounces players to the target."
 [
