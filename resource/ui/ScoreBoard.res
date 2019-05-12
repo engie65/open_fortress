@@ -333,7 +333,28 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-	}						
+	}
+	"ShadedBar"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"ShadedBar"
+		"xpos"			"10"
+		"xpos_hidef"	"30"
+		"ypos"			"342"	[$WIN32]
+		"ypos"			"297"	[$X360]
+		"zpos"			"2"
+		"wide"			"580"
+		"wide_lodef"	"539"
+		"wide_hidef"	"559"
+		"tall"			"70"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"0 0 0 153"
+		"PaintBackgroundType"	"0"
+	}	
 	"ClassImage"
 	{
 		"ControlName"		"ImagePanel"
@@ -385,7 +406,28 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-	}							
+	}
+	"HorizontalLine"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"HorizontalLine"
+		"xpos"			"115"
+		"xpos_lodef"	"105"
+		"ypos"			"367"	[$WIN32]
+		"ypos"			"322"	[$X360]
+		"zpos"			"3"
+		"wide"			"465"
+		"wide_lodef"	"434"
+		"wide_hidef"	"464"
+		"tall"			"1"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"127 127 127 153"
+		"PaintBackgroundType"	"0"
+	}	
 	"PlayerScoreLabel"
 	{
 		"ControlName"		"CTFLabel"

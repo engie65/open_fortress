@@ -101,30 +101,10 @@
 		"xpos_hidef"	"20"
 		"ypos"			"100"
 		"ypos_lodef"	"62"
-		"wide"			"200"
+		"wide"			"450"
 		"tall"			"23"
 		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
-		"enabled"		"1"
-		"labelText"		"playing till"
-		
-	}
-	"HudFragLimitLabel"
-	{
-		"ControlName"	"CTFLabel"
-		"fieldName"		"HudKillsLabel"
-		"font"			"HudFontMedium"
-		"fgcolor"		"TanLight"
-		"textAlignment"		"west"
-		"xpos"			"225"
-		"xpos_hidef"	"20"
-		"ypos"			"100"
-		"ypos_lodef"	"62"
-		"wide"			"300"
-		"tall"			"23"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"pinCorner"		"0"	
 		"visible"		"1"	[$WIN32]
 		"enabled"		"1"
 		"labelText"		"%FragLimit%"

@@ -6730,6 +6730,7 @@
 	"Sets the map to the Gun Game gamemode." 
 [
 	ListOnly(boolean) : "List Only?" : 0 : "Don't initiate the Gamemode, used to make your own weapon pool without making the map default to Gun Game."
+	RequiredKills(integer) : "Kills Per Level" : 2 : "How many kills are required to increase your level."
 	WeaponName01(string) : "Weapon on Level 1" : : "Weapon given on this level."
 	WeaponName02(string) : "Weapon on Level 2" : : "Weapon given on this level."
 	WeaponName03(string) : "Weapon on Level 3" : : "Weapon given on this level."
