@@ -54,8 +54,8 @@ WeaponData
 	{
 		"reload"		"Weapon_SMG.WorldReload"
 		"empty"			"Weapon_SMG.ClipEmpty"	
-		"single_shot"		"Weapon_SMG.Single"
-		"burst"			"Weapon_SMG.SingleCrit"
+		"single_shot"		"Weapon_SMG_DM.Single"
+		"burst"			"Weapon_SMG_DM.SingleCrit"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.

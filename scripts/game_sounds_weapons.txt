@@ -2150,6 +2150,22 @@
 	"wave"		"weapons/draw_secondary.wav"
 }
 
+"Weapon_SMG_DM.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/smg_dm_shoot.wav"
+}
+
+"Weapon_SMG_DM.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/smg_dm_shoot_crit.wav"
+}
+
 // ------------------------------------------------------------------------------------ //
 // SUPER SMG
 // ------------------------------------------------------------------------------------ //
