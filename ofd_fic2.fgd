@@ -1822,6 +1822,7 @@
 	    "tf_weapon_tommygun"                  : "Tommygun"
 		
 		"0"									  : "=== Do Not Use In Deathmatch ==="
+		"tf_weapon_super_rocketlauncher"      : "Super Rocketlauncher (:bastard:)"
 		"tf_weapon_grenadelauncher"           : "Grenade Launcher (Demoman)"
 		"tf_weapon_minigun"                   : "Minigun"
 		"tf_weapon_pistol_mercenary"          : "Pistol (Mercenary)"
