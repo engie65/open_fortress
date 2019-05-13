@@ -8,14 +8,14 @@ WeaponData
 	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 		
 	// Attributes TF.
-	"Damage"		"15"
+	"Damage"		"10"
 	"InstagibDamage"	"999"
 	"Range"			"8192"
 	"BulletsPerShot"	"1"
 	"Spread"		"0.025"
 	"TimeIdle"		"10.0"
 	"TimeIdleEmpty"		"1.0"
-	"TimeFireDelay"		"0.08"
+	"TimeFireDelay"		"0.1"
 	"TimeReload"	"1.8"
 	"ProjectileType"	"projectile_bullet"
 	"BrassModel"		"models/weapons/shells/shell_pistol.mdl"
