@@ -19759,6 +19759,17 @@
 	"wave"			"vo/Mercenary_LaughShort04.wav"
 }
 
+"Mercenary.Scream"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_PainCrticialDeath01.wav"
+}
+
 "Mercenary.Medic01"
 {
 	"channel"		"CHAN_VOICE"

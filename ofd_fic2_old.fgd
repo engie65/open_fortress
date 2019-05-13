@@ -203,6 +203,7 @@
         "filter_multi"
         "filter_tf_bot_has_tag"
         "filter_tf_class"
+		"filter_tf_money"
         "filter_tf_condition"
         "filter_tf_damaged_by_weapon_in_slot"
         "filter_tf_player_can_cap"
@@ -5015,6 +5016,19 @@
 		9 : "Engineer"
 		10 : "Mercenary"
 		11 : "Civilian"
+	]
+]
+
+
+@FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_tf_class") = filter_tf_money :
+	"A filter that filters by the amount of money you have "
+[
+	moneyamount(integer) : "Money Value" : 0 : "What value should be checked."
+	checktype(choices) : "Alow if Money is" : 0 : "Check if activator money is bigger, less or equal to the set value" =
+	[
+		0 : ">"
+		1 : "<"
+		2 : "="
 	]
 ]
 
@@ -10124,6 +10138,11 @@
 		1 : "Yes"
 	]
 	Force3DSkybox(choices) : "Force 3D Skybox?" : 0 : "Force 3D Skybox to always be on, even if disabled by client." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	UsesMoney(choices) : "Uses money?" : 0 : "Weather or not to display currency on your HUD." =
 	[
 		0 : "No"
 		1 : "Yes"

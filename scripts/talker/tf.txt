@@ -862,6 +862,11 @@
 		scene "scenes/player/mercenary/low/taunt03_v1.vcd"
 		scene "scenes/player/mercenary/low/taunt03_v2.vcd"
 	}
+	response "MercenaryTauntBerserk"
+	{
+		scene "scenes/player/mercenary/low/Taunts07.vcd"
+		scene "scenes/player/mercenary/low/Taunts07.vcd"
+	}
 //Primary Rules
 	rule MercenaryTauntRocketLauncher
 	{
@@ -990,6 +995,11 @@
 		criteria ConceptPlayerTaunt IsMercenary WeaponIsCrowbar
 		response MercenaryTauntCrowbar
 	}
+	rule MercenaryTauntBerserk
+	{
+		criteria ConceptPlayerTaunt IsMercenary WeaponIsBerserk
+		response MercenaryTauntBerserk
+	}	
 	rule MercenaryTauntUmbrella
 	{
 		criteria ConceptPlayerTaunt IsMercenary WeaponIsUmbrella

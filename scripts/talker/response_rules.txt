@@ -325,6 +325,7 @@ criterion "WeaponIsSuperShotgun" "playerweapon" "tf_weapon_supershotgun" "requir
 criterion "WeaponIsPistolScout" "playerweapon" "tf_weapon_pistol_scout" "required"
 criterion "WeaponIsBat" "playerweapon" "tf_weapon_bat" "required"
 criterion "WeaponIsCrowbar" "playerweapon" "tf_weapon_crowbar" "required"
+criterion "WeaponIsBerserk" "playerweapon" "tf_weapon_berserk" "required"
 criterion "WeaponIsSword" "playerweapon" "tf_weapon_sword" "required"
 criterion "WeaponIsSniperrifle" "playerweapon" "tf_weapon_sniperrifle" "required"
 criterion "WeaponIsRailgun" "playerweapon" "tf_weapon_railgun" "required"
