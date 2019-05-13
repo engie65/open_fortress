@@ -4,13 +4,13 @@
 	"printname"			"#TF_Weapon_Sword"
 	"BuiltRightHanded"		"0"
 	"MeleeWeapon"			"1"
-    "MeleeRange"		"76"
+    "MeleeRange"		"82"
 	"weight"			"1"
 	"WeaponType"		"melee"
 	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 	
 	// Attributes TF.
-	"Damage"			"90"
+	"Damage"			"70"
 	"InstagibDamage"	"999"
 	"TimeFireDelay"			"0.8"
 	"TimeIdle"			"5.0"
