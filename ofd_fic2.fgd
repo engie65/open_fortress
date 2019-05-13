@@ -2991,11 +2991,11 @@
 	output OnSurfaceChangedFromTarget(void) : "Fired when the player moves off the specified game material."
 ]
 
-
 @PointClass base(BaseEntityPoint) lightprop("models/editor/spot.mdl") frustum(lightfov,nearz,farz,lightcolor,-1) = env_projectedtexture : 
 	"It projects a texture as a dynamic light that affects all objects in the world, optionally with shadow mapping. Only 1 instance of this entity can be enabled. Disabled in Team Fortress 2 by default, requires mp_flashlight 1 to be enabled to function."
 [
 	target(target_destination)	: "target" : : "The entity will rotate to point at its target, no matter where it is in the world."	
+	texturename(material)	    : "Texture" : : "Texture to be projected. Relative to /materials/"
 	lightfov(float)				: "FOV" : "90.0" : "The field of view angle at which the texture is projected. The projection is created in a square shape."
 	nearz(float)				: "NearZ" : "4.0" : "Objects closer than this will not receive the projection."
 	farz(float)					: "FarZ" : "750.0" : "Objects beyond this distance will not receive the projection."	
@@ -3016,7 +3016,7 @@
 
 	spawnflags(flags) =
 	[
-		1  : "Enabled"				: 1
+		1  : "Start enabled?"				: 1
 	]	
 	
 	input TurnOn(void)		: "Turn on the texture."
