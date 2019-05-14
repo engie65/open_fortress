@@ -37,10 +37,10 @@
 		"image"			"../hud/class_scoutred"
 		"scaleImage"		"1"	
 	}
-	"ClassImageColorless"
+	"StatPanelClassImageColorless"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"ClassImageColorless"
+		"fieldName"		"StatPanelClassImageColorless"
 		"xpos"			"10"
 		"xpos_lodef"	"12"
 		"ypos"			"423"	[$WIN32]
