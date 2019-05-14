@@ -184,6 +184,10 @@
 		"was_sudden_death" "byte"	// did a team win this after entering sudden death
 	}
 
+	"death_match_end"
+	{
+	}
+
 	"teamplay_update_timer"
 	{
 	}
