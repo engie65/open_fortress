@@ -16,7 +16,7 @@ WeaponData
 	"TimeIdle"		"10.0"
 	"TimeIdleEmpty"		"1.0"
 	"TimeFireDelay"		"0.1"
-	"BurstFireDelay"    "0.5"
+	"BurstFireDelay"    "0.3"
 	"BurstSize"         "3"
 	"TimeReload"	"2.36"
 	"ProjectileType"	"projectile_bullet"
