@@ -7333,12 +7333,12 @@
 	input Save(void) : "Saves bonus map data."
 ]
 
-@PointClass base(BaseEntity) studioprop("models/editor/camera.mdl") = point_camera : 
+@PointClass base(BaseEntityPoint) studioprop("models/editor/camera.mdl") = point_camera : 
     "The view of this camera entity can be output in realtime to a func_monitor's monitor surface, or alternatively (using info_camera_link) to any named brush entity using the correct monitor texture. Active cameras require one render texture each. Does not render anything in Team Fortress 2."
 [
 	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
 	FOV(float) : "FOV" : 90 : "Field of view, in degrees."
-	resolution(float) : "Resolution" : 256 : "Width/height of the render target for the camera."
+	resolution(float) : "Resolution" : 1024 : "Width/height of the render target for the camera."
 	UseScreenAspectRatio(boolean) : "Screen Aspect Ratio" : 0	
 	fogEnable(boolean) : "Fog Enable?" : 0 : "Enable fog rendering in the camera."
 	fogColor(color255) : "Fog Color" : "0 0 0" : "Set the fog color."
