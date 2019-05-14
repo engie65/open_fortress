@@ -13,7 +13,7 @@
 // Does not contain HL2 entities, add ofd_fic2_hl2.fgd to Hammer's config if you want them
 // Researched and overhauled/updated by ficool2, based roughly on A Boojum Snark's FGD, seen here http://forums.tf2maps.net/showthread.php?t=4674
 // Many thanks to KaidemonLP for datamap dumps used to update this FGD
-// V7.0, 4th of May 2019
+// 14th of May 2019
 //
 //=============================================================================
 
@@ -2994,7 +2994,7 @@
 @PointClass base(BaseEntityPoint) lightprop("models/editor/spot.mdl") frustum(lightfov,nearz,farz,lightcolor,-1) = env_projectedtexture : 
 	"It projects a texture as a dynamic light that affects all objects in the world, optionally with shadow mapping. Only 1 instance of this entity can be enabled. Disabled in Team Fortress 2 by default, requires mp_flashlight 1 to be enabled to function."
 [
-	target(target_destination)	: "target" : : "The entity will rotate to point at its target, no matter where it is in the world."	
+	target(target_destination)	: "Target" : : "The entity will rotate to point at its target, no matter where it is in the world."	
 	texturename(material)	    : "Texture" : : "Texture to be projected. Relative to /materials/"
 	lightfov(float)				: "FOV" : "90.0" : "The field of view angle at which the texture is projected. The projection is created in a square shape."
 	nearz(float)				: "NearZ" : "4.0" : "Objects closer than this will not receive the projection."
@@ -8637,6 +8637,29 @@
 	input SetMagnitude(float) : "Set the magnitude of the impact."
 
 	output ImpactForce(string) : "Fired after an impact. The parameter passed along is the force of the impact that was generated."
+]
+
+@SolidClass base(Trigger) = trigger_look :
+	"An entity used to trigger something when the player looks at something. It fires 'OnTrigger' when the player "+
+	"looks at a target entity for the given amount of time, while within the trigger volume. If the player leaves "+
+	"the trigger or looks away from the target entity the clock resets. If the 'Use Velocity instead of facing' spawnflag " +
+	"is checked, the trigger uses the player's velocity instead of the player's view, so it determines whenever the player "+
+	"is moving toward the target entity. Useful for triggering when players are driving a vehicle at something. "+
+	"Does not function in multiplayer."
+[
+	target(target_destination) : "Look Target" : : "The name of the entity to be looked at."
+	LookTime(string) : "LookTime" : "0.5" : "The time, in seconds, that the player must look the target before firing the output. Resets if player leaves trigger, or looks outside the Field of View threshold."
+	FieldOfView(string) : "FieldOfView" : "0.9" : "How close the player has to be looking at the target. 1.0 = straight ahead\n 0.0 = +/- 90 degrees\n -1.0 = all directions)."
+	Timeout(float) : "Timeout" : "0" : "The time, in seconds, to wait after player enters the trigger before firing the OnTimeout output, 0 = never."
+
+	spawnflags(flags) = 
+	[ 
+		128: "Fire Once" : 1 
+		256: "Use Velocity instead of facing" : 0
+	]
+	
+	output OnTrigger(void) : "Fired when the trigger is activated."
+	output OnTimeout(void) : "Fired after the timeout interval expires if the player never looked at the target."
 ]
 
 @SolidClass base(Trigger) = trigger_multiple :
