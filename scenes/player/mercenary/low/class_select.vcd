@@ -1,22 +1,33 @@
 // Choreo version 1
 event loop "end_cycle"
 {
-  time 7.333000 -1.000000
-  param "4.166000"
+  time 7.293000 -1.000000
+  param "4.290000"
   loopcount "-1"
 }
-actor "Mercenary"
+actor "mercenary"
 {
   channel "body"
   {
   }
   channel "sequence"
   {
-    event sequence "selection_menu_anim"
+    event sequence "competitive_loserstate_idle"
     {
-      time 0.000000 7.333333
-      param "selectionMenu_all"
+      time 0.000000 0.1
+      param "competitive_loserstate_idle"
       fixedlength
+    }
+    event sequence "taunt_yetipunch"
+    {
+      time 0.10000 5.1
+      param "taunt_yetipunch"
+	  fixedlength
+    }
+    event sequence "competitive_loserstate_idle_late"
+    {
+      time 5.1 490.93
+      param "competitive_loserstate_idle"
     }
   }
   channel "facial"
@@ -24,43 +35,35 @@ actor "Mercenary"
     event expression "m"
     {
       time 0.003883 3.466846
-      param "player\Mercenary\phonemes\phonemes"
+      param "player\soldier\phonemes\phonemes"
       param2 "m"
       event_ramp
       {
-        0.1618 0.5057
-        0.4265 0.9143 "curve_easein_to_curve_easeout"
-        0.9417 0.8171 "curve_easein_to_curve_easeout"
-        2.3176 0.8143 "curve_easein_to_curve_easeout"
-        2.9647 0.5371 "curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x"
+        0.1618 0.5020
+        0.4265 0.9137
+        0.9417 0.8157
+        2.3176 0.8118
+        2.9647 0.5333
       }
     }
     event expression "mad"
     {
       time 2.942353 7.334491
-      param "player\Mercenary\emotion\emotion"
+      param "player\soldier\emotion\emotion"
       param2 "mad"
       event_ramp
       {
-        0.1789 0.1886
-        0.5279 0.7057 "curve_easein_to_curve_easeout"
-        1.2500 0.0000 "curve_easein_to_curve_easeout"
-        1.6000 0.1600
-        2.7500 0.0086
-        3.1819 0.1686 "curve_easein_to_curve_easeout"
+        0.1789 0.1882
+        0.5279 0.7020
+        1.2500 0.0000
+        1.6000 0.1569
+        2.7500 0.0078
+        3.1819 0.1647
       }
     }
   }
 }
 
-scalesettings
-{
-  "CChoreoView" "100"
-  "RampTool" "24"
-  "ExpressionTool" "74"
-  "GestureTool" "100"
-  "SceneRampTool" "100"
-}
 fps 60
 snap off
 ignorePhonemes off

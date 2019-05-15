@@ -1,4 +1,4 @@
-	WeaponData
+WeaponData
 {
 	// Attributes Base.
 	"printname"			"#TF_Weapon_Bat"
@@ -21,6 +21,10 @@
 	"primary_ammo"			"None"
 	"secondary_ammo"		"None"
 
+	// bucket_dms.	
+	"bucket"			"2"
+	"bucket_position"		"0"	
+	
 	// bucket_dms.	
 	"bucket_dm"			"0"
 	"bucket_dm_position"		"6"

@@ -84,8 +84,8 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_merc_mercenary"
-		"inactiveimage"		"class_sel_sm_merc_inactive"
+		"activeimage"		"class_sel_sm_mercenary_mercenary"
+		"inactiveimage"		"class_sel_sm_mercenary_inactive"
 	}
 		
 	"Offense"

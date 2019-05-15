@@ -24,7 +24,7 @@
 
 			"animation"
 			{
-				"sequence"		"Stand_MELEE"
+				"sequence"		"selectionMenu_ALL"
 			}
 			
 			"attached_model"

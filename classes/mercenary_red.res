@@ -24,7 +24,7 @@
 
 			"animation"
 			{
-				"sequence"		"Stand_MELEE"
+				"sequence"		"taunt05"
 			}
 			
 			"attached_model"

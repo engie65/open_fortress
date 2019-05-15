@@ -20,11 +20,11 @@
 			"modelname_hwm"	"models/player/hwm/soldier.mdl"
 			"skin" "4"
 			"origin_z" "-51"
-			"vcd"		"scenes/Player/Soldier/low/class_select.vcd"		
+			"vcd"		"scenes/Player/soldier/low/class_select.vcd"	
 
 			"animation"
 			{
-				"sequence"		"SelectionMenu_all"
+				"sequence"		"selectionMenu_ALL"
 			}
 			
 			"attached_model"
