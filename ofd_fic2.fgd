@@ -4749,11 +4749,6 @@
 	input Alpha(void) : "Changes the density of the rain, and may add additional particle effects like fog or leafs. Accepts inputs from -1 to 255."
 ]
 
-@SolidClass base(BaseEntityBrush) = func_proprrespawnzone :
-	"Zone that handles respawning and distribution of clientside physics props." 
-[
-]
-
 @SolidClass base(BreakableBrush) sphere(exploderadius) = func_pushable :
     "A pushable brush object with very primitive physics. Only moveable with +USE inputs by player."
 [
