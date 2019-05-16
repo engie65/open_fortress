@@ -30,7 +30,7 @@
 			"attached_model"
 			{
 				"modelname" "models/weapons/w_models/w_crowbar.mdl"
-				"skin"		"4"
+				"skin"		"2"
 			}
 		}
 	}
