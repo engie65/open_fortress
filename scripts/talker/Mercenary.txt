@@ -806,6 +806,31 @@ Rule PlayerPositiveMercenary
 	Response PlayerPositiveMercenary
 }
 
+Response PlayerBerserkMercenary
+{
+	scene "scenes/Player/Mercenary/low/Berserk01.vcd" 
+	scene "scenes/Player/Mercenary/low/Berserk02.vcd" 
+	scene "scenes/Player/Mercenary/low/Berserk03.vcd" 
+	scene "scenes/Player/Mercenary/low/Berserk04.vcd" 
+}
+Rule PlayerBerserkMercenary
+{
+	criteria ConceptPlayerNegative IsMercenary IsBerserk
+	Response PlayerBerserkMercenary
+}
+
+Response PlayerPowerupSpentMercenary
+{
+	scene "scenes/Player/Mercenary/low/PowerupSpent01.vcd" 
+	scene "scenes/Player/Mercenary/low/PowerupSpent02.vcd" 
+	scene "scenes/Player/Mercenary/low/PowerupSpent03.vcd" 
+}
+Rule PlayerPowerupSpentMercenary
+{
+	criteria ConceptPlayerNegative IsMercenary InPowerup
+	Response PlayerPowerupSpentMercenary
+}
+
 Response PlayerTauntsMercenary
 {
 	scene "scenes/Player/Mercenary/low/LaughLong02.vcd" 

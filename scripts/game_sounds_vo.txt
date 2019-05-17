@@ -19066,6 +19066,50 @@
 	"wave"			"vo/Mercenary_BattleCry06.wav"
 }
 
+"Mercenary.Berserk01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/mercenary_berserk01.wav"
+}
+
+"Mercenary.Berserk02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/mercenary_berserk02.wav"
+}
+
+"Mercenary.Berserk03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/mercenary_berserk03.wav"
+}
+
+"Mercenary.Berserk04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/mercenary_berserk04.wav"
+}
+
 "Mercenary.Cheers01"
 {
 	"channel"		"CHAN_VOICE"
@@ -20296,6 +20340,38 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/Mercenary_PositiveVocalization05.wav"
+}
+
+
+"Mercenary.PowerupSpent01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/mercenary_powerup_spent01.wav"
+}
+"Mercenary.PowerupSpent02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/mercenary_powerup_spent02.wav"
+}
+"Mercenary.PowerupSpent03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/mercenary_powerup_spent03.wav"
 }
 
 "Mercenary.SentryAhead01"

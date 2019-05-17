@@ -234,6 +234,11 @@ criterion "IsDominated" "domination" "dominated" "required"
 criterion "IsRevenge" "domination" "revenge" "required" 
 criterion "IsHeadShot" "customdeath" "headshot" "required" 
 
+criterion "IsDamageBlast" "damagetype" "DMG_BLAST" "required" 
+
+criterion "IsBerserk" "poweruptype" "TF_COND_BERSERK" "required" 
+
+criterion "InPowerup" "inpowerup" "yes" "required" 
 
 criterion "ConceptKilledPlayer" "Concept" "TLK_KILLED_PLAYER" required
 criterion "KilledPlayerDelay" "worldDontKilledPlayer" "!=1" "required"
