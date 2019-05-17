@@ -3,10 +3,10 @@ actor "Mercenary"
 {
   channel "body"
   {
-    event speak "Mercenary.PainCrticialDeath01"
+    event speak "Mercenary.Taunts07"
     {
       time 0.000000 2.632562
-      param "Mercenary.PainCrticialDeath01"
+      param "Mercenary.Taunts07"
       fixedlength
       cctype "cc_master"
       cctoken ""

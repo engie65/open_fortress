@@ -1386,9 +1386,9 @@
 	
 	"rndwave"
 	{
-		"wave"		"vo/mercenary_JUMP_1.wav"
-		"wave"		"vo/mercenary_JUMP_2.wav"
-		"wave"		"vo/mercenary_JUMP_3.wav"
+		"wave"		"vo/mercenary_jump01.wav"
+		"wave"		"vo/mercenary_jump02.wav"
+		"wave"		"vo/mercenary_jump03.wav"
 	}
 }
 //-----------------------------------------------------------------------------

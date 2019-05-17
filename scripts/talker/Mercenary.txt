@@ -135,6 +135,18 @@ Rule PlayerCappedIntelligenceMercenary
 	Response PlayerCappedIntelligenceMercenary
 }
 
+Response PlayerGrabbedIntelligenceMercenary
+{
+	scene "scenes/Player/Mercenary/low/AutoGrabbedIntelligence01.vcd" 
+	scene "scenes/Player/Mercenary/low/AutoGrabbedIntelligence02.vcd" 
+	scene "scenes/Player/Mercenary/low/AutoGrabbedIntelligence03.vcd" 
+}
+Rule PlayerGrabbedIntelligenceMercenary
+{
+	criteria ConceptPlayerGrabbedIntelligence IsMercenary
+	Response PlayerGrabbedIntelligenceMercenary
+}
+
 Response PlayerCapturedPointMercenary
 {
 	scene "scenes/Player/Mercenary/low/AutoCappedControlPoint01.vcd" 
@@ -198,18 +210,89 @@ Rule PlayerTeleporterThanksMercenary
 //--------------------------------------------------------------------------------------------------------------
 Response KilledPlayerManyMercenary
 {
-	scene "scenes/Player/Mercenary/low/SpecialCompleted03.vcd" 
 	scene "scenes/Player/Mercenary/low/Taunts01.vcd" 
 	scene "scenes/Player/Mercenary/low/Taunts02.vcd" 
-	scene "scenes/Player/Mercenary/low/Taunts09.vcd" 
-	scene "scenes/Player/Mercenary/low/Taunts10.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts04.vcd" 
+	scene "scenes/Player/Mercenary/low/Cheers01.vcd" 
+	scene "scenes/Player/Mercenary/low/Cheers06.vcd" 
 }
 Rule KilledPlayerManyMercenary
 {
-	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance IsWeaponPrimary KilledPlayerDelay MercenaryNotKillSpeech IsMercenary
+	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary IsWeaponNotMelee WeaponIsNotDMRevolver WeaponIsNotShotgunMercenary WeaponIsNotRocket WeaponIsNotGrenade WeaponIsNotOriginal WeaponIsNotDMGrenade
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenary
+}
+
+Response KilledPlayerManyMercenaryRevolver
+{
+    scene "scenes/Player/Mercenary/low/RevolverKill01.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts01.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts03.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts05.vcd" 
+	scene "scenes/Player/Mercenary/low/Cheers06.vcd" 
+}
+Rule KilledPlayerManyMercenaryRevolver
+{
+    criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDMRevolver
+    ApplyContext "MercenaryKillSpeech:1:10"
+    applycontexttoworld
+    Response KilledPlayerManyMercenaryRevolver
+}
+
+Response KilledPlayerManyMercenaryShotgun
+{
+    scene "scenes/Player/Mercenary/low/ShotgunKill01.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts01.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts02.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts03.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts05.vcd" 
+	scene "scenes/Player/Mercenary/low/Cheers06.vcd" 
+}
+Rule KilledPlayerManyMercenaryShotgun
+{
+    criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsShotgunMercenary
+    ApplyContext "MercenaryKillSpeech:1:10"
+    applycontexttoworld
+    Response KilledPlayerManyMercenaryShotgun
+}
+
+Response KilledPlayerManyMercenaryExplosive
+{
+	scene "scenes/Player/Mercenary/low/ExplosiveKill01.vcd" 
+	scene "scenes/Player/Mercenary/low/ExplosiveKill02.vcd" 
+	scene "scenes/Player/Mercenary/low/ExplosiveKill03.vcd" 
+	scene "scenes/Player/Mercenary/low/ExplosiveKill04.vcd" 
+	scene "scenes/Player/Mercenary/low/Cheers06.vcd" 
+	scene "scenes/Player/Mercenary/low/LaughEvil01.vcd" 
+}
+Rule KilledPlayerManyMercenaryRL
+{
+	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsRocket
+	ApplyContext "MercenaryKillSpeech:1:10"
+	applycontexttoworld
+	Response KilledPlayerManyMercenaryExplosive
+}
+Rule KilledPlayerManyMercenaryRLDM
+{
+	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsOriginal
+	ApplyContext "MercenaryKillSpeech:1:10"
+	applycontexttoworld
+	Response KilledPlayerManyMercenaryExplosive
+}
+Rule KilledPlayerManyMercenaryGL
+{
+	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsGrenade
+	ApplyContext "MercenaryKillSpeech:1:10"
+	applycontexttoworld
+	Response KilledPlayerManyMercenaryExplosive
+}
+Rule KilledPlayerManyMercenaryGLDM
+{
+	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDMGrenade
+	ApplyContext "MercenaryKillSpeech:1:10"
+	applycontexttoworld
+	Response KilledPlayerManyMercenaryExplosive
 }
 
 Response KilledPlayerMeleeMercenary
@@ -226,7 +309,7 @@ Rule KilledPlayerMeleeMercenary
 
 Response KilledPlayerVeryManyMercenary
 {
-	scene "scenes/Player/Mercenary/low/Taunts17.vcd" 
+	scene "scenes/Player/Mercenary/low/LaughEvil01.vcd" 
 }
 Rule KilledPlayerVeryManyMercenary
 {
@@ -253,14 +336,13 @@ Response PlayerKilledDominatingMercenary
 {
 	scene "scenes/Player/Mercenary/low/LaughEvil01.vcd" predelay "2.5"
 	scene "scenes/Player/Mercenary/low/LaughEvil02.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/LaughEvil03.vcd" predelay "2.5"
 	scene "scenes/Player/Mercenary/low/LaughHappy01.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/LaughHappy02.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/LaughHappy03.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/LaughLong01.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/LaughLong03.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/Taunts07.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/Taunts13.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Domination01.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Domination02.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Domination03.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Domination04.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Domination05.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Domination06.vcd" predelay "2.5"
 }
 Rule PlayerKilledDominatingMercenary
 {
@@ -271,9 +353,9 @@ Rule PlayerKilledDominatingMercenary
 
 Response PlayerKilledForRevengeMercenary
 {
-	scene "scenes/Player/Mercenary/low/BattleCry06.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/Cheers01.vcd" predelay "2.5"
-	scene "scenes/Player/Mercenary/low/GoodJob02.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Revenge01.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Revenge02.vcd" predelay "2.5"
+	scene "scenes/Player/Mercenary/low/Revenge03.vcd" predelay "2.5"
 }
 Rule PlayerKilledForRevengeMercenary
 {
@@ -288,7 +370,7 @@ Response PlayerKilledObjectMercenary
 	scene "scenes/Player/Mercenary/low/PositiveVocalization01.vcd" 
 	scene "scenes/Player/Mercenary/low/PositiveVocalization02.vcd" 
 	scene "scenes/Player/Mercenary/low/PositiveVocalization03.vcd" 
-	scene "scenes/Player/Mercenary/low/SpecialCompleted04.vcd" 
+	scene "scenes/Player/Mercenary/low/Cheers06.vcd" 
 }
 Rule PlayerKilledObjectMercenary
 {
@@ -320,6 +402,8 @@ Rule PlayerAttackerPainMercenary
 Response PlayerOnFireMercenary
 {
 	scene "scenes/Player/Mercenary/low/AutoOnFire01.vcd" 
+	scene "scenes/Player/Mercenary/low/AutoOnFire02.vcd" 
+	scene "scenes/Player/Mercenary/low/AutoOnFire03.vcd" 
 }
 Rule PlayerOnFireMercenary
 {
@@ -377,6 +461,7 @@ Response PlayerGoMercenary
 	scene "scenes/Player/Mercenary/low/Go01.vcd" 
 	scene "scenes/Player/Mercenary/low/Go02.vcd" 
 	scene "scenes/Player/Mercenary/low/Go03.vcd" 
+	scene "scenes/Player/Mercenary/low/Go04.vcd" 
 }
 Rule PlayerGoMercenary
 {

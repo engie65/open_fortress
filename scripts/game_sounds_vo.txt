@@ -18871,7 +18871,7 @@
 "Mercenary.AutoCappedIntelligence01"
 {
 	"channel"		"CHAN_VOICE"
-	"volume"		"0.820"
+	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
 	"soundlevel"	"SNDLVL_95dB"
@@ -18882,7 +18882,7 @@
 "Mercenary.AutoCappedIntelligence02"
 {
 	"channel"		"CHAN_VOICE"
-	"volume"		"0.820"
+	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
 	"soundlevel"	"SNDLVL_95dB"
@@ -18893,12 +18893,45 @@
 "Mercenary.AutoCappedIntelligence03"
 {
 	"channel"		"CHAN_VOICE"
-	"volume"		"0.820"
+	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/Mercenary_AutoCappedIntelligence03.wav"
+}
+
+"Mercenary.AutoGrabbedIntelligence01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_AutoGrabbedIntelligence01.wav"
+}
+
+"Mercenary.AutoGrabbedIntelligence02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_AutoGrabbedIntelligence02.wav"
+}
+
+"Mercenary.AutoGrabbedIntelligence03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_AutoGrabbedIntelligence03.wav"
 }
 
 "Mercenary.AutoDejectedTie01"
@@ -19262,6 +19295,17 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/Mercenary_Go03.wav"
+}
+
+"Mercenary.Go04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Go04.wav"
 }
 
 "Mercenary.GoodJob01"
@@ -20758,4 +20802,169 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/mercenary_fallscream01.wav"
+}
+
+"Mercenary.Domination01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Domination01.wav"
+}
+
+"Mercenary.Domination02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Domination02.wav"
+}
+
+"Mercenary.Domination03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Domination03.wav"
+}
+
+"Mercenary.Domination04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Domination04.wav"
+}
+
+"Mercenary.Domination05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Domination05.wav"
+}
+
+"Mercenary.Domination06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Domination06.wav"
+}
+
+"Mercenary.Revenge01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Revenge01.wav"
+}
+
+"Mercenary.Revenge02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Revenge02.wav"
+}
+
+"Mercenary.Revenge03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Revenge03.wav"
+}
+
+"Mercenary.RevolverKill01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Revolver_Kill01.wav"
+}
+
+"Mercenary.ShotgunKill01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Shotgun_Kill01.wav"
+}
+
+"Mercenary.ExplosiveKill01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_ExplosiveKill01.wav"
+}
+
+"Mercenary.ExplosiveKill02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_ExplosiveKill02.wav"
+}
+
+"Mercenary.ExplosiveKill03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_ExplosiveKill03.wav"
+}
+
+"Mercenary.ExplosiveKill04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_ExplosiveKill04.wav"
 }

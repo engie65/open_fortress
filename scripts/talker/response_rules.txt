@@ -213,6 +213,7 @@ criterion "IsDisguised" "disguised" "1" required
 criterion "IsWeaponPrimary" "weaponmode" "primary" required
 criterion "IsWeaponSecondary" "weaponmode" "secondary" required
 criterion "IsWeaponMelee" "weaponmode" "melee" required
+criterion "IsWeaponNotMelee" "weaponmode" "!=melee" required
 criterion "IsWeaponBuilding" "weaponmode" "building" required
 criterion "IsWeaponPda" "weaponmode" "pda" required
 
@@ -304,6 +305,7 @@ criterion "WeaponIsMinigun" "playerweapon" "tf_weapon_minigun" "required"
 criterion "WeaponIsShotgun" "playerweapon" "tf_weapon_shotgun_secondary" "required"
 criterion "WeaponIsShotgunSoldier" "playerweapon" "tf_weapon_shotgun_soldier" "required"
 criterion "WeaponIsShotgunMercenary" "playerweapon" "tf_weapon_shotgun_mercenary" "required"
+criterion "WeaponIsNotShotgunMercenary" "playerweapon" "!=tf_weapon_shotgun_mercenary" "required"
 criterion "WeaponIsShotgunHwg" "playerweapon" "tf_weapon_shotgun_hwg" "required"
 criterion "WeaponIsShotgunPyro" "playerweapon" "tf_weapon_shotgun_pyro" "required"
 
@@ -336,18 +338,23 @@ criterion "WeaponIsRevolver" "playerweapon" "tf_weapon_revolver" "required"
 criterion "WeaponIsKnife" "playerweapon" "tf_weapon_knife" "required"
 criterion "WeaponIsPipebomb" "playerweapon" "tf_weapon_pipebomblauncher" "required"
 criterion "WeaponIsGrenade" "playerweapon" "tf_weapon_grenadelauncher" "required"
+criterion "WeaponIsNotGrenade" "playerweapon" "!=tf_weapon_grenadelauncher" "required"
 criterion "WeaponIsBottle" "playerweapon" "tf_weapon_bottle" "required"
 criterion "WeaponIsSpyPDA" "playerweapon" "tf_weapon_pda_spy" "required"
 criterion "WeaponIsRocket" "playerweapon" "tf_weapon_rocketlauncher" "required"
+criterion "WeaponIsNotRocket" "playerweapon" "!=tf_weapon_rocketlauncher" "required"
 criterion "WeaponIsShovel" "playerweapon" "tf_weapon_shovel" "required"
 
 criterion "WeaponIsDMSMG" "playerweapon" "tf_weapon_smg_mercenary" "required"
 criterion "WeaponIsTommyGun" "playerweapon" "tf_weapon_tommygun" "required"
 criterion "WeaponIsDMRevolver" "playerweapon" "tf_weapon_revolver_mercenary" "required"
+criterion "WeaponIsNotDMRevolver" "playerweapon" "!=tf_weapon_revolver_mercenary" "required"
 criterion "WeaponIsPistolAkimbo" "playerweapon" "tf_weapon_pistol_akimbo" "required"
 criterion "WeaponIsOriginal" "playerweapon" "tf_weapon_rocketlauncher_dm" "required"
+criterion "WeaponIsNotOriginal" "playerweapon" "!=tf_weapon_rocketlauncher_dm" "required"
 criterion "WeaponIsNailgun" "playerweapon" "tf_weapon_nailgun" "required"
 criterion "WeaponIsDMGrenade" "playerweapon" "tf_weapon_grenadelauncher_mercenary" "required"
+criterion "WeaponIsNotDMGrenade" "playerweapon" "!=tf_weapon_grenadelauncher_mercenary" "required"
 criterion "WeaponIsGatlingGun" "playerweapon" "tf_weapon_gatlinggun" "required"
 
 criterion "WeaponIsUmbrella" "playerweapon" "tf_weapon_umbrella" "required"
