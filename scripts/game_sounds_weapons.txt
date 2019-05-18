@@ -991,10 +991,6 @@
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
 	"wave"		")weapons/grenade_launcher_dm_shoot_crit.wav"
-	"wave"		")weapons/grenade_launcher_dm_shoot_crit1.wav"
-	"wave"		")weapons/grenade_launcher_dm_shoot_crit2.wav"
-	"wave"		")weapons/grenade_launcher_dm_shoot_crit3.wav"
-	"wave"		")weapons/grenade_launcher_dm_shoot_crit4.wav"
 }
 
 "Weapon_GrenadeLauncherDM.DrumLoad"
