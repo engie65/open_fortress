@@ -3640,8 +3640,6 @@
 ]
 
 
-
-
 @PointClass base(BaseEntity, Angles) iconsprite("editor-ficool2/env_sun") = env_sun : 
 	"An entity used to control and draw a sun effect in the sky."
 [
@@ -3674,7 +3672,6 @@
 	input IncrementTextureIndex(void) : "Increments target's current texture frame by one."
 	input SetTextureIndex(integer) : "Sets target's texture frame to the specified index."
 ]
-
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/env_tonemap_controller") = env_tonemap_controller : 
 	"An entity that controls the HDR tonemapping for the player. Think of it as a method of controlling the exposure of the player's eyes."
@@ -5892,8 +5889,9 @@
 @PointClass base(prop_dynamic_base, TeamNum, EnableDisable) studioprop("models/flag/briefcase.mdl") = item_teamflag :
     "Team Fortress 2 flag entity."
 [
-	ReturnTime(integer) : "Return time (in seconds)" : 60 : "Length of time (in seconds) before dropped flag/intelligence returns to base."
-
+	ReturnTime(float) : "Return time (in seconds)" : 60 : "Length of time (in seconds) before dropped flag/intelligence returns to base."
+	NeutralTime(float) : "Neutral time (in seconds)" : 60 : "Length of time (in seconds) before neutral dropped flag/intelligence returns to base."
+	
 	GameType(choices) : "Game Type" : 0 : "Type of game this flag will be used for." =
 	[
 		0 : "CTF"
