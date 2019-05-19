@@ -9,7 +9,7 @@
 //	"wave"			"#path/to/looping/track.wav"
 //}
 
-"Music.ActiveRound.Test"
+"Music.ActiveRound.MusicTest"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"VOL_NORM"
@@ -18,43 +18,7 @@
 	"wave"			"#music/deathmatch/dm_loop.wav"
 }
 
-"Music.PreRound.Test"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"VOL_NORM"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/dm_waiting.wav"
-}
-
-"Music.ActiveRound.dm_2fort"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"VOL_NORM"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/dm_loop.wav"
-}
-
-"Music.PreRound.dm_2fort"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"VOL_NORM"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/dm_waiting.wav"
-}
-
-"Music.ActiveRound.devmap_setcustommodel"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"VOL_NORM"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/tombfetus_wiseau_loop.wav"
-}
-
-"Music.PreRound.devmap_setcustommodel"
+"Music.PreRound.MusicTest"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"VOL_NORM"
