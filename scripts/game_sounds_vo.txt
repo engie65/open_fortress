@@ -19855,7 +19855,7 @@
 
 	"soundlevel"	"SNDLVL_95dB"
 
-	"wave"			"vo/Mercenary_PainCrticialDeath01.wav"
+	"wave"			"vo/mercenary_berserk01.wav"
 }
 
 "Mercenary.Medic01"

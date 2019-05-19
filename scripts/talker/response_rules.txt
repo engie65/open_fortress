@@ -236,7 +236,7 @@ criterion "IsHeadShot" "customdeath" "headshot" "required"
 
 criterion "IsDamageBlast" "damagetype" "DMG_BLAST" "required" 
 
-criterion "IsBerserk" "poweruptype" "TF_COND_BERSERK" "required" 
+criterion "IsBerserk" "poweruptype" "TF_COND_BERSERK" "required"
 
 criterion "InPowerup" "inpowerup" "yes" "required" 
 

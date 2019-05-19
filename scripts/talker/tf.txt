@@ -864,8 +864,7 @@
 	}
 	response "MercenaryTauntBerserk"
 	{
-		scene "scenes/player/mercenary/low/Taunts07.vcd"
-		scene "scenes/player/mercenary/low/Taunts07.vcd"
+		scene "scenes/player/mercenary/low/taunt07_v1.vcd"
 	}
 //Primary Rules
 	rule MercenaryTauntRocketLauncher

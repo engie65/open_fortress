@@ -815,7 +815,7 @@ Response PlayerBerserkMercenary
 }
 Rule PlayerBerserkMercenary
 {
-	criteria ConceptPlayerNegative IsMercenary IsBerserk
+	criteria ConceptPlayerPositive IsMercenary IsBerserk
 	Response PlayerBerserkMercenary
 }
 
