@@ -17,7 +17,7 @@ WeaponData
 	"ProjectileType"	"projectile_bullet"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
-	"TracerEffect"		"sniper_dxhr_rail"
+	"TracerEffect"		"railgun_tracer01"
 	
 	"DoInstantEjectBrass"	"0"
 	"BrassModel"		"models/weapons/shells/shell_sniperrifle.mdl"
