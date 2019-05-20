@@ -183,6 +183,7 @@ Response PlayerTeleporterThanksHeavy
 	scene "scenes/Player/Heavy/low/ThanksForTheTeleporter01.vcd" 
 	scene "scenes/Player/Heavy/low/ThanksForTheTeleporter02.vcd" 
 	scene "scenes/Player/Heavy/low/ThanksForTheTeleporter03.vcd" 
+	scene "scenes/Player/Heavy/low/Thanks03.vcd" 
 }
 Rule PlayerTeleporterThanksHeavy
 {
@@ -517,7 +518,6 @@ Response PlayerThanksHeavy
 {
 	scene "scenes/Player/Heavy/low/Thanks01.vcd" 
 	scene "scenes/Player/Heavy/low/Thanks02.vcd" 
-	scene "scenes/Player/Heavy/low/Thanks03.vcd" 
 }
 Rule PlayerThanksHeavy
 {
