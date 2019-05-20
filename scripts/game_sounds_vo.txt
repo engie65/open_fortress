@@ -21044,3 +21044,165 @@
 
 	"wave"			"vo/Mercenary_ExplosiveKill04.wav"
 }
+
+"Civilian.BattleCry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry01.wav"
+}
+
+"Civilian.BattleCry02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry02.wav"
+}
+
+"Civilian.BattleCry03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry03.wav"
+}
+
+"Civilian.BattleCry04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry04.wav"
+}
+
+"Civilian.BattleCry05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/civilian_BattleCry05.wav"
+}
+
+"Civilian.Medic01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Civilian_Medic01.wav"
+}
+
+"Civilian.Medic02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Civilian_Medic02.wav"
+}
+
+"Civilian.Medic03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Civilian_Medic03.wav"
+}
+
+
+"Civilian.Death"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/civilian_PainSevere01.wav"
+		"wave"		"vo/civilian_PainSevere02.wav"
+		"wave"		"vo/civilian_PainSevere03.wav"
+		"wave"		"vo/civilian_PainSevere04.wav"
+	}
+}
+
+"Civilian.CritDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/civilian_PainCrticialDeath01.wav"
+		"wave"		"vo/civilian_PainCrticialDeath02.wav"
+		"wave"		"vo/civilian_PainCrticialDeath03.wav"
+		"wave"		"vo/civilian_PainCrticialDeath04.wav"
+		"wave"		"vo/civilian_PainCrticialDeath05.wav"
+	}
+}
+
+"Civilian.MeleeDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/civilian_PainCrticialDeath01.wav"
+		"wave"		"vo/civilian_PainCrticialDeath02.wav"
+		"wave"		"vo/civilian_PainCrticialDeath03.wav"
+		"wave"		"vo/civilian_PainCrticialDeath04.wav"
+		"wave"		"vo/civilian_PainCrticialDeath05.wav"
+	}
+}
+
+"Civilian.ExplosionDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/civilian_PainSharp01.wav"
+		"wave"		"vo/civilian_PainSharp02.wav"
+		"wave"		"vo/civilian_PainSharp03.wav"
+		"wave"		"vo/civilian_PainSharp04.wav"
+		"wave"		"vo/civilian_PainSharp05.wav"
+		"wave"		"vo/civilian_PainSharp06.wav"
+		"wave"		"vo/civilian_PainSharp07.wav"
+	}
+}
