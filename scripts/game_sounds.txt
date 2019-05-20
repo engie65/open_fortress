@@ -220,9 +220,7 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
 
-	"wave"			"vo/null.wav"
-	//"wave"		"misc/talk.wav"
-	// Whenever someone update the binaries please "enable" this.
+	"wave"		"misc/talk.wav"
 }
 
 "Hud.Hint"
