@@ -215,12 +215,14 @@
 
 "HudChat.Message"
 {
-	"channel"	"CHAN_STREAM"
-	"volume"	"VOL_NORM"
-	"soundlevel"  "SNDLVL_NONE"
-	"pitch"	"PITCH_NORM"
+	"channel"		"CHAN_STREAM"
+	"volume"		"VOL_NORM"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
 
-	"wave"	"vo/null.wav"
+	"wave"			"vo/null.wav"
+	//"wave"		"misc/talk.wav"
+	// Whenever someone update the binaries please "enable" this.
 }
 
 "Hud.Hint"
