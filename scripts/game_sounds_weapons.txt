@@ -1854,7 +1854,7 @@
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_NORM"
 
-	"wave"		"doom/weapons/DSDBWR.wav"
+	"wave"		"weapons/supershotgun_worldreload.wav"
 }
 
 // ------------------------------------------------------------------------------------ //

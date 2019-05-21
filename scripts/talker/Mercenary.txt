@@ -218,7 +218,7 @@ Response KilledPlayerManyMercenary
 }
 Rule KilledPlayerManyMercenary
 {
-	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary IsWeaponNotMelee WeaponIsNotDMRevolver WeaponIsNotShotgunMercenary WeaponIsNotRocket WeaponIsNotGrenade WeaponIsNotOriginal WeaponIsNotDMGrenade
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary IsWeaponNotMelee WeaponIsNotDMRevolver WeaponIsNotShotgunMercenary WeaponIsNotRocket WeaponIsNotGrenade WeaponIsNotOriginal WeaponIsNotDMGrenade WeaponIsNotPistolMercenary WeaponIsNotPistolAkimbo
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenary
@@ -234,10 +234,33 @@ Response KilledPlayerManyMercenaryRevolver
 }
 Rule KilledPlayerManyMercenaryRevolver
 {
-    criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDMRevolver
+    criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDMRevolver
     ApplyContext "MercenaryKillSpeech:1:10"
     applycontexttoworld
     Response KilledPlayerManyMercenaryRevolver
+}
+
+Response KilledPlayerManyMercenaryPistol
+{
+	scene "scenes/Player/Mercenary/low/Taunts01.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts02.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts03.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts05.vcd" 
+	scene "scenes/Player/Mercenary/low/Cheers06.vcd" 
+}
+Rule KilledPlayerManyMercenaryPistol
+{
+    criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsPistolMercenary
+    ApplyContext "MercenaryKillSpeech:1:10"
+    applycontexttoworld
+    Response KilledPlayerManyMercenaryPistol
+}
+Rule KilledPlayerManyMercenaryAkimboPistol
+{
+    criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsPistolAkimbo
+    ApplyContext "MercenaryKillSpeech:1:10"
+    applycontexttoworld
+    Response KilledPlayerManyMercenaryPistol
 }
 
 Response KilledPlayerManyMercenaryShotgun
@@ -251,7 +274,7 @@ Response KilledPlayerManyMercenaryShotgun
 }
 Rule KilledPlayerManyMercenaryShotgun
 {
-    criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsShotgunMercenary
+    criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsShotgunMercenary
     ApplyContext "MercenaryKillSpeech:1:10"
     applycontexttoworld
     Response KilledPlayerManyMercenaryShotgun
@@ -268,28 +291,28 @@ Response KilledPlayerManyMercenaryExplosive
 }
 Rule KilledPlayerManyMercenaryRL
 {
-	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsRocket
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsRocket
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenaryExplosive
 }
 Rule KilledPlayerManyMercenaryRLDM
 {
-	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsOriginal
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsOriginal
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenaryExplosive
 }
 Rule KilledPlayerManyMercenaryGL
 {
-	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsGrenade
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsGrenade
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenaryExplosive
 }
 Rule KilledPlayerManyMercenaryGLDM
 {
-	criteria ConceptKilledPlayer IsManyRecentKills 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDMGrenade
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDMGrenade
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenaryExplosive
@@ -298,10 +321,12 @@ Rule KilledPlayerManyMercenaryGLDM
 Response KilledPlayerMeleeMercenary
 {
 	scene "scenes/Player/Mercenary/low/SpecialCompleted05.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts02.vcd" 
+	scene "scenes/Player/Mercenary/low/Taunts04.vcd" 
 }
 Rule KilledPlayerMeleeMercenary
 {
-	criteria ConceptKilledPlayer KilledPlayerDelay 30PercentChance  IsWeaponMelee MercenaryNotKillSpeechMelee IsMercenary
+	criteria ConceptKilledPlayer KilledPlayerDelay 30PercentChance  WeaponIsCrowbar MercenaryNotKillSpeechMelee IsMercenary
 	ApplyContext "MercenaryKillSpeechMelee:1:10"
 	applycontexttoworld
 	Response KilledPlayerMeleeMercenary
