@@ -2257,7 +2257,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		")weapons/railgun/railgf1a.wav"
+	"wave"		")weapons/railgun_shoot.wav"
 }
 
 "Weapon_Railgun.SingleCrit"
@@ -2265,7 +2265,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		")weapons/railgun/rg_crit.wav"
+	"wave"		")weapons/railgun_shoot_crit.wav"
 }
 
 "Weapon_Railgun.PilotLoop"
