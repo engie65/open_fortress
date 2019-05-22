@@ -78,6 +78,15 @@
 	"wave"		"items/healthkit_overheal.wav"
 }
 
+"HealthKitMega.Touch"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"wave"		"items/q3_megahealth.wav"
+}
+
 
 // ------------------------------------------------------------------------------------ //
 // AMMO PACK
@@ -451,9 +460,9 @@
 "Ambient.Hum"
 {
 	"channel"	"CHAN_STATIC"
-	"volume"	".50"
+	"volume"	"1"
 	"pitch"		"100"
-	"soundlevel"	"SNDLVL_65dB"
+	"soundlevel"	"SNDLVL_75dB"
 	"wave"		")ambient/hum1.wav"
 }
 
