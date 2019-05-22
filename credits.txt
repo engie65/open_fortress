@@ -71,7 +71,7 @@ MrModez (At Fortress' Gate, Winpanel Music, TF2Beat, Mayann)
 Thoopje (DMChase, DM Skate Theme, Intermission From Gathering Intel)
 
 Maps:
-AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone, TVLand, DM and CTF Johnny, MAP07 Dead Simple)
+AlphaBlaster (Blockfort, House of Chthon, E1M1 Hangar, MAP01 Entryway, The Bad Place, Hardcore, The Dark Zone, TVLand, DM and CTF Johnny, MAP07 Dead Simple, Overkill)
 Hambooga (The Bad Place [Artpass], The Longest Yard, Aerowalk)
 DrPyspy (Blood Run, Parley [Original layout], DM Johnny [Tomb Fetus original map])
 Richter (Junkyard, Office [Textures])
@@ -87,7 +87,8 @@ Rara (Crossfire)
 Bakscratch (DM Watergate, Skate)
 Hex (Skate)
 "John Fortnite Kennedy" (Wiseau, DM 2Fort, Range, Dust2)
-Savva (Hollow)
+Savva (Hollow, port of CTF Redplanet by Spipper)
+Spipper (CTF Redplanet)
 Polybagel (DE_Cache)
 Alex Episode (HL2 Runoff Port)
 
