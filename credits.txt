@@ -89,7 +89,6 @@ Hex (Skate)
 "John Fortnite Kennedy" (Wiseau, DM 2Fort, Range, Dust2)
 Savva (Hollow, port of CTF Redplanet by Spipper)
 Spipper (CTF Redplanet)
-Polybagel (DE_Cache)
 Alex Episode (HL2 Runoff Port)
 
 
