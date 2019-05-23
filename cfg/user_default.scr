@@ -62,6 +62,13 @@ DESCRIPTION INFO_OPTIONS
 		{ "0" }
 	}
 	
+	"of_autoswitchweapons"
+	{
+		"#TFOption_AutoSwitch"
+		{ BOOL }
+		{ "1" }
+	}
+	
 	"cl_autorezoom"
 	{
 		"#TF_autozoom"
