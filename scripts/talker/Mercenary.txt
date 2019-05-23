@@ -669,6 +669,9 @@ Rule PlayerDispenserHereMercenary
 Response PlayerIncomingMercenary
 {
 	scene "scenes/Player/Mercenary/low/Incoming01.vcd" 
+	scene "scenes/Player/Mercenary/low/Incoming02.vcd" 
+	scene "scenes/Player/Mercenary/low/Incoming03.vcd" 
+	scene "scenes/Player/Mercenary/low/Incoming04.vcd" 
 }
 Rule PlayerIncomingMercenary
 {

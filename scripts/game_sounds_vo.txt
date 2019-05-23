@@ -19572,6 +19572,39 @@
 	"wave"			"vo/Mercenary_Incoming01.wav"
 }
 
+"Mercenary.Incoming02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Incoming02.wav"
+}
+
+"Mercenary.Incoming03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Incoming03.wav"
+}
+
+"Mercenary.Incoming04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Incoming04.wav"
+}
+
 "Mercenary.Jeers01"
 {
 	"channel"		"CHAN_VOICE"
