@@ -293,7 +293,7 @@ event ControlPointIconGrow
 // Metal Account
 
 //activecolor - instantly turn red, fade back to yellow
-event AccountMoneyRemoved
+event AccountMetalRemoved
 {
 	Animate HudAccount		FgColor	"HudIcon_Red" Linear 0.0 0.0001
 	Animate HudAccount		FgColor	"OrangeDim" Accel 0.0 3.0
@@ -303,7 +303,7 @@ event AccountMoneyRemoved
 }
 
 //activecolor - instantly turn green, fade back to yellow
-event AccountMoneyAdded
+event AccountMetalAdded
 {
 	Animate HudAccount		FgColor	"HudIcon_Green" Linear 0.0 0.0001
 	Animate HudAccount		FgColor	"OrangeDim" Accel 0.0 3.0

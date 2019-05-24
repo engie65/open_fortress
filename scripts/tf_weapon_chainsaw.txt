@@ -29,7 +29,7 @@ WeaponData
 	"bucket_dm_position"		"0"
 
 	// Model & Animation
-	"viewmodel"				"models/weapons/v_models/v_bonesaw_medic.mdl"
+	"viewmodel"				"models/weapons/v_models/v_minigun_heavy.mdl"
 	"playermodel"			"models/weapons/w_models/w_bonesaw.mdl"
 	"anim_prefix"			"bonesaw"
 

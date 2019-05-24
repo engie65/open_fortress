@@ -1,4 +1,4 @@
-fWeaponData
+WeaponData
 {
 	// Attributes Base.
 	"printname"			"#TF_Weapon_Shotgun"
@@ -8,19 +8,19 @@ fWeaponData
 	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 	
 	// Primary Attributes
-	"Damage"			"6"
+	"Damage"				"6"
 	"InstagibDamage"	"999"
-	"Range"				"8192"
+	"Range"					"8192"
 	"BulletsPerShot"		"10"
-	"Spread"			"0.0675"
+	"Spread"				"0.0675"
 	"PunchAngle"			"2.0"
 	"TimeFireDelay"			"0.625"
-	"TimeIdle"			"5.0"
+	"TimeIdle"				"5.0"
 	"TimeIdleEmpty"			"0.25"
 	"TimeReload"			"0.5"
 	
 	"primary_ammo"		"TF_AMMO_PRIMARY"
-	"clip_size"			"6"
+	"clip_size"				"6"
 	"default_clip"			"6"
 	"MaxAmmo"	"32"
 	
