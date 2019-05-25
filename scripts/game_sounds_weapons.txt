@@ -3677,6 +3677,17 @@
 	"wave"	")ui/hitsound.wav"
 }
 
+"Player.HitSoundQuake3"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"	
+	"pitch"			"PITCH_NORM"
+
+	"wave"	")ui/hitsound_quake3.wav"
+}
+
+
 "Player.HitSoundBeepo"
 {
 	"channel"		"CHAN_STATIC"
@@ -3824,6 +3835,16 @@
 	"pitch"			"PITCH_NORM"
 
 	"wave"	")ui/killsound.wav"
+}
+
+"Player.KillSoundQuake3"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"	
+	"pitch"			"PITCH_NORM"
+
+	"wave"	")ui/killsound_quake3.wav"
 }
 
 "Player.KillSoundBeepo"
