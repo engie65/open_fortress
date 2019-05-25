@@ -1,2 +1,14 @@
-dm_aerowalk
+dm_skate
+dm_wiseau
+dm_2fort
+dm_watergate
+dm_congo
+dm_backfort
+dm_office
+dm_overkill
+dm_hollow
+dm_longestyard
 dm_thebadplace
+dm_deadsimple
+dm_greenback
+dm_bloodrun
