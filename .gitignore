@@ -27,7 +27,6 @@ cfg/banned_user.cfg
 cfg/config.cfg
 cfg/server_blacklist.txt
 cfg/server.cfg
-cfg/user.scr
 cfg/settings.scr
 settings/admins.txt
 ServerConfig.vdf
