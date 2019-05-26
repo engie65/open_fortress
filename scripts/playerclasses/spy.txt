@@ -24,10 +24,10 @@ PlayerClass
 	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"			"TF_WEAPON_KNIFE"
-	"weapon2"			"TF_WEAPON_REVOLVER"
+	"weapon1"			"TF_WEAPON_INVIS"
+	"weapon2"			"TF_WEAPON_KNIFE"
 	"weapon3"			"TF_WEAPON_PDA_SPY"
-	"weapon4"			"TF_WEAPON_INVIS"
+	"weapon4"			"TF_WEAPON_REVOLVER"
 	"weapon5"			"NONE"
 	"weapon6"			"NONE"
 	"weapon7"			"NONE"

@@ -24,11 +24,11 @@ PlayerClass
 	"grenade3"			"NONE"
 
 	// Weapons.
-	"weapon1"			"TF_WEAPON_WRENCH"
-	"weapon2"			"TF_WEAPON_PISTOL"
-	"weapon3"			"TF_WEAPON_SHOTGUN_PRIMARY"
-	"weapon4"			"TF_WEAPON_PDA_ENGINEER_BUILD"
-	"weapon5"			"TF_WEAPON_PDA_ENGINEER_DESTROY"
+	"weapon1"			"TF_WEAPON_PDA_ENGINEER_BUILD"
+	"weapon2"			"TF_WEAPON_PDA_ENGINEER_DESTROY"
+	"weapon3"			"TF_WEAPON_WRENCH"
+	"weapon4"			"TF_WEAPON_PISTOL"
+	"weapon5"			"TF_WEAPON_SHOTGUN_PRIMARY"
 	"weapon6"			"NONE"
 	"weapon7"			"NONE"
 	"weapon8"			"NONE"
