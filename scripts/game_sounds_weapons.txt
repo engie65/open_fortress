@@ -2435,7 +2435,7 @@
 
 "Weapon_RPG.Reload"
 {
-	"channel"	"CHAN_WEAPON"
+	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	"1"
 	"wave"		"weapons/rocket_reload.wav"
@@ -2443,7 +2443,7 @@
 
 "Weapon_RPG.WorldReload"
 {
-	"channel"	"CHAN_WEAPON"
+	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	"1"
 	"wave"		"weapons/rocket_reload.wav"
