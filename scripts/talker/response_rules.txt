@@ -193,6 +193,7 @@ criterion "ConceptKilledObject" "Concept" "TLK_KILLED_OBJECT" required
 criterion "ConceptMedicChargeReady" "Concept" "TLK_MEDIC_CHARGEREADY" required
 criterion "ConceptTeleported" "Concept" "TLK_TELEPORTED" required
 criterion "ConceptPlayerDead" "Concept" "TLK_DEAD" required
+criterion "ConceptPlayerRespawn" "Concept" "TLK_PLAYER_RESPAWN" required
 
 criterion "ConceptPlayerGrabbedIntelligence" "Concept" "TLK_FLAGPICKUP" required          
 criterion "ConceptPlayerCapturedIntelligence" "Concept" "TLK_FLAGCAPTURED" required          
@@ -239,6 +240,10 @@ criterion "IsDamageBlast" "damagetype" "DMG_BLAST" "required"
 criterion "IsBerserk" "poweruptype" "TF_COND_BERSERK" "required"
 
 criterion "InPowerup" "inpowerup" "yes" "required" 
+
+criterion "GotKilled" "gotkilled" "true" "required" 
+
+criterion "NotKilled" "gotkilled" "!=true" "required" 
 
 criterion "ConceptKilledPlayer" "Concept" "TLK_KILLED_PLAYER" required
 criterion "KilledPlayerDelay" "worldDontKilledPlayer" "!=1" "required"

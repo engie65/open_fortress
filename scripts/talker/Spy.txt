@@ -692,6 +692,26 @@ Rule PlayerPositiveSpy
 	Response PlayerPositiveSpy
 }
 
+Response PlayerRespawnSpy
+{
+	scene "scenes/Player/Spy/low/Respawn01.vcd" 
+	scene "scenes/Player/Spy/low/Respawn02.vcd" 
+	scene "scenes/Player/Spy/low/Respawn03.vcd" 
+	scene "scenes/Player/Spy/low/Respawn04.vcd" 
+	scene "scenes/Player/Spy/low/Respawn05.vcd" 
+	scene "scenes/Player/Spy/low/Respawn06.vcd" 
+	scene "scenes/Player/Spy/low/Respawn07.vcd" 
+	scene "scenes/Player/Spy/low/Respawn08.vcd" 
+	scene "scenes/Player/Spy/low/Respawn09.vcd" 
+}
+Rule PlayerRespawnSpy
+{
+	criteria ConceptPlayerRespawn IsSpy
+	Response PlayerRespawnSpy
+}
+
+
+
 Response PlayerTauntsSpy
 {
 	scene "scenes/Player/Spy/low/LaughShort01.vcd" 

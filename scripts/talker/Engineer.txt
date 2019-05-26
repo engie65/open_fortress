@@ -807,6 +807,17 @@ Rule PlayerPositiveEngineer
 	Response PlayerPositiveEngineer
 }
 
+Response PlayerRespawnEngineer
+{
+	scene "scenes/Player/Engineer/low/Respawn01.vcd" 
+	scene "scenes/Player/Engineer/low/Respawn02.vcd" 
+}
+Rule PlayerRespawnEngineer
+{
+	criteria ConceptPlayerRespawn IsEngineer
+	Response PlayerRespawnEngineer
+}
+
 Response PlayerTauntsEngineer
 {
 	scene "scenes/Player/Engineer/low/LaughEvil03.vcd" 

@@ -41,13 +41,15 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"StatPanelClassImageColorless"
-		"xpos"			"10"
-		"xpos_lodef"	"12"
-		"ypos"			"423"	[$WIN32]
-		"ypos"			"275"	[$X360]
-		"zpos"			"3"
-		"wide"			"92"
-		"tall"			"82"
+		"xpos"			"0"
+		"xpos_lodef"	"3"
+		"ypos"			"30"
+		"ypos_lodef"	"17"
+		"zpos"			"1"
+		"wide"			"72"
+		"wide_lodef"	"100"
+		"tall"			"72"
+		"tall_lodef"	"100"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/colorless/class_mercenarycolorless"

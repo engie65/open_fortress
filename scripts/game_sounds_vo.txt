@@ -2925,6 +2925,117 @@
 	"wave"			"vo/demoman_PositiveVocalization05.wav"
 }
 
+
+"Demoman.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect01.mp3"
+}
+
+"Demoman.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect02.mp3"
+}
+
+"Demoman.Respawn03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect03.mp3"
+}
+
+"Demoman.Respawn04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect05.mp3"
+}
+
+"Demoman.Respawn05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect06.mp3"
+}
+
+"Demoman.Respawn06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect07.mp3"
+}
+
+"Demoman.Respawn07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect08.mp3"
+}
+
+"Demoman.Respawn08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect09.mp3"
+}
+
+"Demoman.Respawn09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect10.mp3"
+}
+
+"Demoman.Respawn10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/demoman_mvm_resurrect11.mp3"
+}
+
 "Demoman.SentryAhead01"
 {
 	"channel"		"CHAN_VOICE"
@@ -4993,6 +5104,29 @@
 	"wave"			"vo/engineer_PositiveVocalization01.wav"
 }
 
+
+"Engineer.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_mvm_resurrect02.mp3"
+}
+
+"Engineer.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/engineer_mvm_resurrect03.mp3"
+}
+
 "Engineer.SentryAhead01"
 {
 	"channel"		"CHAN_VOICE"
@@ -6839,6 +6973,73 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/heavy_PositiveVocalization05.wav"
+}
+
+
+"Heavy.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/heavy_mvm_resurrect01.mp3"
+}
+
+"Heavy.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/heavy_mvm_resurrect02.mp3"
+}
+
+"Heavy.Respawn03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/heavy_mvm_resurrect04.mp3"
+}
+
+"Heavy.Respawn04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/heavy_mvm_resurrect05.mp3"
+}
+
+"Heavy.Respawn05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/heavy_mvm_resurrect06.mp3"
+}
+
+"Heavy.RespawnKilled01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/heavy_mvm_resurrect07.mp3"
 }
 
 "Heavy.SentryAhead01"
@@ -8973,6 +9174,39 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/medic_PositiveVocalization06.wav"
+}
+
+"Medic.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/medic_mvm_resurrect01.mp3"
+}
+
+"Medic.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/medic_mvm_resurrect02.mp3"
+}
+
+"Medic.Respawn03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/medic_mvm_resurrect03.mp3"
 }
 
 "Medic.SentryAhead01"
@@ -11758,6 +11992,95 @@
 	"wave"			"vo/scout_PositiveVocalization05.wav"
 }
 
+"Scout.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/scout_mvm_resurrect01.mp3"
+}
+
+"Scout.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/scout_mvm_resurrect02.mp3"
+}
+
+"Scout.Respawn03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/scout_mvm_resurrect03.mp3"
+}
+
+
+"Scout.Respawn04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/scout_mvm_resurrect04.mp3"
+}
+
+"Scout.Respawn05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/scout_mvm_resurrect05.mp3"
+}
+
+"Scout.Respawn06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/scout_mvm_resurrect06.mp3"
+}
+
+"Scout.Respawn07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/scout_mvm_resurrect07.mp3"
+}
+
+"Scout.Respawn08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/scout_mvm_resurrect08.mp3"
+}
+
 "Scout.SentryAhead01"
 {
 	"channel"		"CHAN_VOICE"
@@ -13781,6 +14104,40 @@
 
 	"wave"			"vo/sniper_PositiveVocalization10.wav"
 }
+
+"Sniper.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/sniper_mvm_resurrect01.mp3"
+}
+
+"Sniper.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/sniper_mvm_resurrect02.mp3"
+}
+
+"Sniper.Respawn03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/sniper_mvm_resurrect03.mp3"
+}
+
 
 "Sniper.SentryAhead01"
 {
@@ -16411,6 +16768,72 @@
 	"wave"			"vo/soldier_PositiveVocalization05.wav"
 }
 
+"Soldier.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/soldier_mvm_resurrect01.mp3"
+}
+
+"Soldier.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/soldier_mvm_resurrect02.mp3"
+}
+
+"Soldier.Respawn03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/soldier_mvm_resurrect03.mp3"
+}
+
+"Soldier.Respawn04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/soldier_mvm_resurrect04.mp3"
+}
+
+"Soldier.Respawn05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/soldier_mvm_resurrect05.mp3"
+}
+
+"Soldier.Respawn06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/soldier_mvm_resurrect06.mp3"
+}
+
 "Soldier.SentryAhead01"
 {
 	"channel"		"CHAN_VOICE"
@@ -18257,6 +18680,107 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/spy_PositiveVocalization05.wav"
+}
+
+
+"Spy.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect01.mp3"
+}
+
+"Spy.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect02.mp3"
+}
+
+"Spy.Respawn03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect03.mp3"
+}
+
+
+"Spy.Respawn04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect04.mp3"
+}
+
+"Spy.Respawn05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect05.mp3"
+}
+
+"Spy.Respawn06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect06.mp3"
+}
+
+"Spy.Respawn07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect07.mp3"
+}
+
+"Spy.Respawn08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect08.mp3"
+}
+
+"Spy.Respawn09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Spy_mvm_resurrect09.mp3"
 }
 
 "Spy.SentryAhead01"
@@ -20977,6 +21501,50 @@
 	"soundlevel"	"SNDLVL_95dB"
 
 	"wave"			"vo/Mercenary_Domination06.wav"
+}
+
+"Mercenary.Respawn01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Respawn01.wav"
+}
+
+"Mercenary.Respawn02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Respawn02.wav"
+}
+
+"Mercenary.Respawn03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Respawn03.wav"
+}
+
+"Mercenary.RespawnKilled01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/Mercenary_Respawn04.wav"
 }
 
 "Mercenary.Revenge01"
