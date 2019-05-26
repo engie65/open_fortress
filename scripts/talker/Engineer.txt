@@ -814,7 +814,7 @@ Response PlayerRespawnEngineer
 }
 Rule PlayerRespawnEngineer
 {
-	criteria ConceptPlayerRespawn IsEngineer
+	criteria ConceptPlayerRespawn 30PercentChance IsEngineer
 	Response PlayerRespawnEngineer
 }
 

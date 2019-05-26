@@ -574,7 +574,7 @@ Response PlayerRespawnPyro
 
 Rule PlayerRespawnPyro
 {
-	criteria ConceptPlayerRespawn IsPyro
+	criteria ConceptPlayerRespawn 30PercentChance IsPyro
 	Response PlayerRespawnPyro
 }
 

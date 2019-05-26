@@ -770,7 +770,7 @@ Response PlayerRespawnMedic
 }
 Rule PlayerRespawnMedic
 {
-	criteria ConceptPlayerRespawn IsMedic
+	criteria ConceptPlayerRespawn 30PercentChance IsMedic
 	Response PlayerRespawnMedic
 }
 

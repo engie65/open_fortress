@@ -744,7 +744,7 @@ Response PlayerRespawnDemoman
 }
 Rule PlayerRespawnDemoman
 {
-	criteria ConceptPlayerRespawn IsDemoman
+	criteria ConceptPlayerRespawn 30PercentChance IsDemoman
 	Response PlayerRespawnDemoman
 }
 

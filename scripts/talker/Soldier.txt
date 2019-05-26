@@ -732,7 +732,7 @@ Response PlayerRespawnSoldier
 }
 Rule PlayerRespawnSoldier
 {
-	criteria ConceptPlayerRespawn IsSoldier
+	criteria ConceptPlayerRespawn 30PercentChance IsSoldier
 	Response PlayerRespawnSoldier
 }
 

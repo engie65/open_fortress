@@ -706,7 +706,7 @@ Response PlayerRespawnSpy
 }
 Rule PlayerRespawnSpy
 {
-	criteria ConceptPlayerRespawn IsSpy
+	criteria ConceptPlayerRespawn 30PercentChance IsSpy
 	Response PlayerRespawnSpy
 }
 

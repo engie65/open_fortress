@@ -757,7 +757,7 @@ Response PlayerRespawnSniper
 }
 Rule PlayerRespawnSniper
 {
-	criteria ConceptPlayerRespawn IsSniper
+	criteria ConceptPlayerRespawn 30PercentChance IsSniper
 	Response PlayerRespawnSniper
 }
 

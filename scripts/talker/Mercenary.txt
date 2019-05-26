@@ -212,7 +212,7 @@ Response PlayerRespawnMercenary
 }
 Rule PlayerRespawnMercenary
 {
-	criteria ConceptPlayerRespawn IsMercenary NotKilled
+	criteria ConceptPlayerRespawn 30PercentChance IsMercenary NotKilled
 	Response PlayerRespawnMercenary
 }
 
@@ -225,7 +225,7 @@ Response PlayerRespawnKilledMercenary
 }
 Rule PlayerRespawnKilledMercenary
 {
-	criteria ConceptPlayerRespawn IsMercenary GotKilled
+	criteria ConceptPlayerRespawn 30PercentChance IsMercenary GotKilled
 	Response PlayerRespawnKilledMercenary
 }
 
