@@ -14,6 +14,7 @@
 	nomodels		"1" // gameui.dll
 	nohimodel		"1" // gameui.dll
 	nocrosshair		"0" // gameui.dll
+	advcrosshair 	"1" // gameui.dll
 	nodifficulty	"1" // gameui.dll
 	supportsvr		"0" // engine.dll + gameui.dll
 	bots			"0" // gameui.dll
