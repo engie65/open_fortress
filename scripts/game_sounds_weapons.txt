@@ -2459,14 +2459,14 @@
 	"channel"	"CHAN_WEAPON"
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_94dB"
-	"wave"		"weapons\quake_rpg_fire_remastered.wav"
+	"wave"		")weapons\quake_rpg_fire_remastered.wav"
 }
 
 "Weapon_QuakeRPG.SingleCrit"
 {
 	"channel"	"CHAN_WEAPON"
 	"volume"	"1"
-	"wave"		"weapons\quake_rpg_fire_remastered_crit.wav"
+	"wave"		")weapons\quake_rpg_fire_remastered_crit.wav"
 }
 
 "Weapon_QuakeRPG.Draw"
