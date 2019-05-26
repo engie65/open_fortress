@@ -715,6 +715,8 @@
 	{
 		"wave"		"vo/mercenary_paincrticialdeath01.wav"
 		"wave"		"vo/mercenary_paincrticialdeath02.wav"
+		"wave"		"vo/mercenary_paincrticialdeath03.wav"
+		"wave"		"vo/mercenary_paincrticialdeath04.wav"
 	}
 }
 
@@ -730,6 +732,8 @@
 	{
 		"wave"		"vo/mercenary_paincrticialdeath01.wav"
 		"wave"		"vo/mercenary_paincrticialdeath02.wav"
+		"wave"		"vo/mercenary_paincrticialdeath03.wav"
+		"wave"		"vo/mercenary_paincrticialdeath04.wav"
 	}
 }
 
@@ -745,6 +749,8 @@
 	{
 		"wave"		"vo/mercenary_paincrticialdeath01.wav"
 		"wave"		"vo/mercenary_paincrticialdeath02.wav"
+		"wave"		"vo/mercenary_paincrticialdeath03.wav"
+		"wave"		"vo/mercenary_paincrticialdeath04.wav"
 	}
 }
 
