@@ -1802,7 +1802,7 @@
 }
 
 // ------------------------------------------------------------------------------------ //
-// SUPERSHOTGUN
+// SUPER SHOTGUN
 // ------------------------------------------------------------------------------------ //
 
 "Weapon_SuperShotGun.Single"
@@ -1810,7 +1810,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		"weapons/supershotgun_shoot.wav"
+	"wave"		")weapons/supershotgun_shoot.wav"
 }
 
 "Weapon_SuperShotGun.SingleCrit"
@@ -1818,7 +1818,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
-	"wave"		"weapons/supershotgun_shoot_crit.wav"
+	"wave"		")weapons/supershotgun_shoot_crit.wav"
 }
 
 "Weapon_SuperShotGun.TubeOpen"
@@ -1836,7 +1836,7 @@
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_NORM"
 
-	"wave"		"weapons/supershotgun_shells_in.wav"
+	"wave"		")weapons/supershotgun_shells_in.wav"
 }
 
 "Weapon_SuperShotGun.TubeClose"
@@ -1854,7 +1854,7 @@
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_NORM"
 
-	"wave"		"weapons/supershotgun_worldreload.wav"
+	"wave"		")weapons/supershotgun_worldreload.wav"
 }
 
 // ------------------------------------------------------------------------------------ //
