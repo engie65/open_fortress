@@ -22,10 +22,8 @@
 		"fieldName"				"BtnGameModes"
 
 		"tabPosition"			"1"
-		"navUp"					"BtnBlogPost"			[$X360]
-		"navUp"					"PnlQuickJoin"		[$WIN32]
-		"navDown"				"BtnChangeGamers"	[$X360]
-		"navDown"				"BtnStatsAndAchievements"	[$WIN32]
+		"navUp"					"BtnQuit"		[$WIN32]
+		"navDown"				"BtnNewGame"	[$WIN32]
 
 		"xpos"					"0"
 		"ypos"					"35"
@@ -36,9 +34,6 @@
 		"zpos"					-10				[$WIN32]
 		
 		"borderimage"			"vgui/menu_mode_border"	
-
-		"leftarrow"				"vgui/arrow_left"	
-		"rightarrow"			"vgui/arrow_right"	
 		"arrowwidth"			21
 		"arrowheight"			21
 		"arrowoffsety"			-3
@@ -81,100 +76,8 @@
 			"name"				"#L4D360UI_ModeCaps_COOP"
 			"image"				"vgui/menu_mode_campaign"
 			"command"			"FlmCampaignFlyout"
-			"menutitle"			"#L4D360UI_MainMenu_CoOp"
-			"menuhint"			"#L4D360UI_MainMenu_CoOp_Tip"
-		}
-		
-		"mode" [!$X360GUEST]
-		{
-			"id"				"BtnPlayChallenge"
-			"name"				"#L4D360UI_ModeCaps_CHALLENGE"
-			"image"				"vgui/menu_mode_mutation"
-			"command"			"PlayChallenge"
-			"menutitle"			"#L4D360UI_MainMenu_PlayChallenge"
-			"menuhint"			" "
-			"menuhintdisabled"	"#L4D360UI_MainMenu_DemoVersion"	[$DEMO]
-			"custommode"		"1" // mutation
-			"enabled"			"0"									[$DEMO]
-		}
-
-		"mode" [!$X360GUEST]
-		{
-			"id"				"BtnPlayRealism"
-			"name"				"#L4D360UI_ModeCaps_REALISM"
-			"image"				"vgui/menu_mode_realism"
-			"command"			"FlmRealismFlyout"
-			"menutitle"			"#L4D360UI_MainMenu_Realism"
-			"menuhint"			"#L4D360UI_MainMenu_Realism_Tip"
-			"menuhintdisabled"	"#L4D360UI_MainMenu_DemoVersion"	[$DEMO]
-			"enabled"			"0"									[$DEMO]
-		}
-
-		"mode" [!$X360GUEST]
-		{
-			"id"				"BtnVersus"
-			"name"				"#L4D360UI_ModeCaps_VERSUS"
-			"image"				"vgui/menu_mode_versus"
-			"command"			"VersusSoftLock"
-			"menutitle"			"#L4D360UI_MainMenu_Versus"
-			"menuhint"			"#L4D360UI_MainMenu_Versus_Tip"
-			"menuhintdisabled"	"#L4D360UI_MainMenu_DemoVersion"	[$DEMO]
-			"enabled"			"0"									[$DEMO]
-		}
-
-		"mode" [!$X360GUEST]
-		{
-			"id"				"BtnRealismVersus"
-			"name"				"#L4D360UI_ModeCaps_mutation12_short"
-			"image"				"vgui/menu_mode_realismversus"
-			"command"			"FlmRealismVersusFlyout"						
-			"menutitle"			"#L4D360UI_ModeCaps_mutation12"
-			"menuhint"			"#L4D360UI_MainMenu_PlayChallenge_Tip_mutation12"			
-			"menuhintdisabled"	"#L4D360UI_MainMenu_DemoVersion"	[$DEMO]
-			"enabled"			"0"									[$DEMO]
-		}
-
-		"mode" [!$X360GUEST]
-		{
-			"id"				"BtnSurvival"
-			"name"				"#L4D360UI_ModeCaps_SURVIVAL"
-			"image"				"vgui/menu_mode_survival"
-			"command"			"SurvivalCheck"
-			"menutitle"			"#L4D360UI_MainMenu_Survival"
-			"menuhint"			"#L4D360UI_MainMenu_Survival_Tip"
-			"menuhintdisabled"	"#L4D360UI_MainMenu_DemoVersion"	[$DEMO]
-			"enabled"			"0"									[$DEMO]
-		}
-
-		"mode" [!$X360GUEST]
-		{
-			"id"				"BtnScavenge"
-			"name"				"#L4D360UI_ModeCaps_SCAVENGE"
-			"image"				"vgui/menu_mode_scavenge"
-			"command"			"ScavengeCheck"
-			"menutitle"			"#L4D360UI_MainMenu_Scavenge"
-			"menuhint"			"#L4D360UI_MainMenu_Scavenge_Tip"
-			"menuhintdisabled"	"#L4D360UI_MainMenu_DemoVersion"	[$DEMO]
-			"enabled"			"0"									[$DEMO]
-		}
-		
-		"mode" [!$X360SPLITSCREEN]
-		{
-			"id"				"BtnPlaySolo"
-			"name"				"#L4D360UI_ModeCaps_offline_SP"
-			"image"				"vgui/menu_mode_singleplayer"
-			"command"			"SoloPlay"
-			"menutitle"			"#L4D360UI_MainMenu_PlaySolo"
-			"menuhint"			"#L4D360UI_MainMenu_PlaySolo_Tip"
-		}	
-		"mode" [$X360SPLITSCREEN]
-		{
-			"id"				"BtnPlaySolo"
-			"name"				"#L4D360UI_ModeCaps_offline_SS"
-			"image"				"vgui/menu_mode_offline_coop"
-			"command"			"SoloPlay"
-			"menutitle"			"#L4D360UI_MainMenu_PlaySplitscreen"
-			"menuhint"			"#L4D360UI_MainMenu_OfflineCoOp_Tip"
+			"menutitle"			"PLAY GAME"
+			"menuhint"			"Search for active game servers"
 		}
 	}
 		
@@ -191,12 +94,12 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"navUp"					"BtnChangeGamers"
+		"navUp"					"BtnGameModes"
 		"navDown"				"BtnLoadGame"
-		"labelText"				"#GameUI_GameMenu_NewGame"
+		"labelText"				"CREATE A SERVER"
 		"tooltiptext"			"#L4D360UI_MainMenu_PlaySolo_Tip"
 		"style"					"MainMenuButton"
-		"command"				"SoloPlay"
+		"command"				"CreateServer"
 		"ActivationType"		"1"
 	}
 	
@@ -236,7 +139,7 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"navUp"					"BtnLoadGame"
-		"navDown"				"BtnExtras"
+		"navDown"				"BtnAddons"
 		"labelText"				"#L4D360UI_MainMenu_Options"
 		"tooltiptext"			"#L4D360UI_MainMenu_Options_Tip"
 		"style"					"MainMenuButton"
@@ -257,9 +160,9 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"navUp"					"BtnAddons"
-		"navDown"				"BtnBlogPost"
-		"labelText"				"ADD-ONS"
+		"navUp"					"BtnOptions"
+		"navDown"				"BtnQuit"
+		"labelText"				"LOADOUT"
 		"tooltiptext"			"#L4D360UI_Extras_Addons_Tip"
 		"style"					"MainMenuButton"
 		"command"				"Addons"
@@ -304,8 +207,8 @@
 		"visible"				"1" [$WIN32]
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"navUp"					"BtnBlogPost"
-		"navDown"				"PnlQuickJoin"
+		"navUp"					"BtnAddons"
+		"navDown"				"BtnGameModes"
 		"labelText"				"#L4D360UI_MainMenu_Quit"
 		"tooltiptext"			"#L4D360UI_MainMenu_Quit_Tip"
 		"style"					"MainMenuButton"

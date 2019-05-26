@@ -316,7 +316,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"AlteDIN"
+				"name"		"Verdana" //"TF2"
 				"tall"		"14"
 				"weight"	"100"
 				"antialias"	"1"
@@ -328,7 +328,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"10"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -340,7 +340,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"10"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -352,7 +352,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"10"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -364,7 +364,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"10"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -376,7 +376,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"AlteDIN"
+				"name"		"Verdana" //"TF2"
 				"tall"		"7"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -387,7 +387,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"AlteDIN"
+				"name"		"Verdana" //"TF2"
 				"tall"		"7"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -399,7 +399,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"AlteDIN"
+				"name"		"Verdana" //"TF2"
 				"tall"		"8"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -410,7 +410,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana" //"AlteDIN"
+				"name"		"Verdana" //"TF2"
 				"tall"		"8"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -422,7 +422,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"12"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -433,7 +433,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"12"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -445,7 +445,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"15"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -457,7 +457,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"20"
 				"weight"	"100"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -469,7 +469,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"16"
 				"weight"	"100"
 				"antialias"	"1"
@@ -480,7 +480,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"16"
 				"weight"	"100"
 				"antialias"	"1"
@@ -519,7 +519,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"AlteDIN"
+				"name"			"TF2"
 				"tall"			"24"
 				"weight"		"400"
 				"antialias"		"1"
@@ -530,7 +530,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"AlteDIN"
+				"name"			"TF2"
 				"tall"			"24"
 				"weight"		"400"
 				"blur"			"3"					[$WIN32 || $X360LODEF]
@@ -543,7 +543,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"AlteDIN"
+				"name"			"TF2"
 				"tall"			"20"
 				"weight"		"400"				[$WIN32]
 				"weight"		"800"				[$X360]
@@ -555,7 +555,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"AlteDIN"
+				"name"			"TF2"
 				"tall"			"20"
 				"weight"		"400"				[$WIN32]
 				"weight"		"800"				[$X360]
@@ -604,7 +604,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"AlteDIN"
+				"name"		"TF2"
 				"tall"		"28"
 				"weight"	"400"
 				"antialias"	"1"
@@ -1301,6 +1301,6 @@ Scheme
 	}
 	CustomFontFiles
 	{
-		"1"		"resource/AlteDIN.ttf"
+		"1"		"resource/TF2.ttf"
 	}
 }
