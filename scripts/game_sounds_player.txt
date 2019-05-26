@@ -115,6 +115,20 @@
 	"wave"	"common/wpn_moveselect.wav"
 }
 
+"Player.Gib"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"		"player/gibexplosion1.wav"
+		"wave"		"player/gibexplosion2.wav"
+		"wave"		"player/gibexplosion3.wav"
+	}
+}
+
 "Player.FallGib"
 {
 	"channel"	"CHAN_ITEM"
