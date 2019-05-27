@@ -1,23 +1,26 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models\weapons\v_smg\v_smg_dm"
+	"$baseTexture" "models\weapons\v_smg/v_smg_dm"
 
 	"$phong" "1"
-	"$phongexponent" "25"
+	"$phongexponent" "24"
 	"$phongboost" "5"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
+
 	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "3"	
-	"$rimlightboost" ".25"
+	"$rimlightboost" ".50"
 
-	"$cloakPassEnabled" "1"
-	"Proxies"
-	{
-		"spy_invis"
-		{
-		}
-	}
+
+	// Cloaking
+//	"$cloakPassEnabled" "1"
+//	"Proxies"
+//	{
+//		"weapon_invis"
+//		{
+//		}
+//	}
 }
