@@ -707,6 +707,55 @@
 }
 
 // ------------------------------------------------------------------------------------ //
+// QUAKE AXE
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_QuakeAxe.Miss"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_64dB"
+	"volume"	".6"
+	"wave"		")weapons/cbar_miss1.wav"
+}
+
+"Weapon_QuakeAxe.MissCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_64dB"
+	"volume"	".6"
+	"wave"		")weapons/cbar_miss1_crit.wav"
+}
+
+"Weapon_QuakeAxe.HitFlesh"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		"weapons/axe_hit_flesh1.wav"
+		"wave"		"weapons/axe_hit_flesh2.wav"
+		"wave"		"weapons/axe_hit_flesh3.wav"
+	}
+}
+
+"Weapon_QuakeAxe.HitWorld"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"wave"		"weapons/quake_axe_hitworld.wav"
+}
+
+"Weapon_QuakeAxe.Draw"
+{
+	"channel"	"CHAN_AUTO"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		"weapons/draw_melee.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
 // FLAG
 // ------------------------------------------------------------------------------------ //
 
