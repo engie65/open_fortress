@@ -10,6 +10,7 @@ Rara
 Chrissy
 Jill Nesbit
 Nbc66
+Avast Antipony
 
 Gameplay Lead:
 AlphaBlaster
@@ -45,6 +46,7 @@ Gibus Cat
 Stachekip
 Polybagel
 NoNotTheMemes
+Drew
 
 Assorted Models and Prop Assets:
 Boomsta
@@ -81,7 +83,7 @@ Chrissy (Office)
 Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, DM+CTF Backfort, Weapon devtest map)
 Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_DM2, DM Lumberyard, Goldeneye Facility, Pool Party)
 BarkinDarkin (Grosse)
-MacD11 (Wiseau, DM_Johnny [Original Layout], Range)
+MacD11 (Wiseau, DM_Johnny [Original Layout], Range, MAP07 Dead Simple)
 KaiDemonLP (dm_2fort_weapontest, other devtest maps)
 Gibus Cat (Indev DM_2Fort)
 Rara (Crossfire)
@@ -100,4 +102,5 @@ Saul Rennison (for proper dynamic shadows using the L4D method)
 The Jabroni Brawl 3 team (for putting our Mercenary into their game <3)
 XutaxKamay (For player origin displacement fixes)
 tonysergi (For MP Gravity Gun carried objects fix)
+[Cosmetic Set "Top Fragger" - The Boomer Bucket/Lovecrafted Carapace/Earth Quakers by Drew, Yikes, Makkon and Hotrod McCoolguy, used with permission]
 SuperBigBoy (Food)
