@@ -2,7 +2,7 @@
 {
 	"$basetexture" "Nature/dirtground010"
 	"$basetexture2" "Nature/rockwall001forest"
-	"%tooltexture" "Nature/rockwall001forest"
+	"%tooltexture" "editor-abs/blendttx/nature/blendrockgroundwallforest003"
 //	"$blendmodulatetexture" "Nature/dirtground002_blendmask"
 	"$bumpmap" "Nature/rockwall001_normal"
 	"%keywords" "tf"

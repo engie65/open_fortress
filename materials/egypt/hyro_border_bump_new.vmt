@@ -3,5 +3,5 @@
 	"$basetexture"	"egypt\hyro_outdoors_01"
 	"$bumpmap"	"egypt\hyro_border_03_normal"
 	"$surfaceprop" "stone"
-
+	"%keywords" "tf"
 }

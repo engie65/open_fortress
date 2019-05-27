@@ -3,4 +3,5 @@
 	"$basetexture" "models/props_badlands/buildings_rooftop_06"
 	"$bumpmap" "Metal/wall013_normal"
 	"$surfaceprop" "metal"
+	"%keywords" "tf"
 }

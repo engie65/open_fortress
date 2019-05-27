@@ -4,5 +4,6 @@
 	"$basetexture2" "egypt\sky_sand_01"
 	"$surfaceprop" "sand"
 	"$ssbump" "1"
-
+	"%tooltexture" "editor-abs/blendttx/egypt/sky_sand_waves_01"
+	"%keywords" "tf"
 }

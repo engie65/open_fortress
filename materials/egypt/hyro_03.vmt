@@ -3,5 +3,5 @@
 	"$basetexture"	"egypt\hyro_flat_outdoors_01"
 	"$bumpmap"	"egypt\hyro_wall_normal"
 	"$surfaceprop" "concrete"
-
+	"%keywords" "tf"
 }
