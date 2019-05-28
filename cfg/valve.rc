@@ -42,3 +42,14 @@ alias use_rail "use tf_weapon_railgun"
 // to fix sprays not saving
 //
 exec config.cfg
+
+// improvements for some default cvars
+
+g_ragdoll_maxcount 25
+r_maxmodeldecal 64
+ai_force_serverside_ragdoll	1
+r_decal_overlap_area 0.7
+engine_no_focus_sleep 0
+
+// this will stop crashes on MASSIVE maps
+r_hunkalloclightmaps 0
