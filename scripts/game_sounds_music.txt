@@ -42,12 +42,6 @@
 //DeathmatchMusic.Healer
 //DeathmatchMusic.DMStuff
 //DeathmatchMusic.Mayann
-//DeathmatchMusic.PersiaLibrary
-//DeathmatchMusic.PersiaLibrary_Waiting
-//DeathmatchMusic.PersiaLibrary_Ending
-//DeathmatchMusic.PersiaGarden
-//DeathmatchMusic.PersiaGarden_Waiting
-//DeathmatchMusic.PersiaGarden_Ending
 //DeathmatchMusic.LGOrbifold (Does NOT loop due to mp3 format.)
 //
 
@@ -322,7 +316,7 @@
 	"wave"			"#music/deathmatch/healerstalks_loop.wav"
 }
 
-//DMStuff by Magnus
+//DMStuff by Magnus. Debatably a cover of "Cradle" from Goldeneye 007 but not really.
 "DeathmatchMusic.DMStuff"
 {
 	"channel"		"CHAN_STATIC"
@@ -341,68 +335,6 @@
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/mayann_waiting.wav"
-}
-
-//Struggle in the Library from Prince of Persia: Warrior Within, by Stuart Chatwood
-//Included as a most-likely placeholder track, leftover from a midpoint in TF2C's development.
-"DeathmatchMusic.PersiaLibrary"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/library_loop.wav"
-}
-
-//Struggle in the Library Waiting Track
-"DeathmatchMusic.PersiaLibrary_Waiting"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/library_waiting.wav"
-}
-
-//Struggle in the Library Ending Track
-"DeathmatchMusic.PersiaLibrary_Ending"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/library_ending.wav"
-}
-
-//Hanging Gardens from Prince of Persia: Warrior Within, by Stuart Chatwood
-//Included as a most-likely placeholder track, leftover from a midpoint in TF2C's development.
-"DeathmatchMusic.PersiaGarden"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/garden_loop.wav"
-}
-
-//Hanging Gardens Setup Track
-"DeathmatchMusic.PersiaGarden_Waiting"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/garden_waiting.wav"
-}
-
-//Hanging Gardens End Track
-"DeathmatchMusic.PersiaGarden_Ending"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/garden_ending.wav"
 }
 
 //LG Orbifold from Half-Life 2, by Kelly Bailey.
