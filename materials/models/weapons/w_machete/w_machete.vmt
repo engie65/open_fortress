@@ -16,4 +16,15 @@
 	"$rimlightexponent" "4"	
 	"$rimlightboost" "3"
 
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"spy_invis"
+		{
+		}
+	}
 }
