@@ -157,10 +157,9 @@
 		"fieldName"		"ClassImage"
 		"xpos"			"10"
 		"xpos_lodef"	"12"
-		"ypos"			"423"	[$WIN32]
-		"ypos"			"275"	[$X360]
+		"ypos"			"425"
 		"zpos"			"3"
-		"wide"			"92"
+		"wide"			"82"
 		"tall"			"82"
 		"visible"		"1"
 		"enabled"		"1"
@@ -173,10 +172,9 @@
 		"fieldName"		"ClassImageColorless"
 		"xpos"			"10"
 		"xpos_lodef"	"12"
-		"ypos"			"423"	[$WIN32]
-		"ypos"			"275"	[$X360]
+		"ypos"			"425"	[$WIN32]
 		"zpos"			"3"
-		"wide"			"92"
+		"wide"			"82"
 		"tall"			"82"
 		"visible"		"1"
 		"enabled"		"1"
