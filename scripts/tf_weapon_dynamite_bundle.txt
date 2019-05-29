@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"		"#TF_Weapon_StickybombLauncher"
+	"printname"		"#TF_Weapon_Dynamite"
 	"BuiltRightHanded"	"0"
 	"weight"		"3"
 	"WeaponType"		"primary"
@@ -22,6 +22,10 @@ WeaponData
 	"HasTeamSkins_Worldmodel"			"1"
 	"ExplodeOnImpact"			"1"
 	"DisableSecondaryAttack"	"1"
+	"DropBomblets"	"1"
+	"BombletAmount" "3"
+	"BombletTimer" "2" // + up to 1 second, randomized
+	"BombletDamageMultiplier" "0.5" // how much % of the regular damage the bomblets do
 
 	// Ammo & Clip.
 	"primary_ammo"		"TF_AMMO_PRIMARY"

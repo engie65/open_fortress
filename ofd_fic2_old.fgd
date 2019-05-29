@@ -1800,6 +1800,7 @@
 		"0"									  : "=== Deathmatch ==="
 		"tf_weapon_pistol_akimbo"             : "Akimbo Pistols"
 		"tf_weapon_assaultrifle"			  : "Assault Rifle"
+		"tf_weapon_dynamite_bundle"			  : "Dynamite Bundle"
 		"tf_weapon_flamethrower"              : "Flamethrower"
 		"tf_weapon_gatlinggun"                : "Gatling Gun"
 		"tf_weapon_physcannon"                : "Gravity Gun"
