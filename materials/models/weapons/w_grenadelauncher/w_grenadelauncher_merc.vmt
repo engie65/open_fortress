@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\weapons\v_grenadelauncher/v_grenadelauncher_dm"
+	"$baseTexture" "models\weapons\v_grenadelauncher/v_grenadelauncher_merc"
 	"$bumpmap" "models/weapons\v_grenadelauncher\v_grenadelauncher_normal"
 
 	"$phong" "1"

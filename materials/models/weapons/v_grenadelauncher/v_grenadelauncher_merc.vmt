@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\weapons\v_grenadelauncher/v_grenadelauncher_dm"
+	"$baseTexture" "models\weapons\v_grenadelauncher/v_grenadelauncher_merc"
 	$BASEMAPALPHAPHONGMASK 1
 //	"$bumpmap" "models/weapons\v_grenadelauncher\v_grenadelauncher_normal"
 
