@@ -1047,7 +1047,7 @@
 	"channel"		"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"		".4"
-	"wave"		"weapons/grenade_launcher_dm_drum_load.wav"
+	"wave"		")weapons/grenade_launcher_dm_drum_load.wav"
 }
 
 "Weapon_GrenadeLauncherDM.Cock_Back"
@@ -1055,7 +1055,7 @@
 	"channel"	"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	".5"
-	"wave"		"weapons/grenade_launcher_dm_cock_back.wav"
+	"wave"		")weapons/grenade_launcher_dm_cock_back.wav"
 }
 
 "Weapon_GrenadeLauncherDM.Cock_Forward"
@@ -1063,7 +1063,7 @@
 	"channel"	"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	".5"
-	"wave"		"weapons/grenade_launcher_dm_cock_forward.wav"
+	"wave"		")weapons/grenade_launcher_dm_cock_forward.wav"
 }
 
 // ------------------------------------------------------------------------------------ //
