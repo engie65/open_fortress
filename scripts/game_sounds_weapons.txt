@@ -2075,7 +2075,7 @@
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"1.0"
+	"volume"	"0.8"
 	"wave"		"weapons/nail_gun_shoot.wav"
 }
 
@@ -2083,7 +2083,7 @@
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"1.0"
+	"volume"	"0.8"
 	"wave"		"weapons/nail_gun_shoot_crit.wav"
 }
 
