@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "minecraft/terrain/diamond_side"
+$reflectivity "[.5 .5 .5]"
+"$surfaceprop" "metal"
+}

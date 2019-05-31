@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "minecraft/terrain/sandstone_top"
+$reflectivity "[.5 .5 .5]"
+"$surfaceprop" "concrete"
+}

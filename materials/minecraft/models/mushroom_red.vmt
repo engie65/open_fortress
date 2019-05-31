@@ -1,0 +1,6 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "minecraft/terrain/mushroom_red"
+	"$alphatest" 1
+    "$halflambert" "1"
+}

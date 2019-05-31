@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "minecraft/terrain/wood_birch"
+"$surfaceprop" "wood"
+$reflectivity "[.5 .5 .5]"
+}

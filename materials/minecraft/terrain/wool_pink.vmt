@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "minecraft/terrain/wool_pink"
+$reflectivity "[.5 .5 .5]"
+"$surfaceprop" "carpet"
+}

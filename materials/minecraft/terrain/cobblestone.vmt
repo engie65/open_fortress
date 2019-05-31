@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "minecraft/terrain/cobblestone"
+$reflectivity "[.5 .5 .5]"
+"$surfaceprop" "rock"
+}

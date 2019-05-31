@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "minecraft/terrain/crafting_bench_side1"
+"$surfaceprop" "wood"
+$reflectivity "[.5 .5 .5]"
+}

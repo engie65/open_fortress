@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "minecraft/terrain/pumpkin_top"
+"$surfaceprop" "flesh"
+$reflectivity "[.5 .5 .5]"
+}

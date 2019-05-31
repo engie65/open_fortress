@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "minecraft/terrain/farmland_dry"
+"$surfaceprop" "dirt"
+$reflectivity "[.5 .5 .5]"
+}
