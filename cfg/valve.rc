@@ -53,3 +53,6 @@ engine_no_focus_sleep 0
 
 // this will stop crashes on MASSIVE maps
 r_hunkalloclightmaps 0
+
+// fixes dynamic light issues
+r_flashlightscissor 0
