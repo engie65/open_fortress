@@ -11,7 +11,6 @@
 //DO NOT CHANGE THE NAME OF ANYTHING IN HERE. YOU WILL BREAK EXISTING MAPS. ONLY MAKE ADDITIONS.
 //
 //Thank you!
-//hi iibo this is alphablaster i probably just broke it by adding the tracks you didnt list here so yeah
 //
 //SONG LIST:
 //DeathmatchMusic.ScaryMonsters
@@ -42,7 +41,6 @@
 //DeathmatchMusic.Healer
 //DeathmatchMusic.DMStuff
 //DeathmatchMusic.Mayann
-//DeathmatchMusic.LGOrbifold (Does NOT loop due to mp3 format.)
 //
 
 //Scary Monsters and Nice Sprites MIDI, author unknown, original by Skrillex
@@ -335,15 +333,4 @@
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/mayann_waiting.wav"
-}
-
-//LG Orbifold from Half-Life 2, by Kelly Bailey.
-//Alex Episode put this in for some reason despite the fact that the Source SDK comes with the entire HL2 soundtrack. It's even in mp3 format for some reason and doesn't loop as a result.
-"DeathmatchMusic.LGOrbifold"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/hl2_song16_extended.mp3"
 }

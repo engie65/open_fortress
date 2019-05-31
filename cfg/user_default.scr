@@ -48,6 +48,13 @@ DESCRIPTION INFO_OPTIONS
 		{ "200" }
 	}
 
+	"cl_chatmsgsound"
+	{
+		"#TFOption_ChatSound"
+		{ BOOL }
+		{"1"}
+	}
+
 	"hud_classautokill"
 	{
 		"#TF_classautokill"
@@ -274,7 +281,7 @@ DESCRIPTION INFO_OPTIONS
 		{ SLIDER 0 255 }
 		{ "128" }
 	}	
-
+	
 	"of_idleview"
 	{
 		"#TFOption_idleview"
