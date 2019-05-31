@@ -1,6 +1,6 @@
 "UnLitTwoTexture"
 {
-	"$basetexture"	"models/effects/cappoint_beam_neutral"
+	"$basetexture"	"models/effects/cappoint_beam_neutral2"
 	"$texture2"	"models/effects/cappoint_beam_lines"
 	"$additive" "1"
 	"$model" "1"
