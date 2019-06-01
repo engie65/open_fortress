@@ -19,9 +19,9 @@ Scheme
 	Colors
 	{
 		// base colors
-		"Orange"			"178 82 22 255"
-		"OrangeDim"			"178 82 22 120"
-		"LightOrange"		"188 112 0 128"
+		"Purple"			"178 82 178 255"
+		"PurpleDim"			"178 82 178 128"
+		"LightPurple"		"188 112 188 128"
 		
 		"White"				"235 235 235 255"
 		"Red"				"192 28 0 140"
@@ -120,16 +120,16 @@ Scheme
 		Button.TextColor				"TanDark"
 		Button.BgColor					"Yellow"
 		Button.ArmedTextColor			"Black"
-		Button.ArmedBgColor				"Orange"
+		Button.ArmedBgColor				"Purple"
 		Button.DepressedTextColor		"Black"
-		Button.DepressedBgColor			"Orange"
+		Button.DepressedBgColor			"Purple"
 
-		CheckButton.TextColor			"Orange"
-		CheckButton.SelectedTextColor	"Orange"
+		CheckButton.TextColor			"Purple"
+		CheckButton.SelectedTextColor	"Purple"
 		CheckButton.BgColor				"TransparentBlack"
 		CheckButton.Border1  			"Border.Dark" 		// the left checkbutton border
 		CheckButton.Border2  			"Border.Bright"		// the right checkbutton border
-		CheckButton.Check				"Orange"				// color of the check itself
+		CheckButton.Check				"Purple"				// color of the check itself
 
 		ComboBoxButton.ArrowColor		"TanLight"
 		ComboBoxButton.ArmedArrowColor	"TanLight"
@@ -153,12 +153,12 @@ Scheme
 		FrameSystemButton.BgColor		"Blank"
 		FrameSystemButton.Icon			""
 		FrameSystemButton.DisabledIcon	""
-		FrameTitleBar.TextColor			"Orange"
+		FrameTitleBar.TextColor			"Purple"
 		FrameTitleBar.BgColor			"Blank"
-		FrameTitleBar.DisabledTextColor	"Orange"
+		FrameTitleBar.DisabledTextColor	"Purple"
 		FrameTitleBar.DisabledBgColor	"Blank"
 
-		GraphPanel.FgColor				"Orange"
+		GraphPanel.FgColor				"Purple"
 		GraphPanel.BgColor				"TransparentBlack"
 
 		Label.TextDullColor				"TanDark"
@@ -167,14 +167,14 @@ Scheme
 		Label.SelectedTextColor			"White"
 		Label.BgColor					"Blank"
 		Label.DisabledFgColor1			"Blank"
-		Label.DisabledFgColor2			"LightOrange"
+		Label.DisabledFgColor2			"LightPurple"
 
-		ListPanel.TextColor					"Orange"
+		ListPanel.TextColor					"Purple"
 		ListPanel.BgColor					"TransparentBlack"
 		ListPanel.SelectedTextColor			"Black"
 		ListPanel.SelectedBgColor			"Red"
 		ListPanel.SelectedOutOfFocusBgColor	"Red"
-		ListPanel.EmptyListInfoTextColor	"Orange"
+		ListPanel.EmptyListInfoTextColor	"Purple"
 
 		Menu.TextColor					"TanLight"
 		Menu.BgColor					"TransparentBlack"
@@ -182,7 +182,7 @@ Scheme
 		Menu.ArmedBgColor				"TanLight"
 		Menu.TextInset					"6"
 
-		Chat.TypingText					"Orange"
+		Chat.TypingText					"Purple"
 
 		Panel.FgColor					"Gray"
 		Panel.BgColor					"Blank"
@@ -199,12 +199,12 @@ Scheme
 		"BuildingHealthBar.Health"		"ProgressOffWhite"
 		"BuildingHealthBar.LowHealth"	"LowHealthRed"
 
-		PropertySheet.TextColor			"Orange"
-		PropertySheet.SelectedTextColor	"Orange"
+		PropertySheet.TextColor			"Purple"
+		PropertySheet.SelectedTextColor	"Purple"
 		PropertySheet.TransitionEffectTime	"0.25"	// time to change from one tab to another
 
-		RadioButton.TextColor			"Orange"
-		RadioButton.SelectedTextColor	"Orange"
+		RadioButton.TextColor			"Purple"
+		RadioButton.SelectedTextColor	"Purple"
 
 		RichText.TextColor				"Gray"
 		RichText.BgColor				"Blank"
@@ -221,11 +221,11 @@ Scheme
 		ScrollBarSlider.FgColor				"Gray"		// nob color
 		ScrollBarSlider.BgColor				"Blank"		// slider background color
 
-		SectionedListPanel.HeaderTextColor	"Orange"
+		SectionedListPanel.HeaderTextColor	"Purple"
 		SectionedListPanel.HeaderBgColor	"Blank"
 		SectionedListPanel.DividerColor		"Black"
-		SectionedListPanel.TextColor		"Orange"
-		SectionedListPanel.BrightTextColor	"Orange"
+		SectionedListPanel.TextColor		"Purple"
+		SectionedListPanel.BrightTextColor	"Purple"
 		SectionedListPanel.BgColor			"TransparentLightBlack"
 		SectionedListPanel.SelectedTextColor			"Black"
 		SectionedListPanel.SelectedBgColor				"Red"
@@ -248,7 +248,7 @@ Scheme
 		TextEntry.OutOfFocusSelectedBgColor	"Blank"
 		TextEntry.FocusEdgeColor	"Blank"
 
-		ToggleButton.SelectedTextColor	"Orange"
+		ToggleButton.SelectedTextColor	"Purple"
 
 		Tooltip.TextColor			"TransparentBlack"
 		Tooltip.BgColor				"Red"
@@ -274,7 +274,7 @@ Scheme
 		HudCaptureProgressBar.InActive	"HudProgressBarInActive"
 
 		// scheme-specific colors
-		"FgColor"		"Orange"
+		"FgColor"		"Purple"
 		"BgColor"		"TransparentBlack"
 
 		"ViewportBG"		"Blank"
