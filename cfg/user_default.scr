@@ -76,14 +76,6 @@ DESCRIPTION INFO_OPTIONS
 		{ BOOL }
 		{ "1" }
 	}
-
-	"tf_dingaling_volume"
-	{
-		"#TF_Dingaling_Volume"
-		"#Tooltip_Dingaling_Volume"
-		{ SLIDER 0 1 }
-		{ "0.75" }
-	}
 	
 	"tf_dingalingaling_effect"
 	{
@@ -104,20 +96,28 @@ DESCRIPTION INFO_OPTIONS
 		{ "-1" }
 	}
 
+	"tf_dingaling_volume"
+	{
+		"#TF_Dingaling_Volume"
+		"#Tooltip_Dingaling_Volume"
+		{ SLIDER 0 1 }
+		{ "0.75" }
+	}
+
 	"tf_dingaling_pitchmindmg"
 	{
 		"#TF_Dingaling_PitchLowDmg"
 		"#Tooltip_Dingaling_PitchLowDmg"
-		{ SLIDER 1 255 }
-		{ "100" }
+		{ SLIDER 50 150 }
+		{ "125" }
 	}
 	
 	"tf_dingaling_pitchmaxdmg"
 	{
 		"#TF_Dingaling_PitchHighDmg"
 		"#Tooltip_Dingaling_PitchHighDmg"
-		{ SLIDER 1 255 }
-		{ "100" }
+		{ SLIDER 50 150 }
+		{ "75" }
 	}
 	
 	"tf_dingalingaling_lasthit"
@@ -126,14 +126,6 @@ DESCRIPTION INFO_OPTIONS
 		"#Tooltip_Hitbeeps"
 		{ BOOL }
 		{ "0" }
-	}
-
-	"tf_dingaling_lasthit_volume"
-	{
-		"#TF_Dingaling_LastHit_Volume"
-		"#Tooltip_Dingaling_Volume"
-		{ SLIDER 0 1 }
-		{ "0.75" }
 	}
 
 	"tf_dingalingaling_last_effect"
@@ -154,21 +146,29 @@ DESCRIPTION INFO_OPTIONS
 		}
 		{ "0" }
 	}
+	
+	"tf_dingaling_lasthit_volume"
+	{
+		"#TF_Dingaling_LastHit_Volume"
+		"#Tooltip_Dingaling_Volume"
+		{ SLIDER 0 1 }
+		{ "0.75" }
+	}
 
 	"tf_dingaling_lasthit_pitchmindmg"
 	{
 		"#TF_Dingaling_LastHit_PitchLowDmg"
 		"#Tooltip_Dingaling_PitchLowDmg"
-		{ SLIDER 1 255 }
-		{ "100" }
+		{ SLIDER 50 150 }
+		{ "125" }
 	}
 	
 	"tf_dingaling_lasthit_pitchmaxdmg"
 	{
 		"#TF_Dingaling_LastHit_PitchHighDmg"
 		"#Tooltip_Dingaling_PitchHighDmg"
-		{ SLIDER 1 255 }
-		{ "100" }
+		{ SLIDER 50 150 }
+		{ "75" }
 	}
 	
 	"hud_combattext"

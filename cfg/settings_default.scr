@@ -51,7 +51,7 @@ DESCRIPTION SERVER_OPTIONS
 	"maxplayers"
 	{
 		"#Valve_Max_Players"
-		{ NUMBER 1 24 }
+		{ NUMBER 1 255 }
 		{ "24" }
 	}
 
@@ -87,9 +87,9 @@ DESCRIPTION SERVER_OPTIONS
         "#TF_TeamPlay"
         {
             LIST        
-            "#TF_Option_MAP" "-1"
-            "#TF_Option_OFF" "0"
-            "#TF_Option_ON" "1"
+            "#TF_Option_MAP" 	"-1"
+            "#TF_Option_OFF" 	"0"
+            "#TF_Option_ON" 	"1"
         }
         { "-1" }
     }	
@@ -98,9 +98,9 @@ DESCRIPTION SERVER_OPTIONS
 		"#TF_Instagib"
         {
             LIST        
-            "#TF_Option_OFF" "0"
-            "#TF_Instagib_CROWBAR"0"
-            "#TF_Instagib_RAILGUN" "1"
+            "#TF_Option_OFF" 		"0"
+            "#TF_Instagib_RAILGUN" 	"1"
+			"#TF_Instagib_CROWBAR	"0"
         }
         { "-1" }
 	}
@@ -111,13 +111,5 @@ DESCRIPTION SERVER_OPTIONS
 		{ BOOL }
 		{ "1" }
 	}
-
-	"ofd_allowteams"
-	{
-		"#TF_AllowTeams"
-		{ BOOL }
-		{ "0" }
-	}	
-
 	
 }
