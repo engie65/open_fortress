@@ -242,7 +242,7 @@ Response KilledPlayerManyMercenary
 }
 Rule KilledPlayerManyMercenary
 {
-	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary IsWeaponNotMelee WeaponIsNotDMRevolver WeaponIsNotShotgunMercenary WeaponIsNotRocket WeaponIsNotGrenade WeaponIsNotOriginal WeaponIsNotDMGrenade WeaponIsNotPistolMercenary WeaponIsNotPistolAkimbo
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary IsWeaponNotMelee WeaponIsNotDMRevolver WeaponIsNotShotgunMercenary WeaponIsNotRocket WeaponIsNotGrenade WeaponIsNotOriginal WeaponIsNotDMGrenade WeaponIsNotDynamiteBundle WeaponIsNotPistolMercenary WeaponIsNotPistolAkimbo
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenary
@@ -337,6 +337,13 @@ Rule KilledPlayerManyMercenaryGL
 Rule KilledPlayerManyMercenaryGLDM
 {
 	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDMGrenade
+	ApplyContext "MercenaryKillSpeech:1:10"
+	applycontexttoworld
+	Response KilledPlayerManyMercenaryExplosive
+}
+Rule KilledPlayerManyMercenaryDynamite
+{
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDynamiteBundle
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenaryExplosive

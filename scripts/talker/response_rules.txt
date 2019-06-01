@@ -367,6 +367,8 @@ criterion "WeaponIsNotOriginal" "playerweapon" "!=tf_weapon_rocketlauncher_dm" "
 criterion "WeaponIsNailgun" "playerweapon" "tf_weapon_nailgun" "required"
 criterion "WeaponIsDMGrenade" "playerweapon" "tf_weapon_grenadelauncher_mercenary" "required"
 criterion "WeaponIsNotDMGrenade" "playerweapon" "!=tf_weapon_grenadelauncher_mercenary" "required"
+criterion "WeaponIsDynamiteBundle" "playerweapon" "tf_weapon_dynamite_bundle" "required"
+criterion "WeaponIsNotDynamiteBundle" "playerweapon" "!=tf_weapon_dynamite_bundle" "required"
 criterion "WeaponIsGatlingGun" "playerweapon" "tf_weapon_gatlinggun" "required"
 
 criterion "WeaponIsUmbrella" "playerweapon" "tf_weapon_umbrella" "required"
