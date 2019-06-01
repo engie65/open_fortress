@@ -48,6 +48,7 @@ exec config.cfg
 g_ragdoll_maxcount 25
 r_maxmodeldecal 64
 ai_force_serverside_ragdoll	1
+cl_ragdoll_collide 1
 r_decal_overlap_area 0.7
 engine_no_focus_sleep 0
 
