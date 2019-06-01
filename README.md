@@ -17,3 +17,11 @@ Open Fortress\
 ```
 
 To run the game, launch the Source SDK Base 2013 Multiplayer tool with the `-game` parameter, pointing out the `game\open_fortress` directory.
+
+### Licensing
+
+The [source code](https://github.com/KaidemonLP/Open-Fortress-Source) is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License and the Source 1 SDK License.
+
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+The [game assets](https://github.com/KaidemonLP/Open-Fortress-Content-Source) are individually licensed by their respective creators.
