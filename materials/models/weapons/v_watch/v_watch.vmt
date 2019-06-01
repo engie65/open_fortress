@@ -8,6 +8,7 @@
 
 	"$basemapalphaphongmask" "1"
 	"$invertphongmask" "1"
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "45"
 	"$phongboost" "25"	
@@ -22,6 +23,20 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

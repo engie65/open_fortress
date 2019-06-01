@@ -3,6 +3,7 @@
 	"$baseTexture" "models\weapons\v_grenadelauncher/v_grenadelauncher_dm"
 	
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "24"
 	"$phongboost" "5"	
@@ -22,6 +23,20 @@
 	{
 		"weapon_invis"
 		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
 		}
 		"spy_invis"
 		{

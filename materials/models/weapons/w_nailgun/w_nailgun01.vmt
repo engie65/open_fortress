@@ -2,6 +2,7 @@
 {
 	"$basetexture"	"models\weapons\w_nailgun\w_nailgun01"
 	"$bumpmap" "models\weapons\w_nailgun\w_nailgun_normal"
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponenttexture" "models\weapons\w_nailgun\w_nailgun_exponent"
 	"$phongboost" "10"
@@ -17,6 +18,20 @@
 	{
 		"weapon_invis"
 		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
 		}
 		"spy_invis"
 		{

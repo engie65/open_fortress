@@ -2,6 +2,7 @@
 {
 "$baseTexture" "models\weapons\v_assault_rifle/m16"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "6"
 	"$phongboost" "1"	
@@ -12,10 +13,27 @@
 	"$rimlight" "1"
 	"$rimlightexponent" "2"	
 	"$rimlightboost" ".25"
+	
+	"$glowcolor" "1"
+
 
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

@@ -5,6 +5,7 @@
 //	"$selfillum" "1"
 	"$nodecal" "1"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "30"
 	"$phongboost" ".75"	
@@ -34,6 +35,20 @@
 	
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

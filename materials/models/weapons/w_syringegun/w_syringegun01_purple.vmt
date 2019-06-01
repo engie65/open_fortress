@@ -2,6 +2,7 @@
 {
 	"$basetexture"	"models\weapons\w_syringegun\w_syringegun01_purple"
 	
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "10"	
@@ -25,6 +26,20 @@
 	
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

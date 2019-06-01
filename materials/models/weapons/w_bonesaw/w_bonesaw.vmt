@@ -5,6 +5,7 @@
 //	"$envmap" "env_cubemap"
 	"$envmaptint" "[.5 .5 .5]"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "30"
 	"$phongboost" "10"	

@@ -2,6 +2,7 @@
 {
 	"$basetexture"	"models\weapons\c_items\c_dex_sniperrifle01_custom"
 	
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "50"
 	"$phongboost" ".45"	
@@ -27,6 +28,20 @@
 
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

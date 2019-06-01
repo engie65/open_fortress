@@ -2,6 +2,7 @@
 {
 	"$baseTexture" "models\weapons\v_builder/v_builder"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "50"
 	"$phongboost" "4"	
@@ -19,6 +20,20 @@
 	{
 		"weapon_invis"
 		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
 		}
 		"spy_invis"
 		{

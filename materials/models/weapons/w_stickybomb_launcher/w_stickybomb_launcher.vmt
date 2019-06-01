@@ -3,6 +3,7 @@
 	"$baseTexture" "models\weapons\w_stickybomb_launcher/w_stickybomb_launcher"
 	"$bumpmap" "models/weapons/w_stickybomb_launcher/w_stickybomb_launcher_normal"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "45"
 	"$phongboost" "4"	
@@ -19,6 +20,20 @@
 	{
 		"weapon_invis"
 		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
 		}
 		"spy_invis"
 		{

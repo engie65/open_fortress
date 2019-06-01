@@ -3,6 +3,7 @@
 	"$basetexture"	"models\weapons\w_sniperrifle\w_sniperrifle01"
 	"$bumpmap" "models/weapons\w_sniperrifle\w_sniperrifle_normal"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "40"
 	"$phongboost" "6"	

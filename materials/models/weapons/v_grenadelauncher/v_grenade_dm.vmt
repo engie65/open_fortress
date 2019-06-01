@@ -3,6 +3,7 @@
 	"$baseTexture" "models\weapons\v_grenadelauncher/v_grenade_dm"
 	"$selfillum" "1"
 	"$BASEMAPALPHAPHONGMASK"  "1"
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "35"
 	"$phongboost" "5"	

@@ -2,6 +2,7 @@
 {
 	"$basetexture" "models/weapons/v_umbrella/umbrella_base1"
 	"$lightwarptexture"		"models/lightwarps/weapon_lightwarp"
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "10"
 	"$phongboost" "0"	
@@ -15,6 +16,20 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

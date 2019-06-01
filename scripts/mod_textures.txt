@@ -431,7 +431,7 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"d_tf_projectile_pipe"
+		"d_grenadelauncher"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"0"
@@ -583,7 +583,7 @@
 				"width"		"96"
 				"height"	"32"
 		}		
-		"d_tf_projectile_pipe_remote"
+		"d_pipebomblauncher"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"96"
@@ -793,7 +793,7 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"dneg_tf_projectile_pipe"
+		"dneg_grenadelauncher"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
@@ -945,7 +945,7 @@
 				"width"		"96"
 				"height"	"32"
 		}		
-		"dneg_tf_projectile_pipe_remote"
+		"dneg_pipebomblauncher"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"96"
@@ -1856,7 +1856,7 @@
 				"width"		"85"
 				"height"	"38"
 		}
-		"d_tf_projectile_pipebomb_dm"
+		"d_grenadelauncher_mercenary"
 		{
 				"file"	"HUD/d_images_of"
 				"x"		"126"
@@ -1864,7 +1864,7 @@
 				"width"		"121"
 				"height"	"27"
 		}
-		"dneg_tf_projectile_pipebomb_dm"
+		"dneg_grenadelauncher_mercenary"
 		{
 				"file"	"HUD/dneg_images_of"
 				"x"		"126"
@@ -1888,7 +1888,7 @@
 				"width"		"128"
 				"height"	"30"
 		}	
-		"d_tf_projectile_pipe_remote_dm"
+		"d_dynamite_bundle"
 		{
 				"file"	"HUD/d_images_of"
 				"x"		"127"
@@ -1896,13 +1896,29 @@
 				"width"		"58"
 				"height"	"35"
 		}
-		"dneg_tf_projectile_pipe_remote_dm"
+		"dneg_dynamite_bundle"
 		{
 				"file"	"HUD/dneg_images_of"
 				"x"		"127"
 				"y"		"129"
 				"width"		"58"
 				"height"	"35"
-		}	
+		}
+		"d_mirv_bomb"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"127"
+				"y"		"129"
+				"width"		"58"
+				"height"	"35"
+		}
+		"dneg_mirv_bomb"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"127"
+				"y"		"129"
+				"width"		"58"
+				"height"	"35"
+		}
 	}
 }

@@ -2,7 +2,8 @@
 {
 	"$basetexture"	"models\weapons\w_rifle\w_rifle"
 	//"$bumpmap" "models\weapons\w_rifle\w_rifle_normal"
-	//"$phong" "1"
+	//"$glowcolor" "1"
+	"$phong" "1"
 	//"$phongexponenttexture" "models\weapons\w_rifle\w_rifle_exponent"
 	//"$phongboost" "10"
 	//"$lightwarptexture" "models\weapons\w_rifle\w_rifle_lightwarp"

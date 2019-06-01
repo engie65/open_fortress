@@ -1,6 +1,7 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models\weapons\v_medigun\v_medigun_blue"
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "5"
 	
@@ -18,6 +19,20 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

@@ -3,6 +3,7 @@
 	"$baseTexture" "models\weapons\v_sniperrifle/v_sniperrifle"
 	"$basemapalphaphongmask" "1"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "40"
 	"$phongboost" "6"	
@@ -12,6 +13,20 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

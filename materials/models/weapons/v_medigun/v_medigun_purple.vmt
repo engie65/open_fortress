@@ -1,6 +1,7 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models\weapons\v_medigun\v_medigun_purple"
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "5"
 	
@@ -25,6 +26,20 @@
 	
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

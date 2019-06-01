@@ -4,6 +4,7 @@
 	"$selfillum" "1"
 	"$bumpmap" "models/weapons/w_grenade_beartrap/w_grenade_beartrap_normal"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 //	"$phongexponenttexture" "models\weapons\w_grenade_beartrap\w_grenade_beartrap_exponent"
 	"$phongexponent" "20"

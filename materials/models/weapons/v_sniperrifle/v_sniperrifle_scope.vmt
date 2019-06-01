@@ -8,6 +8,7 @@
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[.4 .4 .4]"	
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "10"	
@@ -17,6 +18,20 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

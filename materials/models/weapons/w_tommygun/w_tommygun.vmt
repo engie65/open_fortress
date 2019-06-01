@@ -1,6 +1,7 @@
 "VertexLitGeneric"
 {
 	"$basetexture"	"models\weapons\v_tommygun\v_tommygun"
+	"$glowcolor" "1"
 	"$phong" "1"
 //	"$phongexponent" "11"
 	"$phongexponenttexture"	"models\weapons\v_tommygun\v_tommygun_phongexponent"
@@ -22,6 +23,20 @@
 
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

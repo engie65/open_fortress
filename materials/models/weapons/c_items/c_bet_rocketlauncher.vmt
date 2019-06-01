@@ -2,6 +2,7 @@
 {
 	"$basetexture"	"models\weapons\c_items\c_bet_rocketlauncher"
 	
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "20"
 	"$phongboost" "7"	
@@ -27,6 +28,20 @@
 	{
 		"weapon_invis"
 		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
 		}
 		"spy_invis"
 		{

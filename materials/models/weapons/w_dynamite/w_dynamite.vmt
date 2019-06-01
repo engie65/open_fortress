@@ -3,6 +3,7 @@
 	"$basetexture"	"models\weapons\w_dynamite\w_dynamite"
 	"$bumpmap" "models/weapons\w_dynamite\w_dynamite_normal"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 //	"$phongexponenttexture" "models\weapons\w_dynamite\w_dynamite_exponent"
 	"$phongexponent" "1"

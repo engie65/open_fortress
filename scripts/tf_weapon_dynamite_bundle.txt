@@ -24,9 +24,10 @@ WeaponData
 	"DisableSecondaryAttack"	"1"
 	"DropBomblets"	"1"
 	"BombletAmount" "3"
-	"BombletTimer" "2" // + up to 1 second, randomized
+	"BombletTimer" "1" // + up to 1 second, randomized
 	"BombletDamageMultiplier" "0.5" // how much % of the regular damage the bomblets do
-
+	"BombletLevel" "1"
+	
 	// Ammo & Clip.
 	"primary_ammo"		"TF_AMMO_PRIMARY"
 	"secondary_ammo"	"None"
