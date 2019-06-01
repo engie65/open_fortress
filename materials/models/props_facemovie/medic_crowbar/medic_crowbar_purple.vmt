@@ -49,16 +49,5 @@
 			"srcVar1"	"$glowcolor"
 			"resultVar"	"$selfillumtint"
 		}
-		"Equals"
-		{
-			"srcVar1"	"$glowcolor"
-			"resultVar"	"$color2"
-		}
-		"SelectFirstIfNonZero"
-		{
-			"srcVar1"		"$colortint_tmp"
-			"srcVar2"		"$colortint_base"
-			"resultVar"		"$cloakcolortint"
-		}
 	}
 }
