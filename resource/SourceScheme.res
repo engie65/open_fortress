@@ -5,7 +5,7 @@ Scheme
 	BaseSettings
 	{
 		// vgui_controls color specifications
-		Frame.BgColor					"160 160 160 255"
+		Frame.BgColor					"146 108 168 210"
 		Frame.OutOfFocusBgColor			"160 160 160 128"
 		
 		// scheme-specific colors
