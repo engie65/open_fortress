@@ -99,8 +99,8 @@ DESCRIPTION SERVER_OPTIONS
         {
             LIST        
             "#TF_Option_OFF" 		"0"
-            "#TF_Instagib_RAILGUN" 	"1"
-			"#TF_Instagib_CROWBAR"	"0"
+			"#TF_Instagib_CROWBAR"	"1"
+			"#TF_Instagib_RAILGUN" 	"2"
         }
         { "-1" }
 	}
