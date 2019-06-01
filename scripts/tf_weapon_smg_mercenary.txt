@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"		"#TF_Weapon_SMG"
+	"printname"		"#TF_Weapon_SMG_DM"
 	"BuiltRightHanded"	"0"
 	"weight"		"2"
 	"WeaponType"		"secondary"
