@@ -12,3 +12,6 @@ dm_thebadplace
 dm_deadsimple
 dm_greenback
 dm_bloodrun
+dm_grain
+dm_offblast
+dm_killhouse
