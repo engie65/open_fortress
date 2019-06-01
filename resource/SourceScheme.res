@@ -4,6 +4,10 @@ Scheme
 {
 	BaseSettings
 	{
+		// vgui_controls color specifications
+		Frame.BgColor					"146 108 168 210"
+		Frame.OutOfFocusBgColor			"160 160 160 128"
+		
 		// scheme-specific colors
 		MainMenu.TextColor			"TanLight"			[$WIN32]
 		MainMenu.ArmedTextColor		"117 107 94 255"	[$WIN32]
