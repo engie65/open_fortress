@@ -1,6 +1,6 @@
-Open Fortress - List of Contributors:
+Open Fortress - List of developers:
 
-Project Lead and Programmer:
+Project lead and programmer:
 KaidemonLP
 
 Programming:
@@ -12,13 +12,13 @@ Jill Nesbit
 Nbc66
 Avast Antipony
 
-Gameplay Lead:
+Gameplay lead:
 AgitationSkeleton
 
 Mercenary and Civilian concepts and models:
 DrPyspy
 
-Mercenary Gibs and gore effects:
+Mercenary gibs and gore effects:
 Ficool2
 
 Voice of the Mercenary:
@@ -31,7 +31,7 @@ Weapon and misc. player sound effects:
 Stachekip
 Omniary
 
-Viewmodel Rigging and Animations:
+Viewmodel rigging and animations:
 Polybagel
 Ficool2
 Rara
@@ -48,25 +48,26 @@ Polybagel
 NoNotTheMemes
 Drew
 
-Assorted Models and Prop Assets:
+Assorted models and prop assets:
 Boomsta
 
-Particles and Berserk Model:
+Particles and Berserk model:
 FissionMetroid
 
 Menu and promotional art:
 Gibus Cat
 "John Fortnite Kennedy"
 
-Ingame menu Logo Concept:
+In-game menu logo concept:
 HDMineFace
 
-Ambient sounds (Wiseau):
-Omniary
+Ambient sounds:
+Omniary (Wiseau)
 
 HUD editing:
-Nbc66 (Scoreboards)
-Snowy Snowtime (Minmode Frag Counter)
+Nbc66 and PacMania67 (Scoreboards)
+Snowy Snowtime (Minimal Mode Frag Counter)
+Chrissy (Polishing and fixes)
 
 Music:
 Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque, Facility, Stalker, Orch, DMStuff)
@@ -94,19 +95,17 @@ Spipper (CTF Redplanet)
 Alex Episode (HL2 Runoff Port)
 Muddy (Grain)
 
-////////////////////////////////////
-		Community contributors
-////////////////////////////////////
+Open Fortress - List of community contributors:
 
-Occune - Russian Translation
+Occune - Russian translation
+Technochips - French translation
 
-
-Special thanks to:
-Trotim (For helping KaidemonLP with programming)
-Nicknine (For the TF_Port SDK 2013 codebase)
+Open Fortress - Special thanks:
+Trotim (for helping KaidemonLP with programming)
+Nicknine (for the TF_Port SDK 2013 codebase)
 Saul Rennison (for proper dynamic shadows using the L4D method)
 The Jabroni Brawl 3 team (for putting our Mercenary into their game <3)
-XutaxKamay (For player origin displacement fixes)
-tonysergi (For MP Gravity Gun carried objects fix)
+XutaxKamay (for player origin displacement fixes)
+tonysergi (for MP Gravity Gun carried objects fix)
 [Cosmetic Set "Top Fragger" - The Boomer Bucket/Lovecrafted Carapace/Earth Quakers by Drew, Yikes, Makkon and Hotrod McCoolguy, used with permission]
-SuperBigBoy (Food)
+SuperBigBoy (food)
