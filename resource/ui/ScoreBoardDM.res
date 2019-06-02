@@ -171,7 +171,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"0"
-		"linespacing"	"14"
+		"linespacing"	"19"
 		"fgcolor"		"blue"
 	}
 	"Spectators"
@@ -441,7 +441,7 @@
 		"labelText"		"#TF_ScoreBoard_DestructionLabel"
 		"textAlignment"		"east"
 		"xpos"			"130"	
-		"ypos"			"471"	[$WIN32]
+		"ypos"			"472"	[$WIN32]
 		"ypos"			"350"	[$X360]
 		"zpos"			"3"
 		"wide"			"95"
@@ -459,7 +459,7 @@
 		"labelText"		"%destruction%"
 		"textAlignment"		"west"
 		"xpos"			"227"	[$WIN32]
-		"ypos"			"471"	[$WIN32]
+		"ypos"			"472"	[$WIN32]
 		"zpos"			"3"
 		"wide"			"35"
 		"tall"			"20"
