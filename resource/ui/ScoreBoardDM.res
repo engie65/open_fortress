@@ -171,7 +171,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"0"
-		"linespacing"	"14"
+		"linespacing"	"19"
 		"fgcolor"		"blue"
 	}
 	"Spectators"
