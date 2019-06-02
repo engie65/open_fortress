@@ -11,4 +11,26 @@
 	"$lightwarptexture" "models\weapons\w_dynamite\w_dynamite_lightwarp"
 	"$phongfresnelranges"	"[2 5 10]"
 	"$halflambert" "1"
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
+		"spy_invis"
+		{
+		}
+	}
 }
