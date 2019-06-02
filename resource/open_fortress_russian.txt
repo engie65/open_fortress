@@ -24,6 +24,8 @@
 "TF_Pyro" 				"Поджигатель"
 "TF_Spy" 				"Шпион"
 "TF_Engineer" 				"Инженер"
+"TF_Mercenary" 				"НАЁМНИК"
+"TF_Civilian" 				"ГРАЖДАНСКИЙ
 
 "TF_Class_Name_Undefined" 		""
 "TF_Class_Name_Scout" 			"Разведчик"
