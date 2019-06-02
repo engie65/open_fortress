@@ -297,10 +297,10 @@
 "TF_Weapon_Sword"					"Меч"
 "TF_Weapon_Chainsaw"				"Бензопила"
 "TF_Weapon_CombatKnife"				"Боевой нож"
-"TF_Weapon_Tripmine"				"Tripmine"
+"TF_Weapon_Tripmine"				"Мина-ловушка"
 "TF_Weapon_Physcannon"				"Гравипушка"
 "TF_Weapon_Dynamite"				"Динамит"
-"TF_Weapon_GrenadeLauncher_DM"		"China Lake"
+"TF_Weapon_GrenadeLauncher_DM"		"Помповый гранатомёт"
 "TF_Weapon_SMG_DM"					"Боевой ПП"
 
 // Death strings
