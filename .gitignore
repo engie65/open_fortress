@@ -83,4 +83,5 @@ expressions/*
 media/viewed.res
 media\viewed.res
 
-materials\vgui\logos\ui\*
+materials/vgui/logos/ui/*
+materials/vgui/logos/*
