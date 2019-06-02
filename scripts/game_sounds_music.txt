@@ -334,3 +334,13 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/mayann_waiting.wav"
 }
+
+//Magnum Smooth by MrModez
+"DeathmatchMusic.MagnumSmooth"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/dm_magnumsmooth_loop.wav"
+}
