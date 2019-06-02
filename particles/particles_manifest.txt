@@ -43,6 +43,7 @@ particles_manifest
 		"file"		"!particles/scary_ghost.pcf"
 		"file"		"!particles/weather_fx.pcf"
 		"file"		"!particles/env_sakura01.pcf"
+		"file"      "particles/lighter.pcf"
 //		"file"		"!particles/.pcf"
 
 //hl2
