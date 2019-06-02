@@ -94,6 +94,12 @@ Spipper (CTF Redplanet)
 Alex Episode (HL2 Runoff Port)
 Muddy (Grain)
 
+////////////////////////////////////
+		Community contributors
+////////////////////////////////////
+
+Occune - Russian Translation
+
 
 Special thanks to:
 Trotim (For helping KaidemonLP with programming)

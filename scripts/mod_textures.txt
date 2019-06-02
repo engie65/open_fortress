@@ -511,11 +511,11 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"d_berserk"
+		"d_TF_WEAPON_BERSERK"
 		{
 				"file"	"HUD/d_images"		
 				"x"		"0"
-				"y"		"480"
+				"y"		"448"
 				"width"		"96"
 				"height"	"32"
 		}
@@ -873,11 +873,11 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"dneg_berserk"
+		"dneg_TF_WEAPON_BERSERK"
 		{
 				"file"	"HUD/dneg_images"
 				"x"		"0"
-				"y"		"480"
+				"y"		"448"
 				"width"		"96"
 				"height"	"32"
 		}
