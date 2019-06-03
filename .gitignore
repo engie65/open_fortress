@@ -62,6 +62,8 @@ custom/*
 
 # content source
 materialsrc/*
+modelsrc/*
+mapsrc/*
 soundsrc/*
 
 # source plugins
