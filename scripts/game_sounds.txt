@@ -1,3 +1,9 @@
+//NOTE:
+//Traditionally if you needed a soundscript for a map you would enter it here,
+//but I find it might be better for human readability to give levels their own .txt files.
+//As such I have created level_sounds_wiseau.txt and am now putting wiseau relevant entries there.
+//-iibo
+
 // Channels
 //	CHAN_AUTO		= 0,
 //	CHAN_WEAPON		= 1,
@@ -811,13 +817,4 @@
 	"pitch"		"PITCH_NORM"
 
 	"wave"		")ambient/medieval_brazier.wav"
-}
-"Wiseau.Radio_Loop"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"	"SNDLVL_70dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"ambient/dm_wiseau/radio_loop.wav"
 }
