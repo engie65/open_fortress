@@ -21,15 +21,14 @@ WeaponData
 	"TimeIdleEmpty"		"0.8"
 	"TimeReload"		"4"
 	"primary_ammo"		"TF_AMMO_ROCKETLAUNCHER"
-	clip_size		4
-	default_clip		4
-	"MaxAmmo"	"20"
+	"clip_size"		"4"
+	"default_clip"		"4"
+	"MaxAmmo"	"16"
 	"ProjectileType"	"projectile_rocket"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
-	"CenterfireProjectile"			"1"	
-	"Secondary_CenterfireProjectile"			"1"	
-
+	"PickupMultiplier"	"0"
+	
 	// Secondary Attributes.
 	"secondary_ammo"	"None"
 
