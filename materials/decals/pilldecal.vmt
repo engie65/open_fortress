@@ -3,4 +3,5 @@
 	"$basetexture" "Decals/pilldecal"
 	"$decal" "1"
 	"$transparent" "1"
+	"$alphatest" "1"
 }
