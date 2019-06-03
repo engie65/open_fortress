@@ -2,7 +2,6 @@
 {
 	"$basetexture"	"models\weapons\w_syringegun\w_syringegun01_blue"
 	
-	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "10"	

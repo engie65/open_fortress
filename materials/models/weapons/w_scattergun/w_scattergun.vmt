@@ -2,7 +2,6 @@
 {
 	"$basetexture"	"models\weapons\w_scattergun\w_scattergun"
 	
-	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "25"
 	"$phongboost" "5"

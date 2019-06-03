@@ -15,9 +15,6 @@
 	"$rimlight" "1"						
 	"$rimlightexponent" "20"				
 	"$rimlightboost" ".25"
-
-
-	"$glowcolor" "1"
 	
 	"$cloakPassEnabled" "1"
 	
