@@ -16,7 +16,7 @@ WeaponData
 	"PunchAngle"		"3.0"	
 	"TimeFireDelay"		"1.5"
 	"TimeIdle"		"0.6"
-	"TimeIdleEmpty"		"0.6"
+	"TimeIdleEmpty"		"0"
 	"TimeReload"		"0.67"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
@@ -27,6 +27,7 @@ WeaponData
 	"BombletTimer" "1" // + up to 1 second, randomized
 	"BombletDamageMultiplier" "0.5" // how much % of the regular damage the bomblets do
 	"BombletLevel" "1" // obsolete, used in dev when trying to add multi explosions
+	"PickupMultiplier"	"1.7"
 	
 	// Ammo & Clip.
 	"primary_ammo"		"TF_AMMO_PRIMARY"
