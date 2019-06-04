@@ -2076,7 +2076,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"0.8"
-	"wave"		"weapons/nail_gun_shoot.wav"
+	"wave"		")weapons/nail_gun_shoot.wav"
 }
 
 "Weapon_NailGun.SingleCrit"
@@ -2084,7 +2084,7 @@
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"0.8"
-	"wave"		"weapons/nail_gun_shoot_crit.wav"
+	"wave"		")weapons/nail_gun_shoot_crit.wav"
 }
 
 "Weapon_NailGun.Reload"
@@ -2110,7 +2110,7 @@
 	"channel"	"CHAN_AUTO"
 	"soundlevel"	"SNDLVL_74dB"
 	"volume"	".5"
-	"wave"		"weapons/nail_gun_draw.wav"
+	"wave"		")weapons/nail_gun_draw.wav"
 }
 
 "Weapon_Nailgun.ClipOut"
