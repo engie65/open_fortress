@@ -5857,9 +5857,10 @@
 ]
 
 // item_teamflag uses prop_dynamic base in code??
-@PointClass base(prop_dynamic_base, TeamNum, EnableDisable) studioprop("models/flag/briefcase.mdl") = item_teamflag :
+@PointClass base(prop_dynamic_base, TeamNum, EnableDisable) studioprop() = item_teamflag :
     "Team Fortress 2 flag entity."
 [
+	model(studio) : "Model" : "models/flag/briefcase.mdl" : "The model this entity should appear as. 128-character limit."
 	ReturnTime(float) : "Return time (in seconds)" : 60 : "Length of time (in seconds) before dropped flag/intelligence returns to base."
 	NeutralTime(float) : "Neutral time (in seconds)" : 60 : "Length of time (in seconds) before neutral dropped flag/intelligence returns to base."
 	
