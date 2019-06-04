@@ -7336,7 +7336,6 @@
 	
 ]
 
-
 @PointClass base(BaseEntityPoint) studioprop("models/editor/camera.mdl") = point_devshot_camera : 
 	"An entity used by the -makedevshots system, which automatically takes screenshots at the position of every point_devshot_camera in the level."
 [
@@ -7347,6 +7346,22 @@
 @PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_enable_motion_fixup") = point_enable_motion_fixup : 
 	"An entity used to move a motion-disabled prop when it enables motion. Parent this entity to the prop, and when the prop has its motion enabled, it will immediately teleport to the origin of this entity."
 [
+]
+
+@PointClass base(BaseEntityPoint) iconsprite("editor-ficool2/point_message") sphere(radius) = point_message : 
+	"An entity that displays a text message in the world, at its origin."
+[
+	message(string) : "Entity Message" : : "Message to display."
+	radius(integer) : "Radius" : 128 : "Distance the player must be within to see this message."
+	developeronly(boolean) : "Developer Only?" : 0 : "If set, this message will only be visible when developer mode is on."
+	
+	spawnflags(flags) =
+	[
+		1: "Start Disabled?" : 0
+	]
+
+	input Enable(void) : "Start displaying the message text, if the player is within the message radius."
+	input Disable(void) : "Stop displaying the message text."
 ]
 
 @PointClass base(BaseEntityPoint) = point_entity_finder :
