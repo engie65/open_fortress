@@ -206,6 +206,8 @@
         "filter_tf_bot_has_tag"
         "filter_tf_class"
 		"filter_tf_money"
+		"filter_tf_owns_weapon"
+		"filter_tf_active_weapon"
         "filter_tf_condition"
         "filter_tf_damaged_by_weapon_in_slot"
         "filter_tf_player_can_cap"
@@ -3864,6 +3866,18 @@
 		1 : "<"
 		2 : "="
 	]
+]
+
+@FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_tf_class") = filter_tf_owns_weapon :
+	"A filter that filters by the amount of money you have " +
+[
+	weaponname(string) : "Weapon Name" : : "What weapon it should search for."
+]
+
+@FilterClass base(BaseEntity, BaseFilter) iconsprite("editor-ficool2/filter_tf_class") = filter_tf_active_weapon :
+	"A filter that filters by the amount of money you have " +
+[
+	weaponname(string) : "Weapon Name" : : "What weapon it should search for."
 ]
 
 // Special exception: the areaportal becomes a point entity at runtime, making its brush variant Hammer internal only
