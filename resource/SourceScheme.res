@@ -54,6 +54,15 @@ Scheme
 	
 	CustomFontFiles
 	{
-		"9"		"resource/TF2Build.ttf"
+		"9"
+		{
+			"font" "resource/TF2Build.ttf"
+			"name" "TF2 Build"
+			"russian"
+			{
+				"range" "0x0000 0xFFFF"
+			}
+		}
 	}
 }
+
