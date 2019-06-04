@@ -344,3 +344,23 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/dm_magnumsmooth_loop.wav"
 }
+
+//Watergate music. Discombobulate from the Sherlock Holmes (2009) soundtrack
+"DeathmatchMusic.Watergate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/watergate_loop.wav"
+}
+
+//Watergate waiting music. Daud Encounter from the Dishonored soundtrack
+"DeathmatchMusic.Watergate_Waiting"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/watergate_waitinfg.wav"
+}
