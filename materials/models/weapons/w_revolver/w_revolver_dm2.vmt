@@ -1,15 +1,16 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models\weapons\w_revolver\w_revolver_dm"
+	"$basetexture"	"models\weapons\w_revolver\w_revolver_dm2"
+	"$bumpmap" "models/weapons/w_revolver/w_revolver_dm2_normal"
 	
 	"$phong" "1"
-	"$phongexponent" "25"
-	"$phongboost" "5"	
+	"$phongexponent" "10"
+	"$phongboost" "2"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
-	"$phongfresnelranges"	"[.25 .5 1]"
+	"$phongfresnelranges"	"[.1 .5 1]"
 	"$halflambert" "1"
 
-	"$basemapalphaphongmask" "1"
+	
 	
 	"$rimlight" "1"						
 	"$rimlightexponent" "3"				
