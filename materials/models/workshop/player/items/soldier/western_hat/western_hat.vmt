@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
-	"$basetexture"		"models/workshop/player/items/soldier/helmerc/helmerc"
-	"$bumpmap"		"models/workshop/player/items/soldier/helmerc/helmercmerc_normal"
+	"$basetexture"		"models/player/mercenary/western_hat"
+	"$bumpmap"		"models/player/mercenary/western_hatnorm"
 	"$lightwarptexture"		"models/player/pyro/pyro_lightwarp"
 	"$phong"		"1"
 	"$phongexponent"		"15.000000"
@@ -51,6 +51,6 @@
 			"srcVar2"		"$colortint_base"
 			"resultVar"		"$color2"
 		}
-
 	}
 }
+
