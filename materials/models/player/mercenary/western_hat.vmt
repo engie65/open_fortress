@@ -36,10 +36,6 @@
 		{
 			"resultVar"		"$detailblendfactor"
 		}
-		"ItemTintColor"
-		{
-			"resultVar"		"$colortint_tmp"
-		}
 		"SelectFirstIfNonZero"
 		{
 			"srcVar1"		"$colortint_tmp"
