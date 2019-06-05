@@ -4,17 +4,17 @@
 	"$bumpmap"		"models/player/mercenary/western_hatnorm"
 	"$lightwarptexture"		"models/player/pyro/pyro_lightwarp"
 	"$phong"		"1"
-	"$phongexponent"		"5.000000"
-	"$phongboost"		"1.300000"
+	"$phongexponent"		"15.000000"
+	"$phongboost"		"2.000000"
 	"$phongfresnelranges"		"[.25 .5 1]"
 	"$rimlight"		"1"
 	"$rimlightexponent"		"4"
 	"$rimlightboost"		"2"
-	"$blendtintbybasealpha"		"0"
+	"$blendtintbybasealpha"		"1"
 	"$blendtintcoloroverbase"		"0"
-	"$colortint_base"		"{255 255 255}"
-	"$color2"		"{255 255 255}"
-	"$colortint_tmp"		"[255 255 255]"
+	"$colortint_base"		"{ 184 56 59 }"
+	"$color2"		"{ 184 56 59 }"
+	"$colortint_tmp"		"[0 0 0]"
 	"$bumpmapalphaphongmask"		"1"
 	"$cloakPassEnabled"		"1"
 	"$detail"		"effects/tiledfire/fireLayeredSlowTiled512"
@@ -63,3 +63,4 @@
 		}
 	}
 }
+
