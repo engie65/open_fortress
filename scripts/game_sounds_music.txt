@@ -364,3 +364,13 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/watergate_waitinfg.wav"
 }
+
+//Coaltown temp music.
+"DeathmatchMusic.Coaltown_Temp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/coaltown_temp.wav"
+}
