@@ -27,7 +27,7 @@
 	}
 	"proxies"
 	{
-		"invis"
+		"spy_invis"
 		{
 		}
 		"AnimatedTexture"
