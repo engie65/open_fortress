@@ -241,7 +241,7 @@
 "TFOption_Cosmetics"		"Отключение шляп."
 
 "of_mercenary_hat"			"Головной убор: "
-"of_cosmetic_none"			"ОТСУСТВУЕТ"
+"of_cosmetic_none"			"ОТСУТСТВУЕТ"
 "of_cosmetic_cap"			"КЕПКА"
 "of_cosmetic_helmet"		"ШЛЕМ"
 "of_cosmetic_cowboy"		"КОВБОЙСКАЯ ШЛЯПА"
