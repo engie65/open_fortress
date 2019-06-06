@@ -22,6 +22,9 @@
 		"weapon_invis"
 		{
 		}
+		"spy_invis"
+		{
+		}
 		"ModelGlowColor"
 		{
 			"resultVar""$glowcolor"
