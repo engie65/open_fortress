@@ -211,7 +211,7 @@
 "TF_freezecam_snapshot"	"[%s1] Запечатлеть мгновение!"
 
 //Open Fortress Options
-"TFOption_muzzlelight"		"Включить динамическое освещение для вспышек, снярадов и огнемёта"
+"TFOption_muzzlelight"		"Включить динамическое освещение для вспышек, снарядов и огнемёта"
 "TFOption_viewroll_speed"	"Скорость поворота камеры в бок как в Half-Life 1"
 "TFOption_viewroll_angle"	"Уровень поворота камеры в бок как в Half-Life 1"
 "TFoption_showtargetid"		"Показывать информацию о цели"
@@ -237,6 +237,15 @@
 "TF_Option_OFF"				"Отключено"
 "TF_Option_ON"				"Включено"
 "TF_ForceClass"				"Только Наёмник в Бое насмерть"
+
+"TFOption_Cosmetics"		"Отключение шляп."
+
+"of_mercenary_hat"			"Головной убор: "
+"of_cosmetic_none"			"ОТСУТСТВУЕТ"
+"of_cosmetic_cap"			"КЕПКА"
+"of_cosmetic_helmet"		"ШЛЕМ"
+"of_cosmetic_cowboy"		"КОВБОЙСКАЯ ШЛЯПА"
+"of_cosmetic_alphaboomer"	"БУМЕР-ВЕДРО"
 
 // Radio and chat strings can have control characters embedded to set colors.  For the control characters to be used, one must be at the start of the string.
 // The control characters can be copied and pasted in notepad.
@@ -322,6 +331,7 @@
 
 "TF_Spy_Disguise_Team_Blue"		"синий"
 "TF_Spy_Disguise_Team_Red"		"красный"
+"TF_Spy_Disguise_Team_Mercenary"		"наёмник"
 
 "TF_Object_Sentry"			"Пушка"
 "TF_Object_Dispenser"		"Раздатчик"
@@ -1195,6 +1205,26 @@
 "TF_Intelligence"		"Разведданные"
 "TF_Exit"			"Выход"
 "Leaderboard_BestMoments"		"Лучшие моменты"
+
+//OFD Binds
+"OFD_Exact_Weapons"		"Использования конкретного оружия"
+"OFD_Sound_Spray"		"Звук спрея"
+"OFD_Use_Melee"			"Ближний бой"
+"OFD_Use_Pistol"		"Пистолет"
+"OFD_Use_SMG"			"ПП"
+"OFD_Use_Revolver"		"Револьвер"
+"OFD_Use_Shotgun"		"Дробовик"
+"OFD_Use_Scatter"		"Обрез"
+"OFD_Use_SuperSG"		"Супер-дровобик"
+"OFD_Use_Nail"			"Гвоздомёт"
+"OFD_Use_Syringe"		"Шприцемёт"
+"OFD_Use_RPG"			"Ракетомёт"
+"OFD_Use_Fire"			"Огнемёт"
+"OFD_Use_GL"			"Гранатомёт"
+"OFD_Use_Sticky"		"Липучкомёт"
+"OFD_Use_Mini"			"Пушка Гатлинга"
+"OFD_Use_Snip"			"Снайперское ружьё"
+"OFD_Use_Rail"			"Рельсовая пушка"
 
 }
 
