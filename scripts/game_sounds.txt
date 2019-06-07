@@ -398,6 +398,24 @@
 		"wave"	")misc/r_tele5.wav"
 	}
 }
+"Teleport.HaloTouch"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"100"
+
+	"wave"	"misc/halo_teleport.wav"
+}
+
+"HaloInvis.Touch"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"wave"		"misc/halo_invis.wav"
+}
 
 "PropaneTank.Burst"
 {
