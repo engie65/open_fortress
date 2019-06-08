@@ -28,6 +28,7 @@ WeaponData
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
 	"PickupMultiplier"	"0"
+	"DropOnNoAmmo"		"1"
 	
 	// Secondary Attributes.
 	"secondary_ammo"	"None"

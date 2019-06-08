@@ -56,7 +56,7 @@ FissionMetroid
 
 Menu and promotional art:
 Gibus Cat
-"John Fortnite Kennedy"
+iiboharz
 
 In-game menu logo concept:
 HDMineFace
@@ -105,7 +105,6 @@ Trotim (for helping KaidemonLP with programming)
 Nicknine (for the TF_Port SDK 2013 codebase)
 Saul Rennison (for proper dynamic shadows using the L4D method)
 The Jabroni Brawl 3 team (for putting our Mercenary into their game <3)
-XutaxKamay (for player origin displacement fixes)
 tonysergi (for MP Gravity Gun carried objects fix)
 [Cosmetic Set "Top Fragger" - The Boomer Bucket/Lovecrafted Carapace/Earth Quakers by Drew, Yikes, Makkon and Hotrod McCoolguy, used with permission]
 SuperBigBoy (food)
