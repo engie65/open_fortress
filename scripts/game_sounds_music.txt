@@ -374,3 +374,12 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/coaltown_temp.wav"
 }
+
+//Deathmatch Wiseau (TEST), by Thoopje
+"DeathmatchMusic.Wiseau"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/dm_wiseauTESTFUCKING3.wav"
