@@ -30,7 +30,7 @@ WeaponData
 	"PickupMultiplier"	"1.7"
 	
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	clip_size		-1
 	"ProjectileType"	"projectile_pipe_remote"

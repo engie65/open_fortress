@@ -22,7 +22,7 @@ WeaponData
 
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	clip_size			6
 	default_clip		6

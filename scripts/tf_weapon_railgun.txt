@@ -24,7 +24,7 @@ WeaponData
 	"BrassModel"		"models/weapons/shells/shell_sniperrifle.mdl"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	"clip_size"		"-1"
 	"default_clip"		"75"

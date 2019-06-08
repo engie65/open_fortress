@@ -17,8 +17,9 @@ WeaponData
 
 	"clip_size"		"-1"
 	"default_clip"		"1"
-"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
+	"MaxAmmo"	"5"
 
 	"weight"		"-10"
 	"item_flags"		"24"	// ITEM_FLAG_LIMITINWORLD | ITEM_FLAG_EXHAUSTIBLE

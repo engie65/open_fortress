@@ -22,7 +22,7 @@ WeaponData
 	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	"clip_size"		"8"
 	"default_clip"		"8"

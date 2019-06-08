@@ -25,7 +25,7 @@ WeaponData
 	"TracerEffect"		"bullet_pistol_tracer01"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	"clip_size"		15
 	"default_clip"		15
