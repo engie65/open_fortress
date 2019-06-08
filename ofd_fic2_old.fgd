@@ -1,7 +1,6 @@
 
 // == IMPORTANT == //
 
-// This FGD is deprecated! I am not providing any more updates to this version, use ofd_fic.fgd instead
 // Only use this FGD if you are using stock Hammer, as ofd_fic.fgd is not compatible with stock Hammer (only works with Slartibarty's / Slammin Hammer)
 
 
@@ -5245,6 +5244,16 @@
 [
 	master(string) : "Master" : : "Half-Life legacy support: The name of a multisource entity. If the master hasn't been activated, this entity will not activate."
 	input EndGame(void) : "End the multiplayer game."
+]
+
+@PointClass base(BaseEntity) iconsprite("editor-ficool2/game_forcerespawn")  = game_forcerespawn :
+	"Removes buildings, grenades, etc., from the world and forces all players to respawn, without being killed."
+[
+	input ForceRespawn(void) : "Force players to respawn and remove buildings, grenades, etc., from the world."
+	input ForceRespawnSwitchTeams(void) : "Switch all players to the opposite team, and then respawn all players (and remove buildings, grenades, etc., from the world)."
+	input ForceTeamRespawn(integer) : "Force players on a specific team to respawn. 2 for Red, 3 for Blue. This does NOT remove buildings, grenades, etc., from the world..."
+	
+	output OnForceRespawn(void) : "Sent when the entity respawns the players."	
 ]
 
 @PointClass base(BaseEntity) iconsprite("editor-ficool2/game_gib_manager") = game_gib_manager : 
