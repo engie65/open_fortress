@@ -383,3 +383,4 @@
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/dm_wiseauTESTFUCKING3.wav"
+}
