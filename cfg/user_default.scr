@@ -89,6 +89,49 @@ DESCRIPTION INFO_OPTIONS
 		{ "0" }
 	}
 	
+	"ofd_respawn_particle"
+	{
+		"#ofd_respawn_particle"
+		{ LIST
+			"#TF_DM_PARTICLE01" "1"
+			"#TF_DM_PARTICLE02" "2"
+			"#TF_DM_PARTICLE03" "3"
+			"#TF_DM_PARTICLE04" "4"
+			"#TF_DM_PARTICLE05" "5"
+			"#TF_DM_PARTICLE06" "6"
+			"#TF_DM_PARTICLE07" "7"
+			"#TF_DM_PARTICLE08" "8"
+			"#TF_DM_PARTICLE09" "9"
+			"#TF_DM_PARTICLE10" "10"
+			"#TF_DM_PARTICLE11" "11"
+			"#TF_DM_PARTICLE12" "12"
+			"#TF_DM_PARTICLE13" "13"
+			"#TF_DM_PARTICLE14" "14"
+			"#TF_DM_PARTICLE15" "15"
+			"#TF_DM_PARTICLE16" "16"
+			"#TF_DM_PARTICLE17" "17"
+			"#TF_DM_PARTICLE18" "18"
+			"#TF_DM_PARTICLE19" "19"
+			"#TF_DM_PARTICLE20" "20"
+			"#TF_DM_PARTICLE21" "21"
+			"#TF_DM_PARTICLE22" "22"
+			"#TF_DM_PARTICLE23" "23"
+			"#TF_DM_PARTICLE24" "24"
+			"#TF_DM_PARTICLE25" "25"
+			"#TF_DM_PARTICLE26" "26"
+			"#TF_DM_PARTICLE27" "27"
+			"#TF_DM_PARTICLE28" "28"
+			"#TF_DM_PARTICLE29" "29"
+			"#TF_DM_PARTICLE30" "30"
+			"#TF_DM_PARTICLE31" "31"
+			"#TF_DM_PARTICLE32" "32"
+			"#TF_DM_PARTICLE33" "33"
+			"#TF_DM_PARTICLE34" "34"
+			"#TF_DM_PARTICLE35" "35"
+			}
+		{ "1" }
+	}	
+	
 	"mp_decals"
 	{
 		"#Valve_Multiplayer_Decal_Limit"
