@@ -2762,6 +2762,38 @@
 	}
 }
 
+// ------------------------------------------------------------------------------------ //
+// TRIPMINE
+// ------------------------------------------------------------------------------------ //
+"Weapon_Tripmine.Deploy"
+{
+	"channel"	"CHAN_VOICE"
+	"soundlevel"  	"SNDLVL_80db"
+	"volume"	"1.0"
+
+	"wave"		"weapons/mine_deploy.wav"
+}
+
+"Weapon_Tripmine.Charge"
+{
+	"channel"	"CHAN_BODY"
+	"soundlevel"  	"SNDLVL_80db"
+	"volume"	"0.2"
+
+	"wave"		"weapons/mine_charge.wav"
+}
+
+"Weapon_Tripmine.Activate"
+{
+	"channel"	"CHAN_VOICE"
+	"soundlevel"  	"SNDLVL_75db"
+	"volume"	"0.3"
+	"pitch"		"75"
+
+	"wave"		"weapons/mine_activate.wav"
+}
+
+
 //
 // ------------------------------------------------------------------------------------ //
 // Grenades

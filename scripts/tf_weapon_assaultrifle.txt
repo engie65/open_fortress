@@ -27,7 +27,7 @@ WeaponData
 	"DontDrop"	"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_ASSAULTRIFLE"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	clip_size		"30"
 	default_clip		"30"

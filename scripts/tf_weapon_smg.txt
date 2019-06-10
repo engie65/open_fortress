@@ -36,7 +36,7 @@ WeaponData
 	
 	// bucket_dms.
 	"bucket_dm"		"3"
-	"bucket_dm_position"	"3"
+	"bucket_dm_position"	"5" //NOTE: This is 2 AFTER it's "actual" position. "Fixes" a bug involving the sapper and non-Spy classes in DM.
 	"TracerEffect"		"bullet_pistol_tracer01"
 
 

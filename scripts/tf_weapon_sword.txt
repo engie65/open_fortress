@@ -28,7 +28,7 @@
 	
 	// bucket_dms.	
 	"bucket_dm"			"0"
-	"bucket_dm_position"		"13"
+	"bucket_dm_position"		"3"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_sword_demo.mdl"

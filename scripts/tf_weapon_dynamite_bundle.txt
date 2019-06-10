@@ -42,7 +42,7 @@ WeaponData
 	
 	// bucket_dms.
 	"bucket_dm"		"6"
-	"bucket_dm_position"	"5"
+	"bucket_dm_position"	"6"
 	
 	"ProjectileModel"	"models/weapons/w_models/w_dynamite.mdl"
 	

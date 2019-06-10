@@ -37,7 +37,7 @@ WeaponData
 	
 	// bucket_dms.
 	"bucket_dm"		"1"
-	"bucket_dm_position"	"0"
+	"bucket_dm_position"	"1" //NOTE: This is 1 AFTER it's "actual" position. "Fixes" a bug while playing as Spy in DM.
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_revolver_dm.mdl"

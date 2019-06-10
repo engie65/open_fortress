@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"			"#TF_Weapon_Knife"
+	"printname"			"#TF_Weapon_Flag"
 	"BuiltRightHanded"		"0"
 	"MeleeWeapon"			"1"
 	"weight"			"2"
@@ -55,7 +55,7 @@ WeaponData
 	{
 		"weapon"
 		{
-				"file"		"sprites/bucket_knife"
+				"file"		"hud/objectives_flagpanel_ico_flag_home"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -63,7 +63,7 @@ WeaponData
 		}
 		"weapon_s"
 		{	
-				"file"		"sprites/bucket_knife"
+				"file"		"hud/objectives_flagpanel_ico_flag_home"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
