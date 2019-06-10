@@ -1799,7 +1799,7 @@
 
 @BaseClass = weaponname
 [
-	weaponname(choices) : "Weapon" : "tf_weapon_pistol_akimbo" : "The weapon to use." =
+	weaponname(choices) : "Weapon" : "tf_weapon_shotgun_mercenary" : "The weapon to use." =
 	[
 		"0"									  : "=== Deathmatch ==="
 		"tf_weapon_assaultrifle"			  : "Assault Rifle"

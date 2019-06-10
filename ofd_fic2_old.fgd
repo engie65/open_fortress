@@ -1796,10 +1796,9 @@
 
 @BaseClass = weaponname
 [
-	weaponname(choices) : "Weapon" : "tf_weapon_pistol_akimbo" : "The weapon to use." =
+	weaponname(choices) : "Weapon" : "tf_weapon_shotgun_mercenary" : "The weapon to use." =
 	[
 		"0"									  : "=== Deathmatch ==="
-		"tf_weapon_pistol_akimbo"             : "Akimbo Pistols"
 		"tf_weapon_assaultrifle"			  : "Assault Rifle"
 		"tf_weapon_dynamite_bundle"			  : "Dynamite Bundle"
 		"tf_weapon_flamethrower"              : "Flamethrower"
@@ -1818,14 +1817,16 @@
 		"tf_weapon_pipebomblauncher"          : "Stickybomb Launcher"
 	    "tf_weapon_sword"                     : "Sword"
 	    "tf_weapon_syringegun_medic"          : "Syringegun"
-		"tf_weapon_supershotgun"              : "Supershotgun"	
+		"tf_weapon_supershotgun"              : "Super Shotgun"	
 	    "tf_weapon_tommygun"                  : "Tommygun"
+		"tf_weapon_super_rocketlauncher"      : "Super Rocketlauncher"
+	    "tf_weapon_tripmine"                  : "Tripmine"
 		
 		"0"									  : "=== Do Not Use In Deathmatch ==="
-		"tf_weapon_super_rocketlauncher"      : "Super Rocketlauncher (:bastard:)"
 		"tf_weapon_grenadelauncher"           : "Grenade Launcher (Demoman)"
 		"tf_weapon_minigun"                   : "Minigun"
 		"tf_weapon_pistol_mercenary"          : "Pistol (Mercenary)"
+		"tf_weapon_pistol_akimbo"             : "Akimbo Pistols"
 		"tf_weapon_pistol"                    : "Pistol (Engineer)"
 		"tf_weapon_pistol_scout"              : "Pistol (Scout)"
 		"tf_weapon_revolver"                  : "Revolver (Spy)"
