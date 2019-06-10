@@ -41,7 +41,7 @@
 //DeathmatchMusic.Healer
 //DeathmatchMusic.DMStuff
 //DeathmatchMusic.Mayann
-//
+//DeathmatchMusic.22_LG_Orbifold
 
 //Scary Monsters and Nice Sprites MIDI, author unknown, original by Skrillex
 //Included as a reference to the Doom mod "Tomb Fetus" by DrPyspy where dm_wiseau is accompanied by this track.
@@ -373,4 +373,24 @@
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/coaltown_temp.wav"
+}
+
+//Deathmatch Wiseau (TEST), by Thoopje
+"DeathmatchMusic.Wiseau"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/dm_wiseauTESTFUCKING3.wav"
+}
+
+//Half-Life 2 LG Orbifold Soundtrack 
+"DeathmatchMusic.22_LG_Orbifold"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/22_LG_Orbifold.wav"
 }
