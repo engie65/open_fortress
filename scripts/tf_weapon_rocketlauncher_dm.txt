@@ -18,7 +18,7 @@ WeaponData
 	"TimeIdle"		"0.8"
 	"TimeIdleEmpty"		"0.8"
 	"TimeReload"		"0.83"
-	"primary_ammo"		"TF_AMMO_ROCKETLAUNCHER"
+	"primary_ammo"		"WEAPON_AMMO"
 	clip_size		4
 	default_clip		4
 	"MaxAmmo"	"20"
@@ -47,9 +47,10 @@ WeaponData
 	"ExplosionSound"	"Weapon_QuakeRPG.Explode"
 
 	// Animation.
-	"viewmodel"		"this_is_here_so_that_the_game_doesnt_bitch"
-	"anim_prefix"		"about_missing_weapon_models"
-	"playermodel"		"models/weapons/w_models/w_rocketlauncher.mdl"  // This was left here however since weapon spawners use this value to determine their model
+	//NOTENOTE: Changing these values do nothing! To support being able to swap between the quake and tf2 rocket launchers with a cvar the game overrides these values
+	"viewmodel"		"models/weapons/v_models/v_rocketlauncher_soldier.mdl"
+	"playermodel"		"models/weapons/w_models/w_rocketlauncher.mdl"
+	"anim_prefix"		"gl"
 
 	// Sounds.
 	// Max of 16 per category (ie. max 16 "single_shot" sounds).

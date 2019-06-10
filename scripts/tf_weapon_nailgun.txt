@@ -18,7 +18,7 @@ WeaponData
 	"ProjectileType"	"projectile_nail"
 
      // Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"      "None"
 	"clip_size"           "40"
 	"default_clip"        "40"

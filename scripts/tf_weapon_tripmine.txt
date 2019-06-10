@@ -1,29 +1,56 @@
-// Tripmine
-
 WeaponData
 {
-	// Weapon data is loaded by both the Game and Client DLLs.
+	// Attributes Base.
 	"printname"		"#TF_Weapon_Tripmine"
-	"viewmodel"		"models/weapons/v_models/v_tripmine.mdl"
-	"playermodel"		"models/weapons/w_models/w_tripmine.mdl"
-	"anim_prefix"		"trip"
+	"BuiltRightHanded"	"0"
+	"weight"		"3"
+	"WeaponType"		"primary"
+	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 	
+	// Primary Attributes.
+	"Damage"		"90"
+	"InstagibDamage"	"999"
+	"Range"			"0"
+	"BulletsPerShot"	"1"
+	"Spread"		"0.0"
+	"PunchAngle"		"0.0"
+	"TimeFireDelay"		"0.8"
+	"TimeIdle"		"0.8"
+	"TimeIdleEmpty"		"0.8"
+	"TimeReload"		"0.8"
+	"primary_ammo"		"WEAPON_AMMO"
+	clip_size		-1
+	default_clip		-1
+	"MaxAmmo"	"4"
+	
+	"ProjectileType"	"projectile_tripmine"
+	"HasTeamSkins_Viewmodel"			"1"
+	"HasTeamSkins_Worldmodel"			"1"
+
+	// Secondary Attributes.
+	"secondary_ammo"	"None"
+
 	// bucket.	
 	"bucket"			"1"
 	"bucket_position"		"0"
 	
+	// bucket_dms.
 	"bucket_dm"		"6"
-	"bucket_dm_position"	"6"
+	"bucket_dm_position"	"7"	
 
-	"clip_size"		"-1"
-	"default_clip"		"1"
-"primary_ammo"		"TF_AMMO_PRIMARY"
-	"secondary_ammo"	"None"
+	"ExplosionEffect"		"ExplosionCore_wall"
+	"ExplosionPlayerEffect"		"ExplosionCore_MidAir"
+	"ExplosionWaterEffect"		"ExplosionCore_MidAir_underwater"
 
-	"weight"		"-10"
-	"item_flags"		"24"	// ITEM_FLAG_LIMITINWORLD | ITEM_FLAG_EXHAUSTIBLE
+	"ExplosionSound"	"BaseExplosionEffect.Sound"
 
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	// Animation.
+	"viewmodel"		"models/weapons/v_models/v_tripmine.mdl"
+	"playermodel"		"models/weapons/w_models/w_tripmine.mdl"
+	"anim_prefix"		"gl"
+
+	// Sounds.
+	// Max of 16 per category (ie. max 16 "single_shot" sounds).
 	SoundData
 	{
 	}
@@ -49,11 +76,27 @@ WeaponData
 		}
 		"ammo"
 		{
-			"file"		"sprites/640hud7"
-			"x"			"120"
-			"y"			"96"
-			"width"		"24"
-			"height"	"24"
+				"file"		"sprites/a_icons1"
+				"x"		"55"
+				"y"		"60"
+				"width"		"73"
+				"height"	"15"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/crosshairs"
+				"x"		"32"
+				"y"		"32"
+				"width"		"32"
+				"height"	"32"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"		"0"
+				"y"		"48"
+				"width"		"24"
+				"height"	"24"
 		}
 	}
 }

@@ -26,7 +26,7 @@ WeaponData
 	
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	clip_size			6
 	default_clip		6
@@ -36,7 +36,7 @@ WeaponData
 
 	// bucket_dms.
 	"bucket_dm"		"1"
-	"bucket_dm_position"	"1"
+	"bucket_dm_position"	"2" //NOTE: This is 1 AFTER it's "actual" position. "Fixes" a bug while playing as Spy in DM.
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_revolver_spy.mdl"
