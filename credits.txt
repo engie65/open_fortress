@@ -75,10 +75,10 @@ MrModez (At Fortress' Gate, Winpanel Music, TF2Beat, Mayann)
 Thoopje (DMChase, DM Skate Theme, Intermission From Gathering Intel)
 
 Maps:
-AgitationSkeleton (Blockfort, House of Chthon, Hangar, Entryway, The Bad Place, Hardcore, The Dark Zone, TVLand, DM and CTF Johnny, Dead Simple, Overkill)
 Hambooga (The Bad Place [Artpass], The Longest Yard, Aerowalk)
 DrPyspy (Blood Run, Parley [Original layout], DM Johnny [Tomb Fetus original map])
 Richter (Junkyard, Office [Textures])
+AgitationSkeleton (House of Chthon, The Bad Place, The Dark Zone, CTF Johnny, Dead Simple, Overkill)
 HDMineFace (Framework, CTF and DM Greenback)
 Chrissy (Office)
 Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, DM+CTF Backfort, Weapon devtest map)
