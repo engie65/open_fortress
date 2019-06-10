@@ -246,6 +246,7 @@
 "of_cosmetic_helmet"		"ШЛЕМ"
 "of_cosmetic_cowboy"		"КОВБОЙСКАЯ ШЛЯПА"
 "of_cosmetic_alphaboomer"	"БУМЕР-ВЕДРО"
+"of_cosmetic_headset"		"Наушники"
 
 // Radio and chat strings can have control characters embedded to set colors.  For the control characters to be used, one must be at the start of the string.
 // The control characters can be copied and pasted in notepad.
