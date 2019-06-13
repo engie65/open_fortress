@@ -1710,7 +1710,7 @@
 [
 	model(studio) : "Model" :  : "Change the model to something other than the default model." 
 	respawntime(integer) : "Respawn Time" : 10 : "Changes the time, in seconds, before the item respawns."
-	respawndelay(integer) : "Respawn Delay" : 0 : "Makes the item spawn after a initial delay."
+	respawndelay(integer) : "Initial Spawn Delay" : 0 : "Makes the item spawn after a initial delay."
 	spawn_sound(sound): "Spawn Sound" : "Item.Materialize" : "Sound to play when Pickup Spawns."
 	HiddenWhenRespawning(boolean) : "Hidden while Respawning?" : 1 : "Whether or not the pickup becomes hidden on pickup."	
 	AutoMaterialize(boolean) : "Auto-Materialize?" : 1 : "The pickup should automatically materialize after being picked up."
