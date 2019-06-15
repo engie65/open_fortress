@@ -394,3 +394,13 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/22_LG_Orbifold.wav"
 }
+
+//Chthon Placeholder Music, from the PowerSlave/Exhumed soundtrack
+"DeathmatchMusic.ChthonPlaceholder"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/PlaceholderChthonMusic.wav"
+}
