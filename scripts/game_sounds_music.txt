@@ -396,7 +396,7 @@
 }
 
 //Chthon Placeholder Music, from the PowerSlave/Exhumed soundtrack
-"DeathmatchMusic.ChthonPlaceholder"
+"DeathmatchMusic.Chthon"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
