@@ -404,3 +404,13 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"#music/deathmatch/PlaceholderChthonMusic.wav"
 }
+
+//Harvest temp music.
+"DeathmatchMusic.Mc_Vickers_Final_Frontier"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/mc_vickers_final_frontier.wav"
+}
