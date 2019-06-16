@@ -535,6 +535,15 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"revolver_mercenary"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"96"
+				"y"		"32"
+				"width"		"96"
+				"height"	"32"
+		}
 		"flaregun"
 		{
 				"dfile"	"HUD/d_images"
@@ -1310,6 +1319,24 @@
 				"height"	"32"
 		}	
 		"blackbox"
+		{
+				"dfile"	"HUD/d_images_v2"
+				"dnegfile"	"HUD/dneg_images_v2"
+				"x"		"256"
+				"y"		"160"
+				"width"		"128"
+				"height"	"32"
+		}
+		"super_rocketlauncher"
+		{
+				"dfile"	"HUD/d_images_v2"
+				"dnegfile"	"HUD/dneg_images_v2"
+				"x"		"256"
+				"y"		"160"
+				"width"		"128"
+				"height"	"32"
+		}	
+		"quadlauncher"
 		{
 				"dfile"	"HUD/d_images_v2"
 				"dnegfile"	"HUD/dneg_images_v2"
