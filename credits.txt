@@ -12,8 +12,11 @@ Jill Nesbit
 Nbc66
 Avast Antipony
 
-Gameplay lead:
+Deathmatch Gameplay lead:
 AgitationSkeleton
+
+TFC Mode Gameplay Lead:
+Stachekip
 
 Mercenary and Civilian concepts and models:
 DrPyspy
@@ -69,31 +72,37 @@ Nbc66 and PacMania67 (Scoreboards)
 Snowy Snowtime (Minimal Mode Frag Counter)
 Chrissy (Polishing and fixes)
 
+www.openfortress.fun website:
+AgitationSkeleton
+Nbc66
+
 Music:
 Magnus (Deathmatch, Overpowered, Turbine Turmoil, Last Man Standing, Healer Stalks, DM2, Running From Evil, I Chainsawed the Demons, Team Fortresque, Facility, Stalker, Orch, DMStuff)
-MrModez (At Fortress' Gate, Winpanel Music, TF2Beat, Mayann)
-Thoopje (DMChase, DM Skate Theme, Intermission From Gathering Intel)
+MrModez (At Fortress' Gate, Winpanel Music, TF2Beat, Mayann, Magnum Smooth, TF2Big)
+Thoopje (DMChase, DM Skate Theme, Intermission From Gathering Intel, Wiseau Theme)
+Jacodemon (Wiseau Theme [Guitar])
 
 Maps:
-Hambooga (The Bad Place [Artpass], The Longest Yard, Aerowalk)
-DrPyspy (Blood Run, Parley [Original layout], DM Johnny [Tomb Fetus original map])
+Hambooga (The Bad Place, The Longest Yard, Aerowalk, Blood Covenant)
+DrPyspy (Blood Run, Parley)
 Richter (Junkyard, Office [Textures])
 AgitationSkeleton (House of Chthon, The Bad Place, The Dark Zone, CTF Johnny, Dead Simple, Overkill)
 HDMineFace (Legacy, Framework, CTF and DM Greenback)
-Chrissy (Office)
+Chrissy (Office, House of Chthon)
 Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, DM+CTF Backfort, Weapon devtest map)
-Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_DM2, DM Lumberyard, Goldeneye Facility, Pool Party)
-MacD11 (Wiseau, DM_Johnny [Original Layout], Range, Dead Simple, Grain)
-KaiDemonLP ( dm_harvest ,dm_2fort_weapontest, other devtest maps)
+Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_DM2, DM Lumberyard)
+MacD11 (Wiseau, Range, Dead Simple, Grain, Offblast)
+KaiDemonLP (Harvest, 2Fort Weapontest [Indev], Devtest maps)
+Lena (Cargo)
+Boomsta (Sawdust)
 Gibus Cat (Indev DM_2Fort)
-Rara (Crossfire)
-Bakscratch (DM Watergate, Skate)
+Bakscratch (DM Watergate, Skate, Bailey)
 Hex (Skate)
-iiboharz (Wiseau, DM 2Fort, DM Ravine, DM Offblast, Chiron TL-34 (deathmatch port of killohurtz' Halo CE port))
+iiboharz (Wiseau, DM 2Fort, DM Ravine, DM Offblast, Chiron TL-34 (deathmatch port of killohurtz' Halo CE port), DM Upward, Range)
 Savva (Hollow, port of CTF Redplanet by Spipper)
 Spipper (CTF Redplanet)
-Alex Episode (HL2 Runoff Port)
 Muddy (Grain)
+Alex Episode (HL2 Runoff Port)
 
 Open Fortress - List of community contributors:
 
@@ -104,6 +113,9 @@ Open Fortress - Special thanks:
 Trotim (for helping KaidemonLP with programming)
 Nicknine (for the TF_Port SDK 2013 codebase)
 Saul Rennison (for proper dynamic shadows using the L4D method)
+Freyja (Train Models)
+Heyo Cutino (Borneo Assets)
+Ian "Idolon" Spadin (Arena Byre)
 The Jabroni Brawl 3 team (for putting our Mercenary into their game <3)
 tonysergi (for MP Gravity Gun carried objects fix)
 [Cosmetic Set "Top Fragger" - The Boomer Bucket/Lovecrafted Carapace/Earth Quakers by Drew, Yikes, Makkon and Hotrod McCoolguy, used with permission]
