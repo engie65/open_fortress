@@ -1,23 +1,21 @@
 "VertexLitGeneric"
 {
-"$baseTexture" "models\weapons\v_assault_rifle/m16"
+	"$baseTexture" "models\weapons\w_assault_rifle\w_assault_rifle_other"
+	
 
 	"$glowcolor" "1"
 	"$phong" "1"
-	"$phongexponent" "6"
-	"$phongboost" "1"	
+	"$phongexponent" "24"
+	"$phongboost" "5"	
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongfresnelranges"	"[.25 .5 1]"
+
 	"$basemapalphaphongmask" "1"
 
 	"$rimlight" "1"
-	"$rimlightexponent" "2"	
-	"$rimlightboost" ".25"
-	
-	
-//"$BASEMAPLUMINANCEPHONGMASK" "1"
-//"$color2" "[1.5 1.5 1.5]"
-"$halflambert" "1"
+	"$rimlightexponent" "3"	
+	"$rimlightboost" ".50"
+
 
 	// Cloaking
 	"$cloakPassEnabled" "1"
@@ -45,3 +43,4 @@
 		}
 	}
 }
+
