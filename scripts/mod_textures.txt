@@ -436,7 +436,7 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"tf_projectile_pipe"
+		"grenade_launcher"
 		{
 				"dfile"	"HUD/d_images"
 				"dnegfile"	"HUD/dneg_images"
@@ -571,7 +571,7 @@
 				"width"		"96"
 				"height"	"32"
 		}		
-		"tf_projectile_pipe_remote"
+		"pipebomb_launcher"
 		{
 				"dfile"	"HUD/d_images"
 				"dnegfile"	"HUD/dneg_images"

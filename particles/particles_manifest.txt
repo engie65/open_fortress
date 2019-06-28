@@ -22,6 +22,7 @@ particles_manifest
 		"file"      "!particles/item_fx.pcf"
 		"file"		"!particles/level_fx.pcf"
 		"file"      "!particles/lighter.pcf"
+		"file"		"!particles/lightning_gun.pcf"
 		"file"		"!particles/medicgun_beam.pcf"
 		"file"		"!particles/muzzle_flash.pcf"
 		"file"		"!particles/mvm.pcf"

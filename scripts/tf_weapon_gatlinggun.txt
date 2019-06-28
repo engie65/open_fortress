@@ -27,7 +27,7 @@ WeaponData
 	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	clip_size		-1
-	"MaxAmmo"	"200"
+	"MaxAmmo"	"100"
 
 	// bucket
 	"bucket"		"0"

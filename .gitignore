@@ -13,7 +13,6 @@ modelsounds.cache
 bin/*.pdb
 bin/*.dbg
 *.dbg
-*.pdb
 
 # crash dumps
 *.dmp

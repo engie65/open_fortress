@@ -16,16 +16,9 @@
 	"$detailscale"		"5"
 	"$detailblendfactor"		"0"
 	"$detailblendmode"		"6"
-	"$yellow"		"0"
-	">=DX90"
-	{
-		"$selfillum"		"0"
-	}
+	"$glowcolor" "1"
 	"proxies"
 	{
-		"invis"
-		{
-		}
 		"spy_invis"
 		{
 		}
@@ -39,15 +32,19 @@
 		{
 			"resultVar"		"$detailblendfactor"
 		}
-		"ItemTintColor"
+		"ModelGlowColor"
 		{
-			"resultVar"		"$colortint_tmp"
+			"resultVar""$glowcolor"
 		}
-		"SelectFirstIfNonZero"
+		"Equals"
 		{
-			"srcVar1"		"$colortint_tmp"
-			"srcVar2"		"$colortint_base"
-			"resultVar"		"$color2"
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
 		}
 	}
 }

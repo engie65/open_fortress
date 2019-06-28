@@ -19,7 +19,7 @@ WeaponData
 	"BurstSize"         "4"
 	"TimeIdle"		"0.8"
 	"TimeIdleEmpty"		"0.8"
-	"TimeReload"		"4"
+	"TimeReload"		"3.84"
 	"primary_ammo"		"WEAPON_AMMO"
 	"clip_size"		"4"
 	"default_clip"		"4"

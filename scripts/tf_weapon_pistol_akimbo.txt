@@ -12,8 +12,8 @@ WeaponData
 	"InstagibDamage"	"999"
 	"Range"			"4096"
 	"BulletsPerShot"	"1"
-	"Spread"		"0.03"
-	"TimeFireDelay"		"0.12"
+	"Spread"		"0.06"
+	"TimeFireDelay"		"0.13"
 	"TimeIdle"		"5.0"
 	"TimeIdleEmpty"		"0.25"
 	"TimeReload"		"2.1"
@@ -25,8 +25,8 @@ WeaponData
 	// Ammo & Clip.
 	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
-	clip_size		30
-	default_clip		30
+	"clip_size"			"30"
+	"default_clip"		"30"
 	"HasTeamSkins_Viewmodel"			"1"
 	"HasTeamSkins_Worldmodel"			"1"
 	"MaxAmmo"	"200"

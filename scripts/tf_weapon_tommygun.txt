@@ -27,9 +27,9 @@ WeaponData
 	// Ammo & Clip.
 	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
-	clip_size		50
-	default_clip		50
-	"MaxAmmo"	"75"
+	"clip_size"		"50"
+	"default_clip"		"50"
+	"MaxAmmo"	"100"
 
 	// bucket.	
 	"bucket"			"1"
