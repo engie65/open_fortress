@@ -877,6 +877,66 @@
 }
 
 // ------------------------------------------------------------------------------------ //
+// LIGHTNING GUN
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_LightningGun.LightningStart"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/lightning_gun_start.wav"
+}
+
+"Weapon_LightningGun.LightningLoop"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/lightning_gun_loop.wav"
+}
+
+"Weapon_LightningGun.LightningLoopCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/lightning_gun_loop_crit.wav"
+}
+
+"Weapon_LightningGun.LightningEnd"	
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/lightning_gun_end.wav"
+}
+
+"Weapon_LightningGun.LightningHit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/lightning_gun_hit.wav"
+}
+
+"Weapon_LightningGun.HumLoop"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".25"
+	"wave"		"weapons/lightning_gun_hum_loop.wav"
+}
+
+"Weapon_LightningGun.Draw"
+{
+	"channel"	"CHAN_AUTO"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		"weapons/draw_primary.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
 // STICKY BOMB LAUNCHER
 // ------------------------------------------------------------------------------------ //
 "Weapon_StickyBombLauncher.Single"
