@@ -38,7 +38,7 @@ WeaponData
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_lightning_gun.mdl"
-	"playermodel"		"models/weapons/w_models/w_flamethrower.mdl"
+	"playermodel"		"models/weapons/w_models/w_lightning_gun.mdl"
 	"anim_prefix"		"gl"
 
 	"HasTeamSkins_Worldmodel"	"1"
