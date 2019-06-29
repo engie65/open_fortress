@@ -51,11 +51,13 @@ particles_manifest
 		
     // hl2
 	"file"		"!particles/antlion_blood.pcf"
-	"file"		"!particles/water_impact.pcf"
-	"file"		"!particles/fire_01.pcf"
+	"file"		"!particles/blood_impact.pcf"
 	"file"		"!particles/burning_fx.pcf"
 	"file"		"!particles/combineball.pcf"
-	"file"		"!particles/vortigaunt_fx.pcf"
+	"file"		"!particles/fire_01.pcf"
+	"file"		"!particles/impact_fx.pcf"
 	"file"		"!particles/rocket_fx.pcf"
-	"file"		"!particles/blood_impact_hl2.pcf"
+	"file"		"!particles/train_steam.pcf"
+	"file"		"!particles/vortigaunt_fx.pcf"
+	"file"		"!particles/water_impact.pcf"
 }
