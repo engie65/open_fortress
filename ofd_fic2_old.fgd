@@ -1806,6 +1806,7 @@
 		"tf_weapon_physcannon"                : "Gravity Gun"
 		"tf_weapon_grenadelauncher_mercenary" : "Grenade Launcher"
 		"tf_weapon_knife"                     : "Knife"
+		"tf_weapon_lightning_gun"             : "Lightning Gun"
 		"tf_weapon_nailgun"                   : "Nailgun"
 		"tf_weapon_railgun"                   : "Railgun"
 		"tf_weapon_revolver_mercenary"        : "Revolver"	
