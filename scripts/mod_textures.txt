@@ -418,6 +418,24 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"shotgun_mercenary"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"256"
+				"width"		"96"
+				"height"	"32"
+		}
+		"TF_WEAPON_SHOTGUN_MERCENARY"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"256"
+				"width"		"96"
+				"height"	"32"
+		}
 		"shotgun_hwg"
 		{
 				"dfile"	"HUD/d_images"
