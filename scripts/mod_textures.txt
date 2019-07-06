@@ -472,6 +472,24 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"chaingun"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"384"
+				"width"		"96"
+				"height"	"32"
+		}
+		"gatlinggun"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"384"
+				"width"		"96"
+				"height"	"32"
+		}
 		"pipe"
 		{
 				"dfile"	"HUD/d_images"
@@ -490,7 +508,34 @@
 				"width"		"96"
 				"height"	"32"
 		}
+		"lightning_gun"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"0"
+				"y"		"416"
+				"width"		"96"
+				"height"	"32"
+		}
 		"fists"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"191"
+				"y"		"446"
+				"width"		"64"
+				"height"	"32"
+		}
+		"berserk"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"191"
+				"y"		"446"
+				"width"		"64"
+				"height"	"32"
+		}
+		"TF_WEAPON_BERSERK"
 		{
 				"dfile"	"HUD/d_images"
 				"dnegfile"	"HUD/dneg_images"
@@ -905,6 +950,15 @@
 				"height"	"32"
 		}
 		"sword"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"258"
+				"y"		"464"
+				"width"		"64"
+				"height"	"32"
+		}
+		"TF_WEAPON_SWORD"
 		{
 				"dfile"	"HUD/d_images"
 				"dnegfile"	"HUD/dneg_images"
