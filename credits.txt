@@ -85,12 +85,12 @@ Jacodemon (Wiseau Theme [Guitar])
 Maps:
 Hambooga (The Bad Place, The Longest Yard, Aerowalk, Blood Covenant)
 DrPyspy (Blood Run, Parley)
-Richter (Junkyard, Office [Textures])
+Richter (Office [Textures])
 AgitationSkeleton (House of Chthon, The Bad Place, The Dark Zone, CTF Johnny, Dead Simple, Overkill)
 HDMineFace (Legacy, Framework, CTF and DM Greenback)
 Chrissy (Office, House of Chthon)
-Suomimes55 (Bricks, DM_Minecraft, Boxy, Congo, DM+CTF Backfort, Weapon devtest map)
-Ficool2 (Bricks, DM_Minecraft, Boxy, DMC_DM2, DM Lumberyard)
+Suomimes55 (Bricks, DM_Minecraft, Congo, DM+CTF Backfort, Weapon devtest map)
+Ficool2 (Bricks, DM_Minecraft, DM Lumberyard)
 MacD11 (Wiseau, Range, Dead Simple, Grain, Offblast)
 KaiDemonLP (Harvest, 2Fort Weapontest [Indev], Devtest maps)
 Lena (Cargo)
@@ -102,7 +102,6 @@ iiboharz (Wiseau, DM 2Fort, DM Ravine, DM Offblast, Chiron TL-34 (deathmatch por
 Savva (Hollow, port of CTF Redplanet by Spipper)
 Spipper (CTF Redplanet)
 Muddy (Grain)
-Alex Episode (HL2 Runoff Port)
 
 Open Fortress - List of community contributors:
 
