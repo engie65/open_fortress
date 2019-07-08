@@ -143,4 +143,11 @@ DESCRIPTION SERVER_OPTIONS
 		{ "1" }
 	}
 	
+	"ofd_powerups"
+	{
+		"#TF_Powerups"
+		{ BOOL }
+		{ "1" }
+	}
+	
 }
