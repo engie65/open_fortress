@@ -44,5 +44,11 @@ PlayerClass
 	"sound_death"					"Demoman.Death"
 	"sound_crit_death"				"Demoman.CritDeath"
 	"sound_melee_death"				"Demoman.MeleeDeath"
-	"sound_explosion_death"			"Demoman.ExplosionDeath"
+	"sound_explosion_death"			"Demoman.ExplosionDeath"	
+	
+	// Ammo.
+	AmmoMax
+	{
+		"TF_AMMO_METAL"				"200"
+	}
 }

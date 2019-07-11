@@ -45,4 +45,10 @@ PlayerClass
 	"sound_crit_death"				"Pyro.CritDeath"
 	"sound_melee_death"				"Pyro.MeleeDeath"
 	"sound_explosion_death"			"Pyro.ExplosionDeath"
+	
+	// Ammo.
+	AmmoMax
+	{
+		"TF_AMMO_METAL"				"200"
+	}
 }

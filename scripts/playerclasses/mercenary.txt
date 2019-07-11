@@ -45,4 +45,10 @@ PlayerClass
 	"sound_crit_death"				"Mercenary.CritDeath"
 	"sound_melee_death"				"Mercenary.MeleeDeath"
 	"sound_explosion_death"			"Mercenary.ExplosionDeath"
+	
+	// Ammo.
+	AmmoMax
+	{
+		"TF_AMMO_METAL"				"200"
+	}
 }

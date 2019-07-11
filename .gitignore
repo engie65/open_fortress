@@ -10,7 +10,6 @@ sound.cache
 modelsounds.cache
 
 # debug symbols
-bin/*.pdb
 bin/*.dbg
 *.dbg
 

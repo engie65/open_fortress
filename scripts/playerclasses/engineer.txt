@@ -46,9 +46,9 @@ PlayerClass
 	"sound_melee_death"				"Engineer.MeleeDeath"
 	"sound_explosion_death"			"Engineer.ExplosionDeath"	
 	
-	// Ammo
+	// Ammo.
 	AmmoMax
 	{
 		"TF_AMMO_METAL"				"200"
-	}		
+	}
 }
