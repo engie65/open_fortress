@@ -128,7 +128,6 @@
 			
 			game+download		|gameinfo_path|download
 			
-			game				"|all_source_engine_paths|../Team Fortress 2/tf/"
 		}
 	}
 }
