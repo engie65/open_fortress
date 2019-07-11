@@ -382,7 +382,7 @@
 	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/dm_wiseauTESTFUCKING3.wav"
+	"wave"			"#music/deathmatch/dm_wiseau_loop.wav"
 }
 
 //Half-Life 2 LG Orbifold Soundtrack 
