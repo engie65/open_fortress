@@ -50,9 +50,9 @@ PlayerClass
 	
 	// Buildables.
 	"buildable1"		"OBJ_ATTACHMENT_SAPPER"
-	"buildable2"		"NONE"
-	"buildable3"		"NONE"
-	"buildable4"		"NONE"
+	"buildable2"		"OBJ_DISPENSER"
+	"buildable3"		"OBJ_TELEPORTER_ENTRANCE"
+	"buildable4"		"OBJ_TELEPORTER_EXIT"
 
 	// Death Sounds.
 	"sound_death"					"Spy.Death"

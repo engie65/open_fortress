@@ -53,7 +53,7 @@ PlayerClass
 	"buildable2"		"OBJ_DISPENSER"
 	"buildable3"		"OBJ_TELEPORTER_ENTRANCE"
 	"buildable4"		"OBJ_TELEPORTER_EXIT"
-
+	
 	// Death Sounds.
 	"sound_death"					"Engineer.Death"
 	"sound_crit_death"				"Engineer.CritDeath"
