@@ -729,6 +729,25 @@ Rule PlayerPositiveDemoman
 	Response PlayerPositiveDemoman
 }
 
+Response PlayerRespawnDemoman
+{
+	scene "scenes/Player/Demoman/low/Respawn01.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn02.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn03.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn04.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn05.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn06.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn07.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn08.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn09.vcd" 
+	scene "scenes/Player/Demoman/low/Respawn10.vcd" 
+}
+Rule PlayerRespawnDemoman
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsDemoman
+	Response PlayerRespawnDemoman
+}
+
 Response PlayerTauntsDemoman
 {
 	scene "scenes/Player/Demoman/low/LaughShort03.vcd" 

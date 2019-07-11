@@ -102,14 +102,16 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImageBG"
 		"xpos"			"9"		[$WIN32]
-		"xpos_minmode"	"-10"		[$WIN32]
+		"xpos_minmode"	"3"		[$WIN32]
 		"ypos"			"r60"	[$WIN32]
 		"ypos_minmode"		"r40"	[$WIN32]
 		"xpos"			"41"	[$X360]
 		"ypos"			"r82"	[$X360]
 		"zpos"			"1"		
+		"wide_minmode"			"60"
 		"wide"			"100"
 		"tall"			"50"
+		"tall_minmode"			"30"
 		"visible"		"1"
 		"enabled"		"1"
         "image"			"../hud/character_red_bg"

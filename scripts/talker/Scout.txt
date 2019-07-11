@@ -740,6 +740,23 @@ Rule PlayerPositiveScout
 	Response PlayerPositiveScout
 }
 
+Response PlayerRespawnScout
+{
+	scene "scenes/Player/Scout/low/Respawn01.vcd" 
+	scene "scenes/Player/Scout/low/Respawn02.vcd" 
+	scene "scenes/Player/Scout/low/Respawn03.vcd" 
+	scene "scenes/Player/Scout/low/Respawn04.vcd" 
+	scene "scenes/Player/Scout/low/Respawn05.vcd" 
+	scene "scenes/Player/Scout/low/Respawn06.vcd" 
+	scene "scenes/Player/Scout/low/Respawn07.vcd"
+	scene "scenes/Player/Scout/low/Respawn08.vcd"	
+}
+Rule PlayerRespawnScout
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsScout
+	Response PlayerRespawnScout
+}
+
 Response PlayerTauntsScout
 {
 	scene "scenes/Player/Scout/low/LaughEvil03.vcd" 

@@ -565,6 +565,19 @@ Rule PlayerPositivePyro
 	Response PlayerPositivePyro
 }
 
+Response PlayerRespawnPyro
+{
+	scene "scenes/Player/Pyro/low/Jeers01.vcd" 
+	scene "scenes/Player/Pyro/low/Jeers02.vcd" 
+	scene "scenes/Player/Pyro/low/NegativeVocalization01.vcd" 
+}
+
+Rule PlayerRespawnPyro
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsPyro
+	Response PlayerRespawnPyro
+}
+
 Response PlayerTauntsPyro
 {
 	scene "scenes/Player/Pyro/low/LaughEvil03.vcd" 

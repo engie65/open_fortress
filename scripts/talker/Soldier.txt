@@ -721,6 +721,21 @@ Rule PlayerPositiveSoldier
 	Response PlayerPositiveSoldier
 }
 
+Response PlayerRespawnSoldier
+{
+	scene "scenes/Player/Soldier/low/Respawn01.vcd" 
+	scene "scenes/Player/Soldier/low/Respawn02.vcd" 
+	scene "scenes/Player/Soldier/low/Respawn03.vcd" 
+	scene "scenes/Player/Soldier/low/Respawn04.vcd" 
+	scene "scenes/Player/Soldier/low/Respawn05.vcd" 
+	scene "scenes/Player/Soldier/low/Respawn06.vcd" 
+}
+Rule PlayerRespawnSoldier
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsSoldier
+	Response PlayerRespawnSoldier
+}
+
 Response PlayerTauntsSoldier
 {
 	scene "scenes/Player/Soldier/low/LaughLong02.vcd" 

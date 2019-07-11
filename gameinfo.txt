@@ -126,6 +126,8 @@
 			game				|all_source_engine_paths|sourcetest
 			
 			game+download		|gameinfo_path|download
+			
+			game				"E:\Moding games\steamapps\common\Team Fortress 2\tf"
 		}
 	}
 }

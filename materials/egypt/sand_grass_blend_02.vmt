@@ -5,4 +5,6 @@
 	"$surfaceprop" "sand"
 	"$surfaceprop2" "grass"
 	"$blendmodulatetexture" "Nature/grass_blendmask"
+	"%tooltexture" "editor-abs/blendttx/egypt/sand_grass_blend_02"
+	"%keywords" "tf"
 }

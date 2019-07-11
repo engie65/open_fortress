@@ -1,7 +1,7 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"		"#TF_Weapon_SMG"
+	"printname"		"#TF_Weapon_SMG_DM"
 	"BuiltRightHanded"	"0"
 	"weight"		"2"
 	"WeaponType"		"secondary"
@@ -24,11 +24,11 @@ WeaponData
 	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
-	clip_size		32
-	default_clip		32
-	"MaxAmmo"	"75"
+	"clip_size"		"35"
+	"default_clip"	"35"
+	"MaxAmmo"	"105"
 
 	// bucket.	
 	"bucket"			"1"
@@ -36,7 +36,7 @@ WeaponData
 	
 	// bucket_dms.
 	"bucket_dm"		"3"
-	"bucket_dm_position"	"2"
+	"bucket_dm_position"	"4" //NOTE: This is 2 AFTER it's "actual" position. "Fixes" a bug involving the sapper and non-Spy classes in DM.
 	"TracerEffect"		"bullet_pistol_tracer01"
 
 

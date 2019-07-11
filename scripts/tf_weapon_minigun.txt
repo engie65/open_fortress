@@ -5,7 +5,6 @@ WeaponData
 	"BuiltRightHanded"	"0"
 	"weight"		"3"
 	"WeaponType"		"primary"
-	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 		
 	// Attributes TF.
 	"Damage"		"9"
@@ -23,7 +22,7 @@ WeaponData
 	"HasTeamSkins_Worldmodel"			"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	clip_size		-1
 
@@ -33,7 +32,7 @@ WeaponData
 	
 	// bucket_dms.
 	"bucket_dm"		"3"
-	"bucket_dm_position"	"4"
+	"bucket_dm_position"	"6" //NOTE: This is 2 AFTER it's "actual" position. "Fixes" a bug involving the sapper and non-Spy classes in DM.
 	
 	"MaxAmmo"	"200"
 

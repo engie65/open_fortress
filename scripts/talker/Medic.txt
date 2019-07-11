@@ -762,6 +762,18 @@ Rule PlayerPositiveMedic
 	Response PlayerPositiveMedic
 }
 
+Response PlayerRespawnMedic
+{
+	scene "scenes/Player/Medic/low/Respawn01.vcd" 
+	scene "scenes/Player/Medic/low/Respawn02.vcd" 
+	scene "scenes/Player/Medic/low/Respawn03.vcd" 
+}
+Rule PlayerRespawnMedic
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsMedic
+	Response PlayerRespawnMedic
+}
+
 Response PlayerTauntsMedic
 {
 	scene "scenes/Player/Medic/low/LaughEvil01.vcd" 

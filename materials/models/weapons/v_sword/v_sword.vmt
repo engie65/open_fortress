@@ -2,6 +2,7 @@
 {
 	"$baseTexture" "models\weapons\v_sword/v_sword"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "5"
 	"$phongboost" "10"	
@@ -17,6 +18,20 @@
 
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

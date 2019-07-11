@@ -204,6 +204,30 @@ Rule PlayerTeleporterThanksMercenary
 	Response PlayerTeleporterThanksMercenary
 }
 
+Response PlayerRespawnMercenary
+{
+	scene "scenes/Player/Mercenary/low/Respawn01.vcd" 
+	scene "scenes/Player/Mercenary/low/Respawn02.vcd" 
+	scene "scenes/Player/Mercenary/low/Respawn03.vcd" 
+}
+Rule PlayerRespawnMercenary
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsMercenary NotKilled
+	Response PlayerRespawnMercenary
+}
+
+Response PlayerRespawnKilledMercenary
+{
+	scene "scenes/Player/Mercenary/low/Respawn01.vcd" 
+	scene "scenes/Player/Mercenary/low/Respawn02.vcd" 
+	scene "scenes/Player/Mercenary/low/Respawn03.vcd" 
+	scene "scenes/Player/Mercenary/low/RespawnKilled01.vcd" 
+}
+Rule PlayerRespawnKilledMercenary
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsMercenary GotKilled
+	Response PlayerRespawnKilledMercenary
+}
 
 //--------------------------------------------------------------------------------------------------------------
 // Auto Speech Combat
@@ -218,7 +242,7 @@ Response KilledPlayerManyMercenary
 }
 Rule KilledPlayerManyMercenary
 {
-	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary IsWeaponNotMelee WeaponIsNotDMRevolver WeaponIsNotShotgunMercenary WeaponIsNotRocket WeaponIsNotGrenade WeaponIsNotOriginal WeaponIsNotDMGrenade WeaponIsNotPistolMercenary WeaponIsNotPistolAkimbo
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary IsWeaponNotMelee WeaponIsNotDMRevolver WeaponIsNotShotgunMercenary WeaponIsNotRocket WeaponIsNotGrenade WeaponIsNotOriginal WeaponIsNotDMGrenade WeaponIsNotDynamiteBundle WeaponIsNotPistolMercenary WeaponIsNotPistolAkimbo
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenary
@@ -313,6 +337,13 @@ Rule KilledPlayerManyMercenaryGL
 Rule KilledPlayerManyMercenaryGLDM
 {
 	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDMGrenade
+	ApplyContext "MercenaryKillSpeech:1:10"
+	applycontexttoworld
+	Response KilledPlayerManyMercenaryExplosive
+}
+Rule KilledPlayerManyMercenaryDynamite
+{
+	criteria ConceptKilledPlayer 30PercentChance KilledPlayerDelay MercenaryNotKillSpeech IsMercenary WeaponIsDynamiteBundle
 	ApplyContext "MercenaryKillSpeech:1:10"
 	applycontexttoworld
 	Response KilledPlayerManyMercenaryExplosive

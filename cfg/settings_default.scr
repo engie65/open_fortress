@@ -51,7 +51,7 @@ DESCRIPTION SERVER_OPTIONS
 	"maxplayers"
 	{
 		"#Valve_Max_Players"
-		{ NUMBER 1 24 }
+		{ NUMBER 1 255 }
 		{ "24" }
 	}
 
@@ -87,22 +87,46 @@ DESCRIPTION SERVER_OPTIONS
         "#TF_TeamPlay"
         {
             LIST        
-            "#TF_Option_MAP" "-1"
-            "#TF_Option_OFF" "0"
-            "#TF_Option_ON" "1"
+            "#TF_Option_MAP" 	"-1"
+            "#TF_Option_OFF" 	"0"
+            "#TF_Option_ON" 	"1"
         }
         { "-1" }
-    }	
+    }
+	
 	"ofd_instagib"
 	{
 		"#TF_Instagib"
         {
             LIST        
-            "#TF_Option_OFF" "0"
-            "#TF_Instagib_CROWBAR"0"
-            "#TF_Instagib_RAILGUN" "1"
+            "#TF_Option_OFF" 		"0"
+			"#TF_Instagib_CROWBAR"	"1"
+			"#TF_Instagib_RAILGUN" 	"2"
         }
-        { "-1" }
+        { "0" }
+	}
+	
+	"ofd_gungame"
+	{
+		"#TF_GunGame"
+        {
+            LIST        
+            "#TF_Option_OFF" 		"0"
+			"#TF_Option_ON"			"1"
+        }
+        { "0" }
+	}
+	
+	"ofd_clanarena"
+	{
+		"#TF_ClanArena"
+        {
+            LIST        
+            "#TF_Option_OFF" 		"0"
+			"#TF_Option_ON"			"1"
+			"#TF_ClanArena_TRINITY"	"2"
+        }
+        { "0" }
 	}
 	
 	"ofd_forceclass"
@@ -111,13 +135,19 @@ DESCRIPTION SERVER_OPTIONS
 		{ BOOL }
 		{ "1" }
 	}
-
-	"ofd_allowteams"
+	
+	"ofd_weaponspawners"
 	{
-		"#TF_AllowTeams"
+		"#TF_WeaponSpawners"
 		{ BOOL }
-		{ "0" }
-	}	
-
+		{ "1" }
+	}
+	
+	"ofd_powerups"
+	{
+		"#TF_Powerups"
+		{ BOOL }
+		{ "1" }
+	}
 	
 }

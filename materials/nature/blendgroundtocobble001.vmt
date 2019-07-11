@@ -2,7 +2,7 @@
 {
 	"$basetexture" "Nature/dirtground010"
 	"$basetexture2" "medieval/cobblestone001"
-	"%tooltexture" "medieval/cobblestone001_tooltexture"
+	"%tooltexture" "editor-abs/blendttx/nature/blendgroundtocobble001"
 	"$blendmodulatetexture" "Nature/snowgrass_blendmask"
 	"$bumpmap" "Nature/dirtground005_height-ssbump"
 //	"%detailtype" "tf_forest_grass"

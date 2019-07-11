@@ -5,5 +5,6 @@
 	"$bumpmap2" "concrete/concretefloor007_height-ssbump"
 	"$surfaceprop" "sand"
 	"$ssbump" "1"
-
+	"%tooltexture" "editor-abs/blendttx/egypt/sand_cliff_blend_01"
+	"%keywords" "tf"
 }

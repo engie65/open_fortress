@@ -7,5 +7,6 @@
 	//"$blendmodulatetexture" "concrete/concretefloor007b_blendmask"
 	"$surfaceprop" "sand"
 	"$ssbump" "1"
-
+	"%tooltexture" "editor-abs/blendttx/egypt/sand_floor_blend_04_with_grass"
+	"%keywords" "tf"
 }

@@ -3,7 +3,7 @@
 	"$basetexture" "pl_barnblitz/blendsnowtodirt001"
 	"$basetexture2" "Nature/snow_full001"
 	"$blendmodulatetexture" "Nature/snowgrass_blendmask"
-	"%tooltexture" "pl_barnblitz/blendsnowtodirt001"
+	"%tooltexture" "editor-abs/blendttx/pl_barnblitz/blendsnowtodirt001"
 	"$bumpmap" "pl_barnblitz/blendsnowtodirt001_normal"
 	//"$bumpmap2" "pl_barnblitz/blendsnowtodirt001_normal"
 	"$bumpmap2" "Nature/snow_full001_normal"

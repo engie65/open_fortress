@@ -3,4 +3,5 @@
 	// Original shader: BaseTimesLightmap
 	"$basetexture" "Dev/dev_measuregeneric01_red"
 	"$surfaceprop" "concrete"
+	"%keywords" "tf"
 }

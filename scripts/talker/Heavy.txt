@@ -743,6 +743,35 @@ Rule PlayerPositiveHeavy
 	Response PlayerPositiveHeavy
 }
 
+
+Response PlayerRespawnHeavy
+{
+	scene "scenes/Player/Heavy/low/Respawn01.vcd" 
+	scene "scenes/Player/Heavy/low/Respawn02.vcd" 
+	scene "scenes/Player/Heavy/low/Respawn03.vcd" 
+	scene "scenes/Player/Heavy/low/Respawn04.vcd" 
+	scene "scenes/Player/Heavy/low/Respawn05.vcd"
+}
+Rule PlayerRespawnHeavy
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsHeavy NotKilled
+	Response PlayerRespawnHeavy
+}
+
+Response PlayerRespawnKilledHeavy
+{
+	scene "scenes/Player/Heavy/low/Respawn01.vcd" 
+	scene "scenes/Player/Heavy/low/Respawn02.vcd" 
+	scene "scenes/Player/Heavy/low/Respawn03.vcd" 
+	scene "scenes/Player/Heavy/low/Respawn04.vcd" 
+	scene "scenes/Player/Heavy/low/RespawnKilled01.vcd" 
+}
+Rule PlayerRespawnKilledHeavy
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsHeavy GotKilled
+	Response PlayerRespawnKilledHeavy
+}
+
 Response PlayerTauntsHeavy
 {
 	scene "scenes/Player/Heavy/low/LaughEvil02.vcd" 

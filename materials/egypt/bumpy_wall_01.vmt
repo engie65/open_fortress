@@ -2,5 +2,5 @@ LightmappedGeneric
 {
 	"$basetexture"	"egypt\bumpy_wall_01"
 	"$surfaceprop" "concrete"
-
+	"%keywords" "tf"
 }

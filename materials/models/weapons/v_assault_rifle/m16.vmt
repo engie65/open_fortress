@@ -12,10 +12,27 @@
 	"$rimlight" "1"
 	"$rimlightexponent" "2"	
 	"$rimlightboost" ".25"
+	
+	"$glowcolor" "1"
+
 
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
 		}

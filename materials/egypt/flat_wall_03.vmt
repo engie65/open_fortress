@@ -3,5 +3,5 @@
 	"$basetexture"	"egypt\flat_wall_03"
 	"$bumpmap"	"egypt\flat_wall_normal"
 	"$surfaceprop" "concrete"
-
+	"%keywords" "tf"
 }

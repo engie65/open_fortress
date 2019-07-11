@@ -2,5 +2,5 @@ LightmappedGeneric
 {
 	"$basetexture"	"egypt\ground_brick_01"
 	"$surfaceprop" "rock"
-
+	"%keywords" "tf"
 }

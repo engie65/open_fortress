@@ -11,7 +11,6 @@
 //DO NOT CHANGE THE NAME OF ANYTHING IN HERE. YOU WILL BREAK EXISTING MAPS. ONLY MAKE ADDITIONS.
 //
 //Thank you!
-//hi iibo this is alphablaster i probably just broke it by adding the tracks you didnt list here so yeah
 //
 //SONG LIST:
 //DeathmatchMusic.ScaryMonsters
@@ -42,14 +41,7 @@
 //DeathmatchMusic.Healer
 //DeathmatchMusic.DMStuff
 //DeathmatchMusic.Mayann
-//DeathmatchMusic.PersiaLibrary
-//DeathmatchMusic.PersiaLibrary_Waiting
-//DeathmatchMusic.PersiaLibrary_Ending
-//DeathmatchMusic.PersiaGarden
-//DeathmatchMusic.PersiaGarden_Waiting
-//DeathmatchMusic.PersiaGarden_Ending
-//DeathmatchMusic.LGOrbifold (Does NOT loop due to mp3 format.)
-//
+//DeathmatchMusic.22_LG_Orbifold
 
 //Scary Monsters and Nice Sprites MIDI, author unknown, original by Skrillex
 //Included as a reference to the Doom mod "Tomb Fetus" by DrPyspy where dm_wiseau is accompanied by this track.
@@ -322,7 +314,7 @@
 	"wave"			"#music/deathmatch/healerstalks_loop.wav"
 }
 
-//DMStuff by Magnus
+//DMStuff by Magnus. Debatably a cover of "Cradle" from Goldeneye 007 but not really.
 "DeathmatchMusic.DMStuff"
 {
 	"channel"		"CHAN_STATIC"
@@ -343,75 +335,82 @@
 	"wave"			"#music/deathmatch/mayann_waiting.wav"
 }
 
-//Struggle in the Library from Prince of Persia: Warrior Within, by Stuart Chatwood
-//Included as a most-likely placeholder track, leftover from a midpoint in TF2C's development.
-"DeathmatchMusic.PersiaLibrary"
+//Magnum Smooth by MrModez
+"DeathmatchMusic.MagnumSmooth"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/library_loop.wav"
+	"wave"			"#music/deathmatch/dm_magnumsmooth_loop.wav"
 }
 
-//Struggle in the Library Waiting Track
-"DeathmatchMusic.PersiaLibrary_Waiting"
+//Watergate music. Discombobulate from the Sherlock Holmes (2009) soundtrack
+"DeathmatchMusic.Watergate"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/library_waiting.wav"
+	"wave"			"#music/deathmatch/watergate_loop.wav"
 }
 
-//Struggle in the Library Ending Track
-"DeathmatchMusic.PersiaLibrary_Ending"
+//Watergate waiting music. Daud Encounter from the Dishonored soundtrack
+"DeathmatchMusic.Watergate_Waiting"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/library_ending.wav"
+	"wave"			"#music/deathmatch/watergate_waitinfg.wav"
 }
 
-//Hanging Gardens from Prince of Persia: Warrior Within, by Stuart Chatwood
-//Included as a most-likely placeholder track, leftover from a midpoint in TF2C's development.
-"DeathmatchMusic.PersiaGarden"
+//Coaltown temp music.
+"DeathmatchMusic.Coaltown_Temp"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/garden_loop.wav"
+	"wave"			"#music/deathmatch/coaltown_temp.wav"
 }
 
-//Hanging Gardens Setup Track
-"DeathmatchMusic.PersiaGarden_Waiting"
+//Deathmatch Wiseau (TEST), by Thoopje
+"DeathmatchMusic.Wiseau"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/garden_waiting.wav"
+	"wave"			"#music/deathmatch/dm_wiseauTESTFUCKING3.wav"
 }
 
-//Hanging Gardens End Track
-"DeathmatchMusic.PersiaGarden_Ending"
+//Half-Life 2 LG Orbifold Soundtrack 
+"DeathmatchMusic.22_LG_Orbifold"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/persia/garden_ending.wav"
+	"wave"			"#music/deathmatch/22_LG_Orbifold.wav"
 }
 
-//LG Orbifold from Half-Life 2, by Kelly Bailey.
-//Alex Episode put this in for some reason despite the fact that the Source SDK comes with the entire HL2 soundtrack. It's even in mp3 format for some reason and doesn't loop as a result.
-"DeathmatchMusic.LGOrbifold"
+//Chthon Placeholder Music, from the PowerSlave/Exhumed soundtrack
+"DeathmatchMusic.Chthon"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.9"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/hl2_song16_extended.mp3"
+	"wave"			"#music/deathmatch/PlaceholderChthonMusic.wav"
+}
+
+//Harvest temp music.
+"DeathmatchMusic.Mc_Vickers_Final_Frontier"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/deathmatch/mc_vickers_final_frontier.wav"
 }

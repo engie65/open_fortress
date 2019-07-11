@@ -1,4 +1,4 @@
-	WeaponData
+WeaponData
 {
 	// Attributes Base.
 	"printname"			"#TF_Weapon_Crowbar"
@@ -28,7 +28,7 @@
 	
 	// bucket_dms.	
 	"bucket_dm"			"0"
-	"bucket_dm_position"		"3"
+	"bucket_dm_position"		"4"
 
 	// Model & Animation
 	"viewmodel"			"models/weapons/v_models/v_crowbar_mercenary.mdl"

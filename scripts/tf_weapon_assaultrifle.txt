@@ -4,7 +4,7 @@ WeaponData
 	"printname"		"#TF_Weapon_AR"
 	"BuiltRightHanded"	"0"
 	"weight"		"2"
-	"WeaponType"		"primary"
+	"WeaponType"		"secondary"
 	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 		
 	// Attributes TF.
@@ -12,11 +12,11 @@ WeaponData
 	"InstagibDamage"	"999"
 	"Range"			"8192"
 	"BulletsPerShot"	"1"
-	"Spread"		"0.025"
+	"Spread"		"0.018"
 	"TimeIdle"		"10.0"
-	"TimeIdleEmpty"		"1.0"
+	"TimeIdleEmpty"		"0.8"
 	"TimeFireDelay"		"0.1"
-	"BurstFireDelay"    "0.3"
+	"BurstFireDelay"    "0.2"
 	"BurstSize"         "3"
 	"TimeReload"	"2.36"
 	"ProjectileType"	"projectile_bullet"
@@ -27,7 +27,7 @@ WeaponData
 	"DontDrop"	"1"
 
 	// Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_ASSAULTRIFLE"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"	"None"
 	clip_size		"30"
 	default_clip		"30"

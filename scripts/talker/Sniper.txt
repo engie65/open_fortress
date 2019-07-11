@@ -749,6 +749,18 @@ Rule PlayerPositiveSniper
 	Response PlayerPositiveSniper
 }
 
+Response PlayerRespawnSniper
+{
+	scene "scenes/Player/Sniper/low/Respawn01.vcd" 
+	scene "scenes/Player/Sniper/low/Respawn02.vcd" 
+	scene "scenes/Player/Sniper/low/Respawn03.vcd" 
+}
+Rule PlayerRespawnSniper
+{
+	criteria ConceptPlayerRespawn 30PercentChance IsSniper
+	Response PlayerRespawnSniper
+}
+
 Response PlayerTauntsSniper
 {
 	scene "scenes/Player/Sniper/low/LaughEvil03.vcd" 

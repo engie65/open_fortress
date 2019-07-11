@@ -3,6 +3,7 @@
 	"$baseTexture" "models/weapons/v_physcannon/v_physcannon_custom"
 	"$bumpmap" "models/weapons/v_physcannon/v_physcannon_n"
 
+	"$glowcolor" "1"
 	"$phong" "1"
 	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
 	"$phongexponent" "10"
@@ -46,8 +47,36 @@
 	
 	"Proxies"
 	{
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
+		}
 		"spy_invis"
 		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar""$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"	"$glowcolor"
+			"resultVar"	"$color2"
 		}
 		"spy_invis"
 		{

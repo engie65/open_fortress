@@ -19,7 +19,7 @@ fWeaponData
 	"TimeIdleEmpty"			"0.25"
 	"TimeReload"			"0.5"
 	
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"clip_size"			"6"
 	"default_clip"			"6"
 	"MaxAmmo"	"32"

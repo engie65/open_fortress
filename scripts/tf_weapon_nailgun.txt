@@ -18,11 +18,11 @@ WeaponData
 	"ProjectileType"	"projectile_nail"
 
      // Ammo & Clip.
-	"primary_ammo"		"TF_AMMO_PRIMARY"
+	"primary_ammo"		"WEAPON_AMMO"
 	"secondary_ammo"      "None"
 	"clip_size"           "40"
 	"default_clip"        "40"
-	"MaxAmmo"	      "150"
+	"MaxAmmo"	      "160"
 
 	// bucket.	
 	"bucket"			"0"
@@ -30,7 +30,7 @@ WeaponData
 	
 	// bucket_dms.
 	"bucket_dm"		"5"
-	"bucket_dm_position"	"1"
+	"bucket_dm_position"	"2"
 
 	// Animation.
 	"viewmodel"		"models/weapons/v_models/v_nailgun_mercenary.mdl"
