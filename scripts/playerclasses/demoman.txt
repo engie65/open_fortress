@@ -10,17 +10,22 @@ PlayerClass
 	// Models.
 	"model"				"models/player/demo.mdl"
 	"model_hwm"			"models/player/hwm/demo.mdl"
-	"model_bot"			"models/bots/demo/bot_demo.mdl"
 	"arm_model"			"models/weapons/c_models/c_demo_arms.mdl"
+	"model_bot"			"models/bots/demo/bot_demo.mdl"
+	"tfc_model"			"models/tfc/player/tfc_demo.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_demo_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"280"
 	"health_max"		"175"
 	"armor_max"			"0"
+	"tfc_speed_max"		"280"
+	"tfc_health_max"	"90"
+	"tfc_armor_max"		"120"
 
 	// Grenades.
 	"grenade1"			"TF_GRENADE_NORMAL"
-	"grenade2"			"TF_GRENADE_MIRV_DEMOMAN"
+	"grenade2"			"TF_GRENADE_MIRV"
 	"grenade3"			"NONE"
 
 	// Weapons.
@@ -33,12 +38,21 @@ PlayerClass
 	"weapon7"			"NONE"
 	"weapon8"			"NONE"
 	"weapon9"			"NONE"
+	"tfc_weapon1"		"TFC_WEAPON_CROWBAR"
+	"tfc_weapon2"		"TFC_WEAPON_SHOTGUN_SG"
+	"tfc_weapon3"		"TFC_WEAPON_GRENADELAUNCHER"
+	"tfc_weapon4"		"TFC_WEAPON_PIPEBOMBLAUNCHER"
+	"tfc_weapon5"		"NONE"
+	"tfc_weapon6"		"NONE"
+	"tfc_weapon7"		"NONE"
+	"tfc_weapon8"		"NONE"
+	"tfc_weapon9"		"NONE"
 	
 	// Buildables.
-	"buildable1"		"NONE"
-	"buildable2"		"NONE"
-	"buildable3"		"NONE"
-	"buildable4"		"NONE"
+	"buildable1"		"OBJ_SENTRYGUN"
+	"buildable2"		"OBJ_DISPENSER"
+	"buildable3"		"OBJ_TELEPORTER_ENTRANCE"
+	"buildable4"		"OBJ_TELEPORTER_EXIT"
 
 	// Death Sounds.
 	"sound_death"					"Demoman.Death"

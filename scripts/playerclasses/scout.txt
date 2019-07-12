@@ -10,13 +10,18 @@ PlayerClass
 	// Models.
 	"model"				"models/player/scout.mdl"
 	"model_hwm"			"models/player/hwm/scout.mdl"
-	"model_bot"			"models/bots/scout/bot_scout.mdl"
 	"arm_model"			"models/weapons/c_models/c_scout_arms.mdl"
+	"model_bot"			"models/bots/scout/bot_scout.mdl"
+	"tfc_model"			"models/tfc/player/tfc_scout.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_scout_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"400"
 	"health_max"		"125"
 	"armor_max"			"0"
+	"tfc_speed_max"		"400"
+	"tfc_health_max"	"75"
+	"tfc_armor_max"		"50"
 
 	// Grenades.
 	"grenade1"			"TF_GRENADE_CALTROP"
@@ -33,12 +38,21 @@ PlayerClass
 	"weapon7"			"NONE"
 	"weapon8"			"NONE"
 	"weapon9"			"NONE"
+	"tfc_weapon1"		"TFC_WEAPON_CROWBAR"
+	"tfc_weapon2"		"TFC_WEAPON_SHOTGUN_SB"
+	"tfc_weapon3"		"TFC_WEAPON_NAILGUN"
+	"tfc_weapon4"		"NONE"
+	"tfc_weapon5"		"NONE"
+	"tfc_weapon6"		"NONE"
+	"tfc_weapon7"		"NONE"
+	"tfc_weapon8"		"NONE"
+	"tfc_weapon9"		"NONE"
 	
 	// Buildables.
-	"buildable1"		"NONE"
-	"buildable2"		"NONE"
-	"buildable3"		"NONE"
-	"buildable4"		"NONE"
+	"buildable1"		"OBJ_SENTRYGUN"
+	"buildable2"		"OBJ_DISPENSER"
+	"buildable3"		"OBJ_TELEPORTER_ENTRANCE"
+	"buildable4"		"OBJ_TELEPORTER_EXIT"
 
 	// Death Sounds.
 	"sound_death"					"Scout.Death"

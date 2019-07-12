@@ -10,13 +10,18 @@ PlayerClass
 	// Models.
 	"model"				"models/player/heavy.mdl"
 	"model_hwm"			"models/player/hwm/heavy.mdl"
-	"model_bot"			"models/bots/heavy/bot_heavy.mdl"
 	"arm_model"			"models/weapons/c_models/c_heavy_arms.mdl"
+	"model_bot"			"models/bots/heavy/bot_heavy.mdl"
+	"tfc_model"			"models/tfc/player/tfc_heavy.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_heavy_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"230"
 	"health_max"		"300"
 	"armor_max"			"0"
+	"tfc_speed_max"		"230"
+	"tfc_health_max"	"100"
+	"tfc_armor_max"		"300"
 
 	// Grenades.
 	"grenade1"			"TF_GRENADE_NORMAL"
@@ -33,13 +38,22 @@ PlayerClass
 	"weapon7"			"NONE"
 	"weapon8"			"NONE"
 	"weapon9"			"NONE"
+	"tfc_weapon1"		"TFC_WEAPON_CROWBAR"
+	"tfc_weapon2"		"TFC_WEAPON_SHOTGUN_SB"
+	"tfc_weapon3"		"TFC_WEAPON_SHOTGUN_DB"
+	"tfc_weapon4"		"TFC_WEAPON_ASSAULTCANNON"
+	"tfc_weapon5"		"NONE"
+	"tfc_weapon6"		"NONE"
+	"tfc_weapon7"		"NONE"
+	"tfc_weapon8"		"NONE"
+	"tfc_weapon9"		"NONE"
 	
 	// Buildables.
-	"buildable1"		"NONE"
-	"buildable2"		"NONE"
-	"buildable3"		"NONE"
-	"buildable4"		"NONE"
-
+	"buildable1"		"OBJ_SENTRYGUN"
+	"buildable2"		"OBJ_DISPENSER"
+	"buildable3"		"OBJ_TELEPORTER_ENTRANCE"
+	"buildable4"		"OBJ_TELEPORTER_EXIT"
+	
 	// Death Sounds.
 	"sound_death"					"Heavy.Death"
 	"sound_crit_death"				"Heavy.CritDeath"

@@ -6,7 +6,7 @@ KaidemonLP
 Programming:
 Alex Episode
 MaartenS11
-Rara
+Rara Cerberus
 Chrissy
 Jill Nesbit
 Nbc66
@@ -37,7 +37,7 @@ Omniary
 Viewmodel rigging and animations:
 Polybagel
 Ficool2
-Rara
+Rara Cerberus
 Hex
 
 Weapon and cosmetic models/textures:

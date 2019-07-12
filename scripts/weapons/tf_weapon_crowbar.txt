@@ -31,7 +31,7 @@ WeaponData
 	"bucket_dm_position"		"4"
 
 	// Model & Animation
-	"viewmodel"			"models/weapons/v_models/v_crowbar_mercenary.mdl"
+	"viewmodel"			"models/weapons/v_models/v_crowbar_mercenary_old.mdl"
 	"playermodel"			"models/weapons/w_models/w_crowbar.mdl"
 	"anim_prefix"			"bat"
 
