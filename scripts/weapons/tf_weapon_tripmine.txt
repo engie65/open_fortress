@@ -62,19 +62,19 @@ WeaponData
 	{
 		"weapon"
 		{
-			"file"		"sprites/640hud3"
-			"x"			"0"
-			"y"			"90"
-			"width"		"170"
-			"height"	"45"
+				"file"		"sprites/bucket_tripmine"
+				"x"		"0"
+				"y"		"0"
+				"width"		"200"
+				"height"		"128"
 		}
 		"weapon_s"
-		{
-			"file"		"sprites/640hud6"
-			"x"			"0"
-			"y"			"90"
-			"width"		"170"
-			"height"	"45"
+		{	
+				"file"		"sprites/bucket_tripmine"
+				"x"		"0"
+				"y"		"0"
+				"width"		"200"
+				"height"		"128"
 		}
 		"ammo"
 		{

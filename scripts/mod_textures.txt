@@ -598,15 +598,6 @@
 				"width"		"96"
 				"height"	"32"
 		}
-		"revolver_mercenary"
-		{
-				"dfile"	"HUD/d_images"
-				"dnegfile"	"HUD/dneg_images"
-				"x"		"96"
-				"y"		"32"
-				"width"		"96"
-				"height"	"32"
-		}
 		"flaregun"
 		{
 				"dfile"	"HUD/d_images"
@@ -633,8 +624,8 @@
 				"y"		"192"
 				"width"		"96"
 				"height"	"32"
-		}		
-		"pipebomb_launcher"
+		}
+		"pipe"
 		{
 				"dfile"	"HUD/d_images"
 				"dnegfile"	"HUD/dneg_images"
@@ -643,6 +634,33 @@
 				"width"		"96"
 				"height"	"32"
 		}		
+		"pipe_remote"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"96"
+				"y"		"224"
+				"width"		"96"
+				"height"	"32"
+		}			
+		"pipebomblauncher"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"96"
+				"y"		"224"
+				"width"		"96"
+				"height"	"32"
+		}	
+		"pipebomb_launcher"
+		{
+				"dfile"	"HUD/d_images"
+				"dnegfile"	"HUD/dneg_images"
+				"x"		"96"
+				"y"		"224"
+				"width"		"96"
+				"height"	"32"
+		}			
 		"vehicle"
 		{
 				"dfile"	"HUD/d_images"
@@ -3896,6 +3914,86 @@
 				"y"		"129"
 				"width"		"58"
 				"height"	"35"
+		}
+		"d_tripmine"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"190"
+				"y"		"132"
+				"width"		"60"
+				"height"	"32"
+		}
+		"dneg_tripmine"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"190"
+				"y"		"132"
+				"width"		"60"
+				"height"	"32"
+		}
+		"d_tripmine_placed"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"190"
+				"y"		"132"
+				"width"		"60"
+				"height"	"32"
+		}
+		"dneg_tripmine_placed"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"190"
+				"y"		"132"
+				"width"		"60"
+				"height"	"32"
+		}
+		"d_super_rocketlauncher"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"127"
+				"y"		"166"
+				"width"		"96"
+				"height"	"37"
+		}
+		"dneg_super_rocketlauncher"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"127"
+				"y"		"166"
+				"width"		"96"
+				"height"	"37"
+		}
+		"d_revolver_mercenary"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"126"
+				"y"		"207"
+				"width"		"66"
+				"height"	"34"
+		}
+		"dneg_revolver_mercenary"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"126"
+				"y"		"207"
+				"width"		"66"
+				"height"	"34"
+		}
+		"d_lightning_gun"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"219"
+				"y"		"0"
+				"width"		"95"
+				"height"	"33"
+		}
+		"dneg_lightning_gun"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"219"
+				"y"		"0"
+				"width"		"95"
+				"height"	"33"
 		}
 	}
 }
