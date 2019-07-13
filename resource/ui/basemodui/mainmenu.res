@@ -75,7 +75,7 @@
 			"id"				"BtnCoOp"
 			"name"				"#L4D360UI_ModeCaps_COOP"
 			"image"				"vgui/menu_mode_campaign"
-			"command"			"FlmCampaignFlyout"
+			"command"			"OpenServerBrowser"
 			"menutitle"			"PLAY GAME"
 			"menuhint"			"Search for active game servers"
 		}
@@ -121,7 +121,7 @@
 		"labelText"				"#GameUI_GameMenu_LoadGame"
 		"tooltiptext"			"#HL2CEUI_LoadGame_ToolTip"
 		"style"					"MainMenuButton"
-		"command"				"LoadLastSave"
+		"command"				"engine gameuicommand OpenServerBrowser"
 		"ActivationType"		"1"
 	}
 
