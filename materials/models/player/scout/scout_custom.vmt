@@ -30,9 +30,9 @@
 	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
 
 	"$blendtintbybasealpha"		"1"
-	"$blendtintcoloroverbase"		"1"
+	//"$blendtintcoloroverbase"		"1"
 	"$colortint_base"		"{0 0 0}"
-	"$color2"		"{180 180 180}"
+	"$color2"		"{93 72 117}"
 	"$colortint_tmp"		"[0 0 0]"
 	
 	
