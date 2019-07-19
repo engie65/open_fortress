@@ -1,5 +1,5 @@
 "LightmappedGeneric"
 {
-	"$basetexture" "signs/PINK"
+	"$basetexture" "vgui\logos\PINK"
 	"$translucent" 1
 }

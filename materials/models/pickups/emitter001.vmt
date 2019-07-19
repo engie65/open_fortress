@@ -5,7 +5,7 @@
 	
 	"$selfillummask" 	"models\pickups/emitter001_illum"
 	
-	"$envmap" "env_cubemap"
+//	"$envmap" "env_cubemap"
 	"$envmaptint" "[.2 .2 .2]"
 	
 	"$phong" "1"
