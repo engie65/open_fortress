@@ -13,7 +13,6 @@
 //Thank you!
 //
 //SONG LIST:
-//DeathmatchMusic.ScaryMonsters
 //DeathmatchMusic.AtFortressGate
 //DeathmatchMusic.AtFortressGate_Waiting
 //DeathmatchMusic.AtFortressGate_Ending
@@ -41,18 +40,6 @@
 //DeathmatchMusic.Healer
 //DeathmatchMusic.DMStuff
 //DeathmatchMusic.Mayann
-//DeathmatchMusic.22_LG_Orbifold
-
-//Scary Monsters and Nice Sprites MIDI, author unknown, original by Skrillex
-//Included as a reference to the Doom mod "Tomb Fetus" by DrPyspy where dm_wiseau is accompanied by this track.
-"DeathmatchMusic.ScaryMonsters"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/scarymonsters.wav"
-}
 
 //Cover of At Doom's Gate (E1M1) from DOOM, by MrModez
 "DeathmatchMusic.AtFortressGate"
@@ -314,7 +301,7 @@
 	"wave"			"#music/deathmatch/healerstalks_loop.wav"
 }
 
-//DMStuff by Magnus. Debatably a cover of "Cradle" from Goldeneye 007 but not really.
+//DMStuff by Magnus
 "DeathmatchMusic.DMStuff"
 {
 	"channel"		"CHAN_STATIC"
@@ -345,7 +332,7 @@
 	"wave"			"#music/deathmatch/dm_magnumsmooth_loop.wav"
 }
 
-//Watergate music. Discombobulate from the Sherlock Holmes (2009) soundtrack
+//Watergate music. Rise of the Living Bread from TF2
 "DeathmatchMusic.Watergate"
 {
 	"channel"		"CHAN_STATIC"
@@ -355,7 +342,7 @@
 	"wave"			"#music/deathmatch/watergate_loop.wav"
 }
 
-//Watergate waiting music. Daud Encounter from the Dishonored soundtrack
+//Watergate waiting music. Dapper Cadaver from TF2
 "DeathmatchMusic.Watergate_Waiting"
 {
 	"channel"		"CHAN_STATIC"
@@ -385,17 +372,7 @@
 	"wave"			"#music/deathmatch/dm_wiseau_loop.wav"
 }
 
-//Half-Life 2 LG Orbifold Soundtrack 
-"DeathmatchMusic.22_LG_Orbifold"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/deathmatch/22_LG_Orbifold.wav"
-}
-
-//Chthon Placeholder Music, from the PowerSlave/Exhumed soundtrack
+//Chthon Placeholder Music
 "DeathmatchMusic.Chthon"
 {
 	"channel"		"CHAN_STATIC"
