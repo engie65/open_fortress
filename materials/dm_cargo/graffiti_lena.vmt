@@ -1,6 +1,6 @@
 "LightmappedGeneric"
 {
-	"$baseTexture" "Overlays/logo_morgansons"
+	"$baseTexture" "DM_Cargo/Graffiti_Lena"
 	"$decal" 1
 	"$decalscale" .25
 	"$translucent" 1
