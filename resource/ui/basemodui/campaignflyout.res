@@ -7,9 +7,7 @@
 		"xpos"					"0"
 		"ypos"					"0"
 		"zpos"					"-1"
-		"wide"					"180" [$ENGLISH]
-		"wide"					"400" [!$ENGLISH]
-		"tall"					"65"  [$X360]
+		"wide"					"400"
 		"tall"					"85"  [$WIN32]
 		"visible"				"1"
 		"enabled"				"1"
@@ -31,68 +29,19 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"wrap"					"1"
-		"navUp"					"BtnPlayCoopWithFriends"	[$X360]
-		"navUp"					"BtnPlayOnGroupServer"		[$WIN32]
-		"navDown"				"BtnPlayCoopWithAnyone"
-		"labelText"				"#L4D360UI_FoudGames_CreateNewFlyout"
-		"tooltiptext"			"#L4D360UI_FoudGames_CreateNewFlyout"
-		"disabled_tooltiptext"	"#L4D360UI_FoudGames_CreateNewFlyout"
+		"navUp"					"BtnServerBrowser"		[$WIN32]
+		"navDown"				"BtnServerBrowser"
+		"labelText"				"CreateServer"
+		"tooltiptext"			""
+		"disabled_tooltiptext"	""
 		"style"					"FlyoutMenuButton"
-		"command"				"CreateGame"
+		"command"				"CreateServer"
 	}
-
-	"BtnPlayCoopWithFriends"
-	{
-		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnPlayCoopWithFriends"
-		"xpos"					"0"
-		"ypos"					"20"
-		"wide"					"150"
-		"tall"					"20"
-		"autoResize"			"1"
-		"pinCorner"				"0"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"wrap"					"1"
-		"navUp"					"BtnPlayCoopWithAnyone"
-		"navDown"				"BtnQuickMatch"			[$X360]
-		"navDown"				"BtnPlayOnGroupServer"	[$WIN32]
-		"labelText"				"#L4D360UI_MainMenu_PlayCoopWithFriends"
-		"tooltiptext"			"#L4D360UI_MainMenu_PlayCoopWithFriends_Tip"
-		"disabled_tooltiptext"	"#L4D360UI_MainMenu_PlayCoopWithFriends_Tip_Disabled"
-		"style"					"FlyoutMenuButton"
-		"command"				"FriendsMatch_campaign"
-	}
-
-	"BtnPlayCoopWithAnyone"
-	{
-		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnPlayCoopWithAnyone"
-		"xpos"					"0"
-		"ypos"					"40"
-		"wide"					"150"
-		"tall"					"20"
-		"autoResize"			"1"
-		"pinCorner"				"0"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"wrap"					"1"
-		"navUp"					"BtnQuickMatch"
-		"navDown"				"BtnPlayCoopWithFriends"
-		"labelText"				"#L4D360UI_CustomMatch"	[$X360]
-		"labelText"				"#L4D360UI_MainMenu_PlayOnline" [$WIN32]
-		"tooltiptext"			"#L4D360UI_MainMenu_PlayCoopWithAnyone_Tip"
-		"disabled_tooltiptext"	"#L4D360UI_MainMenu_PlayCoopWithAnyone_Tip_Disabled"
-		"style"					"FlyoutMenuButton"
-		"command"				"CustomMatch_"
-	}	
 	
-	"BtnPlayOnGroupServer" [$WIN32]
+	"BtnServerBrowser" 
 	{
 		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnPlayOnGroupServer"
+		"fieldName"				"BtnServerBrowser"
 		"xpos"					"0"
 		"ypos"					"60"
 		"wide"					"150"
@@ -103,35 +52,13 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"wrap"					"1"
-		"navUp"					"BtnPlayCoopWithFriends"
-		"navDown"				"DrpCreateGame"
-		"labelText"				"#L4D360UI_MainMenu_DedicatedServerBrowser"
-		"tooltiptext"			"#L4D360UI_MainMenu_DedicatedServerBrowser"
-		"disabled_tooltiptext"	"#L4D360UI_MainMenu_DedicatedServerBrowser"
+		"navUp"					"BtnCreateGame"
+		"navDown"				"BtnCreateGame"
+		"labelText"				"Server Browser"
+		"tooltiptext"			"Server Browser"
+		"disabled_tooltiptext"	"Server Browser"
 		"style"					"FlyoutMenuButton"
 		"command"				"OpenServerBrowser"
-		//"command"				"GroupServer_"
 	}
 	
-	"DrpCreateGame"
-	{
-		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"DrpCreateGame"
-		"xpos"					"0"
-		"ypos"					"80"
-		"wide"					"150"
-		"tall"					"20"
-		"autoResize"			"1"
-		"pinCorner"				"0"
-		"visible"				"0"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"wrap"					"1"
-		"navUp"					"BtnPlayOnGroupServer"
-		"navDown"				"BtnQuickMatch"
-		//button and label
-		"labelText"				"#L4D360UI_GameSettings_Create_Lobby"
-		"style"					"FlyoutMenuButton"
-		"command"				"CreateGame"
-	}
 }

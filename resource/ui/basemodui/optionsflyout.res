@@ -102,4 +102,26 @@
 		"command"				"Mouse" //"MultiplayerSettings"
 	}
 
+	"BtnMultiplayer"
+	{
+		"ControlName"			"BaseModHybridButton"
+		"fieldName"				"BtnMultiplayer"
+		"xpos"					"0"
+		"ypos"					"80"
+		"wide"					"150"
+		"tall"					"20"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"proportionalToParent"	"1"
+		"navUp"					"BtnController"
+		"navDown"				"BtnCloud"
+		"tooltiptext"			"#L4D_multiplayer_tip"
+		"labelText"				"#GameUI_Multiplayer"
+		"style"					"FlyoutMenuButton"
+		"command"				"MultiplayerSettings"
+	}	
+
 }

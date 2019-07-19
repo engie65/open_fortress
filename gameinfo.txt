@@ -11,9 +11,10 @@
 	type			"multiplayer_only"
 	hasportals		"0" // gameui.dll
 	hashdcontent	"0" // gameui.dll
-	nomodels		"1" // gameui.dll
-	nohimodel		"1" // gameui.dll
+	nomodels		"0" // gameui.dll
+	nohimodel		"0" // gameui.dll
 	nocrosshair		"0" // gameui.dll
+	advcrosshair 	"1" // gameui.dll
 	nodifficulty	"1" // gameui.dll
 	supportsvr		"0" // engine.dll + gameui.dll
 	bots			"0" // gameui.dll
@@ -110,12 +111,6 @@
 			game				|all_source_engine_paths|hl2/hl2_misc.vpk
 			game				|all_source_engine_paths|hl2
 			
-			game				"|all_source_engine_paths|../Source SDK Base 2013 Singleplayer/ep2/ep2_pak.vpk"
-			game				"|all_source_engine_paths|../Source SDK Base 2013 Singleplayer/ep2"
-			
-			game				"|all_source_engine_paths|../Source SDK Base 2013 Singleplayer/episodic/ep1_pak.vpk"
-			game				"|all_source_engine_paths|../Source SDK Base 2013 Singleplayer/episodic"
-			
 			game				|all_source_engine_paths|hl2mp/sourcetest_pak.vpk
 			game				|all_source_engine_paths|hl2mp
 			
@@ -127,7 +122,6 @@
 			
 			game+download		|gameinfo_path|download
 			
-			game				"E:\Moding games\steamapps\common\Team Fortress 2\tf"
 		}
 	}
 }
