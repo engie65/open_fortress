@@ -106,6 +106,7 @@ Muddy (Grain)
 
 Open Fortress - List of community contributors:
 
+Cori - cl_showpos_xy and of_healonkill convars
 Occune - Russian translation
 Technochips - French translation
 
