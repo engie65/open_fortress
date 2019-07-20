@@ -75,6 +75,7 @@ DESCRIPTION SERVER_OPTIONS
 		{ NUMBER 0 -1 }
 		{ "0" }
 	}
+	
 	"mp_maxrounds"
 	{
 		"#TF_MaxRounds"
@@ -94,37 +95,28 @@ DESCRIPTION SERVER_OPTIONS
         { "-1" }
     }
 	
-	"ofd_instagib"
-	{
-		"#TF_Instagib"
-        {
-            LIST        
-            "#TF_Option_OFF" 		"0"
-			"#TF_Instagib_CROWBAR"	"1"
-			"#TF_Instagib_RAILGUN" 	"2"
-        }
-        { "0" }
-	}
-	
 	"ofd_gungame"
 	{
 		"#TF_GunGame"
         {
             LIST        
-            "#TF_Option_OFF" 		"0"
-			"#TF_Option_ON"			"1"
+            "#TF_Option_OFF" 	"0"
+			"#TF_Option_ON"		"1"
         }
         { "0" }
 	}
 	
-	"ofd_clanarena"
+	"ofd_mutators"
 	{
-		"#TF_ClanArena"
+		"#TF_Mutators"
         {
             LIST        
             "#TF_Option_OFF" 		"0"
-			"#TF_Option_ON"			"1"
-			"#TF_ClanArena_TRINITY"	"2"
+			"#TF_Instagib"			"1"
+			"#TF_InstagibNoMelee" 	"2"
+			"#TF_ClanArena"			"3"
+			"#TF_UnholyTrinity"		"4"
+			"#TF_RocketArena"		"5"
         }
         { "0" }
 	}
