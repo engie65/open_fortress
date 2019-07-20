@@ -95,17 +95,6 @@ DESCRIPTION SERVER_OPTIONS
         { "-1" }
     }
 	
-	"ofd_gungame"
-	{
-		"#TF_GunGame"
-        {
-            LIST        
-            "#TF_Option_OFF" 	"0"
-			"#TF_Option_ON"		"1"
-        }
-        { "0" }
-	}
-	
 	"ofd_mutators"
 	{
 		"#TF_Mutators"
@@ -117,6 +106,7 @@ DESCRIPTION SERVER_OPTIONS
 			"#TF_ClanArena"			"3"
 			"#TF_UnholyTrinity"		"4"
 			"#TF_RocketArena"		"5"
+			"#TF_GunGame"			"6"
         }
         { "0" }
 	}
