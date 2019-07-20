@@ -1,7 +1,7 @@
-fWeaponData
+WeaponData
 {
 	// Attributes Base.
-	"printname"			"#TF_Weapon_Shotgun"
+	"printname"			"#TF_Weapon_Shotgun_SB"
 	"BuiltRightHanded"		"0"
 	"weight"			"2"
 	"WeaponType"			"secondary"
@@ -18,10 +18,11 @@ fWeaponData
 	"TimeIdle"			"5.0"
 	"TimeIdleEmpty"			"0.25"
 	"TimeReload"			"0.5"
+	
 	"primary_ammo"		"WEAPON_AMMO"
 	"clip_size"			"6"
 	"default_clip"			"6"
-	"MaxAmmo"	"32"
+	"MaxAmmo"	"50"
 	
 	"ProjectileType"		"projectile_bullet"
 	"AmmoPerShot"			"1"
@@ -38,10 +39,10 @@ fWeaponData
 	
 	// bucket_dms.
 	"bucket_dm"			"2"
-	"bucket_dm_position"		"3"
+	"bucket_dm_position"		"2"
 
 	// Animation.
-	"viewmodel"				"models/weapons/v_models/v_shotgun_heavy.mdl"
+	"viewmodel"     		"models/weapons/v_models/v_shotgun_merc.mdl"
 	
 	"playermodel"   "models/weapons/w_models/w_shotgun.mdl"
 	"anim_prefix"   "shotgun"

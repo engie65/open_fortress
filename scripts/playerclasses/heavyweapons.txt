@@ -12,8 +12,8 @@ PlayerClass
 	"model_hwm"			"models/player/hwm/heavy.mdl"
 	"arm_model"			"models/weapons/c_models/c_heavy_arms.mdl"
 	"model_bot"			"models/bots/heavy/bot_heavy.mdl"
-	"tfc_model"			"models/tfc/player/tfc_heavy.mdl"
-	"tfc_arm_model"		"models/weapons/c_models/c_heavy_arms.mdl"
+	"tfc_model"			"models/player/heavy.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_tfc_heavy_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"230"

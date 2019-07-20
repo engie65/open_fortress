@@ -1,64 +1,49 @@
 WeaponData
 {
 	// Attributes Base.
-	"printname"			"#TF_Weapon_Shotgun"
+	"printname"				"#TF_Weapon_Medigun"
 	"BuiltRightHanded"		"0"
-	"weight"			"2"
-	"WeaponType"			"secondary"
+	"weight"				"3"
+	"WeaponType"		"secondary"
 	"ITEM_FLAG_NOITEMPICKUP" 	"1"
 	
 	// Primary Attributes
-	"Damage"				"6"
+	"Damage"				"-24"
 	"InstagibDamage"	"999"
-	"Range"					"8192"
-	"BulletsPerShot"		"10"
-	"Spread"				"0.0675"
-	"PunchAngle"			"2.0"
-	"TimeFireDelay"			"0.625"
+	"Range"					"450"
+	"TimeFireDelay"			"0.5"
 	"TimeIdle"				"5.0"
 	"TimeIdleEmpty"			"0.25"
+	"TimeReloadStart"		"0.1"
 	"TimeReload"			"0.5"
-	
-	"primary_ammo"		"WEAPON_AMMO"
-	"clip_size"				"6"
-	"default_clip"			"6"
-	"MaxAmmo"	"32"
-	
+	"primary_ammo"			"None"
 	"ProjectileType"		"projectile_bullet"
-	"AmmoPerShot"			"1"
 	"HasTeamSkins_Viewmodel"			"1"
-	"HasTeamSkins_Worldmodel"			"1"
-	
-	"DoInstantEjectBrass"	"0"
-	"BrassModel"			"models/weapons/shells/shell_shotgun.mdl"	
-	"TracerEffect"		"bullet_shotgun_tracer01"
+	"HasTeamSkins_Worldmodel"	"1"
 
 	// bucket.	
-	"bucket"			"1"
+	"bucket"			"8"
 	"bucket_position"		"0"
 	
 	// bucket_dms.
-	"bucket_dm"			"2"
-	"bucket_dm_position"		"5"
+	"bucket_dm"			"8"
+	"bucket_dm_position"		"0"
 
 	// Animation.
-	"viewmodel"				"models/weapons/v_models/v_shotgun_pyro.mdl"
+	"viewmodel"			"models/weapons/v_models/v_medigun_medic.mdl"
+	"playermodel"			"models/weapons/w_models/w_medigun.mdl"
+	"anim_prefix"			"shotgun"
 	
-	"playermodel"   "models/weapons/w_models/w_shotgun.mdl"
-	"anim_prefix"   "shotgun"
-
 	// Muzzleflash
-	"MuzzleFlashParticleEffect" "muzzle_shotgun"
-	
+	"MuzzleFlashModel"	"models/effects/sentry1_muzzle/sentry1_muzzle.mdl"
+	"MuzzleFlashModelDuration"	"0.1"
+
 	// Sounds.
 	// Max of 16 per category (ie. max 16 "single_shot" sounds).
 	SoundData
 	{
-		"single_shot"		"Weapon_Shotgun.Single"
-		"empty"			"Weapon_Shotgun.Empty"
-		"reload"		"Weapon_Shotgun.WorldReload"
-		"special1"		"Weapon_Shotgun.Pump"
-		"burst"			"Weapon_Shotgun.SingleCrit"
+		"single_shot"		"WeaponMedigun.Healing"
+		"special1"		"WeaponMedigun.NoTarget"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
@@ -66,7 +51,7 @@ WeaponData
 	{
 		"weapon"
 		{
-				"file"		"sprites/bucket_shotgun"
+				"file"		"sprites/bucket_medigun_red"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -74,7 +59,7 @@ WeaponData
 		}
 		"weapon_s"
 		{	
-				"file"		"sprites/bucket_shotgun"
+				"file"		"sprites/bucket_medigun_blue"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -92,7 +77,7 @@ WeaponData
 		{
 				"file"		"sprites/crosshairs"
 				"x"		"0"
-				"y"		"0"
+				"y"		"64"
 				"width"		"32"
 				"height"	"32"
 		}

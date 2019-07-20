@@ -12,8 +12,8 @@ PlayerClass
 	"model_hwm"			"models/player/hwm/engineer.mdl"
 	"arm_model"			"models/weapons/c_models/c_engineer_arms.mdl"
 	"model_bot"			"models/bots/engineer/bot_engineer.mdl"
-	"tfc_model"			"models/tfc/player/tfc_engineer.mdl"
-	"tfc_arm_model"		"models/weapons/c_models/c_engineer_arms.mdl"
+	"tfc_model"			"models/player/engineer.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_tfc_engineer_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"300"
@@ -38,11 +38,11 @@ PlayerClass
 	"weapon7"			"NONE"
 	"weapon8"			"NONE"
 	"weapon9"			"NONE"
-	"tfc_weapon1"		"TFC_WEAPON_WRENCH"
-	"tfc_weapon2"		"TFC_WEAPON_RAILPISTOL"
-	"tfc_weapon3"		"TFC_WEAPON_SHOTGUN_DB"
-	"tfc_weapon4"		"NONE"
-	"tfc_weapon5"		"NONE"
+	"tfc_weapon1"		"TF_WEAPON_PDA_ENGINEER_BUILD"   //NEEDED FOR BUILDABLES
+	"tfc_weapon2"		"TF_WEAPON_PDA_ENGINEER_DESTROY" //TO WORK PROPERLY
+	"tfc_weapon3"		"TFC_WEAPON_WRENCH"
+	"tfc_weapon4"		"TFC_WEAPON_RAILPISTOL"
+	"tfc_weapon5"		"TFC_WEAPON_SHOTGUN_DB"
 	"tfc_weapon6"		"NONE"
 	"tfc_weapon7"		"NONE"
 	"tfc_weapon8"		"NONE"

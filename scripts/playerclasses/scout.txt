@@ -12,8 +12,8 @@ PlayerClass
 	"model_hwm"			"models/player/hwm/scout.mdl"
 	"arm_model"			"models/weapons/c_models/c_scout_arms.mdl"
 	"model_bot"			"models/bots/scout/bot_scout.mdl"
-	"tfc_model"			"models/tfc/player/tfc_scout.mdl"
-	"tfc_arm_model"		"models/weapons/c_models/c_scout_arms.mdl"
+	"tfc_model"			"models/player/scout.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_tfc_scout_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"400"

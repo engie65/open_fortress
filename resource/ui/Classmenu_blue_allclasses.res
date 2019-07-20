@@ -1,4 +1,4 @@
-"Resource/UI/ClassMenu_mercenary.res"
+"Resource/UI/ClassMenu_blue_allclasses.res"
 {
 	"class"
 	{
@@ -30,10 +30,10 @@
 		"tabPosition"	"0"
 	}
 	
-	"randompc_mercenary"
+	"randompc_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"randompc_mercenary"
+		"fieldName"			"randompc_blue"
 		"xpos"				"c250"
 		"xpos_lodef"				"c217"
 		"xpos_hidef"				"c238"
@@ -55,8 +55,37 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_random_mercenary"
+		"activeimage"		"class_sel_sm_random_blu"
 		"inactiveimage"		"class_sel_sm_random_inactive"
+	}
+	
+	"mercenary_blue"
+	{
+		"ControlName"		"ImageButton"
+		"fieldName"			"mercenary_blue"
+		"xpos"				"c-377"
+		"xpos_hidef"				"c-363"
+		"xpos_lodef"		"c-332"
+		"ypos"				"-5"
+		"ypos_lodef"				"9"
+		"ypos_hidef"				"0"
+		"zpos"				"6"
+		"wide"				"50"
+		"tall"				"100"
+		"autoResize"		"0"
+		"pinCorner"			"2"
+		"visible"			"1"
+		"enabled"			"1"
+		"tabPosition"		"0"
+		"labelText"			""
+		"textAlignment"		"south-west"
+		"Command"			"joinclass mercenary"
+		"Default"			"1"
+		"font"				"MenuKeys"
+		"fgcolor"			"TanDark"
+		"scaleImage"		"1"
+		"activeimage"		"class_sel_sm_mercenary_blu"
+		"inactiveimage"		"class_sel_sm_mercenary_inactive"
 	}
 		
 	"Offense"
@@ -85,10 +114,10 @@
 		"fgcolor"		"TanDark"
 		"fgcolor_lodef"	"TanLight"
 	}
-	"scout_mercenary"
+	"scout_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"scout_mercenary"
+		"fieldName"			"scout_blue"
 		"xpos"				"c-300"
 		"xpos_hidef"				"c-290"
 		"xpos_lodef"		"c-265"
@@ -111,13 +140,13 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_scout_mercenary"
+		"activeimage"		"class_sel_sm_scout_blu"
 		"inactiveimage"		"class_sel_sm_scout_inactive"
 	}
-	"soldier_mercenary"
+	"soldier_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"soldier_mercenary"
+		"fieldName"			"soldier_blue"
 		"xpos"				"c-250"
 		"xpos_hidef"				"c-244"
 		"xpos_lodef"		"c-225"
@@ -140,13 +169,13 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_soldier_mercenary"
+		"activeimage"		"class_sel_sm_soldier_blu"
 		"inactiveimage"		"class_sel_sm_soldier_inactive"
 	}
-	"pyro_mercenary"
+	"pyro_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"pyro_mercenary"
+		"fieldName"			"pyro_blue"
 		"xpos"				"c-200"
 		"xpos_hidef"				"c-194"
 		"xpos_lodef"		"c-180"
@@ -169,7 +198,7 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_pyro_mercenary"
+		"activeimage"		"class_sel_sm_pyro_blu"
 		"inactiveimage"		"class_sel_sm_pyro_inactive"
 	}
 	
@@ -199,10 +228,10 @@
 		"fgcolor"		"TanDark"
 		"fgcolor_lodef"	"TanLight"
 	}
-	"demoman_mercenary"
+	"demoman_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"demoman_mercenary"
+		"fieldName"			"demoman_blue"
 		"xpos"				"c-110"
 		"xpos_lodef"		"c-100"
 		"ypos"				"-5"
@@ -224,13 +253,13 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_demo_mercenary"
+		"activeimage"		"class_sel_sm_demo_blu"
 		"inactiveimage"		"class_sel_sm_demo_inactive"
 	}	
-	"heavyweapons_mercenary"
+	"heavyweapons_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"heavyweapons_mercenary"
+		"fieldName"			"heavyweapons_blue"
 		"xpos"				"c-60"
 		"xpos_lodef"		"c-55"
 		"ypos"				"-5"
@@ -252,13 +281,13 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_heavy_mercenary"
+		"activeimage"		"class_sel_sm_heavy_blu"
 		"inactiveimage"		"class_sel_sm_heavy_inactive"
 	}
-	"engineer_mercenary"
+	"engineer_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"engineer_mercenary"
+		"fieldName"			"engineer_blue"
 		"xpos"				"c-10"
 		"ypos"				"-5"
 		"ypos_lodef"				"9"
@@ -279,7 +308,7 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_engineer_mercenary"
+		"activeimage"		"class_sel_sm_engineer_blu"
 		"inactiveimage"		"class_sel_sm_engineer_inactive"
 	}
 	
@@ -309,10 +338,10 @@
 		"fgcolor"		"TanDark"
 		"fgcolor_lodef"	"TanLight"
 	}
-	"medic_mercenary"
+	"medic_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"medic_mercenary"
+		"fieldName"			"medic_blue"
 		"xpos"				"c78"
 		"xpos_hidef"				"c70"
 		"xpos_lodef"		"c65"
@@ -335,13 +364,13 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_medic_mercenary"
+		"activeimage"		"class_sel_sm_medic_blu"
 		"inactiveimage"		"class_sel_sm_medic_inactive"
 	}
-	"sniper_mercenary"
+	"sniper_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"sniper_mercenary"
+		"fieldName"			"sniper_blue"
 		"xpos"				"c128"
 		"xpos_hidef"				"c120"
 		"xpos_lodef"		"c105"
@@ -364,13 +393,13 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_sniper_mercenary"
+		"activeimage"		"class_sel_sm_sniper_blu"
 		"inactiveimage"		"class_sel_sm_sniper_inactive"
 	}
-	"spy_mercenary"
+	"spy_blue"
 	{
 		"ControlName"		"ImageButton"
-		"fieldName"			"spy_mercenary"
+		"fieldName"			"spy_blue"
 		"xpos"				"c178"
 		"xpos_hidef"				"c170"
 		"xpos_lodef"		"c145"
@@ -393,7 +422,7 @@
 		"font"				"MenuKeys"
 		"fgcolor"			"TanDark"
 		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_spy_mercenary"
+		"activeimage"		"class_sel_sm_spy_blu"
 		"inactiveimage"		"class_sel_sm_spy_inactive"
 	}	
 
@@ -902,4 +931,5 @@
 		"font"			"MenuClassBuckets"
 		"fgcolor"		"TanLight"
 	}								
+
 }
