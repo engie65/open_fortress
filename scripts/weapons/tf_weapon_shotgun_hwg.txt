@@ -41,11 +41,7 @@ fWeaponData
 	"bucket_dm_position"		"3"
 
 	// Animation.
-	"mercenary_viewmodel"	"models/weapons/v_models/v_shotgun_merc.mdl"
-	"soldier_viewmodel"		"models/weapons/v_models/v_shotgun_soldier.mdl"
-	"pyro_viewmodel"		"models/weapons/v_models/v_shotgun_pyro.mdl"
 	"viewmodel"				"models/weapons/v_models/v_shotgun_heavy.mdl"
-	"engineer_viewmodel"	"models/weapons/v_models/v_shotgun_engineer.mdl"
 	
 	"playermodel"   "models/weapons/w_models/w_shotgun.mdl"
 	"anim_prefix"   "shotgun"

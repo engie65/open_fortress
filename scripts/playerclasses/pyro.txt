@@ -11,9 +11,11 @@ PlayerClass
 	"model"				"models/player/pyro.mdl"
 	"model_hwm"			"models/player/hwm/pyro.mdl"
 	"arm_model"			"models/weapons/c_models/c_pyro_arms.mdl"
-	"model_bot"			"models/bots/pyro/bot_pyro.mdl"
-	"tfc_model"			"models/tfc/player/tfc_pyro.mdl"
-	"tfc_arm_model"		"models/weapons/c_models/c_pyro_arms.mdl"
+	"bot_model"			"models/bots/pyro/bot_pyro.mdl"
+	"alt_model"			"models/player/pyro.mdl"
+	"alt_arm_model"		"models/weapons/c_models/c_tfc_pyro_arms.mdl"
+	"tfc_model"			"models/player/pyro.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_tfc_pyro_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"300"

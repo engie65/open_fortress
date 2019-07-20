@@ -58,35 +58,6 @@
 		"activeimage"		"class_sel_sm_random_mercenary"
 		"inactiveimage"		"class_sel_sm_random_inactive"
 	}
-	
-	"mercenary_mercenary"
-	{
-		"ControlName"		"ImageButton"
-		"fieldName"			"mercenary_mercenary"
-		"xpos"				"c-377"
-		"xpos_hidef"				"c-363"
-		"xpos_lodef"		"c-332"
-		"ypos"				"-5"
-		"ypos_lodef"				"9"
-		"ypos_hidef"				"0"
-		"zpos"				"6"
-		"wide"				"50"
-		"tall"				"100"
-		"autoResize"		"0"
-		"pinCorner"			"2"
-		"visible"			"1"
-		"enabled"			"1"
-		"tabPosition"		"0"
-		"labelText"			""
-		"textAlignment"		"south-west"
-		"Command"			"joinclass mercenary"
-		"Default"			"1"
-		"font"				"MenuKeys"
-		"fgcolor"			"TanDark"
-		"scaleImage"		"1"
-		"activeimage"		"class_sel_sm_mercenary_mercenary"
-		"inactiveimage"		"class_sel_sm_mercenary_inactive"
-	}
 		
 	"Offense"
 	{

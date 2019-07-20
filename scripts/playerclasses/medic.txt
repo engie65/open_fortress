@@ -11,9 +11,11 @@ PlayerClass
 	"model"				"models/player/medic.mdl"
 	"model_hwm"			"models/player/hwm/medic.mdl"
 	"arm_model"			"models/weapons/c_models/c_medic_arms.mdl"
-	"model_bot"			"models/bots/medic/bot_medic.mdl"
-	"tfc_model"			"models/tfc/player/tfc_medic.mdl"
-	"tfc_arm_model"		"models/weapons/c_models/c_medic_arms.mdl"
+	"bot_model"			"models/bots/medic/bot_medic.mdl"
+	"alt_model"			"models/player/medic.mdl"
+	"alt_arm_model"		"models/weapons/c_models/c_tfc_medic_arms.mdl"
+	"tfc_model"			"models/player/medic.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_tfc_medic_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"320"
@@ -38,11 +40,11 @@ PlayerClass
 	"weapon7"			"NONE"
 	"weapon8"			"NONE"
 	"weapon9"			"NONE"
-	"tfc_weapon1"		"TFC_WEAPON_MEDKIT"
+	"tfc_weapon1"		"TFC_WEAPON_CROWBAR" //"TFC_WEAPON_MEDKIT"
 	"tfc_weapon2"		"TFC_WEAPON_SHOTGUN_SB"
 	"tfc_weapon3"		"TFC_WEAPON_SHOTGUN_DB"
 	"tfc_weapon4"		"TFC_WEAPON_NAILGUN_SUPER"
-	"tfc_weapon5"		"NONE"
+	"tfc_weapon5"		"TF_WEAPON_MEDIGUN" //temptemp
 	"tfc_weapon6"		"NONE"
 	"tfc_weapon7"		"NONE"
 	"tfc_weapon8"		"NONE"
