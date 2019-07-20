@@ -11,7 +11,9 @@ PlayerClass
 	"model"				"models/player/demo.mdl"
 	"model_hwm"			"models/player/hwm/demo.mdl"
 	"arm_model"			"models/weapons/c_models/c_demo_arms.mdl"
-	"model_bot"			"models/bots/demo/bot_demo.mdl"
+	"bot_model"			"models/bots/demo/bot_demo.mdl"
+	"alt_model"			"models/player/demo.mdl"
+	"alt_arm_model"		"models/weapons/c_models/c_tfc_demo_arms.mdl"
 	"tfc_model"			"models/player/demo.mdl"
 	"tfc_arm_model"		"models/weapons/c_models/c_tfc_demo_arms.mdl"
 	

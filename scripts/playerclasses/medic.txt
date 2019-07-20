@@ -11,7 +11,9 @@ PlayerClass
 	"model"				"models/player/medic.mdl"
 	"model_hwm"			"models/player/hwm/medic.mdl"
 	"arm_model"			"models/weapons/c_models/c_medic_arms.mdl"
-	"model_bot"			"models/bots/medic/bot_medic.mdl"
+	"bot_model"			"models/bots/medic/bot_medic.mdl"
+	"alt_model"			"models/player/medic.mdl"
+	"alt_arm_model"		"models/weapons/c_models/c_tfc_medic_arms.mdl"
 	"tfc_model"			"models/player/medic.mdl"
 	"tfc_arm_model"		"models/weapons/c_models/c_tfc_medic_arms.mdl"
 	

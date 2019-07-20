@@ -11,7 +11,9 @@ PlayerClass
 	"model"				"models/player/sniper.mdl"
 	"model_hwm"			"models/player/hwm/sniper.mdl"
 	"arm_model"			"models/weapons/c_models/c_sniper_arms.mdl"
-	"model_bot"			"models/bots/sniper/bot_sniper.mdl"
+	"bot_model"			"models/bots/sniper/bot_sniper.mdl"
+	"alt_model"			"models/player/sniper.mdl"
+	"alt_arm_model"		"models/weapons/c_models/c_tfc_sniper_arms.mdl"
 	"tfc_model"			"models/player/sniper.mdl"
 	"tfc_arm_model"		"models/weapons/c_models/c_tfc_sniper_arms.mdl"
 	

@@ -11,7 +11,9 @@ PlayerClass
 	"model"				"models/player/spy.mdl"
 	"model_hwm"			"models/player/hwm/spy.mdl"
 	"arm_model"			"models/weapons/c_models/c_spy_arms.mdl"
-	"model_bot"			"models/bots/spy/bot_spy.mdl"
+	"bot_model"			"models/bots/spy/bot_spy.mdl"
+	"alt_model"			"models/player/spy.mdl"
+	"alt_arm_model"		"models/weapons/c_models/c_tfc_spy_arms.mdl"
 	"tfc_model"			"models/player/spy.mdl"
 	"tfc_arm_model"		"models/weapons/c_models/c_tfc_spy_arms.mdl"
 	
