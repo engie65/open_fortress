@@ -1,5 +1,0 @@
-"LightmappedGeneric" {
-	"$basetexture"			"halo/detail_strips"
-	"$bumpmap"				"halo/detail_strips_bump"
-	"$surfaceprop"			"metal"
-}
