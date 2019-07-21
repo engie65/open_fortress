@@ -1,6 +1,6 @@
 "GameInfo"
 {
-	game 			"Open Fortress: Deathmatch"
+	game 			"Open Fortress"
 	title 			""
 	title2			""	
 	gamelogo		"1"

@@ -1,3 +1,6 @@
+# NOTENOTE: This is because you need to manually edit the gameinfo because FileSystem stinky
+gameinfo.txt
+
 # cache
 cache/*
 luacache/*
