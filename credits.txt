@@ -19,7 +19,7 @@ AgitationSkeleton
 TFC Mode Gameplay Lead:
 Stachekip
 
-Mercenary and Civilian concepts and models:
+Mercenary concepts and model:
 DrPyspy
 
 Mercenary gibs and gore effects:
@@ -55,6 +55,9 @@ Drew
 
 Assorted models and prop assets:
 Boomsta
+
+TFC Model Ports:
+Ficool2
 
 Particles and Berserk model:
 FissionMetroid
