@@ -50,6 +50,75 @@ Scheme
 				"tall_hidef"		"24"
 			}
 		}
+		"MainMenuButton"
+		{
+			"1"	[$WIN32]
+			{
+				"name"		"TF2 Build"
+				"tall"		"18"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}	
+		"ServerBrowserTitle"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"35"
+				"tall_lodef"	"40"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"ServerBrowserSmall"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"480 599"
+			}
+			"2"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"600 767"
+			}
+			"3"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"768 1023"
+				"antialias"	"1"
+			}
+			"4"
+			{
+				"name"		"Tahoma"
+				"tall"		"19"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"1024 1199"
+				"antialias"	"1"
+			}
+			"5"
+			{
+				"name"		"Tahoma"
+				"tall"		"19"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"	"1200 6000"
+				"antialias"	"1"
+			}
+		}
 	}
 	
 	CustomFontFiles

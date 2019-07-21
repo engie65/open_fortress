@@ -10,6 +10,8 @@
 // hit ctrl-alt-shift-R in the app to reload this file
 //
 ///////////////////////////////////////////////////////////
+#base "SourceSchemeBase.res"
+
 Scheme
 {
 	//////////////////////// COLORS ///////////////////////////
@@ -55,6 +57,8 @@ Scheme
 		"DarkYellow"		    "136 133 0 255"
 		"TextYellow"        "110 110 84 255"
 	}
+	
+	
 
 	///////////////////// BASE SETTINGS ////////////////////////
 	//
@@ -62,6 +66,32 @@ Scheme
 	// controls use these to determine their settings
 	BaseSettings
 	{
+	
+		// base colors
+		"TransparentPurple" "192 64 192 128"
+		"Purple"			"192 64 192 255"
+		
+		// vgui_controls color specifications
+		Frame.BgColor					"146 108 168 235"
+		Frame.OutOfFocusBgColor			"146 108 168 156"
+		Menu.BgColor					"146 108 168 156"
+		
+		ListPanel.SelectedBgColor						"Purple"
+		ListPanel.SelectedOutOfFocusBgColor				"TransparentPurple"
+		Menu.ArmedBgColor								"Purple"
+		RichText.SelectedBgColor						"Purple"
+		SectionedListPanel.SelectedBgColor				"Purple"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"TransparentPurple"
+		TextEntry.SelectedBgColor						"Purple"
+		TextEntry.OutOfFocusSelectedBgColor				"TransparentPurple"
+		Tooltip.BgColor									"Purple"
+		NewGame.SelectionColor							"Purple"
+		
+		// scheme-specific colors
+		MainMenu.TextColor			"TanLight"
+		MainMenu.ArmedTextColor		"117 107 94 255"
+		MainMenu.Inset				"32"			
+	
 		// vgui_controls color specifications
 		Border.Bright					"200 200 200 196"	// the lit side of a control
 		Border.Dark						"40 40 40 196"		// the dark/unlit side of a control
