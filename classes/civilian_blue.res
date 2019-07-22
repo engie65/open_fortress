@@ -18,7 +18,7 @@
 		{
 			"modelname"	"models/player/civilian.mdl"
 			"modelname_hwm"	"models/player/hwm/civilian.mdl"
-			"skin" "2"
+			"skin" "1"
 			"origin_z" "-51"
 			"vcd"		"scenes/player/civilian/low/paincrticialdeath01.vcd"		
 
