@@ -2377,6 +2377,14 @@
 	"wave"		")weapons/railgun_shoot_crit.wav"
 }
 
+"Weapon_Railgun.Charge"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/railgun_charge.wav"
+}
+
 "Weapon_Railgun.PilotLoop"
 {
 	"channel"	"CHAN_WEAPON"
