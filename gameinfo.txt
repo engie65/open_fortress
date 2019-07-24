@@ -111,10 +111,9 @@
 			//game				"|all_source_engine_paths|..\Team Fortress 2\tf\tf2_sound_vo_english.vpk"
 			//game				"|all_source_engine_paths|..\Team Fortress 2\tf\tf2_textures.vpk"
 			//game				"|all_source_engine_paths|..\Team Fortress 2\tf"
-			
-			//game				|all_source_engine_paths|hl2/hl2_textures.vpk
-			//game				|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
-			//game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
+			//game				"|all_source_engine_paths|..\Team Fortress 2\hl2\hl2_textures.vpk"
+			//game				"|all_source_engine_paths|..\Team Fortress 2\hl2\hl2_sound_vo_english.vpk"
+			//game				"|all_source_engine_paths|..\Team Fortress 2\hl2\hl2_sound_misc.vpk"
 
 			game				|all_source_engine_paths|hl2/hl2_misc.vpk
 			game				|all_source_engine_paths|hl2
