@@ -51,7 +51,7 @@ particles_manifest
 		
     // hl2
 	"file"		"!particles/antlion_blood.pcf"
-	"file"		"!particles/blood_impact.pcf"
+	"file"		"!particles/blood_impact_hl2.pcf"
 	"file"		"!particles/burning_fx.pcf"
 	"file"		"!particles/combineball.pcf"
 	"file"		"!particles/fire_01.pcf"

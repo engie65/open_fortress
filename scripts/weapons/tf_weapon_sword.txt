@@ -31,7 +31,8 @@
 	"bucket_dm_position"		"3"
 
 	// Model & Animation
-	"viewmodel"			"models/weapons/v_models/v_sword_demo.mdl"
+	// temporary until we get a new model
+	"viewmodel"			"models/weapons/v_models/v_shovel_soldier.mdl"
 	"playermodel"			"models/weapons/w_models/w_sword.mdl"
 	"anim_prefix"			"bat"
 
@@ -49,7 +50,7 @@
 	{
 		"weapon"
 		{
-				"file"		"sprites/bucket_sword"
+				"file"		"sprites/bucket_shovel"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"
@@ -57,7 +58,7 @@
 		}
 		"weapon_s"
 		{	
-				"file"		"sprites/bucket_sword"
+				"file"		"sprites/bucket_shovel"
 				"x"		"0"
 				"y"		"0"
 				"width"		"200"

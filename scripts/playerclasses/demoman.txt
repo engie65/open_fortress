@@ -11,9 +11,11 @@ PlayerClass
 	"model"				"models/player/demo.mdl"
 	"model_hwm"			"models/player/hwm/demo.mdl"
 	"arm_model"			"models/weapons/c_models/c_demo_arms.mdl"
-	"model_bot"			"models/bots/demo/bot_demo.mdl"
-	"tfc_model"			"models/tfc/player/tfc_demo.mdl"
-	"tfc_arm_model"		"models/weapons/c_models/c_demo_arms.mdl"
+	"bot_model"			"models/bots/demo/bot_demo.mdl"
+	"alt_model"			"models/player/demo.mdl"
+	"alt_arm_model"		"models/weapons/c_models/c_tfc_demo_arms.mdl"
+	"tfc_model"			"models/player/demo.mdl"
+	"tfc_arm_model"		"models/weapons/c_models/c_tfc_demo_arms.mdl"
 	
 	// Stats.
 	"speed_max"			"280"
@@ -39,7 +41,7 @@ PlayerClass
 	"weapon8"			"NONE"
 	"weapon9"			"NONE"
 	"tfc_weapon1"		"TFC_WEAPON_CROWBAR"
-	"tfc_weapon2"		"TFC_WEAPON_SHOTGUN_SG"
+	"tfc_weapon2"		"TFC_WEAPON_SHOTGUN_SB"
 	"tfc_weapon3"		"TFC_WEAPON_GRENADELAUNCHER"
 	"tfc_weapon4"		"TFC_WEAPON_PIPEBOMBLAUNCHER"
 	"tfc_weapon5"		"NONE"

@@ -1,3 +1,6 @@
+# NOTENOTE: This is because you need to manually edit the gameinfo because FileSystem stinky
+gameinfo.txt
+
 # cache
 cache/*
 luacache/*
@@ -8,6 +11,7 @@ sound/temp/*
 sound.cache
 *.sound.cache
 modelsounds.cache
+voice_ban.dt
 
 # debug symbols
 bin/*.dbg
@@ -54,7 +58,6 @@ tf2_playerstats.dmx
 ep1_playerstats.dmx
 ep2_playerstats.dmx
 cstrike_playerstats.dmx
-jbep3_playerstats.dmx
 media/viewed.res
 custom/*
 
@@ -85,4 +88,3 @@ media\viewed.res
 # sprays
 materials/vgui/logos/ui/*
 materials/vgui/logos/*
-voice_ban.dt

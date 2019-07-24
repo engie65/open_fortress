@@ -1731,7 +1731,109 @@
 // TF2 Buildings
 @BaseClass base(BaseAnimating, TeamNum) = BaseObject
 [
+	defaultupgrade(choices) : "Starting Upgrade Level" : 0 : "Starting upgrade level of the object. With higher levels, the objects gain more health/damage/recharge speed." =
+	[
+		0  : "Level 1"
+		1  : "Level 2"
+		2  : "Level 3"	
+		3  : "Level 4"
+		4  : "Level 5"	
+		5  : "Level 6"	
+		6  : "Level 7"	
+		7  : "Level 8"	
+		8  : "Level 9"	
+		9  : "Level 10"	
+		10 : "Level 11"	
+		11 : "Level 12"	
+		12 : "Level 13"
+		13 : "Level 14"	
+		14 : "Level 15"	
+		15 : "Level 16"	
+		16 : "Level 17"	
+		17 : "Level 18"	
+		18 : "Level 19"	
+		19 : "Level 20"	
+		20 : "Level 21"	
+		21 : "Level 22"
+		22 : "Level 23"	
+		23 : "Level 24"	
+		24 : "Level 25"	
+		25 : "Level 26"	
+		26 : "Level 27"	
+		27 : "Level 28"	
+		28 : "Level 29"	
+		29 : "Level 30"	
+		30 : "Level 31"
+		31 : "Level 32"	
+		32 : "Level 33"	
+		33 : "Level 34"	
+		34 : "Level 35"	
+		35 : "Level 36"	
+		36 : "Level 37"	
+		37 : "Level 38"	
+		38 : "Level 39"	
+		39 : "Level 40"
+		40 : "Level 41"	
+		41 : "Level 42"	
+		42 : "Level 43"	
+		43 : "Level 44"	
+		44 : "Level 45"	
+		45 : "Level 46"	
+		46 : "Level 47"	
+		47 : "Level 48"	
+		48 : "Level 49"
+		49 : "Level 50"	
+		50 : "Level 51"	
+		51 : "Level 52"	
+		52 : "Level 53"	
+		53 : "Level 54"	
+		54 : "Level 55"	
+		55 : "Level 56"	
+		56 : "Level 57"	
+		57 : "Level 58"
+		58 : "Level 59"	
+		59 : "Level 60"	
+		60 : "Level 61"	
+		61 : "Level 62"	
+		62 : "Level 63"	
+		63 : "Level 64"	
+		64 : "Level 65"	
+		65 : "Level 66"	
+		66 : "Level 67"
+		67 : "Level 68"	
+		68 : "Level 69"	
+		69 : "Level 70"	
+		70 : "Level 71"	
+		71 : "Level 72"	
+		72 : "Level 73"	
+		73 : "Level 74"	
+		74 : "Level 75"	
+		75 : "Level 76"
+		76 : "Level 77"	
+		77 : "Level 78"	
+		78 : "Level 79"	
+		79 : "Level 80"	
+		80 : "Level 81"	
+		81 : "Level 82"	
+		82 : "Level 83"	
+		83 : "Level 84"	
+		84 : "Level 85"
+		85 : "Level 86"	
+		86 : "Level 87"	
+		87 : "Level 88"	
+		88 : "Level 89"	
+		89 : "Level 90"	
+		90 : "Level 91"	
+	]
+	
 	SolidToPlayer(boolean) : "Solid to Player?" : 1 : "Make the object solid or non-solid to players. The builder of the object will always be solid to the object."
+	
+	spawnflags(flags) =
+	[
+		2: "Invulnerable - Can still be sapped however" : 0
+		4: "Upgradeable (does nothing)" : 0
+		8: "Infinite Ammo" : 0
+	]
 
 	input SetSolidToPlayer(bool) : "Sets the object to be solid or non-solid to players. 0 - non-solid, 1 - solid."
 	input SetHealth(integer) : "Sets the current and maximum health. If the object is upgraded, the health will scale according to the new value. Crashes if set to 0."
@@ -5831,7 +5933,7 @@
 @PointClass base(Item) studioprop() = item_healthkit_mega : 
     "Mega health kit for players (100 HP overheal)." 
 [
-	model(studio) : "Model" : "models/items/medkit_large.mdl" : "The model this entity should appear as. 128-character limit."
+	model(studio) : "Model" : "models/pickups/megalhealth.mdl" : "The model this entity should appear as. 128-character limit."
 	pickup_sound(sound): "Pickup Sound" : "Healthkit.Touch" : "Sound to play when picking up ammo."
 ]
 
@@ -8313,252 +8415,6 @@
 
 @PointClass base(Projectile) studioprop("models/weapons/w_models/w_syringe_proj.mdl") = tf_projectile_syringe :
     "SyringeGun projectile."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_assault_rifle.mdl") = tf_weapon_assaultrifle :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_bat.mdl") = tf_weapon_bat :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/v_models/v_fist_heavy.mdl") = tf_weapon_fists :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_bonesaw.mdl") = tf_weapon_bonesaw :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_bottle.mdl") = tf_weapon_berserk :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_toolbox.mdl") = tf_weapon_builder :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_machete.mdl") = tf_weapon_club :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_crowbar.mdl") = tf_weapon_crowbar :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_fireaze.mdl") = tf_weapon_fireaxe :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/v_models/v_fist_heavy.mdl") = tf_weapon_fists :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_flamethrower.mdl") = tf_weapon_flamethrower :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_minigun_dm.mdl") = tf_weapon_gatlinggun :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_physcannon_dm.mdl") = tf_weapon_physcannon :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_grenadelauncher.mdl") = tf_weapon_grenadelauncher :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_grenadelauncher_dm.mdl") = tf_weapon_grenadelauncher_mercenary :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/v_models/v_watch_spy.mdl") = tf_weapon_invis :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_knife.mdl") = tf_weapon_knife :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_medigun.mdl") = tf_weapon_medigun :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_minigun.mdl") = tf_weapon_minigun :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_nailgun.mdl") = tf_weapon_nailgun :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher.mdl") = tf_weapon_original :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_builder.mdl") = tf_weapon_pda_engineer_build :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pda_engineer.mdl") = tf_weapon_pda_engineer_destroy :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_cigarette_case.mdl") = tf_weapon_pda_spy :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_stickybomb_launcher.mdl") = tf_weapon_pipebomblauncher :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pistol.mdl") = tf_weapon_pistol :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pistol_akimbo.mdl") = tf_weapon_pistol_akimbo :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pistol_mercenary.mdl") = tf_weapon_pistol_mercenary :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_pistol.mdl") = tf_weapon_pistol_scout :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_sniperrifle.mdl") = tf_weapon_railgun :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_revolver.mdl") = tf_weapon_revolver :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_revolver_dm.mdl") = tf_weapon_revolver_mercenary :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_rocketlauncher.mdl") = tf_weapon_rocketlauncher :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_scattergun.mdl") = tf_weapon_scattergun :
-    "Weapon that can be picked up by players."
-[
-
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_hwg :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_mercenary :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_primary :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_pyro :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shotgun.mdl") = tf_weapon_shotgun_soldier :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_shovel.mdl") = tf_weapon_shovel :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_smg.mdl") = tf_weapon_smg :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_smg_dm.mdl") = tf_weapon_smg_mercenary :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_sniperrifle.mdl") = tf_weapon_sniperrifle :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_scattergun.mdl") = tf_weapon_supershotgun :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_syringegun.mdl") = tf_weapon_syringegun_medic :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_sword.mdl") = tf_weapon_sword :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_tommygun.mdl") = tf_weapon_tommygun :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_umbrella.mdl") = tf_weapon_umbrella :
-    "Weapon that can be picked up by players."
-[
-]
-
-@PointClass base(BaseAnimatingPhysicsWeapon) studioprop("models/weapons/w_models/w_wrench.mdl") = tf_weapon_wrench :
-    "Weapon that can be picked up by players."
 [
 ]
 
