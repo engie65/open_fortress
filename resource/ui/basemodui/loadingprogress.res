@@ -59,9 +59,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"LoadingText"
-		"xpos"					"r223" [$WIN32]
-		"xpos"					"r223" [$X360HIDEF]
-		"xpos"					"r220" [$X360LODEF]
+		"xpos"					"r223"
 		"ypos"					"r55"
 		"zpos"					"5"
 		"wide"					"200"
@@ -74,6 +72,7 @@
 		"Font"					"DefaultBold"
 		"labelText"				"#L4D360UI_Loading"
 		"textAlignment"			"east"
+		"fgcolor_override"		"255 255 255 255"
 		"usetitlesafe"			"1"
 	}	
 	

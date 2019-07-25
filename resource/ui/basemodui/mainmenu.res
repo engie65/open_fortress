@@ -100,10 +100,10 @@
 		"tabPosition"			"0"
 		"navUp"					"BtnOptions"
 		"navDown"				"BtnQuit"
-		"labelText"				"LOADOUT"
-		"tooltiptext"			"Hahaha \n nO"
+		"labelText"				"Stats"
+		"tooltiptext"			"Statistics about playtime and achievements"
 		"style"					"MainMenuButton"
-		"command"				"StatsAndAchievements"
+		"command"				"PlayerStats"
 		"ActivationType"		"1"
 	}
 	

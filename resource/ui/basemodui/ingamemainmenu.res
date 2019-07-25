@@ -47,7 +47,7 @@
 		"enabled"				"1"
 		"tabPosition"			"1"
 		"navUp"					"BtnExitToMainMenu"
-		"navDown"				"BtnSingleplayer"
+		"navDown"				"BtnServerBrowser"
 		"labelText"				"#L4D360UI_InGameMainMenu_ReturnToGame"
 		"tooltiptext"			"#L4D360UI_InGameMainMenu_ReturnToGame_Tip"
 		"style"					"MainMenuButton"
@@ -55,10 +55,10 @@
 		"ActivationType"		"1"
 	}
 
-	"BtnSingleplayer"
+	"BtnServerBrowser"
 	{
 		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnSingleplayer"
+		"fieldName"				"BtnServerBrowser"
 		"xpos"					"100"
 		"ypos"					"185" // "265" 45
 		"wide"					"220"
@@ -69,18 +69,18 @@
 		"enabled"				"1"
 		"tabPosition"				"0"
 		"navUp"					"BtnReturnToGame"
-		"navDown"				"BtnSaveGame"
-		"labelText"				"#GameUI_GameMenu_NewGame"
+		"navDown"				"BtnNewGame"
+		"labelText"				"Server Browser"
 		"tooltiptext"				"#L4D360UI_MainMenu_PlaySolo_Tip"
 		"style"					"MainMenuButton"
-		"command"				"SoloPlay"	
+		"command"				"OpenServerBrowser"	
 		"ActivationType"			"1"
 	}
 
-	"BtnSaveGame"
+	"BtnNewGame"
 	{
 		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnSaveGame"
+		"fieldName"				"BtnNewGame"
 		"xpos"					"100"
 		"ypos"					"210"
 		"wide"					"220"
@@ -90,19 +90,19 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"navUp"					"BtnSingleplayer"
-		"navDown"				"BtnLoadLastGame"
-		"labelText"				"#GameUI_GameMenu_SaveGame"
+		"navUp"					"BtnServerBrowser"
+		"navDown"				"BtnOptions"
+		"labelText"				"Create A server"
 		"tooltiptext"				"#HL2CEUI_SaveGame_ToolTip"
 		"style"					"MainMenuButton"
-		"command"				"SaveGame"
+		"command"				"CreateServer"
 		"ActivationType"		"1"
 	}
 
-	"BtnLoadLastGame"
+	"BtnOptions"
 	{
 		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnLoadLastGame"
+		"fieldName"				"BtnOptions"
 		"xpos"					"100"
 		"ypos"					"235"
 		"wide"					"220"
@@ -112,33 +112,10 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"1"
-		"navUp"					"BtnSaveGame"
-		"navDown"				"BtnLeaderboard"
-		"labelText"				"#GameUI_GameMenu_LoadGame"
-		"tooltiptext"				"#HL2CEUI_LoadGame_ToolTip"
-		"style"					"MainMenuButton"
-		"command"				"LoadLastSave"
-		"ActivationType"		"1"
-	}
-
-	"BtnOptions"
-	{
-		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnOptions"
-		"xpos"					"100"
-		"ypos"					"260"
-		//"ypos"				"260"
-		"wide"					"220"
-		"tall"					"20"
-		"autoResize"			"1"
-		"pinCorner"				"0"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"navUp"					"BtnStatsAndAchievements"
+		"navUp"					"BtnNewGame"
 		"navDown"				"BtnExitToMainMenu"
-		"labelText"				"#L4D360UI_MainMenu_Options"
-		"tooltiptext"			"#L4D360UI_MainMenu_Options_Tip"
+		"labelText"				"Options"
+		"tooltiptext"				"#HL2CEUI_LoadGame_ToolTip"
 		"style"					"MainMenuButton"
 		"command"				"Options"
 		"ActivationType"		"1"
@@ -149,7 +126,7 @@
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnExitToMainMenu"
 		"xpos"					"100"
-		"ypos"					"297"
+		"ypos"					"260"
 		"wide"					"220"
 		"tall"					"20"
 		"autoResize"			"1"
@@ -164,65 +141,5 @@
 		"style"					"MainMenuButton"
 		"command"				"ExitToMainMenu"
 		"ActivationType"		"1"
-	}
-
-	"FlmOptionsFlyout"
-	{
-		"ControlName"			"FlyoutMenu"
-		"fieldName"				"FlmOptionsFlyout"
-		"visible"				"0"
-		"wide"					"0"
-		"tall"					"0"
-		"zpos"					"3"
-		"InitialFocus"			"BtnVideo"
-		"ResourceFile"			"resource/UI/basemodui/OptionsFlyout.res"
-	}
-	
-	"FlmOptionsGuestFlyout"
-	{
-		"ControlName"			"FlyoutMenu"
-		"fieldName"				"FlmOptionsGuestFlyout"
-		"visible"				"0"
-		"wide"					"0"
-		"tall"					"0"
-		"zpos"					"3"
-		"InitialFocus"			"BtnAudioVideo"
-		"ResourceFile"			"resource/UI/basemodui/OptionsGuestFlyout.res"
-	}
-
-	"FlmVoteFlyout"
-	{
-		"ControlName"			"FlyoutMenu"
-		"fieldName"				"FlmVoteFlyout"
-		"visible"				"0"
-		"wide"					"0"
-		"tall"					"0"
-		"zpos"					"3"
-		"InitialFocus"			"BtnReturnToLobby"
-		"ResourceFile"			"resource/UI/basemodui/InGameVoteFlyout.res"
-	}
-	
-	"FlmVoteFlyoutVersus"
-	{
-		"ControlName"		"FlyoutMenu"
-		"fieldName"			"FlmVoteFlyoutVersus"
-		"visible"			"0"
-		"wide"				"0"
-		"tall"				"0"
-		"zpos"				"3"
-		"InitialFocus"		"BtnReturnToLobby"
-		"ResourceFile"		"resource/UI/basemodui/InGameVoteFlyoutVersus.res"
-	}
-	
-	"FlmVoteFlyoutSurvival"
-	{
-		"ControlName"		"FlyoutMenu"
-		"fieldName"			"FlmVoteFlyoutSurvival"
-		"visible"			"0"
-		"wide"				"0"
-		"tall"				"0"
-		"zpos"				"3"
-		"InitialFocus"		"BtnReturnToLobby"
-		"ResourceFile"		"resource/UI/basemodui/InGameVoteFlyoutSurvival.res"
 	}
 }
