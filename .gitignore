@@ -88,3 +88,5 @@ media\viewed.res
 # sprays
 materials/vgui/logos/ui/*
 materials/vgui/logos/*
+gameinfo.txt
+steam.inf
