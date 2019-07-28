@@ -112,9 +112,9 @@ Muddy (Grain)
 Open Fortress - List of community contributors:
 
 Cori - cl_showpos_xy and of_healonkill convars
+Msalinas -  Enabled Nav Mesh and implemented of_navmesh_spawns
 Occune - Russian translation
 Technochips - French translation
-
 
 Open Fortress - Special thanks:
 Trotim (for helping KaidemonLP with programming)
