@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models\weapons\v_medigun\v_medigun_purple"
+	"$basetexture"	"models\weapons\v_medigun\v_medigun_custom"
 	"$glowcolor" "1"
 	"$phong" "1"
 	"$phongexponent" "5"
