@@ -93,7 +93,7 @@ Hambooga (The Bad Place, The Longest Yard, Aerowalk, Blood Covenant)
 DrPyspy (Blood Run, Parley)
 Richter (Office [Textures])
 AgitationSkeleton (House of Chthon, The Bad Place, The Dark Zone, Dead Simple, Overkill)
-HDMineFace (Legacy, MCTF Splashdown, CTF and DM Greenback)
+HDMineFace (Legacy, MCTF Splashdown, CTF and DM Greenback, Boxy [Updated Map])
 Chrissy (Office, House of Chthon)
 Suomimes55 (Congo, DM+CTF Backfort, Weapon devtest map)
 Ficool2 (DM Lumberyard)
@@ -115,6 +115,7 @@ Cori - cl_showpos_xy and of_healonkill convars
 Msalinas -  Enabled Nav Mesh and implemented of_navmesh_spawns
 Occune - Russian translation
 Technochips - French translation
+Amy (@OctoGril1) - Female Merc design + Easter egg drawing on legacy
 
 Open Fortress - Special thanks:
 Trotim (for helping KaidemonLP with programming)
