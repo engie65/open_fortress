@@ -12,11 +12,10 @@ Jill Nesbit
 Nbc66
 Avast Antipony
 Nopey Nope
+Swox
 
-Deathmatch Gameplay lead:
+Gameplay Coordinators:
 AgitationSkeleton
-
-TFC Mode Gameplay Lead:
 Stachekip
 
 Mercenary concepts and model:
@@ -56,7 +55,7 @@ Drew
 Assorted models and prop assets:
 Boomsta
 
-TFC Model Ports:
+Placeholder TFC Model Ports:
 Ficool2
 
 Particles and Berserk model:
@@ -92,10 +91,10 @@ Maps:
 Hambooga (The Bad Place, The Longest Yard, Aerowalk, Blood Covenant)
 DrPyspy (Blood Run, Parley)
 Richter (Office [Textures])
-AgitationSkeleton (House of Chthon, The Bad Place, The Dark Zone, Dead Simple, Overkill)
+AgitationSkeleton (House of Chthon, The Bad Place, The Dark Zone, Dead Simple, Overkill, Crossfire)
 HDMineFace (Legacy, MCTF Splashdown, CTF and DM Greenback, Boxy [Updated Map])
 Chrissy (Office, House of Chthon)
-Suomimes55 (Congo, DM+CTF Backfort, Weapon devtest map)
+Suomimes55 (Congo, DM+CTF Backfort, Boxy, Weapon devtest map)
 Ficool2 (DM Lumberyard)
 MacD11 (Wiseau, Range, Dead Simple, Grain, Offblast)
 KaiDemonLP (Harvest, 2Fort Weapontest [Indev], Devtest maps)

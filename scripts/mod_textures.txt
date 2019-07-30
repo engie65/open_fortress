@@ -3995,5 +3995,119 @@
 				"width"		"95"
 				"height"	"33"
 		}
+		// telefragging
+		"d_obj_teleporter"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"dneg_obj_teleporter"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"d_obj_teleporter_entrance"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"dneg_obj_teleporter_entrance"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"d_obj_teleporter_exit"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"dneg_obj_teleporter_exit"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"d_trigger_teleport"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"dneg_trigger_teleport"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"d_info_player_teamspawn"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"dneg_info_player_teamspawn"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"d_info_player_deathmatch"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"dneg_info_player_deathmatch"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"d_info_player_start"
+		{
+				"file"	"HUD/d_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		"dneg_info_player_start"
+		{
+				"file"	"HUD/dneg_images_of"
+				"x"		"195"
+				"y"		"209"
+				"width"		"63"
+				"height"	"47"
+		}
+		// end telefragging
 	}
 }
