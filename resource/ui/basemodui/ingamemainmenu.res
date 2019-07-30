@@ -32,7 +32,7 @@
 		"enabled"			"1"
 		"fillColor"			"0 0 0 255"
 	}
-			
+
 	"BtnReturnToGame"
 	{
 		"ControlName"			"BaseModHybridButton"
@@ -47,7 +47,7 @@
 		"enabled"				"1"
 		"tabPosition"			"1"
 		"navUp"					"BtnExitToMainMenu"
-		"navDown"				"BtnServerBrowser"
+		"navDown"				"BtnMute"
 		"labelText"				"#L4D360UI_InGameMainMenu_ReturnToGame"
 		"tooltiptext"			"#L4D360UI_InGameMainMenu_ReturnToGame_Tip"
 		"style"					"MainMenuButton"
@@ -55,12 +55,35 @@
 		"ActivationType"		"1"
 	}
 
+	"BtnMute"
+	{
+		"ControlName"			"BaseModHybridButton"
+		"fieldName"				"BtnMute"
+		"xpos"					"100"
+		"ypos"					"168"
+		"wide"					"220"
+		"tall"					"20"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"1"
+		"navUp"					"BtnReturnToGame"
+		"navDown"				"BtnServerBrowser"
+		"labelText"				"Mute"
+		"tooltiptext"			"#L4D360UI_InGameMainMenu_ReturnToGame_Tip"
+		"style"					"MainMenuButton"
+		"command"				"OpenPlayerListDialog"
+		"ActivationType"		"1"
+	}	
+		
+	
 	"BtnServerBrowser"
 	{
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnServerBrowser"
 		"xpos"					"100"
-		"ypos"					"185" // "265" 45
+		"ypos"					"205" // "265" 45
 		"wide"					"220"
 		"tall"					"20"
 		"autoResize"				"1"
@@ -68,7 +91,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"				"0"
-		"navUp"					"BtnReturnToGame"
+		"navUp"					"BtnMute"
 		"navDown"				"BtnNewGame"
 		"labelText"				"Server Browser"
 		"tooltiptext"				"#L4D360UI_MainMenu_PlaySolo_Tip"
@@ -82,7 +105,7 @@
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnNewGame"
 		"xpos"					"100"
-		"ypos"					"210"
+		"ypos"					"230"
 		"wide"					"220"
 		"tall"					"20"
 		"autoResize"			"1"
@@ -104,7 +127,7 @@
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnOptions"
 		"xpos"					"100"
-		"ypos"					"235"
+		"ypos"					"255"
 		"wide"					"220"
 		"tall"					"20"
 		"autoResize"			"1"
@@ -126,7 +149,7 @@
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnExitToMainMenu"
 		"xpos"					"100"
-		"ypos"					"260"
+		"ypos"					"300"
 		"wide"					"220"
 		"tall"					"20"
 		"autoResize"			"1"

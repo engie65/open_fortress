@@ -10,6 +10,7 @@
 		"tall"		"480"
 		"visible"	"1"
 		"enabled"	"1"
+		"autoResize"	"1"
 	}
 	"MainBackground"
 	{

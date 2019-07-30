@@ -4,14 +4,14 @@
 	{
 		"ControlName"		"Label"
 		"fieldName"			"LblTitle"
-		"fgcolor_override"		"169 213 255 255"
+		"fgcolor_override"		"255 255 255 255"
 	}
 	
 	"LblMessage"
 	{
 		"ControlName"		"Label"
 		"fieldName"			"LblMessage"
-		"fgcolor_override"		"83 148 192 255"
+		"fgcolor_override"		"255 255 255 255"
 	}
 	
 	"GenericConfirmation"

@@ -16,6 +16,22 @@
 		"PaintBackgroundType"	"0"
 	}
 
+	"Logo"
+	{
+		"ControlName"			"ImagePanel"
+		"fieldName"				"Logo"
+		"xpos"					"80"
+		"ypos"					"150"
+		"wide"					"350"
+		"tall"					"67"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"scaleImage"			"1"
+		"image"					"..\logo\tf2_logo"
+		"frame"					"0"
+	}	
+	
 	"BtnServerBrowser"
 	{
 		"ControlName"			"BaseModHybridButton"
@@ -77,7 +93,7 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"navUp"					"BtnNewGame"
-		"navDown"				"BtnLoadout"
+		"navDown"				"BtnStats"
 		"labelText"				"#L4D360UI_MainMenu_Options"
 		"tooltiptext"			"#L4D360UI_MainMenu_Options_Tip"
 		"style"					"MainMenuButton"
@@ -85,10 +101,10 @@
 		"ActivationType"		"1"
 	}
 
-	"BtnLoadout"
+	"BtnStats"
 	{
 		"ControlName"			"BaseModHybridButton"
-		"fieldName"				"BtnLoadout"
+		"fieldName"				"BtnStats"
 		"xpos"					"100"
 		"ypos"					"295"
 		"wide"					"180"
@@ -99,11 +115,33 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"navUp"					"BtnOptions"
-		"navDown"				"BtnQuit"
+		"navDown"				"BtnLoadout"
 		"labelText"				"Stats"
 		"tooltiptext"			"Statistics about playtime and achievements"
 		"style"					"MainMenuButton"
-		"command"				"PlayerStats"
+		"command"				"showstatsdlg"
+		"ActivationType"		"1"
+	}
+	
+	"BtnLoadout"
+	{
+		"ControlName"			"BaseModHybridButton"
+		"fieldName"				"BtnLoadout"
+		"xpos"					"100"
+		"ypos"					"315"
+		"wide"					"180"
+		"tall"					"20"
+		"autoResize"			"1"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"navUp"					"BtnStats"
+		"navDown"				"BtnQuit"
+		"labelText"				"Loadout"
+		"tooltiptext"			"Statistics about playtime and achievements"
+		"style"					"MainMenuButton"
+		"command"				"showloadoutdialog"
 		"ActivationType"		"1"
 	}
 	
@@ -112,7 +150,7 @@
 		"ControlName"			"BaseModHybridButton"
 		"fieldName"				"BtnQuit"
 		"xpos"					"100"
-		"ypos"					"335"
+		"ypos"					"355"
 		"wide"					"180"
 		"tall"					"20"
 		"autoResize"			"1"
