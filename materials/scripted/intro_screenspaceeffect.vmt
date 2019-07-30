@@ -1,0 +1,5 @@
+// multiplayer does not support the introscreenspaceeffect shader so just don't draw 
+"unlitgeneric"
+{
+"$no_draw" "1"
+}
