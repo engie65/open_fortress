@@ -41,7 +41,7 @@
 //DeathmatchMusic.DMStuff
 //DeathmatchMusic.Mayann
 
-//Cover of At Doom's Gate (E1M1) from DOOM, by MrModez
+//By MrModez
 "DeathmatchMusic.AtFortressGate"
 {
 	"channel"		"CHAN_STATIC"
@@ -121,7 +121,7 @@
 	"wave"			"#music/deathmatch/dm_ending.wav"
 }
 
-//Cover of Facility from Goldeneye 007, by Magnus
+//By Magnus
 "DeathmatchMusic.Facility"
 {
 	"channel"		"CHAN_STATIC"
@@ -161,7 +161,7 @@
 	"wave"			"#music/deathmatch/dmchase_ending.wav"
 }
 
-//Alternative cover of E1M1 from DOOM, by Magnus
+//By Magnus
 "DeathmatchMusic.E1M1alt"
 {
 	"channel"		"CHAN_STATIC"
@@ -171,7 +171,7 @@
 	"wave"			"#music/deathmatch/e1m1alt_loop.wav"
 }
 
-//Cover of E2M3 from Doom by Thoopje
+//By Thoopje
 "DeathmatchMusic.Intermission"
 {
 	"channel"		"CHAN_STATIC"
@@ -181,7 +181,7 @@
 	"wave"			"#music/deathmatch/intermission_ending.wav"
 }
 
-//Cover of E2M1 from DOOM, by Magnus
+//By Magnus
 "DeathmatchMusic.E2M1"
 {
 	"channel"		"CHAN_STATIC"
@@ -191,7 +191,7 @@
 	"wave"			"#music/deathmatch/e2m1_loop.wav"
 }
 
-//Running from Evil (MAP01), by Magnus
+//By Magnus
 "DeathmatchMusic.Map01"
 {
 	"channel"		"CHAN_STATIC"
@@ -201,7 +201,7 @@
 	"wave"			"#music/deathmatch/map01_loop.wav"
 }
 
-//Running from Evil (MAP01) Setup Variant, by Magnus
+//By Magnus
 "DeathmatchMusic.Map01_Waiting"
 {
 	"channel"		"CHAN_STATIC"
@@ -221,7 +221,7 @@
 	"wave"			"#music/deathmatch/orch_loop.wav"
 }
 
-//Cover of Stalker from Duke Nukem 3D, by Magnus
+//By Magnus
 "DeathmatchMusic.Stalker"
 {
 	"channel"		"CHAN_STATIC"
@@ -291,7 +291,7 @@
 	"wave"			"#music/deathmatch/lastmanstanding_loop.wav"
 }
 
-//The Healer Stalks (Doom 2 MAP02 theme cover) by Magnus
+//By Magnus
 "DeathmatchMusic.Healer"
 {
 	"channel"		"CHAN_STATIC"
