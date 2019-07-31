@@ -164,7 +164,6 @@ DESCRIPTION INFO_OPTIONS
 	"tf_dingalingaling"
 	{
 		"#TF_Hitbeeps"
-		"#Tooltip_Hitbeeps"
 		{ BOOL }
 		{ "1" }
 	}
@@ -191,7 +190,6 @@ DESCRIPTION INFO_OPTIONS
 	"tf_dingaling_volume"
 	{
 		"#TF_Dingaling_Volume"
-		"#Tooltip_Dingaling_Volume"
 		{ SLIDER 0 1 }
 		{ "0.75" }
 	}
@@ -199,7 +197,6 @@ DESCRIPTION INFO_OPTIONS
 	"tf_dingaling_pitchmindmg"
 	{
 		"#TF_Dingaling_PitchLowDmg"
-		"#Tooltip_Dingaling_PitchLowDmg"
 		{ SLIDER 50 150 }
 		{ "125" }
 	}
@@ -207,7 +204,6 @@ DESCRIPTION INFO_OPTIONS
 	"tf_dingaling_pitchmaxdmg"
 	{
 		"#TF_Dingaling_PitchHighDmg"
-		"#Tooltip_Dingaling_PitchHighDmg"
 		{ SLIDER 50 150 }
 		{ "75" }
 	}
@@ -215,7 +211,6 @@ DESCRIPTION INFO_OPTIONS
 	"tf_dingalingaling_lasthit"
 	{
 		"#TF_LastHitbeeps"
-		"#Tooltip_Hitbeeps"
 		{ BOOL }
 		{ "0" }
 	}
@@ -242,7 +237,6 @@ DESCRIPTION INFO_OPTIONS
 	"tf_dingaling_lasthit_volume"
 	{
 		"#TF_Dingaling_LastHit_Volume"
-		"#Tooltip_Dingaling_Volume"
 		{ SLIDER 0 1 }
 		{ "0.75" }
 	}
@@ -250,7 +244,6 @@ DESCRIPTION INFO_OPTIONS
 	"tf_dingaling_lasthit_pitchmindmg"
 	{
 		"#TF_Dingaling_LastHit_PitchLowDmg"
-		"#Tooltip_Dingaling_PitchLowDmg"
 		{ SLIDER 50 150 }
 		{ "125" }
 	}
@@ -258,7 +251,6 @@ DESCRIPTION INFO_OPTIONS
 	"tf_dingaling_lasthit_pitchmaxdmg"
 	{
 		"#TF_Dingaling_LastHit_PitchHighDmg"
-		"#Tooltip_Dingaling_PitchHighDmg"
 		{ SLIDER 50 150 }
 		{ "75" }
 	}
@@ -266,7 +258,6 @@ DESCRIPTION INFO_OPTIONS
 	"hud_combattext"
 	{
 		"#TF_CombatText"
-		"#Tooltip_CombatText"
 		{ BOOL }
 		{ "1" }
 	}
@@ -274,7 +265,6 @@ DESCRIPTION INFO_OPTIONS
 	"hud_combattext_batching"
 	{
 		"#TF_CombatTextBatching"
-		"#Tooltip_CombatTextBatching"
 		{ BOOL }
 		{ "1" }
 	}
