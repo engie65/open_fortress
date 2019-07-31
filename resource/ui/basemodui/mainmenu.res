@@ -114,7 +114,7 @@
 		"tooltiptext"			"#GameUI_Loadout_Tip"
 		"style"					"MainMenuButton"
 		"Font"					"MainMenuFontBIG"
-		"command"				"showloadoutdialog"
+		"command"				""
 		"ActivationType"		"1"
 	}	
 

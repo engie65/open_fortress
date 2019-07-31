@@ -95,7 +95,7 @@
 		"labelText"				"#GameUI_Loadout"
 		"tooltiptext"			"#GameUI_Loadout_Tip"
 		"style"					"MainMenuButton"
-		"command"				"showloadoutdialog"
+		"command"				""
 		"ActivationType"		"1"
 	}	
 
