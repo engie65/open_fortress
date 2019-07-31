@@ -1,6 +1,6 @@
 "Cable"
 {
-	"$baseTexture" "cable\ghook"
+	"$baseTexture" "cable\red_gradient"
 
 	"UnlitGeneric_DX6"
 	{
