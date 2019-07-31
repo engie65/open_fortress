@@ -10,7 +10,7 @@ globalactors
 	"sniper"	"male"
 	"soldier"	"male"
 	"spy"		"male"
-	"mercenary"	"alpha_male"
+	"mercenary"	"male"
 	
 	// hl2
 	
