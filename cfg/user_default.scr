@@ -135,7 +135,7 @@ DESCRIPTION INFO_OPTIONS
 	"mp_decals"
 	{
 		"#Valve_Multiplayer_Decal_Limit"
-		{ SLIDER 0 4096 }
+		{ NUMBER 0 4096 }
 		{ "200" }
 	}	
 
