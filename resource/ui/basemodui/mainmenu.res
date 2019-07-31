@@ -101,7 +101,7 @@
 		"fieldName"				"BtnLoadout"
 		"xpos"					"25"
 		"ypos"					"240"
-		"wide"					"180"
+		"wide"					"200"
 		"tall"					"28"
 		"autoResize"			"1"
 		"pinCorner"				"0"
