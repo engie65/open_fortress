@@ -38,20 +38,20 @@
 		"usetitlesafe"		"1"
 	}
 	
-	"WorkingAnim"
+	"Logo"
 	{
 		"ControlName"			"ImagePanel"
-		"fieldName"				"WorkingAnim"
+		"fieldName"				"Logo"
 		"xpos"					"0"
-		"ypos"					"0"
+		"ypos"					"r60"
 		"zpos"					"5"
-		"wide"					"40"
-		"tall"					"40"
-		"visible"				"0"
+		"wide"					"290"
+		"tall"					"56"
+		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"scaleImage"			"1"
-		"image"					"progress_bar_mercenary"
+		"image"					"..\logo\tf2_logo"
 		"frame"					"0"
 	}	
 	
@@ -70,7 +70,7 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"Font"					"DefaultBold"
-		"labelText"				"#L4D360UI_Loading"
+		"labelText"				"#GameUI_Loading"
 		"textAlignment"			"east"
 		"fgcolor_override"		"255 255 255 255"
 		"usetitlesafe"			"1"
@@ -108,131 +108,58 @@
 	
 	"LocalizedCampaignName"
 	{
-		"ControlName"				"Label"
+		"ControlName"			"Label"
 		"fieldName"				"LocalizedCampaignName"
 		"xpos"					"22"
-		"ypos"					"0"		[$WIN32]
-		"ypos"					"r100"		[$X360]
+		"ypos"					"10"		[$WIN32]
 		"zpos"					"5"
 		"wide"					"f0"
 		"tall"					"20"
 		"pinCorner"				"0"
-		"visible"				"1"
+		"visible"				"0"
 		"enabled"				"1"
-		"tabPosition"				"0"
-		"Font"					"DefaultLarge"
-		"labelText"				""
-		"textAlignment"				"south-west"
-		"noshortcutsyntax"			"1"
-		"usetitlesafe"				"1"
+		"font"					"HudFontMediumBold"
+		"tabPosition"			"0"
+		"labelText"				"#LoadingMap"
+		"textAlignment"			"south-west"
 	}
 	
 	"LocalizedCampaignTagline"
 	{
-		"ControlName"				"Label"
+		"ControlName"			"Label"
 		"fieldName"				"LocalizedCampaignTagline"
-		"xpos"					"0"
+		"xpos"					"-250"
 		"ypos"					"0"
 		"zpos"					"5"
 		"wide"					"f0"
-		"tall"					"20"
+		"tall"					"28"
 		"pinCorner"				"0"
-		"visible"				"1"
+		"visible"				"0"
 		"enabled"				"1"
 		"tabPosition"				"0"
-		"Font"					"DefaultMedium"
-		"labelText"				""
-		"textAlignment"				"north-west"
+		"font"					"HudFontMediumBigBold"
+		"labelText"				"%maplabel%"
+		"textAlignment"				"west"
 		"noshortcutsyntax"			"1"
 		"pin_to_sibling"			"LocalizedCampaignName"
 		"pin_corner_to_sibling"			"0"	
 		"pin_to_sibling_corner"			"2"	
 	}
-	
-	
-	"GameModeLabel"
-	{
-		"ControlName"				"Label"
-		"fieldName"				"GameModeLabel"
-		"xpos"					"22"
-		"ypos"					"r55"
-		"zpos"					"5"
-		"wide"					"f0"
-		"tall"					"20"
-		"autoResize"				"1"
-		"pinCorner"				"0"
-		"visible"				"0"
-		"enabled"				"1"
-		"tabPosition"				"0"
-		"Font"					"DefaultLarge"
-		"textAlignment"				"north-west"
-		"noshortcutsyntax"			"1"
-		"usetitlesafe"				"1"
-	}	
-	
-	"StarringLabel"
-	{
-		"ControlName"				"Label"
-		"fieldName"				"StarringLabel"
-		"xpos"					"22"
-		"ypos"					"r39"
-		"zpos"					"5"
-		"wide"					"60"
-		"tall"					"16"
-		"autoResize"				"1"
-		"pinCorner"				"0"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"				"0"
-		"Font"					"DefaultMedium"
-		"textAlignment"				"north-west"
-		"labelText"				"#L4D360UI_Loading_Starring"
-		"noshortcutsyntax"			"1"
-		"usetitlesafe"				"1"
-		"auto_wide_tocontents"			"1"
-	}	
 
-	"LoadingTipPanel"	[$X360]
+	"LoadingTipPanel"
 	{
 		"ControlName"			"EditablePanel"
 		"fieldName"			"LoadingTipPanel"
 		"xpos"				"0"
-		"ypos"				"17"
+		"ypos"				"150"
 		"wide"				"450"
 		"tall"				"80"
-		"visible"			"0"
-		"enabled"			"0"
+		"visible"			"1"
+		"enabled"			"1"
 		"usetitlesafe"				"1"
 		"enabled"			"1"
 		"zpos"				"50"
 	}
-
-	"PlayerNames"
-	{
-		"ControlName"				"Label"
-		"fieldName"				"PlayerNames"
-		"xpos"					"0"
-		"ypos"					"0"
-		"zpos"					"5"
-		"wide"					"475" [$WIN32]
-		"wide"					"475" [$X360HIDEF]
-		"wide"					"350" [$X360LODEF]
-		"tall"					"32"
-		"wrap"					"1"
-		"autoResize"				"1"
-		"pinCorner"				"0"
-		"visible"				"0"
-		"enabled"				"1"
-		"tabPosition"				"0"
-		"Font"					"DefaultMedium"
-		"textAlignment"				"north-west"
-		"labelText"				""
-		"noshortcutsyntax"			"1"
-
-		"pin_to_sibling"			"StarringLabel"
-		"pin_corner_to_sibling"			"0"	
-		"pin_to_sibling_corner"			"1"	
-	}	
 	
 	"CampaignFooter"
 	{

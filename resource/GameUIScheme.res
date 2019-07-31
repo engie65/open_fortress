@@ -86,6 +86,28 @@ Scheme
 				"antialias" "1"
 			}
 		}	
+		"HudFontMediumBold"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"24"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"HudFontMediumBigBold"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"30"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}		
 		"ServerBrowserTitle"
 		{
 			"1"
