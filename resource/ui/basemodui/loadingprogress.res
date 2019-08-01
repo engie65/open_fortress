@@ -152,7 +152,7 @@
 		"fieldName"			"LoadingTipPanel"
 		"xpos"				"20"
 		"ypos"				"r140"
-		"wide"				"450"
+		"wide"				"360"
 		"tall"				"80"
 		"visible"			"1"
 		"enabled"			"1"

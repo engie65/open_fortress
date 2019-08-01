@@ -37,8 +37,8 @@
 	{
 		"ControlName"			"ImagePanel"
 		"fieldName"				"Logo"
-		"xpos"					"100"
-		"ypos"					"60"
+		"xpos"					"r360"
+		"ypos"					"130"
 		"wide"					"260"
 		"tall"					"50"
 		"visible"				"1"
